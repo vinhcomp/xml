@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<channels>
+<channel>
+<name>Khmer</name>
+<items>
+
+
+<item>
+<title>[COLOR ffff0000]Khmer[/COLOR] | [COLOR yellow]LIVE[/COLOR] TV</title>
+<link>tokhmertv</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/khmertv2.png</thumbnail>
+</item>
+<item>
+<title>[COLOR ffff0000]Khmer[/COLOR] | Hotkhmer</title>
+<link>tohotkhmer</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/hotkhmer.png</thumbnail>
+</item>
+<item>
+<title>[COLOR ffff0000]Khmer[/COLOR] | MovieKhmer</title>
+<link>tomoviekhmer</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/moviekhmer.png</thumbnail>
+</item>
+<item>
+<title>[COLOR ffff0000]Khmer[/COLOR] | Video4Khmer</title>
+<link>tovideo4kh</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/video4kh.png</thumbnail>
+</item>
+<item>
+<title>[COLOR ffff0000]Khmer[/COLOR] | PhumiKhmer</title>
+<link>tophumikh</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/phumikh.png</thumbnail>
+</item>
+<item>
+<title>[COLOR ffff0000]Khmer[/COLOR] | KhmerAvenue</title>
+<link>tokhmera</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/khmera.png</thumbnail>
+</item>
+
+
+
+
+</items>
+</channel>
+</channels>

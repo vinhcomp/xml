@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channels>
+<channel>
+<name>indiatv</name>
+<items>
+
+<item>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Pak India Live[/COLOR]</title>
+<link>redirecttopakindia</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/pakindia.png</thumbnail>
+</item>
+<item>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]FilmOn TV[/COLOR]</title>
+<link>tofilmon1</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/filmon1.png</thumbnail>
+</item>
+<item>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Shahid Arabic[/COLOR]</title>
+<link>redirecttoshahidmbc</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/shahidmbc.png</thumbnail>
+</item>
+<item>
+<title>[COLOR orange]Indian[/COLOR] | SominalTv</title>
+<link>tosominaltv</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/sominaltv.png</thumbnail>
+</item>
+<item>
+<title>[COLOR orange]Indian[/COLOR] | MovieRulz</title>
+<link>tomovieru</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/movieru.png</thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>MBC_ACTION</title>
+<link>http://63.237.48.23/ios/MBC_ACTION/MBC_ACTION.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>MBC_MAX (stream 2)</title>
+<link>http://63.237.48.23/ios/MBC_MAX/MBC_MAX.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>MBC_BOLLYWOOD</title>
+<link>http://63.237.48.23/ios/MBC_BOLLYWOOD/MBC_BOLLYWOOD.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>HQ Bollywood™</title>
+<link>http://veetle.com/index.php/hls/streamMbrfast/4e2c5fd04592d_/stream.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+
+
+
+<item>
+<title>Tamil lotusnews</title>
+<link>rtmp://live.wmncdn.net/lotus/ playpath=25526e8cfa035fc30910e40b3f2e4348.sdp swfUrl=http://player-emea-uk.webmobilive.com/player/liveplayer.swf live=1 pageUrl=http://livetvchannelsfree.com/lotusnews.html</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>Tamil vasanthamtv</title>
+<link>rtmp://mediacp2.comcities.com:1935/itn-vasantham playpath=itn-vasantham swfUrl=http://cdn.itnlanka.com/vasanthamtv.swf live=1 pageUrl=http://livetvchannelsfree.com/vasanthamtv.html</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+
+
+<item>
+<title>B4U Music</title>
+<link>http://46.249.213.87/iPhone/HLS_TS/broadcast/befouryoumusic-tablet.3gp/befouryoumusic-tablet.3gp-mr648k.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>PTV Sports</title>
+<link>http://109.123.70.72:1935/live/ptvsports/samitv.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>NDTV 24x7</title>
+<link>http://ndtv.live-s.cdn.bitgravity.com/cdn-live-b7/_definst_/ndtv/live/ndtv247live.smil/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>Care World TV</title>
+<link>http://live.careworldtv.com/live/careworld/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>DD Punjabi</title>
+<link>http://164.100.49.24:8080/hls-live/livepkgr/_definst_/ddpunjabi.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>DEKHO TV</title>
+<link>http://54.243.231.64:1935/live/dekhotv.mp4/hasbahca.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>ETV Marathi</title>
+<link>http://etv_marathi-lh.akamaihd.net/i/etv_marathi_n_1@87184/master.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>Janta TV</title>
+<link>http://jlive.itv.net.in:1935/jantatv/myStream.sdp/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>Boss TV</title>
+<link>http://bosstv1.chennaistream.net/bosstv/bosstv.stream/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>HUM TV</title>
+<link>http://cdn.ebound.tv:1935/tv/humtv/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>HUM SITARAY</title>
+<link>http://cdn.ebound.tv:1935/tv/hum2/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>EXPRESS ENTERTAINMENT</title>
+<link>http://cdn.ebound.tv:1935/tv/expressentertainment/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>TIMES TV</title>
+<link>http://cdn.ebound.tv:1935/tv/times/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>APLUS</title>
+<link>http://cdn.ebound.tv:1935/tv/aplus/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>URDU 1</title>
+<link>http://cdn.ebound.tv:1935/tv/urdu1/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>DAWN NEWS</title>
+<link>http://cdn.ebound.tv:1935/tv/dawn/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>WAQT NEWS</title>
+<link>http://cdn.ebound.tv:1935/tv/waqtnews/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>CAPITAL TV</title>
+<link>http://cdn.ebound.tv:1935/tv/capitaltv/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>ROYAL NEWS TV</title>
+<link>http://cdn.ebound.tv:1935/tv/royaltv/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>CHANNEL 5 NEWS</title>
+<link>http://cdn.ebound.tv:1935/tv/channelfive/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>CITY42</title>
+<link>http://cdn.ebound.tv:1935/tv/city42/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>MASALA TV</title>
+<link>http://cdn.ebound.tv:1935/tv/masalatv/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>AWAZ TV</title>
+<link>http://cdn.ebound.tv:1935/tv/awaztv/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>SINDH TV</title>
+<link>http://cdn.ebound.tv:1935/tv/sindhtv/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>SINDH TV NEWS</title>
+<link>http://cdn.ebound.tv:1935/tv/sindhnews/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>EMAX TV</title>
+<link>http://cdn.ebound.tv:1935/tv/emax/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>STYLE 360</title>
+<link>http://cdn.ebound.tv:1935/tv/style360/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>BUSINESS PLUS</title>
+<link>http://cdn.ebound.tv:1935/tv/businessplus/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+<item>
+<title>TEHZEEB TV</title>
+<link>http://cdn.ebound.tv:1935/tv/tehzeeb/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fmZlb3l5MmEtbmxuWlpyVFFfOHJ0cVA5cmpIVS1seDVXOG1fby1HcmFuNzg/livetvicon.png</thumbnail>
+</item>
+
+
+
+
+
+
+<item>
+<title>HQ Bollywood</title>
+<link>http://veetle.com/index.php/hls/streamMbrfast/4e0e6f4dcc2d3_/stream.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>GEM BOLLYWOOD</title>
+<link>rtmp://gemtv.fms.visionip.tv/live/gemtv-gemtv-gembollywood-live-25f-16x9-HD?ref=www.gemonline.tv&amp;USER=Gem+Bollywood</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>GEM LİFE1</title>
+<link>rtmp://gemtv.fms.visionip.tv/live/gemtv-gemtv-life1-live-25f-16x9-HD?ref=www.gemonline.tv&amp;USER=LIFE1</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>GEM MİFA</title>
+<link>rtmp://gemtv.fms.visionip.tv/live/gemtv-gemtv-mifa-live-16x9-HD?ref=www.gemonline.tv&amp;USER=MIFA+MUSIC</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>GEM ONYX</title>
+<link>rtmp://gemtv.fms.visionip.tv/live/gemtv-gemtv-onyx-live-16x9-HD?ref=www.gemonline.tv&amp;USER=ONYX</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>GEM RİVER</title>
+<link>rtmp://gemtv.fms.visionip.tv/live/gemtv-gemtv-river-live-16x9-HD?ref=www.gemonline.tv&amp;USER=River+HD</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>GEM TRAVEL</title>
+<link>rtmp://gemtv.fms.visionip.tv/live/gemtv-gemtv-travel-live-25f-16x9-HD?ref=www.gemonline.tv&amp;USER=TRAVEL</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>GEM0-100</title>
+<link>rtmp://gemtv.fms.visionip.tv/live/gemtv-gemtv-0100-live-25f-16x9-HD?ref=www.gemonline.tv&amp;USER=0-100</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+<item>
+<title>MHARISHI CHANNEL</title>
+<link>rtsp://streaming.mou.org/videodialup</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indiatv.png</thumbnail>
+</item>
+
+
+
+</items>
+</channel>
+</channels>

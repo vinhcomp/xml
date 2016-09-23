@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channels>
+<channel>
+<name>indonesia</name>
+<items>
+
+
+
+
+
+<item>
+<title>SCTV</title>
+<link>http://livestreaming.production.liputan6.static6.com/tv/sctvstream300.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indonesia.png</thumbnail>
+</item>
+<item>
+<title>RCTI</title>
+<link>http://livemedia.mncplaymedia.net/cdn/iptv/Tvod/001/channel2000042/256.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indonesia.png</thumbnail>
+</item>
+<item>
+<title>NET.</title>
+<link>rtmp://win.stream.netmedia.co.id/live/ playpath=nettv_mid swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf pageUrl=http://www.indostreamingtv.com/2014/09/streaming-net-tv.html live=true timeout=20</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indonesia.png</thumbnail>
+</item>
+
+<item>
+<title>RTV</title>
+<link>rtmp://203.153.97.35/live// playpath=livestream swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf pageUrl=http://www.indostreamingtv.com/2014/09/streaming-rtv-rajawali-televisi.html live=true timeout=20</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indonesia.png</thumbnail>
+</item>
+
+<item>
+<title>TVRI</title>
+<link>rtmp://118.97.50.102/digital/ playpath=nasional swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf pageUrl=http://www.indostreamingtv.com/2014/09/streaming-tvri.html live=true timeout=20</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indonesia.png</thumbnail>
+</item>
+
+<item>
+<title>CCTV</title>
+<link>rtmp://202.117.80.19/live/ playpath=live4 swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf pageUrl=http://www.indostreamingtv.com/2015/04/cctv-streaming.html live=true timeout=20</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indonesia.png</thumbnail>
+</item>
+
+<item>
+<title>DW TV</title>
+<link>rtmp://cp135357.live.edgefcs.net/live/ playpath=dw_fl_tv-arabia_hq@s82212?auth=daEatcPb7c3bKczbSbBbdc8a.bwcVbXb9aF-bqMnY.-jz6DG-vHpvsDvCtnIBr&aifp=001 swfUrl=http://player-cdn.mivo.tv/v6.12/jwplayer.flash.swf pageUrl=http://www.mivo.com/#/dwarabia live=true timeout=20</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indonesia.png</thumbnail>
+</item>
+<item>
+<title>DW ARABIA</title>
+<link>rtmp://cp135358.live.edgefcs.net/live/ playpath=dw_fl_tv-asiaplus_hq@s82221?auth=daEceblc5d4cGaJaqc.bAbZcmdndtdhbdb1-bqMnY.-jz6DG-qGpwqEwDplIAt&aifp=001 swfUrl=http://player-cdn.mivo.tv/v6.12/jwplayer.flash.swf pageUrl=http://www.mivo.com/#/dwasiaplus live=true timeout=20</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indonesia.png</thumbnail>
+</item>
+<item>
+<title>DW LATINO</title>
+<link>rtmp://cp135360.live.edgefcs.net/live/ playpath=dw_fl_tv-latino_hq@s82355?auth=daEa.aWdPaXdIaTbtdrdYbqdPchbybSa5bY-bqMnY.-jz6DG-oFwxkBzErlIBw&aifp=001 swfUrl=http://player-cdn.mivo.tv/v6.12/jwplayer.flash.swf pageUrl=http://www.mivo.com/#/dwlatino live=true timeout=20</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indonesia.png</thumbnail>
+</item>
+
+<item>
+<title>INDOSIAR</title>
+<link>http://livestreaming.production.liputan6.static6.com/tv/indosiarstream300.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indonesia.png</thumbnail>
+</item>
+
+<item>
+<title>iFILM</title>
+<link>http://ptv-hls.streaming.overon.es/ch06/livehigh.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8zLzIwMTUgIDY6NDY6MjcgQU0maGFzaF92YWx1ZT03d2JiaGl6QWRqaW01V3ZnbmRBVHd3PT0mdmFsaWRtaW51dGVzPTE0NDA=</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indonesia.png</thumbnail>
+</item>
+
+
+<item>
+<title>ZHEJIANG TV</title>
+<link>http://ktv017.cdnak.ds.kylintv.net/nlds/kylin/zhejtvhd/as/live/zhejtvhd.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8yLzIwMTUgIDU6NDA6NDEgQU0maGFzaF92YWx1ZT1rNDlOcG1hcHM4OVUrUTY4aGZYVE13PT0mdmFsaWRtaW51dGVzPTE0NDA=</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/indonesia.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+</items>
+</channel>
+</channels>
