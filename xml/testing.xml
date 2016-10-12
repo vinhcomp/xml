@@ -3,6 +3,13 @@
 <name>tvusa</name>
 <channel>
 <items>
+  
+<item>
+<title>[COLOR yellow]Thúy Nga 119 - Nhạc Vàng Muôn Thuở[/COLOR] - [COLOR ffff0000]HD Full[/COLOR]</title>
+<link>plugin://plugin.program.gdrive?mode=streamURL&url=https://drive.google.com/open?id=0B54vn4Nax84MWnJnNGFUcU9KRmc</link>
+<thumbnail>http://i.imgur.com/axJ90nh.jpg</thumbnail>
+</item> 
+  
 <item>
 <title>[COLOR lime]****USA TV****[/COLOR]</title>
 <link>http://www.youtube.com</link>
