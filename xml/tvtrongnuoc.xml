@@ -34,26 +34,23 @@
 
 
 <item>
-<title>[COLOR lime]✫-✫-✫ Updated 09-28-2016 ✫-✫-✫[/COLOR]</title>
+<title>[COLOR lime]✫-✫-✫ Updated 10-16-2016 ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 
 
 
+
+  
 <item>
-<title>VTV1 HD s1</title>
-<link>http://live.cdn.mobifonetv.vn/motv/vtv1hd_hls.smil/chunklist_b1200000.m3u8</link>
+<title>VTV1 s1</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtv1.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTV1 HD s2</title>
-<link>http://118.107.85.14:1935/tvnet/smil:vtv1.smil/chunklist_w464693119_b1000000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTV1 HD s3</title>
-<link>http://103.21.148.45:81/icomchannelvtv/smil:v1_dump_2111.smil/chunklist_b1328000_sleng.m3u8</link>
+<title>VTV1 s2</title>
+<link>http://123.30.191.202/hls/vtv1.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
@@ -63,37 +60,22 @@
 </item>
 <item>
 <title>VTV2 s2</title>
-<link>http://118.107.85.14:1935/tvnet/smil:vtv2.smil/chunklist_w783214168_b1000000.m3u8</link>
+<link>http://123.30.191.202/hls/vtv2.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTV2 HD</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/vtv2hd_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTV3 HD s1</title>
-<link>http://118.107.85.14:1935/tvnet/smil:vtv3.smil/chunklist_w1525876_b800000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTV3 HD s2</title>
-<link>http://103.21.148.45:81/icomchannelvtv/smil:vtv3_ele_dump_2016.smil/chunklist_b1328000_sleng.m3u8</link>
+<title>VTV3</title>
+<link>http://123.30.191.202/hls/vtv3.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VTV4</title>
-<link>http://118.107.85.14:1935/tvnet/smil:vtv4.smil/chunklist_w1337903759_b1000000.m3u8</link>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtv4.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTV4 HD</title>
-<link>http://live.cdn.mobifonetv.vn/motv/vtv4_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTV5 HD</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/vtv5_hls.smil/chunklist.m3u8</link>
+<title>VTV5</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtv5.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
@@ -102,18 +84,13 @@
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTV9</title>
-<link>http://live.cdn.mobifonetv.vn/motv/vtv9_hls.smil/chunklist_b1200000.m3u8</link>
+<title>VTV8</title>
+<link>rtmp://znzjssjl.cdnviet.com/pnwjyhx/_definst_/livestream</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VOV s1</title>
+<title>VOV</title>
 <link>http://live.cdn.mobifonetv.vn/motv2/vov_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VOV s2</title>
-<link>http://103.21.148.45:81/icomchannelvtc/smil:vov_adb_security.smil/chunklist_b928000_sleng.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
@@ -127,278 +104,108 @@
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>TTXVN s1</title>
+<title>TTXVN</title>
 <link>http://live.cdn.mobifonetv.vn/motv2/ttxvn_hls.smil/chunklist_b1200000.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>TTXVN s2</title>
-<link>http://118.107.85.14:1935/tvnet/smil:ttxvn.smil/chunklist_w131993792_b1000000.m3u8</link>
+<title>VTC1 s1</title>
+<link>http://117.103.224.222:1935/live/_definst_/VTC1HD_2016.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>ANTV</title>
-<link>http://live.cdn.mobifonetv.vn/motv/antv_hls.smil/chunklist_b1200000.m3u8</link>
+<title>VTC1 s2</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc1.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTVCab1</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/giaitritv_hls.smil/chunklist_b1200000.m3u8</link>
+<title>VTC2</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc2.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTVCab2</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/phimviet_hls.smil/chunklist_b1200000.m3u8</link>
+<title>VTC3 s1</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc3.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTVCab4</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/vanhoa_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTVCab5</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/echannel_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTVCab6</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/haytv_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTVCab7</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/ddramas_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTVCab8</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/bibi_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTVCab9</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/infotv_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTVCab10</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/o2tv_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTVcab11</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/tvshopping_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTVcab12</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/styletvhd_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTVCab14</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/lottedatviet_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTVCab15</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/investtv_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTVCab17</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/yeah1tv_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>ANTG HD</title>
-<link>http://live.cdn.mobifonetv.vn/motv/antg_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>NCM BTV10</title>
-<link>http://live.cdn.mobifonetv.vn/motv/ncm_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>PHIM HAY TV HD</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/phimhay_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Mien Tay</title>
-<link>http://live.cdn.mobifonetv.vn/motv2/mientay_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VIETTEEN</title>
-<link>http://live.cdn.mobifonetv.vn/motv/vietten_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>SAM BTV11 TV</title>
-<link>http://live.cdn.mobifonetv.vn/motv/sam_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>ANVIEN HD</title>
-<link>http://live.cdn.mobifonetv.vn/motv/anvienhd_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Nhac Co Dien</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/nhaccodien_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Nhac Tru Tinh</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/nhactrutinh_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Nhac Dan Toc</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/nhacdantoc_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Nhac Nam Bo</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/nhacnambo_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Nhac Tre</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/nhactre_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Nhac Nhe</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/nhacnhe_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Nhac Cach Mang</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/nhaccachmang_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Doc Sach</title>
-<link>http://live.cdn.mobifonetv.vn/motv3/docsach_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC1</title>
-<link>http://live.cdn.mobifonetv.vn/motv2/vtc1_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC1 HD</title>
-<link>http://118.107.85.14:1935/tvnet/smil:vtc1.smil/chunklist_w341893287_b1000000.m3u8</link>
+<title>VTC3 s2</title>
+<link>http://117.103.224.222:1935/live/_definst_/VTC3HD_2016.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VTC4</title>
-<link>http://103.21.148.45:81/icomchannelvtc/smil:vtc4_adb_security.smil/chunklist_b928000_sleng.m3u8</link>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc4.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VTC5</title>
-<link>http://103.21.148.45:81/icomchannelvtc/smil:vtc5_adb_security.smil/chunklist_b928000_sleng.m3u8</link>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc5.smil/playlist.m3u8</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC6</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc6.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VTC7</title>
-<link>http://103.21.148.45:81/icomchannelvtc/smil:today_ele_dump3.smil/chunklist_b928000_sleng.m3u8</link>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc7.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTC8 s1</title>
-<link>http://103.21.148.45:81/icomchannelvtc/vtc8_576/chunklist.m3u8</link>
+<title>VTC8</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc8.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTC8 s2</title>
-<link>http://118.69.184.194/tv1/vtc8/index.m3u8</link>
+<title>VTC9</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc9.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTC9 s1</title>
-<link>http://103.21.148.45:81/icomchannelvtc/smil:vtc9_adb_security.smil/chunklist_b928000_sleng.m3u8</link>
+<title>VTC10</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc10.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTC9 s2</title>
-<link>http://14.161.5.88:1935/live/myStream/playlist.m3u8</link>
+<title>VTC11</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc11.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTC10 s1</title>
-<link>http://103.21.148.45:81/icomchannelvtc/vtc10_576/chunklist.m3u8</link>
+<title>VTC12</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc12.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTC10 s2</title>
-<link>http://118.107.85.14:1935/tvnet/smil:vtc10.smil/chunklist_w347773970_b1000000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC10 s3</title>
-<link>http://118.107.71.15:1935/live/_definst_/VTC10/VTC10_640x360_800kbps.stream/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC11 s1</title>
-<link>http://103.21.148.45:81/icomchannelvtc/smil:vtc11_adb_security.smil/chunklist_b928000_sleng.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC11 s2</title>
-<link>rtmp://118.107.84.3/live//vtc11_public</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC13 s1</title>
-<link>http://103.21.148.45:81/icomchannelvtc/smil:itv_ele_adb_ff.smil/chunklist_b928000_sleng.m3u8</link>
+<title>VTC13</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc13.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VTC13 s2</title>
-<link>http://censoft.mobi:1935/tvviet/vtc12.stream/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC13 s3</title>
-<link>http://live.kenhitv.vn:1935/liveweb/itv_web_500k.stream/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>ITV HD</title>
-<link>http://live.cdn.mobifonetv.vn/motv/itvhd_hls.smil/chunklist_b1200000.m3u8</link>
+<link>http://117.103.224.222:1935/live/_definst_/smil:iTVHD_2016.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VTC14</title>
-<link>http://live.cdn.mobifonetv.vn/motv/vtc14_hls.smil/chunklist_b1200000.m3u8</link>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc14.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTC16 s1</title>
-<link>http://live.cdn.mobifonetv.vn/motv/vtc16_hls.smil/chunklist_b1200000.m3u8</link>
+<title>VTC15</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc15.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTC16 s2</title>
-<link>http://103.21.148.45:81/icomchannelvtc/vtc16_576/chunklist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC16 s3</title>
-<link>http://118.107.85.14:1935/tvnet/smil:vtc16.smil/chunklist_w829775148_b1000000.m3u8</link>
+<title>VTC16</title>
+<link>http://113.187.31.44:1935/live/_definst_/smil:vtc16.smil/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>HTV9</title>
-<link>http://118.107.85.14:1935/tvnet/smil:htv9.smil/chunklist_w1364354989_b1000000.m3u8</link>
+<link>http://118.107.85.14:1935/tvnet/smil:htv9.smil/chunklist_w1213462445_b1000000.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
@@ -408,7 +215,7 @@
 </item>
 <item>
 <title>HN1</title>
-<link>http://118.107.85.14:1935/tvnet/smil:hanoi1.smil/chunklist_w1696466190_b1000000.m3u8</link>
+<link>http://118.107.85.14:1935/tvnet/smil:hanoi1.smil/chunklist_w1802797027_b1000000.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
@@ -617,7 +424,7 @@
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>V STAR TV CHANNEL 57.11 Nam California s3</title>
+<title>V STAR TV CHANNEL 57.11  Nam California s3</title>
 <link>http://origin.onworldtv.com:1935/liveorigin/vstartv/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
@@ -666,152 +473,29 @@
 <link>http://ice5.securenetsystems.net:80/KVVN</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
-
-
-
-
-
 <item>
-<title>K+(253096)</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/253096&amp;mode=2&amp;name=K+(253096)</link>
+<title>Saigon Radio 900 AM Houston</title>
+<link>http://ice5.securenetsystems.net:80/KREH</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>K+(259091)</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/259091&amp;mode=2&amp;name=K+(259091)</link>
+<title>Saigon Radio Seattle</title>
+<link>http://170.75.194.209:8888</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>K+(259400)</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/259400&amp;mode=2&amp;name=K+(259400)</link>
+<title>Th?i Bo Radio Toronto</title>
+<link>http://209.250.131.2:8000/;stream.mp3</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>S1(262490)</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/262490&amp;mode=2&amp;name=S1(262490)</link>
+<title>Radio VNHN/VABC Falls Church</title>
+<link>http://vpr.serverroom.us:7492/;stream.mp3/playlist.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
-<item>
-<title>S2(262491)</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/262491&amp;mode=2&amp;name=S2(262491)</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>S3(262492)</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/262492&amp;mode=2&amp;name=S3(262492)</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>S4(262493)</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/262493&amp;mode=2&amp;name=S4(262493)</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>S5(262494)</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/262494&amp;mode=2&amp;name=S5(262494)</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>S6(262495)</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/262495&amp;mode=2&amp;name=S6(262495)</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>S7(262496)</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/262496&amp;mode=2&amp;name=S7(262496)</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>S8(262497)</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/262497&amp;mode=2&amp;name=S8(262497)</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>S9(262498)</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/262498&amp;mode=2&amp;name=S9(262498)</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>S10(262499)</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/262499&amp;mode=2&amp;name=S10(262499)</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Cinemax</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/148882&amp;mode=2&amp;name=Cinemax</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>AXN</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/253035&amp;mode=2&amp;name=AXN</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>HBO</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/149259&amp;mode=2&amp;name=HBO</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>HBO HD</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/259497&amp;mode=2&amp;name=HBO HD</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>TV1000</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/256337&amp;mode=2&amp;name=TV1000</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Filmbox</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/148981&amp;mode=2&amp;name=Filmbox</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Boomerang</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/149264&amp;mode=2&amp;name=Boomerang</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Cartoon Network</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/148254&amp;mode=2&amp;name=Cartoon Network</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>National Geographic</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/148248&amp;mode=2&amp;name=National Geographic</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>NATGEO CN</title>
-<link>plugin://program.plexus/?url=sop://124.232.150.188:3920/5699&amp;mode=2&amp;name=NATGEO CN</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>NatGeo Wild</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/253037&amp;mode=2&amp;name=NatGeo wild</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Discovery Channel</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/256241&amp;mode=2&amp;name=Discovery Channel</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Discovery Science</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/256243&amp;mode=2&amp;name=Discovery Science</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>DISCOVERY CN</title>
-<link>plugin://program.plexus/?url=sop://124.232.150.188:3920/5700&amp;mode=2&amp;name=DISCOVERY CN</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>BBC Earth</title>
-<link>plugin://program.plexus/?url=sop://broker.sopcast.com:3912/148257&amp;mode=2&amp;name=BBC Earth</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-
+  
+  
+  
 
 
 
