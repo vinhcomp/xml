@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <channels>
 <channel>
 <name>Movies</name>
@@ -13,14 +13,24 @@
 
 
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR gold]MoviesHD 1[/COLOR]</title>
-<link>redirecttomovieshd</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/movieshd.png</thumbnail>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR gold]123Movies[/COLOR]</title>
+<link>tomd123movies</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/123movies.png</thumbnail>
 </item>
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]MoviesHD 2[/COLOR]</title>
-<link>tomuttsnuts</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/movieshd.png</thumbnail>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Movie Vault[/COLOR]</title>
+<link>tomovievault</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movievault.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]MoviePool[/COLOR]</title>
+<link>tomoviepool</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/moviepool.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Movie M4U[/COLOR]</title>
+<link>tom4u</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/m4u.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | Watch32HD</title>
@@ -170,6 +180,16 @@
 <title>[COLOR yellow]Vietnamese[/COLOR] | Xóm Giải Trí</title>
 <link>redirecttoxomgiaitri</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/xomgiaitri.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Vietnamese[/COLOR] | Phim Mới</title>
+<link>tophimmoi</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phimmoi.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Vietnamese[/COLOR] | XSHARE</title>
+<link>toxshare</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xshare.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR blueviolet]Mega-Fun[/COLOR]</title>
