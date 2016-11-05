@@ -20,7 +20,7 @@
      
 
 <item>
-<title>[COLOR cyan][B]* Live TV Hải Ngoại *[/B]</title>
+<title>[COLOR cyan][B]* Live TV Hải Ngoại *[/B][/COLOR]</title>
 <link>http://64.71.129.2:8080/hls/ius_000114.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
@@ -75,12 +75,12 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
 <item>
-<title>[COLOR cyan][B] Việt Phố [/B] [/COLOR]</title>
+<title>[COLOR cyan][B]Việt Phố[/B][/COLOR]</title>
 <link>rtmp://63.143.59.125/live playpath=myStream swfUrl=http://vietpho.com/ext/js/3/mediaplayer.swf pageUrl=http://vietpho.com/online-channels.php</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
 <item>
-<title>[COLOR cyan][B] Việt News TV – Nam California[/B]</title>
+<title>[COLOR cyan][B]Việt News TV – Nam California[/B][/COLOR]</title>
 <link>http://vietnews.saigon.ns01.us:1935/VietNews/myStream/chunklist_w107230799.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
