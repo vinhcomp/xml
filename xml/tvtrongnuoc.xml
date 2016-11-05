@@ -34,7 +34,7 @@
 
 
 <item>
-<title>[COLOR lime]✫-✫-✫ Updated 10-16-2016 ✫-✫-✫[/COLOR]</title>
+<title>[COLOR lime]✫-✫-✫ Updated 11-04-2016 ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
@@ -44,456 +44,834 @@
 
   
 <item>
-<title>VTV1 s1</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtv1.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<title>VTV1</title>
+<link>http://123.30.185.126/hls/vtv1.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTV1 s2</title>
-<link>http://123.30.191.202/hls/vtv1.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTV2 s1</title>
-<link>http://103.21.148.45:81/icomchannelvtc/vtc12_576/chunklist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTV2 s2</title>
-<link>http://123.30.191.202/hls/vtv2.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<title>VTV2</title>
+<link>http://123.30.185.126/hls/vtv2.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VTV3</title>
-<link>http://123.30.191.202/hls/vtv3.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTV4</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtv4.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTV5</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtv5.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<link>http://123.30.185.126/hls/vtv3.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VTV6 HD</title>
 <link>http://113.185.19.171:8081/livedemo/vtv6hd-vtv-abr/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VTV8</title>
-<link>rtmp://znzjssjl.cdnviet.com/pnwjyhx/_definst_/livestream</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<link>http://znzjssjl.cdnviet.com/pnwjyhx/_definst_/livestream/chunklist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VOV</title>
-<link>http://live.cdn.mobifonetv.vn/motv2/vov_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<title>VOV s1</title>
+<link>http://live.cdn.mobifonetv.vn/motv2/vov_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VOV s2</title>
+<link>http://103.21.148.45:81/icomchannelvtc/smil:vov_adb_security.smil/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>ANTV s1</title>
+<link>http://live.cdn.mobifonetv.vn/motv/antv_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>ANTV s2</title>
+<link>http://123.30.185.126/hls/antv.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>TTXVN s1</title>
+<link>http://live.cdn.mobifonetv.vn/motv2/ttxvn_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>TTXVN s2</title>
+<link>http://118.107.85.14:1935/tvnet/smil:ttxvn.smil/chunklist_w848419920_b1000000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VIETNAMNET</title>
-<link>http://live.cdn.mobifonetv.vn/motv/vietnamnet_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<link>http://live.cdn.mobifonetv.vn/motv/vietnamnet_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>QPVN</title>
+<link>rtmp://125.212.132.219/standard/_definst_/mp4:standard_480p</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>NHAN DAN</title>
+<link>rtmp://203.162.121.235:1935/live/truyenhinhnhandan720</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>QUOC HOI</title>
-<link>http://live.cdn.mobifonetv.vn/motv/quochoi_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>TTXVN</title>
-<link>http://live.cdn.mobifonetv.vn/motv2/ttxvn_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC1 s1</title>
-<link>http://117.103.224.222:1935/live/_definst_/VTC1HD_2016.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC1 s2</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc1.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC2</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc2.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC3 s1</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc3.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC3 s2</title>
-<link>http://117.103.224.222:1935/live/_definst_/VTC3HD_2016.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC4</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc4.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC5</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc5.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC6</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc6.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC7</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc7.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC8</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc8.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC9</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc9.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC10</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc10.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC11</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc11.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC12</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc12.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC13</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc13.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC13 s2</title>
-<link>http://117.103.224.222:1935/live/_definst_/smil:iTVHD_2016.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC14</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc14.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC15</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc15.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC16</title>
-<link>http://113.187.31.44:1935/live/_definst_/smil:vtc16.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>HTV9</title>
-<link>http://118.107.85.14:1935/tvnet/smil:htv9.smil/chunklist_w1213462445_b1000000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<link>http://live.cdn.mobifonetv.vn/motv/quochoi_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>HTVC FBNC</title>
-<link>http://live.cdn.mobifonetv.vn/motv/fbnc_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<link>http://live.cdn.mobifonetv.vn/motv/fbnc_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>HN1</title>
-<link>http://118.107.85.14:1935/tvnet/smil:hanoi1.smil/chunklist_w1802797027_b1000000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<title>VTC Play</title>
+<link>http://117.103.224.222:1935/live/_definst_/VTCPlay_music/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC1 s1</title>
+<link>http://live.cdn.mobifonetv.vn/motv2/vtc1_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC1 S2</title>
+<link>http://117.103.224.222:1935/live/_definst_/VTC1HD_2016.smil/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC1 s3</title>
+<link>http://123.30.185.126/hls/vtc1.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC1 HD</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc1.smil/chunklist_b1500000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC2</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc2.smil/chunklist_b900000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC3 S1</title>
+<link>http://117.103.224.222:1935/live/_definst_/VTC3HD_2016.smil/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC3 S2</title>
+<link>http://123.30.185.126/hls/vtc3.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC3 HD</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc3.smil/chunklist_b1500000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC4</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc4.smil/chunklist_b900000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC5</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc5.smil/chunklist_b900000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC6</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc6.smil/chunklist_b900000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC7</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc7.smil/chunklist_b900000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC8</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc8.smil/chunklist_b900000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC9 s1</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc9.smil/chunklist_b900000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC9 s2</title>
+<link>http://14.161.5.88:1935/live/myStream/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC10 s1</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc10.smil/chunklist_b900000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC10 s2</title>
+<link>http://118.107.71.15:1935/live/_definst_/VTC10/VTC10_640x360_800kbps.stream/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC11</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc11.smil/chunklist_b900000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC12</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc12.smil/chunklist_b900000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC13 s1</title>
+<link>http://live.cdn.mobifonetv.vn/motv/itvhd_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC13 S2</title>
+<link>http://117.103.224.222:1935/live/_definst_/smil:iTVHD_2016.smil/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC13 s3</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc13.smil/chunklist_b1500000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC13 s4</title>
+<link>http://censoft.mobi:1935/tvviet/vtc12.stream/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC14 S1</title>
+<link>http://live.cdn.mobifonetv.vn/motv/vtc14_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC14 S2</title>
+<link>http://censoft.mobi:1935/tvviet/vtc14.stream/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC14 HD</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc14.smil/chunklist_b1500000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC16 s1</title>
+<link>http://live.cdn.mobifonetv.vn/motv/vtc14_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VTC16 s2</title>
+<link>http://45.121.26.49:1935/live/_definst_/smil:vtc16.smil/chunklist_b900000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>ANTG HD</title>
+<link>http://live.cdn.mobifonetv.vn/motv/antg_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>NCM BTV10</title>
+<link>http://live.cdn.mobifonetv.vn/motv/ncm_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Phim hay</title>
+<link>http://live.cdn.mobifonetv.vn/motv3/phimhay_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Mien Tay</title>
+<link>http://live.cdn.mobifonetv.vn/motv2/mientay_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VIETTEEN</title>
+<link>http://live.cdn.mobifonetv.vn/motv/vietten_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>SAM BTV11 TV</title>
+<link>http://live.cdn.mobifonetv.vn/motv/sam_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>ANVIEN HD</title>
+<link>http://live.cdn.mobifonetv.vn/motv/anvienhd_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Nhac Co Dien</title>
+<link>http://live.cdn.mobifonetv.vn/motv3/nhaccodien_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Nhac Tru Tinh</title>
+<link>http://live.cdn.mobifonetv.vn/motv3/nhactrutinh_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Nhac Dan Toc</title>
+<link>http://live.cdn.mobifonetv.vn/motv3/nhacdantoc_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Nhac Nam Bo</title>
+<link>http://live.cdn.mobifonetv.vn/motv3/nhacnambo_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Nhac Tre</title>
+<link>http://live.cdn.mobifonetv.vn/motv3/nhactre_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Nhac Nhe</title>
+<link>http://live.cdn.mobifonetv.vn/motv3/nhacnhe_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Nhac Cach Mang</title>
+<link>http://live.cdn.mobifonetv.vn/motv3/nhaccachmang_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Doc Sach</title>
+<link>http://live.cdn.mobifonetv.vn/motv3/docsach_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Ha Noi 1</title>
+<link>http://123.30.185.126/hls/hanoi1.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Ha Noi 2</title>
+<link>http://123.30.185.126/hls/hanoi2.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>SCTV5</title>
+<link>http://vtsstr4.sctv.vn:1935/testlive/SCTV5_SD.smil/chunklist_w411708802_b2292000.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>HA GIANG</title>
+<link>http://118.107.76.15:1935/live/_definst_/HG/HG_640x480_1200kbps.stream/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>CAO BANG</title>
 <link>http://118.107.76.15:1935/live/_definst_/CB/CB_live.smil/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Bac Can</title>
 <link>http://118.107.76.15:1935/live/_definst_/BK/BK_640x480_1200kbps.stream/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>L?ng Son</title>
 <link>rtmp://123.18.206.40:1935/live/livestream</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Thai Nguyen</title>
+<link>rtmp://45.124.85.26/oflaDemo/livestream</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Hoa Binh</title>
+<link>http://123.30.185.126/hls/hoabinh.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Phu Tho</title>
+<link>http://118.107.76.15:1935/live/_definst_/PT/smil:PT_live.smil/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Hai Phong</title>
+<link>rtmp://125.212.131.31/live/livestream</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Quang Ninh 1</title>
 <link>rtmp://123.29.68.44/hctv/vstv020</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Quang Ninh 3</title>
 <link>rtmp://123.29.68.44/hctv/vstv021</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Hung Yen</title>
+<link>http://42.112.16.101:1935/live/HYTV/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VINH PHUC</title>
 <link>rtmp://117.6.162.63/live/thvp</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>HaNam</title>
 <link>rtmp://113.160.198.111:8086/live//hanamtv</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Thanh Hoa</title>
+<link>http://123.30.185.126/hls/ttv.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Ha Tinh</title>
 <link>http://hatinhtv.vn/liveevent.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Quang Tri</title>
 <link>rtmp://123.25.117.9:80/live/qtv</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>THUA THIEN HUE</title>
 <link>rtmp://118.69.176.149:1935/live/trt</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Da Nang 1</title>
+<link>http://drtdnglive.e49a7c38.cdnviet.com/livedrt1/chunklist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Da Nang 2</title>
-<link>rtmp://drt.danang.vn/live/livestream</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<link>http://drtdnglive.e49a7c38.cdnviet.com/livedrt2/chunklist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Quang Nam</title>
+<link>rtmp://113.161.6.157:1935/live/livestream</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Binh Dinh</title>
+<link>http://123.30.185.126/hls/binhdinh.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Khanh Hoa</title>
 <link>rtmp://118.69.198.109/live/video</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>GIA LAI</title>
 <link>rtmp://222.255.169.132/live/livestream</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>DAK NONG</title>
 <link>rtmp://222.255.158.22/live/truyenhinh</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Binh Phuoc 1</title>
+<link>http://118.69.197.145/hls/bptv1.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Binh Phuoc 2</title>
+<link>http://118.69.197.145/hls/bptv2.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Ba Ria-Vung Tau</title>
 <link>rtmp://113.163.216.24:1935/live/livestream</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>Vinh long 1</title>
-<link>http://live.cdn.mobifonetv.vn/motv/vinhlong1_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<title>Vinh long 1 s1</title>
+<link>http://live.cdn.mobifonetv.vn/motv/vinhlong1_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>Vinh long 2</title>
-<link>http://live.cdn.mobifonetv.vn/motv2/vinhlong2_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<title>Vinh long 1 s2</title>
+<link>http://123.30.108.72/hls/thvl1.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>Tien Giang</title>
-<link>http://live.cdn.mobifonetv.vn/motv2/tiengiang_hls.smil/chunklist_b1200000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<title>Vinh long 2 s1</title>
+<link>http://live.cdn.mobifonetv.vn/motv2/vinhlong2_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Vinh long 2 s2</title>
+<link>http://123.30.108.72/hls/thvl2.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Ben Tre</title>
+<link>rtmp://113.163.94.245/livepkgr/thbt</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Soc trang</title>
 <link>rtmp://115.78.3.164/live/stv1</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Tra Vinh</title>
+<link>http://123.30.185.126/hls/travinh.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Bac Lieu</title>
 <link>rtmp://118.69.205.213/livepkgr/livestream1</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Tien Giang</title>
+<link>http://123.30.185.126/hls/tiengiang.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>An Giang</title>
 <link>rtmp://113.161.212.25/live//atv1</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Hau Giang</title>
+<link>rtmp://123.30.110.170:1939/thhg/thhg</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Ca Mau</title>
 <link>rtmp://113.161.220.254:1935/livepkgr/livestream2</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VIETFACE 57.2</title>
 <link>http://vftv.saigon.ns01.us:1935/vf572caliisai/myStream/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>TEXAS )</title>
 <link>http://origin.onworldtv.com:1935/liveorigin/sgn/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>SAIGONTV 55.3</title>
 <link>http://origin3-edge2.yourstreamlive.com:1935/live/yourstreamlive/amlst:out_1651_211xdnzd/chunklist_w136554602_b350000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>CALIFORNIA)</title>
 <link>http://63.143.59.125:1935/live/myStream/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VIET GLOBAL</title>
 <link>http://origin1-edge2.yourstreamlive.com:1935/live/yourstreamlive/out_956_2kr6rvfu/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>KVLA</title>
 <link>http://kvla.saigon.ns01.us:1935/kvla/myStream/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VBS TELEVISION Channel 57.6 s1</title>
 <link>http://uni6rtmp.tulix.tv:1935/vbstv/vbsabr.smil/chunklist_w439903609_b1228800.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VBS TELEVISION Channel 57.6 s2</title>
 <link>http://69.75.17.10:1935/vbstv/myStream/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>YOU STREAMLIVE</title>
 <link>http://origin3-edge2.yourstreamlive.com:1935/live/yourstreamlive/amlst:out_1651_211xdnzd/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VIETBAY</title>
 <link>http://64.71.129.2:8080/hls/ius_000131.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>ITV SHOP</title>
 <link>http://origin.onworldtv.com:1935/liveorigin/itvshop/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VNATV 57.3 s1</title>
 <link>http://stream.onworldtv.com/edge/liveorigin/vna/index.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VNATV 57.3 s2</title>
 <link>http://origin.onworldtv.com:1935/liveorigin/vna/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VNATV 57.3 s3</title>
 <link>http://livestream.vnvn.net/vnatv573.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>S CHANNEL TV 56.6 Live TV</title>
 <link>http://64.71.129.2:8080/hls/ius_000114.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>IBC NEWS</title>
 <link>rtmp://liveplay3.malimarcdn.com/ibcnews/ibcnews.sdp</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VIETSET 57.4</title>
 <link>http://69.75.17.10:1935/vietset574tvv/myStream/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VSTAR TV s1</title>
 <link>http://204.9.200.251:1935/liveorigin/vstartv/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VSTAR TV s2</title>
 <link>http://stream.onworldtv.com/edge/liveorigin/vstartv/index.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>V STAR TV CHANNEL 57.11  Nam California s3</title>
+<title>V STAR TV CHANNEL 57.11 Nam California s3</title>
 <link>http://origin.onworldtv.com:1935/liveorigin/vstartv/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Cng Gio TV</title>
 <link>http://conggiao.saigon.ns01.us:1935/conggiao/myStream/chunklist_w1690292235.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VIETCHRISTIAN</title>
 <link>mms://live.vietchristian.com/tv</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>KEENG TV</title>
 <link>http://125.235.29.16/livetv/keeng.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VIET MY TV</title>
 <link>http://68.235.37.11:1935/vietmagazine/vietmagazine/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>GEORGIA</title>
 <link>http://68.235.35.243:1935/vietsongmedia/smil:vietsongmedia.smil/chunklist_w1989372860_b478000_slEng.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Nail & Beauty Channel</title>
 <link>http://stream.onworldtv.com/edge/liveorigin/lexor/index.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
+
+
+
 <item>
 <title>Radio Bolsa Westminster</title>
 <link>http://ice7.securenetsystems.net/RBVU?type=.flv</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Saigon Radio 106.3 FM Los Angeles</title>
 <link>http://ice5.securenetsystems.net:80/KALI</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Saigon Radio 1430 AM San Jose</title>
 <link>http://ice5.securenetsystems.net:80/KVVN</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Saigon Radio 900 AM Houston</title>
 <link>http://ice5.securenetsystems.net:80/KREH</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Saigon Radio Seattle</title>
 <link>http://170.75.194.209:8888</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Th?i Bo Radio Toronto</title>
 <link>http://209.250.131.2:8000/;stream.mp3</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Radio VNHN/VABC Falls Church</title>
 <link>http://vpr.serverroom.us:7492/;stream.mp3/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
-  
+<item>
+<title>Showtime</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/26.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Starz Encore</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/34.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>BRAVO</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/5.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>TNT</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/10.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>SYFY</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/11.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>A&E</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/2.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>HBO Zone</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/21.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>HBO Signature</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/22.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Cinemax ActionMax</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/25.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>Showtime Showcase</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/28.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>NBCSN</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/42.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>FS2</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/46.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>NETWORK</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/49.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>VERSUS HD</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/50.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>NHL</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/51.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>TSN1</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/55.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>TSN2</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/56.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>FOX</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/7.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>NATGEO</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/39.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>NATGEO WILD</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/40.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>DISCOVERY ID</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/41.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>TLC</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/18.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>ANIMALPLANET</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/37.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>H2</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/36.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>NBC</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/1.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>ABC</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/3.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>AMC</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/4.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>SPIKE</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/12.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>COMEDY CENTER</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/14.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>LIFETIME</title>
+<link>http://46.166.162.35:9090/load/b0922f3fa8aa/15.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+
   
   
 
