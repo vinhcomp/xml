@@ -343,7 +343,7 @@
 </item>
 <item>
 <title>Khánh Hòa KTV</title>
-<link>rtmp://118.69.198.109:1935/live/ playpath=video swfUrl=http://hktivi.net/player.swf swfVfy=true live=true timeout=90</link>
+<link>http://210.245.20.94/hls/ktv3.m3u8</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
