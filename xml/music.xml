@@ -8,12 +8,7 @@
 <thumbnail>http://www.phim.media/upload/images/phim/phim/thuy-nga-114-toi-la-nguoi-viet-nam.png</thumbnail>
 <items>
 
-
-<item>
-<title>[COLOR lime]Thúy Nga 120 - Live Streaming[/COLOR] - [COLOR ffff0000]Phỏng Vấn Ca Sĩ[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=plugin%3A%2F%2Fplugin.video.youtube%2Fplay%2F%3Fvideo_id%3DFhpgNYqkJ3c&mode=100</link>
-<thumbnail>https://i.ytimg.com/vi/FhpgNYqkJ3c/hqdefault.jpg</thumbnail>
-</item>  
+ 
 <item>
 <title>[COLOR yellow]Thúy Nga 119 - Nhạc Vàng Muôn Thuở[/COLOR] - [COLOR ffff0000]HD Full[/COLOR]</title>
 <link>plugin://plugin.video.gdrive?mode=streamURL&url=https://drive.google.com/open?id=0B54vn4Nax84MWnJnNGFUcU9KRmc</link>
