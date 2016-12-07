@@ -5,6 +5,11 @@
 <items>
 
 <item>
+<title>[COLOR lime]Thúy Nga 120 - Live Streaming[/COLOR] - [COLOR ffff0000]Phỏng Vấn Ca Sĩ[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=plugin%3A%2F%2Fplugin.video.youtube%2Fplay%2F%3Fvideo_id%3DFhpgNYqkJ3c&mode=100</link>
+<thumbnail>https://i.ytimg.com/vi/FhpgNYqkJ3c/hqdefault.jpg</thumbnail>
+</item> 
+<item>
 <title>[COLOR yellow]VTV1[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=15858&url=Npty46sDGrBfKBBwYwNOlIykkYP0H23hVMUzlN1sDXMRwIHbAUYr3HyTXZL4pkctJgjkvY2nm33qov1l8p%2B3bA%3D%3D&sf_options=winID%3D10025%26_options_sf&quot</link>
 <thumbnail>https://tvstatic.vcmedia.vn/vtv/vtv1-thumb.jpg</thumbnail>
