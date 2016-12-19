@@ -39,7 +39,7 @@
 
 <item>
 <title>CNN</title>
-<link>http://d1hya96e2cm7qi.cloudfront.net/Live/_definst_/sweetbcha1novD177_W_150.sdp/chunklist.m3u8</link>
+<link>rtmp://argos.cdn.newschat.tv/edge playpath=cnn_live swfUrl=http://newschat.tv/player.swf pageUrl=http://www.livenewschat.eu/top/</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
 </item>
 
