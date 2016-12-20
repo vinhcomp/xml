@@ -48,12 +48,65 @@
 <link>http://185.59.222.232/p2p/fb655e03035550c14fc2bcc65d40cff8.m3u8?st=TZdXxjCxDgvBw6Z2ojtB4A&e=1482799447|User-Agent=Mozilla%2F5.0 (Linux%3B Android 5.1.1%3B Nexus 5 Build%2FLMY48B%3B wv) AppleWebKit%2F537.36 (KHTML%2C like Gecko) Version%2F4.0 Chrome%2F43.0.2357.65 Mobile Safari%2F537.36&referer=mobdro.me</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
 </item>
-  
+
 <item>
 <title>[COLOR yellow]CNN[/COLOR]</title>
 <link>rtmp://argos.cdn.newschat.tv/edge playpath=cnn_live swfUrl=http://newschat.tv/player.swf pageUrl=http://www.livenewschat.eu/top/</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
 </item>
+
+
+<item>
+<title>[COLOR yellow]NBC HD[/COLOR]</title>
+<link>http://127.0.0.1:19098/livestreamer/aGxzOi8vaHR0cDovLzE4NS41OS4yMjIuMjMyL3AycC8zYmFmN2RiMGQ4ZjFkNDAwODE2ZmI2MTY2YjI5N2Y0Ni5tM3U4P3N0PVlzeFJQY0wyNzBEWnhsWVptc1Jic0EmZT0xNDgyODE2NTYwfFVzZXItQWdlbnQ9TW96aWxsYSUyRjUuMCUyMCUyOExpbnV4JTNCJTIwQW5kcm9pZCUyMDUuMS4xJTNCJTIwTmV4dXMlMjA1JTIwQnVpbGQlMkZMTVk0OEIlM0IlMjB3diUyOSUyMEFwcGxlV2ViS2l0JTJGNTM3LjM2JTIwJTI4S0hUTUwlMkMlMjBsaWtlJTIwR2Vja28lMjklMjBWZXJzaW9uJTJGNC4wJTIwQ2hyb21lJTJGNDMuMC4yMzU3LjY1JTIwTW9iaWxlJTIwU2FmYXJpJTJGNTM3LjM2JnJlZmVyZXI9bW9iZHJvLm1l</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]ABC HD[/COLOR]</title>
+<link>http://127.0.0.1:19098/livestreamer/aGxzOi8vaHR0cDovLzQ2LjIzNC4xMTMuMi9wMnAvYmEzNTQxNDlmM2MxMTdjZWI2OTUyOWExNTQyYjYyODEubTN1OD9zdD1MWTVMd3d4TFZDNFdYd1ZKbi1yNkdnJmU9MTQ4MjgxNjYzMXxVc2VyLUFnZW50PU1vemlsbGElMkY1LjAlMjAlMjhMaW51eCUzQiUyMEFuZHJvaWQlMjA1LjEuMSUzQiUyME5leHVzJTIwNSUyMEJ1aWxkJTJGTE1ZNDhCJTNCJTIwd3YlMjklMjBBcHBsZVdlYktpdCUyRjUzNy4zNiUyMCUyOEtIVE1MJTJDJTIwbGlrZSUyMEdlY2tvJTI5JTIwVmVyc2lvbiUyRjQuMCUyMENocm9tZSUyRjQzLjAuMjM1Ny42NSUyME1vYmlsZSUyMFNhZmFyaSUyRjUzNy4zNiZyZWZlcmVyPW1vYmRyby5tZQ==</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]CBS HD[/COLOR]</title>
+<link>http://127.0.0.1:19098/livestreamer/aGxzOi8vaHR0cDovLzE4NS41OS4yMjIuMjMyL3AycC80ZDBmYWRjYTI2ODZhMmNkZDRhNGE2NjIzMjEyNDQ5Yy5tM3U4P3N0PW5uX1VnWmtsSGh0dk1EeVFJbEpmaUEmZT0xNDgyODExMjc1fFVzZXItQWdlbnQ9TW96aWxsYSUyRjUuMCUyMCUyOExpbnV4JTNCJTIwQW5kcm9pZCUyMDUuMS4xJTNCJTIwTmV4dXMlMjA1JTIwQnVpbGQlMkZMTVk0OEIlM0IlMjB3diUyOSUyMEFwcGxlV2ViS2l0JTJGNTM3LjM2JTIwJTI4S0hUTUwlMkMlMjBsaWtlJTIwR2Vja28lMjklMjBWZXJzaW9uJTJGNC4wJTIwQ2hyb21lJTJGNDMuMC4yMzU3LjY1JTIwTW9iaWxlJTIwU2FmYXJpJTJGNTM3LjM2JnJlZmVyZXI9bW9iZHJvLm1l</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]FOX HD[/COLOR]</title>
+<link>http://127.0.0.1:19098/livestreamer/aGxzOi8vaHR0cDovLzE4NS4xNTIuNjQuMjM1L3AycC8xMjQzNTU5MzI1NWUwNjk2ZWMwYTA5MDcxYjk2Zjk3ZS5tM3U4P3N0PXpvUmRlN19meWtvNmFiM3BqM0Z6UlEmZT0xNDgyODA5NDM5fFVzZXItQWdlbnQ9TW96aWxsYSUyRjUuMCUyMCUyOExpbnV4JTNCJTIwQW5kcm9pZCUyMDUuMS4xJTNCJTIwTmV4dXMlMjA1JTIwQnVpbGQlMkZMTVk0OEIlM0IlMjB3diUyOSUyMEFwcGxlV2ViS2l0JTJGNTM3LjM2JTIwJTI4S0hUTUwlMkMlMjBsaWtlJTIwR2Vja28lMjklMjBWZXJzaW9uJTJGNC4wJTIwQ2hyb21lJTJGNDMuMC4yMzU3LjY1JTIwTW9iaWxlJTIwU2FmYXJpJTJGNTM3LjM2JnJlZmVyZXI9bW9iZHJvLm1l</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]ESPN HD[/COLOR]</title>
+<link>http://127.0.0.1:19098/livestreamer/aGxzOi8vaHR0cDovLzE4NS4xNTIuNjQuMjM2L3AycC9hY2EwYTMxZDE0Yzg1ZTE5ZjcwMjNjOWEzODg5ZjM3Yi5tM3U4P3N0PVdMWHRCeEhsX0lJMmtTUlVBWHBkc1EmZT0xNDgyODQ5NjI4fFVzZXItQWdlbnQ9TW96aWxsYSUyRjUuMCUyMCUyOExpbnV4JTNCJTIwQW5kcm9pZCUyMDUuMS4xJTNCJTIwTmV4dXMlMjA1JTIwQnVpbGQlMkZMTVk0OEIlM0IlMjB3diUyOSUyMEFwcGxlV2ViS2l0JTJGNTM3LjM2JTIwJTI4S0hUTUwlMkMlMjBsaWtlJTIwR2Vja28lMjklMjBWZXJzaW9uJTJGNC4wJTIwQ2hyb21lJTJGNDMuMC4yMzU3LjY1JTIwTW9iaWxlJTIwU2FmYXJpJTJGNTM3LjM2JnJlZmVyZXI9bW9iZHJvLm1l</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]A&E HD[/COLOR]</title>
+<link>http://185.152.64.236/p2p/ce425ca32dea0f37b22717ae989bcffb.m3u8?st=GgCsbbxNU2GlJSHaX5VZRA&e=1482725688|User-Agent=Mozilla%2F5.0 (Linux%3B Android 5.1.1%3B Nexus 5 Build%2FLMY48B%3B wv) AppleWebKit%2F537.36 (KHTML%2C like Gecko) Version%2F4.0 Chrome%2F43.0.2357.65 Mobile Safari%2F537.36&referer=mobdro.me</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]AMC HD[/COLOR]</title>
+<link>http://185.152.64.235/p2p/b06316b29b6c788ecf95287567cb2a3a.m3u8?st=OpvWd1UGXKKDLE7kGiM2-Q&e=1482725704|User-Agent=Mozilla%2F5.0 (Linux%3B Android 5.1.1%3B Nexus 5 Build%2FLMY48B%3B wv) AppleWebKit%2F537.36 (KHTML%2C like Gecko) Version%2F4.0 Chrome%2F43.0.2357.65 Mobile Safari%2F537.36&referer=mobdro.me</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]TBS HD[/COLOR]</title>
+<link>http://185.59.222.232/p2p/d377ff63e9e229343418ba065acb643f.m3u8?st=tJrB8vokt492Mypy-jRGxg&e=1482725719|User-Agent=Mozilla%2F5.0 (Linux%3B Android 5.1.1%3B Nexus 5 Build%2FLMY48B%3B wv) AppleWebKit%2F537.36 (KHTML%2C like Gecko) Version%2F4.0 Chrome%2F43.0.2357.65 Mobile Safari%2F537.36&referer=mobdro.me</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]TNT HD[/COLOR]</title>
+<link>http://185.152.64.236/p2p/e00dd9ccbf6cba8e47ca458993f307c1.m3u8?st=SzpOCWVmIch9BApWWfxsuQ&e=1482725735|User-Agent=Mozilla%2F5.0 (Linux%3B Android 5.1.1%3B Nexus 5 Build%2FLMY48B%3B wv) AppleWebKit%2F537.36 (KHTML%2C like Gecko) Version%2F4.0 Chrome%2F43.0.2357.65 Mobile Safari%2F537.36&referer=mobdro.me</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]USA Network HD[/COLOR]</title>
+<link>http://185.59.222.232/p2p/0e367435d4bc1a89ea7506cf0eadb3a7.m3u8?st=9VtWf_9zBxZX-OHFdmdaTA&e=1482725778|User-Agent=Mozilla%2F5.0 (Linux%3B Android 5.1.1%3B Nexus 5 Build%2FLMY48B%3B wv) AppleWebKit%2F537.36 (KHTML%2C like Gecko) Version%2F4.0 Chrome%2F43.0.2357.65 Mobile Safari%2F537.36&referer=mobdro.me</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
+</item>
+
 
 
 
