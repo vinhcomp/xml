@@ -9,11 +9,11 @@
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR mediumspringgreen]India[/COLOR] | [COLOR cornflowerblue]Zem TV[/COLOR]</title>
 <link>tozemtv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/zemtv.png</thumbnail>
-</item>  
+</item>
 <item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Cables TV Channels[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/cablestv.png</thumbnail>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Made In Canada[/COLOR]</title>
+<link>tomic/link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/mic.png</thumbnail>
 </item>
 <item>
 <title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Phoenix TV[/COLOR]</title>
@@ -49,6 +49,11 @@
 <title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Shahid Arabic[/COLOR]</title>
 <link>redirecttoshahidmbc</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/shahidmbc.png</thumbnail>
+</item>
+<item>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Cables TV Channels[/COLOR]</title>
+<link>tocablestv</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/cablestv.png</thumbnail>
 </item>
 
 </items>
