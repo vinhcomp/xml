@@ -30,6 +30,11 @@
 <link>tom4u</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/m4u.png</thumbnail>
 </item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | Phoenix</title>
+<link>tophoenix</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phoenix.png</thumbnail>
+</item>
 
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Yes Movies[/COLOR]</title>
@@ -67,41 +72,26 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/moviepool.png</thumbnail>
 </item>
 <item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]1Channel[/COLOR]</title>
+<link>redirectto1channel</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/1channel.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Icefilms[/COLOR]</title>
+<link>toicefilms</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/icefilms.png</thumbnail>
+</item>
+<item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR mediumspringgreen]India[/COLOR] | [COLOR cornflowerblue]Zem TV[/COLOR]</title>
 <link>tozemtv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/zemtv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | Watch32HD</title>
-<link>tomdwatch32hd</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdwatch32hd.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | Xmovies8</title>
-<link>toxmovies8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xmovies8.png</thumbnail>
-</item>
-
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR blue]Movies GenVideos[/COLOR]</title>
-<link>tomdgenvideos</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdgenvideos.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | Phoenix</title>
-<link>tophoenix</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phoenix.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | Entertainment HUB</title>
 <link>toenter</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/enter.png</thumbnail>
 </item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | 1Channel</title>
-<link>redirectto1channel</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/1channel.png</thumbnail>
-</item>
+
 
 
 <item>
@@ -128,6 +118,21 @@
 <title>[COLOR mediumspringgreen]English[/COLOR] | Vodlocker</title>
 <link>tomdvodlocker</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdvodlocker.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | Watch32HD</title>
+<link>tomdwatch32hd</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdwatch32hd.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | Xmovies8</title>
+<link>toxmovies8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xmovies8.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR blue]Movies GenVideos[/COLOR]</title>
+<link>tomdgenvideos</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdgenvideos.png</thumbnail>
 </item>
 
 
