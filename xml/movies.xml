@@ -36,11 +36,7 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phoenix.png</thumbnail>
 </item>
 
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Yes Movies[/COLOR]</title>
-<link>tomdyesmovies</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/yesmovies.png</thumbnail>
-</item>
+
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Happy Movies[/COLOR]</title>
 <link>tohappymovies</link>
@@ -103,6 +99,11 @@
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR gold]123Movies[/COLOR]-[COLOR red]Under Maintenance[/COLOR]</title>
 <link>tomd123movies</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/123movies.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Yes Movies[/COLOR]</title>
+<link>tomdyesmovies</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/yesmovies.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | Yify HD</title>
