@@ -4,19 +4,7 @@
 <name>Movies</name>
 <items>
 
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR aqua]HD-Movie14[/COLOR]</title>
-<link>tomdhdmovie14</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdhdmovie14.png</thumbnail>
-</item>
 
-
-
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR gold]123Movies[/COLOR]</title>
-<link>tomd123movies</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/123movies.png</thumbnail>
-</item>
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR red]Kids[/COLOR] | [COLOR aqua]Cartoons 8[/COLOR]</title>
 <link>tocartoons8</link>
@@ -36,6 +24,27 @@
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]HD Box[/COLOR]</title>
 <link>tomdhdbox</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdhdbox.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Movie M4U[/COLOR]</title>
+<link>tom4u</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/m4u.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Yes Movies[/COLOR]</title>
+<link>tomdyesmovies</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdyesmovies.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Happy Movies[/COLOR]</title>
+<link>tohappymovies</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/happymovies.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Sure Shot[/COLOR]</title>
+<link>tosureshot</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sureshot.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]PubFilm[/COLOR]</title>
@@ -61,11 +70,6 @@
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR mediumspringgreen]India[/COLOR] | [COLOR cornflowerblue]Zem TV[/COLOR]</title>
 <link>tozemtv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/zemtv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Movie M4U[/COLOR]</title>
-<link>tom4u</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/m4u.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | Watch32HD</title>
@@ -97,6 +101,18 @@
 <title>[COLOR mediumspringgreen]English[/COLOR] | 1Channel</title>
 <link>redirectto1channel</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/1channel.png</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR aqua]HD-Movie14[/COLOR]-[COLOR red]Under Maintenance[/COLOR]</title>
+<link>tomdhdmovie14</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdhdmovie14.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR gold]123Movies[/COLOR][COLOR red]Under Maintenance[/COLOR]</title>
+<link>tomd123movies</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/123movies.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | Yify HD</title>
