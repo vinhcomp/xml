@@ -11,43 +11,6 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cartoons8.png</thumbnail>
 </item>
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Movie Vault[/COLOR]</title>
-<link>tomovievault</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movievault.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Afdah[/COLOR]</title>
-<link>tomdafdah</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdafdah.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]HD Box[/COLOR]</title>
-<link>tomdhdbox</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdhdbox.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Movie M4U[/COLOR]</title>
-<link>tom4u</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/m4u.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]Phoenix[/COLOR]</title>
-<link>tophoenix</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phoenix.png</thumbnail>
-</item>
-
-
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Happy Movies[/COLOR]</title>
-<link>tohappymovies</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/happymovies.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Sure Shot[/COLOR]</title>
-<link>tosureshot</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sureshot.png</thumbnail>
-</item>
-<item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]PubFilm[/COLOR]</title>
 <link>tomdpubfilm</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdpubfilm.png</thumbnail>
@@ -63,10 +26,27 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdluckytv.png</thumbnail>
 </item>
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]MoviePool[/COLOR]</title>
-<link>tomoviepool</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/moviepool.png</thumbnail>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Movie M4U[/COLOR]</title>
+<link>tom4u</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/m4u.png</thumbnail>
 </item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]Phoenix[/COLOR]</title>
+<link>tophoenix</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phoenix.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Happy Movies[/COLOR]</title>
+<link>tohappymovies</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/happymovies.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Sure Shot[/COLOR]</title>
+<link>tosureshot</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sureshot.png</thumbnail>
+</item>
+
+
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]1Channel[/COLOR]</title>
 <link>redirectto1channel</link>
@@ -104,6 +84,26 @@
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Yes Movies[/COLOR]</title>
 <link>tomdyesmovies</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/yesmovies.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Movie Vault[/COLOR]</title>
+<link>tomovievault</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movievault.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Afdah[/COLOR]</title>
+<link>tomdafdah</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdafdah.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]HD Box[/COLOR]</title>
+<link>tomdhdbox</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdhdbox.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]MoviePool[/COLOR]</title>
+<link>tomoviepool</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/moviepool.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | Yify HD</title>
