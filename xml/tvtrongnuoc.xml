@@ -4,41 +4,33 @@
 <name>tvtrongnuoc</name>
 <items>
 
+
 <item>
-<title>[COLOR ffff0000]More TV Trong Nước[/COLOR] | [COLOR yellow]Please Click Here[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/cablestv.png</thumbnail>
+<title>[COLOR yellow]VTVGo Live[/COLOR]</title>
+<link>tohtv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vtvgo.png</thumbnail>
 </item>
-  
 <item>
 <title>[COLOR yellow]VietMediaF[/COLOR]</title>
 <link>tovietmediaf</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/vietmediaf.png</thumbnail>
-</item> 
-  
-<item>
-<title>[COLOR yellow]FPTPlay[/COLOR]</title>
-<link>redirecttofptplay</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/fptplay.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vietmediaf.png</thumbnail>
 </item>
-
-
 <item>
 <title>[COLOR yellow]ITV Plus[/COLOR]</title>
 <link>toitv</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/itv.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/itv.png</thumbnail>
 </item>
 
 <item>
 <title>[COLOR yellow]SCTV-Phim hay tổng hợp 24h HD[/COLOR]</title>
 <link>rtmp://vf10.aditmedia.net/ingestx/ playpath=ivn_000105 swfUrl=http://p.jwpcdn.com/6/8/jwplayer.flash.swf pageUrl=http://nguoiviet.tv/phim/</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 
 <item>
 <title>[COLOR lime]✫-✫-✫ VTVGo ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV1[/COLOR]</title>
@@ -48,42 +40,42 @@
 <item>
 <title>[COLOR yellow]VTV2[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=15858&url=Npty46sDGrBfKBBwYwNOlIykkYP0H23hVMUzlN1sDXMZCiwN0O%2B1Kx7al9BKFRYq%2BPO7KYEomVfvmMSCWRV2YA%3D%3D&sf_options=winID%3D10025%26_options_sf&quot</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV3[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=15858&url=Npty46sDGrBfKBBwYwNOlIykkYP0H23hVMUzlN1sDXMIVbAiW7Uno0rqLgBZfz4mEm64KxuDPUEBNhS9E6h14w%3D%3D&sf_options=winID%3D10025%26_options_sf&quot</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV4[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=15858&url=Npty46sDGrBfKBBwYwNOlIykkYP0H23hVMUzlN1sDXPqFmiW0QOUI9oeZ68bYtCsnM%2B1H279v8LvFam50mD5UQ%3D%3D&sf_options=winID%3D10025%26_options_sf&quot</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV5[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=15858&url=Npty46sDGrBfKBBwYwNOlIykkYP0H23hVMUzlN1sDXOqHdCqTHt5CJuHTNjqsXYKw2WuNXkiXx00tYVMVlKlig%3D%3D&sf_options=winID%3D10025%26_options_sf&quot</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV6[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=15858&url=Npty46sDGrBfKBBwYwNOlIykkYP0H23hVMUzlN1sDXMzSFUz4BRcX%2F4x7OBhJKy0ntdRWMB1xVXi%2BdTWihv2rQ%3D%3D&sf_options=winID%3D10025%26_options_sf&quot</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV7[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=15858&url=Npty46sDGrBfKBBwYwNOlIykkYP0H23hVMUzlN1sDXNAuT5FwLulOz1gEhLrOaIuiykIdzcKmqTITVMSpyJ19Q%3D%3D&sf_options=winID%3D10025%26_options_sf&quot</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV8[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=15858&url=Npty46sDGrBfKBBwYwNOlIykkYP0H23hVMUzlN1sDXM88696QcT9Z%2FKvkYzz%2BvZNWURJbqo9CQvFdeqUhMllLw%3D%3D&sf_options=winID%3D10025%26_options_sf&quot</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV9[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=15858&url=Npty46sDGrBfKBBwYwNOlIykkYP0H23hVMUzlN1sDXMUWl7ITRmRz87R4UEP7OPxVvRBVSXSaDlJbylrWYEpaA%3D%3D&sf_options=winID%3D10025%26_options_sf&quot</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>  
   
 
@@ -91,7 +83,7 @@
 <item>
 <title>[COLOR lime]✫-✫-✫ Updated 11-04-2016 ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 
 
@@ -276,7 +268,7 @@
 <item>
 <title>[COLOR lime]✫-✫-✫ Kênh Life TV ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 
 <item>
@@ -331,84 +323,84 @@
 <item>
 <title>[COLOR lime]✫-✫-✫ Kênh Địa Phương ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 
 
 <item>
 <title>Bà Rịa - Vũng Tàu</title>
 <link>rtmp://113.163.216.24/live playpath=livestream swfUrl=http://thvl.vn/vplayer.swf pageUrl=http://tivihay.net/dia-phuong-vung-tau-k61.html swfVfy=true live=true timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Cần Thơ THTPCT</title>
 <link>rtmp://113.161.204.167:1935/livepkgr/ playpath=livestream swfUrl=http://vtvcantho.vn/Content/jwplayer/player.swf pageUrl=http://vtvcantho.vn/ live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Khánh Hòa KTV</title>
 <link>http://210.245.20.94/hls/ktv3.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Lạng Sơn LSTV</title>
 <link>rtmp://123.18.206.40/live/ playpath=livestream swfUrl=http://hktivi.net/player.swf pageUrl=http://hktivi.net/tv_truc_tuyen/langson.php swfVfy=true live=true timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Bình Dương BTV1</title>
 <link>rtmp://202.43.109.147/live/btv1.stream live=1</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Bình Dương BTV2</title>
 <link>rtmp://202.43.109.147/rtplive/btv2.stream live=1</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Cà Mau CTV</title>
 <link>rtmp://113.161.220.254/livepkgr/ playpath=livestream1?adbe-live-event=liveevent swfUrl=http://ctvcamau.vn/jwplayer/jwplayer.flash.swf pageUrl=http://ctvcamau.vn/jwplayer/?l=rtmp&i=http://118.69.199.136/wp-content/uploads/2014/01/TVonline_Ctvcamau.jpg&w=400&h=300&a=0 live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>SÓC TRĂNG STV</title>
 <link>rtmp://115.78.3.164/live playpath=stv1 swfUrl=http://thst.vn/MediaPlayer/vplayer.swf pageUrl=http://thst.vn/Truyen_hinh.aspx live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>ĐẮC NÔNG PTD</title>
 <link>rtmp://222.255.158.22:1935/live playpath=truyenhinh swfUrl=http://fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf/[[DYNAMIC]]/1 pageUrl=http://www.ptthdaknong.com.vn/truyenhinh.html live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>ĐÀ NẴNG 1</title>
 <link>rtmp://113.164.15.175:44444/mnrrnlm/_definst_ playpath=drt1 swfUrl=http://www.drt.danang.vn/js/DRTplayer.swf pageUrl=http://www.drt.danang.vn/# live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>ĐÀ NẴNG 2</title>
 <link>rtmp://drt.danang.vn/live playpath=livestream swfUrl=http://www.drt.danang.vn/js/DRTplayer.swf pageUrl=http://www.drt.danang.vn/# live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VĨNH PHÚC VP</title>
 <link>rtmp://117.6.162.63/live/ playpath=thvp swfUrl=http://hktivi.net/player.swf pageUrl=http://hktivi.net/kenh/vinhphuc.html swfVfy=true live=true timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>BÌNH PHƯỚC BPTV1</title>
 <link>rtmp://113.161.180.136/live/ playpath=thbp1.tv swfUrl=http://www.bptv.com.vn/vplayer.swf pageUrl=http://www.bptv.com.vn/ live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>BÌNH PHƯỚC BPTV2</title>
 <link>rtmp://113.161.180.136/live/ playpath=thbp2.tv swfUrl=http://www.bptv.com.vn/vplayer.swf pageUrl=http://www.bptv.com.vn/# live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>BẠC LIÊU</title>
 <link>rtmp://118.69.205.213/livepkgr/ playpath=livestream1 swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf pageUrl=http://hktivi.net/tv_truc_tuyen/truyen-hinh-bac-lieu-btv.php swfVfy=true live=true timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 
 
@@ -417,86 +409,97 @@
 <item>
 <title>VNews - TTXVN</title>
 <link>rtmp://live.vnanet.vn:1935/Live/ playpath=DRC swfUrl=http://avnews.vnanet.vn/RtmpPlayer/player.swf pageUrl=http://avnews.vnanet.vn/ live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>An Giang 1</title>
 <link>rtmp://113.161.212.25/live playpath=atv1 swfUrl=http://www.atv.org.vn/player/player.swf swfVfy=true live=true timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>An Giang 2</title>
 <link>rtmp://113.161.212.25/live2 playpath=atv2 swfUrl=http://www.atv.org.vn/player/player.swf swfVfy=true live=true timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Bắc Ninh</title>
 <link>rtmp://113.160.154.159:5119/live playpath=bntv swfUrl=http://www.umediaserver.net/bin/FlashPlayer/player-quick.swf pageUrl=http://bacninhtv.vn/ live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Bến Tre</title>
 <link>rtmp://113.163.94.245/live/ playpath=Stream swfUrl=http://thbt.vn/jwplayer/jwplayer.flash.swf pageUrl=http://thbt.vn/jwplayer/?l=rtmp%3A%2F%2F113.163.94.245%2Flive%2FStream&amp;i=http://thbt.vn/wp-content/uploads/2014/03/nentruct.png&amp;w=400&amp;h=280&amp;a=0 live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Bình Thuận</title>
 <link>mms://123.30.108.114/BTVTruyenhinh</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Đồng Nai 1</title>
 <link>rtmp://123.29.75.131:1935/thdn playpath=dn1.stream swfUrl=http://www.dnrtv.org.vn/static/js/flowplayer/flowplayer-3.2.7.swf pageUrl=http://www.dnrtv.org.vn/ live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Đồng Nai 2</title>
 <link>rtmp://123.29.75.131:1935/thdn/dn2.stream swfUrl=http://www.dnrtv.org.vn/static/js/flowplayer/flowplayer-3.2.7.swf swfVfy=true live=true timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Gia Lai</title>
 <link>rtmp://222.255.169.132/live/ playpath=livestream swfUrl=http://p.jwpcdn.com/6/11/jwplayer.flash.swf swfVfy=true live=true timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Hà Nội</title>
 <link>rtmp://38.107.180.195:1935/live playpath=hanoi11_h swfUrl=http://vtc.com.vn/player_akamai_low.swf pageUrl=http://vtc.com.vn/live/6/Ha-Noi-1.html swfVfy=1 live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Hậu Giang</title>
 <link>rtmp://115.78.160.29/live/thhg live=1 swfUrl=http://truyenhinhhaugiang.vn/MediaPlayer/vplayer.swf swfVfy=true live=true timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Ninh Thuận</title>
 <link>rtmp://113.164.108.11/live/ playpath=NTV_VIDEO swfUrl=http://hktivi.net/player.swf swfVfy=true live=true timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Phú Yên</title>
 <link>rtmp://113.161.4.102/live/ playpath=vtvphuyen.tv swfUrl=http://vtvphuyen.vn/vplayer.swf pageUrl=http://vtvphuyen.vn/ live=1 timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Quảng Ngãi</title>
 <link>http://113.160.244.44/liveevent.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Quảng Trị</title>
 <link>rtmp://123.25.117.9:80/live playpath=qtv swfUrl=http://hktivi.net/player.swf swfVfy=true live=true timeout=60</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>Thừa Thiên Huế</title>
 <link>rtmp://118.69.176.149/live/trt swfUrl=http://tv.xunghe.vn/player.swf pageUrl=http://tv.xunghe.vn/ live=true timeout=90</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 
 
 
+
+<item>
+<title>[COLOR ffff0000]More TV Trong Nước[/COLOR] | [COLOR yellow]Please Click Here[/COLOR]</title>
+<link>tocablestv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
+</item>  
+<item>
+<title>[COLOR yellow]FPTPlay[/COLOR]</title>
+<link>redirecttofptplay</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/fptplay.png</thumbnail>
+</item>
 
 
 
