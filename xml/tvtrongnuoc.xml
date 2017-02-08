@@ -81,7 +81,7 @@
 
 
 <item>
-<title>[COLOR lime]✫-✫-✫ Updated 11-04-2016 ✫-✫-✫[/COLOR]</title>
+<title>[COLOR lime]✫-✫-✫ Updated 02-08-2017 ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
@@ -105,32 +105,9 @@
 <link>http://123.30.185.126/hls/vtv3.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
-<item>
-<title>VTV6 HD</title>
-<link>http://113.185.19.171:8081/livedemo/vtv6hd-vtv-abr/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTV8</title>
-<link>http://znzjssjl.cdnviet.com/pnwjyhx/_definst_/livestream/chunklist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
 
-<item>
-<title>VTC Play</title>
-<link>http://117.103.224.222:1935/live/_definst_/VTCPlay_music/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC1 s1</title>
-<link>http://live.cdn.mobifonetv.vn/motv2/vtc1_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC1 S2</title>
-<link>http://117.103.224.222:1935/live/_definst_/VTC1HD_2016.smil/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
+
+
 <item>
 <title>VTC1 s3</title>
 <link>http://123.30.185.126/hls/vtc1.m3u8</link>
@@ -144,11 +121,6 @@
 <item>
 <title>VTC2</title>
 <link>http://45.121.26.49:1935/live/_definst_/smil:vtc2.smil/chunklist_b900000.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC3 S1</title>
-<link>http://117.103.224.222:1935/live/_definst_/VTC3HD_2016.smil/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
@@ -202,11 +174,6 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTC10 s2</title>
-<link>http://118.107.71.15:1935/live/_definst_/VTC10/VTC10_640x360_800kbps.stream/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
 <title>VTC11</title>
 <link>http://45.121.26.49:1935/live/_definst_/smil:vtc11.smil/chunklist_b900000.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
@@ -214,16 +181,6 @@
 <item>
 <title>VTC12</title>
 <link>http://45.121.26.49:1935/live/_definst_/smil:vtc12.smil/chunklist_b900000.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC13 s1</title>
-<link>http://live.cdn.mobifonetv.vn/motv/itvhd_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC13 S2</title>
-<link>http://117.103.224.222:1935/live/_definst_/smil:iTVHD_2016.smil/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
@@ -237,23 +194,8 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>VTC14 S1</title>
-<link>http://live.cdn.mobifonetv.vn/motv/vtc14_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC14 S2</title>
-<link>http://censoft.mobi:1935/tvviet/vtc14.stream/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
 <title>VTC14 HD</title>
 <link>http://45.121.26.49:1935/live/_definst_/smil:vtc14.smil/chunklist_b1500000.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC16 s1</title>
-<link>http://live.cdn.mobifonetv.vn/motv/vtc14_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
