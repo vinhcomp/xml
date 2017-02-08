@@ -266,61 +266,6 @@
 
 
 <item>
-<title>[COLOR lime]✫-✫-✫ Kênh Life TV ✫-✫-✫[/COLOR]</title>
-<link>http://youtube.com</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-
-<item>
-<title>LIFETV</title>
-<link>rtmp://203.162.121.230/live/live_lifetv?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/lifetvI.png</thumbnail>
-</item>
-<item>
-<title>KÊNH 9 MUSIC</title>
-<link>rtmp://203.162.121.230/live//9_music?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/K9I.png</thumbnail>
-</item>
-<item>
-<title>FITNESS 360</title>
-<link>rtmp://203.162.121.230/live//fitness_360?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/360I.png</thumbnail>
-</item>
-<item>
-<title>MODEL CHANNEL</title>
-<link>rtmp://203.162.121.230/live//model_channel?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/MOCI.png</thumbnail>
-</item>
-<item>
-<title>DI SẢN VIỆT</title>
-<link>rtmp://203.162.121.230/live//disanviet?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/disanI.png</thumbnail>
-</item>
-<item>
-<title>4 MEN</title>
-<link>rtmp://203.162.121.230/live//4Men?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/4menI.png</thumbnail>
-</item>
-<item>
-<title>2 Channel Vietnam</title>
-<link>rtmp://203.162.121.230/live//2channel?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/2channelI.png</thumbnail>
-</item>
-<item>
-<title>TECH CHANNEL</title>
-<link>rtmp://203.162.121.230/live//tech?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/techI.png</thumbnail>
-</item>
-<item>
-<title>TRUYỀN THÔNG VIỆT</title>
-<link>rtmp://203.162.121.230/live//ttv?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/ttbvI.png</thumbnail>
-</item>
-
-
-
-
-<item>
 <title>[COLOR lime]✫-✫-✫ Kênh Địa Phương ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
