@@ -33,6 +33,11 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]HTV9[/COLOR]</title>
+<link>plugin://plugin.video.vtvgolive/?url=htv9&mode=2&name=HTV9+HD&sf_options=winID%3D10025%26_options_sf&quot</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]VTV1[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=15858&url=Npty46sDGrBfKBBwYwNOlIykkYP0H23hVMUzlN1sDXMRwIHbAUYr3HyTXZL4pkctJgjkvY2nm33qov1l8p%2B3bA%3D%3D&sf_options=winID%3D10025%26_options_sf&quot</link>
 <thumbnail>https://tvstatic.vcmedia.vn/vtv/vtv1-thumb.jpg</thumbnail>
