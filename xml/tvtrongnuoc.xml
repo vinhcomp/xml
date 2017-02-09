@@ -33,6 +33,11 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]VTVGo Live[/COLOR] - [COLOR red]Working Good[/COLOR]</title>
+<link>tovtvgo</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vtvgo.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]HTV9[/COLOR]</title>
 <link>plugin://plugin.video.vtvgolive/?url=htv9&mode=2&name=HTV9+HD</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
