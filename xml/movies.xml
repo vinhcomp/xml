@@ -21,6 +21,21 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/yesmovies.png</thumbnail>
 </item>
 <item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Movie Vault[/COLOR]</title>
+<link>tomovievault</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movievault.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Afdah[/COLOR]</title>
+<link>tomdafdah</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdafdah.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]HD Box[/COLOR]</title>
+<link>tomdhdbox</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdhdbox.png</thumbnail>
+</item>
+<item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Scene Peeper[/COLOR]</title>
 <link>tomdscenepeeper</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdscenepeeper.png</thumbnail>
@@ -39,6 +54,11 @@
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Movie M4U[/COLOR]</title>
 <link>tom4u</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/m4u.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | Watch32HD</title>
+<link>tomdwatch32hd</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdwatch32hd.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]Phoenix[/COLOR]</title>
@@ -73,6 +93,11 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/zemtv.png</thumbnail>
 </item>
 <item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | FilmOn TV</title>
+<link>tofilmon1</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/filmon1.png</thumbnail>
+</item>
+<item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | Entertainment HUB</title>
 <link>toenter</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/enter.png</thumbnail>
@@ -91,21 +116,6 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/123movies.png</thumbnail>
 </item>
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Movie Vault[/COLOR]</title>
-<link>tomovievault</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movievault.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Afdah[/COLOR]</title>
-<link>tomdafdah</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdafdah.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]HD Box[/COLOR]</title>
-<link>tomdhdbox</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdhdbox.png</thumbnail>
-</item>
-<item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]MoviePool[/COLOR]</title>
 <link>tomoviepool</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/moviepool.png</thumbnail>
@@ -116,19 +126,9 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/yify.png</thumbnail>
 </item>
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | FilmOn TV</title>
-<link>tofilmon1</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/filmon1.png</thumbnail>
-</item>
-<item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | Vodlocker</title>
 <link>tomdvodlocker</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdvodlocker.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | Watch32HD</title>
-<link>tomdwatch32hd</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdwatch32hd.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | Xmovies8</title>
@@ -275,6 +275,7 @@
 <link>redirecttovkool</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vkool.png</thumbnail>
 </item>
+
 
 
 <item>
