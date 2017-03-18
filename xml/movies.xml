@@ -11,11 +11,6 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cartoons8.png</thumbnail>
 </item>
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]PubFilm[/COLOR]</title>
-<link>tomdpubfilm</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdpubfilm.png</thumbnail>
-</item>
-<item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Yes Movies[/COLOR]</title>
 <link>tomdyesmovies</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/yesmovies.png</thumbnail>
@@ -114,6 +109,11 @@
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR gold]123Movies[/COLOR]-[COLOR red]Under Maintenance[/COLOR]</title>
 <link>tomd123movies</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/123movies.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]PubFilm[/COLOR]</title>
+<link>tomdpubfilm</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdpubfilm.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]MoviePool[/COLOR]</title>
