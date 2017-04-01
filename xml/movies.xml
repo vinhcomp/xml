@@ -26,11 +26,6 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phoenix.png</thumbnail>
 </item>
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Happy Movies[/COLOR]</title>
-<link>tohappymovies</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/happymovies.png</thumbnail>
-</item>
-<item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Sure Shot[/COLOR]</title>
 <link>tosureshot</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sureshot.png</thumbnail>
@@ -139,6 +134,11 @@
 <title>[COLOR mediumspringgreen]English[/COLOR] | Watch32HD</title>
 <link>tomdwatch32hd</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/mdwatch32hd.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Happy Movies[/COLOR]</title>
+<link>tohappymovies</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/happymovies.png</thumbnail>
 </item>
 
 
