@@ -32,28 +32,13 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>[COLOR aqua]HTV Du Lịch FHD[/COLOR]</title>
-<link>plugin://plugin.video.Pac-12/?url=http%3A%2F%2F127.0.0.1%3A19098%2Flivestreamer%2FaGxzOi8vaHR0cDovLzExMy4xNjAuNDkuMzkvbGl2ZXMvb3JpZ2luMDQvaHR2N2hkLmlzbWwvaHR2N2hkLTIwOTZrLm0zdTg%3D&mode=2&name=HTVC+Travel+FHD+%28Bonus%29</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
 <title>[COLOR aqua]HTV7 FHD[/COLOR]</title>
 <link>plugin://plugin.video.Pac-12/?url=http%3A%2F%2F127.0.0.1%3A19098%2Flivestreamer%2FaGxzOi8vaHR0cDovLzExMy4xNjAuNDkuMzkvbGl2ZXMvb3JpZ2luMDQvaHR2N2hkLmlzbWwvaHR2N2hkLTIwOTZrLm0zdTg%3D&mode=2&name=HTV7+FHD+%28Bonus%29</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>[COLOR aqua]HTV9 FHD[/COLOR]</title>
-<link>plugin://plugin.video.Pac-12/?url=http%3A%2F%2F127.0.0.1%3A19098%2Flivestreamer%2FaGxzOi8vaHR0cDovLzExMy4xNjAuNDkuMzkvbGl2ZXMvb3JpZ2luMDQvaHR2N2hkLmlzbWwvaHR2N2hkLTIwOTZrLm0zdTg%3D&mode=2&name=HTV9+FHD+%28Bonus%29</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>[COLOR aqua]THVL1 HD[/COLOR]</title>
-<link>plugin://plugin.video.Pac-12/?url=http%3A%2F%2F127.0.0.1%3A19098%2Flivestreamer%2FaGxzOi8vaHR0cDovLzExMy4xNjAuNDkuMzkvbGl2ZXMvb3JpZ2luMDQvaHR2N2hkLmlzbWwvaHR2N2hkLTIwOTZrLm0zdTg%3D&mode=2&name=THVL1+HD+%28Bonus%29</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>[COLOR aqua]THVL1 HD[/COLOR]</title>
-<link>plugin://plugin.video.Pac-12/?url=http%3A%2F%2F127.0.0.1%3A19098%2Flivestreamer%2FaGxzOi8vaHR0cDovLzExMy4xNjAuNDkuMzkvbGl2ZXMvb3JpZ2luMDQvaHR2N2hkLmlzbWwvaHR2N2hkLTIwOTZrLm0zdTg%3D&mode=2&name=THVL2+HD+%28Bonus%29</link>
+<link>plugin://plugin.video.Pac-12/?url=http%3A%2F%2F127.0.0.1%3A19098%2Flivestreamer%2FaGxzOi8vaHR0cDovLzExMy4xNjAuNDkuMzkvbGl2ZXMvb3JpZ2luMDQvaHR2OXNkLmlzbWwvaHR2OXNkLTEwOTZrLm0zdTg%3D&mode=2&name=HTV9+FHD+%28Bonus%29</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
   
