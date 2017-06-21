@@ -160,12 +160,12 @@
   
 <item>
 <title>VTV1</title>
-<link>http://123.30.185.126/hls/vtv1.m3u8</link>
+<link>http://113.160.49.39/lives/origin04/v1sd.isml/v1sd.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>VTV2</title>
-<link>http://123.30.185.126/hls/vtv2.m3u8</link>
+<link>http://sv.tivi3g.com/stream-vtv/vtv2.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
