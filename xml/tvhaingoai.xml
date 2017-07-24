@@ -6,14 +6,14 @@
 
 
 <item>
-<title>[COLOR ffff0000]More TV Hải Ngoại[/COLOR] | [COLOR yellow]Please Click Here[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
-</item>
-<item>
 <title>[COLOR ffff0000]More TV Hải Ngoại[/COLOR]</title>
 <link>viettv24free</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/viettv242.png</thumbnail>
+</item>
+<item>
+<title>[COLOR ffff0000]Kodi4VNLauncher[/COLOR]</title>
+<link>tokodi4vnlauncher</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
 </item>
 
 
@@ -203,7 +203,11 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
 
-
+<item>
+<title>[COLOR ffff0000]More TV Hải Ngoại[/COLOR] | [COLOR yellow]Please Click Here[/COLOR]</title>
+<link>tocablestv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
+</item>
 
 
 </items>
