@@ -152,6 +152,27 @@
 </item>
   
 
+  
+  
+<item>
+<title>[COLOR lime]✫-✫-✫ NextTV ✫-✫-✫[/COLOR]</title>
+<link>http://youtube.com</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV7[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-157</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/02/02/519040-948241-HTV7-HD---tms.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV9[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-158</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+  
+  
+  
+  
 
 <item>
 <title>[COLOR lime]✫-✫-✫ Updated 02-08-2017 ✫-✫-✫[/COLOR]</title>
