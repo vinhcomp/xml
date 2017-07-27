@@ -43,7 +43,32 @@
 <title>[COLOR yellow]Việt Face TV 57.2[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/vface</link>
 <thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
-</item>   
+</item>
+<item>
+<title>[COLOR yellow]Sài Gòn TV 57.5[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/sgtv</link>
+<thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Asia Entertainment Live[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/asia</link>
+<thumbnail>http://www.viettv24.com/main/images/asia_logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Rạng Đông TV 8.8[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/rangdong</link>
+<thumbnail>http://www.viettv24.com/main/images/rangdong_logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Việt Phố TV 57.10[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/vietpho</link>
+<thumbnail>http://www.viettv24.com/main/images/vietphotv_logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VStar TV 57.11[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/vstartv</link>
+<thumbnail>http://www.viettv24.com/main/images/vstar_logo.jpg</thumbnail>
+</item> 
 
 <item>
 <title>[COLOR cyan][B]* Live TV Hải Ngoại *[/B][/COLOR]</title>
