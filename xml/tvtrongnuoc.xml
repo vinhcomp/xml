@@ -177,8 +177,78 @@
 <item>
 <title>[COLOR yellow]HTV9[/COLOR]</title>
 <link>http://localhost:5000/play.m3u8?url=nexttv-158</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
 </item>
+<item>
+<title>[COLOR yellow]HTV1[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-53</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htv1_145672763786.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV2[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-54</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htv2_145672764721.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV3[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-71</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htv3_145672766359.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV4[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-204</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htv4_145672776087.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTVC Ca Nhạc[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-58</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2017/04/20/593179-Canhac_FullHD.png</thumbnail>
+</item> 
+<item>
+<title>[COLOR yellow]HTVC Du Lịch[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-60</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-du-lich_145578790177.png?w=345&h=210&mode=scale</thumbnail>
+</item>  
+<item>
+<title>[COLOR yellow]HTVC Gia Đình[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-59</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-gia-dinh_14557859914.png?w=345&h=210&mode=scale</thumbnail>
+</item> 
+<item>
+<title>[COLOR yellow]HTVC Phim Paramount Picture VN[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-159</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-movie-hd_149759048724.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>   
+<item>
+<title>[COLOR yellow]HTVC Phim Paramount Picture VN[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-31</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-movie-hd_149759048724.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>  
+<item>
+<title>[COLOR yellow]HTVC Phụ Nữ[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-56</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-phu-nu_145672974528.jpg?w=345&h=210&mode=scale</thumbnail>
+</item> 
+<item>
+<title>[COLOR yellow]HTVC Plus[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-25</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/28/521802-htvc_plus.png</thumbnail>
+</item>  
+<item>
+<title>[COLOR yellow]HTVC Thể Thao[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-37</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/10/10/238258-htvtt.png</thumbnail>
+</item> 
+<item>
+<title>[COLOR yellow]HTVC Thuần Việt[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-57</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-thuan-viet-sd_145578233591.png?w=345&h=210&mode=scale</thumbnail>
+</item>     
+<item>
+<title>[COLOR yellow]HTVC Thuần Việt HD[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-160</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-thuan-viet-hd_145578232318.png?w=345&h=210&mode=scale</thumbnail>
+</item>  
   
   
   
