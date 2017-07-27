@@ -18,10 +18,32 @@
 
 
 <item>
-<title>[COLOR yellow]VNews[/COLOR]</title>
+<title>[COLOR yellow]Vnews (100)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu9uTovzKkHwc</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Vnews.jpg</thumbnail>
-</item>     
+</item>
+<item>
+<title>[COLOR yellow]VLife (108)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu7UBHqOmukag</link>
+<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Vlife_1.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Film 24h (107)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu0f9C4l86Hqm</link>
+<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Film24h.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Quê Hương TV (103)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu5U30oydMmrs</link>
+<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/quehuong1.png</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR yellow]Việt Face TV 57.2[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/vface</link>
+<thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
+</item>   
 
 <item>
 <title>[COLOR cyan][B]* Live TV Hải Ngoại *[/B][/COLOR]</title>
