@@ -66,21 +66,6 @@
 
 
 <item>
-<title>SAIGON TV</title>
-<link>http://63.143.59.125:1935/live/myStream/chunklist_w225895095.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>Sài Gòn Network Channel</title>
-<link>http://origin.onworldtv.com:1935/liveorigin/sgn/chunklist_w942043689_tkd29ybGR0b2tlbnN0YXJ0dGltZT0xNDM0MzU2NjUxJndvcmxkdG9rZW5lbmR0aW1lPTE0MzQ0NDEyNTEmd29ybGR0b2tlbmhhc2g9dzNCdXB1NVpacjJDYVg1LUxhOGlCOTdlNDFkNG5PbWlpeE90bGEwbXRkQT0=.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>Sài Gòn TV 57.5</title>
-<link>http://63.143.59.125:1935/live/myStream/chunklist_w1346227232.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
 <title>Little Saigon TV 57.7</title>
 <link>http://saigontvtv.saigon.ns01.us:1935/Lstv577/myStream/chunklist_w1229536511.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
