@@ -249,7 +249,21 @@
 <link>http://localhost:5000/play.m3u8?url=nexttv-160</link>
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-thuan-viet-hd_145578232318.png?w=345&h=210&mode=scale</thumbnail>
 </item>  
-  
+<item>
+<title>[COLOR yellow]THVL1 Vĩnh Long 1[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-133</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_vinh-long-1_145673001289.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>     
+<item>
+<title>[COLOR yellow]THVL2 Vĩnh Long 2[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-134</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_vinh-long-2_145673002208.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>   
+<item>
+<title>[COLOR yellow]LA34 Long An[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-129</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_long-an_145880901975.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>   
   
   
   
