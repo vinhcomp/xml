@@ -30,12 +30,6 @@
 <link>toitv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/itv.png</thumbnail>
 </item>
-
-<item>
-<title>[COLOR yellow]SCTV-Phim hay tổng hợp 24h HD[/COLOR]</title>
-<link>rtmp://vf10.aditmedia.net/ingestx/ playpath=ivn_000105 swfUrl=http://p.jwpcdn.com/6/8/jwplayer.flash.swf pageUrl=http://nguoiviet.tv/phim/</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
   
 <item>
 <title>[COLOR lime]✫-✫-✫ VTV.Vn ✫-✫-✫[/COLOR]</title>
@@ -263,7 +257,42 @@
 <title>[COLOR yellow]LA34 Long An[/COLOR]</title>
 <link>http://localhost:5000/play.m3u8?url=nexttv-129</link>
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_long-an_145880901975.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Bà Rịa Vũng Tàu BRT[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-128</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_ba-ria-vung-tau_145672972069.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]An Giang ATV[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-136</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_an-giang_145578823421.png?w=345&h=210&mode=scale</thumbnail>
+</item>     
+<item>
+<title>[COLOR yellow]Bắc Giang BGTV[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-84</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_bac-giang_145880839804.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>  
+<item>
+<title>[COLOR yellow]Bình Phước 1 BPTV1[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-121</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_binh-phuoc_14588060598.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>     
+<item>
+<title>[COLOR yellow]Bạc Liêu BTV[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-126</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_bac-lieu_145881130802.jpg?w=345&h=210&mode=scale</thumbnail>
 </item>   
+<item>
+<title>[COLOR yellow]Bình Định BTV[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-110</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_binh-dinh_145672697062.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Bình Thuận BTV[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-118</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_binh-thuan_145880841033.jpg?w=345&h=210&mode=scale</thumbnail>
+</item> 
   
   
   
