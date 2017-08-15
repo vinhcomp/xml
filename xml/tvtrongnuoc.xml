@@ -159,424 +159,79 @@
   
   
 <item>
-<title>[COLOR lime]✫-✫-✫ NextTV ✫-✫-✫[/COLOR]</title>
+<title>[COLOR lime]✫-✫-✫ FPT Play ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]HTV7[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-157</link>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rbY7I8PqUNybE1%2Fctkz96D0XngjvohmOhQo7p9frzAiF</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/02/02/519040-948241-HTV7-HD---tms.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV7 HD[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rSIZ3%2B28olj2DIRQngnr%2BCYXc9ynBd0puwTAAy48zbhn</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/02/02/519040-948241-HTV7-HD---tms.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]HTV9[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-158</link>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rY7wdOR8tu%2FGb7ryAQ5chIuv%2BxatAS4KSu%2BnBafCZzRb</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV9 HD[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rSW7MWSD9CnFhHb8ioN6t6q2oWytWmYBR8WBAEtmp5Y2</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]HTV1[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-53</link>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rfaGGBUpXOh597uwzyPCfVOWZFXEF8d%2BEZpZZLmLfxCk</link>
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htv1_145672763786.jpg?w=345&h=210&mode=scale</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]HTV2[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-54</link>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rV%2Bo3G%2FtiHEeEgef8PdZTHn8XrErvXelU4%2BwEd6CKm09</link>
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htv2_145672764721.jpg?w=345&h=210&mode=scale</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]HTV3[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-71</link>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rYrWxfI8%2F9OB4k11C2oEL4lfB58LoqG0ekKX5VhRfgfZ</link>
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htv3_145672766359.jpg?w=345&h=210&mode=scale</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]HTV4[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-204</link>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rerYC80%2BN0UvzDogVOtnO758C%2F1zPfrCIeOMcR2DyAEX</link>
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htv4_145672776087.jpg?w=345&h=210&mode=scale</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]HTVC Ca Nhạc[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-58</link>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rSdXNscIW7YetIy94Hj8mgLcFHqPYX6KIlh7IpfttTdK</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2017/04/20/593179-Canhac_FullHD.png</thumbnail>
 </item> 
 <item>
 <title>[COLOR yellow]HTVC Du Lịch[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-60</link>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8raBQv01JbwMp0qNgb%2FncikNqOMyjnaeK6yuGqV7ZcYWi</link>
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-du-lich_145578790177.png?w=345&h=210&mode=scale</thumbnail>
 </item>  
 <item>
 <title>[COLOR yellow]HTVC Gia Đình[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-59</link>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rVYcNzetqgNRCkLnMlyba5UWvz9OY7yl8S2fzFBzqIeK</link>
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-gia-dinh_14557859914.png?w=345&h=210&mode=scale</thumbnail>
-</item> 
-<item>
-<title>[COLOR yellow]HTVC Phim Paramount Picture VN[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-159</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-movie-hd_149759048724.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]HTVC Phim Paramount Picture VN[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-31</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-movie-hd_149759048724.jpg?w=345&h=210&mode=scale</thumbnail>
 </item>  
 <item>
 <title>[COLOR yellow]HTVC Phụ Nữ[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-56</link>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rT8ccR8QTAjth8ld0oFxnMMGxWKTQfyrr4gPQM17M7y%2B</link>
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-phu-nu_145672974528.jpg?w=345&h=210&mode=scale</thumbnail>
 </item> 
 <item>
-<title>[COLOR yellow]HTVC Plus[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-25</link>
-<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/28/521802-htvc_plus.png</thumbnail>
-</item>  
-<item>
 <title>[COLOR yellow]HTVC Thể Thao[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-37</link>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rWwxKgruJFylTsJamDMUQ1dMuDJQS%2F3HmY0gFVMeeit9</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/10/10/238258-htvtt.png</thumbnail>
 </item> 
 <item>
 <title>[COLOR yellow]HTVC Thuần Việt[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-57</link>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rW%2BCVfcF6KXREqIcXtkxoWRwGnGRb%2Bj4YoEarD4QlYaOHNs2GkAcycrAkOLnWxH%2Ffdq5cM2kw9j5ADKJ4FKK7qM%3D</link>
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-thuan-viet-sd_145578233591.png?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]HTVC Thuần Việt HD[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-160</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-thuan-viet-hd_145578232318.png?w=345&h=210&mode=scale</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]THVL1 Vĩnh Long 1[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-133</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_vinh-long-1_145673001289.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]THVL2 Vĩnh Long 2[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-134</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_vinh-long-2_145673002208.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]LA34 Long An[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-129</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_long-an_145880901975.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Bà Rịa Vũng Tàu BRT[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-128</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_ba-ria-vung-tau_145672972069.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]An Giang ATV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-136</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_an-giang_145578823421.png?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Bắc Giang BGTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-84</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_bac-giang_145880839804.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]Bình Phước 1 BPTV1[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-121</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_binh-phuoc_14588060598.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Bạc Liêu BTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-126</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_bac-lieu_145881130802.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]Bình Định BTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-110</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_binh-dinh_145672697062.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Bình Thuận BTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-118</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_binh-thuan_145880841033.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Bình Thuận 1 BTV1[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-123</link>
-<thumbnail>http://tv.vietbao.vn/images/tv2015/channels/278-truyen-hinh-binh-duong-btv1.jpg</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Bình Thuận 2 BTV2[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-124</link>
-<thumbnail>http://tv.vietbao.vn/images/tv2015/channels/280-truyen-hinh-binh-duong-btv2.jpg</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]iMovie HD BTV4[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-284</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_binh-duong-4-hd_146312577314.png?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Cao Bằng CRTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-77</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_cao-bang_149283044994.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]Đồng Nai 1 DNRT1[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-127</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_dong-nai-1_145672731448.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Đắc Lắc DRT[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-115</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_dak-lak_145880969366.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Đà Nẵng 1 DRT1[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-107</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_da-nang-1_145681779889.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Điện Biên ĐTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-86</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_dien-bien_145880775626.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]FBNC[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-177</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_fbnc_145672745919.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]HaNam[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-97</link>
-<thumbnail>http://xemtvhd.net/images/icon-channel/ha-nam-hanamtv.png</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]HaNoiCab1 HiTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-52</link>
-<thumbnail>http://tv.beeb.vn/img/hitv.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]HaNoiCab2[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-50</link>
-<thumbnail>http://www.hctv.com.vn/static/front_end/Images/logo.png</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]HaNoiCab4[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-30</link>
-<thumbnail>http://www.hctv.com.vn/static/front_end/Images/logo.png</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]HaNoiTV1 HD[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-282</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_hanoitv-1_145672747757.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]HaNoiTV2 HD[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-10</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_hanoitv-2_145672748742.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Hòa Bình HBTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-100</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_hoa-binh_145681701391.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]Hà Giang HGTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-76</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_ha-giang_145578965891.png?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Hậu Giang HGTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-138</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_hau-giang_145673319528.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]Hà Tĩnh HTTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-103</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_ha-tinh_145881054027.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Hưng Yên HY[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-96</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_hung-yen_145880734258.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]Kiên Giang KG[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-140</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_kien-giang_145880815375.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Khánh Hòa KTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-102</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_khanh-hoa_145672791198.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]Lạng Sơn LSTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-83</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_lang-son_145880895824.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Lâm Đồng LTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-85</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_lam-dong_145880770362.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Lâm Đồng LTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-119</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_lam-dong_145880770362.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]Ninh Bình NBTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-99</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_ninh-binh_145672792288.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Nam Định NTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-98</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_nam-dinh_145880959527.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]Nghệ An NTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-114</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_nghe-an_145578842534.png?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Ninh Thuận NTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-117</link>
-<thumbnail>http://gardenmedia.vn/kcfinder/upload/images/B%E1%BA%A3ng-gi%C3%A1-qu%E1%BA%A3ng-c%C3%A1o-truy%E1%BB%81n-h%C3%ACnh-Ninh-Thu%E1%BA%ADn-n%C4%83m-2017.png</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]Đắc Nông PTD[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-116</link>
-<thumbnail>http://img.hplus.com.vn/355x200/banner/2015/02/24/291019-dak-nong.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Phú Yên PTP[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-122</link>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/4/44/Phuyen.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Quảng Ngãi PTQ[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-109</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_quang-ngai_146362646218.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]HD Phú Thọ PTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-90</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_phu-tho_14588083472.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Quảng Bình QBTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-104</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_quang-binh-tv_145734126864.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]Quảng Nam QRT[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-108</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_quang-nam_145880919575.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Quảng Trị QRTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-105</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_quang-tri_145880945461.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]Quảng Ninh 1 QTV1[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-81</link>
-<thumbnail>http://vod.mobitv.vn/local_files/wap_thumbs/medias_7/2016_06_24/1466755253573/aeecbc545e92.png</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Quảng Ninh 3 QTV3[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-82</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_quang-ninh-3_145672977406.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]Sóc Trăng STV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-139</link>
-<thumbnail>http://img.hplus.com.vn/355x200/banner/2015/02/24/875961-soc-trang.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sơn La STV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-87</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_son-la_145881052785.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Bắc Cạn TBK[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-78</link>
-<thumbnail>http://baobackan.org.vn/dataimages/200902/original/images8677_Lo-Go-TBK235.gif</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]Thái Bình HD TBTV HD[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-95</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_thai-binh_145673305396.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Hải Dương THD[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-93</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_hai-duong_145880941298.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Đồng Tháp 1 THDT1[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-132</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_dong-thap_145880869744.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Gia Lai THGL[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-111</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_gia-lai_145673242156.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Lào cai THLC[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-88</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_lao-cai_145880951162.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]Hải Phòng HD THP HD[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-94</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_hai-phong_14567275037.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Tiền Giang THTG[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-130</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_tien-giang_145734128144.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]Cần Thơ THTPCT[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-137</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_can-tho_145672728114.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Trà Vinh THTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-135</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_tra-vinh_145880827066.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]Thái Nguyên TN1[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-80</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_thai-nguyen_145880748867.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Thừa Thiên Huế TRT[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-106</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_thua-thien-hue_145880926795.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Thanh Hóa TTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-101</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_thanh-hoa_145828820204.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>     
-<item>
-<title>[COLOR yellow]Tuyên Quang TTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-79</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_tuyen-quang_145673727398.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>   
-<item>
-<title>[COLOR yellow]Tây Ninh TTV11[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-120</link>
-<thumbnail>http://img.hplus.com.vn/355x200/banner/2015/02/25/199734-tay-ninh.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vĩnh Phúc VP[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-91</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_vinh-phuc_145880931198.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Yên Bái YTV[/COLOR]</title>
-<link>http://localhost:5000/play.m3u8?url=nexttv-89</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_yen-bai_145880728083.jpg?w=345&h=210&mode=scale</thumbnail>
 </item>
   
   
