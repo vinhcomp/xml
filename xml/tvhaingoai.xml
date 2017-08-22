@@ -168,10 +168,88 @@
 <title>[COLOR yellow]VStar TV 57.11[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/vstartv</link>
 <thumbnail>http://www.viettv24.com/main/images/vstar_logo.jpg</thumbnail>
-</item> 
+</item>
+<item>
+<title>[COLOR yellow]VATV News[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/vatv</link>
+<thumbnail>http://www.viettv24.com/main/images/VATV_logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]S Channel 56.6[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/schannel</link>
+<thumbnail>http://www.viettv24.com/main/images/schannel_logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Vietv TV 56.7[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/vietvla</link>
+<thumbnail>http://www.viettv24.com/main/images/vietvtv_houston.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VNA TV 57.3[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/vnatv</link>
+<thumbnail>http://www.viettv24.com/main/images/vna.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]SET TV 57.4[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/set</link>
+<thumbnail>http://www.viettv24.com/main/images/SETTV_logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VBS 57.6[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/vbstv</link>
+<thumbnail>http://www.viettv24.com/main/images/vbs.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Viet Bay 1.4 KAXT[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/http%3A%2F%2F64.71.129.2%3A8080%2Fhls%2Fius_000131.m3u8</link>
+<thumbnail>http://www.vietbay.tv/images/file/tplyBIXp0QgBAikO/vietbay-television-logo.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hài 24-7 9.1[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/hai</link>
+<thumbnail>http://www.viettv24.com/main/images/Hai%2024-7.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Sân Khấu & Cuộc Đời 9.6[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/cailuong</link>
+<thumbnail>http://www.viettv24.com/main/images/skcd.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VPopTV 9.3[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/vpoptv</link>
+<thumbnail>http://www.viettv24.com/main/images/VpopTV_logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VMusic 9.2[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/mtv</link>
+<thumbnail>http://www.viettv24.com/main/images/Vmusic_logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Việt Media TV[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/vietmediatv</link>
+<thumbnail>http://www.viettv24.com/main/images/VietMediaTV_logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]IBC TV 57.8[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/ibctv</link>
+<thumbnail>http://www.viettv24.com/main/images/ibc.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hải Lê Television[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/ttt</link>
+<thumbnail>http://www.viettv24.com/main/images/Hai_Le_Logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Viet Christian[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/mms%3A%2F%2Flive.vietchristian.com%2Ftv</link>
+<thumbnail>http://echipstore.net/logo/channels/VietChristian.png</thumbnail>
+</item>
+
+
+
 
 <item>
-<title>[COLOR cyan][B]* Live TV Hải Ngoại *[/B][/COLOR]</title>
+<title>[COLOR cyan][B]SET TV[/B][/COLOR]</title>
 <link>http://settv.saigon.ns01.us:1935/vietset574tvv/myStream/chunklist_w542335559.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
@@ -188,15 +266,11 @@
 <link>http://livestream.vnvn.net/vnatv573.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
-
-
 <item>
 <title>Little Saigon TV 57.7</title>
 <link>http://saigontvtv.saigon.ns01.us:1935/Lstv577/myStream/chunklist_w1229536511.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
-
-
 <item>
 <title>[COLOR blue]Việt Mỹ TV[/COLOR]</title>
 <link>http://68.235.37.11:1935/vietmagazine/vietmagazine/playlist.m3u8</link>
@@ -217,18 +291,11 @@
 <link>http://125.235.29.16/livetv/keeng.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
-
-
-
 <item>
 <title>[COLOR cyan][B]Việt News TV – Nam California[/B][/COLOR]</title>
 <link>http://vietnews.saigon.ns01.us:1935/VietNews/myStream/chunklist_w107230799.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
-
-
-
-
 <item>
 <title>VBS TELEVISION Channel 57.6 SV1</title>
 <link>http://uni6rtmp.tulix.tv:1935/vbstv/vbsabr.smil/chunklist_w439903609_b1228800.m3u8</link>
@@ -239,64 +306,29 @@
 <link>http://uni6rtmp.tulix.tv/vbstv/vbsabr.smil/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
-
-
-
-
-<item>
-<title>[COLOR aqua]Việtface Cali. 57.2[/COLOR]</title>
-<link>http://schannel.saigon.ns01.us:1935/schannel/myStream/chunklist_w503091201.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>[COLOR aqua]Việtface Dallas 55.5[/COLOR]</title>
-<link>http://schannel.saigon.ns01.us:1935/schannel/myStream/chunklist_w503091201.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>[COLOR aqua]Việtface 2[/COLOR]</title>
-<link>http://64.71.129.2:8080/hls/ius_000114.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-
-
 <item>
 <title>SBTN - SET channel 2072</title>
 <link>http://settv.saigon.ns01.us:1935/vietset574tvv/myStream/chunklist_w1706727569.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
-
-
-
 <item>
 <title>VNBC</title>
 <link>http://uni6rtmp.tulix.tv:1935/vbstv/vbsabr.smil/chunklist_w189527979_b1228800.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
-
 <item>
 <title>SChannel 54.4</title>
 <link>http://schannel.saigon.ns01.us:1935/schannel/myStream/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
-
-
-
 <item>
 <title>VietNews TV</title>
 <link>http://saigontvtv.saigon.ns01.us:1935/VietNews/myStream/chunklist_w172511522.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
-
-
 <item>
 <title>IBC TV 57.8</title>
 <link>rtmp://liveplay3.malimarcdn.com:1935/ibcnews playpath=ibcnews.sdp swfUrl=http://www.ibcnews.tv/content/scripts/media/strobe/StrobeMediaPlayback.swf pageUrl=http://www.ibcnews.tv/ live=true timeout=10</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>KVLA TV CHANNEL 56.5</title>
-<link>http://saigontv.saigon.ns01.us:1935/kvla/myStream/chunklist_w1425431614.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
 
@@ -308,8 +340,9 @@
 <link>tocablestv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
 </item>
-
-
+ 
+  
+  
 </items>
 </channel>
 </channels>
