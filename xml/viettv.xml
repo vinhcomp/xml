@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <channels>
 <channel>
 <name>viettv</name>
@@ -7,33 +7,35 @@
 
 <item>
 <title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]TV Hải Ngoại[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/cablestv.png</thumbnail>
+<link>viettv24free</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/viettv242.png</thumbnail>
 </item>
-
+<item>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Kodi4VNLauncher[/COLOR]</title>
+<link>tokodi4vnlauncher</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
+</item>
 <item>
 <title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]ITV Plus[/COLOR]</title>
 <link>toitv</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/itv.png</thumbnail>
 </item>
-
 <item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]HTV Online[/COLOR]</title>
-<link>tohtv</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/htv.png</thumbnail>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]VietMediaF[/COLOR]</title>
+<link>tovietmediaf</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vietmediaf.png</thumbnail>
+</item>
+<item>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]cCloud TV[/COLOR]</title>
+<link>toccloud</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/ccloud.png</thumbnail>
+</item>
+<item>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Pac-12[/COLOR]</title>
+<link>topac12</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/pac12.png</thumbnail>
 </item>
 
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]HTVPlus[/COLOR]</title>
-<link>redirecttohtvplus</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/htvplus.png</thumbnail>
-</item>
-
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]FPTPlay[/COLOR]</title>
-<link>redirecttofptplay</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/fptplay.png</thumbnail>
-</item>
 
 
 
@@ -41,39 +43,3 @@
 </items>
 </channel>
 </channels>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
