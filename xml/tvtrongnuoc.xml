@@ -159,79 +159,49 @@
   
   
 <item>
-<title>[COLOR lime]✫-✫-✫ FPT Play ✫-✫-✫[/COLOR]</title>
+<title>[COLOR lime]✫-✫-✫ VNTube TV ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]HTV7[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rbY7I8PqUNybE1%2Fctkz96D0XngjvohmOhQo7p9frzAiF</link>
-<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/02/02/519040-948241-HTV7-HD---tms.png</thumbnail>
+<title>[COLOR yellow]Cảnh đẹp 4K[/COLOR]</title>
+<link>http://vps105431.vps.ovh.ca/hls/canhdep4k.m3u8</link>
+<thumbnail>http://www.viettv24.com/main/images/Beautiful-Scenary.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]HTV7 HD[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rSIZ3%2B28olj2DIRQngnr%2BCYXc9ynBd0puwTAAy48zbhn</link>
-<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/02/02/519040-948241-HTV7-HD---tms.png</thumbnail>
+<title>[COLOR yellow]EpicStreaming[/COLOR]</title>
+<link>http://vps105431.vps.ovh.ca/hls/epic.m3u8</link>
+<thumbnail>https://openclipart.org/image/2400px/svg_to_png/205652/Awesome-smiley.png</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]HTV9[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rY7wdOR8tu%2FGb7ryAQ5chIuv%2BxatAS4KSu%2BnBafCZzRb</link>
-<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
+<title>[COLOR yellow]Hài - TV Shows[/COLOR]</title>
+<link>http://vps105431.vps.ovh.ca/hls/haitvshow.m3u8</link>
+<thumbnail>https://lh3.googleusercontent.com/sOLpCJsXrNiRfHDO8FTq-vzl6RV6vg4mxD0YDfY0LGTN4elDk-vG7fRHFqUPfqnkQtE=w300</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]HTV9 HD[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rSW7MWSD9CnFhHb8ioN6t6q2oWytWmYBR8WBAEtmp5Y2</link>
-<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
+<title>[COLOR yellow]Music Top200 YT[/COLOR]</title>
+<link>http://vps105431.vps.ovh.ca/hls/top200yt.m3u8</link>
+<thumbnail>http://s1.pic4you.ru/allimage/y2012/10-09/11703/2524001.jpeg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]HTV1[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rfaGGBUpXOh597uwzyPCfVOWZFXEF8d%2BEZpZZLmLfxCk</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htv1_145672763786.jpg?w=345&h=210&mode=scale</thumbnail>
+<title>[COLOR yellow]Music Top300 VN[/COLOR]</title>
+<link>http://vps105431.vps.ovh.ca/hls/top300vn.m3u8</link>
+<thumbnail>http://s1.pic4you.ru/allimage/y2012/10-09/11703/2524001.jpeg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]HTV2[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rV%2Bo3G%2FtiHEeEgef8PdZTHn8XrErvXelU4%2BwEd6CKm09</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htv2_145672764721.jpg?w=345&h=210&mode=scale</thumbnail>
+<title>[COLOR yellow]Music Bolero[/COLOR]</title>
+<link>http://vps105431.vps.ovh.ca/hls/bolero.m3u8</link>
+<thumbnail>http://zmp3-photo.d.za.zdn.vn/covers/6/3/6337aee2b7205cf8df2f6e4fa68e02ef_1472440930.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]HTV3[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rYrWxfI8%2F9OB4k11C2oEL4lfB58LoqG0ekKX5VhRfgfZ</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htv3_145672766359.jpg?w=345&h=210&mode=scale</thumbnail>
+<title>[COLOR yellow]Từ Bi Hỷ Xả[/COLOR]</title>
+<link>http://vps105431.vps.ovh.ca/hls/tubi.m3u8</link>
+<thumbnail>http://chiasephapthoai.com/wp-content/uploads/ultimatemember/1/profile_photo-190.png</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]HTV4[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rerYC80%2BN0UvzDogVOtnO758C%2F1zPfrCIeOMcR2DyAEX</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htv4_145672776087.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]HTVC Ca Nhạc[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rSdXNscIW7YetIy94Hj8mgLcFHqPYX6KIlh7IpfttTdK</link>
-<thumbnail>http://img.hplus.com.vn/355x200/poster/2017/04/20/593179-Canhac_FullHD.png</thumbnail>
-</item> 
-<item>
-<title>[COLOR yellow]HTVC Du Lịch[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8raBQv01JbwMp0qNgb%2FncikNqOMyjnaeK6yuGqV7ZcYWi</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-du-lich_145578790177.png?w=345&h=210&mode=scale</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]HTVC Gia Đình[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rVYcNzetqgNRCkLnMlyba5UWvz9OY7yl8S2fzFBzqIeK</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-gia-dinh_14557859914.png?w=345&h=210&mode=scale</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]HTVC Phụ Nữ[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rT8ccR8QTAjth8ld0oFxnMMGxWKTQfyrr4gPQM17M7y%2B</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-phu-nu_145672974528.jpg?w=345&h=210&mode=scale</thumbnail>
-</item> 
-<item>
-<title>[COLOR yellow]HTVC Thể Thao[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rWwxKgruJFylTsJamDMUQ1dMuDJQS%2F3HmY0gFVMeeit9</link>
-<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/10/10/238258-htvtt.png</thumbnail>
-</item> 
-<item>
-<title>[COLOR yellow]HTVC Thuần Việt[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24434&url=MqkX8QxMQockKjEk%2BVD0Ii0my1Uk%2BlwzTm5CftyxEKLBeXw6oupnveKsm1g%2FY7k3xlwKQ0TQth42VWVQ6au8rW%2BCVfcF6KXREqIcXtkxoWRwGnGRb%2Bj4YoEarD4QlYaOHNs2GkAcycrAkOLnWxH%2Ffdq5cM2kw9j5ADKJ4FKK7qM%3D</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_htvc-thuan-viet-sd_145578233591.png?w=345&h=210&mode=scale</thumbnail>
+<title>[COLOR yellow]Việt Nam - Vẻ Đẹp Bất Tận[/COLOR]</title>
+<link>http://vps105431.vps.ovh.ca/hls/vntube.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG</thumbnail>
 </item>
   
   
