@@ -165,6 +165,11 @@
 <thumbnail>http://www.viettv24.com/main/images/vietphotv_logo.jpg</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]KVLA TV CHANNEL 56.5[/COLOR</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DW2o9tcZ2HLw</link>
+<thumbnail>https://yt3.ggpht.com/-ShrFIJwe2aQ/AAAAAAAAAAI/AAAAAAAAAAA/F3pjSr8AqKU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]VStar TV 57.11[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/vstartv</link>
 <thumbnail>http://www.viettv24.com/main/images/vstar_logo.jpg</thumbnail>
@@ -334,12 +339,7 @@
 <item>
 <title>KVLA TV CHANNEL 56.5</title>
 <link>http://saigontv.saigon.ns01.us:1935/kvla/myStream/chunklist_w1930572275.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>KVLA TV CHANNEL 56.5 2</title>
-<link>http://saigontv.saigon.ns01.us:1935/kvla/myStream/chunklist_w747098553.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
+<thumbnail>https://yt3.ggpht.com/-ShrFIJwe2aQ/AAAAAAAAAAI/AAAAAAAAAAA/F3pjSr8AqKU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
 </item>
 
 
