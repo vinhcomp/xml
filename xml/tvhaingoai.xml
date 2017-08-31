@@ -333,7 +333,12 @@
 </item>
 <item>
 <title>KVLA TV CHANNEL 56.5</title>
-<link>http://saigontv.saigon.ns01.us:1935/kvla/myStream/chunklist_w1425431614.m3u8</link>
+<link>http://saigontv.saigon.ns01.us:1935/kvla/myStream/chunklist_w1930572275.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
+</item>
+<item>
+<title>KVLA TV CHANNEL 56.5 2</title>
+<link>http://saigontv.saigon.ns01.us:1935/kvla/myStream/chunklist_w747098553.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
 
