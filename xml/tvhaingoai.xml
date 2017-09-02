@@ -145,6 +145,11 @@
 <thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]Sài Gòn TV 57.5[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyPZ3YNp0kLg</link>
+<thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]Little Saigon TV 57.7[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Df6KR8Xxq3ok</link>
 <thumbnail>http://www.viettv24.com/main/images/littlesg.jpg</thumbnail>
@@ -202,6 +207,11 @@
 <item>
 <title>[COLOR yellow]VBS 57.6[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/vbstv</link>
+<thumbnail>http://www.viettv24.com/main/images/vbs.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VBS 57.6[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D1JSxlhiDpV8</link>
 <thumbnail>http://www.viettv24.com/main/images/vbs.jpg</thumbnail>
 </item>
 <item>
@@ -357,39 +367,3 @@
 </items>
 </channel>
 </channels>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
