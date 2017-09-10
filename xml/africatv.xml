@@ -95,8 +95,8 @@
 <thumbnail>http://static.filmon.com/couch/channels/3734/extra_big_logo.png</thumbnail>
 </item>
 <item>
-<title>[COLOR mediumspringgreen]UniversalTV Somali Television[/COLOR]</title>
-<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&mode=2</link>
+<title>[COLOR red]UniversalTV Somali Television[/COLOR]</title>
+<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&mode=2&name=UniversalTV+Somali+Television+</link>
 <thumbnail>http://static.filmon.com/couch/channels/3731/extra_big_logo.png</thumbnail>
 </item>
 <item>
