@@ -18,52 +18,52 @@
 </item>
 <item>
 <title>[COLOR mediumspringgreen]ESTV - Somali Ethiopia TV[/COLOR]</title>
-<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&amp;mode=2&amp;name=ESTV+-+Somali+Ethiopia+TV&amp;iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F3743%2Fbig_logo.png&amp;description=3743&amp;group=SOMALI+TV&amp;rand=MO053N&amp;sf_options=winID%3D10025%26_options_sf&quot</link>
+<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&mode=2&name=ESTV+-+Somali+Ethiopia+TV&iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F3743%2Fbig_logo.png&description=3743&group=SOMALI+TV&rand=MO053N&sf_options=winID%3D10025%26_options_sf&quot</link>
 <thumbnail>http://static.filmon.com/couch/channels/3743/extra_big_logo.png</thumbnail>
 </item>
 <item>
-<title>Kalsan TV Somali</title>
-<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&amp;mode=2&amp;name=Kalsan+TV+Somali+&amp;iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F4202%2Fbig_logo.png&amp;description=4202&amp;group=SOMALI+TV&amp;rand=MM22CN&amp;sf_options=winID%3D10025%26_options_sf&quot</link>
+<title>[COLOR mediumspringgreen]Kalsan TV Somali[/COLOR]</title>
+<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&mode=2&name=Kalsan+TV+Somali+&iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F4202%2Fbig_logo.png&description=4202&group=SOMALI+TV&rand=MM22CN&sf_options=winID%3D10025%26_options_sf&quot</link>
 <thumbnail>http://static.filmon.com/couch/channels/4202/extra_big_logo.png</thumbnail>
 </item>
 <item>
-<title>Horn Cable TV</title>
-<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&amp;mode=2&amp;name=Horn+Cable+TV+&amp;iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F3740%2Fbig_logo.png&amp;description=3740&amp;group=SOMALI+TV&amp;rand=CV9DR1&amp;sf_options=winID%3D10025%26_options_sf&quot</link>
+<title>[COLOR mediumspringgreen]Horn Cable TV[/COLOR]</title>
+<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&mode=2&name=Horn+Cable+TV+&iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F3740%2Fbig_logo.png&description=3740&group=SOMALI+TV&rand=CV9DR1&sf_options=winID%3D10025%26_options_sf&quot</link>
 <thumbnail>http://static.filmon.com/couch/channels/3740/extra_big_logo.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]JUBALAND TV[/COLOR]</title>
-<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&amp;mode=2&amp;name=JUBALAND+TV&amp;iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F5867%2Fbig_logo.png&amp;description=5867&amp;group=SOMALI+TV&amp;rand=3TUCBS&amp;sf_options=winID%3D10025%26_options_sf&quot</link>
+<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&mode=2&name=JUBALAND+TV&iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F5867%2Fbig_logo.png&description=5867&group=SOMALI+TV&rand=3TUCBS&sf_options=winID%3D10025%26_options_sf&quot</link>
 <thumbnail>https://static.filmon.com/assets/channels/5867/big_logo.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]UNTLAND TV[/COLOR]</title>
-<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&amp;mode=2&amp;name=PUNTLAND+TV&amp;iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F5879%2Fbig_logo.png&amp;description=5879&amp;group=SOMALI+TV&amp;rand=RWB6TS&amp;sf_options=winID%3D10025%26_options_sf&quot</link>
+<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&mode=2&name=PUNTLAND+TV&iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F5879%2Fbig_logo.png&description=5879&group=SOMALI+TV&rand=RWB6TS&sf_options=winID%3D10025%26_options_sf&quot</link>
 <thumbnail>https://static.filmon.com/assets/channels/5879/big_logo.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]SBC[/COLOR]</title>
-<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&amp;mode=2&amp;name=SBC&amp;iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F5873%2Fbig_logo.png&amp;description=5873&amp;group=SOMALI+TV&amp;rand=KMYIDF&amp;sf_options=winID%3D10025%26_options_sf&quot</link>
+<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&mode=2&name=SBC&iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F5873%2Fbig_logo.png&description=5873&group=SOMALI+TV&rand=KMYIDF&sf_options=winID%3D10025%26_options_sf&quot</link>
 <thumbnail>https://static.filmon.com/assets/channels/5873/big_logo.png</thumbnail>
 </item>
 <item>
-<title>SNLTV Somaliland National TV</title>
-<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&amp;mode=2&amp;name=SNLTV+Somaliland+National+tv&amp;iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F4208%2Fbig_logo.png&amp;description=4208&amp;group=SOMALI+TV&amp;rand=LQFTIY&amp;sf_options=winID%3D10025%26_options_sf&quot</link>
+<title>[COLOR mediumspringgreen]SNLTV Somaliland National TV[/COLOR]</title>
+<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&mode=2&name=SNLTV+Somaliland+National+tv&iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F4208%2Fbig_logo.png&description=4208&group=SOMALI+TV&rand=LQFTIY&sf_options=winID%3D10025%26_options_sf&quot</link>
 <thumbnail>http://static.filmon.com/couch/channels/4208/extra_big_logo.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]SOMALI CABLE TV[/COLOR]</title>
-<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&amp;mode=2&amp;name=SOMALI+CABLE+TV&amp;iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F5870%2Fbig_logo.png&amp;description=5870&amp;group=SOMALI+TV&amp;rand=QY3H0Y&amp;sf_options=winID%3D10025%26_options_sf&quot</link>
+<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&mode=2&name=SOMALI+CABLE+TV&iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F5870%2Fbig_logo.png&description=5870&group=SOMALI+TV&rand=QY3H0Y&sf_options=winID%3D10025%26_options_sf&quot</link>
 <thumbnail>https://static.filmon.com/assets/channels/5870/big_logo.png</thumbnail>
 </item>
 <item>
-<title>Somali National TV</title>
-<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&amp;mode=2&amp;name=Somali+National+TV+&amp;iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F3734%2Fbig_logo.png&amp;description=3734&amp;group=SOMALI+TV&amp;rand=LUIUAP&amp;sf_options=winID%3D10025%26_options_sf&quot</link>
+<title>[COLOR mediumspringgreen]Somali National TV[/COLOR]</title>
+<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&mode=2&name=Somali+National+TV+&iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F3734%2Fbig_logo.png&description=3734&group=SOMALI+TV&rand=LUIUAP&sf_options=winID%3D10025%26_options_sf&quot</link>
 <thumbnail>http://static.filmon.com/couch/channels/3734/extra_big_logo.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]STAR TV[/COLOR]</title>
-<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&amp;mode=2&amp;name=STAR+TV&amp;iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F5864%2Fbig_logo.png&amp;description=5864&amp;group=SOMALI+TV&amp;rand=R187XR&amp;sf_options=winID%3D10025%26_options_sf&quot</link>
+<link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&mode=2&name=STAR+TV&iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F5864%2Fbig_logo.png&description=5864&group=SOMALI+TV&rand=R187XR&sf_options=winID%3D10025%26_options_sf&quot</link>
 <thumbnail>https://static.filmon.com/assets/channels/5864/big_logo.png</thumbnail>
 </item>
 
