@@ -353,17 +353,12 @@
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_ba-ria-vung-tau_145672972069.jpg?w=345&h=210&mode=scale</thumbnail>
 </item>
 <item>
-<title>Cần Thơ THTPCT</title>
+<title>[COLOR yellow]Cần Thơ THTPCT[/COLOR]</title>
 <link>http://tv.canthotv.vn/live.m3u8</link>
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_can-tho_145672728114.jpg?w=345&h=210&mode=scale</thumbnail>
 </item>
 <item>
-<title>Cần Thơ THTPCT</title>
-<link>rtmp://113.161.204.167:1935/livepkgr/ playpath=livestream swfUrl=http://vtvcantho.vn/Content/jwplayer/player.swf pageUrl=http://vtvcantho.vn/ live=1 timeout=90</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Khánh Hòa KTV</title>
+<title>[COLOR yellow]Khánh Hòa KTV[/COLOR]</title>
 <link>http://210.245.20.94/hls/ktv3.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
