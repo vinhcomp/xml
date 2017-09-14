@@ -9,16 +9,6 @@
 <title>[COLOR yellow]Kodi4VNLauncher[/COLOR]</title>
 <link>tokodi4vnlauncher</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]VTVGo Live[/COLOR]</title>
-<link>tovtvgo</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vtvgo.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Pac-12[/COLOR]</title>
-<link>topac12</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/pac12.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VietMediaF[/COLOR]</title>
@@ -29,6 +19,11 @@
 <title>[COLOR yellow]ITV Plus[/COLOR]</title>
 <link>toitv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/itv.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Pac-12[/COLOR]</title>
+<link>topac12</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/pac12.png</thumbnail>
 </item>
   
   
