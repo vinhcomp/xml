@@ -5,11 +5,17 @@
 <items>
 
 <item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Phoenix TV[/COLOR]</title>
-<link>tophoenix</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/phoenix.png</thumbnail>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]BENNU[/COLOR]</title>
+<link>tobennu</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/bennu.png</thumbnail>
 </item>
 
+
+<item>
+<title>[COLOR yellow]Syrian RTV Channels Live 3-Sama TV[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8PYOm-q1rnU</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/7/75/Sama_TV_Logo.png</thumbnail>
+</item>
 
 
 <item>
