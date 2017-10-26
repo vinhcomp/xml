@@ -1,8 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<channels>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
 <channel>
-<name>1filmaday</name>
-<items>
 
 
 <item>
@@ -27,7 +25,5 @@
 </item>
  
   
-  
-</items>
+
 </channel>
-</channels>
