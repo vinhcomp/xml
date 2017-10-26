@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 
-<stream>
+<channels>
+<channel>
+<name>1 Hot Film a Day</name>
+<items>
 
 
 <item>
@@ -25,4 +28,6 @@
 </item>
 
 
- </stream>
+</items>
+</channel>
+</channels>
