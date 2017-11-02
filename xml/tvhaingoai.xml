@@ -140,23 +140,18 @@
 <thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Sài Gòn TV 57.5[/COLOR]</title>
+<title>[COLOR yellow]Sài Gòn TV 57.5[/COLOR]</title> - Not Working
 <link>plugin://plugin.video.kodi4vn.launcher/play/sgtv</link>
 <thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR green]Sài Gòn TV 57.5[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DoInWosXJ-Hg</link>
+<title>[COLOR blue]Sài Gòn TV 57.5[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DexKQRC7pjcA</link>
 <thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR green]Little Saigon TV 57.7[/COLOR]</title>
+<title>[COLOR blue]Little Saigon TV 57.7[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DeS4swIAQ_p0</link>
-<thumbnail>http://www.viettv24.com/main/images/littlesg.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Little Saigon TV 57.7[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Df6KR8Xxq3ok</link>
 <thumbnail>http://www.viettv24.com/main/images/littlesg.jpg</thumbnail>
 </item>
 <item>
