@@ -150,6 +150,11 @@
 <thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
 </item>
 <item>
+<title>Little Saigon TV 57.7</title>
+<link>http://saigontvtv.saigon.ns01.us:1935/Lstv577/myStream/chunklist_w1229536511.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
+</item>
+<item>
 <title>[COLOR blue]Little Saigon TV 57.7[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DeS4swIAQ_p0</link>
 <thumbnail>http://www.viettv24.com/main/images/littlesg.jpg</thumbnail>
@@ -178,6 +183,11 @@
 <title>[COLOR yellow]Việt Phố TV 57.10[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/vietpho</link>
 <thumbnail>http://www.viettv24.com/main/images/vietphotv_logo.jpg</thumbnail>
+</item>
+<item>
+<title>KVLA TV CHANNEL 56.5</title>
+<link>http://saigontv.saigon.ns01.us:1935/kvla/myStream/chunklist_w1930572275.m3u8</link>
+<thumbnail>https://yt3.ggpht.com/-ShrFIJwe2aQ/AAAAAAAAAAI/AAAAAAAAAAA/F3pjSr8AqKU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR green]KVLA TV CHANNEL 56.5[/COLOR]</title>
@@ -273,29 +283,8 @@
 
 
 
-<item>
-<title>[COLOR cyan][B]SET TV[/B][/COLOR]</title>
-<link>http://settv.saigon.ns01.us:1935/vietset574tvv/myStream/chunklist_w542335559.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
 
 
-
-<item>
-<title>VNA TV 57.3</title>
-<link>http://livestream.vnvn.net/hls-live/livepkgr/_definst_/vnatv573-1/vnatv573-1.m3u8?time=1482109571065</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>VNA TV 57.3</title>
-<link>http://livestream.vnvn.net/vnatv573.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>Little Saigon TV 57.7</title>
-<link>http://saigontvtv.saigon.ns01.us:1935/Lstv577/myStream/chunklist_w1229536511.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
 <item>
 <title>[COLOR blue]Việt Mỹ TV[/COLOR]</title>
 <link>http://68.235.37.11:1935/vietmagazine/vietmagazine/playlist.m3u8</link>
@@ -356,11 +345,7 @@
 <link>rtmp://liveplay3.malimarcdn.com:1935/ibcnews playpath=ibcnews.sdp swfUrl=http://www.ibcnews.tv/content/scripts/media/strobe/StrobeMediaPlayback.swf pageUrl=http://www.ibcnews.tv/ live=true timeout=10</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
-<item>
-<title>KVLA TV CHANNEL 56.5</title>
-<link>http://saigontv.saigon.ns01.us:1935/kvla/myStream/chunklist_w1930572275.m3u8</link>
-<thumbnail>https://yt3.ggpht.com/-ShrFIJwe2aQ/AAAAAAAAAAI/AAAAAAAAAAA/F3pjSr8AqKU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
-</item>
+
 
 
 
