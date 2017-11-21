@@ -32,6 +32,32 @@
 <link>http://youtube.com</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
+  
+<item>
+<title>HTV7</title>
+<link>http://113.161.66.38:4022/rtp/232.84.1.21:8100</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>HTV7 HD</title>
+<link>http://113.161.66.38:4022/rtp/232.84.1.223:9312</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV9 TN[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24633&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeRAhWcshIrZWeWT7DG5VLKnL8gcIl7R9ryQVf8xSVtVA%3D%3D</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
+</item>
+<item>
+<title>HTV9</title>
+<link>http://113.161.66.38:4022/rtp/232.84.1.31:8160</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>HTV9 HD</title>
+<link>http://113.161.66.38:4022/rtp/232.84.1.224:9318</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
 <item>
 <title>[COLOR yellow]VTV1 HD[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.vtvgo/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-vtv-1.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
