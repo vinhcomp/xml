@@ -1,0 +1,135 @@
+#######################################################################################################################################
+<poster>Blue</poster>
+#######################################################################################################################################
+
+<dir>
+<name>pop</name>
+<link>http://www.dabutcher.org/test/test.xml</link>
+<thumbnail>https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjkr6WR_rPXAhXCYyYKHQgwB2MQjRwIBw&url=https%3A%2F%2Fwww.themoviedb.org%2Fmovie&psig=AOvVaw2Pz4kEZ5FZkAi9JaPeRLzz&ust=1510402555352863</thumbnail>
+<summary>test</summary>
+</dir>
+
+<dir>
+<name>New Blockbusters</name>
+<link>http://www.houseofstark.ca/blue/Movies/newreleases.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Newreleases.png</thumbnail>
+<summary>New Blockbuster Movies</summary>
+</dir>
+
+<dir>
+<name>Marvel Movies</name>
+<link>http://www.houseofstark.ca/blue/Movies/Marvel%20Movies.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Marvel%20Movies.png</thumbnail>
+<summary>All Marvel Movies</summary>
+</dir>
+
+<dir>
+<name>DC Movies</name>
+<link>http://www.houseofstark.ca/blue/Movies/DC%20Movies.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/DC%20Movies.png</thumbnail>
+<summary>All DC Movies</summary>
+</dir>
+
+<dir>
+<name>Boxsets</name>
+<link>http://www.houseofstark.ca/blue/Boxsets/boxsets.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Boxsets.png</thumbnail>
+<summary>My Favourite Boxsets</summary>
+</dir>
+
+<dir>
+<name>Movie Collections</name>
+<link>http://www.houseofstark.ca/blue/Movies/Collections.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Collections.png</thumbnail>
+<summary>A Mashup of Movie Collections</summary>
+</dir>
+
+<dir>
+<name>Chick Flicks</name>
+<link>http://www.houseofstark.ca/blue/Movies/Chick%20Movies.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Chick%20Flicks.png</thumbnail>
+<summary>All Things Girlie</summary>
+</dir>
+
+<dir>
+<name>Blue's Fave Movies</name>
+<link>http://www.houseofstark.ca/blue/Movies/Blues-Faves.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Bluefaves.png</thumbnail>
+<summary>My Personal Fave Movies</summary>
+</dir>
+
+<dir>
+<name>Oscars</name>
+<link>http://www.houseofstark.ca/blue/Oscars/Main%20List.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Oscars.png</thumbnail>
+<summary>All Oscar Winners and Nominees</summary>
+</dir>
+
+<dir>
+<name>Marvel TV</name>
+<link>http://www.houseofstark.ca/blue/TV/Marvel%20TV/shows_marvel-tv.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/MarvelTV.png</thumbnail>
+<summary>All Marvel TV Shows</summary>
+</dir>
+
+<dir>
+<name>DC TV</name>
+<link>http://www.houseofstark.ca/blue/TV/DC%20TV/shows_dc-tv.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/DCTV.png</thumbnail>
+<summary>All DC TV Shows</summary>
+</dir>
+
+<dir>
+<name>Star Wars TV</name>
+<link>http://www.houseofstark.ca/blue/TV/Star%20Wars%20TV/Star%20Wars%20TV.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Starwarstv.png</thumbnail>
+<summary>All Star Wars TV Shows</summary>
+</dir>
+
+<dir>
+<name>My TV</name>
+<link>http://www.houseofstark.ca/blue/TV/Blue%20TV/Shows.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Bluestv.png</thumbnail>
+<summary>My Personal Fave TV Shows</summary>
+</dir>
+
+<dir>
+<name>My Kids</name>
+<link>http://www.houseofstark.ca/blue/Kids/Kids%20Main.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Kids.png</thumbnail>
+<summary>Movies for Kids</summary>
+</dir>
+
+<dir>
+<name>My Anime</name>
+<link>http://www.houseofstark.ca/blue/Anime/anime.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Anime.png</thumbnail>
+<summary>My Fave Anime TV and Movies</summary>
+</dir>
+
+<plugin>
+<name>30701</name>
+<link>plugin://plugin.video.blue/?action=openSettings</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Settings.png</thumbnail>
+<summary>Settings for Blue Addons</summary>
+</plugin>
+
+
+<plugin>
+<name>30702</name>
+<link>plugin://plugin.video.blue/?action=search</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Search.png</thumbnail>
+<summary>Search for Blue Addon</summary>
+</plugin>
+
+<plugin>
+<name>Testings</name>
+<link>plugin://plugin.video.blue/?action=developer</link>
+<thumbnail></thumbnail>
+<summary>Testings</summary>
+</plugin>
+
+
+
+
+
