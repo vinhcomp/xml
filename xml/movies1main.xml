@@ -109,7 +109,7 @@
 
 <plugin>
 <name>30701</name>
-<link>plugin://plugin.video.blue/?action=openSettings</link>
+<link>plugin://plugin.video.movies1/?action=openSettings</link>
 <thumbnail>http://www.houseofstark.ca/blue/Icons/Settings.png</thumbnail>
 <summary>Settings for Blue Addons</summary>
 </plugin>
@@ -117,14 +117,14 @@
 
 <plugin>
 <name>30702</name>
-<link>plugin://plugin.video.blue/?action=search</link>
+<link>plugin://plugin.video.movies1/?action=search</link>
 <thumbnail>http://www.houseofstark.ca/blue/Icons/Search.png</thumbnail>
 <summary>Search for Blue Addon</summary>
 </plugin>
 
 <plugin>
 <name>Testings</name>
-<link>plugin://plugin.video.blue/?action=developer</link>
+<link>plugin://plugin.video.movies1/?action=developer</link>
 <thumbnail></thumbnail>
 <summary>Testings</summary>
 </plugin>
