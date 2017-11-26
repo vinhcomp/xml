@@ -3,10 +3,10 @@
 #######################################################################################################################################
 
 <dir>
-<name>pop</name>
-<link>http://www.dabutcher.org/test/test.xml</link>
-<thumbnail>https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjkr6WR_rPXAhXCYyYKHQgwB2MQjRwIBw&url=https%3A%2F%2Fwww.themoviedb.org%2Fmovie&psig=AOvVaw2Pz4kEZ5FZkAi9JaPeRLzz&ust=1510402555352863</thumbnail>
-<summary>test</summary>
+<name>New Releases</name>
+<link>https://github.com/vinhcomp/xml/raw/master/xml/movies1tvshows.xml</link>
+<thumbnail>http://www.houseofstark.ca/blue/Icons/Newreleases.png</thumbnail>
+<summary>New Releases Movies</summary>
 </dir>
 
 <dir>
