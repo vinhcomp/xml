@@ -4,7 +4,7 @@
 
 <dir>
 <name>New Releases</name>
-<link>https://github.com/vinhcomp/xml/raw/master/xml/movies1tvshows.xml</link>
+<link>https://github.com/vinhcomp/xml/raw/master/xml/movies1newreleases.xml</link>
 <thumbnail>http://www.houseofstark.ca/blue/Icons/Newreleases.png</thumbnail>
 <summary>New Releases Movies</summary>
 </dir>
