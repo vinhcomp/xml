@@ -5,6 +5,11 @@
 <items>
 
 <item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]Movies 1[/COLOR]</title>
+<link>tomovies1</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movies1.png</thumbnail>
+</item>
+<item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]1 Film a Day[/COLOR]</title>
 <link>tophimhot</link>
 <thumbnail>http://www.odc.govt.nz/SiteCollectionImages/OUR%20DISTRICT/Movies%20logo.jpg</thumbnail>
@@ -18,11 +23,6 @@
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Movie M4U[/COLOR]</title>
 <link>tom4u</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/m4u.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]BENNU[/COLOR]</title>
-<link>tomovies1</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/bennu.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]BOB Unleashed[/COLOR]</title>
