@@ -10,6 +10,13 @@
 </dir>
 
 <dir>
+<name>TV SHOWS</name>
+<link>https://github.com/vinhcomp/xml/raw/master/xml/movies1tvshows.xml</link>
+<thumbnail>http://www.norestrictions.club/caira/icon/png/bobtvshow.png</thumbnail>
+<summary>All Marvel TV Shows</summary>
+</dir>
+
+<dir>
 <name>New Blockbusters</name>
 <link>http://www.houseofstark.ca/blue/Movies/newreleases.xml</link>
 <thumbnail>http://www.houseofstark.ca/blue/Icons/Newreleases.png</thumbnail>
