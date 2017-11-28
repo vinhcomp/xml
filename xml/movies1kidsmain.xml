@@ -5,42 +5,42 @@
 #######################################################################################################################################
 
 <dir>
-<name>Kids Animated</name>
+<name>[COLOR yellow]Kids Animated[/COLOR]</name>
 <link>http://www.houseofstark.ca/blue/Kids/Kids.xml</link>
 <thumbnail>http://www.houseofstark.ca/blue/Icons/Blue-Kids-Animated.png</thumbnail>
 <fanart></fanart>
 </dir>
 
 <dir>
-<name>[COLORcyan]Click For New Kids Movies[/COLOR]</name>
+<name>[COLOR yellow]Click For New Kids Movies[/COLOR]</name>
 <link>https://pastebin.com/raw/duFQdTxY</link>
 <animated_thumbnail>http://www.norestrictions.club/reloaded/icons/Kids/Kids-New-Releases.gif</animated_thumbnail>
 <thumbnail>http://www.norestrictions.club/reloaded/icons/Kids/Kids-New-Releases.png</thumbnail>
 </dir>
 
 <dir>
-<name>Kids Live Action</name>
+<name>[COLOR yellow]Kids Live Action[/COLOR]</name>
 <link>http://www.houseofstark.ca/blue/Kids/Kids%20Live%20Action.xml</link>
 <thumbnail>http://www.houseofstark.ca/blue/Icons/Blue-Kids-Live.png</thumbnail>
 <fanart></fanart>
 </dir>
 
 <dir>
-<name>Furry Friends</name>
+<name>[COLOR yellow]Furry Friends[/COLOR]</name>
 <link>http://www.houseofstark.ca/blue/Kids/Animals.xml</link>
 <thumbnail>http://www.houseofstark.ca/blue/Icons/Blue-Kids-Furry.png</thumbnail>
 <fanart></fanart>
 </dir>
 
 <dir>
-<name>Studio Ghibli</name>
+<name>[COLOR yellow]Studio Ghibli[/COLOR]</name>
 <link>http://www.houseofstark.ca/blue/Kids/Studio%20Ghibli.xml</link>
 <thumbnail>http://www.houseofstark.ca/blue/Icons/Blue-Kids-Ghibli.png</thumbnail>
 <fanart></fanart>
 </dir>
 
 <dir>
-<name>Roald Dahl Movies</name>
+<name>[COLOR yellow]Roald Dahl Movies[/COLOR]</name>
 <link>http://www.houseofstark.ca/blue/Kids/Roald-Dahl.xml</link>
 <thumbnail>http://www.houseofstark.ca/blue/Icons/Blue-Movies-Roald-Dahl.png</thumbnail>
 </dir>
