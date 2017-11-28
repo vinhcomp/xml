@@ -1,19 +1,26 @@
 #######################################################################################################################################
-<poster>Blue</poster>
+<poster>Movies1</poster>
 #######################################################################################################################################
 
 <dir>
-<name>New Releases</name>
+<name>[COLOR yellow]NEW RELEASES[/COLOR]</name>
 <link>https://github.com/vinhcomp/xml/raw/master/xml/movies1newreleases.xml</link>
 <thumbnail>http://www.houseofstark.ca/blue/Icons/Newreleases.png</thumbnail>
 <summary>New Releases Movies</summary>
 </dir>
 
 <dir>
-<name>TV SHOWS</name>
+<name>[COLOR yellow]TV SHOWS[/COLOR]</name>
 <link>https://github.com/vinhcomp/xml/raw/master/xml/movies1tvshows.xml</link>
 <thumbnail>http://www.norestrictions.club/caira/icon/png/bobtvshow.png</thumbnail>
-<summary>All Marvel TV Shows</summary>
+<summary>All TV Shows</summary>
+</dir>
+
+<dir>
+<name>[COLOR yellow]KIDS[/COLOR]</name>
+<link>https://github.com/vinhcomp/xml/raw/master/xml/movies1kidsmain.xml</link>
+<thumbnail>http://www.freepngimg.com/download/cartoon/4-2-cartoon-transparent.png</thumbnail>
+<summary>All Kids Movies</summary>
 </dir>
 
 <dir>
