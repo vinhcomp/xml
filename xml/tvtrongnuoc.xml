@@ -89,43 +89,48 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]Việt News[/COLOR]</title>
+<link>http://kodi4vn.com/live/hls/News.m3u8</link>
+<thumbnail>https://superrepo.org/static/images/icons/original/xservice.kodi4vn.maintenance.png.pagespeed.ic.BD2LHg25m3.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]Cảnh đẹp 4K[/COLOR]</title>
-<link>http://vnop.ga/live/hls/4K.m3u8</link>
+<link>http://kodi4vn.com/live/hls/4K.m3u8</link>
 <thumbnail>http://www.viettv24.com/main/images/Beautiful-Scenary.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]EpicStreaming[/COLOR]</title>
-<link>http://vnop.ga/live/hls/Epic.m3u8</link>
+<link>http://kodi4vn.com/live/hls/Epic.m3u8</link>
 <thumbnail>https://openclipart.org/image/2400px/svg_to_png/205652/Awesome-smiley.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Hài - TV Shows[/COLOR]</title>
-<link>http://vnop.ga/live/hls/HaiTVShows.m3u8</link>
+<link>http://kodi4vn.com/live/hls/HaiTVShows.m3u8</link>
 <thumbnail>https://lh3.googleusercontent.com/sOLpCJsXrNiRfHDO8FTq-vzl6RV6vg4mxD0YDfY0LGTN4elDk-vG7fRHFqUPfqnkQtE=w300</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Music Top200 YT[/COLOR]</title>
-<link>http://vnop.ga/live/hls/Top200YT.m3u8</link>
+<link>http://kodi4vn.com/live/hls/Top200YT.m3u8</link>
 <thumbnail>http://s1.pic4you.ru/allimage/y2012/10-09/11703/2524001.jpeg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Music Top300 VN[/COLOR]</title>
-<link>http://vnop.ga/live/hls/Top300VN.m3u8</link>
+<link>http://kodi4vn.com/live/hls/Top300VN.m3u8</link>
 <thumbnail>http://s1.pic4you.ru/allimage/y2012/10-09/11703/2524001.jpeg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Music Bolero[/COLOR]</title>
-<link>http://vnop.ga/live/hls/Bolero.m3u8</link>
+<link>http://kodi4vn.com/live/hls/Bolero.m3u8</link>
 <thumbnail>http://zmp3-photo.d.za.zdn.vn/covers/6/3/6337aee2b7205cf8df2f6e4fa68e02ef_1472440930.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Từ Bi Hỷ Xả[/COLOR]</title>
-<link>http://vnop.ga/live/hls/TuBi.m3u8</link>
+<link>http://kodi4vn.com/live/hls/TuBi.m3u8</link>
 <thumbnail>http://chiasephapthoai.com/wp-content/uploads/ultimatemember/1/profile_photo-190.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Việt Nam - Vẻ Đẹp Bất Tận[/COLOR]</title>
-<link>http://vnop.ga/live/hls/VanHoa.m3u8</link>
+<link>http://kodi4vn.com/live/hls/VanHoa.m3u8</link>
 <thumbnail>https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG</thumbnail>
 </item>
   
