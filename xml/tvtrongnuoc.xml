@@ -27,6 +27,27 @@
 </item>
   
 
+<item>
+<title>HTV7</title>
+<link>http://113.175.242.213:4022/rtp/232.84.1.21:8100</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>HTV7 HD</title>
+<link>http://113.175.242.213:4022/rtp/232.84.1.223:9312</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>HTV9</title>
+<link>http://113.175.242.213:4022/rtp/232.84.1.31:8160</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>HTV9 HD</title>
+<link>http://113.175.242.213:4022/rtp/232.84.1.224:9318</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>  
+  
   
 <item>
 <title>[COLOR lime]✫-✫-✫ VTVGo ✫-✫-✫[/COLOR]</title>
