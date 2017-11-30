@@ -140,12 +140,7 @@
 <thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Sài Gòn TV 57.5[/COLOR] - Not Working</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/sgtv</link>
-<thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]Sài Gòn TV 57.5[/COLOR]</title>
+<title>[COLOR orange]Sài Gòn TV 57.5[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DB_QYw27C63c</link>
 <thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
 </item>
@@ -155,8 +150,8 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
 <item>
-<title>[COLOR blue]Little Saigon TV 57.7[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DeS4swIAQ_p0</link>
+<title>[COLOR orange]Little Saigon TV 57.7[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DEmfIEOwx030</link>
 <thumbnail>http://www.viettv24.com/main/images/littlesg.jpg</thumbnail>
 </item>
 <item>
@@ -193,6 +188,11 @@
 <title>[COLOR green]KVLA TV CHANNEL 56.5[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8YkTaIu9-Jc</link>
 <thumbnail>https://yt3.ggpht.com/-ShrFIJwe2aQ/AAAAAAAAAAI/AAAAAAAAAAA/F3pjSr8AqKU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VStar TV 57.11[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DEfsYKY5WCVg</link>
+<thumbnail>http://www.viettv24.com/main/images/vstar_logo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VStar TV 57.11[/COLOR]</title>
