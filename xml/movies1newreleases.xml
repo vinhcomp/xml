@@ -20,6 +20,22 @@
 </dir>
 
 <item>
+	<title>The Foreigner (2017)</title>
+	<meta>
+		<content>movie</content>
+		<imdb>tt1615160</imdb>
+		<title>The Foreigner</title>
+		<year>2017</year>
+	</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/w500/rwM4hzrmc5HiWfQD9ls9DL4QgGl.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/p6anj7RQe03Gq2hSIxkkoozPMSH.jpg</fanart>
+</item>
+
+<item>
 	<title>Kingsman: The Golden Circle (2017)</title>
 	<meta>
 		<content>movie</content>
@@ -34,8 +50,6 @@
 	<thumbnail>http://image.tmdb.org/t/p/w500/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg</thumbnail>
 	<fanart>http://image.tmdb.org/t/p/original/uExPmkOHJySrbJyJDJylHDqaT58.jpg</fanart>
 </item>
-
-
 
 <item>
   <title>Home Again (2017)</title>
