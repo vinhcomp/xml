@@ -38,6 +38,16 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 <item>
+<title>HTV7</title>
+<link>http://113.22.185.221:4022/udp/225.1.1.176:30120</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>HTV7 HD</title>
+<link>http://113.22.185.221:4022/udp/225.1.1.192:30120</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
 <title>HTV9</title>
 <link>http://113.175.242.213:4022/rtp/232.84.1.31:8160</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
