@@ -4,11 +4,7 @@
 <name>Movies</name>
 <items>
 
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]Movies 1[/COLOR]</title>
-<link>tomovies1</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movies1.png</thumbnail>
-</item>
+
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]1 Film a Day[/COLOR]</title>
 <link>tophimhot</link>
@@ -76,11 +72,7 @@
 
 
 
-<item>
-<title>[COLOR mediumspringgreen]Vietnamese[/COLOR] | [COLOR cornflowerblue]1 Phim a Day[/COLOR]</title>
-<link>tophimhot</link>
-<thumbnail>http://www.odc.govt.nz/SiteCollectionImages/OUR%20DISTRICT/Movies%20logo.jpg</thumbnail>
-</item>
+
 <item>
 <title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Kodi4VNLauncher[/COLOR]</title>
 <link>tokodi4vnlauncher</link>
@@ -117,31 +109,6 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movihd.png</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR lime]Kenh88[/COLOR]</title>
-<link>tovodkenh88</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kenh88.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR green]HDOnline[/COLOR]</title>
-<link>tohdonline</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/hdonline.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR springgreen]Xem Phim LT[/COLOR]</title>
-<link>tophimlt</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phimlt.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR springgreen]Phim73[/COLOR]</title>
-<link>tophim73</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phim73.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | Phim 14</title>
-<link>tophim14</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phim14.png</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]Vietnamese[/COLOR] | Xóm Giải Trí</title>
 <link>redirecttoxomgiaitri</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xomgiaitri.png</thumbnail>
@@ -151,11 +118,6 @@
 <link>toxshare</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xshare.png</thumbnail>
 </item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | Yeu Phim</title>
-<link>toyeuphim</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/yeuphim.png</thumbnail>
-</item>
 
 
 <item>
@@ -163,66 +125,7 @@
 <link>tophim3ss</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phim3s.png</thumbnail>
 </item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR lime]Phim 3S[/COLOR]-[COLOR red]Under Maintenance[/COLOR]</title>
-<link>tophim3ss</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phim3s.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]HayHayTV[/COLOR]-[COLOR red]Under Maintenance[/COLOR]</title>
-<link>tohayhay</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/hayhay.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | Ánh Trăng</title>
-<link>toanhtrang</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/anhtrang.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | Kenh108.com</title>
-<link>redirecttokenh108</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kenh108.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | MovieBox</title>
-<link>redirecttomoviebox</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/moviebox.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | Phim Vàng</title>
-<link>redirecttophimvang</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phimvang.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR tomato]Xem Phim Số[/COLOR]</title>
-<link>toxemphimso</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xemphimso.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR springgreen]Phim Nhanh[/COLOR]</title>
-<link>tophimnhanh</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phimnhanh.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | Phim 60s</title>
-<link>tophim60s</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phim60s.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | Phim Mới</title>
-<link>tophimmoi</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phimmoi.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR blueviolet]Mega-Fun[/COLOR]</title>
-<link>tomegafun</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/megafun.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | VKool</title>
-<link>redirecttovkool</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vkool.png</thumbnail>
-</item>
+
 
 
 
