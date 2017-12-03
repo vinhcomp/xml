@@ -6,6 +6,12 @@
 
  
 <item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]Convenant[/COLOR]</title>
+<link>toconvenant</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/convenant.png</thumbnail>
+</item>
+ 
+<item>
 <title>[COLOR lime]Thúy Nga 120 - Live Streaming[/COLOR] - [COLOR ffff0000]Phỏng Vấn Ca Sĩ[/COLOR]</title>
 <link>plugin://plugin.video.itvplus/?url=plugin%3A%2F%2Fplugin.video.youtube%2Fplay%2F%3Fvideo_id%3DFhpgNYqkJ3c&mode=100</link>
 <thumbnail>https://i.ytimg.com/vi/FhpgNYqkJ3c/hqdefault.jpg</thumbnail>
