@@ -4,6 +4,13 @@
 <channel>
 <items>
 
+ 
+<dir>
+<name>[COLOR yellow]Kodi4VNLauncher[/COLOR]</name>
+<link>plugin://plugin.video.thongld.vnplaylist/section/936681586@1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss/%5BB%5D%5BCOLOR+yellow%5DTRUY%E1%BB%80N+H%C3%8CNH+AIO+-+Trong+n%C6%B0%E1%BB%9Bc+v%C3%A0+H%E1%BA%A3i+ngo%E1%BA%A1i%5B%2FCOLOR%5D%5B%2FB%5D&quot</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
+</dir>
+ 
 <item>
 <title>[COLOR lime]Thúy Nga 120 - Live Streaming[/COLOR] - [COLOR ffff0000]Phỏng Vấn Ca Sĩ[/COLOR]</title>
 <link>plugin://plugin.video.itvplus/?url=plugin%3A%2F%2Fplugin.video.youtube%2Fplay%2F%3Fvideo_id%3DFhpgNYqkJ3c&mode=100</link>
