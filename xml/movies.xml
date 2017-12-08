@@ -5,11 +5,7 @@
 <items>
 
 
-<item>
-<title>[COLOR ffff0000]TVs - SPORTS - MOVIES - TV SHOWS[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
-</item>
+
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Fantastic[/COLOR]</title>
 <link>tofantastic</link>
@@ -30,6 +26,11 @@
 <link>tobobunleashed</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/bobunleashed.png</thumbnail>
 </item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Sports - Movies - TV Shows[/COLOR] | [COLOR red]Cables TV[/COLOR]]</title>
+<link>tocablestv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
+</item> 
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]MetalliQ[/COLOR]</title>
 <link>tometalliq</link>
@@ -72,7 +73,11 @@
 
 
 
-
+<item>
+<title>[COLOR mediumspringgreen]Vietnamese[/COLOR] | [COLOR yellow]Sports - Movies - TV Shows[/COLOR] | [COLOR red]Cables TV[/COLOR]]</title>
+<link>tocablestv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
+</item>
 <item>
 <title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Kodi4VNLauncher[/COLOR]</title>
 <link>tokodi4vnlauncher</link>
