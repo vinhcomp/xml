@@ -6,6 +6,11 @@
 
 
 <item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]fantastic[/COLOR]</title>
+<link>tofantastic</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/fantastic.png</thumbnail>
+</item>
+<item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]Movies 1[/COLOR]</title>
 <link>tomovies1</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movies1.png</thumbnail>
