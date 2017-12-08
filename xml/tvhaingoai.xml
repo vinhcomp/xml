@@ -28,6 +28,11 @@
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Vnews.jpg</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]Việt News[/COLOR]</title>
+<link>http://kodi4vn.com/live/hls/News.m3u8</link>
+<thumbnail>https://superrepo.org/static/images/icons/original/xservice.kodi4vn.maintenance.png.pagespeed.ic.BD2LHg25m3.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]VLife (108)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu7UBHqOmukag</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Vlife_1.jpg</thumbnail>
