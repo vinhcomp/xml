@@ -936,6 +936,12 @@
 <items>
 
 <item>
+<title>[COLOR ffff0000]Ca Nhạc[/COLOR] Vân Sơn</title>
+<link>https://www.youtube.com/user/VanSonOnline</link>
+<thumbnail>http://xbmc.itvplus.net/LOGO/MYTUBE/VANSON.png</thumbnail>
+</item>
+
+<item>
 <title>[COLOR orange]Vân Sơn 53 - Độc & Đẹp 2[/COLOR] - [COLOR red]HD Full[/COLOR]</title>
 <link>plugin://plugin.video.gdrive?mode=streamURL&url=https://drive.google.com/open?id=0B9QrbNJlA8MJMGh1SkdSeHFBdEk</link>
 <thumbnail>http://www.vansonentertainment.com/shop/images/products/Van_Son_Entertainment/VS53_Doc_va_Dep.jpg</thumbnail>
