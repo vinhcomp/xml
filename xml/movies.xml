@@ -82,7 +82,17 @@
 <title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Kodi4VNLauncher[/COLOR]</title>
 <link>tokodi4vnlauncher</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
-</item> 
+</item>
+<item>
+<title>[COLOR yellow]Vietnamese[/COLOR] | Xóm Giải Trí</title>
+<link>redirecttoxomgiaitri</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xomgiaitri.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Vietnamese[/COLOR] | XSHARE</title>
+<link>toxshare</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xshare.png</thumbnail>
+</item>
 <item>
 <title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]ITV Plus[/COLOR]</title>
 <link>toitv</link>
@@ -98,31 +108,7 @@
 <link>tohieuhientt</link>
 <thumbnail>https://cdn6.aptoide.com/imgs/8/e/0/8e013ab69c3ac9532cf3ffefea874e2c_icon.png</thumbnail>
 </item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR aqua]HD Việt 1[/COLOR]</title>
-<link>tohdviet1</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/hdviet.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR blue]HD Việt 2[/COLOR]</title>
-<link>tohdviet2</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/hdviet2.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR aqua]moviHD.net[/COLOR]</title>
-<link>tomovihd</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movihd.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | Xóm Giải Trí</title>
-<link>redirecttoxomgiaitri</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xomgiaitri.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | XSHARE</title>
-<link>toxshare</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xshare.png</thumbnail>
-</item>
+
 
 
 <item>
