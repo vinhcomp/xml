@@ -6,6 +6,11 @@
 
 
 <item>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Cable TV[/COLOR]</title>
+<link>tocablestv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
+</item>  
+<item>
 <title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]TV Hải Ngoại[/COLOR]</title>
 <link>viettv24free</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/viettv242.png</thumbnail>
