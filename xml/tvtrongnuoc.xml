@@ -3,33 +3,6 @@
 <channel>
 <name>tvtrongnuoc</name>
 <items>
-
-
-<item>
-<title>[COLOR red]TVs - SPORTS - MOVIES - TV SHOWS[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR red]Kodi4VNLauncher[/COLOR]</title>
-<link>tokodi4vnlauncher</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
-</item>
-<item>
-<title>[COLOR red]VietMediaF[/COLOR]</title>
-<link>tovietmediaf</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vietmediaf.png</thumbnail>
-</item>
-<item>
-<title>[COLOR red]ITV Plus[/COLOR]</title>
-<link>toitv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/itv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR red]Pac-12[/COLOR]</title>
-<link>topac12</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/pac12.png</thumbnail>
-</item>
   
 
 
@@ -1086,7 +1059,31 @@
   
   
   
-
+<item>
+<title>[COLOR red]TVs - SPORTS - MOVIES - TV SHOWS[/COLOR]</title>
+<link>tocablestv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
+</item>
+<item>
+<title>[COLOR red]Kodi4VNLauncher[/COLOR]</title>
+<link>tokodi4vnlauncher</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
+</item>
+<item>
+<title>[COLOR red]VietMediaF[/COLOR]</title>
+<link>tovietmediaf</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vietmediaf.png</thumbnail>
+</item>
+<item>
+<title>[COLOR red]ITV Plus[/COLOR]</title>
+<link>toitv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/itv.png</thumbnail>
+</item>
+<item>
+<title>[COLOR red]Pac-12[/COLOR]</title>
+<link>topac12</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/pac12.png</thumbnail>
+</item>
 <item>
 <title>[COLOR ffff0000]More TV Trong Nước[/COLOR] | [COLOR yellow]Please Click Here[/COLOR]</title>
 <link>tocablestv</link>
