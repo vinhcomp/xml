@@ -152,6 +152,131 @@
 <thumbnail>https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG</thumbnail>
 </item>
   
+ 
+
+<item>
+<title>[COLOR lime]✫-✫-✫ Kênh Địa Phương ✫-✫-✫[/COLOR]</title>
+<link>http://youtube.com</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR yellow]ANTV[/COLOR]</title>
+<link>http://123.30.191.202/hls/antv.m3u8</link>
+<thumbnail>https://i.imgur.com/6g4KxxG.png</thumbnail>
+</item>
+<item>
+<title>Bà Rịa - Vũng Tàu</title>
+<link>http://113.163.216.23/hls-live/livepkgr/_definst_/liveevent/livestream.m3u8</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_ba-ria-vung-tau_145672972069.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Cần Thơ THTPCT[/COLOR]</title>
+<link>http://tv.canthotv.vn/live.m3u8</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_can-tho_145672728114.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Khánh Hòa KTV[/COLOR]</title>
+<link>http://210.245.20.94/hls/ktv3.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<title>[COLOR yellow]Cà Mau CTV[/COLOR]</title>
+<link>rtmp://113.161.220.254/livepkgr/ playpath=livestream1?adbe-live-event=liveevent live=1 swfUrl=http://ctvcamau.vn/jwplayer/jwplayer.flash.swf pageUrl=http://ctvcamau.vn/</link>
+<thumbnail>https://i.imgur.com/ulm0NQz.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Sóc Trăng STV[/COLOR]</title>
+<link>rtmp://115.78.3.164/live playpath=stv1 swfUrl=http://thst.vn/MediaPlayer/vplayer.swf pageUrl=http://thst.vn/Truyen_hinh.aspx live=1 timeout=90</link>
+<thumbnail>https://i.imgur.com/jLA3Ae3.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Đà Nẵng 1 DRT1[/COLOR]</title>
+<link>http://drtdnglive.e49a7c38.cdnviet.com/livedrt1/playlist.m3u8</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_da-nang-1_145681779889.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Đà Nẵng 2 DRT2[/COLOR]</title>
+<link>http://drtdnglive.e49a7c38.cdnviet.com/livestream/playlist.m3u8</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_da-nang-2_145681781157.jpg?w=345&h=210&mode=scale</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Bình Phước BPTV1[/COLOR]</title>
+<link>http://118.69.197.145/hls/bptv1.m3u8</link>
+<thumbnail>https://i.imgur.com/J8HHk7H.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Bình Phước BPTV2[/COLOR]</title>
+<link>http://118.69.197.145/hls/bptv2.m3u8</link>
+<thumbnail>https://i.imgur.com/GuGTJ2A.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Bạc Liêu[/COLOR]</title>
+<link>rtmp://118.69.205.213/livepkgr/ playpath=livestream1 swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf pageUrl=http://hktivi.net/tv_truc_tuyen/truyen-hinh-bac-lieu-btv.php swfVfy=true live=true timeout=90</link>
+<thumbnail>https://i.imgur.com/QmgQMF8.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Bắc Kạn[/COLOR]</title>
+<link>http://118.107.76.15:1983/live/BK_live.smil/playlist.m3u8</link>
+<thumbnail>https://i.imgur.com/tFXeJb7.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Cao Bằng[/COLOR]</title>
+<link>http://118.107.76.15:1983/live/CB_live.smil/playlist.m3u8</link>
+<thumbnail>https://i.imgur.com/VVcaU2q.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hà Nam[/COLOR]</title>
+<link>rtmp://113.160.198.111:8086/live//hanamtv</link>
+<thumbnail>https://i.imgur.com/YLjMvZP.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hà Tĩnh[/COLOR]</title>
+<link>http://hatinhtv.vn/liveevent.m3u8</link>
+<thumbnail>https://i.imgur.com/fcKXNG9.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Sơn La[/COLOR]</title>
+<link>http://118.107.76.15:1983/live/smil:SL_live.smil/playlist.m3u8</link>
+<thumbnail>https://i.imgur.com/2pSNWyG.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Trà Vinh[/COLOR]</title>
+<link>http://123.30.191.202/hls/travinh.m3u8</link>
+<thumbnail>https://i.imgur.com/QAo6P8K.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Quảng Ninh 1[/COLOR]</title>
+<link>rtmp://123.29.68.44/hctv/vstv020</link>
+<thumbnail>https://i.imgur.com/aeiOVug.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Quảng Ninh 3[/COLOR]</title>
+<link>rtmp://123.29.68.44/hctv/vstv021</link>
+<thumbnail>https://i.imgur.com/X0uSQDO.png</thumbnail>
+</item>
+
+<item>
+<title>VNews - TTXVN</title>
+<link>rtmp://live.vnanet.vn:1935/Live/ playpath=DRC swfUrl=http://avnews.vnanet.vn/RtmpPlayer/player.swf pageUrl=http://avnews.vnanet.vn/ live=1 timeout=90</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>An Giang 2</title>
+<link>rtmp://113.161.212.25/live2 playpath=atv2 swfUrl=http://www.atv.org.vn/player/player.swf swfVfy=true live=true timeout=90</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hậu Giang[/COLOR]</title>
+<link>rtmp://123.30.110.170:1939/thhg/thhg</link>
+<thumbnail>https://i.imgur.com/39meUQ2.png</thumbnail>
+</item>
+<item>
+<title>Quảng Ngãi</title>
+<link>http://113.160.244.44/liveevent.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+  
   
   
 
@@ -898,265 +1023,6 @@
 </item>
 
   
-
-
-<item>
-<title>[COLOR lime]✫-✫-✫ Kênh Địa Phương ✫-✫-✫[/COLOR]</title>
-<link>http://youtube.com</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-
-
-<item>
-<title>[COLOR yellow]ANTV[/COLOR]</title>
-<link>http://123.30.191.202/hls/antv.m3u8</link>
-<thumbnail>https://i.imgur.com/6g4KxxG.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Hà Nội 1[/COLOR]</title>
-<link>http://123.30.191.202/hls/hanoi1.m3u8</link>
-<thumbnail>https://i.imgur.com/EWn7cqU.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Hà Nội 2[/COLOR]</title>
-<link>http://123.30.191.202/hls/hanoi2.m3u8</link>
-<thumbnail>https://i.imgur.com/IUSzXAr.png</thumbnail>
-</item>
-<item>
-<title>Bà Rịa - Vũng Tàu</title>
-<link>rtmp://113.163.216.24/live playpath=livestream swfUrl=http://thvl.vn/vplayer.swf pageUrl=http://tivihay.net/dia-phuong-vung-tau-k61.html swfVfy=true live=true timeout=90</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Bà Rịa - Vũng Tàu</title>
-<link>http://113.163.216.23/hls-live/livepkgr/_definst_/liveevent/livestream.m3u8</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_ba-ria-vung-tau_145672972069.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Cần Thơ THTPCT[/COLOR]</title>
-<link>http://tv.canthotv.vn/live.m3u8</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_can-tho_145672728114.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Khánh Hòa KTV[/COLOR]</title>
-<link>http://210.245.20.94/hls/ktv3.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Lạng Sơn LSTV[/COLOR]</title>
-<link>rtmp://123.18.206.40:1935/live/livestream</link>
-<thumbnail>https://i.imgur.com/1V5vvuB.png</thumbnail>
-</item>
-<item>
-<title>Bình Dương BTV1</title>
-<link>rtmp://202.43.109.147/live/btv1.stream live=1</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Bình Dương BTV2</title>
-<link>rtmp://202.43.109.147/rtplive/btv2.stream live=1</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Cà Mau CTV[/COLOR]</title>
-<link>rtmp://113.161.220.254/livepkgr/ playpath=livestream1?adbe-live-event=liveevent live=1 swfUrl=http://ctvcamau.vn/jwplayer/jwplayer.flash.swf pageUrl=http://ctvcamau.vn/</link>
-<thumbnail>https://i.imgur.com/ulm0NQz.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sóc Trăng STV[/COLOR]</title>
-<link>rtmp://115.78.3.164/live playpath=stv1 swfUrl=http://thst.vn/MediaPlayer/vplayer.swf pageUrl=http://thst.vn/Truyen_hinh.aspx live=1 timeout=90</link>
-<thumbnail>https://i.imgur.com/jLA3Ae3.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sóc Trăng STV[/COLOR]</title>
-<link>rtmp://115.78.3.164/live/stv1</link>
-<thumbnail>https://i.imgur.com/jLA3Ae3.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Đắc Nông PTD[/COLOR]</title>
-<link>rtmp://222.255.158.22/live/truyenhinh</link>
-<thumbnail>https://i.imgur.com/JIg0VuW.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Đà Nẵng 1 DRT1[/COLOR]</title>
-<link>http://drtdnglive.e49a7c38.cdnviet.com/livedrt1/playlist.m3u8</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_da-nang-1_145681779889.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Đà Nẵng 2 DRT2[/COLOR]</title>
-<link>http://drtdnglive.e49a7c38.cdnviet.com/livestream/playlist.m3u8</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_da-nang-2_145681781157.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vĩnh Phúc[/COLOR]</title>
-<link>rtmp://117.6.162.63/live/thvp</link>
-<thumbnail>https://i.imgur.com/nPvPRfQ.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Bình Phước BPTV1[/COLOR]</title>
-<link>http://118.69.197.145/hls/bptv1.m3u8</link>
-<thumbnail>https://i.imgur.com/J8HHk7H.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Bình Phước BPTV2[/COLOR]</title>
-<link>http://118.69.197.145/hls/bptv2.m3u8</link>
-<thumbnail>https://i.imgur.com/GuGTJ2A.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Bạc Liêu[/COLOR]</title>
-<link>rtmp://118.69.205.213/livepkgr/ playpath=livestream1 swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf pageUrl=http://hktivi.net/tv_truc_tuyen/truyen-hinh-bac-lieu-btv.php swfVfy=true live=true timeout=90</link>
-<thumbnail>https://i.imgur.com/QmgQMF8.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Bạc Liêu[/COLOR]</title>
-<link>rtmp://118.69.205.213/livepkgr/livestream1</link>
-<thumbnail>https://i.imgur.com/QmgQMF8.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Bắc Kạn[/COLOR]</title>
-<link>http://118.107.76.15:1983/live/BK_live.smil/playlist.m3u8</link>
-<thumbnail>https://i.imgur.com/tFXeJb7.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Cao Bằng[/COLOR]</title>
-<link>http://118.107.76.15:1983/live/CB_live.smil/playlist.m3u8</link>
-<thumbnail>https://i.imgur.com/VVcaU2q.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Hà Nam[/COLOR]</title>
-<link>rtmp://113.160.198.111:8086/live//hanamtv</link>
-<thumbnail>https://i.imgur.com/YLjMvZP.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Hà Tĩnh[/COLOR]</title>
-<link>http://hatinhtv.vn/liveevent.m3u8</link>
-<thumbnail>https://i.imgur.com/fcKXNG9.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Lâm Đồng[/COLOR]</title>
-<link>http://118.107.76.15:1983/live/smil:LD_live.smil/playlist.m3u8</link>
-<thumbnail>https://i.imgur.com/SMPfFp7.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Phú Thọ[/COLOR]</title>
-<link>http://118.107.76.15:1983/live/smil:PT_live.smil/playlist.m3u8</link>
-<thumbnail>https://i.imgur.com/foEyFsm.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sơn La[/COLOR]</title>
-<link>http://118.107.76.15:1983/live/smil:SL_live.smil/playlist.m3u8</link>
-<thumbnail>https://i.imgur.com/2pSNWyG.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Thái Nguyên[/COLOR]</title>
-<link>rtmp://45.124.85.26/oflaDemo/livestream</link>
-<thumbnail>https://i.imgur.com/yyy6vn1.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Trà Vinh[/COLOR]</title>
-<link>http://123.30.191.202/hls/travinh.m3u8</link>
-<thumbnail>https://i.imgur.com/QAo6P8K.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Tiền Giang[/COLOR]</title>
-<link>http://123.30.191.202/hls/tiengiang.m3u8</link>
-<thumbnail>https://i.imgur.com/xfAbUw5.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Quảng Ninh 1[/COLOR]</title>
-<link>rtmp://123.29.68.44/hctv/vstv020</link>
-<thumbnail>https://i.imgur.com/aeiOVug.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Quảng Ninh 3[/COLOR]</title>
-<link>rtmp://123.29.68.44/hctv/vstv021</link>
-<thumbnail>https://i.imgur.com/X0uSQDO.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Quảng Trị[/COLOR]</title>
-<link>http://118.107.76.15:1983/live/smil:QT_live.smil/playlist.m3u8</link>
-<thumbnail>https://i.imgur.com/QlHFLBP.png</thumbnail>
-</item>
-
-
-
-<item>
-<title>VNews - TTXVN</title>
-<link>rtmp://live.vnanet.vn:1935/Live/ playpath=DRC swfUrl=http://avnews.vnanet.vn/RtmpPlayer/player.swf pageUrl=http://avnews.vnanet.vn/ live=1 timeout=90</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]An Giang 1[/COLOR]</title>
-<link>rtmp://113.161.212.25/live//atv1</link>
-<thumbnail>https://i.imgur.com/7x7yPjG.png</thumbnail>
-</item>
-<item>
-<title>An Giang 2</title>
-<link>rtmp://113.161.212.25/live2 playpath=atv2 swfUrl=http://www.atv.org.vn/player/player.swf swfVfy=true live=true timeout=90</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Bắc Ninh</title>
-<link>rtmp://113.160.154.159:5119/live playpath=bntv swfUrl=http://www.umediaserver.net/bin/FlashPlayer/player-quick.swf pageUrl=http://bacninhtv.vn/ live=1 timeout=90</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Bến Tre[/COLOR]</title>
-<link>rtmp://113.163.94.245/livepkgr/thbt</link>
-<thumbnail>https://i.imgur.com/3Y56NEr.png</thumbnail>
-</item>
-<item>
-<title>Bình Thuận</title>
-<link>mms://123.30.108.114/BTVTruyenhinh</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Đồng Nai 1</title>
-<link>rtmp://123.29.75.131:1935/thdn playpath=dn1.stream swfUrl=http://www.dnrtv.org.vn/static/js/flowplayer/flowplayer-3.2.7.swf pageUrl=http://www.dnrtv.org.vn/ live=1 timeout=90</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Đồng Nai 2</title>
-<link>rtmp://123.29.75.131:1935/thdn/dn2.stream swfUrl=http://www.dnrtv.org.vn/static/js/flowplayer/flowplayer-3.2.7.swf swfVfy=true live=true timeout=90</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Gia Lai</title>
-<link>rtmp://222.255.169.132/live/ playpath=livestream swfUrl=http://p.jwpcdn.com/6/11/jwplayer.flash.swf swfVfy=true live=true timeout=90</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Hà Nội</title>
-<link>rtmp://38.107.180.195:1935/live playpath=hanoi11_h swfUrl=http://vtc.com.vn/player_akamai_low.swf pageUrl=http://vtc.com.vn/live/6/Ha-Noi-1.html swfVfy=1 live=1 timeout=90</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Hậu Giang[/COLOR]</title>
-<link>rtmp://123.30.110.170:1939/thhg/thhg</link>
-<thumbnail>https://i.imgur.com/39meUQ2.png</thumbnail>
-</item>
-<item>
-<title>Ninh Thuận</title>
-<link>rtmp://113.164.108.11/live/ playpath=NTV_VIDEO swfUrl=http://hktivi.net/player.swf swfVfy=true live=true timeout=90</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Phú Yên</title>
-<link>rtmp://113.161.4.102/live/ playpath=vtvphuyen.tv swfUrl=http://vtvphuyen.vn/vplayer.swf pageUrl=http://vtvphuyen.vn/ live=1 timeout=90</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Quảng Ngãi</title>
-<link>http://113.160.244.44/liveevent.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>Thừa Thiên Huế</title>
-<link>rtmp://118.69.176.149/live/trt swfUrl=http://tv.xunghe.vn/player.swf pageUrl=http://tv.xunghe.vn/ live=true timeout=90</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-
-
   
 
   
