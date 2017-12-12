@@ -6,19 +6,18 @@
 
 
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR mediumspringgreen]India[/COLOR] | [COLOR cornflowerblue]Zem TV[/COLOR]</title>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Cable TV Channels[/COLOR]</title>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
+</item>  
+<item>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR mediumspringgreen]English[/COLOR] | [COLOR mediumspringgreen]India[/COLOR] | [COLOR cornflowerblue]Zem TV[/COLOR]</title>
 <link>tozemtv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/zemtv.png</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Kodi4VNLauncher[/COLOR]</title>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Kodi4VNLauncher[/COLOR]</title>
 <link>tokodi4vnlauncher</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]BENNU TV[/COLOR]</title>
-<link>tobennu</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/phoenix.png</thumbnail>
 </item>
 <item>
 <title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]cCloud TV[/COLOR]</title>
@@ -26,7 +25,7 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/ccloud.png</thumbnail>
 </item>
 <item>
-<title>[COLOR ffff0000]Khmer[/COLOR] | [COLOR yellow]LIVE[/COLOR] TV</title>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR ffff0000]Khmer[/COLOR] | [COLOR yellow]LIVE[/COLOR] TV</title>
 <link>tokhmertv</link>
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/khmertv2.png</thumbnail>
 </item>
@@ -60,11 +59,7 @@
 <link>redirecttoshahidmbc</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/shahidmbc.png</thumbnail>
 </item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Cables TV Channels[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
-</item>
+
 
 </items>
 </channel>
