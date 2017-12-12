@@ -5,7 +5,11 @@
 <items>
 
 
-
+<item>
+<title>[COLOR red]TVs - SPORTS - MOVIES - TV SHOWS[/COLOR]</title>
+<link>tocablestv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
+</item>
 
 
 <item>
@@ -353,7 +357,7 @@
 
 
 <item>
-<title>[COLOR ffff0000]More TV Hải Ngoại[/COLOR] | [COLOR yellow]Please Click Here[/COLOR]</title>
+<title>[COLOR red]TVs - SPORTS - MOVIES - TV SHOWS[/COLOR]</title>
 <link>tocablestv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
 </item>
