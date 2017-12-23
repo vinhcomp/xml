@@ -18,7 +18,7 @@
   
 
 <item>
-<title>[COLOR yellow]HTV9 TN[/COLOR]</title>
+<title>[COLOR yellow]HTV9[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=24633&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeRAhWcshIrZWeWT7DG5VLKnL8gcIl7R9ryQVf8xSVtVA%3D%3D</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
 </item>
@@ -26,6 +26,31 @@
 <title>[COLOR yellow]Việt News[/COLOR]</title>
 <link>http://kodi4vn.com/live/hls/News.m3u8</link>
 <thumbnail>https://superrepo.org/static/images/icons/original/xservice.kodi4vn.maintenance.png.pagespeed.ic.BD2LHg25m3.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTC1/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEdfC%2BpFm%2FECSBvEVIgRBTklXVJh5VJMRVdlN60n4tkLVA%3D%3D</link>
+<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]NETVIET[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeLjYUCQus89SOFyOWlel8LyM0ajCkghqS1ewcYEITPXw%3D%3D</link>
+<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTC16[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeckZRzX5JJfK64IscnTp0Gc995zFKMeyQwUn6LPfIYUA%3D%3D</link>
+<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]TTXVN[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&amp;url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeRAhWcshIrZWeWT7DG5VLKnL8gcIl7R9ryQVf8xSVtVA%3D%3D</link>
+<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hà Nội[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEehYSbOMBxYWx6GFVzodgCSIHi3rL6yBVtCBix29nrFPg%3D%3D</link>
+<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
 </item>
 
   
@@ -83,6 +108,62 @@
 <thumbnail>http://img.static.vtvcab.vn/logos/VTV9.png</thumbnail>
 </item>
 
+
+<item>
+<title>[COLOR lime]✫-✫-✫ VietMedia ✫-✫-✫[/COLOR]</title>
+<link>http://youtube.com</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV1 HD[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeO22VofBNx7oBNLHvRB5bl%2Bn%2BieHhVFD6Ego3AFMcEUw%3D%3D</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV1HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV2 HD[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEdauN2MqkY5rzmMhKy2w37tTAetIm9j0NDqCwGR7U2KpA%3D%3D</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV2HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV3 HD[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEdQm22kRK%2BfsQ8TV7OfeXCBH%2FBH35ysgsRlbZCgJ7XB%2Fg%3D%3D</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV3HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV4 HD[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeUGNyztbHM6YEJ6DaVID1nqOtZ2GL9QA%2BGRj4teuFqAQ%3D%3D</link>
+<thumbnail>https://vignette1.wikia.nocookie.net/logopedia/images/b/b9/Logo_VTV4.png/revision/latest?cb=20160601031735</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTC1/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEdfC%2BpFm%2FECSBvEVIgRBTklXVJh5VJMRVdlN60n4tkLVA%3D%3D</link>
+<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]NETVIET[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeLjYUCQus89SOFyOWlel8LyM0ajCkghqS1ewcYEITPXw%3D%3D</link>
+<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTC16[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeckZRzX5JJfK64IscnTp0Gc995zFKMeyQwUn6LPfIYUA%3D%3D</link>
+<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV9[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeRAhWcshIrZWeWT7DG5VLKnL8gcIl7R9ryQVf8xSVtVA%3D%3D</link>
+<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]TTXVN[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&amp;url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeRAhWcshIrZWeWT7DG5VLKnL8gcIl7R9ryQVf8xSVtVA%3D%3D</link>
+<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hà Nội[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEehYSbOMBxYWx6GFVzodgCSIHi3rL6yBVtCBix29nrFPg%3D%3D</link>
+<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+</item> 
   
   
 <item>
