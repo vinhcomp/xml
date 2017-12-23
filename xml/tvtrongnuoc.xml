@@ -44,7 +44,12 @@
 </item>
 <item>
 <title>[COLOR yellow]TTXVN[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&amp;url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeRAhWcshIrZWeWT7DG5VLKnL8gcIl7R9ryQVf8xSVtVA%3D%3D</link>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeRAhWcshIrZWeWT7DG5VLKnL8gcIl7R9ryQVf8xSVtVA%3D%3D</link>
+<thumbnail>https://dhtn.ttxvn.org.vn/Images/files/VNA.png</thumbnail>
+</item>
+<item>
+<title>VNews - TTXVN</title>
+<link>rtmp://live.vnanet.vn:1935/Live/ playpath=DRC swfUrl=http://avnews.vnanet.vn/RtmpPlayer/player.swf pageUrl=http://avnews.vnanet.vn/ live=1 timeout=90</link>
 <thumbnail>https://dhtn.ttxvn.org.vn/Images/files/VNA.png</thumbnail>
 </item>
 <item>
