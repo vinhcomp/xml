@@ -45,7 +45,7 @@
 <item>
 <title>[COLOR yellow]TTXVN[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&amp;url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeRAhWcshIrZWeWT7DG5VLKnL8gcIl7R9ryQVf8xSVtVA%3D%3D</link>
-<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+<thumbnail>https://dhtn.ttxvn.org.vn/Images/files/VNA.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Hà Nội[/COLOR]</title>
@@ -137,17 +137,17 @@
 <item>
 <title>[COLOR yellow]VTC1[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEdfC%2BpFm%2FECSBvEVIgRBTklXVJh5VJMRVdlN60n4tkLVA%3D%3D</link>
-<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+<thumbnail>http://i.imgur.com/HC5iUuK.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]NETVIET[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeLjYUCQus89SOFyOWlel8LyM0ajCkghqS1ewcYEITPXw%3D%3D</link>
-<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+<thumbnail>http://slimweb.vn/sites/default/files/users/887/upload/netviet.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTC16[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeckZRzX5JJfK64IscnTp0Gc995zFKMeyQwUn6LPfIYUA%3D%3D</link>
-<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+<thumbnail>http://i.imgur.com/aJyUj9n.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]HTV9[/COLOR]</title>
@@ -157,13 +157,18 @@
 <item>
 <title>[COLOR yellow]TTXVN[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&amp;url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeRAhWcshIrZWeWT7DG5VLKnL8gcIl7R9ryQVf8xSVtVA%3D%3D</link>
-<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
+<thumbnail>https://dhtn.ttxvn.org.vn/Images/files/VNA.png</thumbnail>
+</item>
+<item>
+<title>VNews - TTXVN</title>
+<link>rtmp://live.vnanet.vn:1935/Live/ playpath=DRC swfUrl=http://avnews.vnanet.vn/RtmpPlayer/player.swf pageUrl=http://avnews.vnanet.vn/ live=1 timeout=90</link>
+<thumbnail>https://dhtn.ttxvn.org.vn/Images/files/VNA.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Hà Nội[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEehYSbOMBxYWx6GFVzodgCSIHi3rL6yBVtCBix29nrFPg%3D%3D</link>
-<thumbnail>http://i.imgur.com/mELXs1K.png</thumbnail>
-</item> 
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/6/6a/Hanoitv.png</thumbnail>
+</item>
   
   
 <item>
