@@ -6,47 +6,51 @@
 
 
 
-
+<item>
+<title>[COLOR orange]Xin Nhấn Nút Xuống Để Chọn Đài</title>
+<link>http://touno.com</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/unotv.png</thumbnail>
+</item>
 
 <item>
 <title>[COLOR yellow]Vnews (100)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb04ayU908vwu9uTovzKkHwc</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu9uTovzKkHwc</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Vnews.jpg</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]Việt News[/COLOR]</title>
+<link>http://kodi4vn.com/live/hls/News.m3u8</link>
+<thumbnail>https://superrepo.org/static/images/icons/original/xservice.kodi4vn.maintenance.png.pagespeed.ic.BD2LHg25m3.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]VLife (108)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb04ayU908vwu7UBHqOmukag</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu7UBHqOmukag</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Vlife_1.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Film 24h (107)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb04ayU908vwu0f9C4l86Hqm</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu0f9C4l86Hqm</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Film24h.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Quê Hương TV (103)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb04ayU908vwu5U30oydMmrs</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu5U30oydMmrs</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/quehuong1.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]CosmoTV (101)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb04ayU908vwu1sOng5kMYd</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu1sOng5kMYdU</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/cosmotv.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VANTV (102)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb04ayU908vwu1omi7Bv0Hsp</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu1omi7Bv0Hsp</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/VANTV2.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VGM TV (109)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb04ayU908vwu%2BrLZM7aT1Un</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu%2BrLZM7aT1Un</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/vietglobal.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VIETV-Nation (199)[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwuxgCYjQISaCZ</link>
-<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/VIETV1.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VinaShop (110)[/COLOR]</title>
@@ -55,7 +59,7 @@
 </item>
 <item>
 <title>[COLOR yellow]Bolero (112)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb04ayU908vwu2N2SIB4yGcw</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu2N2SIB4yGcw</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/bolero.png</thumbnail>
 </item>
 <item>
@@ -70,12 +74,12 @@
 </item>
 <item>
 <title>[COLOR yellow]Phật Giáo (92)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb3AG5HUO5c%2FwtZn4HigOpU7</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2FwtZn4HigOpU7</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/phatgiao.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]CTV (94)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb3AG5HUO5c%2Fwtav6MBYPXaY</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2Fwtav6MBYPXaY</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/catholic.png</thumbnail>
 </item>
 <item>
@@ -90,7 +94,7 @@
 </item>
 <item>
 <title>[COLOR yellow]VIETV Canada (111)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb04ayU908vwu6o6WzI7QWZY</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu6o6WzI7QWZY</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/VIETV_CANADA.jpg</thumbnail>
 </item>
 <item>
@@ -100,17 +104,17 @@
 </item>
 <item>
 <title>[COLOR yellow]VIETV Houston (125)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb04ayU908vwu77li16%2B5lMH</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu77li16%2B5lMH</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/VIETV_HOUSTON.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VIETV Los Angeles (131)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb04ayU908vwu6TfO0D%2FS8QI</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu6TfO0D%2FS8QI</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/VIETV_LOS_ANGELES.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VIETV San Jose (141)[/COLOR]</title>
-<link>http://127.0.0.1:5000/play.m3u8?url=uno-DUnEMQ52bb04ayU908vwuzeHeiLSRpP%2B</link>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwuzeHeiLSRpP%2B</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/VIETV_SAN_JOSE.jpg</thumbnail>
 </item>
 
