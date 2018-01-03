@@ -136,19 +136,14 @@
 <thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR orange]Sài Gòn TV 57.5[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DB_QYw27C63c</link>
-<thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
+<title>[COLOR lime]Little Saigon TV 57.7[/COLOR]</title>
+<link>https://livestream-f.akamaihd.net/i/21388423_7992704_lsi08oqvfkfu71jdgv0_1@446562/index_678_av-b.m3u8?sd=10&dw=14400&rebase=on&hdntl=exp=1515024237~acl=%2fi%2f21388423_7992704_lsi08oqvfkfu71jdgv0_1%40446562%2f*~data=hdntl~hmac=b99c96e55860a1ec04169af343802abf523075e58dce5cf1ff4326101f20c47a</link>
+<thumbnail>http://www.viettv24.com/main/images/littlesg.jpg</thumbnail>
 </item>
 <item>
 <title>Little Saigon TV 57.7</title>
 <link>http://saigontvtv.saigon.ns01.us:1935/Lstv577/myStream/chunklist_w1229536511.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]Little Saigon TV 57.7[/COLOR]</title>
-<link>https://livestream-f.akamaihd.net/i/21388423_7992704_lsi08oqvfkfu71jdgv0_1@446562/index_678_av-b.m3u8?sd=10&dw=14400&rebase=on&hdntl=exp=1515024237~acl=%2fi%2f21388423_7992704_lsi08oqvfkfu71jdgv0_1%40446562%2f*~data=hdntl~hmac=b99c96e55860a1ec04169af343802abf523075e58dce5cf1ff4326101f20c47a</link>
-<thumbnail>http://www.viettv24.com/main/images/littlesg.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Trọng Thắng Show[/COLOR]</title>
