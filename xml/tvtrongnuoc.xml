@@ -18,8 +18,8 @@
   
 
 <item>
-<title>[COLOR yellow]HTV7 HD[/COLOR]</title>
-<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=%5BCOLOR%3DFF00B7EB%2F%5DHTV7+HD+TV%5B%2FCOLOR%5D&icon=http%3A%2F%2Fimg.new.livestream.com%2Fevents%2F0000000000617192%2F5f0fa9cb-019f-42fb-a401-786d38dc9f5a_12060.jpg&event_id=6386066&owner_id=20251393&video_id=LIVE&sf_options=winID%3D10025%26_options_sf</link>
+<title>[COLOR lime]HTV7 HD[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name&event_id=6386066&owner_id=20251393&video_id=LIVE</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
 </item>
 <item>
