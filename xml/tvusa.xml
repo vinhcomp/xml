@@ -65,12 +65,12 @@
 </item>
 <item>
 <title>[COLOR lime]KOIN 6 NEWS[/COLOR]</title>
-<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=Live&owner_id=koin&video_id=live</link>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=koin&video_id=LIVE</link>
 <thumbnail>https://img.new.livestream.com/accounts/00000000001c73a2/58e0202d-449a-4c0e-97e0-798b9aa6a727_170x170.png</thumbnail>
 </item>
 <item>
 <title>[COLOR lime]KOIN 6 NEWS 2[/COLOR]</title>
-<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=Live&owner_id=koin&video_id=3314050</link>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=3314050&owner_id=koin&video_id=LIVE</link>
 <thumbnail>https://img.new.livestream.com/accounts/00000000001c73a2/58e0202d-449a-4c0e-97e0-798b9aa6a727_170x170.png</thumbnail>
 </item>
   
