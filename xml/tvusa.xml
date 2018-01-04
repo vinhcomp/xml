@@ -54,6 +54,12 @@
 
 
 <item>
+<title>[COLOR lime]FOX 12 Oregon[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=Live&owner_id=kptv&video_id=LIVE</link>
+<thumbnail>https://img.new.livestream.com/accounts/0000000000696a2e/1c0b15ad-34e5-4cde-b22c-c56c3312cf5a_170x170.png</thumbnail>
+</item>
+<item>
+<item>
 <title>[COLOR lime]CNN[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlEXmrXurjDM</link>
 <thumbnail>https://i.ytimg.com/vi/oKitLO92xSM/hqdefault_live.jpg?sqp=CJCFqM0F-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDZovKyiMYSU78chF0WTK90PN5rrA</thumbnail>
