@@ -73,8 +73,26 @@
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=3314050&owner_id=koin&video_id=LIVE</link>
 <thumbnail>https://img.new.livestream.com/accounts/00000000001c73a2/58e0202d-449a-4c0e-97e0-798b9aa6a727_170x170.png</thumbnail>
 </item>
-  
-  
+<item>
+<title>[COLOR lime]FOX 2 NEWS[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=wjbk&video_id=LIVE</link>
+<thumbnail>http://www.performanceorthopedics.com/wp-content/uploads/2014/05/Fox_2_Detroit.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]69NEWS[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=WFMZ&video_id=LIVE</link>
+<thumbnail>https://img.new.livestream.com/accounts/0000000000db7e69/9e7cd7c2-1e6d-4a7b-9925-1d260c3b93cd_170x170.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]69NEWS Traffic[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=traffic&owner_id=WFMZ&video_id=LIVE</link>
+<thumbnail>https://img.new.livestream.com/accounts/0000000000db7e69/9e7cd7c2-1e6d-4a7b-9925-1d260c3b93cd_170x170.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]HAWAII NEWS[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=KHNL&video_id=LIVE</link>
+<thumbnail>https://img.new.livestream.com/accounts/0000000000b93a23/e3f1f428-4d4d-4645-8d56-b5c8806cc5d2_170x170.png</thumbnail>
+</item>
 
 <item>
 <title>[COLOR yellow]ABC News (Australia)[/COLOR]</title>
