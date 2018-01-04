@@ -74,9 +74,14 @@
 <thumbnail>https://img.new.livestream.com/accounts/00000000001c73a2/58e0202d-449a-4c0e-97e0-798b9aa6a727_170x170.png</thumbnail>
 </item>
 <item>
-<title>[COLOR lime]FOX 2 NEWS[/COLOR]</title>
+<title>[COLOR lime]FOX2 NEWS[/COLOR]</title>
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=wjbk&video_id=LIVE</link>
 <thumbnail>http://www.performanceorthopedics.com/wp-content/uploads/2014/05/Fox_2_Detroit.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]FOX10 NEWS 24/7[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=WALA&video_id=LIVE</link>
+<thumbnail>https://img.new.livestream.com/accounts/00000000001c60db/cc9d2ac5-e68e-4f42-8bde-43246ba16c33_170x170.png</thumbnail>
 </item>
 <item>
 <title>[COLOR lime]69NEWS[/COLOR]</title>
@@ -92,6 +97,21 @@
 <title>[COLOR lime]HAWAII NEWS[/COLOR]</title>
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=KHNL&video_id=LIVE</link>
 <thumbnail>https://img.new.livestream.com/accounts/0000000000b93a23/e3f1f428-4d4d-4645-8d56-b5c8806cc5d2_170x170.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]12 NEWS[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=WWBT&video_id=LIVE</link>
+<thumbnail>https://img.new.livestream.com/accounts/0000000000aaf4c6/d6d0e0e6-435b-4241-a2ba-2248580b8c30_170x170.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]ABC 7[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=18241891&video_id=LIVE</link>
+<thumbnail>https://img.new.livestream.com/accounts/0000000001165963/555df977-a499-48f2-8032-61c017440e41_170x170.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]ABC 17 NEWS[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=KMIZ&video_id=LIVE</link>
+<thumbnail>https://img.new.livestream.com/accounts/00000000011655e1/7a64235c-e262-41f3-8505-825087ace00f_170x170.png</thumbnail>
 </item>
 
 <item>
