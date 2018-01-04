@@ -59,26 +59,23 @@
 <thumbnail>https://img.new.livestream.com/accounts/0000000000696a2e/1c0b15ad-34e5-4cde-b22c-c56c3312cf5a_170x170.png</thumbnail>
 </item>
 <item>
-<item>
 <title>[COLOR blue]CNN[/COLOR]</title>
 <link>http://109.123.114.178:1935/Livenewson/Livenewson19/chunklist_w573583737.m3u8</link>
 <thumbnail>https://i.ytimg.com/vi/oKitLO92xSM/hqdefault_live.jpg?sqp=CJCFqM0F-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDZovKyiMYSU78chF0WTK90PN5rrA</thumbnail>
 </item>
 <item>
-<title>[COLOR lime]CNN[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8yb56ul3EtQ</link>
-<thumbnail>https://i.ytimg.com/vi/oKitLO92xSM/hqdefault_live.jpg?sqp=CJCFqM0F-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDZovKyiMYSU78chF0WTK90PN5rrA</thumbnail>
+<title>[COLOR lime]KOIN 6 NEWS[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=Live&owner_id=koin&video_id=live</link>
+<thumbnail>https://img.new.livestream.com/accounts/00000000001c73a2/58e0202d-449a-4c0e-97e0-798b9aa6a727_170x170.png</thumbnail>
 </item>
 <item>
-<title>[COLOR orange]CNN NEWS[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DNc9xNNzXmc8</link>
-<thumbnail>https://i.ytimg.com/vi/oKitLO92xSM/hqdefault_live.jpg?sqp=CJCFqM0F-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDZovKyiMYSU78chF0WTK90PN5rrA</thumbnail>
-</item>  
-<item>
-<title>[COLOR yellow]FOX News[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DwDICNSqPrw8</link>
-<thumbnail>https://yt3.ggpht.com/--mY5HeNcAc4/AAAAAAAAAAI/AAAAAAAAAAA/lupISijtpb0/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+<title>[COLOR lime]KOIN 6 NEWS 2[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=Live&owner_id=koin&video_id=3314050</link>
+<thumbnail>https://img.new.livestream.com/accounts/00000000001c73a2/58e0202d-449a-4c0e-97e0-798b9aa6a727_170x170.png</thumbnail>
 </item>
+  
+  
+
 <item>
 <title>[COLOR yellow]ABC News (Australia)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBAvMpdOckR8</link>
@@ -90,154 +87,10 @@
 <thumbnail>https://yt3.ggpht.com/-uYnyeu0wFpQ/AAAAAAAAAAI/AAAAAAAAAAA/VU2Ct3J_ZQw/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]i24NEWS[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_0CEdqJ0738</link>
-<thumbnail>https://yt3.ggpht.com/-IxByG1mOxc4/AAAAAAAAAAI/AAAAAAAAAAA/Aw5G7U4SWLg/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]NBC2 News[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_egSTyWb1gk</link>
 <thumbnail>https://yt3.ggpht.com/-0_RgwMqh68c/AAAAAAAAAAI/AAAAAAAAAAA/do8GhZIsuEQ/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
 </item>
-
-
-
-<item>
-<title>NBC GOLF SD</title>
-<link>http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/1896k/prog.m3u8|X-Forwarded-For=209.239.112.104</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>NBC GOLF 720p</title>
-<link>http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/2596k/prog.m3u8|X-Forwarded-For=209.239.112.104</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>NBC GOLF 1080p</title>
-<link>http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/4296k/prog.m3u8|X-Forwarded-For=209.239.112.104</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>NBC Sports Network 1080P</title>
-<link>http://tvenbcsn-i.Akamaihd.net/hls/live/218235/nbcsnx/4296k/prog.m3u8|X-Forwarded-For=209.239.112.104</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>USA Live TV Big Ten Network</title>
-<link>http://bigten247.cdnak.bigtenhd.neulion.com/nlds/btn2go/btnnetwork/as/live/btnnetwork_hd_3000.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>PAC-12 Net. (Arizona)</title>
-<link>http://xrxs.net/video/live-p12ariz-4728.m3u8?</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>PAC-12 Net. (Bay Area)</title>
-<link>http://xrxs.net/video/live-p12baya-4728.m3u8?</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>PAC-12 Net. (Los Angeles)</title>
-<link>http://xrxs.net/video/live-p12losa-4728.m3u8?</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>PAC-12 Net. (Moutain)</title>
-<link>http://xrxs.net/video/live-p12moun-4728.m3u8?</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>PAC-12 Net. (Oregon)</title>
-<link>http://xrxs.net/video/live-p12oreg-4728.m3u8?</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>PAC-12 Net. (Oregon) 1280*720</title>
-<link>http://xrxs.net/video/live-p12oreg-2328.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>PAC-12 Net. (Oregon) 640*360</title>
-<link>http://xrxs.net/video/live-p12oreg-1164.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>PAC-12 Net. (Washington)</title>
-<link>http://xrxs.net/video/live-p12wash-4728.m3u8?</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>PAC National 1280*720</title>
-<link>http://xrxs.net/video/live-p12netw-2328.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>PAC National 640*360</title>
-<link>http://xrxs.net/video/live-p12netw-1164.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>USA-BASKET UNI.(Arizona)</title>
-<link>http://xrxs.net/video/live-p12ariz-1164.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>USA-BASKET UNI.(Los Angeles)</title>
-<link>http://xrxs.net/video/live-p12losa-1164.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>USA-BASKET UNI.(Moutain)</title>
-<link>http://xrxs.net/video/live-p12moun-1164.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>USA-BASKET UNI.(Oregon)</title>
-<link>http://xrxs.net/video/live-p12oreg-1164.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>USA-BASKET UNI.(Washington)</title>
-<link>http://xrxs.net/video/live-p12wash-2328.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>SPORTES 7 HD</title>
-<link>http://xrxs.net/video/live-p12oreg-4728.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-
-
-
-
-
-
-
-
-<item>
-<title>HSN</title>
-<link>rtmp://hsn.mpl.miisolutions.net:1935/hsn-live01/_definst_ playpath=mp4:420p500kB31 swfUrl=http://img.hsni.com/images/Site_Relaunch_2007/arcade/StrobeMediaPlay pageUrl="http://www.hsn.com/watch-hsn-tv-live_xh.aspx?network=1&amp live=1 timeout=30</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-<item>
-<title>HSN 2</title>
-<link>rtmp://hsn.mpl.miisolutions.net:1935/hsn-live01/_definst_ playpath=mp4:468p500kB31 swfUrl=http://img.hsni.com/images/Site_Relaunch_2007/arcade/StrobeMediaPlay pageUrl=http://hsn2.hsn.com/watch-hsn-live_xh.aspx?network=4 live=1 timeout=30</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvusa.png</thumbnail>
-</item>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
