@@ -113,6 +113,16 @@
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=KMIZ&video_id=LIVE</link>
 <thumbnail>https://img.new.livestream.com/accounts/00000000011655e1/7a64235c-e262-41f3-8505-825087ace00f_170x170.png</thumbnail>
 </item>
+<item>
+<title>[COLOR lime]KY3[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=KY3&video_id=LIVE</link>
+<thumbnail>https://img.new.livestream.com/accounts/000000000047b5e2/e6f547dd-1074-4362-921d-25ccc0e94534_170x170.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]KCTV5 NEWS[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=kctv&video_id=LIVE</link>
+<thumbnail>https://img.new.livestream.com/accounts/0000000000613588/cd85d819-72a8-492c-9482-c268701ec462_170x170.png</thumbnail>
+</item>
 
 <item>
 <title>[COLOR yellow]ABC News (Australia)[/COLOR]</title>
