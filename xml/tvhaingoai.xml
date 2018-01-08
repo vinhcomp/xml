@@ -181,16 +181,6 @@
 <thumbnail>https://yt3.ggpht.com/-ShrFIJwe2aQ/AAAAAAAAAAI/AAAAAAAAAAA/F3pjSr8AqKU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]VStar TV 57.11[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DEfsYKY5WCVg</link>
-<thumbnail>http://www.viettv24.com/main/images/vstar_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VStar TV 57.11[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/vstartv</link>
-<thumbnail>http://www.viettv24.com/main/images/vstar_logo.jpg</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]VATV News[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/vatv</link>
 <thumbnail>http://www.viettv24.com/main/images/VATV_logo.jpg</thumbnail>
@@ -312,11 +302,6 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
 <item>
-<title>SBTN - SET channel 2072</title>
-<link>http://settv.saigon.ns01.us:1935/vietset574tvv/myStream/chunklist_w1706727569.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
 <title>VNBC</title>
 <link>http://uni6rtmp.tulix.tv:1935/vbstv/vbsabr.smil/chunklist_w189527979_b1228800.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
@@ -340,28 +325,12 @@
 
 
 
-
-
-<item>
-<title>[COLOR red]TVs - SPORTS - MOVIES - TV SHOWS[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
-</item>
 <item>
 <title>[COLOR ffff0000]More TV Hải Ngoại[/COLOR]</title>
 <link>viettv24free</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/viettv242.png</thumbnail>
 </item>
-<item>
-<title>[COLOR red]TVs - SPORTS - MOVIES - TV SHOWS[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]Kodi4VNLauncher[/COLOR]</title>
-<link>tokodi4vnlauncher</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
-</item>
+
  
   
   
