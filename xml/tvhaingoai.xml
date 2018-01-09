@@ -131,6 +131,11 @@
 <thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]Việt Face TV 57.2[/COLOR]</title>
+<link>http://saigontv.saigon.ns01.us:1935/vf572caliisai/myStream/chunklist_w1017473988.m3u8</link>
+<thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
+</item>
+<item>
 <title>[COLOR blue]Sài Gòn TV 57.5[/COLOR]</title>
 <link>https://saigonrtmp.tulix.tv/vchannel2/vchannel2/chunklist_w1392861428.m3u8</link>
 <thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
@@ -315,6 +320,11 @@
 <title>VietNews TV</title>
 <link>http://saigontvtv.saigon.ns01.us:1935/VietNews/myStream/chunklist_w172511522.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
+</item>
+<item>
+<title>VStar TV</title>
+<link>http://saigontvtv.saigon.ns01.us:1935/VietStarTV/myStream/chunklist_w36065371.m3u8</link>
+<thumbnail>https://vietipbox.com/tv-logo/vstar-logo.jpg</thumbnail>
 </item>
 <item>
 <title>IBC TV 57.8</title>
