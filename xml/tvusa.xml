@@ -105,6 +105,11 @@
 <thumbnail>https://img.new.livestream.com/accounts/0000000000aaf4c6/d6d0e0e6-435b-4241-a2ba-2248580b8c30_170x170.jpg</thumbnail>
 </item>
 <item>
+<title>[COLOR lime]ABC HD[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/http%3A%2F%2Fabclive.abcnews.com%2Fi%2Fabc_live4%40136330%2Fmaster.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/American_Broadcasting_Company_Logo.svg/220px-American_Broadcasting_Company_Logo.svg.png</thumbnail>
+</item>
+<item>
 <title>[COLOR lime]ABC 7[/COLOR]</title>
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=18241891&video_id=LIVE</link>
 <thumbnail>https://img.new.livestream.com/accounts/0000000001165963/555df977-a499-48f2-8032-61c017440e41_170x170.png</thumbnail>
@@ -124,6 +129,17 @@
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=live&owner_id=kctv&video_id=LIVE</link>
 <thumbnail>https://img.new.livestream.com/accounts/0000000000613588/cd85d819-72a8-492c-9482-c268701ec462_170x170.png</thumbnail>
 </item>
+
+
+
+<item>
+<title>[COLOR lime]C-Span[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/http%3A%2F%2Fcspan1-lh.akamaihd.net%2Fi%2Fcspan1_1%40304727%2Findex_1000_av-p.m3u8%3Fsd%3D10%26rebase%3Don</link>
+<thumbnail>http://firstladies.c-span.org/Images/WebSkin/FL_WebHeader_cspanLogo.png</thumbnail>
+</item>
+
+
+
 
 <item>
 <title>[COLOR yellow]ABC News (Australia)[/COLOR]</title>
