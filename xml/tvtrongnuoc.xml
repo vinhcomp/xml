@@ -28,9 +28,14 @@
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]SCTV Phim[/COLOR]</title>
+<title>[COLOR yellow]SCTV Phim HD[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel8/vchannel8/playlist.m3u8</link>
-<thumbnail>http://tivi.thongtin24h.net/wp-content/uploads/2014/03/SCTV14.png</thumbnail>
+<thumbnail>https://static-stage.tv24.vn/channel/84/PhimVietHD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]SCTV Hài HD[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel8/vchannel8/playlist.m3u8</link>
+<thumbnail>http://d.violet.vn/uploads/resources/document/1/427/98/SCTV18_HAI.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Việt News[/COLOR]</title>
