@@ -34,8 +34,13 @@
 </item>
 <item>
 <title>[COLOR yellow]SCTV Hài HD[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel8/vchannel8/playlist.m3u8</link>
+<link>http://saigonrtmp.tulix.tv/vchannel7/vchannel7/playlist.m3u8</link>
 <thumbnail>http://d.violet.vn/uploads/resources/document/1/427/98/SCTV18_HAI.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]SCTV Sân Khấu HD[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel9/vchannel9/playlist.m3u8</link>
+<thumbnail>http://static.sctv.com.vn/Media/ShortCut/channel/sctv7.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Việt News[/COLOR]</title>
