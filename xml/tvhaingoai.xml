@@ -34,6 +34,36 @@
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Vlife_1.jpg</thumbnail>
 </item>
 <item>
+<title>[COLOR blue]Vietoday TV[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel1/vchannel1/playlist.m3u8</link>
+<thumbnail>http://www.gazefi.com/viettodaytv/sites/all/themes/businessconnect/logo.png</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]Vietshow TV[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel3/vchannel3/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vstv.PNG</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]On Film[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel4/vchannel4/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfilmtv.PNG</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]On Biz[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel5/vchannel5/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onbiztv.PNG</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]On Sports[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel6/vchannel6/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onsportstv.PNG</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]On Football[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel10/vchannel10/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfootballtv.PNG</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]Film 24h (107)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu0f9C4l86Hqm</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Film24h.jpg</thumbnail>
