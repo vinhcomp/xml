@@ -137,6 +137,8 @@
 <link>plugin://plugin.video.kodi4vn.launcher/play/http%3A%2F%2Fcspan1-lh.akamaihd.net%2Fi%2Fcspan1_1%40304727%2Findex_1000_av-p.m3u8%3Fsd%3D10%26rebase%3Don</link>
 <thumbnail>http://firstladies.c-span.org/Images/WebSkin/FL_WebHeader_cspanLogo.png</thumbnail>
 </item>
+</item>
+<item><title>C-SPAN 2</title><thumbnail>http://firstladies.c-span.org/Images/WebSkin/FL_WebHeader_cspanLogo.png</thumbnail><link>plugin://plugin.video.kodi4vn.launcher/play/http%3A%2F%2Fcspan2-lh.akamaihd.net%2Fi%2Fcspan2_1%40304728%2Fmaster.m3u8</link></item>
 
 
 
