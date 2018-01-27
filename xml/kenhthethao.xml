@@ -86,7 +86,11 @@
 <link>tocablestv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
 </item>
-
+<item>
+<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Entertainment HUB[/COLOR]</title>
+<link>toenter</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/enter.png</thumbnail>
+</item>
 
 
 
