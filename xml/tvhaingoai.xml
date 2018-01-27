@@ -18,16 +18,6 @@
 
 
 <item>
-<title>[COLOR red]Trực Tiếp: U23 Việt Nam vs U23 Uzbekistan[/COLOR]</title>
-<link>plugin://plugin.video.youtube/play/?video_id=8b0Z1LgamNc</link>
-<thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR blue]Trực Tiếp: U23 Việt Nam vs U23 Uzbekistan[/COLOR]</title>
-<link>plugin://plugin.video.youtube/play/?video_id=evmVT-geatc</link>
-<thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]Vnews (100)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu9uTovzKkHwc</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Vnews.jpg</thumbnail>
@@ -63,7 +53,7 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onbiztv.PNG</thumbnail>
 </item>
 <item>
-<title>[COLOR blue]On Sports[/COLOR]-Trực Tiếp: U23 Việt Nam vs U23 Uzbekistan</title>
+<title>[COLOR blue]On Sports[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel6/vchannel6/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onsportstv.PNG</thumbnail>
 </item>
