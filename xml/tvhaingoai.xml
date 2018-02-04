@@ -8,7 +8,12 @@
 <title>[COLOR red]NBC SPORTS - SUPER BOWL 2018 - 3PM[/COLOR]</title>
 <link>http://sprtlive1.akamaized.net/hls/live/586250/nbc-sports0204115913-ua/master.m3u8</link>
 <thumbnail>http://www.nbcsports.com/sites/nbcsports.com/files/styles/scale_and_crop_75x50/public/2017/04/11/network-nbcsn-dark.png?itok=12mA5CKX</thumbnail>
-</item> 
+</item>
+<item>
+<title>[COLOR lime]NBC SPORTS - SUPER BOWL 2018 - 3PM[/COLOR]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=WbFWDIGyvxU</link>
+<thumbnail>http://www.nbcsports.com/sites/nbcsports.com/files/styles/scale_and_crop_75x50/public/2017/04/11/network-nbcsn-dark.png?itok=12mA5CKX</thumbnail>
+</item>
 
 <item>
 <title>[COLOR red]CABLE TV | SPORTS | MOVIES | TV SHOWS[/COLOR]</title>
