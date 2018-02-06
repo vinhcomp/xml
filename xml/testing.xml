@@ -4,6 +4,12 @@
 <channel>
 <items>
 
+
+<item>
+<title>[COLOR yellow]HTV7 HD[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name&event_id=6386066&owner_id=20251393&video_id=LIVE</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
+</item> 
  
 <item>
 <title>[COLOR blue]Trực Tiếp: U23 Việt Nam vs U23 Uzbekistan[/COLOR]</title>
