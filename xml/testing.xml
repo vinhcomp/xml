@@ -42,848 +42,686 @@
 </item> 
  
 <item>
-<title>[COLOR blue]Trực Tiếp: U23 Việt Nam vs U23 Uzbekistan[/COLOR]</title>
-<link>plugin://plugin.video.youtube/play/?video_id=evmVT-geatc</link>
-<thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
+<title>VTV1 HD</title>
+<link>https://cdn-livestream-live.vtvgiaitri.vn/vtv1.smil/chunklist_b5000000.m3u8</link>
+<thumbnail>http://i.imgur.com/m8WU8BL.png</thumbnail>
 </item>
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]fantastic[/COLOR]</title>
-<link>tofantastic</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/fantastic.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]Movies 1[/COLOR]</title>
-<link>tomovies1</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movies1.png</thumbnail>
-</item>
- 
-<item>
-<title>[COLOR lime]Thúy Nga 120 - Live Streaming[/COLOR] - [COLOR ffff0000]Phỏng Vấn Ca Sĩ[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=plugin%3A%2F%2Fplugin.video.youtube%2Fplay%2F%3Fvideo_id%3DFhpgNYqkJ3c&mode=100</link>
-<thumbnail>https://i.ytimg.com/vi/FhpgNYqkJ3c/hqdefault.jpg</thumbnail>
-</item> 
-
- 
-<item>
-<title>[COLOR yellow]Van Son[/COLOR] - [COLOR ffff0000]HD Full[/COLOR]</title>
-<link>https://lh3.googleusercontent.com/nYzo2KB0FfX43uECb0wPUlFYhJbjhUYNCbgcdCmV3bkvvAP17U8m23JNyiCfVkwVu6aPAs8F=m18</link>
-<thumbnail>http://i.imgur.com/axJ90nh.jpg</thumbnail>
-</item>  
-
-<item>
-<title>[COLOR yellow]Thúy Nga 119 - Nhạc Vàng Muôn Thuở[/COLOR] - [COLOR ffff0000]HD Full 13[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=https://drive.google.com/open?id=0B1gM7Kl0YigweXdXdXFnSFhCRDg&mode=100&name=S%E1%BB%91+119%3A+Nh%E1%BA%A1c+V%C3%A0ng+Mu%C3%B4n+Th%E1%BB%A7a&iconimage=http%3A%2F%2Fi.imgur.com%2FaxJ90nh.jpg&sf_options=winID%3D10025%26_options_sf&quot</link>
-<thumbnail>http://i.imgur.com/axJ90nh.jpg</thumbnail>
-</item>   
- 
- 
-<item>
-<title>[COLOR yellow]Thúy Nga 119 - Nhạc Vàng Muôn Thuở[/COLOR] - [COLOR ffff0000]HD Full 11[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=https%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D0B1gM7Kl0YigweXdXdXFnSFhCRDg&mode=100&name=S%E1%BB%91+119%3A+Nh%E1%BA%A1c+V%C3%A0ng+Mu%C3%B4n+Th%E1%BB%A7a&iconimage=http%3A%2F%2Fi.imgur.com%2FaxJ90nh.jpg&sf_options=winID%3D10025%26_options_sf&quot</link>
-<thumbnail>http://i.imgur.com/axJ90nh.jpg</thumbnail>
-</item>  
- 
-<item>
-<title>[COLOR yellow]Thúy Nga 119 - Nhạc Vàng Muôn Thuở[/COLOR] - [COLOR ffff0000]HD Full 7[/COLOR]</title>
-<link>plugin://plugin.video.gdrive?mode=streamURL&url=https://docs.google.com/file/d/0B54vn4Nax84MWnJnNGFUcU9KRmc/preview</link>
-<thumbnail>http://i.imgur.com/axJ90nh.jpg</thumbnail>
-</item> 
- 
-<item>
-<title>[COLOR yellow]Thúy Nga 119 - Nhạc Vàng Muôn Thuở[/COLOR] - [COLOR ffff0000]HD Full[/COLOR]</title>
-<link>plugin://plugin.video.gdrive/?mode=video&instance=gdrive1&folder=0B54vn4Nax84MVThVUE8wS284LWc&filename=0B54vn4Nax84MWnJnNGFUcU9KRmc&title=p119f.mp4&content_type=video&sf_options=winID%3D10025%26_options_sf&quot</link>
-<thumbnail>http://i.imgur.com/axJ90nh.jpg</thumbnail>
-</item>  
- 
- 
-<item>
-<title>[COLOR yellow]Thúy Nga 119 - Nhạc Vàng Muôn Thuở[/COLOR] - [COLOR ffff0000]HD Full[/COLOR]</title>
-<link>plugin://plugin.video.gdrive?mode=streamURL&url=https://drive.google.com/open?id=0B54vn4Nax84MWnJnNGFUcU9KRmc</link>
-<thumbnail>http://i.imgur.com/axJ90nh.jpg</thumbnail>
-</item>  
- 
-
-<item>
-<title>[COLOR yellow]Thúy Nga 119 - Nhạc Vàng Muôn Thuở[/COLOR] - [COLOR ffff0000]HD Full[/COLOR]</title>
-<link>plugin://plugin.program.gdrive?mode=streamURL&url=https://drive.google.com/uc?export=download&confirm=FB2j&id=0B54vn4Nax84MWnJnNGFUcU9KRmc</link>
-<thumbnail>http://i.imgur.com/axJ90nh.jpg</thumbnail>
-</item>  
- 
- 
-
-<item>
-<title>[COLOR yellow]Thúy Nga 119 - Nhạc Vàng Muôn Thuở[/COLOR] - [COLOR ffff0000]HD Full[/COLOR]</title>
-<link>https://drive.google.com/uc?export=download&confirm=FB2j&id=0B54vn4Nax84MWnJnNGFUcU9KRmc</link>
-<thumbnail>http://i.imgur.com/axJ90nh.jpg</thumbnail>
-</item>  
-  
-  
-<item>
-<title>[COLOR yellow]Thúy Nga 119 - Nhạc Vàng Muôn Thuở[/COLOR] - [COLOR ffff0000]HD Full[/COLOR]</title>
-<link>plugin://plugin.program.gdrive?mode=streamURL&url=https://drive.google.com/open?id=0B54vn4Nax84MWnJnNGFUcU9KRmc</link>
-<thumbnail>http://i.imgur.com/axJ90nh.jpg</thumbnail>
-</item> 
-  
-<item>
-<title>[COLOR lime]****USA TV****[/COLOR]</title>
-<link>http://www.youtube.com</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-
-<item>
-<title>[COLOR lime]****USA TV****[/COLOR]</title>
-<link>http://www.youtube.com</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-<item>
-<title>VTV4</title>
-<link>http://11e6.vp9.tv/chn/vtv4/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<title>VTV2 HD</title>
+<link>https://cdn-livestream-live.vtvgiaitri.vn/vtv2.smil/chunklist_b2000000.m3u8</link>
+<thumbnail>http://xbmc.itvplus.net/LOGO/HDTV/VTV2.png</thumbnail>
 </item>
 <item>
 <title>VTV3 HD</title>
-<link>http://11e6.vp9.tv/chn/vtv3/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<link>https://cdn-livestream-live.vtvgiaitri.vn/vtv3.smil/chunklist_b5000000.m3u8</link>
+<thumbnail>http://i.imgur.com/OwtIFz1.png</thumbnail>
 </item>
 <item>
-<title>VTV3 HD</title>
-<link>http://27.67.50.68:18080/155_3.m3u8?AdaptiveType=HLS</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<title>VTV4 HD</title>
+<link>https://cdn-livestream-live.vtvgiaitri.vn/vtv4.smil/chunklist_b2000000.m3u8</link>
+<thumbnail>http://i.imgur.com/QwsdDjH.png</thumbnail>
 </item>
 <item>
-<title>VTV3 HD</title>
-<link>http://123.30.185.126/hls/vtv3.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTV4</title>
-<link>http://11e6.vp9.tv/chn/vtv4/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<title>VTV5 HD</title>
+<link>https://cdn-livestream-live.vtvgiaitri.vn/vtv5.smil/chunklist_b2000000.m3u8</link>
+<thumbnail>http://i.imgur.com/bdKkIw2.png</thumbnail>
 </item>
 <item>
 <title>VTV6 HD</title>
-<link>http://11e6.vp9.tv/chn/vtv6/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<link>https://cdn-livestream-live.vtvgiaitri.vn/vtv6.smil/chunklist_b5000000.m3u8</link>
+<thumbnail>http://i.imgur.com/kplGmyh.png</thumbnail>
 </item>
 <item>
-<title>VTV8</title>
-<link>http://11e6.vp9.tv/chn/vtv8/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<title>VTV7 HD</title>
+<link>https://cdn-livestream-live.vtvgiaitri.vn/vtv7.smil/chunklist_b2000000.m3u8</link>
+<thumbnail>http://xbmc.itvplus.net/LOGO/HDTV/VTV7.png</thumbnail>
 </item>
 <item>
-<title>VTV9</title>
-<link>http://11e6.vp9.tv/chn/vtv9/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
+<title>VTV8 HD</title>
+<link>https://cdn-livestream-live.vtvgiaitri.vn/vtv8.smil/chunklist_b2000000.m3u8</link>
+<thumbnail>http://xbmc.itvplus.net/LOGO/HDTV/VTV8.png</thumbnail>
 </item>
 <item>
-<title>ANTV</title>
-<link>http://11e6.vp9.tv/chn/antv/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VOVNEWS</title>
-<link>http://11e6.vp9.tv/chn/vovtv/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTVCAB2</title>
-<link>http://11e6.vp9.tv/chn/phimv/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>THETHAOTV HD</title>
-<link>http://11e6.vp9.tv/chn/tttv/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>BONGDATV HD</title>
-<link>http://11e6.vp9.tv/chn/bdtv/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC1</title>
-<link>http://11e6.vp9.tv/chn/vtc1/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC2</title>
-<link>http://11e6.vp9.tv/chn/vtc2/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC6</title>
-<link>http://11e6.vp9.tv/chn/sgc6/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC7</title>
-<link>http://11e6.vp9.tv/chn/tdayt/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC9</title>
-<link>http://11e6.vp9.tv/chn/letsv/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>VTC11</title>
-<link>http://11e6.vp9.tv/chn/kids/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>HTV7</title>
-<link>http://11e6.vp9.tv/chn/htv7/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>HN1</title>
-<link>http://11e6.vp9.tv/chn/hn1/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>HN2</title>
-<link>http://11e6.vp9.tv/chn/hn2/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>DRT1</title>
-<link>http://11e6.vp9.tv/chn/drt1/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>BTV1</title>
-<link>http://11e6.vp9.tv/chn/btv1/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>THVL1</title>
-<link>http://11e6.vp9.tv/chn/vl1/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>THVL2</title>
-<link>http://11e6.vp9.tv/chn/vl2/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>ESPN HD</title>
-<link>http://11e6.vp9.tv/chn/espn1/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>BEIN 7 HD</title>
-<link>http://11e6.vp9.tv/chn/bein7/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>ARENA</title>
-<link>http://11e6.vp9.tv/chn/arena/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>SETANTA SPORT</title>
-<link>http://11e6.vp9.tv/chn/setanta/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>BT SPORT 1</title>
-<link>http://11e6.vp9.tv/chn/btsu1/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>BT SPORT 2</title>
-<link>http://11e6.vp9.tv/chn/btsu2/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>SKY SPORT 1 HD</title>
-<link>http://11e6.vp9.tv/chn/sks1/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>SKY SPORT 3</title>
-<link>http://11e6.vp9.tv/chn/sks3/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>SKY SPORT 4</title>
-<link>http://11e6.vp9.tv/chn/sks4/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>SKY 1 HD</title>
-<link>http://11e6.vp9.tv/chn/sklub1/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>SKY 2 HD</title>
-<link>http://11e6.vp9.tv/chn/sklub2/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>FOX SPORT 1 HD</title>
-<link>http://11e6.vp9.tv/chn/fox1/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>FOX SPORT 2 HD</title>
-<link>http://11e6.vp9.tv/chn/fox2/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-
-
-
-<item>
-<title>VTV3 HD</title>
-<link>http://11e6.vp9.tv/chn/vtv3/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>HTV7</title>
-<link>http://11e6.vp9.tv/chn/htv7/v.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvtrongnuoc.png</thumbnail>
-</item>
-
-
-<item>
-<title>VTV GIẢI TRÍ</title>
-<link>plugin://plugin.video.itv.fptplay/?url=https%3A%2F%2Ffptplay.net%2Flivetv%2Fvtv3-hd&mode=100&name=%5BCOLOR+red%5DVTV+GI%E1%BA%A2I+TR%C3%8D%5B%2FCOLOR%5D</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTV-VTC/VTV.png</thumbnail>
-</item>
-<item>
-<title>VTVCab1</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fgiaitritv_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB1.png</thumbnail>
-</item>
-<item>
-<title>VTVCab2</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fphimviet_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB2.png</thumbnail>
-</item>
-<item>
-<title>VTVCab3 HD</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fthethaotvhd_2000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB3HD.png</thumbnail>
-</item>
-<item>
-<title>VTVCab3 SD</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fthethaotvsd_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB3SD.png</thumbnail>
-</item>
-<item>
-<title>VTVCab4</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fkenh17_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB4.png</thumbnail>
-</item>
-<item>
-<title>VTVCab5</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fechanel_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB5.png</thumbnail>
-</item>
-<item>
-<title>VTVCab6</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fhaytv_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB6.png</thumbnail>
-</item>
-<item>
-<title>VTVCab7</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fddramas_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB7.png</thumbnail>
-</item>
-<item>
-<title>VTVCab8</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fbibi_1000.stream%2Fchunklist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB8.png</thumbnail>
-</item>
-<item>
-<title>VTVCab9</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Finfotv_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB9.png</thumbnail>
-</item>
-<item>
-<title>VTVCab10</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fo2tv_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB10.png</thumbnail>
-</item>
-<item>
-<title>VTVCab12</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fstyletv_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB12.png</thumbnail>
-</item>
-<item>
-<title>VTVCab13</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivex%2Fhyundai_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB13.png</thumbnail>
-</item>
-<item>
-<title>VTVCab14</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fvtvcab14_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB14.png</thumbnail>
-</item>
-<item>
-<title>VTVCab15</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Finvesttv_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB15.png</thumbnail>
-</item>
-<item>
-<title>VTVCab16 HD</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fbongdatvhd_2000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB16HD.png</thumbnail>
-</item>
-<item>
-<title>VTVCab16 SD</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fbongdatvsd_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB16SD.png</thumbnail>
-</item>
-<item>
-<title>VTVCab17</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fyeah1tv_1000.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB17.png</thumbnail>
-</item>
-<item>
-<title>VTVCab19</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fkenhphim.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB19.png</thumbnail>
-</item>
-<item>
-<title>VTVCab20</title>
-<link>plugin://plugin.video.itv.fptplay/?url=http%3A%2F%2Fhlscache.fptplay.net.vn%2Flivev%2Fvfamily.stream%2Fplaylist.m3u8&mode=200</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/VTVCAB/CAB20.png</thumbnail>
-</item>
-
-
-
-
-
-
-<item>
-<title>PhimViet</title>
-<link>plugin://plugin.video.itv.htvonline/?mode=3&name=Phim%20Vi%e1%bb%87t%20Nam&page=1&url=http%3a%2f%2fhtvonline.com.vn%2fphim-viet-nam</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/MENU-MOVIE/sphimvn.png</thumbnail>
-</item>
-
-<item>
-<title>[COLOR lime]Paris By Night Hội Ngộ Táo Quân - Mừng Xuân Bính Thân 2016[/COLOR] - [COLOR ffff0000]Full[/COLOR]</title>
-<link>plugin://plugin.video.youtube/?action=play_video&videoid=2ynCfC6u-60</link>
-<thumbnail>http://www.upsieutoc.com/images/2016/02/08/12651046_733840406751897_9052771165576605878_n.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR orange]Paris By Night Hội Ngộ Táo Quân - Mừng Xuân Bính Thân 2016[/COLOR] - [COLOR ffff0000]Full[/COLOR]</title>
-<link>plugin://plugin.program.gdrive?mode=streamURL&url=https://drive.google.com/open?id=0B1fozDwmADCUc2t1MFpkb1hWT3M</link>
-<thumbnail>http://www.upsieutoc.com/images/2016/02/08/12651046_733840406751897_9052771165576605878_n.jpg</thumbnail>
-</item>
-<item>
-<title>Asia Golden 4 - Khúc Nhạc Tình Quê (Full)</title>
-<link>plugin://plugin.program.gdrive?mode=streamURL&url=https://drive.google.com/file/d/0B7vuWiAeK9hzQVNkQ3F4OWZUZlU/edit</link>
-<thumbnail>https://i.vimeocdn.com/vod_poster/69988_310x459.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]Thúy Nga 117 - Vườn Hoa Âm Nhạc[/COLOR] - [COLOR ffff0000]Full3[/COLOR]</title>
-<link>http://www.mediafire.com/download/fj56quupoqr5d4b/Paris_By_Night_117_Vuon_Hoa_Am_Nhac_2016_mHD_BluRay_DD2.0_x264-TRiM.mkv</link>
-<thumbnail>http://www.vnnmall.com/userfiles/012816-i.jpg</thumbnail>
+<title>VTV9 HD</title>
+<link>https://cdn-livestream-live.vtvgiaitri.vn/vtv9.smil/chunklist_b2000000.m3u8</link>
+<thumbnail>http://xbmc.itvplus.net/LOGO/HDTV/VTV9.png</thumbnail>
 </item>
 
 <item>
 <title>VTV1</title>
-<link>plugin://plugin.video.fptplay/?url=https%3A%2F%2Ffptplay.net%2Flivetv%2Fvtv1-hd&mode=100</link>
-<thumbnail>http://static1.fptplay.net.vn/static/img/share/channels/icon_channel_vtv1-hd_142284975301.png</thumbnail>
+<link>http://vnlivetv.tk/ducnt/v1</link>
+<thumbnail>http://cdn.kplus.vn/content/upload/1/root/logo-vtv1_w150_h150.png</thumbnail>
 </item>
 <item>
 <title>VTV2</title>
-<link>plugin://plugin.video.fptplay/?url=https%3A%2F%2Ffptplay.net%2Flivetv%2Fvtv2&mode=100</link>
-<thumbnail>http://static.fptplay.net.vn/static/img/share/channels/icon_channel_vtv2.png</thumbnail>
+<link>http://vnlivetv.tk/ducnt/v2</link>
+<thumbnail>http://cdn.kplus.vn/content/upload/1/root/logo-vtv2_w150_h150.png</thumbnail>
 </item>
 <item>
-<title>VTV3 HD</title>
-<link>plugin://plugin.video.fptplay/?url=https%3A%2F%2Ffptplay.net%2Flivetv%2Fvtv3&mode=1000</link>
-<thumbnail>http://static1.fptplay.net.vn/static/img/share/channels/icon_channel_vtv3.png</thumbnail>
+<title>VTV3</title>
+<link>http://vnlivetv.tk/ducnt/v3</link>
+<thumbnail>http://cdn.kplus.vn/content/upload/1/root/logo-vtv3_w150_h150.png</thumbnail>
 </item>
 <item>
-<title>VTV4</title>
-<link>plugin://plugin.video.fptplay/?url=https%3A%2F%2Ffptplay.net%2Flivetv%2Fvtv4&mode=100</link>
-<thumbnail>http://static.fptplay.net.vn/static/img/share/channels/icon_channel_vtv4.png</thumbnail>
+<title>VTV5</title>
+<link>http://vnlivetv.tk/ducnt/v5</link>
+<thumbnail>http://cdn.kplus.vn/content/upload/1/root/logo-vtv5_w150_h150.png</thumbnail>
 </item>
 <item>
-<title>VTV6 HD</title>
-<link>plugin://plugin.video.fptplay/?url=https%3A%2F%2Ffptplay.net%2Flivetv%2Fvtv6-hd&mode=100</link>
-<thumbnail>http://static.fptplay.net.vn/static/img/share/channels/icon_channel_vtv6-hd_140988742272.png</thumbnail>
-</item>
-
-
-
-
-<item>
-<title>3</title>
-<link>plugin://plugin.video.itvplus/?url=http%3A%2F%2Fwww.wezatv.com%2Fdootv%2Fchannel3.php&mode=100</link>
-<thumbnail>http://www.wezatv.com/tool/tv_icons/hd-ch3.png</thumbnail>
-</item>
-
-<item>
-<title>CNN</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/8e5dad9a5a9030b8013a5b179b80f923?sf_options=winID%3D10025%26_options_sf&quot</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-<item>
-<title>CNN</title>
-<link>http://iptv-manal.ddns.net:34500/live/TEST/TEST/435</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-<item>
-<title>CNN</title>
-<link>http://selling-team.net:8000/live/alfio/alfio/8106.ts</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-
-
-
-
-<item>
-<title>[COLOR ffff0000]ZEUS VIEO[/COLOR] -> Live Stream</title>
-<link>tozeus</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/zeus.png</thumbnail>
+<title>VTV6</title>
+<link>http://vnlivetv.tk/ducnt/v6</link>
+<thumbnail>http://i.imgur.com/keIENsc.png</thumbnail>
 </item>
 <item>
-<title>[COLOR ffff0000]FilmOn TV[/COLOR]</title>
-<link>tofilmon1</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/filmon1.png</thumbnail>
+<title>TH QUỐC HỘI</title>
+<link>http://vnlivetv.tk/ducnt/qhtv</link>
+<thumbnail>http://103.56.158.185/tv_icon/quoc-hoi-hd.png</thumbnail>
 </item>
 <item>
-<title>[COLOR ffff0000]Vdubt25[/COLOR] -> USA Live TV (Not Working Now)</title>
-<link>tovdubt25</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/vdubt.png</thumbnail>
-</item>
-
-
-
-<item>
-<title>CNN</title>
-<link>http://hlscache.fptplay.net.vn/event/cnn/playlist.m3u8?token=c335VydmVyX3RpbWU9MTQwMjYxNzIyNCZoYXNoX3ZhbHVl&did=NzIyNCZoYXNoX3ZhbHVl</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-
-
-<item>
-<title>FOX News</title>
-<link>http://livestream.com/accounts/6908462/events/2706967/player?width=640&height=360&autoPlay=true&mute=false</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-<item>
-<title>BLOOMBERG</title>
-<link>http://globeiptv.ddns.net:88/nAm/dsjkkjlg/147.gi</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-<item>
-<title>CNBC News</title>
-<link>http://origin2.live.web.tv.streamprovider.net/streams/3bc166ba3776c04e987eb242710e75c0/index.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-<item>
-<title>ABC News</title>
-<link>http://abclive.abcnews.com/i/abc_live4@136330/index_1200_av-b.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-
-
-
-<item>
-<title>AMC</title>
-<link>http://globeiptv.ddns.net:88/nAm/dsjkkjlg/1774.gi</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>TTXVN</title>
+<link>http://live.cdn.mobifonetv.vn/motv2/ttxvn_hls.smil/chunklist_b1200000.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>http://103.56.158.185/tv_icon/ttxvn.png</thumbnail>
 </item>
 <item>
-<title>ESPN 2</title>
-<link>rtmp://162.254.148.228/app// playpath=stfox1s-channel swfUrl=http://p.jwpcdn.com/6/6/jwplayer.flash.swf pageUrl=http://hdtoptv.com/alive/amiga11.php live=true</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>NHÂN DÂN HD</title>
+<link>http://27.118.16.98:1935/live/truyenhinhnhandan720/chunklist_w2006762604.m3u8</link>
+<thumbnail>http://103.56.158.185/tv_icon/nhandan.png</thumbnail>
 </item>
 <item>
-<title>ESPN HD</title>
-<link>http://80.80.160.168/live/6/live.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>QPVN</title>
+<link>rtmp://125.212.132.219/standard/_definst_/mp4:standard_480p</link>
+<thumbnail>http://103.56.158.185/tv_icon/quoc-phong-vn.png</thumbnail>
 </item>
 <item>
-<title>FOX SPORT 2 HD</title>
-<link>http://www.htvonline.com.vn/livetv/espn-hd-3132346E61.html</link>
-<thumbnail>http://img.htvonline.com.vn/livetv/04052015/fox2hd_61921430731143.png</thumbnail>
-</item>
-
-
-
-
-<item>
-<title>TECH CHANNEL</title>
-<link>rtmp://203.162.121.230/live//tech?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/techI.png</thumbnail>
+<title>HA NOI 1 HD</title>
+<link>http://hanoitvlive.8ef55e0c.cdnviet.com/hanoi1.smil/chunklist_b3500000.m3u8</link>
+<thumbnail>http://cdn.kplus.vn/content/upload/1/root/logo-hanoi-1_w150_h150.png</thumbnail>
 </item>
 <item>
-<title>SOTV</title>
-<link>rtmp://203.162.121.230/live//sotv?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/SOTVI.png</thumbnail>
+<title>HA NOI 2 HD</title>
+<link>http://hanoitvlive.8ef55e0c.cdnviet.com/hanoi2.smil/chunklist_b3500000.m3u8</link>
+<thumbnail>http://cdn.kplus.vn/content/upload/1/root/logo-hanoi-2_w150_h150.png</thumbnail>
 </item>
 <item>
-<title>Discovery Channel</title>
-<link>http://globeiptv.ddns.net:88/nAm/dsjkkjlg/1242.gi</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>HTV1</title>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtv1_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>http://i.imgur.com/XWtxYdm.png</thumbnail>
 </item>
 <item>
-<title>Discovery Science</title>
-<link>http://globeiptv.ddns.net:88/nAm/dsjkkjlg/1275.gi</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>HTV2</title>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtv2_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>http://i.imgur.com/s7x0UhN.png</thumbnail>
 </item>
 <item>
-<title>NATIONAL GEOGRAPHIC SV1</title>
-<link>http://www.htvonline.com.vn/livetv/national-geographic-3132366E61.html</link>
-<thumbnail>http://img.htvonline.com.vn/livetv/26042014/natgeo2_59521398493696.png</thumbnail>
+<title>HTV3</title>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtv3_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>http://i.imgur.com/MMQITB4.png</thumbnail>
 </item>
 <item>
-<title>Nat GEO HD</title>
-<link>http://tv-tikilive-hls-live.hls.adaptive.level3.net/casthlsv2/96.m3u8?op_id=18</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>HTV4</title>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtv4_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>http://i.imgur.com/gkeMaOh.png</thumbnail>
 </item>
 <item>
-<title>Animal Planet</title>
-<link>http://tv-tikilive-hls-live.hls.adaptive.level3.net/casthlsv2/142.m3u8?op_id=18</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-<item>
-<title>History Channel (USA)</title>
-<link>http://cloudiptv.dyndns.tv:1935/live/_definst_/Hitstoryhd.stream/playlist.m3u8?username=zo&password=f84quqgi1l7jwqd</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-<item>
-<title>Fashion TV</title>
-<link>http://msk1.peers.tv/streaming/fashion/16/tvrec/playlist.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-<item>
-<title>MODEL CHANNEL</title>
-<link>rtmp://203.162.121.230/live//model_channel?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/MOCI.png</thumbnail>
+<title>HTV7</title>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtv7_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/vi/a/ac/HTV7-tphcm.png</thumbnail>
 </item>
 <item>
-<title>FITNESS 360</title>
-<link>rtmp://203.162.121.230/live//fitness_360?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/360I.png</thumbnail>
+<title>HTV9</title>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtv9_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/vi/0/0a/HTV9-tphcm.png</thumbnail>
 </item>
 <item>
-<title>4 MEN</title>
-<link>rtmp://203.162.121.230/live//4Men?securetoken=#ed%h0#w@1</link>
-<thumbnail>http://xbmc.itvplus.net/LOGO/LIFE/4menI.png</thumbnail>
-</item>
-
-
-
-
-<item>
-<title>STAR MOVIE HD</title>
-<link>http://www.htvonline.com.vn/livetv/star-movie-hd-3132376E61.html</link>
-<thumbnail>http://img.htvonline.com.vn/livetv/18052014/star-movies-hd--edited_75921400346206.png</thumbnail>
+<title>HTVC THUAN VIET</title>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvcthuanviet_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://s21.postimg.org/sbcyi4ttz/htvcthuanviet.png</thumbnail>
 </item>
 <item>
-<title>STAR WORLD HD</title>
-<link>http://www.htvonline.com.vn/livetv/star-world-hd-3132386E61.html</link>
-<thumbnail>http://img.htvonline.com.vn/livetv/18052014/star-world-hd--edited_72251400346181.png</thumbnail>
+<title>GIA DINH</title>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvcgiadinh_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://s3.postimg.org/3q9r5xc37/htvcgiadinh.jpg</thumbnail>
 </item>
-
-
+<item>
+<title>HTVC PHIM</title>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvcphim_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://s15.postimg.org/tymsndhh7/htvcphim.jpg</thumbnail>
+</item>
+<item>
+<title>HTVC Dulich</title>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvcdulich_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://s11.postimg.org/y50njcob7/dulich.jpg</thumbnail>
+</item>
+<item>
+<title>HTVC Phunu</title>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvcphunu_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://s11.postimg.org/dku4jqnpf/htvcphunu.png</thumbnail>
+</item>
+<item>
+<title>HTVC canhac</title>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvccanhac_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>HTVC Thethao</title>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvcthethao_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>http://i.imgur.com/bULyZwy.png</thumbnail>
+</item>
+<item>
+<title>VTC1 HD</title>
+<link>http://vnlivetv.tk/ducnt/vtc1</link>
+<thumbnail>http://i.imgur.com/HC5iUuK.png</thumbnail>
+</item>
+<item>
+<title>VTC7 - TODAY TV</title>
+<link>http://vnlivetv.tk/ducnt/vtc7</link>
+<thumbnail>http://image.cdn.i-com.vn/thumb/0x0/crop//Uploads/images/kenh/TODAY.JPG</thumbnail>
+</item>
+<item>
+<title>VTC9</title>
+<link>http://vnlivetv.tk/ducnt/vtc9</link>
+<thumbnail>http://htvc.vn/uploads/editor/images/Logo%20Kenh/logo_Let</thumbnail>
+</item>
+<item>
+<title>VTC14</title>
+<link>http://vnlivetv.tk/ducnt/vtc14</link>
+<thumbnail>https://s13.postimg.org/xfqtu80tz/vtc14.png</thumbnail>
+</item>
+<item>
+<title>mobiTV:PHIM HAY</title>
+<link>http://live.cdn.mobifonetv.vn/motv3/phimhay_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>http://103.56.158.185/tv_icon/phim-hay.png</thumbnail>
+</item>
+<item>
+<title>mobiTV:NCM</title>
+<link>http://live.cdn.mobifonetv.vn/motv/ncm_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>http://103.56.158.185/tv_icon/ncm.png</thumbnail>
+</item>
+<item>
+<title>mobiTV:AN NINH THE GIOI</title>
+<link>http://live.cdn.mobifonetv.vn/motv/antg_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>http://i.imgur.com/j7NsBwD.png</thumbnail>
+</item>
+<item>
+<title>mobiTV:MIEN TAY</title>
+<link>http://live.cdn.mobifonetv.vn/motv2/mientay_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>http://103.56.158.185/tv_icon/mien-tay.png</thumbnail>
+</item>
+<item>
+<title>mobiTV:VIETTEEN</title>
+<link>http://live.cdn.mobifonetv.vn/motv/vietteen_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>http://103.56.158.185/tv_icon/vietteen.png</thumbnail>
+</item>
+<item>
+<title>mobiTV:SAM</title>
+<link>http://live.cdn.mobifonetv.vn/motv/sam_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<thumbnail>http://103.56.158.185/tv_icon/sam.png</thumbnail>
+</item>
+<item>
+<title>KEENG TV</title>
+<link>http://125.235.29.16/livetv/keeng.m3u8</link>
+<thumbnail>https://s4.postimg.org/kecndom6l/keengtv.jpg</thumbnail>
+</item>
+<item>
+<title>NCT</title>
+<link>rtmp://123.30.134.108/live/nctlive</link>
+<thumbnail>http://www.vietmobitv.com/vmt/images/nct.png</thumbnail>
+</item>
+<item>
+<title>THVL1</title>
+<link>http://vnlivetv.tk/ducnt/vl1</link>
+<thumbnail>http://cdn.kplus.vn/content/upload/1/root/logo-thvl1_w150_h150.png</thumbnail>
+</item>
+<item>
+<title>THVL1 HD</title>
+<link>http://vnlivetv.tk/ducnt/vl1hd</link>
+<thumbnail>http://cdn.kplus.vn/content/upload/1/root/logo-thvl1_w150_h150.png</thumbnail>
+</item>
+<item>
+<title>THVL2 HD</title>
+<link>http://vnlivetv.tk/ducnt/vl2hd</link>
+<thumbnail>http://tv.101vn.com/images/thvl2.png</thumbnail>
+</item>
+<item>
+<title>FOX MOVIES</title>
+<link>http://vnlivetv.tk/ducnt/fm</link>
+<thumbnail>http://singteltv.com.sg/_channels/pic_ch414.jpg</thumbnail>
+</item>
 <item>
 <title>HBO</title>
-<link>http://cloudiptv.dyndns.tv:1935/live/_definst_/hd_hbo.stream/playlist.m3u8?username=zo&password=f84quqgi1l7jwqd</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<link>http://vnlivetv.tk/ducnt/hbo</link>
+<thumbnail>https://s13.postimg.org/o8yh7baef/hbo.png</thumbnail>
 </item>
 <item>
-<title>Fox Action</title>
-<link>http://cloudiptv.dyndns.tv:1935/live/_definst_/Foxaction.stream/playlist.m3u8?username=zo&password=f84quqgi1l7jwqd</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>MAX</title>
+<link>http://vnlivetv.tk/ducnt/max</link>
+<thumbnail>http://htvc.vn/uploads/channel/2017/02/06/9740642-logo-max-by-hbo.png</thumbnail>
 </item>
 <item>
-<title>Fox Family</title>
-<link>http://cloudiptv.dyndns.tv:1935/live/_definst_/Foxfamily.stream/playlist.m3u8?username=zo&password=f84quqgi1l7jwqd</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-
-
-
-<item>
-<title>Cartoon Network</title>
-<link>http://globeiptv.ddns.net:88/nAm/dsjkkjlg/1781.gi</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>AXN</title>
+<link>http://vnlivetv.tk/ducnt/axn</link>
+<thumbnail>http://103.56.158.185/tv_icon/axn.png</thumbnail>
 </item>
 <item>
-<title>Anime Livestrea 24/7</title>
-<link>http://veetle.com/index.php/hls/streamMbrfast/52a0adb7b6024_/stream.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>MTV</title>
+<link>http://vnlivetv.tk/ducnt/mtv</link>
+<thumbnail>http://103.56.158.185/tv_icon/mtv.png</thumbnail>
 </item>
 <item>
-<title>Disney Channel</title>
-<link>http://tv-tikilive-hls-live.hls.adaptive.level3.net/casthlsv2/89.m3u8?op_id=18</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>CARTOON NETWORK</title>
+<link>http://vnlivetv.tk/ducnt/cartoon|User-Agent=Mozilla/5.0</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_cartoon-network_146581299646.png</thumbnail>
+</item>
+<item>
+<title>FOX SPORTS</title>
+<link>http://vnlivetv.tk/ducnt/fs</link>
+<thumbnail>https://s17.postimg.org/8tupl9rbz/foxsport.jpg</thumbnail>
 </item>
 
-
-
 <item>
-<title>USA:Vevo1 HD</title>
-<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/05/prog_index.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]VTV1</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTV1%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-vtv1-2128.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>USA:Vevo2 HD</title>
-<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/05/prog_index.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]VTV1 HD</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTV1%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-vtv1-full-hd-1080-52524.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>USA:Vevo3 HD</title>
-<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/05/prog_index.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]Quốc Hội</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22Qu%E1%BB%91c%20H%E1%BB%99i%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-quoc-hoi-50069.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>USA:Kiss Tv Music</title>
-<link>rtmp://tst.es.flash.glb.ipercast.net/tst.es-live/live</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-
-
-
-
-
-
-
-<item>
-<title>NBC GOLF SD</title>
-<link>http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/1896k/prog.m3u8|X-Forwarded-For=209.239.112.104</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]QPVN Quốc Phòng VN</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22QPVN%20Qu%E1%BB%91c%20Ph%C3%B2ng%20VN%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-quoc-phong-viet-nam-50068.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>NBC GOLF 720p</title>
-<link>http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/2596k/prog.m3u8|X-Forwarded-For=209.239.112.104</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]TTXVN Thông Tấn Xã Việt Nam</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22TTXVN%20Th%C3%B4ng%20T%E1%BA%A5n%20X%C3%A3%20Vi%E1%BB%87t%20Nam%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-thong-tan-xa-viet-nam-50070.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>NBC GOLF 1080p</title>
-<link>http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/4296k/prog.m3u8|X-Forwarded-For=209.239.112.104</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]Nhân Dân</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22Nh%C3%A2n%20D%C3%A2n%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-nhan-dan-full-hd-1080-50201.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>NBC Sports Network 1080P</title>
-<link>http://tvenbcsn-i.Akamaihd.net/hls/live/218235/nbcsnx/4296k/prog.m3u8|X-Forwarded-For=209.239.112.104</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTV COOP</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTV%20COOP%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv-coop-sd-31973.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>USA Live TV Big Ten Network</title>
-<link>http://bigten247.cdnak.bigtenhd.neulion.com/nlds/btn2go/btnnetwork/as/live/btnnetwork_hd_3000.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTV1</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTV1%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv1-2631.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>PAC-12 Net. (Arizona)</title>
-<link>http://xrxs.net/video/live-p12ariz-4728.m3u8?</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTV2</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTV2%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv2-2630.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>PAC-12 Net. (Bay Area)</title>
-<link>http://xrxs.net/video/live-p12baya-4728.m3u8?</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTV2 HD</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTV2%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv2-hd-2669.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>PAC-12 Net. (Los Angeles)</title>
-<link>http://xrxs.net/video/live-p12losa-4728.m3u8?</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTV3</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTV3%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv3-2535.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>PAC-12 Net. (Moutain)</title>
-<link>http://xrxs.net/video/live-p12moun-4728.m3u8?</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTV4</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTV4%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv4-2528.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>PAC-12 Net. (Oregon)</title>
-<link>http://xrxs.net/video/live-p12oreg-4728.m3u8?</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTV7</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTV7%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv7-sd-10036.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>PAC-12 Net. (Oregon) 1280*720</title>
-<link>http://xrxs.net/video/live-p12oreg-2328.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTV7 HD</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTV7%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv7-hd-256.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>PAC-12 Net. (Oregon) 640*360</title>
-<link>http://xrxs.net/video/live-p12oreg-1164.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTV9</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTV9%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv9-sd-10037.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>PAC-12 Net. (Washington)</title>
-<link>http://xrxs.net/video/live-p12wash-4728.m3u8?</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTV9 HD</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTV9%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv9-hd-2667.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>PAC National 1280*720</title>
-<link>http://xrxs.net/video/live-p12netw-2328.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTVC Ca Nhạc</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTVC%20Ca%20Nh%E1%BA%A1c%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htvc-ca-nhac-full-hd-1080-2264.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>PAC National 640*360</title>
-<link>http://xrxs.net/video/live-p12netw-1164.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTVC Du Lịch</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTVC%20Du%20L%E1%BB%8Bch%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htvc-du-lich-va-cuoc-song-full-hd-1080-2328.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>USA-BASKET UNI.(Arizona)</title>
-<link>http://xrxs.net/video/live-p12ariz-1164.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTVC Gia Đình</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTVC%20Gia%20%C4%90%C3%ACnh%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htvc-gia-dinh-full-hd-1080-2394.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>USA-BASKET UNI.(Los Angeles)</title>
-<link>http://xrxs.net/video/live-p12losa-1164.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTVC Phim Paramount Picture VN</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTVC%20Phim%20Paramount%20Picture%20VN%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htvc-phim-2397.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>USA-BASKET UNI.(Moutain)</title>
-<link>http://xrxs.net/video/live-p12moun-1164.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTVC Phim Paramount Picture VN</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTVC%20Phim%20Paramount%20Picture%20VN%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htvc-phim-hd-2399.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>USA-BASKET UNI.(Oregon)</title>
-<link>http://xrxs.net/video/live-p12oreg-1164.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTVC Phụ Nữ</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTVC%20Ph%E1%BB%A5%20N%E1%BB%AF%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htvc-phu-nu-full-hd-1080-2393.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>USA-BASKET UNI.(Washington)</title>
-<link>http://xrxs.net/video/live-p12wash-2328.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTVC Plus</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTVC%20Plus%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htvc-plus-full-hd-1080-2395.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>SPORTES 7 HD</title>
-<link>http://xrxs.net/video/live-p12oreg-4728.m3u8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
-</item>
-
-
-
-
-
-
-
-
-<item>
-<title>HSN</title>
-<link>rtmp://hsn.mpl.miisolutions.net:1935/hsn-live01/_definst_ playpath=mp4:420p500kB31 swfUrl=http://img.hsni.com/images/Site_Relaunch_2007/arcade/StrobeMediaPlay pageUrl="http://www.hsn.com/watch-hsn-tv-live_xh.aspx?network=1&amp live=1 timeout=30</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTVC Shopping</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTVC%20Shopping%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htvc-shopping-2265.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 <item>
-<title>HSN 2</title>
-<link>rtmp://hsn.mpl.miisolutions.net:1935/hsn-live01/_definst_ playpath=mp4:468p500kB31 swfUrl=http://img.hsni.com/images/Site_Relaunch_2007/arcade/StrobeMediaPlay pageUrl=http://hsn2.hsn.com/watch-hsn-live_xh.aspx?network=4 live=1 timeout=30</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/tvusa.png</thumbnail>
+<title>[COLOR cyan]HPlus[/COLOR]HTVC Thể Thao</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTVC%20Th%E1%BB%83%20Thao%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv-the-thao-2400.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]HTVC Thể Thao HD</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTVC%20Th%E1%BB%83%20Thao%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv-the-thao-hd-4009.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]HTVC Thuần Việt</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTVC%20Thu%E1%BA%A7n%20Vi%E1%BB%87t%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htvc-thuan-viet-2396.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]HTVC Thuần Việt HD</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTVC%20Thu%E1%BA%A7n%20Vi%E1%BB%87t%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htvc-thuan-viet-hd-2398.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]HTVC FBNC</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22FBNC%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-fbnc-2184.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]AZSHOP</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22AZSHOP%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-azshop-70471.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]VTC1</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTC1%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-vtc1-full-hd-1080-50075.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]VTC3 HD</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTC3%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-vtc3-hd-2058.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]VTC4</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTC4%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-vtc4-2057.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]VTC7 TodayTV</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTC7%20TodayTV%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-todaytv-vtc7-2060.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]VTC7 TodayTV HD</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTC7%20TodayTV%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-todaytv-vtc7-hd-70608.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]VTC8</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTC8%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-vtc8-2056.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]VTC9 Let's Viet</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTC9%20Let%27s%20Viet%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-vtc9-lets-viet-2052.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]VTC10 NetViet</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTC10%20NetViet%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-vtc10-2051.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]VTC11 KidsTV</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTC11%20KidsTV%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-vtc11-50071.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]VTC13 HD ITV HD</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTC13%20HD%20ITV%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-itv-full-hd-1080-52454.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]VTC14</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTC14%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-vtc14-full-hd-1080-50074.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]VTC16</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22VTC16%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-vtc16-50072.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]Miền Tây</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22Mi%E1%BB%81n%20T%C3%A2y%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-mien-tay-50065.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]ATV An Giang</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22ATV%20An%20Giang%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-atv-truyen-hinh-an-giang-51818.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]BGTV Bắc Giang</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22BGTV%20B%E1%BA%AFc%20Giang%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-bgtv-truyen-hinh-bac-giang-1210.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]BPTV1 Bình Phước 1</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22BPTV1%20B%C3%ACnh%20Ph%C6%B0%E1%BB%9Bc%201%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-bptv1-truyen-hinh-binh-phuoc-877.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]BRT Bà Rịa Vũng Tàu</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22BRT%20B%C3%A0%20R%E1%BB%8Ba%20V%C5%A9ng%20T%C3%A0u%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-brt-truyen-hinh-ba-ria-1982.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]BTV Bạc Liêu</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22BTV%20B%E1%BA%A1c%20Li%C3%AAu%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-btv-truyen-hinh-bac-lieu-872.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]BTV Bình Định</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22BTV%20B%C3%ACnh%20%C4%90%E1%BB%8Bnh%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-btv-truyen-hinh-binh-dinh-1955.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]BTV Bình Thuận</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22BTV%20B%C3%ACnh%20Thu%E1%BA%ADn%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-btv-truyen-hinh-binh-thuan-53530.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]BTV1 Bình Dương 1</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22BTV1%20B%C3%ACnh%20D%C6%B0%C6%A1ng%201%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-btv1-truyen-hinh-binh-duong-1-1907.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]BTV2 Bình Dương 2</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22BTV2%20B%C3%ACnh%20D%C6%B0%C6%A1ng%202%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-btv2-truyen-hinh-binh-duong-2-23963.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]CTV Cà Mau</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22CTV%20C%C3%A0%20Mau%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-ctv-truyen-hinh-ca-mau-1903.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]DRT Đắc Lắc</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22DRT%20%C4%90%E1%BA%AFc%20L%E1%BA%AFc%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-drt-truyen-hinh-dac-lac-1785.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]DRT1 Đà Nẵng 1</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22DRT1%20%C4%90%C3%A0%20N%E1%BA%B5ng%201%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-drt1-truyyen-hinh-da-nang-1-3268.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]DRT2 Đà Nẵng 2</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22DRT2%20%C4%90%C3%A0%20N%E1%BA%B5ng%202%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-drt2-truen-hinh-da-nang-2-53529.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]HDTV Hải Dương</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HDTV%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-hdtv-truyen-hinh-hai-duong-871.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]HGTV Hậu Giang</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HGTV%20H%E1%BA%ADu%20Giang%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-hgtv-truyen-hinh-hau-giang-762.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]HTTV Hà Tĩnh</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22HTTV%20H%C3%A0%20T%C4%A9nh%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-httv-truyen-hinh-ha-tinh-7796.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]KG Kiên Giang</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22KG%20Ki%C3%AAn%20Giang%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-kg-truyen-hinh-kien-giang-774.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]KG1 Kiên Giang 1</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22KG1%20Ki%C3%AAn%20Giang%201%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-kg1-truyen-hinh-kien-giang-1-6917.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]KTV Khánh Hòa</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22KTV%20Kh%C3%A1nh%20H%C3%B2a%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-ktv-truyen-hinh-khanh-hoa-1979.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]LA34 Long An</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22LA34%20Long%20An%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-la34-truyen-hinh-long-an-873.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]LSTV Lạng Sơn</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22LSTV%20L%E1%BA%A1ng%20S%C6%A1n%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-lstv-truyen-hinh-lang-son-1956.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]LTV Lâm Đồng</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22LTV%20L%C3%A2m%20%C4%90%E1%BB%93ng%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-ltv-truyen-hinh-lam-dong-55163.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]NBTV Ninh Bình</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22NBTV%20Ninh%20B%C3%ACnh%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-nbtv-truyen-hinh-ninh-binh-868.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]NTV Nam Định</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22NTV%20Nam%20%C4%90%E1%BB%8Bnh%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-ntv-truyen-hinh-nam-dinh-1951.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]PTD Đắc Nông</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22PTD%20%C4%90%E1%BA%AFc%20N%C3%B4ng%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-ptd-truyen-hinh-dac-nong-1784.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]QRT Quảng Nam</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22QRT%20Qu%E1%BA%A3ng%20Nam%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-qrt-truyen-hinh-quang-nam-1787.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]STV Sóc Trăng</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22STV%20S%C3%B3c%20Tr%C4%83ng%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-stv-truyen-hinh-soc-trang-1786.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]THBT Bến Tre</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22THBT%20B%E1%BA%BFn%20Tre%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-thbt-truyen-hinh-ben-tre-61299.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]THDT1 Đồng Tháp 1</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22THDT1%20%C4%90%E1%BB%93ng%20Th%C3%A1p%201%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-thdt1-truyen-hinh-dong-thap-1788.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]THLC Lào Cai</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22THLC%20L%C3%A0o%20Cai%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-thlc-truyen-hinh-lao-cai-1789.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]THTPCT Cần Thơ</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22THTPCT%20C%E1%BA%A7n%20Th%C6%A1%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-thtpct-truyen-hinh-can-tho-1980.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]THTV Trà Vinh</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22THTV%20Tr%C3%A0%20Vinh%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-thtv-truyen-hinh-tra-vinh-3254.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]THVL1 Vĩnh Long 1</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22THVL1%20V%C4%A9nh%20Long%201%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-thvl1-truyen-hinh-vinh-long-1-899.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]THVL2 Vĩnh Long 2</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22THVL2%20V%C4%A9nh%20Long%202%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-thvl2-truyen-hinh-vinh-long-2-52406.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]TRT Thừa Thiên Huế</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22TRT%20Th%E1%BB%ABa%20Thi%C3%AAn%20Hu%E1%BA%BF%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-trt-truyen-hinh-hue-1283.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]TTV11 Tây Ninh</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22TTV11%20T%C3%A2y%20Ninh%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-ttv11-truyen-hinh-tay-ninh-1981.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]MTV</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22MTV%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-mtv-2263.html%22%7D</link>
+<thumbnail></thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]HPlus[/COLOR]Bình Dương FM</title>
+<link>plugin://plugin.video.kodi4vn.hplus.vn/play/%7B%22title%22%3A%22B%C3%ACnh%20D%C6%B0%C6%A1ng%20FM%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-binh-duong-fm-23964.html%22%7D</link>
+<thumbnail></thumbnail>
 </item>
 
 
