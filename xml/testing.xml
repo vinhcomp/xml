@@ -4,7 +4,12 @@
 <channel>
 <items>
 
-
+ 
+<item>
+<title>[COLOR yellow]THVL1[/COLOR]</title>
+<link>http://talk.vcdn.vn/hls/6ab59c724c061baac2ee5fa30834a71d/1619c60375a/khongtuthvl/index.m3u8</link>
+<thumbnail>https://tvstatic.vcmedia.vn/vtv/vtv1-thumb.jpg</thumbnail>
+</item>
 <item>
 <title>[COLOR blue]On Biz[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel5/vchannel5/playlist.m3u8</link>
@@ -57,11 +62,7 @@
 <link>plugin://plugin.video.itvplus/?url=plugin%3A%2F%2Fplugin.video.youtube%2Fplay%2F%3Fvideo_id%3DFhpgNYqkJ3c&mode=100</link>
 <thumbnail>https://i.ytimg.com/vi/FhpgNYqkJ3c/hqdefault.jpg</thumbnail>
 </item> 
-<item>
-<title>[COLOR yellow]THVL1[/COLOR]</title>
-<link>https://talk.vcdn.vn/hls/3bc3b50c98526c4a03cab645f049856e/160cd6d6411/khongtuthvl/index.m3u8</link>
-<thumbnail>https://tvstatic.vcmedia.vn/vtv/vtv1-thumb.jpg</thumbnail>
-</item> 
+
  
 <item>
 <title>[COLOR yellow]Van Son[/COLOR] - [COLOR ffff0000]HD Full[/COLOR]</title>
