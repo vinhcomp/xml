@@ -44,67 +44,67 @@
 
 <item>
 <title>HTV1</title>
-<link>http://live.cdn.mobifonetv.vn/motv/myhtv1_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtv1_hls.smil/playlist.m3u8</link>
 <thumbnail>http://i.imgur.com/XWtxYdm.png</thumbnail>
 </item>
 <item>
 <title>HTV2</title>
-<link>http://live.cdn.mobifonetv.vn/motv/myhtv2_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtv2_hls.smil/playlist.m3u8</link>
 <thumbnail>http://i.imgur.com/s7x0UhN.png</thumbnail>
 </item>
 <item>
 <title>HTV3</title>
-<link>http://live.cdn.mobifonetv.vn/motv/myhtv3_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtv3_hls.smil/playlist.m3u8</link>
 <thumbnail>http://i.imgur.com/MMQITB4.png</thumbnail>
 </item>
 <item>
 <title>HTV4</title>
-<link>http://live.cdn.mobifonetv.vn/motv/myhtv4_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtv4_hls.smil/playlist.m3u8</link>
 <thumbnail>http://i.imgur.com/gkeMaOh.png</thumbnail>
 </item>
 <item>
 <title>HTV7</title>
-<link>http://live.cdn.mobifonetv.vn/motv/myhtv7_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtv7_hls.smil/playlist.m3u8</link>
 <thumbnail>https://upload.wikimedia.org/wikipedia/vi/a/ac/HTV7-tphcm.png</thumbnail>
 </item>
 <item>
 <title>HTV9</title>
-<link>http://live.cdn.mobifonetv.vn/motv/myhtv9_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtv9_hls.smil/playlist.m3u8</link>
 <thumbnail>https://upload.wikimedia.org/wikipedia/vi/0/0a/HTV9-tphcm.png</thumbnail>
 </item>
 <item>
 <title>HTVC THUAN VIET</title>
-<link>http://live.cdn.mobifonetv.vn/motv/myhtvcthuanviet_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvcthuanviet_hls.smil/playlist.m3u8</link>
 <thumbnail>https://s21.postimg.org/sbcyi4ttz/htvcthuanviet.png</thumbnail>
 </item>
 <item>
 <title>GIA DINH</title>
-<link>http://live.cdn.mobifonetv.vn/motv/myhtvcgiadinh_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvcgiadinh_hls.smil/playlist.m3u8</link>
 <thumbnail>https://s3.postimg.org/3q9r5xc37/htvcgiadinh.jpg</thumbnail>
 </item>
 <item>
 <title>HTVC PHIM</title>
-<link>http://live.cdn.mobifonetv.vn/motv/myhtvcphim_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvcphim_hls.smil/playlist.m3u8</link>
 <thumbnail>https://s15.postimg.org/tymsndhh7/htvcphim.jpg</thumbnail>
 </item>
 <item>
 <title>HTVC Dulich</title>
-<link>http://live.cdn.mobifonetv.vn/motv/myhtvcdulich_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvcdulich_hls.smil/playlist.m3u8</link>
 <thumbnail>https://s11.postimg.org/y50njcob7/dulich.jpg</thumbnail>
 </item>
 <item>
 <title>HTVC Phunu</title>
-<link>http://live.cdn.mobifonetv.vn/motv/myhtvcphunu_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvcphunu_hls.smil/playlist.m3u8</link>
 <thumbnail>https://s11.postimg.org/dku4jqnpf/htvcphunu.png</thumbnail>
 </item>
 <item>
 <title>HTVC canhac</title>
-<link>http://live.cdn.mobifonetv.vn/motv/myhtvccanhac_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvccanhac_hls.smil/playlist.m3u8</link>
 <thumbnail></thumbnail>
 </item>
 <item>
 <title>HTVC Thethao</title>
-<link>http://live.cdn.mobifonetv.vn/motv/myhtvcthethao_hls.smil/playlist.m3u8|User-Agent=Mozilla/5.0</link>
+<link>http://live.cdn.mobifonetv.vn/motv/myhtvcthethao_hls.smil/playlist.m3u8</link>
 <thumbnail>http://i.imgur.com/bULyZwy.png</thumbnail>
 </item>
 
