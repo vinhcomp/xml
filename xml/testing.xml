@@ -6,6 +6,21 @@
 
 
 <item>
+<title>[COLOR blue]On Biz[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel5/vchannel5/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onbiztv.PNG</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]On Sports[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel6/vchannel6/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onsportstv.PNG</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]On Football[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel10/vchannel10/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfootballtv.PNG</thumbnail>
+</item>
+<item>
 <title>[COLOR lime]Thúy Nga 124 - Anh Cho Em Mùa Xuân 2018[/COLOR] - [COLOR ffff0000]HD Full[/COLOR]</title> - Coming Soon
 <link>plugin://plugin.video.gdrive?mode=streamURL&url=https://drive.google.vn/open?id=1M8O3rVkC-YshroSwWTPsGoNpmqRRW_e5</link>
 <thumbnail>https://vietbao.com/images/file/y-JAq6AL1QgBALYX/paris-by-night-pbn-124.jpg</thumbnail>
