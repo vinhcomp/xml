@@ -48,21 +48,6 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfilmtv.PNG</thumbnail>
 </item>
 <item>
-<title>[COLOR blue]On Biz[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel5/vchannel5/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onbiztv.PNG</thumbnail>
-</item>
-<item>
-<title>[COLOR blue]On Sports[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel6/vchannel6/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onsportstv.PNG</thumbnail>
-</item>
-<item>
-<title>[COLOR blue]On Football[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel10/vchannel10/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfootballtv.PNG</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]Việt News[/COLOR]</title>
 <link>http://144.217.84.181/hls/News.m3u8</link>
 <thumbnail>https://superrepo.org/static/images/icons/original/xservice.kodi4vn.maintenance.png.pagespeed.ic.BD2LHg25m3.png</thumbnail>
