@@ -92,16 +92,7 @@
 </item>
 
 
-<item>
-<title>[COLOR blue]On Sports[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel6/vchannel6/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onsportstv.PNG</thumbnail>
-</item>
-<item>
-<title>[COLOR blue]On Football[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel10/vchannel10/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfootballtv.PNG</thumbnail>
-</item>
+
   
   
 </items>
