@@ -23,9 +23,19 @@
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]HTV7[/COLOR]</title>
+<link>http://183.88.225.127:8001/play/a002</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/10/10/443687-htv7.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]HTV9[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=24633&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeRAhWcshIrZWeWT7DG5VLKnL8gcIl7R9ryQVf8xSVtVA%3D%3D</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV9[/COLOR]</title>
+<link>http://183.88.225.127:8001/play/a003</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/10/10/748351-htv9.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]THVL1 Vĩnh Long 1[/COLOR]</title>
@@ -51,6 +61,26 @@
 <title>[COLOR yellow]SCTV Sân Khấu HD[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel9/vchannel9/playlist.m3u8</link>
 <thumbnail>http://static.sctv.com.vn/Media/ShortCut/channel/sctv7.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV1[/COLOR]</title>
+<link>http://183.88.225.127:8001/play/a00u</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/10/10/437995-htv1.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV2[/COLOR]</title>
+<link>http://183.88.225.127:8000/play/a00i</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/10/10/823770-htv2.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV4[/COLOR]</title>
+<link>http://183.88.225.127:8001/play/a00v</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/10/10/740302-htv4.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]SCTV20[/COLOR]</title>
+<link>http://183.88.225.127:8001/play/a00v</link>
+<thumbnail>http://www.gmodules.com/gadgets/proxy?container=ig&url=https://i.imgur.com/KavF2UO.png</thumbnail>
 </item>
 <item>
 <title>[COLOR blue]On Film[/COLOR]</title>
