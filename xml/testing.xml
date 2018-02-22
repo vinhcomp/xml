@@ -6,6 +6,16 @@
 
  
 <item>
+<title>[COLOR lime]VietTeen TV[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251386%2Fevents%2F6385852/%28livestream.com%29?</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1495017608VIETTEEN%20TV%20LOGO.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]PHIM247 TV[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251373%2Fevents%2F6338970/%28livestream.com%29?</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1376550246PHIM%20247%20TV.jpg</thumbnail>
+</item>
+<item>
 <title>[COLOR lime]Gia Đình TV HD[/COLOR]</title>
 <link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251352%2Fevents%2F5701884/%28livestream.com%29?</link>
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1615977225Gia%20Dinh%20TV.png</thumbnail>
