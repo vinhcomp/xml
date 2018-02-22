@@ -6,6 +6,11 @@
 
  
 <item>
+<title>[COLOR lime]VTC6[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.livestream.com/play/%7B%22title%22%3A%22%5BLiveStream.com%5D%20VTC%206%20TV%22%2C%22url%22%3A%22https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251397%2Fevents%2F6465337%22%7D</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1258363674VTC%206%20TV.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]THVL1[/COLOR]</title>
 <link>http://talk.vcdn.vn/hls/6ab59c724c061baac2ee5fa30834a71d/1619c60375a/khongtuthvl/index.m3u8</link>
 <thumbnail>https://tvstatic.vcmedia.vn/vtv/vtv1-thumb.jpg</thumbnail>
