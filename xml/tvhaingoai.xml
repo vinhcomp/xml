@@ -18,6 +18,16 @@
 
 
 <item>
+<title>[COLOR blue]Sài Gòn TV 57.5[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel2/vchannel2/playlist.m3u8</link>
+<thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]Little Saigon TV 57.7[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=7992704&owner_id=lstv&video_id=LIVE</link>
+<thumbnail>http://www.viettv24.com/main/images/littlesg.jpg</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]Vnews (100)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu9uTovzKkHwc</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Vnews.jpg</thumbnail>
@@ -153,21 +163,6 @@
 <title>[COLOR yellow]Việt Face TV 57.2[/COLOR]</title>
 <link>http://saigontv.saigon.ns01.us:1935/vf572caliisai/myStream/chunklist_w1017473988.m3u8</link>
 <thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR blue]Sài Gòn TV 57.5[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel2/vchannel2/playlist.m3u8</link>
-<thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]Little Saigon TV 57.7[/COLOR]</title>
-<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=7992704&owner_id=lstv&video_id=LIVE</link>
-<thumbnail>http://www.viettv24.com/main/images/littlesg.jpg</thumbnail>
-</item>
-<item>
-<title>Little Saigon TV 57.7</title>
-<link>http://saigontvtv.saigon.ns01.us:1935/Lstv577/myStream/chunklist_w1229536511.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Trọng Thắng Show[/COLOR]</title>
