@@ -6,13 +6,18 @@
 
  
 <item>
+<title>[COLOR lime]VTC3 HD[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name&event_id=6338931&owner_id=20251367&video_id=LIVE</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1263696508VTC3%20HD%20TV.png</thumbnail>
+</item>
+<item>
 <title>[COLOR lime]VTC6[/COLOR]</title>
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name&event_id=6465337&owner_id=20251397&video_id=LIVE</link>
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1258363674VTC%206%20TV.png</thumbnail>
 </item>
 <item>
 <title>[COLOR lime]VTC6[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251397%2Fevents%2F6465337</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251397%2Fevents%2F6465337/HTV7+HD+%28livestream.com%29?</link>
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1258363674VTC%206%20TV.png</thumbnail>
 </item>
 <item>
