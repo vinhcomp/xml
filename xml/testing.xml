@@ -6,6 +6,21 @@
 
  
 <item>
+<title>[COLOR lime]Thể Thao TV HD[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251391%2Fevents%2F6385916/%28livestream.com%29?</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1663307422HTV%20THE%20THAO%20TV.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]Mầm Non TV[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251326%2Fevents%2F6124826/%28livestream.com%29?</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1776334895Mam%20Non%20TV%20icon.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]Phụ Nữ TV HD[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251377%2Fevents%2F6339332/%28livestream.com%29?</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1807934079Phu%20nu%20TV.png</thumbnail>
+</item>
+<item>
 <title>[COLOR lime]VietTeen TV[/COLOR]</title>
 <link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251386%2Fevents%2F6385852/%28livestream.com%29?</link>
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1495017608VIETTEEN%20TV%20LOGO.png</thumbnail>
