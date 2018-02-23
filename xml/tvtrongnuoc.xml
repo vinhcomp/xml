@@ -355,7 +355,27 @@
 <title>[COLOR lime]HT Tịnh Không TV[/COLOR]</title>
 <link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251363%2Fevents%2F6338827/%28livestream.com%29?</link>
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1436931100Hoa%20Thuong%20Tinh%20Khong%20Icon%20Photo.jpg</thumbnail>
-</item> 
+</item>
+<item>
+<title>[COLOR yellow]Phật Giáo (92)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2FwtZn4HigOpU7</link>
+<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/phatgiao.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Viet Christian[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/mms%3A%2F%2Flive.vietchristian.com%2Ftv</link>
+<thumbnail>http://echipstore.net/logo/channels/VietChristian.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Tin Lành TV (91)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2FwirE4ADDI%2Fms</link>
+<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Tin_Lanh.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]CTV (94)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2Fwtav6MBYPXaY</link>
+<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/catholic.png</thumbnail>
+</item>
  
 
 <item>
