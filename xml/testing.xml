@@ -46,6 +46,11 @@
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1615977225Gia%20Dinh%20TV.png</thumbnail>
 </item>
 <item>
+<title>[COLOR lime]Gia Đình TV HD[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.livestream.com/play/%7B%22title%22%3A%22%5BLiveStream.com%5D%20GIA%20%C4%90I%CC%80NH%20HD%20TV%22%2C%22url%22%3A%22https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251352%2Fevents%2F5701884%22%7D</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1615977225Gia%20Dinh%20TV.png</thumbnail>
+</item>
+<item>
 <title>[COLOR lime]VTC3 HD[/COLOR]</title>
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name&event_id=6338931&owner_id=20251367&video_id=LIVE</link>
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1263696508VTC3%20HD%20TV.png</thumbnail>
