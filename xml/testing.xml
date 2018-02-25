@@ -4,7 +4,12 @@
 <channel>
 <items>
 
- 
+
+<item>
+<title>[COLOR yellow]VTV4 VN HD[/COLOR]</title>
+<link>https://s6-ntl.sohatv.vn/hls/4545780bfa790819/7/7/36bb39f25270d0685b257ad4aa09f8d562821e1317df232288ae8e9239f4d293/dnR2NA==.m3u8</link>
+<thumbnail>https://vignette1.wikia.nocookie.net/logopedia/images/b/b9/Logo_VTV4.png/revision/latest?cb=20160601031735</thumbnail>
+</item>
 <item>
 <title>[COLOR lime]Vô Lương Thọ TV[/COLOR]</title>
 <link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251355%2Fevents%2F6338758/%28livestream.com%29?</link>
