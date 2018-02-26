@@ -6,6 +6,11 @@
 
 
 <item>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]StreamHub[/COLOR]</title>
+<link>tosreamhub</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/streamhub.png</thumbnail>
+</item>
+<item>
 <title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]FilmOn[/COLOR]</title>
 <link>tofilmon3</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/filmon2.png</thumbnail>
