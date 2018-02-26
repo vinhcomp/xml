@@ -6,7 +6,7 @@
 
 
 <item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Stream Hub[/COLOR]</title>
+<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]StreamHub[/COLOR][COLOR orange]:Go to Live TV->Android API->Snappy Streamz[/COLOR]</title>
 <link>tostreamhub</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/streamhub.png</thumbnail>
 </item>
