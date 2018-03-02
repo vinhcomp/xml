@@ -6,6 +6,13 @@
 
 
 <item>
+<title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
+<link>http://talk.vcdn.vn/hls/377a4b788343deff390106bc13917c5c/161e838f471/khongtuthvl/index.m3u8</link>
+<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
+</item> 
+ 
+ 
+<item>
 <title>[COLOR yellow]HTV7 HD[/COLOR]</title>
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name&event_id=6386066&owner_id=20251393&video_id=LIVE</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
