@@ -6,6 +6,108 @@
 
 
 <item>
+<title>[COLOR yellow]HTV7 HD[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name&event_id=6386066&owner_id=20251393&video_id=LIVE</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV7 HD[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251393%2Fevents%2F6386066/HTV7+HD+%28livestream.com%29?</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV7[/COLOR]</title>
+<link>http://183.88.225.127:8001/play/a002</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/10/10/443687-htv7.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV9[/COLOR]</title>
+<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24633&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeRAhWcshIrZWeWT7DG5VLKnL8gcIl7R9ryQVf8xSVtVA%3D%3D</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV9[/COLOR]</title>
+<link>http://183.88.225.127:8001/play/a003</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/10/10/748351-htv9.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
+<link>http://183.88.225.127:8000/play/a005</link>
+<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
+</item>     
+<item>
+<title>[COLOR yellow]THVL2 Vĩnh Long 2 HD[/COLOR]</title>
+<link>http://183.88.225.127:8000/play/a006</link>
+<thumbnail>http://www.vtvcab.vn/Uploaded/nguyenanh/2014_03_04/thvl2.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]SCTV Phim Việt HD[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel8/vchannel8/playlist.m3u8</link>
+<thumbnail>https://static-stage.tv24.vn/channel/84/PhimVietHD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]SCTV Hài HD[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel7/vchannel7/playlist.m3u8</link>
+<thumbnail>http://d.violet.vn/uploads/resources/document/1/427/98/SCTV18_HAI.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]SCTV Sân Khấu HD[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel9/vchannel9/playlist.m3u8</link>
+<thumbnail>http://static.sctv.com.vn/Media/ShortCut/channel/sctv7.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]SCTV20[/COLOR]</title>
+<link>http://183.88.225.127:8000/play/a008</link>
+<thumbnail>http://www.gmodules.com/gadgets/proxy?container=ig&url=https://i.imgur.com/KavF2UO.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]HTV Thể Thao HD[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251391%2Fevents%2F6385916/%28livestream.com%29?</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1663307422HTV%20THE%20THAO%20TV.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]Gia Đình TV HD[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251352%2Fevents%2F5701884/%28livestream.com%29?</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1615977225Gia%20Dinh%20TV.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]VietTeen TV[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251386%2Fevents%2F6385852/%28livestream.com%29?</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1495017608VIETTEEN%20TV%20LOGO.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]PHIM247 TV[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251373%2Fevents%2F6338970/%28livestream.com%29?</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1376550246PHIM%20247%20TV.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]Mầm Non TV[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251326%2Fevents%2F6124826/%28livestream.com%29?</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1776334895Mam%20Non%20TV%20icon.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]Phụ Nữ TV HD[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251377%2Fevents%2F6339332/%28livestream.com%29?</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1807934079Phu%20nu%20TV.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV1[/COLOR]</title>
+<link>http://183.88.225.127:8001/play/a00u</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/10/10/437995-htv1.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV2[/COLOR]</title>
+<link>http://183.88.225.127:8000/play/a00i</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/10/10/823770-htv2.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV4[/COLOR]</title>
+<link>http://183.88.225.127:8001/play/a00v</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/10/10/740302-htv4.png</thumbnail>
+</item>
+ 
+ 
+<item>
 <title>[COLOR yellow]VTV5 VN HD[/COLOR]</title>
 <link>https://s6-ntl.sohatv.vn/hls/404578f3cb908501/25/28/13a112f86f2aa94e74e34b045a14771a1fbdcf5d78b06d51d2923f94d769d52c/dnR2NWtt.m3u8</link>
 <thumbnail>https://vignette1.wikia.nocookie.net/logopedia/images/b/b9/Logo_VTV4.png/revision/latest?cb=20160601031735</thumbnail>
