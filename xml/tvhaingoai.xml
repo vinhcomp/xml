@@ -118,6 +118,11 @@
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/set03.png</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]SET TV 57.4[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/set</link>
+<thumbnail>http://www.viettv24.com/main/images/SETTV_logo.jpg</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]Schedule (99)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2FwrBUTcumfiSF</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Schedule_TV.jpg</thumbnail>
@@ -195,11 +200,6 @@
 <thumbnail>http://www.viettv24.com/main/images/vna.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]SET TV 57.4[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/set</link>
-<thumbnail>http://www.viettv24.com/main/images/SETTV_logo.jpg</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]Hài 24-7 9.1[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/hai</link>
 <thumbnail>http://www.viettv24.com/main/images/Hai%2024-7.jpg</thumbnail>
@@ -250,18 +250,46 @@
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1776334895Mam%20Non%20TV%20icon.jpg</thumbnail>
 </item>
 
-
-
-
 <item>
-<title>[COLOR blue]Việt Mỹ TV[/COLOR]</title>
-<link>http://68.235.37.11:1935/vietmagazine/vietmagazine/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
+<title>[COLOR cyan]IBC TV 57.8[/COLOR]</title>
+<link>rtmp://liveplay3.malimarcdn.com:1935/ibcnews playpath=ibcnews.sdp swfUrl=http://www.ibcnews.tv/content/scripts/media/strobe/StrobeMediaPlayback.swf pageUrl=http://www.ibcnews.tv/ live=true timeout=10</link>
+<thumbnail>http://www.viettv24.com/main/images/ibc.jpg</thumbnail>
 </item>
+<item>
+<title>[COLOR cyan]Việt News TV – Nam California[/COLOR]</title>
+<link>http://vietnews.saigon.ns01.us:1935/VietNews/myStream/chunklist_w107230799.m3u8</link>
+<thumbnail>https://static.wixstatic.com/media/294291_31ae3a40740145d38176d01bb6814737.png/v1/fill/w_162,h_120,al_c,usm_0.66_1.00_0.01/294291_31ae3a40740145d38176d01bb6814737.png</thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]VietNews TV[/COLOR]</title>
+<link>http://saigontvtv.saigon.ns01.us:1935/VietNews/myStream/chunklist_w172511522.m3u8</link>
+<thumbnail>https://static.wixstatic.com/media/294291_31ae3a40740145d38176d01bb6814737.png/v1/fill/w_162,h_120,al_c,usm_0.66_1.00_0.01/294291_31ae3a40740145d38176d01bb6814737.png</thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]VBS TELEVISION Channel 57.6 SV1[/COLOR]</title>
+<link>http://uni6rtmp.tulix.tv:1935/vbstv/vbsabr.smil/chunklist_w439903609_b1228800.m3u8</link>
+<thumbnail>http://www.viettv24.com/main/images/vbs.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]VBS TELEVISION Channel 57.6 SV2[/COLOR]</title>
+<link>http://uni6rtmp.tulix.tv/vbstv/vbsabr.smil/playlist.m3u8</link>
+<thumbnail>http://www.viettv24.com/main/images/vbs.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]VStar TV[/COLOR]</title>
+<link>http://saigontvtv.saigon.ns01.us:1935/VietStarTV/myStream/chunklist_w36065371.m3u8</link>
+<thumbnail>https://vietipbox.com/tv-logo/vstar-logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR cyan]KEENG TV[/COLOR]</title>
+<link>http://125.235.29.16/livetv/keeng.m3u8</link>
+<thumbnail>https://1.bp.blogspot.com/-Ek_ktGqwVvg/VMDKKr0TRKI/AAAAAAAAAKk/2sQrt_Kms-s/s1600/1.jpg</thumbnail>
+</item>
+
 <item>
 <title>[COLOR blue]Việt Sóng TV 47.7 WKTB – Atlanta-Georgia[/COLOR]</title>
 <link>rtmp://uni5rtmp.tulix.tv/playout2multi10/ playpath=playout2multi10.stream swfUrl=http://p.jwpcdn.com/6/12/jwplayer.flash.swf pageUrl=http://www.tulix.com/iframe/playout2multi10/index.php</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
+<thumbnail>https://yt3.ggpht.com/-aIYQyuvpfMI/AAAAAAAAAAI/AAAAAAAAAAA/ti3R_fGo9Aw/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR blue]Việt Sóng TV 47.7 WKTB – Atlanta-Georgia[/COLOR]</title>
@@ -269,46 +297,10 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
 <item>
-<title>KEENG TV</title>
-<link>http://125.235.29.16/livetv/keeng.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
+<title>[COLOR blue]Việt Mỹ TV[/COLOR]</title>
+<link>http://68.235.37.11:1935/vietmagazine/vietmagazine/playlist.m3u8</link>
+<thumbnail>https://lh3.googleusercontent.com/j4sw8I18naU2f7Tnhfo7zEDMpwZZjqRlo5k73dUWsQ25IikIXx16qz1JIwttLImoKBM=w300</thumbnail>
 </item>
-<item>
-<title>[COLOR cyan][B]Việt News TV – Nam California[/B][/COLOR]</title>
-<link>http://vietnews.saigon.ns01.us:1935/VietNews/myStream/chunklist_w107230799.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>VBS TELEVISION Channel 57.6 SV1</title>
-<link>http://uni6rtmp.tulix.tv:1935/vbstv/vbsabr.smil/chunklist_w439903609_b1228800.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>VBS TELEVISION Channel 57.6 SV2</title>
-<link>http://uni6rtmp.tulix.tv/vbstv/vbsabr.smil/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>VNBC</title>
-<link>http://uni6rtmp.tulix.tv:1935/vbstv/vbsabr.smil/chunklist_w189527979_b1228800.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>VietNews TV</title>
-<link>http://saigontvtv.saigon.ns01.us:1935/VietNews/myStream/chunklist_w172511522.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>VStar TV</title>
-<link>http://saigontvtv.saigon.ns01.us:1935/VietStarTV/myStream/chunklist_w36065371.m3u8</link>
-<thumbnail>https://vietipbox.com/tv-logo/vstar-logo.jpg</thumbnail>
-</item>
-<item>
-<title>IBC TV 57.8</title>
-<link>rtmp://liveplay3.malimarcdn.com:1935/ibcnews playpath=ibcnews.sdp swfUrl=http://www.ibcnews.tv/content/scripts/media/strobe/StrobeMediaPlayback.swf pageUrl=http://www.ibcnews.tv/ live=true timeout=10</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-
 
 
 
