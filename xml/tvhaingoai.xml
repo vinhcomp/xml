@@ -155,11 +155,6 @@
 <thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Việt Face TV 57.2[/COLOR]</title>
-<link>http://saigontv.saigon.ns01.us:1935/vf572caliisai/myStream/chunklist_w1017473988.m3u8</link>
-<thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]Trọng Thắng Show[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/2tmediatv</link>
 <thumbnail>http://www.viettv24.com/main/images/logo2T.jpg</thumbnail>
@@ -168,11 +163,6 @@
 <title>[COLOR yellow]Đồng Giao TV[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/dgtv</link>
 <thumbnail>http://www.viettv24.com/main/images/dong_giao_tv.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Asia Entertainment Live[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/asia</link>
-<thumbnail>http://www.viettv24.com/main/images/asia_logo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Rạng Đông TV 8.8[/COLOR]</title>
@@ -185,13 +175,8 @@
 <thumbnail>http://www.viettv24.com/main/images/vietphotv_logo.jpg</thumbnail>
 </item>
 <item>
-<title>KVLA TV CHANNEL 56.5</title>
+<title>[COLOR yellow]KVLA TV CHANNEL 56.5[/COLOR]</title>
 <link>http://saigontv.saigon.ns01.us:1935/kvla/myStream/chunklist_w1930572275.m3u8</link>
-<thumbnail>https://yt3.ggpht.com/-ShrFIJwe2aQ/AAAAAAAAAAI/AAAAAAAAAAA/F3pjSr8AqKU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR green]KVLA TV CHANNEL 56.5[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8YkTaIu9-Jc</link>
 <thumbnail>https://yt3.ggpht.com/-ShrFIJwe2aQ/AAAAAAAAAAI/AAAAAAAAAAA/F3pjSr8AqKU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
 </item>
 <item>
@@ -205,11 +190,6 @@
 <thumbnail>http://www.viettv24.com/main/images/schannel_logo.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Vietv TV 56.7[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/vietvla</link>
-<thumbnail>http://www.viettv24.com/main/images/vietvtv_houston.jpg</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]VNA TV 57.3[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/vnatv</link>
 <thumbnail>http://www.viettv24.com/main/images/vna.jpg</thumbnail>
@@ -218,21 +198,6 @@
 <title>[COLOR yellow]SET TV 57.4[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/set</link>
 <thumbnail>http://www.viettv24.com/main/images/SETTV_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VBS 57.6[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/vbstv</link>
-<thumbnail>http://www.viettv24.com/main/images/vbs.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VBS 57.6[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D1JSxlhiDpV8</link>
-<thumbnail>http://www.viettv24.com/main/images/vbs.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Viet Bay 1.4 KAXT[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/http%3A%2F%2F64.71.129.2%3A8080%2Fhls%2Fius_000131.m3u8</link>
-<thumbnail>http://www.vietbay.tv/images/file/tplyBIXp0QgBAikO/vietbay-television-logo.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Hài 24-7 9.1[/COLOR]</title>
@@ -258,11 +223,6 @@
 <title>[COLOR yellow]Việt Media TV[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/vietmediatv</link>
 <thumbnail>http://www.viettv24.com/main/images/VietMediaTV_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]IBC TV 57.8[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/ibctv</link>
-<thumbnail>http://www.viettv24.com/main/images/ibc.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Hải Lê Television[/COLOR]</title>
@@ -331,11 +291,6 @@
 <item>
 <title>VNBC</title>
 <link>http://uni6rtmp.tulix.tv:1935/vbstv/vbsabr.smil/chunklist_w189527979_b1228800.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
-</item>
-<item>
-<title>SChannel 54.4</title>
-<link>http://schannel.saigon.ns01.us:1935/schannel/myStream/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvhaingoai.png</thumbnail>
 </item>
 <item>
