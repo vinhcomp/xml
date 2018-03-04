@@ -97,9 +97,11 @@
 <link>http://saigonrtmp.tulix.tv/vchannel5/vchannel5/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onbiztv.PNG</thumbnail>
 </item>
+
+
 <item>
-<title>[COLOR yellow]VTC1[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEdfC%2BpFm%2FECSBvEVIgRBTklXVJh5VJMRVdlN60n4tkLVA%3D%3D</link>
+<title>[COLOR lime]VTC1 HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1007/vtc1&mode=100</link>
 <thumbnail>http://i.imgur.com/HC5iUuK.png</thumbnail>
 </item>
 <item>
@@ -113,9 +115,14 @@
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1258363674VTC%206%20TV.png</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]VTC16[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeckZRzX5JJfK64IscnTp0Gc995zFKMeyQwUn6LPfIYUA%3D%3D</link>
-<thumbnail>http://i.imgur.com/aJyUj9n.png</thumbnail>
+<title>[COLOR lime]VTC10 NetViet HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1006/netviet&mode=100</link>
+<thumbnail>https://i.imgur.com/k6fjc5d.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]VTC16[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1018/vtc16&mode=100</link>
+<thumbnail>https://i.imgur.com/xlH2Riq.jpg</thumbnail>
 </item>
 
 <item>
@@ -195,9 +202,9 @@
 <thumbnail>http://tv.vietbao.vn/images/tv2015/channels/296-truyen-hinh-long-an-la34.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]NETVIET[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeLjYUCQus89SOFyOWlel8LyM0ajCkghqS1ewcYEITPXw%3D%3D</link>
-<thumbnail>http://slimweb.vn/sites/default/files/users/887/upload/netviet.png</thumbnail>
+<title>[COLOR yellow]TTXVN HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1019/ttxvn&mode=100</link>
+<thumbnail>https://dhtn.ttxvn.org.vn/Images/files/VNA.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]TTXVN[/COLOR]</title>
@@ -205,13 +212,12 @@
 <thumbnail>https://dhtn.ttxvn.org.vn/Images/files/VNA.png</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Hà Nội[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEehYSbOMBxYWx6GFVzodgCSIHi3rL6yBVtCBix29nrFPg%3D%3D</link>
+<title>[COLOR yellow]Hà Nội HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1008/hn&mode=100</link>
 <thumbnail>https://upload.wikimedia.org/wikipedia/en/6/6a/Hanoitv.png</thumbnail>
 </item>
 
-  
-  
+
 <item>
 <title>[COLOR lime]✫-✫-✫ VTVGo ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
