@@ -7,7 +7,7 @@
 
 <item>
 <title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
-<link>http://talk.vcdn.vn/hls/377a4b788343deff390106bc13917c5c/161e838f471/khongtuthvl/index.m3u8</link>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1031/thvl1&mode=100</link>
 <thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
 </item> 
  
