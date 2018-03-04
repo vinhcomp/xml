@@ -103,11 +103,6 @@
 <thumbnail>https://superrepo.org/static/images/icons/original/xservice.kodi4vn.maintenance.png.pagespeed.ic.BD2LHg25m3.png</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Việt Nam - Vẻ Đẹp Bất Tận[/COLOR]</title>
-<link>http://144.217.84.181/hls/VanHoa.m3u8</link>
-<thumbnail>https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]VTC1[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEdfC%2BpFm%2FECSBvEVIgRBTklXVJh5VJMRVdlN60n4tkLVA%3D%3D</link>
 <thumbnail>http://i.imgur.com/HC5iUuK.png</thumbnail>
@@ -226,8 +221,7 @@
 <title>[COLOR lime]✫-✫-✫ VTVGo ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-  
+</item>  
 
 <item>
 <title>[COLOR yellow]VTV1 HD[/COLOR]</title>
@@ -274,6 +268,116 @@
 <link>plugin://plugin.video.kodi4vn.vtvgo/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-vtv-39.html%22%2C%20%22title%22%3A%20%22VTV9%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>http://img.static.vtvcab.vn/logos/VTV9.png</thumbnail>
 </item>
+
+
+
+<item>
+<title>[COLOR lime]✫-✫-✫ TVNET ✫-✫-✫[/COLOR]</title>
+<link>http://youtube.com</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]HTV9 HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http%3A%2F%2Fvn.tvnet.gov.vn%2Fkenh-truyen-hinh%2F1012%2Fhtv9&mode=100</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1031/thvl1&mode=100</link>
+<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV1 HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1011/vtv1&mode=100</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV1HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV2 HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1010/vtv2&mode=100</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV2HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV3 HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1013/vtv3&mode=100</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV3HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV4 HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1009/vtv4&mode=100</link>
+<thumbnail>https://vignette1.wikia.nocookie.net/logopedia/images/b/b9/Logo_VTV4.png/revision/latest?cb=20160601031735</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]VTC1 HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1007/vtc1&mode=100</link>
+<thumbnail>http://i.imgur.com/HC5iUuK.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]VTC10 NetViet HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1006/netviet&mode=100</link>
+<thumbnail>https://i.imgur.com/k6fjc5d.png</thumbnail>
+</item>
+<item>
+<title>[COLOR lime]VTC16[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1018/vtc16&mode=100</link>
+<thumbnail>https://i.imgur.com/xlH2Riq.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]TTXVN HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1019/ttxvn&mode=100</link>
+<thumbnail>https://dhtn.ttxvn.org.vn/Images/files/VNA.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hà Nội HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1008/hn&mode=100</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/6/6a/Hanoitv.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Đồng Tháp[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1053/dong-thap&mode=100</link>
+<thumbnail>http://statics.tvviet.us/thumb/0x0/crop/Images//Channel/2018/1/2/P1NZQA12JQ.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Đồng Nai 1[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1042/dong-nai1&mode=100</link>
+<thumbnail>http://statics.tvviet.us/thumb/0x0/crop/Images//Channel/2017/12/29/OQYQMR5GNS.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Quảng Bình[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1051/quang-binh&mode=100</link>
+<thumbnail>http://statics.tvviet.us/thumb/0x0/crop/Images//Channel/2018/1/2/PJA6PX4DFR.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hải Dương[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1054/hai-duong&mode=100</link>
+<thumbnail>http://statics.tvviet.us/thumb/0x0/crop/Images//Channel/2018/1/2/SI3VJ83CH4.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Thái Bình[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1052/thai-binh&mode=100</link>
+<thumbnail>http://statics.tvviet.us/thumb/0x0/crop/Images//Channel/2018/1/2/YC1URMQCAY.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hưng Yên[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1050/hung-yen&mode=100</link>
+<thumbnail>http://statics.tvviet.us/thumb/0x0/crop/Images//Channel/2017/12/29/RV4ZN82THN.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hải Phòng[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1041/hai-phong&mode=100</link>
+<thumbnail>http://statics.tvviet.us/thumb/0x0/crop/Images//Channel/2018/1/7/WHB2CWOZXN.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Thanh Hóa[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1055/thanh-hoa&mode=100</link>
+<thumbnail>http://statics.tvviet.us/thumb/0x0/crop/Images//Channel/2017/12/28/WK8EX4J9QH.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Nghệ An[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1056/nghe-an&mode=100</link>
+<thumbnail>http://statics.tvviet.us/thumb/0x0/crop/Images//Channel/2017/12/29/2I5O7V7FV6.png</thumbnail>
+</item>
+
 
 
 <item>
@@ -327,57 +431,6 @@
 <thumbnail>https://upload.wikimedia.org/wikipedia/en/6/6a/Hanoitv.png</thumbnail>
 </item>
   
-  
-<item>
-<title>[COLOR lime]✫-✫-✫ VNTube TV ✫-✫-✫[/COLOR]</title>
-<link>http://youtube.com</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Việt News[/COLOR]</title>
-<link>http://144.217.84.181/hls/News.m3u8</link>
-<thumbnail>https://superrepo.org/static/images/icons/original/xservice.kodi4vn.maintenance.png.pagespeed.ic.BD2LHg25m3.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Cảnh đẹp 4K[/COLOR]</title>
-<link>http://144.217.84.181/hls/4K.m3u8</link>
-<thumbnail>http://www.viettv24.com/main/images/Beautiful-Scenary.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]EpicStreaming[/COLOR]</title>
-<link>http://144.217.84.181/hls/Epic.m3u8</link>
-<thumbnail>https://openclipart.org/image/2400px/svg_to_png/205652/Awesome-smiley.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Hài - TV Shows[/COLOR]</title>
-<link>http://144.217.84.181/hls/HaiTVShows.m3u8</link>
-<thumbnail>https://lh3.googleusercontent.com/sOLpCJsXrNiRfHDO8FTq-vzl6RV6vg4mxD0YDfY0LGTN4elDk-vG7fRHFqUPfqnkQtE=w300</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Music Top200 YT[/COLOR]</title>
-<link>http://144.217.84.181/hls/Top200YT.m3u8</link>
-<thumbnail>http://s1.pic4you.ru/allimage/y2012/10-09/11703/2524001.jpeg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Music Top300 VN[/COLOR]</title>
-<link>http://144.217.84.181/hls/Top300VN.m3u8</link>
-<thumbnail>http://s1.pic4you.ru/allimage/y2012/10-09/11703/2524001.jpeg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Music Bolero[/COLOR]</title>
-<link>http://144.217.84.181/hls/Bolero.m3u8</link>
-<thumbnail>http://zmp3-photo.d.za.zdn.vn/covers/6/3/6337aee2b7205cf8df2f6e4fa68e02ef_1472440930.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Từ Bi Hỷ Xả[/COLOR]</title>
-<link>http://144.217.84.181/hls/TuBi.m3u8</link>
-<thumbnail>http://chiasephapthoai.com/wp-content/uploads/ultimatemember/1/profile_photo-190.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Việt Nam - Vẻ Đẹp Bất Tận[/COLOR]</title>
-<link>http://144.217.84.181/hls/VanHoa.m3u8</link>
-<thumbnail>https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG</thumbnail>
-</item>
   
  
  
