@@ -45,7 +45,7 @@
 <item>
 <title>[COLOR yellow]SCTV Phim Việt HD[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel8/vchannel8/playlist.m3u8</link>
-<thumbnail>https://static-stage.tv24.vn/channel/84/PhimVietHD.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sctv14.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]SCTV Hài HD[/COLOR]</title>
