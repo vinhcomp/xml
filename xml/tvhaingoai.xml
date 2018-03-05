@@ -197,7 +197,7 @@
 <item>
 <title>[COLOR yellow]VNA TV 57.3[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/vnatv</link>
-<thumbnail>http://www.viettv24.com/main/images/vna.jpg</thumbnail>
+<thumbnail>http://vnatv573.com/images/file/7aoqzb7y0QgBAhQW/vnatv573-logo.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Hài 24-7 9.1[/COLOR]</title>
@@ -232,7 +232,7 @@
 <item>
 <title>[COLOR yellow]Viet Christian[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/mms%3A%2F%2Flive.vietchristian.com%2Ftv</link>
-<thumbnail>http://echipstore.net/logo/channels/VietChristian.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tinhlanh.PNG</thumbnail>
 </item>
 <item>
 <title>[COLOR lime]Vô Lương Thọ TV[/COLOR]</title>
