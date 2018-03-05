@@ -4,6 +4,58 @@
 <channel>
 <items>
 
+ 
+<item>
+<title>[COLOR lime]✫-✫-✫ VTVGo ✫-✫-✫[/COLOR]</title>
+<link>http://youtube.com</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
+</item>  
+
+<item>
+<title>[COLOR yellow]VTV1 HD[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.vtvgo/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-vtv-1.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV1HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV2 HD[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.vtvgo/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-vtv-2.html%22%2C%20%22title%22%3A%20%22VTV2%20HD%20%28VTVGo%29%22%7D</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV2HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV3 HD[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.vtvgo/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-vtv-3.html%22%2C%20%22title%22%3A%20%22VTV3%20HD%20%28VTVGo%29%22%7D</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV3HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV4 HD[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.vtvgo/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-vtv-4.html%22%2C%20%22title%22%3A%20%22VTV4%20HD%20%28VTVGo%29%22%7D</link>
+<thumbnail>https://vignette1.wikia.nocookie.net/logopedia/images/b/b9/Logo_VTV4.png/revision/latest?cb=20160601031735</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV5 HD[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.vtvgo/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-vtv-5.html%22%2C%20%22title%22%3A%20%22VTV5%20HD%20%28VTVGo%29%22%7D</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/vi/d/d4/VTV5.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV6 HD[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.vtvgo/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-vtv-6.html%22%2C%20%22title%22%3A%20%22VTV6%20HD%20%28VTVGo%29%22%7D</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV6HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV7 HD[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.vtvgo/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-vtv-27.html%22%2C%20%22title%22%3A%20%22VTV7%20HD%20%28VTVGo%29%22%7D</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV7HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV8 HD[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.vtvgo/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-vtv-36.html%22%2C%20%22title%22%3A%20%22VTV8%20HD%20%28VTVGo%29%22%7D</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV8HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV9 HD[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.vtvgo/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-vtv-39.html%22%2C%20%22title%22%3A%20%22VTV9%20HD%20%28VTVGo%29%22%7D</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV9.png</thumbnail>
+</item>
 
 <item>
 <title>[COLOR yellow]VTV2 HD[/COLOR]</title>
