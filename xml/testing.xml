@@ -6,6 +6,11 @@
 
 
 <item>
+<title>[COLOR yellow]VTV2 HD[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=nexttv-192</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV2HD.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
 <link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1031/thvl1&mode=100</link>
 <thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
