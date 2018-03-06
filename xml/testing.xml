@@ -25,9 +25,14 @@
 <link>plugin://plugin.video.itvplus/?url=http://vtvgo.vn/xem-truc-tuyen-kenh-vtv2-2.html&mode=100</link>
 <thumbnail>http://img.static.vtvcab.vn/logos/VTV2HD.png</thumbnail>
 </item>
- <item>
+<item>
 <title>[COLOR yellow]VTV2 HD S5[/COLOR]</title>
 <link>plugin://plugin.video.itvplus/?url=http%3A%2F%2Fvtvgo.vn%2Fxem-truc-tuyen-kenh-vtv2-2.html&mode=100</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV2HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV2 HD S5[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vtv.vn/truyen-hinh-truc-tuyen/vtv2.htm&mode=100</link>
 <thumbnail>http://img.static.vtvcab.vn/logos/VTV2HD.png</thumbnail>
 </item>
  
