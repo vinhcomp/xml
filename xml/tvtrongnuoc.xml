@@ -503,11 +503,6 @@
 </item>
 
 <item>
-<title>Bà Rịa - Vũng Tàu</title>
-<link>rtmp://113.163.216.24:1935/live/livestream</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_ba-ria-vung-tau_145672972069.jpg?w=345&h=210&mode=scale</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]Cần Thơ THTPCT[/COLOR]</title>
 <link>http://tv.canthotv.vn/live.m3u8</link>
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_can-tho_145672728114.jpg?w=345&h=210&mode=scale</thumbnail>
@@ -557,9 +552,19 @@
 <thumbnail>https://i.imgur.com/QmgQMF8.png</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]Bến Tre[/COLOR]</title>
+<link>rtmp://113.163.94.245/livepkgr/thbt</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_ben-tre_14588084926.jpg</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]Bắc Kạn[/COLOR]</title>
 <link>http://118.107.76.15:1983/live/BK_live.smil/playlist.m3u8</link>
 <thumbnail>https://i.imgur.com/tFXeJb7.png</thumbnail>
+</item>
+<item>
+<title>Bà Rịa - Vũng Tàu</title>
+<link>rtmp://113.163.216.24:1935/live/livestream</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_ba-ria-vung-tau_145672972069.jpg?w=345&h=210&mode=scale</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Cao Bằng[/COLOR]</title>
@@ -582,6 +587,11 @@
 <thumbnail>https://i.imgur.com/2pSNWyG.png</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]Sóc Trăng[/COLOR]</title>
+<link>rtmp://115.78.3.164/live/stv1</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_tra-vinh_145880827066.jpg</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]Trà Vinh[/COLOR]</title>
 <link>http://123.30.191.202/hls/travinh.m3u8</link>
 <thumbnail>https://i.imgur.com/QAo6P8K.png</thumbnail>
@@ -595,6 +605,11 @@
 <title>[COLOR yellow]Quảng Ninh 3[/COLOR]</title>
 <link>rtmp://123.29.68.44/hctv/vstv021</link>
 <thumbnail>https://i.imgur.com/X0uSQDO.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Vĩnh Phúc[/COLOR]</title>
+<link>rtmp://117.6.162.63/live/thvp</link>
+<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_vinh-phuc_145880931198.jpg</thumbnail>
 </item>
 
 <item>
