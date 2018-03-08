@@ -92,11 +92,6 @@
 <link>http://saigonrtmp.tulix.tv/vchannel4/vchannel4/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfilmtv.PNG</thumbnail>
 </item>
-<item>
-<title>[COLOR blue]On Biz[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel5/vchannel5/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onbiztv.PNG</thumbnail>
-</item>
 
 <item>
 <title>[COLOR lime]VTC1 HD[/COLOR]</title>
@@ -124,77 +119,6 @@
 <thumbnail>https://i.imgur.com/xlH2Riq.jpg</thumbnail>
 </item>
 
-<item>
-<title>[COLOR lime]VTC1 HD[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtc1</link>
-<thumbnail>http://i.imgur.com/HC5iUuK.png</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]VTC2[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtc2</link>
-<thumbnail>https://i.imgur.com/T3geo1o.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]VTC3 HD[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtc3</link>
-<thumbnail>https://i.imgur.com/olGqfAv.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]VTC4 - Yeah1 Family[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtc4</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_yeah1-family-vtc4_146312575079.png</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]VTC5 - TV Blue[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtc5</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_vtc5_150226870197.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]VTC6[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtc6</link>
-<thumbnail>https://i.imgur.com/i2lTGf9.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]VTC7 - Today TV[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtc7</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_vtc7-todaytv_145673310065.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]VTC8 - View TV[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtc8</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_vtc8_145792090102.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]VTC9[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtc9</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_lets-viet_145673303543.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]VTC10[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtc10</link>
-<thumbnail>https://i.imgur.com/k6fjc5d.png</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]VTC11 - Kids TV[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtc11</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_vtc11-thieu-nhi_146293779839.png</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]iTV HD[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=itv</link>
-<thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_itv_145578605209.png</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]VTC14[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtc14</link>
-<thumbnail>http://image2.cdn.i-com.vn/thumb/600x400/crop//Uploads/images/kenh/vtc14.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]VTC16[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtc16</link>
-<thumbnail>https://i.imgur.com/xlH2Riq.jpg</thumbnail>
-</item>  
-  
 <item>
 <title>[COLOR yellow]Long An[/COLOR]</title>
 <link>http://113.161.229.13/hls-live/livepkgr/_definst_/liveevent/tv.m3u8</link>
@@ -795,70 +719,6 @@
 </item>
   
 
-<item>
-<title>[COLOR lime]✫-✫-✫ NextTV ✫-✫-✫[/COLOR]</title>
-<link>http://youtube.com</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
-</item>  
-
-<item>
-<title>[COLOR yellow]VTV1 HD[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtv1</link>
-<thumbnail>http://img.static.vtvcab.vn/logos/VTV1HD.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VTV2 HD[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtv2</link>
-<thumbnail>http://img.static.vtvcab.vn/logos/VTV2HD.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VTV3 HD[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtv3</link>
-<thumbnail>http://img.static.vtvcab.vn/logos/VTV3HD.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VTV4 HD[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtv4</link>
-<thumbnail>https://vignette1.wikia.nocookie.net/logopedia/images/b/b9/Logo_VTV4.png/revision/latest?cb=20160601031735</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VTV5 HD[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtv5</link>
-<thumbnail>https://upload.wikimedia.org/wikipedia/vi/d/d4/VTV5.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VTV6 HD[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtv6</link>
-<thumbnail>http://img.static.vtvcab.vn/logos/VTV6HD.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VTV7 HD[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtv7</link>
-<thumbnail>http://img.static.vtvcab.vn/logos/VTV7HD.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VTV8 HD[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtv8</link>
-<thumbnail>http://img.static.vtvcab.vn/logos/VTV8HD.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VTV9 HD[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-nexttv.php?lol=vtv9</link>
-<thumbnail>http://img.static.vtvcab.vn/logos/VTV9.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Miền Tây[/COLOR]</title>
-<link>http://xemtivi24.000webhostapp.com/iptv-mobion.php?id=mientay</link>
-<thumbnail>http://mobion.vn/Files/Image/admin/2017/12/08/temp_3943018788885948.jpg</thumbnail>
-</item>
-  
-
 </items>
 </channel>
 </channels>
-
-
-
-
-
-
