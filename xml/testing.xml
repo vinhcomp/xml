@@ -5,14 +5,14 @@
 <items>
 
 <item>
-<title>[COLOR yellow]VTV5 Tây Nam Bộ HD[/COLOR]</title>
-<link>plugin://plugin.video.vtvgolive/?url=http://vtvgo.vn/xem-truc-tuyen-kenh-vtv5%20t%C3%A2y%20nam%20b%E1%BB%99-7.html&mode=100</link>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/VTV5-TayNamBo.png/1024px-VTV5-TayNamBo.png</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]VTV1 HD[/COLOR]</title>
 <link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-vtv-1.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>http://img.static.vtvcab.vn/logos/VTV1HD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VTV5 Tây Nam Bộ HD[/COLOR]</title>
+<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http://vtvgo.vn/xem-truc-tuyen-kenh-vtv5%20t%C3%A2y%20nam%20b%E1%BB%99-7.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/VTV5-TayNamBo.png/1024px-VTV5-TayNamBo.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV2 HD S2[/COLOR]</title>
