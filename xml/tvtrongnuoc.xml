@@ -149,52 +149,52 @@
 
 <item>
 <title>[COLOR yellow]VTV1 HD[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=http://vtvgo.vn/xem-truc-tuyen-kenh-vtv1-1.html&mode=100</link>
+<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-kenh-vtv1-1.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>http://img.static.vtvcab.vn/logos/VTV1HD.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV2 HD[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=http://vtvgo.vn/xem-truc-tuyen-kenh-vtv2-2.html&mode=100</link>
+<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-kenh-vtv2-2.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>http://img.static.vtvcab.vn/logos/VTV2HD.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV3 HD[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=http://vtvgo.vn/xem-truc-tuyen-kenh-vtv3-3.html&mode=100</link>
+<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-kenh-vtv3-3.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>http://img.static.vtvcab.vn/logos/VTV3HD.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV4 HD[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=http://vtvgo.vn/xem-truc-tuyen-kenh-vtv4-4.html&mode=100</link>
+<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-kenh-vtv4-4.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>https://vignette1.wikia.nocookie.net/logopedia/images/b/b9/Logo_VTV4.png/revision/latest?cb=20160601031735</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV5 HD[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=http://vtvgo.vn/xem-truc-tuyen-kenh-vtv5-5.html&mode=100</link>
+<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-kenh-vtv5-5.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>https://upload.wikimedia.org/wikipedia/vi/d/d4/VTV5.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV5 Tây Nam Bộ HD[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=http://vtvgo.vn/xem-truc-tuyen-kenh-vtv5%20t%C3%A2y%20nam%20b%E1%BB%99-7.html&mode=100</link>
+<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-kenh-vtv5%20t%C3%A2y%20nam%20b%E1%BB%99-7.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/VTV5-TayNamBo.png/1024px-VTV5-TayNamBo.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV6 HD[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=http://vtvgo.vn/xem-truc-tuyen-kenh-vtv6-6.html&mode=100</link>
+<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-kenh-vtv6-6.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>http://img.static.vtvcab.vn/logos/VTV6HD.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV7 HD[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=http://vtvgo.vn/xem-truc-tuyen-kenh-vtv7-27.html&mode=100</link>
+<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-kenh-vtv7-27.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>http://img.static.vtvcab.vn/logos/VTV7HD.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV8 HD[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=http://vtvgo.vn/xem-truc-tuyen-kenh-vtv8-36.html&mode=100</link>
+<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-kenh-vtv8-36.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>http://img.static.vtvcab.vn/logos/VTV8HD.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VTV9 HD[/COLOR]</title>
-<link>plugin://plugin.video.itvplus/?url=http://vtvgo.vn/xem-truc-tuyen-kenh-vtv9-39.html.html&mode=100</link>
+<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-kenh-vtv9-39.html.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>http://img.static.vtvcab.vn/logos/VTV9.png</thumbnail>
 </item>
 
