@@ -5,6 +5,11 @@
 <items>
 
 <item>
+<title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
+<link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1031/thvl1?p2p=0&re=2&mode=100</link>
+<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
+</item> 
+<item>
 <title>[COLOR yellow]VTV1 HD[/COLOR]</title>
 <link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2F%3Fxem-truc-tuyen-vtv-1.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>http://img.static.vtvcab.vn/logos/VTV1HD.png</thumbnail>
