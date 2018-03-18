@@ -5,6 +5,11 @@
 <items>
 
 <item>
+<title>[COLOR yellow]Quê Hương TV (103)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-c2VydmVyX3RpbWU9My8xOC8yMDE4IDk6MzE6MDQgUE0maGFzaF92YWx1ZT1GVW1BUWpsRCtPRTUwL2M1eE5NNFNRPT0mdmFsaWRtaW51dGVzPTE4MCZpZD0yMDE4MDMxODMyNWFhZWRhOThkNDhhOQ==</link>
+<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/quehuong1.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]HTV7 HD[/COLOR]</title>
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name&event_id=6386066&owner_id=20251393&video_id=LIVE</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
