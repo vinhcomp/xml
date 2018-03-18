@@ -5,6 +5,16 @@
 <items>
 
 <item>
+<title>[COLOR yellow]HTV7 HD[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name&event_id=6386066&owner_id=20251393&video_id=LIVE</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]HTV7 HD[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251393%2Fevents%2F6386066/HTV7+HD+%28livestream.com%29?</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
 <link>plugin://plugin.video.itvplus/?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1031/thvl1?p2p=0&re=2&mode=100</link>
 <thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
