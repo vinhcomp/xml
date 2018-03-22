@@ -58,6 +58,21 @@
 <thumbnail>http://static.sctv.com.vn/Media/ShortCut/channel/sctv7.png</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]Việt News[/COLOR]</title>
+<link>http://144.217.84.181/hls/News.m3u8</link>
+<thumbnail>https://superrepo.org/static/images/icons/original/xservice.kodi4vn.maintenance.png.pagespeed.ic.BD2LHg25m3.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hài - TV Shows[/COLOR]</title>
+<link>http://144.217.84.181/hls/HaiTVShows.m3u8</link>
+<thumbnail>https://lh3.googleusercontent.com/sOLpCJsXrNiRfHDO8FTq-vzl6RV6vg4mxD0YDfY0LGTN4elDk-vG7fRHFqUPfqnkQtE=w300</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Việt Nam - Vẻ Đẹp Bất Tận[/COLOR]</title>
+<link>http://144.217.84.181/hls/VanHoa.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG</thumbnail>
+</item>
+<item>
 <title>[COLOR lime]HTV Thể Thao HD[/COLOR]</title>
 <link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251391%2Fevents%2F6385916/%28livestream.com%29?</link>
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1663307422HTV%20THE%20THAO%20TV.png</thumbnail>
