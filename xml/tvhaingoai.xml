@@ -33,11 +33,6 @@
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Vnews.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]VLife (108)[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu7UBHqOmukag</link>
-<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Vlife_1.jpg</thumbnail>
-</item>
-<item>
 <title>[COLOR blue]Vietoday TV[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel1/vchannel1/playlist.m3u8</link>
 <thumbnail>http://www.gazefi.com/viettodaytv/sites/all/themes/businessconnect/logo.png</thumbnail>
@@ -48,14 +43,24 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vstv.PNG</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]Việt News[/COLOR]</title>
+<link>http://144.217.84.181/hls/News.m3u8</link>
+<thumbnail>https://superrepo.org/static/images/icons/original/xservice.kodi4vn.maintenance.png.pagespeed.ic.BD2LHg25m3.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hài - TV Shows[/COLOR]</title>
+<link>http://144.217.84.181/hls/HaiTVShows.m3u8</link>
+<thumbnail>https://lh3.googleusercontent.com/sOLpCJsXrNiRfHDO8FTq-vzl6RV6vg4mxD0YDfY0LGTN4elDk-vG7fRHFqUPfqnkQtE=w300</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Việt Nam - Vẻ Đẹp Bất Tận[/COLOR]</title>
+<link>http://144.217.84.181/hls/VanHoa.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG</thumbnail>
+</item>
+<item>
 <title>[COLOR blue]On Film[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel4/vchannel4/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfilmtv.PNG</thumbnail>
-</item>
-<item>
-<title>[COLOR blue]On Biz[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel5/vchannel5/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onbiztv.PNG</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Film 24h (107)[/COLOR]</title>
