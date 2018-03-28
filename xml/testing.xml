@@ -4,6 +4,22 @@
 <channel>
 <items>
 
+ 
+<item>
+<title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
+<link>plugin://plugin.video.xshare?url=http%3A%2F%2Fvn.tvnet.gov.vn%2Fkenh-truyen-hinh%2F1031%2Fthvl1&query=tvnet_play&page=1&mode=89</link>
+<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
+<link>plugin://plugin.video.xshare?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1031/thvl1&query=tvnet_play&page=1&mode=89</link>
+<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
+<link>plugin://plugin.video.xshare?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1031/thvl1&mode=89</link>
+<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
+</item>
 <item>
 <title>[COLOR yellow]VLife (108)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu7UBHqOmukag</link>
