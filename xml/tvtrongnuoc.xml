@@ -62,6 +62,18 @@
 <link>http://saigonrtmp.tulix.tv/vchannel9/vchannel9/playlist.m3u8</link>
 <thumbnail>http://static.sctv.com.vn/Media/ShortCut/channel/sctv7.png</thumbnail>
 </item>
+  
+<item>
+<title>[COLOR green]HTVC Du Lịch và Cuộc Sống[/COLOR]</title>
+<link>http://42.116.119.121:4022/udp/225.1.1.166:30120</link>
+<thumbnail>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3y7Zu6sKjsZ1JhcDEqxnsfgwq1R_8Tggrn_9ycKCtufg4aZt</thumbnail>
+</item>
+<item>
+<title>[COLOR green]HTVC Thuần Việt HD[/COLOR]</title>
+<link>http://42.116.119.121:4022/udp/225.1.1.185:30120</link>
+<thumbnail>http://htvc.vn/uploads/editor/images/Logo%20Kenh/HTVC_THUANVIETHDLOGO_422x278.png</thumbnail>
+</item>
+  
 <item>
 <title>[COLOR lime]HTV Thể Thao HD[/COLOR]</title>
 <link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251391%2Fevents%2F6385916/%28livestream.com%29?</link>
