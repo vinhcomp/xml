@@ -18,6 +18,11 @@
  
 
 <item>
+<title>[COLOR green]HTV7 HD[/COLOR]</title>
+<link>http://42.116.119.121:4022/udp/225.1.1.191:30120</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]HTV7 HD[/COLOR]</title>
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name&event_id=6386066&owner_id=20251393&video_id=LIVE</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
@@ -41,7 +46,17 @@
 <title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
 <link>plugin://plugin.video.xshare?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1031/thvl1&query=tvnet_play&page=1&mode=89</link>
 <thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
-</item> 
+</item>
+<item>
+<title>[COLOR green]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
+<link>http://42.116.119.121:4022/udp/225.1.1.155:30120</link>
+<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
+</item>
+<item>
+<title>[COLOR green]THVL2 Vĩnh Long 2 HD[/COLOR]</title>
+<link>http://42.116.119.121:4022/udp/225.1.1.154:30120</link>
+<thumbnail>http://www.vtvcab.vn/Uploaded/nguyenanh/2014_03_04/thvl2.png</thumbnail>
+</item>
 <item>
 <title>[COLOR yellow]SCTV Phim Việt HD[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel8/vchannel8/playlist.m3u8</link>
