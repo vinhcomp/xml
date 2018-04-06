@@ -18,6 +18,11 @@
  
 
 <item>
+<title>[COLOR yellow]HTV7 HD[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251393%2Fevents%2F6386066/HTV7+HD+%28livestream.com%29?</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
+</item>
+<item>
 <title>[COLOR green]HTV7 HD[/COLOR]</title>
 <link>http://42.116.119.121:4022/udp/225.1.1.191:30120</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
