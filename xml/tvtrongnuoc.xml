@@ -80,6 +80,27 @@
 </item>
   
 <item>
+<title>[COLOR blue]On Film[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel4/vchannel4/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfilmtv.PNG</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]On Biz[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel5/vchannel5/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onbiztv.PNG</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]E Channel[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel6/vchannel6/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/echannel.png</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]Style TV[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel10/vchannel10/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/styletv.png</thumbnail>
+</item>
+  
+<item>
 <title>[COLOR lime]HTV Thể Thao HD[/COLOR]</title>
 <link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251391%2Fevents%2F6385916/%28livestream.com%29?</link>
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1663307422HTV%20THE%20THAO%20TV.png</thumbnail>
@@ -108,11 +129,6 @@
 <title>[COLOR lime]Phụ Nữ TV HD[/COLOR]</title>
 <link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251377%2Fevents%2F6339332/%28livestream.com%29?</link>
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1807934079Phu%20nu%20TV.png</thumbnail>
-</item>
-<item>
-<title>[COLOR blue]On Film[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel4/vchannel4/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfilmtv.PNG</thumbnail>
 </item>
 
 <item>
