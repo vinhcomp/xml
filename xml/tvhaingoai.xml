@@ -63,6 +63,21 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfilmtv.PNG</thumbnail>
 </item>
 <item>
+<title>[COLOR blue]On Biz[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel5/vchannel5/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onbiztv.PNG</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]E Channel[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel6/vchannel6/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/echannel.png</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]Style TV[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel10/vchannel10/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/styletv.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]Film 24h (107)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu0f9C4l86Hqm</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Film24h.jpg</thumbnail>
