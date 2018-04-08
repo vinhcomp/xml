@@ -23,11 +23,6 @@
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
 </item>
 <item>
-<title>[COLOR green]HTV7 HD[/COLOR]</title>
-<link>http://42.116.119.121:4022/udp/225.1.1.191:30120</link>
-<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]HTV9 HD[/COLOR]</title>
 <link>plugin://plugin.video.xshare?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1012/htv9&query=tvnet_play&page=1&mode=89</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
@@ -43,16 +38,6 @@
 <thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
 </item>
 <item>
-<title>[COLOR green]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
-<link>http://42.116.119.121:4022/udp/225.1.1.155:30120</link>
-<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
-</item>
-<item>
-<title>[COLOR green]THVL2 Vĩnh Long 2 HD[/COLOR]</title>
-<link>http://42.116.119.121:4022/udp/225.1.1.154:30120</link>
-<thumbnail>http://www.vtvcab.vn/Uploaded/nguyenanh/2014_03_04/thvl2.png</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]SCTV Phim Việt HD[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel8/vchannel8/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sctv14.png</thumbnail>
@@ -66,17 +51,6 @@
 <title>[COLOR yellow]SCTV Sân Khấu HD[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel9/vchannel9/playlist.m3u8</link>
 <thumbnail>http://static.sctv.com.vn/Media/ShortCut/channel/sctv7.png</thumbnail>
-</item>
-  
-<item>
-<title>[COLOR green]HTVC Du Lịch và Cuộc Sống[/COLOR]</title>
-<link>http://42.116.119.121:4022/udp/225.1.1.166:30120</link>
-<thumbnail>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3y7Zu6sKjsZ1JhcDEqxnsfgwq1R_8Tggrn_9ycKCtufg4aZt</thumbnail>
-</item>
-<item>
-<title>[COLOR green]HTVC Thuần Việt HD[/COLOR]</title>
-<link>http://42.116.119.121:4022/udp/225.1.1.185:30120</link>
-<thumbnail>http://htvc.vn/uploads/editor/images/Logo%20Kenh/HTVC_THUANVIETHDLOGO_422x278.png</thumbnail>
 </item>
   
 <item>
