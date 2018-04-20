@@ -18,11 +18,6 @@
  
 
 <item>
-<title>[COLOR green]HTV7 HD[/COLOR]</title>
-<link>http://tv.beeb.vn/streamtv/hls/htv7.m3u8?s=41fbc0748753d29114a2e30fbb0778e9&t=1524289231&token_id=ASSW6wi8C74QxOLNK%2BYRHvJSuQ5CVM8lzWq8Tlj8pVY2hN7e7NfDj4q4RBFI96i7u6OpDQyTdDtA8K11UmWfx8A19Yb145RfV8Q2iSr69z%2B5XKjCFZBzegAN6pmMZuMWmauAMfbB6dg5I43pjh69UQ%3D%3D</link>
-<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/767560-HTV7_FullHD.png</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]HTV2 HD[/COLOR]</title>
 <link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251393%2Fevents%2F6386066/HTV7+HD+%28livestream.com%29?</link>
 <thumbnail>http://img.hplus.com.vn/460x260/poster/2016/10/10/996898-htv2hd.png</thumbnail>
