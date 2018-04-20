@@ -6,6 +6,11 @@
 
  
 <item>
+<title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
+<link>http://localhost:5000/play.m3u8?url=beeb-thvl1</link>
+<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
+</item>
+<item>
 <title>Bà Rịa - Vũng Tàu</title>
 <link>http://live.cdn.mobifonetv.vn/motv/mybrt_hls.smil/playlist.m3u8</link>
 <thumbnail>https://static.fptplay.net/static/img/share/channels/icon_channel_ba-ria-vung-tau_145672972069.jpg?w=345&h=210&mode=scale</thumbnail>
