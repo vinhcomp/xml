@@ -38,6 +38,26 @@
 <thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
+<link>http://api.thvli.vn/backend/cm/detail/thvl1-hd/</link>
+<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
+<link>http://xemtivi24.000webhostapp.com/iptv-thvli.php?id=vinhlong1hd</link>
+<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]THVL2 Vĩnh Long 2 HD[/COLOR]</title>
+<link>http://api.thvli.vn/backend/cm/detail/thvl2-hd//</link>
+<thumbnail>http://img.hplus.com.vn/460x260/poster/2018/04/19/565346-482704-thvl.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]THVL2 Vĩnh Long 2 HD[/COLOR]</title>
+<link>http://xemtivi24.000webhostapp.com/iptv-thvli.php?id=vinhlong2hd</link>
+<thumbnail>http://img.hplus.com.vn/460x260/poster/2018/04/19/565346-482704-thvl.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]SCTV Phim Việt HD[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel8/vchannel8/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sctv14.png</thumbnail>
