@@ -6,6 +6,11 @@
 
 
 <item>
+<title>[COLOR blue]--------------------------------------------------------[/COLOR]</title>
+<link>tobeebtv</link>
+<thumbnail>https://www.hieuhien.vn/Uploads/images/game-ung-dung/ung-dung/xem-truyen-hinh/beebtv.png</thumbnail>
+</item>
+<item>
 <title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Cable TV[/COLOR]</title>
 <link>tocablestv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
