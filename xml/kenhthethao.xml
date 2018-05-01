@@ -4,7 +4,11 @@
 <name>kenhthethao</name>
 <items>
 
-
+<item>
+<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Sport365 Live[/COLOR]</title>
+<link>tosport365</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sport365.png</thumbnail>
+</item>
 <item>
 <title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]SportsDevil[/COLOR]</title>
 <link>tosportsdevil</link>
