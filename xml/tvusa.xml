@@ -58,27 +58,6 @@
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=Live&owner_id=kptv&video_id=LIVE</link>
 <thumbnail>https://img.new.livestream.com/accounts/0000000000696a2e/1c0b15ad-34e5-4cde-b22c-c56c3312cf5a_170x170.png</thumbnail>
 </item>
-
-<item>
-<title>[COLOR yellow]Nickelodeon[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=31929&url=1WnPAus38gICTMODAKXdc%2F8zon4xb%2BUpyTq%2BEpbabmwLEf8xrP8OqQBOYtnuZuo4gOE7LA1Mw%2FZOWQ8TSCRWVpdAbHB2OM%2BaYcMeTc%2B9IAB316%2BTlSaxyi9v8rdjqfk%2FTSMfyNvypk7jzPVblZpre0GywSbtwbap0ogq3xXzSS0%3D</link>
-<thumbnail>http://tv.beeb.vn/img/nickelodeon.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Discovery Kids[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=31929&url=1WnPAus38gICTMODAKXdc%2F8zon4xb%2BUpyTq%2BEpbabmxNMyhqjc1DWGGzlNK0pAf3BXhrWE4UuCJxWvfY9AxFd8ZClMfWGWN0OWb2CGuEXAnx2we%2FRaLHM%2FZSRfkZqxYPZdFJm4sfbCNAT%2BO%2BRd%2BQTllWXbiT5krlLdzNNuqVc0I%3D</link>
-<thumbnail>http://tv.beeb.vn/img/discoverykids.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]History Channel[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=31929&url=1WnPAus38gICTMODAKXdc%2F8zon4xb%2BUpyTq%2BEpbabmxBJbMnKdb%2FlJOPMe6feRVS8zcB7WIs7RlFixWMMtnKZ%2FWeENJmcQaBBiMnHLUofwkvdcXNdmhQYkXBbl%2BhE%2BzbpW54Ym2357x9V3i5qsZ17HH5PtTwuFQ667OtntI5HE0%3D</link>
-<thumbnail>http://tv.beeb.vn/img/history.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Discovery Science[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=31929&url=1WnPAus38gICTMODAKXdc%2F8zon4xb%2BUpyTq%2BEpbabmxZSfjEfS50KKokDulBcZjZQC0To9QCS2hUs53r1yOE0BmW8WefUnK5PLWdELi%2FwiFhYsGoJ2tg2eReqVv4SDqGVkVvsYuNfab5XXpD2xd8yJaRlXCNbDfdz1G4sQjVHcc%3D</link>
-<thumbnail>http://tv.beeb.vn/img/discoveryscience.jpg</thumbnail>
-</item>
   
 <item>
 <title>[COLOR blue]CNN[/COLOR]</title>
