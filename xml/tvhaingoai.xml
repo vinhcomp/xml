@@ -180,14 +180,9 @@
 
 
 <item>
-<title>[COLOR yellow]Việt Face TV 57.2[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/vface</link>
-<thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Trọng Thắng Show[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/2tmediatv</link>
-<thumbnail>http://www.viettv24.com/main/images/logo2T.jpg</thumbnail>
+<title>[COLOR yellow]VBolero TV[/COLOR]</title>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vbolero/playlist.m3u8&u=guest</link>
+<thumbnail>http://www.viettv24.com/main/images/VBolero-Logo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Đồng Giao TV[/COLOR]</title>
@@ -200,19 +195,14 @@
 <thumbnail>http://www.viettv24.com/main/images/rangdong_logo.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Việt Phố TV 57.10[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/vietpho</link>
-<thumbnail>http://www.viettv24.com/main/images/vietphotv_logo.jpg</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]KVLA TV CHANNEL 56.5[/COLOR]</title>
 <link>http://saigontv.saigon.ns01.us:1935/kvla/myStream/chunklist_w1930572275.m3u8</link>
 <thumbnail>https://yt3.ggpht.com/-ShrFIJwe2aQ/AAAAAAAAAAI/AAAAAAAAAAA/F3pjSr8AqKU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]VATV News[/COLOR]</title>
+<title>[COLOR yellow]iSaigon - VATV News[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/vatv</link>
-<thumbnail>http://www.viettv24.com/main/images/VATV_logo.jpg</thumbnail>
+<thumbnail>http://www.viettv24.com/main/images/iSaigon_logo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]S Channel 56.6[/COLOR]</title>
