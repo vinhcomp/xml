@@ -185,11 +185,6 @@
 <thumbnail>http://www.viettv24.com/main/images/VBolero-Logo.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Đồng Giao TV[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/dgtv</link>
-<thumbnail>http://www.viettv24.com/main/images/dong_giao_tv.jpg</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]Rạng Đông TV 8.8[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/rangdong</link>
 <thumbnail>http://www.viettv24.com/main/images/rangdong_logo.jpg</thumbnail>
@@ -315,6 +310,11 @@
 <title>[COLOR blue]Việt Mỹ TV[/COLOR]</title>
 <link>http://68.235.37.11:1935/vietmagazine/vietmagazine/playlist.m3u8</link>
 <thumbnail>https://lh3.googleusercontent.com/j4sw8I18naU2f7Tnhfo7zEDMpwZZjqRlo5k73dUWsQ25IikIXx16qz1JIwttLImoKBM=w300</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Viet TV24 APP (Giới Thiệu và Hướng Dẫn)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/dgtv</link>
+<thumbnail>http://www.viettv24.com/main/images/dong_giao_tv.jpg</thumbnail>
 </item>
 
 
