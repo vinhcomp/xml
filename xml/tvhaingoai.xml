@@ -48,6 +48,31 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vstv.PNG</thumbnail>
 </item>
 <item>
+<title>[COLOR blue]On Film[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel4/vchannel4/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfilmtv.PNG</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]On Football[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel11/vchannel11/playlist.m3u8</link>
+<thumbnail>https://www.giniko.com/logos/190x110/932.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]On Biz[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel5/vchannel5/playlist.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onbiztv.PNG</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]E Channel[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel6/vchannel6/playlist.m3u8</link>
+<thumbnail>https://www.giniko.com/logos/190x110/926.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]Style TV[/COLOR]</title>
+<link>http://saigonrtmp.tulix.tv/vchannel10/vchannel10/playlist.m3u8</link>
+<thumbnail>https://www.giniko.com/logos/190x110/930.jpg</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]Việt News[/COLOR]</title>
 <link>http://144.217.84.181/hls/News.m3u8</link>
 <thumbnail>https://superrepo.org/static/images/icons/original/xservice.kodi4vn.maintenance.png.pagespeed.ic.BD2LHg25m3.png</thumbnail>
@@ -61,26 +86,6 @@
 <title>[COLOR yellow]Việt Nam - Vẻ Đẹp Bất Tận[/COLOR]</title>
 <link>http://144.217.84.181/hls/VanHoa.m3u8</link>
 <thumbnail>https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG</thumbnail>
-</item>
-<item>
-<title>[COLOR blue]On Film[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel4/vchannel4/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfilmtv.PNG</thumbnail>
-</item>
-<item>
-<title>[COLOR blue]On Biz[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel5/vchannel5/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onbiztv.PNG</thumbnail>
-</item>
-<item>
-<title>[COLOR blue]E Channel[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel6/vchannel6/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/echannel.png</thumbnail>
-</item>
-<item>
-<title>[COLOR blue]Style TV[/COLOR]</title>
-<link>http://saigonrtmp.tulix.tv/vchannel10/vchannel10/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/styletv.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Film 24h (107)[/COLOR]</title>
