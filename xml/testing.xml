@@ -6,6 +6,16 @@
 
 
 <item>
+<title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fapi.thvli.vn%2Fbackend%2Fcm%2Fdetail%2Fthvl1-hd%2F/THVL1+HD+Truy%E1%BB%81n+H%C3%ACnh+V%C4%A9nh+Long+HD+1+%28thvli%29?</link>
+<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]THVL2 Vĩnh Long 2 HD[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fapi.thvli.vn%2Fbackend%2Fcm%2Fdetail%2Fthvl2-hd%2F/THVL2+HD+Truy%E1%BB%81n+H%C3%ACnh+V%C4%A9nh+Long+HD+2+%28thvli%29?</link>
+<thumbnail>http://img.hplus.com.vn/460x260/poster/2018/04/19/565346-482704-thvl.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]HTV2 HD[/COLOR]</title>
 <link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251393%2Fevents%2F6386066/HTV7+HD+%28livestream.com%29?</link>
 <thumbnail>http://img.hplus.com.vn/460x260/poster/2016/10/10/996898-htv2hd.png</thumbnail>
