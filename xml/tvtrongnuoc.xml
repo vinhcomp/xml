@@ -33,16 +33,6 @@
 <thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fapi.thvli.vn%2Fbackend%2Fcm%2Fdetail%2Fthvl1-hd%2F/THVL1+HD+Truy%E1%BB%81n+H%C3%ACnh+V%C4%A9nh+Long+HD+1+%28thvli%29?</link>
-<thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]THVL2 Vĩnh Long 2 HD[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fapi.thvli.vn%2Fbackend%2Fcm%2Fdetail%2Fthvl2-hd%2F/THVL2+HD+Truy%E1%BB%81n+H%C3%ACnh+V%C4%A9nh+Long+HD+2+%28thvli%29?</link>
-<thumbnail>http://img.hplus.com.vn/460x260/poster/2018/04/19/565346-482704-thvl.png</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]SCTV Phim Việt HD[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel8/vchannel8/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sctv14.png</thumbnail>
