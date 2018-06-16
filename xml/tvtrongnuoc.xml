@@ -18,16 +18,6 @@
  
 
 <item>
-<title>[COLOR lime]World Cup 2018 Live 1[/COLOR]</title>
-<link>plugin://plugin.video.Pac-12/?url=plugin%3A%2F%2Fplugin.video.f4mTester%2F%3Fstreamtype%3DTSDOWNLOADER%26url%3Dhttp%3A%2F%2F87.98.254.240%3A8080%2Flive%2FVHFv8aO61x%2FaJiqmbBBcT%2F150.ts%3Bname%3DUS%2BFox%2BSports%2B1%2BHD%250D&mode=2</link>
-<thumbnail>https://digitalsynopsis.com/wp-content/uploads/2018/06/fifa-world-cup-logos-russia-2018.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]World Cup 2018 Live 2[/COLOR]</title>
-<link>plugin://plugin.video.Pac-12/?url=plugin%3A%2F%2Fplugin.video.f4mTester%2F%3Fstreamtype%3DTSDOWNLOADER%26url%3Dhttp%3A%2F%2F87.98.254.240%3A8080%2Flive%2FVHFv8aO61x%2FaJiqmbBBcT%2F1545.ts%3Bname%3DUK%2BBBC%2B1%2BHD%250D&mode=2</link>
-<thumbnail>https://digitalsynopsis.com/wp-content/uploads/2018/06/fifa-world-cup-logos-russia-2018.jpg</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]HTV9 HD[/COLOR]</title>
 <link>plugin://plugin.video.xshare?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1012/htv9&query=tvnet_play&page=1&mode=89</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
