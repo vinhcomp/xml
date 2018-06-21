@@ -15,6 +15,11 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sportsdevil.png</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Football Replays[/COLOR]</title>
+<link>tofootball</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/football.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Kodi4VNLauncher[/COLOR]</title>
 <link>tokodi4vnlauncher</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
@@ -73,11 +78,6 @@
 <title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]NBA Full Games[/COLOR]</title>
 <link>tonbafull</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/nbafull.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Football Replays[/COLOR]</title>
-<link>tofootball</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/football.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]ITV Plus[/COLOR]</title>
