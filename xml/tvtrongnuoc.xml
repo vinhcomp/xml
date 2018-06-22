@@ -83,17 +83,6 @@
 <link>http://saigonrtmp.tulix.tv/vchannel10/vchannel10/playlist.m3u8</link>
 <thumbnail>https://www.giniko.com/logos/190x110/930.jpg</thumbnail>
 </item>
-  
-<item>
-<title>[COLOR lime]PHIM247 TV[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251373%2Fevents%2F6338970/%28livestream.com%29?</link>
-<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1376550246PHIM%20247%20TV.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]Mầm Non TV[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251326%2Fevents%2F6124826/%28livestream.com%29?</link>
-<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1776334895Mam%20Non%20TV%20icon.jpg</thumbnail>
-</item>
 
 <item>
 <title>[COLOR lime]VTC1 HD[/COLOR]</title>
@@ -713,6 +702,13 @@
 <title>[COLOR yellow]Hà Nội[/COLOR]</title>
 <link>plugin://plugin.video.vietmediaF?action=play&thread_id=24016&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEehYSbOMBxYWx6GFVzodgCSIHi3rL6yBVtCBix29nrFPg%3D%3D</link>
 <thumbnail>https://upload.wikimedia.org/wikipedia/en/6/6a/Hanoitv.png</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR lime]NETV[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251373%2Fevents%2F6338970/%28livestream.com%29?</link>
+<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1376550246PHIM%20247%20TV.jpg</thumbnail>
 </item>
 
 
