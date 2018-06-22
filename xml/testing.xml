@@ -6,6 +6,11 @@
 
 
 <item>
+<title>[COLOR yellow]VTV2 HD[/COLOR]</title>
+<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http://vtvgo.vn/xem-truc-tuyen-kenh-vtv2-2.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
+<thumbnail>http://img.static.vtvcab.vn/logos/VTV2HD.png</thumbnail>
+</item>
+<item>
 <title>[COLOR lime]World Cup 2018 Live 2[/COLOR]</title>
 <link>plugin://plugin.video.Pac-12/?url=plugin%3A%2F%2Fplugin.video.f4mTester%2F%3Fstreamtype%3DTSDOWNLOADER%26url%3Dhttp%3A%2F%2Ftv.latiniptvplus.com%3A8000%2Flive%2Festebancarvajal%2FoxEb1VlNmd%2F552.ts%3Bname%3DFR%2BBEIN%2BSPORT%2B1%250D&mode=2</link>
 <thumbnail>https://digitalsynopsis.com/wp-content/uploads/2018/06/fifa-world-cup-logos-russia-2018.jpg</thumbnail>
