@@ -201,7 +201,7 @@
 </item>
 <item>
 <title>[COLOR yellow]Rạng Đông TV 8.8[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/rangdong</link>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/rangdong/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/rangdong_logo.jpg</thumbnail>
 </item>
 <item>
@@ -226,12 +226,12 @@
 </item>
 <item>
 <title>[COLOR yellow]Hài 24-7 9.1[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/hai</link>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/hai/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/Hai%2024-7.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Sân Khấu & Cuộc Đời 9.6[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/cailuong</link>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/cailuong/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/skcd.jpg</thumbnail>
 </item>
 <item>
@@ -241,12 +241,12 @@
 </item>
 <item>
 <title>[COLOR yellow]VMusic 9.2[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/mtv</link>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/mtv/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/Vmusic_logo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Việt Media TV[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/vietmediatv</link>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vietmediatv/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/VietMediaTV_logo.jpg</thumbnail>
 </item>
 <item>
@@ -256,7 +256,7 @@
 </item>
 <item>
 <title>[COLOR yellow]Hải Lê Television[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/ttt</link>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/ttt/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/Hai_Le_Logo.jpg</thumbnail>
 </item>
 <item>
@@ -328,25 +328,27 @@
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1436931100Hoa%20Thuong%20Tinh%20Khong%20Icon%20Photo.jpg</thumbnail>
 </item>
 <item>
+<title>[COLOR lime]117 - Vô Môn Thiền Tự[/COLOR]</title>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vmtt/playlist.m3u8&u=guest</link>
+<thumbnail>http://www.viettv24.com/main/images/Vo_Mon_Thien_Tu.jpg</thumbnail>
+</item>
+<item>
 <title>[COLOR lime]Mầm Non TV[/COLOR]</title>
 <link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251326%2Fevents%2F6124826/%28livestream.com%29?</link>
 <thumbnail>http://vetinhtv.com/tvstream_new/web/images/1776334895Mam%20Non%20TV%20icon.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Viet TV24 APP (Giới Thiệu và Hướng Dẫn)[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/dgtv</link>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/dgtv/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/dong_giao_tv.jpg</thumbnail>
 </item>
-
 
 
 <item>
 <title>[COLOR ffff0000]More TV Hải Ngoại[/COLOR]</title>
 <link>viettv24free</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/viettv242.png</thumbnail>
-</item>
-
- 
+</item> 
   
   
 </items>
