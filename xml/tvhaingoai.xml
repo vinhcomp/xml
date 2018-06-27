@@ -138,21 +138,6 @@
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Nhacviet0907.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Tin Lành TV (91)[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2FwirE4ADDI%2Fms</link>
-<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Tin_Lanh.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Phật Giáo (92)[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2FwtZn4HigOpU7</link>
-<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/phatgiao.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]CTV (94)[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2Fwtav6MBYPXaY</link>
-<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/catholic.png</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]SET (106)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu4hKB5uXmSFm</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/set03.png</thumbnail>
@@ -161,11 +146,6 @@
 <title>[COLOR yellow]SET TV 57.4[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/set</link>
 <thumbnail>http://www.viettv24.com/main/images/SETTV_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Schedule (99)[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2FwrBUTcumfiSF</link>
-<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Schedule_TV.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VIETV Canada (111)[/COLOR]</title>
@@ -317,25 +297,31 @@
 <thumbnail>https://lh3.googleusercontent.com/j4sw8I18naU2f7Tnhfo7zEDMpwZZjqRlo5k73dUWsQ25IikIXx16qz1JIwttLImoKBM=w300</thumbnail>
 </item>
  
-<item>
-<title>[COLOR lime]Vô Lương Thọ TV[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251355%2Fevents%2F6338758/%28livestream.com%29?</link>
-<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1436925706VO%20LUONG%20THO%20TV%20CHANNEL%20ICON%20smallest.png</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]HT Tịnh Không TV[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251363%2Fevents%2F6338827/%28livestream.com%29?</link>
-<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1436931100Hoa%20Thuong%20Tinh%20Khong%20Icon%20Photo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]117 - Vô Môn Thiền Tự[/COLOR]</title>
+ 
+ <item>
+<title>[COLOR lime]Vô Môn Thiền Tự[/COLOR]</title>
 <link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vmtt/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/Vo_Mon_Thien_Tu.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR lime]Mầm Non TV[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251326%2Fevents%2F6124826/%28livestream.com%29?</link>
-<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1776334895Mam%20Non%20TV%20icon.jpg</thumbnail>
+<title>[COLOR yellow]Phật Giáo (92)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2FwtZn4HigOpU7</link>
+<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/phatgiao.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]CTV (94)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2Fwtav6MBYPXaY</link>
+<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/catholic.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Tin Lành TV (91)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2FwirE4ADDI%2Fms</link>
+<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Tin_Lanh.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Schedule (99)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2FwrBUTcumfiSF</link>
+<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Schedule_TV.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Viet TV24 APP (Giới Thiệu và Hướng Dẫn)[/COLOR]</title>
