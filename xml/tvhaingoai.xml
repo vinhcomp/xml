@@ -52,19 +52,20 @@
 <link>http://saigonrtmp.tulix.tv/vchannel1/vchannel1/playlist.m3u8</link>
 <thumbnail>http://www.gazefi.com/viettodaytv/sites/all/themes/businessconnect/logo.png</thumbnail>
 </item>
+</item>
 <item>
 <title>[COLOR blue]Vietshow TV[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel3/vchannel3/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vstv.PNG</thumbnail>
 </item>
 <item>
-<title>[COLOR orange]Việt Face TV 57.2[/COLOR]</title>
+<title>[COLOR lime]Việt Face TV 57.2[/COLOR]</title>
 <link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fvface%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR lime]Việt Phố TV 57.10[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vietpho/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fvietpho%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/vietphotv_logo.jpg</thumbnail>
 </item>
 <item>
@@ -154,7 +155,7 @@
 </item>
 <item>
 <title>[COLOR yellow]SET TV 57.4[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/set/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fset%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/SETTV_logo.jpg</thumbnail>
 </item>
 <item>
@@ -186,12 +187,12 @@
 
 <item>
 <title>[COLOR yellow]VBolero TV[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vbolero/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fvbolero%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/VBolero-Logo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Rạng Đông TV 8.8[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/rangdong/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Frangdong%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/rangdong_logo.jpg</thumbnail>
 </item>
 <item>
@@ -201,27 +202,27 @@
 </item>
 <item>
 <title>[COLOR yellow]iSaigon - VATV News[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vatv/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fvatv%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/iSaigon_logo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]S Channel 56.6[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/schannel/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fschannel%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/schannel_logo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VNA TV 57.3[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vnatv/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fvnatv%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://vnatv573.com/images/file/7aoqzb7y0QgBAhQW/vnatv573-logo.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Hài 24-7 9.1[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/hai/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fhai%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/Hai%2024-7.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Sân Khấu & Cuộc Đời 9.6[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/cailuong/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fcailuong%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/skcd.jpg</thumbnail>
 </item>
 <item>
@@ -231,12 +232,12 @@
 </item>
 <item>
 <title>[COLOR yellow]VMusic 9.2[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/mtv/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fmtv%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/Vmusic_logo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Việt Media TV[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vietmediatv/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fvietmediatv%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/VietMediaTV_logo.jpg</thumbnail>
 </item>
 
@@ -295,7 +296,7 @@
  
  <item>
 <title>[COLOR lime]Vô Môn Thiền Tự[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vmtt/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fvmtt%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/Vo_Mon_Thien_Tu.jpg</thumbnail>
 </item>
 <item>
@@ -325,12 +326,12 @@
 </item>
 <item>
 <title>[COLOR yellow]Viet TV24 APP (Giới Thiệu và Hướng Dẫn)[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/dgtv/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fdgtv%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/dong_giao_tv.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Hải Lê Television[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/ttt/playlist.m3u8&u=guest</link>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fttt%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/Hai_Le_Logo.jpg</thumbnail>
 </item>
 <item>
