@@ -239,16 +239,6 @@
 <link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vietmediatv/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/VietMediaTV_logo.jpg</thumbnail>
 </item>
-<item>
-<title>[COLOR yellow]Hải Lê Television[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/ttt/playlist.m3u8&u=guest</link>
-<thumbnail>http://www.viettv24.com/main/images/Hai_Le_Logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Viet Christian[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/mms%3A%2F%2Flive.vietchristian.com%2Ftv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tinhlanh.PNG</thumbnail>
-</item>
 
 <item>
 <title>[COLOR cyan]IBC TV 57.8[/COLOR]</title>
@@ -324,6 +314,11 @@
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Tin_Lanh.jpg</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]Việt Christian[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/mms%3A%2F%2Flive.vietchristian.com%2Ftv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tinhlanh.PNG</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]Schedule (99)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2FwrBUTcumfiSF</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Schedule_TV.jpg</thumbnail>
@@ -332,6 +327,11 @@
 <title>[COLOR yellow]Viet TV24 APP (Giới Thiệu và Hướng Dẫn)[/COLOR]</title>
 <link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/dgtv/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/dong_giao_tv.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Hải Lê Television[/COLOR]</title>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/ttt/playlist.m3u8&u=guest</link>
+<thumbnail>http://www.viettv24.com/main/images/Hai_Le_Logo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VUSA Media TV (Thử Nghiệm)[/COLOR]</title>
