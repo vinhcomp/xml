@@ -58,6 +58,16 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vstv.PNG</thumbnail>
 </item>
 <item>
+<title>[COLOR blue]Việt Face TV 57.2[/COLOR]</title>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vface/playlist.m3u8&u=guest</link>
+<thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR blue]Việt Phố TV 57.10[/COLOR]</title>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vietpho/playlist.m3u8&u=guest</link>
+<thumbnail>http://www.viettv24.com/main/images/vietphotv_logo.jpg</thumbnail>
+</item>
+<item>
 <title>[COLOR blue]On Film[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel4/vchannel4/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfilmtv.PNG</thumbnail>
