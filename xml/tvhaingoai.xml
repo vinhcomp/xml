@@ -211,7 +211,12 @@
 </item>
 <item>
 <title>[COLOR yellow]VNA TV 57.3[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/vnatv</link>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vnatv/playlist.m3u8&u=guest</link>
+<thumbnail>http://vnatv573.com/images/file/7aoqzb7y0QgBAhQW/vnatv573-logo.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VNA TV 57.3[/COLOR]</title>
+<link>http://cdn1.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vnatv/playlist.m3u8&u=guest</link>
 <thumbnail>http://vnatv573.com/images/file/7aoqzb7y0QgBAhQW/vnatv573-logo.png</thumbnail>
 </item>
 <item>
