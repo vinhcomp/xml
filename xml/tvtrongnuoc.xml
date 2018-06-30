@@ -90,6 +90,11 @@
 <thumbnail>http://i.imgur.com/HC5iUuK.png</thumbnail>
 </item>
 <item>
+<title>[COLOR lime]VTC1 HD[/COLOR]</title>
+<link>http://echipstore.com:8000/api/play?url=vtc-5786753537001</link>
+<thumbnail>http://i.imgur.com/HC5iUuK.png</thumbnail>
+</item>
+<item>
 <title>[COLOR lime]VTC10 NetViet HD[/COLOR]</title>
 <link>plugin://plugin.video.xshare?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1006/netviet&query=tvnet_play&page=1&mode=89</link>
 <thumbnail>https://i.imgur.com/k6fjc5d.png</thumbnail>
