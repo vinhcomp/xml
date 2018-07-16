@@ -18,16 +18,6 @@
  
 
 <item>
-<title>[COLOR lime]World Cup 2018 Live[/COLOR]</title>
-<link>tosport365</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sport365.png</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]World Cup 2018 Replays[/COLOR]</title>
-<link>tofootball</link>
-<thumbnail>https://digitalsynopsis.com/wp-content/uploads/2018/06/fifa-world-cup-logos-russia-2018.jpg</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]HTV9 HD[/COLOR]</title>
 <link>plugin://plugin.video.xshare?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1012/htv9&query=tvnet_play&page=1&mode=89</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
