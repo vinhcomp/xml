@@ -52,11 +52,7 @@
 <thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjNUcHcwMEkyS0gxUGRvQlMzaGpxSDQtZGNtUVZrSy1fQzhDSjJ1NEhmbmM/kenhthieunhi.png</thumbnail>
 </item>
   
-<item>
-<title>[COLOR lime]World Cup 2018 Live[/COLOR]</title>
-<link>tosport365</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sport365.png</thumbnail>
-</item>
+
 <item>
 <title>[COLOR lime]FOX 12 Oregon[/COLOR]</title>
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=Live&owner_id=kptv&video_id=LIVE</link>
