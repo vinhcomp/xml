@@ -405,22 +405,12 @@
 </item>
  
  
- <item>
+<item>
 <title>[COLOR lime]✫-✫-✫ Tôn Giáo ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>
 
-<item>
-<title>[COLOR lime]Vô Lương Thọ TV[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251355%2Fevents%2F6338758/%28livestream.com%29?</link>
-<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1436925706VO%20LUONG%20THO%20TV%20CHANNEL%20ICON%20smallest.png</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]HT Tịnh Không TV[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251363%2Fevents%2F6338827/%28livestream.com%29?</link>
-<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1436931100Hoa%20Thuong%20Tinh%20Khong%20Icon%20Photo.jpg</thumbnail>
-</item>
 <item>
 <title>[COLOR yellow]Phật Giáo (92)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2FwtZn4HigOpU7</link>
