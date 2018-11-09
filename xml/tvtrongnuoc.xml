@@ -33,6 +33,11 @@
 <thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
 </item>
 <item>
+<title>[COLOR yellow]THVL2 Vĩnh Long 2 HD[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.thvli/play/%7B%22title%22%3A%22%5BLive%5D%20THVLi%202%20HD%22%2C%22url%22%3A%22https%3A%2F%2Fapi.thvli.vn%2Fbackend%2Fcm%2Fdetail%2Fthvl2-hd%2F%22%7D</link>
+<thumbnail>https://static.thvli.vn/assets/thumbnail/2017/05/09/jcsqtzfi_THVL-2-HD-N.jpg</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]SCTV14 Phim Việt HD[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel8/vchannel8/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sctv14.png</thumbnail>
