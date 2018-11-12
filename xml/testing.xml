@@ -6,6 +6,12 @@
 
 
 <item>
+<title>HTV7</title>
+<link>plugin://plugin.video.htvonline/play/%7B%22title%22%3A%22HTV7%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv7-hd-256.html%22%7D</link>
+<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/02/02/519040-948241-HTV7-HD---tms.png</thumbnail>
+</item>
+
+<item>
 <title>[COLOR lime]Việt Face TV 57.2[/COLOR]</title>
 <link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fvface%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
