@@ -96,7 +96,7 @@
   
   
 <item>
-<title>[COLOR lime]✫-✫-✫ VTVGo 2✫-✫-✫[/COLOR]</title>
+<title>[COLOR lime]✫-✫-✫ VTVGo ✫-✫-✫[/COLOR]</title>
 <link>http://youtube.com</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/tvtrongnuoc.png</thumbnail>
 </item>  
@@ -123,7 +123,7 @@
 </item>
 <item>
 <title>[COLOR yellow]VTV5 HD[/COLOR]</title>
-<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22http%3A%2F%2Fvtvgo.vn%2Fxem-truc-tuyen-kenh-vtv5-5.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
+<link>plugin://plugin.video.vtvgolive/play/%7B%22url%22%3A%20%22https%3A%2F%2Fvtvgo.vn%2Fxem-truc-tuyen-kenh-vtv5-5.html%22%2C%20%22title%22%3A%20%22VTV1%20HD%20%28VTVGo%29%22%7D</link>
 <thumbnail>https://upload.wikimedia.org/wikipedia/vi/d/d4/VTV5.png</thumbnail>
 </item>
 <item>
