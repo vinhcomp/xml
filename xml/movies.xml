@@ -21,60 +21,10 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movies1.png</thumbnail>
 </item>
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR red]Kids[/COLOR] | [COLOR aqua]Cartoons 8[/COLOR]</title>
-<link>tocartoons8</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cartoons8.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]BOB Unleashed[/COLOR]</title>
-<link>tobobunleashed</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/bobunleashed.png</thumbnail>
-</item>
-<item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Sports - Movies - TV Shows[/COLOR] | [COLOR red]Cable TV[/COLOR]</title>
 <link>tocablestv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
 </item> 
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]MetalliQ[/COLOR]</title>
-<link>tometalliq</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/metalliq.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]ZEN[/COLOR]</title>
-<link>tozen</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/zen.png</thumbnail>
-</item>
-
-
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]1Channel[/COLOR]</title>
-<link>redirectto1channel</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/1channel.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]Icefilms[/COLOR]</title>
-<link>toicefilms</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/icefilms.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR mediumspringgreen]India[/COLOR] | [COLOR cornflowerblue]Zem TV[/COLOR]</title>
-<link>tozemtv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/zemtv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | FilmOn TV</title>
-<link>tofilmon3</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/filmon2.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR cornflowerblue]UK Turk Playlists[/COLOR]</title>
-<link>toukturk</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/ukturk.png</thumbnail>
-</item>
-
-
-
 
 
 <item>
