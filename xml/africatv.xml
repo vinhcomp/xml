@@ -55,7 +55,12 @@
 <title>[COLOR mediumspringgreen]SBC[/COLOR]</title>
 <link>http://62.210.251.188:1935/live/sbctv.stream/playlist.m3u8</link>
 <thumbnail>https://static.filmon.com/assets/channels/5873/big_logo.png</thumbnail>
-</item> 
+</item>
+<item>
+<title>[COLOR yellow]SAAB TV[/COLOR]</title>
+<link>http://cdn01.iqbroadcast.tv:8081/g1/saabtv/playlist.m3u8</link>
+<thumbnail>https://yt3.ggpht.com/-_52i7k9tFUw/AAAAAAAAAAI/AAAAAAAAAAA/BQ_zuVK66Ig/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+</item>  
   
   
 <item>
@@ -113,12 +118,6 @@
 <link>plugin://plugin.video.filmon.simple/?url=http%3A%2F%2Fwww.filmon.com%2Fgroup%2Fsomali-tv&mode=2&name=STAR+TV&iconimage=https%3A%2F%2Fstatic.filmon.com%2Fassets%2Fchannels%2F5864%2Fbig_logo.png&description=5864&group=SOMALI+TV&rand=R187XR&sf_options=winID%3D10025%26_options_sf&quot</link>
 <thumbnail>https://static.filmon.com/assets/channels/5864/big_logo.png</thumbnail>
 </item>
-<item>
-<title>[COLOR yellow]SAAB TV[/COLOR]</title>
-<link>http://cdn01.iqbroadcast.tv:8081/g1/saabtv/playlist.m3u8</link>
-<thumbnail>https://yt3.ggpht.com/-_52i7k9tFUw/AAAAAAAAAAI/AAAAAAAAAAA/BQ_zuVK66Ig/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
-</item>
-
 
 
 <item>
