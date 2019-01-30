@@ -18,11 +18,6 @@
  
 
 <item>
-<title>[COLOR yellow]HTV7 HD[/COLOR]</title>
-<link>plugin://plugin.video.htvonline/play/%7B%22title%22%3A%22HTV7%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv7-hd-256.html%22%7D</link>
-<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/02/02/519040-948241-HTV7-HD---tms.png</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]HTV9 HD[/COLOR]</title>
 <link>plugin://plugin.video.xshare?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1012/htv9&query=tvnet_play&page=1&mode=89</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
@@ -41,11 +36,6 @@
 <title>[COLOR yellow]THVL1 Vĩnh Long 1 HD[/COLOR]</title>
 <link>plugin://plugin.video.xshare?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1031/thvl1&query=tvnet_play&page=1&mode=89</link>
 <thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]THVL2 Vĩnh Long 2 HD[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.thvli/play/%7B%22title%22%3A%22%5BLive%5D%20THVLi%202%20HD%22%2C%22url%22%3A%22https%3A%2F%2Fapi.thvli.vn%2Fbackend%2Fcm%2Fdetail%2Fthvl2-hd%2F%22%7D</link>
-<thumbnail>https://static.thvli.vn/assets/thumbnail/2017/05/09/jcsqtzfi_THVL-2-HD-N.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Thuần Việt HD[/COLOR]</title>
