@@ -1,49 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <channels>
 <channel>
 <name>kenhthieunhi</name>
 <items>
 
 
-
-
 <item>
-<title>[COLOR ffff0000]TV[/COLOR] | Cable TV Channels</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
+<title>[COLOR ffff0000]YouTube[/COLOR]</title>
+<link>http://redirecttoyoutube</link>
+<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/youtube.png</thumbnail>
 </item>
-<item>
-<title>[COLOR ffff0000]Movies[/COLOR] English | [COLOR yellow]TV Shows[/COLOR] | [COLOR red]Movies 1[/COLOR]</title>
-<link>tomovies1</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movies1.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]Movies[/COLOR] English | Cartoons 8</title>
-<link>tocartoons8</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/cartoons8.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]Movies[/COLOR] English | CartoonGo</title>
-<link>tocartoongo</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/cartoongo.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]Movies[/COLOR] English | AnimeGo</title>
-<link>toanimego</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/animego.png</thumbnail>
-</item>
-
-<item>
-<title>[COLOR yellow]Cartoon[/COLOR]</title>
-<link>plugin://plugin.video.youtube/kodion/search/query/?q=cartoon</link>
-<thumbnail>https://yt3.ggpht.com/-u1ihm184kug/AAAAAAAAAAI/AAAAAAAAAAA/Fo5Oe2c1_C0/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
-</item>
-
-
-
 
 
 </items>
 </channel>
 </channels>
-
