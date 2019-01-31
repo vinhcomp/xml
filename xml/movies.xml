@@ -65,6 +65,11 @@
 
 
 <item>
+<title>[COLOR red]HongKong - China - Korea[/COLOR] | [COLOR red]Cable TV[/COLOR]</title>
+<link>tocablestv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
+</item>
+<item>
 <title>[COLOR red]HongKong - China - Korea[/COLOR] | DramaGo</title>
 <link>todramago</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/dramago.png</thumbnail>
