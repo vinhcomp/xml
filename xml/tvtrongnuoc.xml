@@ -43,11 +43,6 @@
 <thumbnail>https://i.imgur.com/JVuFpbW.png</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Thuần Việt HD[/COLOR]</title>
-<link>plugin://plugin.video.htvonline/play/%7B%22title%22%3A%22HTVC%20Thu%E1%BA%A7n%20Vi%E1%BB%87t%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htvc-thuan-viet-hd-2398.html%22%7D</link>
-<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/07/01/423779-THUANVIETHD-NEW_1.png</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]SCTV14 Phim Việt HD[/COLOR]</title>
 <link>http://saigonrtmp.tulix.tv/vchannel8/vchannel8/playlist.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sctv14.png</thumbnail>
