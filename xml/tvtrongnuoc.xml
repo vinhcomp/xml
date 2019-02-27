@@ -18,11 +18,6 @@
  
 
 <item>
-<title>[COLOR yellow]HTV2 HD[/COLOR]</title>
-<link>plugin://plugin.video.htvonline/play/%7B%22title%22%3A%22HTV7%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv2-hd-2669.html%22%7D</link>
-<thumbnail>http://img.hplus.com.vn/460x260/poster/2018/06/05/904719-HTV2HD.png</thumbnail>
-</item>  
-<item>
 <title>[COLOR yellow]HTV9 HD[/COLOR]</title>
 <link>plugin://plugin.video.xshare?url=http://vn.tvnet.gov.vn/kenh-truyen-hinh/1012/htv9&query=tvnet_play&page=1&mode=89</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
@@ -30,11 +25,6 @@
 <item>
 <title>[COLOR yellow]HTV9 HD[/COLOR]</title>
 <link>plugin://plugin.video.htvonline/play/%7B%22title%22%3A%22HTV9%20HD%20%28HPlus%29%22%2C%22url%22%3A%22http%3A%2F%2Fhplus.com.vn%2Fxem-kenh-htv9-hd-2667.html%22%7D</link>
-<thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]HTV9 HD[/COLOR]</title>
-<link>plugin://plugin.video.vietmediaF?action=play&thread_id=24633&url=zzsvOg9GzJ8e8m2fCHTOfTHHDCfiFfDjey%2FCtgXsFEeRAhWcshIrZWeWT7DG5VLKnL8gcIl7R9ryQVf8xSVtVA%3D%3D</link>
 <thumbnail>http://img.hplus.com.vn/355x200/poster/2016/09/01/650827-HTV9_FullHD.png</thumbnail>
 </item>
 <item>
