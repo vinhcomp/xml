@@ -12,6 +12,7 @@ import random
 import base64
 import time
 import thread
+import socket
 from datetime import datetime
 # Tham khảo xbmcswift2 framework cho kodi addon tại
 # http://xbmcswift2.readthedocs.io/en/latest/
