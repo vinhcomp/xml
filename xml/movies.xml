@@ -16,9 +16,14 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/fantastic.png</thumbnail>
 </item>
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Movies 1[/COLOR]</title>
-<link>tomovies1</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movies1.png</thumbnail>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Yoda[/COLOR]</title>
+<link>toyoda</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/yoda.png</thumbnail>
+</item>
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Supremacy Movie[/COLOR]</title>
+<link>tosupremacymovie</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/supremacymovie.png</thumbnail>
 </item>
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Sports - Movies - TV Shows[/COLOR] | [COLOR red]Cable TV[/COLOR]</title>
@@ -36,6 +41,11 @@
 <title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Kodi4VNLauncher[/COLOR]</title>
 <link>tokodi4vnlauncher</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Bimozie[/COLOR]</title>
+<link>tokodi4vnlauncher</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/bimozie.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Vietnamese[/COLOR] | Xóm Giải Trí</title>
