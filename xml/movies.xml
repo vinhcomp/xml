@@ -26,14 +26,24 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/supremacymovie.png</thumbnail>
 </item>
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Sports - Movies - TV Shows[/COLOR] | [COLOR red]Cable TV[/COLOR]</title>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Vinh-Live TV[/COLOR]</title>
+<link>tovinhlivetv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
+</item> 
+<item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Cable TV[/COLOR]</title>
 <link>tocablestv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
 </item> 
 
 
 <item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR yellow]Sports - Movies - TV Shows[/COLOR] | [COLOR red]Cable TV[/COLOR]</title>
+<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Vinh-Live TV[/COLOR]</title>
+<link>tovinhlivetv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Cable TV[/COLOR]</title>
 <link>tocablestv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
 </item>
@@ -74,6 +84,11 @@
 </item>
 
 
+<item>
+<title>[COLOR red]HongKong - China - Korea[/COLOR] | [COLOR orange]Vinh-Live TV[/COLOR]</title>
+<link>tovinhlivetv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
+</item>
 <item>
 <title>[COLOR red]HongKong - China - Korea[/COLOR] | [COLOR red]Cable TV[/COLOR]</title>
 <link>tocablestv</link>
