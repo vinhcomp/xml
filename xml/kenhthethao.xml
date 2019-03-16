@@ -5,6 +5,11 @@
 <items>
 
 <item>
+<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Vinh-Live TV[/COLOR]</title>
+<link>tovinhlivetv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
+</item>
+<item>
 <title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Gridironlegends[/COLOR]</title>
 <link>togridiron</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/gridiron.png</thumbnail>
@@ -94,12 +99,7 @@
 <link>toenter</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/enter.png</thumbnail>
 </item>
-  
-<item>
-<title>[COLOR lime]HTV Thể Thao HD[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F20251391%2Fevents%2F6385916/%28livestream.com%29?</link>
-<thumbnail>http://vetinhtv.com/tvstream_new/web/images/1663307422HTV%20THE%20THAO%20TV.png</thumbnail>
-</item>
+ 
 
 
   
