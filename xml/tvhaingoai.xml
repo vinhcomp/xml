@@ -6,13 +6,13 @@
 
 
 <item>
-<title>[COLOR red]CABLE TV | SPORTS | MOVIES | TV SHOWS[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
+<title>[COLOR mediumspringgreen]Vinh-Live TV[/COLOR] | [COLOR yellow]TV - Movies[/COLOR] | [COLOR red]Sports[/COLOR]</title>
+<link>tovinhlivetv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
 </item>
 <item>
 <title>[COLOR blue]---------------------------[/COLOR]</title>
-<link>tocablestv</link>
+<link>tovinhlivetv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
 </item>
 
