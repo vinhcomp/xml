@@ -7,16 +7,9 @@
 
 
 <item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]StreamHub[/COLOR][COLOR orange]:Go to Live TV->Android API->Snappy Streamz->ARABIAN TV[/COLOR]</title>
-<link>tostreamhub</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/streamhub.png</thumbnail>
-</item>
-  
-
-<item>
-<title>[COLOR lime]Al Jazeera English[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnVHt1_SWTZg</link>
-<thumbnail>https://yt3.ggpht.com/-c3pNXYa0Q7Q/AAAAAAAAAAI/AAAAAAAAAAA/_ccpfp5MaAs/s88-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Vinh-Live TV[/COLOR]</title>
+<link>tovinhlivetv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
 </item>
 
   
