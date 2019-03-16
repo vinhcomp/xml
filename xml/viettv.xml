@@ -6,56 +6,10 @@
 
 
 <item>
-<title>[COLOR blue]--------------------------------------------------------[/COLOR]</title>
-<link>tobeebtv</link>
-<thumbnail>https://www.hieuhien.vn/Uploads/images/game-ung-dung/ung-dung/xem-truyen-hinh/beebtv.png</thumbnail>
+<title>[COLOR mediumspringgreen]Vinh-Live TV[/COLOR] | [COLOR yellow]TV - Movies[/COLOR] | [COLOR red]Sports[/COLOR]</title>
+<link>tovinhlivetv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
 </item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Cable TV[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
-</item>  
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]TV Hải Ngoại[/COLOR]</title>
-<link>viettv24free</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/viettv242.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Kodi4VNLauncher[/COLOR]</title>
-<link>tokodi4vnlauncher</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]ITV Plus[/COLOR]</title>
-<link>toitv</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/itv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]VietMediaF[/COLOR]</title>
-<link>tovietmediaf</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vietmediaf.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]XSHARE[/COLOR]</title>
-<link>toxshare</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xshare.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Hieuhien Media[/COLOR]</title>
-<link>tohieuhientt</link>
-<thumbnail>https://cdn6.aptoide.com/imgs/8/e/0/8e013ab69c3ac9532cf3ffefea874e2c_icon.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]cCloud TV[/COLOR]</title>
-<link>toccloud</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/ccloud.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Pac-12[/COLOR]</title>
-<link>topac12</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/pac12.png</thumbnail>
-</item>
-
 
 
 
