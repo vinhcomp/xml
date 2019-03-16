@@ -6,14 +6,9 @@
 
 
 <item>
-<title>[COLOR red]KIDS CABLE TV | SPORTS | MOVIES | TV SHOWS[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]YouTube[/COLOR]</title>
-<link>http://redirecttoyoutube</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/youtube.png</thumbnail>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV[/COLOR] | [COLOR red]Vinh-Live TV[/COLOR]</title>
+<link>tovinhlivetv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
 </item>
 
 
