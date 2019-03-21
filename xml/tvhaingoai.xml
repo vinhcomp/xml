@@ -19,7 +19,7 @@
 
 <item>
 <title>[COLOR blue]Sài Gòn TV 57.5[/COLOR]</title>
-<link>http://dvr1tna.tulix.tv/live/1a5ea4b04ce0970e08fe1f4a1ba3e414/5c9328e8/vchannel22.m3u8</link>
+<link>http://dvr1tna.tulix.tv/live/ddc3e6614ad421f87408a6645c68bb9e/5c952632/vchannel22.m3u8</link>
 <thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
 </item>
 <item>
@@ -39,18 +39,18 @@
 </item>
 <item>
 <title>[COLOR blue]Vietoday TV[/COLOR]</title>
-<link>http://dvr1tna.tulix.tv/live/1a5ea4b04ce0970e08fe1f4a1ba3e414/5c9328e8/vchannel1.m3u8</link>
+<link>http://dvr1tna.tulix.tv/live/ddc3e6614ad421f87408a6645c68bb9e/5c952632/vchannel1.m3u8</link>
 <thumbnail>http://www.gazefi.com/viettodaytv/sites/all/themes/businessconnect/logo.png</thumbnail>
 </item>
 </item>
 <item>
 <title>[COLOR blue]Vietshow TV[/COLOR]</title>
-<link>http://dvr1tna.tulix.tv/live/1a5ea4b04ce0970e08fe1f4a1ba3e414/5c9328e8/vchannel3.m3u8</link>
+<link>http://dvr1tna.tulix.tv/live/ddc3e6614ad421f87408a6645c68bb9e/5c952632/vchannel3.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vstv.PNG</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VietSky TV[/COLOR]</title>
-<link>http://dvr1tna.tulix.tv/live/1a5ea4b04ce0970e08fe1f4a1ba3e414/5c9328e8/vchannel13.m3u8</link>
+<link>http://dvr1tna.tulix.tv/live/ddc3e6614ad421f87408a6645c68bb9e/5c952632/vchannel13.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vietsky.PNG</thumbnail>
 </item>
 <item>
@@ -60,27 +60,27 @@
 </item>
 <item>
 <title>[COLOR blue]On Film[/COLOR]</title>
-<link>http://tna6.tulix.tv/live/be64887c3112b4035c6927ab8985f37d/5c932902/vchannel4.m3u8</link>
+<link>http://tna6.tulix.tv/live/7d5b700ed55eccab92fba2bbf1ca1b73/5c952664/vchannel4.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onfilmtv.PNG</thumbnail>
 </item>
 <item>
 <title>[COLOR blue]On Football[/COLOR]</title>
-<link>http://tna6.tulix.tv/live/be64887c3112b4035c6927ab8985f37d/5c932902/vchannel11.m3u8</link>
+<link>http://tna6.tulix.tv/live/7d5b700ed55eccab92fba2bbf1ca1b73/5c952664/vchannel11.m3u8</link>
 <thumbnail>https://www.giniko.com/logos/190x110/932.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR blue]On Biz[/COLOR]</title>
-<link>http://tna6.tulix.tv/live/be64887c3112b4035c6927ab8985f37d/5c932902/vchannel5.m3u8</link>
+<link>http://tna6.tulix.tv/live/7d5b700ed55eccab92fba2bbf1ca1b73/5c952664/vchannel5.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/onbiztv.PNG</thumbnail>
 </item>
 <item>
 <title>[COLOR blue]E Channel[/COLOR]</title>
-<link>http://tna6.tulix.tv/live/be64887c3112b4035c6927ab8985f37d/5c932902/vchannel6.m3u8</link>
+<link>http://tna6.tulix.tv/live/7d5b700ed55eccab92fba2bbf1ca1b73/5c952664/vchannel6.m3u8</link>
 <thumbnail>https://www.giniko.com/logos/190x110/926.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR blue]Style TV[/COLOR]</title>
-<link>http://tna6.tulix.tv/live/be64887c3112b4035c6927ab8985f37d/5c932902/vchannel10.m3u8</link>
+<link>http://tna6.tulix.tv/live/7d5b700ed55eccab92fba2bbf1ca1b73/5c952664/vchannel10.m3u8</link>
 <thumbnail>https://www.giniko.com/logos/190x110/930.jpg</thumbnail>
 </item>
 <item>
