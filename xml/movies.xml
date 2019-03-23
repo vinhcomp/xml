@@ -6,6 +6,11 @@
 
 
 <item>
+<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Vinh-Live TV[/COLOR]</title>
+<link>tovinhlivetv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
+</item> 
+<item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Exodus[/COLOR]</title>
 <link>toexodus</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/exodus.png</thumbnail>
@@ -25,11 +30,6 @@
 <link>tosupremacymovie</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/supremacymovie.png</thumbnail>
 </item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Vinh-Live TV[/COLOR]</title>
-<link>tovinhlivetv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
-</item> 
 <item>
 <title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Cable TV[/COLOR]</title>
 <link>tocablestv</link>
@@ -58,11 +58,6 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/bimozie.png</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | Xóm Giải Trí</title>
-<link>redirecttoxomgiaitri</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xomgiaitri.png</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]Vietnamese[/COLOR] | XSHARE</title>
 <link>toxshare</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xshare.png</thumbnail>
@@ -81,6 +76,11 @@
 <title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Hieuhien Media[/COLOR]</title>
 <link>tohieuhientt</link>
 <thumbnail>https://cdn6.aptoide.com/imgs/8/e/0/8e013ab69c3ac9532cf3ffefea874e2c_icon.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Vietnamese[/COLOR] | Xóm Giải Trí</title>
+<link>redirecttoxomgiaitri</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/xomgiaitri.png</thumbnail>
 </item>
 
 
