@@ -7,39 +7,9 @@
   
   
 <item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]StreamHub[/COLOR][COLOR orange]:Go to Live TV->Android API->Snappy Streamz->INDIAN TV[/COLOR]</title>
-<link>tostreamhub</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/streamhub.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR mediumspringgreen]India[/COLOR] | [COLOR cornflowerblue]Zem TV[/COLOR]</title>
-<link>tozemtv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/zemtv.png</thumbnail>
-</item>  
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Pak India Live[/COLOR]</title>
-<link>redirecttopakindia</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/pakindia.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]FilmOn TV[/COLOR]</title>
-<link>tofilmon1</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/filmon1.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Shahid Arabic[/COLOR]</title>
-<link>redirecttoshahidmbc</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/shahidmbc.png</thumbnail>
-</item>
-<item>
-<title>[COLOR orange]Indian[/COLOR] | SominalTv</title>
-<link>tosominaltv</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/sominaltv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR orange]Indian[/COLOR] | MovieRulz</title>
-<link>tomovieru</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/movieru.png</thumbnail>
+<title>[COLOR mediumspringgreen]Vinh-Live TV[/COLOR] | [COLOR yellow]TV - Movies[/COLOR] | [COLOR red]Sports[/COLOR]</title>
+<link>tovinhlivetv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
 </item>
 
 
