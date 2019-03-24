@@ -19,7 +19,7 @@
 
 <item>
 <title>[COLOR blue]Sài Gòn TV 57.5[/COLOR]</title>
-<link>http://dvr1tna.tulix.tv/live/fef186d4cd0acbc607811a3f9f807146/5c97c11a/vchannel22.m3u8</link>
+<link>plugin://plugin.video.SportsDevil/?item=catcher=streams%26url=http://www.vietchannels.com/watch2.php?id=426%3F%26type=once%26icon=&mode=1</link>
 <thumbnail>http://www.viettv24.com/main/images/sgtv_logo.jpg</thumbnail>
 </item>
 <item>
@@ -39,13 +39,13 @@
 </item>
 <item>
 <title>[COLOR blue]Vietoday TV[/COLOR]</title>
-<link>http://dvr1tna.tulix.tv/live/fef186d4cd0acbc607811a3f9f807146/5c97c11a/vchannel1.m3u8</link>
+<link>plugin://plugin.video.SportsDevil/?item=catcher=streams%26url=https://www.vietchannels.com/watch2.php?id=425%3F%26type=once%26icon=&mode=1</link>
 <thumbnail>http://www.gazefi.com/viettodaytv/sites/all/themes/businessconnect/logo.png</thumbnail>
 </item>
 </item>
 <item>
 <title>[COLOR blue]Vietshow TV[/COLOR]</title>
-<link>http://dvr1tna.tulix.tv/live/fef186d4cd0acbc607811a3f9f807146/5c97c11a/vchannel3.m3u8</link>
+<link>plugin://plugin.video.SportsDevil/?item=catcher=streams%26url=https://www.vietchannels.com/watch2.php?id=427%3F%26type=once%26icon=&mode=1</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vstv.PNG</thumbnail>
 </item>
 <item>
