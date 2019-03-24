@@ -4,21 +4,10 @@
 <channel>
 <items>
 
-
 <item>
-<title>[COLOR lime]------------------------------------[/COLOR]</title>
-<link>tomobdro</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjNUcHcwMEkyS0gxUGRvQlMzaGpxSDQtZGNtUVZrSy1fQzhDSjJ1NEhmbmM/kenhthieunhi.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]Adryanlist[/COLOR]</title>
-<link>toadryanlist</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/adryanlist.png</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]TV[/COLOR] | [COLOR yellow]cCloud TV[/COLOR]</title>
-<link>toccloud</link>
-<thumbnail>https://googledrive.com/host/0B7zkkQwo5pr5fjVUZG5MRkhFalRKTHF0T0poZnd6aTZUbmx1ZDZWMkwtR3FHZFhtdTB4TTQ/ccloud.png</thumbnail>
+<title>[COLOR mediumspringgreen]Vinh-Live TV[/COLOR] | [COLOR yellow]TV - Movies[/COLOR] | [COLOR red]Sports[/COLOR]</title>
+<link>tovinhlivetv</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
 </item>
 
 
