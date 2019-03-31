@@ -396,8 +396,9 @@
 <link>http://210.245.20.94/hls/ktv3.m3u8</link>
 <thumbnail>http://img.hplus.com.vn/728x409/banner/2015/02/25/756317-khanh-hoa.png</thumbnail>
 </item>
+</item>
 <title>[COLOR yellow]Cà Mau CTV[/COLOR]</title>
-<link>rtmp://113.161.220.254/livepkgr/ playpath=livestream1?adbe-live-event=liveevent live=1 swfUrl=http://ctvcamau.vn/jwplayer/jwplayer.flash.swf pageUrl=http://ctvcamau.vn/</link>
+<link>http://tv.ctvcamau.vn/live/tv/tv.m3u8</link>
 <thumbnail>https://i.imgur.com/ulm0NQz.png</thumbnail>
 </item>
 <item>
@@ -457,7 +458,7 @@
 </item>
 <item>
 <title>[COLOR yellow]Hà Tĩnh[/COLOR]</title>
-<link>http://hatinhtv.vn/liveevent.m3u8</link>
+<link>http://171.244.141.125/hls/stream.m3u8</link>
 <thumbnail>https://i.imgur.com/fcKXNG9.png</thumbnail>
 </item>
 <item>
