@@ -140,12 +140,12 @@
 </item>
 <item>
 <title>[COLOR yellow]SET (106)[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu4hKB5uXmSFm</link>
+<link>http://set.flashmediacast.com:1935/SET/livestream/playlist.m3u8</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/set03.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]SET TV 57.4[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fset%2Fplaylist.m3u8%26u%3Dguest/live</link>
+<link>http://set.flashmediacast.com:1935/SET/livestream/playlist.m3u8</link>
 <thumbnail>http://www.viettv24.com/main/images/SETTV_logo.jpg</thumbnail>
 </item>
 <item>
