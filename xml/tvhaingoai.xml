@@ -24,11 +24,6 @@
 </item>
 <item>
 <title>[COLOR orange]Little Saigon TV 57.7[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F21388423%2Fevents%2F7992704/%28livestream.com%29?</link>
-<thumbnail>http://www.viettv24.com/main/images/littlesg.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR orange]Little Saigon TV 57.7[/COLOR]</title>
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=7992704&owner_id=21388423&video_id=LIVE</link>
 <thumbnail>http://www.viettv24.com/main/images/littlesg.jpg</thumbnail>
 </item>
