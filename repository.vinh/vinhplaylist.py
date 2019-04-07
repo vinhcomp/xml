@@ -992,7 +992,7 @@ def get_playable_url(url):
 				"GET", headers=headers,
 			)
 			j = json.loads(content)
-			url = j["stream_info"]["m3u8_url"]
+			url = j["stream_info"]["secure_m3u8_url"]
 		except:
 			pass
 	elif "onecloud.media" in url:
