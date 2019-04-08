@@ -53,11 +53,7 @@
 <link>plugin://plugin.video.SportsDevil/?item=catcher=streams%26url=https://www.vietchannels.com/watch2.php?id=448%3F%26type=once%26icon=&mode=1</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vietsky.PNG</thumbnail>
 </item>
-<item>
-<title>[COLOR lime]Việt Face TV 57.2[/COLOR]</title>
-<link>http://saigontvtv.saigon.ns01.us:1935/vf572caliisai/myStream/playlist.m3u8</link>
-<thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
-</item>
+
 <item>
 <title>[COLOR blue]On Film[/COLOR]</title>
 <link>plugin://plugin.video.SportsDevil/?item=catcher=streams%26url=https://www.vietchannels.com/watch2.php?id=428%3F%26type=once%26icon=&mode=1</link>
@@ -83,11 +79,13 @@
 <link>plugin://plugin.video.SportsDevil/?item=catcher=streams%26url=https://www.vietchannels.com/watch2.php?id=434%3F%26type=once%26icon=&mode=1</link>
 <thumbnail>https://www.giniko.com/logos/190x110/930.jpg</thumbnail>
 </item>
+
 <item>
-<title>[COLOR yellow]Việt News[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/hls/News.m3u8</link>
-<thumbnail>https://superrepo.org/static/images/icons/original/xservice.kodi4vn.maintenance.png.pagespeed.ic.BD2LHg25m3.png</thumbnail>
+<title>[COLOR orange]Vstar 57.1[/COLOR]</title>
+<link>plugin://plugin.video.vinh.livetv/play/https://livestream.com/api/accounts/26696585/events/8362144/%5BCOLOR+orange%5DLittle+Saigon+TV+57.7%5B%2FCOLOR%5D?&quot</link>
+<thumbnail>https://tv.trangvangusa.com/uploads/menu/thumbs/ee9948b61c111978c3924a92516219c9.jpg</thumbnail>
 </item>
+
 <item>
 <title>[COLOR yellow]Hài - TV Shows[/COLOR]</title>
 <link>http://cdn1.galaxyott.com/hls/HaiTVShows.m3u8</link>
@@ -345,7 +343,11 @@
 <thumbnail>http://www.viettv24.com/main/images/vusamedia_logo.jpg</thumbnail>
 </item>
 
-
+<item>
+<title>[COLOR lime]Việt Face TV 57.2[/COLOR]</title>
+<link>http://saigontvtv.saigon.ns01.us:1935/vf572caliisai/myStream/playlist.m3u8</link>
+<thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
+</item>
 <item>
 <title>[COLOR ffff0000]More TV Hải Ngoại[/COLOR]</title>
 <link>viettv24free</link>
