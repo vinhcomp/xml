@@ -81,9 +81,44 @@
 </item>
 
 <item>
-<title>[COLOR orange]Vstar 57.1 2[/COLOR]</title>
+<title>[COLOR orange]Vstar 57.1[/COLOR]</title>
 <link>plugin://plugin.video.vinh.livetv/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F26696585%2Fevents%2F8362144/%5BCOLOR+orange%5DLittle+Saigon+TV+57.7%5B%2FCOLOR%5D?&quot</link>
 <thumbnail>https://tv.trangvangusa.com/uploads/menu/thumbs/ee9948b61c111978c3924a92516219c9.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR orange]Việt Sky TV[/COLOR]</title>
+<link>plugin://plugin.video.vinh.livetv/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F27136431%2Fevents%2F8142772/%5BCOLOR+orange%5DLittle+Saigon+TV+57.7%5B%2FCOLOR%5D?&quot</link>
+<thumbnail>https://tv.trangvangusa.com/uploads/menu/thumbs/6ceb61926f5ba2d21b9a6c115b305e73.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR orange]Thế Giới Đó Đây[/COLOR]</title>
+<link>plugin://plugin.video.vinh.livetv/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F26696585%2Fevents%2F8007792/%5BCOLOR+orange%5DLittle+Saigon+TV+57.7%5B%2FCOLOR%5D?&quot</link>
+<thumbnail>https://tv.trangvangusa.com/uploads/menu/thumbs/410d293f936ccbd1127a5fe37ff18fb2.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR orange]Việt Asia TV[/COLOR]</title>
+<link>plugin://plugin.video.vinh.livetv/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F26696585%2Fevents%2F8200419/%5BCOLOR+orange%5DLittle+Saigon+TV+57.7%5B%2FCOLOR%5D?&quot</link>
+<thumbnail>https://tv.trangvangusa.com/uploads/menu/thumbs/f6a08746e51736a8093be2cfc7fbce0d.png</thumbnail>
+</item>
+<item>
+<title>[COLOR orange]Việt Zone TV[/COLOR]</title>
+<link>plugin://plugin.video.vinh.livetv/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F26696585%2Fevents%2F8260098/%5BCOLOR+orange%5DLittle+Saigon+TV+57.7%5B%2FCOLOR%5D?&quot</link>
+<thumbnail>https://tv.trangvangusa.com/uploads/menu/thumbs/8ce87140a0b1d201a52af38e7d0326cc.png</thumbnail>
+</item>
+<item>
+<title>[COLOR orange]VNA Entertainment 57.3[/COLOR]</title>
+<link>plugin://plugin.video.vinh.livetv/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F26696585%2Fevents%2F8338495/%5BCOLOR+orange%5DLittle+Saigon+TV+57.7%5B%2FCOLOR%5D?&quot</link>
+<thumbnail>https://tv.trangvangusa.com/uploads/menu/thumbs/057fd9b056479473a96cd5ebba9535b3.png</thumbnail>
+</item>
+<item>
+<title>[COLOR orange]Việt Phố TV[/COLOR]</title>
+<link>plugin://plugin.video.vinh.livetv/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F26696585%2Fevents%2F8397669/%5BCOLOR+orange%5DLittle+Saigon+TV+57.7%5B%2FCOLOR%5D?&quot</link>
+<thumbnail>https://tv.trangvangusa.com/uploads/menu/thumbs/f0423bb35e2d8a977acf1e390939259c.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR orange]Kênh Ẩm Thực[/COLOR]</title>
+<link>plugin://plugin.video.vinh.livetv/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F26696585%2Fevents%2F8415409/%5BCOLOR+orange%5DLittle+Saigon+TV+57.7%5B%2FCOLOR%5D?&quot</link>
+<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kenhamthuc.PNG</thumbnail>
 </item>
 
 <item>
@@ -116,16 +151,7 @@
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu1omi7Bv0Hsp</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/VANTV2.png</thumbnail>
 </item>
-<item>
-<title>[COLOR yellow]VGM TV (109)[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu%2BrLZM7aT1Un</link>
-<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/vietglobal.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VinaShop (110)[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu7Y9QkuzvR8k</link>
-<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/vinashop.png</thumbnail>
-</item>
+
 <item>
 <title>[COLOR yellow]Bolero (112)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu2N2SIB4yGcw</link>
@@ -178,21 +204,8 @@
 <link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fvbolero%2Fplaylist.m3u8%26u%3Dguest/live</link>
 <thumbnail>http://www.viettv24.com/main/images/VBolero-Logo.jpg</thumbnail>
 </item>
-<item>
-<title>[COLOR yellow]OmaiTV[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fomaitv%2Fplaylist.m3u8%26u%3Dguest/live</link>
-<thumbnail>http://www.viettv24.com/main/images/OmaiTV_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]USV Television[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fvatv%2Fplaylist.m3u8%26u%3Dguest/live</link>
-<thumbnail>http://www.viettv24.com/main/images/USVtelevision-logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Rạng Đông TV 8.8[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Frangdong%2Fplaylist.m3u8%26u%3Dguest/live</link>
-<thumbnail>http://www.viettv24.com/main/images/rangdong_logo.jpg</thumbnail>
-</item>
+
+
 <item>
 <title>[COLOR lime]KVLA TV CHANNEL 57.8[/COLOR]</title>
 <link>http://kvla.flashmediacast.com:1935/KVLA/livestream/playlist.m3u8</link>
@@ -264,16 +277,7 @@
 <link>http://uni6rtmp.tulix.tv/vbstv/vbsabr.smil/playlist.m3u8</link>
 <thumbnail>http://www.viettv24.com/main/images/vbs.jpg</thumbnail>
 </item>
-<item>
-<title>[COLOR cyan]VStar TV[/COLOR]</title>
-<link>http://saigontvtv.saigon.ns01.us:1935/VietStarTV/myStream/chunklist_w36065371.m3u8</link>
-<thumbnail>https://vietipbox.com/tv-logo/vstar-logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR cyan]KEENG TV[/COLOR]</title>
-<link>http://125.235.29.16/livetv/keeng.m3u8</link>
-<thumbnail>https://1.bp.blogspot.com/-Ek_ktGqwVvg/VMDKKr0TRKI/AAAAAAAAAKk/2sQrt_Kms-s/s1600/1.jpg</thumbnail>
-</item>
+
 
 <item>
 <title>[COLOR blue]Việt Sóng TV 47.7 WKTB – Atlanta-Georgia[/COLOR]</title>
@@ -306,6 +310,11 @@
 <title>[COLOR yellow]Phật Giáo (92)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb3AG5HUO5c%2FwtZn4HigOpU7</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/phatgiao.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Phật Pháp Trong Ta[/COLOR]</title>
+<link>plugin://plugin.video.vinh.livetv/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F26696585%2Fevents%2F8361268/%5BCOLOR+orange%5DLittle+Saigon+TV+57.7%5B%2FCOLOR%5D?&quot</link>
+<thumbnail>https://tv.trangvangusa.com/uploads/menu/thumbs/98d98db4f5c72bc9ec375b96d165514c.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]CTV (94)[/COLOR]</title>
@@ -342,7 +351,32 @@
 <link>plugin://plugin.video.kodi4vn.launcher/play/vusa</link>
 <thumbnail>http://www.viettv24.com/main/images/vusamedia_logo.jpg</thumbnail>
 </item>
+<item>
+<title>[COLOR yellow]VGM TV (109)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu%2BrLZM7aT1Un</link>
+<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/vietglobal.png</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]VinaShop (110)[/COLOR]</title>
+<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu7Y9QkuzvR8k</link>
+<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/vinashop.png</thumbnail>
+</item>
 
+<item>
+<title>[COLOR cyan]KEENG TV[/COLOR]</title>
+<link>http://125.235.29.16/livetv/keeng.m3u8</link>
+<thumbnail>https://1.bp.blogspot.com/-Ek_ktGqwVvg/VMDKKr0TRKI/AAAAAAAAAKk/2sQrt_Kms-s/s1600/1.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]USV Television[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fvatv%2Fplaylist.m3u8%26u%3Dguest/live</link>
+<thumbnail>http://www.viettv24.com/main/images/USVtelevision-logo.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Rạng Đông TV 8.8[/COLOR]</title>
+<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Frangdong%2Fplaylist.m3u8%26u%3Dguest/live</link>
+<thumbnail>http://www.viettv24.com/main/images/rangdong_logo.jpg</thumbnail>
+</item>
 <item>
 <title>[COLOR lime]Việt Face TV 57.2[/COLOR]</title>
 <link>http://saigontvtv.saigon.ns01.us:1935/vf572caliisai/myStream/playlist.m3u8</link>
