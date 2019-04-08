@@ -24,8 +24,13 @@
 </item>
 <item>
 <title>[COLOR orange]Little Saigon TV 57.7[/COLOR]</title>
-<link>plugin://plugin.video.livestream/?url=%2Flive_now&mode=104&name=&event_id=7992704&owner_id=21388423&video_id=LIVE</link>
-<thumbnail>http://www.viettv24.com/main/images/littlesg.jpg</thumbnail>
+<link>plugin://plugin.video.vinh.livetv/play/https%3A%2F%2Flivestream.com%2Fapi%2Faccounts%2F21388423%2Fevents%2F7992704</link>
+<thumbnail>https://tv.trangvangusa.com/uploads/menu/thumbs/0fc52e281493dcc6a5a29e0b622265f8.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR orange]Little Saigon TV 57.7[/COLOR]</title>
+<link>plugin://plugin.video.livestream/play/?url=%2Flive_now&mode=104&event_id=7992704&owner_id=21388423&video_id=LIVE</link>
+<thumbnail>https://tv.trangvangusa.com/uploads/menu/thumbs/0fc52e281493dcc6a5a29e0b622265f8.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Vnews (100)[/COLOR]</title>
