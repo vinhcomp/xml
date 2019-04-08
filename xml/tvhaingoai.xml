@@ -121,16 +121,7 @@
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kenhamthuc.PNG</thumbnail>
 </item>
 
-<item>
-<title>[COLOR yellow]Hài - TV Shows[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/hls/HaiTVShows.m3u8</link>
-<thumbnail>https://lh3.googleusercontent.com/sOLpCJsXrNiRfHDO8FTq-vzl6RV6vg4mxD0YDfY0LGTN4elDk-vG7fRHFqUPfqnkQtE=w300</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Việt Nam - Vẻ Đẹp Bất Tận[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/hls/VanHoa.m3u8</link>
-<thumbnail>https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG</thumbnail>
-</item>
+
 <item>
 <title>[COLOR yellow]Film 24h (107)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu0f9C4l86Hqm</link>
@@ -362,6 +353,17 @@
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/vinashop.png</thumbnail>
 </item>
 
+
+<item>
+<title>[COLOR yellow]Hài - TV Shows[/COLOR]</title>
+<link>http://cdn1.galaxyott.com/hls/HaiTVShows.m3u8</link>
+<thumbnail>https://lh3.googleusercontent.com/sOLpCJsXrNiRfHDO8FTq-vzl6RV6vg4mxD0YDfY0LGTN4elDk-vG7fRHFqUPfqnkQtE=w300</thumbnail>
+</item>
+<item>
+<title>[COLOR yellow]Việt Nam - Vẻ Đẹp Bất Tận[/COLOR]</title>
+<link>http://cdn1.galaxyott.com/hls/VanHoa.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG</thumbnail>
+</item>
 <item>
 <title>[COLOR cyan]KEENG TV[/COLOR]</title>
 <link>http://125.235.29.16/livetv/keeng.m3u8</link>
