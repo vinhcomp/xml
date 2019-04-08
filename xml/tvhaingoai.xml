@@ -163,11 +163,7 @@
 <link>http://set.flashmediacast.com:1935/SET/livestream/playlist.m3u8</link>
 <thumbnail>http://www.viettv24.com/main/images/SETTV_logo.jpg</thumbnail>
 </item>
-<item>
-<title>[COLOR yellow]VIETV Canada (111)[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu6o6WzI7QWZY</link>
-<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/VIETV_CANADA.jpg</thumbnail>
-</item>
+
 <item>
 <title>[COLOR yellow]VIETV Dallas (122)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwuzFABwfy1iVB</link>
@@ -177,11 +173,6 @@
 <title>[COLOR yellow]VIETV Houston (125)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu77li16%2B5lMH</link>
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/VIETV_HOUSTON.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]VIETV Los Angeles (131)[/COLOR]</title>
-<link>plugin://plugin.video.kodi4vn.launcher/play/uno-DUnEMQ52bb04ayU908vwu6TfO0D%2FS8QI</link>
-<thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/VIETV_LOS_ANGELES.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VIETV San Jose (141)[/COLOR]</title>
@@ -319,16 +310,6 @@
 <thumbnail>http://ims.v247tv.com/upload/images/channels/logoes/Schedule_TV.jpg</thumbnail>
 </item>
 <item>
-<title>[COLOR yellow]Viet TV24 APP (Giới Thiệu và Hướng Dẫn)[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fdgtv%2Fplaylist.m3u8%26u%3Dguest/live</link>
-<thumbnail>http://www.viettv24.com/main/images/dong_giao_tv.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Hải Lê Television[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fttt%2Fplaylist.m3u8%26u%3Dguest/live</link>
-<thumbnail>http://www.viettv24.com/main/images/Hai_Le_Logo.jpg</thumbnail>
-</item>
-<item>
 <title>[COLOR yellow]VUSA Media TV (Thử Nghiệm)[/COLOR]</title>
 <link>plugin://plugin.video.kodi4vn.launcher/play/vusa</link>
 <thumbnail>http://www.viettv24.com/main/images/vusamedia_logo.jpg</thumbnail>
@@ -345,52 +326,7 @@
 </item>
 
 
-<item>
-<title>[COLOR yellow]S Channel 56.6[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fschannel%2Fplaylist.m3u8%26u%3Dguest/live</link>
-<thumbnail>http://www.viettv24.com/main/images/schannel_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]iSaigon - VATV News[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fvatv%2Fplaylist.m3u8%26u%3Dguest/live</link>
-<thumbnail>http://www.viettv24.com/main/images/iSaigon_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Hài - TV Shows[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/hls/HaiTVShows.m3u8</link>
-<thumbnail>https://lh3.googleusercontent.com/sOLpCJsXrNiRfHDO8FTq-vzl6RV6vg4mxD0YDfY0LGTN4elDk-vG7fRHFqUPfqnkQtE=w300</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Việt Nam - Vẻ Đẹp Bất Tận[/COLOR]</title>
-<link>http://cdn1.galaxyott.com/hls/VanHoa.m3u8</link>
-<thumbnail>https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG</thumbnail>
-</item>
-<item>
-<title>[COLOR cyan]KEENG TV[/COLOR]</title>
-<link>http://125.235.29.16/livetv/keeng.m3u8</link>
-<thumbnail>https://1.bp.blogspot.com/-Ek_ktGqwVvg/VMDKKr0TRKI/AAAAAAAAAKk/2sQrt_Kms-s/s1600/1.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]USV Television[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Fvatv%2Fplaylist.m3u8%26u%3Dguest/live</link>
-<thumbnail>http://www.viettv24.com/main/images/USVtelevision-logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Rạng Đông TV 8.8[/COLOR]</title>
-<link>plugin://plugin.video.thongld.vnplaylist/play/http%3A%2F%2Fcdn1.galaxyott.com%2Fapi%2Fa3b34c0871dc2fd51eec5559b68f709d%3Fchn%3D%2Fsecure%2Fstreamer%2Frangdong%2Fplaylist.m3u8%26u%3Dguest/live</link>
-<thumbnail>http://www.viettv24.com/main/images/rangdong_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR lime]Việt Face TV 57.2[/COLOR]</title>
-<link>http://saigontvtv.saigon.ns01.us:1935/vf572caliisai/myStream/playlist.m3u8</link>
-<thumbnail>http://www.viettv24.com/main/images/vietfaceTV_logo.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR ffff0000]More TV Hải Ngoại[/COLOR]</title>
-<link>viettv24free</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/viettv242.png</thumbnail>
-</item> 
-  
+ 
   
 </items>
 </channel>
