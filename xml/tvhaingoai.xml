@@ -183,7 +183,7 @@
 
 <item>
 <title>[COLOR yellow]VBolero TV[/COLOR]</title>
-<link>http://master.de.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vbolero/playlist.m3u8&u=guest</link>
+<link>http://master.v2.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vbolero/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/VBolero-Logo.jpg</thumbnail>
 </item>
 
@@ -196,32 +196,32 @@
 
 <item>
 <title>[COLOR yellow]VNA TV 57.3[/COLOR]</title>
-<link>http://master.de.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vnatv/playlist.m3u8&u=guest</link>
+<link>http://master.v2.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vnatv/playlist.m3u8&u=guest</link>
 <thumbnail>http://vnatv573.com/images/file/7aoqzb7y0QgBAhQW/vnatv573-logo.png</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Hài 24-7 9.1[/COLOR]</title>
-<link>http://master.de.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/hai/playlist.m3u8&u=guest</link>
+<link>http://master.v2.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/hai/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/Hai%2024-7.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Sân Khấu & Cuộc Đời 9.6[/COLOR]</title>
-<link>http://master.de.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/cailuong/playlist.m3u8&u=guest</link>
+<link>http://master.v2.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/cailuong/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/skcd.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VPopTV 9.3[/COLOR]</title>
-<link>http://master.de.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vpoptv/playlist.m3u8&u=guest</link>
+<link>http://master.v2.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vpoptv/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/VpopTV_logo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]VMusic 9.2[/COLOR]</title>
-<link>http://master.de.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/mtv/playlist.m3u8&u=guest</link>
+<link>http://master.v2.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/mtv/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/Vmusic_logo.jpg</thumbnail>
 </item>
 <item>
 <title>[COLOR yellow]Việt Media TV[/COLOR]</title>
-<link>http://master.de.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vietmediatv/playlist.m3u8&u=guest</link>
+<link>http://master.v2.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vietmediatv/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/VietMediaTV_logo.jpg</thumbnail>
 </item>
 
@@ -276,7 +276,7 @@
  
 <item>
 <title>[COLOR lime]Vô Môn Thiền Tự[/COLOR]</title>
-<link>http://master.de.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vmtt/playlist.m3u8&u=guest</link>
+<link>http://master.v2.galaxyott.com/api/a3b34c0871dc2fd51eec5559b68f709d?chn=/secure/streamer/vmtt/playlist.m3u8&u=guest</link>
 <thumbnail>http://www.viettv24.com/main/images/Vo_Mon_Thien_Tu.jpg</thumbnail>
 </item>
 <item>
