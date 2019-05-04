@@ -1,113 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <channels>
 <channel>
-<name>kenhthethao</name>
+<name>tonghop</name>
 <items>
 
+
 <item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Vinh-Live TV[/COLOR]</title>
+<title>[COLOR mediumspringgreen]Vinh-Live TV[/COLOR] | [COLOR yellow]TV - Movies - Music[/COLOR] | [COLOR red]Sports[/COLOR]</title>
 <link>tovinhlivetv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
 </item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Gridironlegends[/COLOR]</title>
-<link>togridiron</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/gridiron.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Supremacy Sports[/COLOR]->Sport Events</title>
-<link>tosupremacysports</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/supremacy.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Sport365 Live[/COLOR]</title>
-<link>tosport365</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sport365.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]SportsDevil[/COLOR]</title>
-<link>tosportsdevil</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sportsdevil.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Football Replays[/COLOR]</title>
-<link>tofootball</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/football.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Kodi4VNLauncher[/COLOR]</title>
-<link>tokodi4vnlauncher</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Pac-12[/COLOR]</title>
-<link>topac12</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/pac12.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Planet MMA[/COLOR]</title>
-<link>toplanetmma</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/planetmma.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Pro Sport[/COLOR]</title>
-<link>toprosport</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/prosport.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]ESPN 3[/COLOR]</title>
-<link>toespn3</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/espn3.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]cCloud TV[/COLOR]</title>
-<link>toccloud</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/ccloud.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Adryanlist[/COLOR]</title>
-<link>toadryanlist</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/adryanlist.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]ZemTV[/COLOR]</title>
-<link>tozemtv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/zemtv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]NBA Replays[/COLOR]</title>
-<link>tonbareplays</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/nbareplays.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]NBA Full Games[/COLOR]</title>
-<link>tonbafull</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/nbafull.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]ITV Plus[/COLOR]</title>
-<link>toitv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/itv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Cable TV[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Sports[/COLOR] | [COLOR ffff0000]Entertainment HUB[/COLOR]</title>
-<link>toenter</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/enter.png</thumbnail>
-</item>
- 
 
 
-  
-  
 </items>
 </channel>
 </channels>
-
-
-
-
