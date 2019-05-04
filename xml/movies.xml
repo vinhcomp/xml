@@ -1,105 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <channels>
 <channel>
-<name>Movies</name>
+<name>tonghop</name>
 <items>
 
 
 <item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Vinh-Live TV[/COLOR]</title>
+<title>[COLOR mediumspringgreen]Vinh-Live TV[/COLOR] | [COLOR yellow]TV - Movies - Music[/COLOR] | [COLOR red]Sports[/COLOR]</title>
 <link>tovinhlivetv</link>
 <thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
-</item> 
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Exodus[/COLOR]</title>
-<link>toexodus</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/exodus.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Fantastic[/COLOR]</title>
-<link>tofantastic</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/fantastic.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Yoda[/COLOR]</title>
-<link>toyoda</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/yoda.jpg</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Supremacy Movie[/COLOR]</title>
-<link>tosupremacymovie</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/supremacymovie.png</thumbnail>
-</item>
-<item>
-<title>[COLOR mediumspringgreen]English[/COLOR] | [COLOR yellow]Movies - TV Shows[/COLOR] | [COLOR red]Cable TV[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
-</item> 
-
-
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Vinh-Live TV[/COLOR]</title>
-<link>tovinhlivetv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Cable TV[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Kodi4VNLauncher[/COLOR]</title>
-<link>tokodi4vnlauncher</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/kodi4vnlauncher.png</thumbnail>
-</item>
-<item>
-<title>[COLOR yellow]Vietnamese[/COLOR] | [COLOR orange]Bimozie[/COLOR]</title>
-<link>tobimozie</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/bimozie.png</thumbnail>
-</item>
-
-
-<item>
-<title>[COLOR red]HongKong - China - Korea[/COLOR] | [COLOR orange]Vinh-Live TV[/COLOR]</title>
-<link>tovinhlivetv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/vinhlivetv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR red]HongKong - China - Korea[/COLOR] | [COLOR red]Cable TV[/COLOR]</title>
-<link>tocablestv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/cablestv2.png</thumbnail>
-</item>
-<item>
-<title>[COLOR red]HongKong - China - Korea[/COLOR] | DramaGo</title>
-<link>todramago</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/dramago.png</thumbnail>
-</item>
-<item>
-<title>[COLOR red]HongKong - China - Korea[/COLOR] | ICDrama</title>
-<link>toicdrama</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/icdrama.png</thumbnail>
-</item>
-<item>
-<title>[COLOR red]HongKong - China - Korea[/COLOR] | Mega Khmer</title>
-<link>tomegakhmer</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/megakhmer.png</thumbnail>
-</item>
-
-
-<item>
-<title>[COLOR orange]Indian[/COLOR] | SominalTv</title>
-<link>tosominaltv</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/sominaltv.png</thumbnail>
-</item>
-<item>
-<title>[COLOR orange]Indian[/COLOR] | MovieRulz</title>
-<link>tomovieru</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/movieru.png</thumbnail>
-</item>
-<item>
-<title>[COLOR orange]Indian[/COLOR] | [COLOR cornflowerblue]Pak India Live[/COLOR]</title>
-<link>redirecttopakindia</link>
-<thumbnail>https://raw.githubusercontent.com/vinhcomp/xml/master/repository.vinh/pakindia.png</thumbnail>
 </item>
 
 
