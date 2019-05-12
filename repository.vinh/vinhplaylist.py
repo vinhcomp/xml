@@ -909,6 +909,12 @@ def get_playable_url(url):
 			yid = match[0][len(match[0])-1].replace('v/', '')
 			url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
 
+	#Open LSP settings enable regex
+	elif "enableregex" in url:		
+		lsp_addon = xbmcaddon.Addon('plugin.video.live.streamspro')
+		lsp_settings = xbmcaddon.Addon('plugin.video.live.streamspro').openSettings()
+		xbmc.executebuiltin('lsp_settings')
+
 	elif "sphim.tv" in url:
 		http.follow_redirects = False
 		get_sphim = "https://docs.google.com/spreadsheets/d/13VzQebjGYac5hxe1I-z1pIvMiNB0gSG7oWJlFHWnqsA/export?format=tsv&gid=1082544232"
