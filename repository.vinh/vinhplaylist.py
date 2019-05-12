@@ -86,7 +86,7 @@ sheet_headers = {
 	"Accept-Encoding": "gzip, deflate, sdch"
 }
 
-
+apk = xbmc.getCondVisibility('system.platform.android')
 
 def GetSheetIDFromSettings():
 	#sid = "1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss"
@@ -914,6 +914,19 @@ def get_playable_url(url):
 		lsp_addon = xbmcaddon.Addon('plugin.video.live.streamspro')
 		lsp_settings = xbmcaddon.Addon('plugin.video.live.streamspro').openSettings()
 		xbmc.executebuiltin('lsp_settings')
+
+	#Open android apk
+	elif "openmobdro" in url and apk:
+		#apk = xbmc.getCondVisibility('system.platform.android')
+		xbmc.executebuiltin('StartAndroidActivity(com.mobdro.android)')
+
+	#Open youtube apk SmartTV
+	elif "open_yt2" in url and apk:
+		xbmc.executebuiltin('StartAndroidActivity(com.google.android.youtube.tv)')
+
+	#Open youtube apk FireTV (Silk or Firefox)
+	elif "open_yt3" in url and apk:
+		xbmc.executebuiltin('StartAndroidActivity(org.chromium.youtube_apk)')
 
 	elif "sphim.tv" in url:
 		http.follow_redirects = False
