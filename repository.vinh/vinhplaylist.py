@@ -14,6 +14,58 @@ import time
 import thread
 import socket
 from datetime import datetime
+
+import xbmcplugin
+import xbmcgui
+import xbmcaddon
+import xbmcvfs
+import traceback
+import cookielib,base64
+from xml.sax.saxutils import escape
+import json
+
+import sys, traceback
+from contextlib import contextmanager
+import xbmc
+
+#Enable inputstream.adaptive
+@contextmanager
+def enabled_addon(addon):
+    data = json.loads(xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"Addons.GetAddonDetails","params":{"addonid":"'+addon+'","properties":["enabled","installed"]},"id":5}'))
+    if "result" in data:
+        xbmc.log('Add-on InputStream Adaptive installed',xbmc.LOGNOTICE)
+        if data["result"]["addon"]["enabled"]:
+            xbmc.log('Add-on InputStream Adaptive enabled',xbmc.LOGNOTICE)
+        else:
+            xbmc.log('Add-on InputStream Adaptive enabling',xbmc.LOGNOTICE)
+            result_enabled = xbmc.executeJSONRPC('{"jsonrpc":"2.0","method":"Addons.SetAddonEnabled","params":{"addonid":"'+addon+'","enabled":true},"id":9}')
+            xbmc.log('Add-on InputStream Adaptive enabled',xbmc.LOGNOTICE)
+    else:
+        xbmc.log('Add-on InputStream Adaptive not installed',xbmc.LOGNOTICE)
+    yield
+
+def run():
+    with enabled_addon("inputstream.adaptive"):
+        addon = xbmcaddon.Addon("plugin.video.vinh.livetv")
+run()
+
+#Open youtubbe settings to enable MPEG-Dash to play youtube live
+'''yt_addon = xbmcaddon.Addon('plugin.video.youtube')
+if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
+	dialog = xbmcgui.Dialog()
+	yes = dialog.yesno(
+		'This Channel Need to Enable MPEG-DASH to Play!\n',
+		'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
+		yeslabel='OK',
+		nolabel='CANCEL'
+		)
+	if yes:
+		yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
+		xbmc.executebuiltin('yt_settings')
+else: 
+    addon = xbmcaddon.Addon("plugin.video.vinh.livetv")'''
+
+
 # Tham khảo xbmcswift2 framework cho kodi addon tại
 # http://xbmcswift2.readthedocs.io/en/latest/
 from kodiswift import Plugin, xbmc, xbmcaddon, xbmcgui, actions
@@ -33,6 +85,7 @@ sheet_headers = {
 	"User-Agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/7.0)",
 	"Accept-Encoding": "gzip, deflate, sdch"
 }
+
 
 
 def GetSheetIDFromSettings():
@@ -797,7 +850,7 @@ def play_url(url, title=""):
 
 
 def get_playable_url(url):
-	if "youtube" in url:
+	if "youtube.com/watch" in url:
 		match = re.compile(
 			'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
 		yid = match[0][len(match[0])-1].replace('v/', '')
@@ -834,6 +887,28 @@ def get_playable_url(url):
 					return resp_json["link_play"]
 			except:
 				pass
+	
+
+	#Open youtube settings, enable MPEG-Dash to play youtube live	
+	elif "youtube.com/embed/" in url:		
+		yt_addon = xbmcaddon.Addon('plugin.video.youtube')
+		if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
+			dialog = xbmcgui.Dialog()
+			yes = dialog.yesno(
+				'This Channel Need to Enable MPEG-DASH to Play!\n',
+				'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
+				yeslabel='OK',
+				nolabel='CANCEL'
+				)
+			if yes:
+				yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
+				xbmc.executebuiltin('yt_settings')
+		else:
+			match = re.compile(
+				'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
+			yid = match[0][len(match[0])-1].replace('v/', '')
+			url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+
 	elif "sphim.tv" in url:
 		http.follow_redirects = False
 		get_sphim = "https://docs.google.com/spreadsheets/d/13VzQebjGYac5hxe1I-z1pIvMiNB0gSG7oWJlFHWnqsA/export?format=tsv&gid=1082544232"
@@ -993,6 +1068,27 @@ def get_playable_url(url):
 			)
 			j = json.loads(content)
 			url = j["stream_info"]["secure_m3u8_url"]
+		except:
+			pass
+	elif "get-stream.json" in url:
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		try:
+			if "events" not in url:
+				(resp, content) = http.request(
+					url,
+					"GET", headers=headers,
+				)
+				match = re.search("accounts/\d+/events/\d+", content)
+				url = "https://http://118.107.85.21:1340/%s" % match.group()
+			(resp, content) = http.request(
+				url,
+				"GET", headers=headers,
+			)
+			j = json.loads(content)
+			url = j["name"]["url"]
 		except:
 			pass
 	elif "onecloud.media" in url:
