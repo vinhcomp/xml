@@ -3,6 +3,7 @@
 import httplib2
 import json
 import re
+import requests
 import urllib
 import os
 import uuid
@@ -87,6 +88,7 @@ sheet_headers = {
 }
 
 apk = xbmc.getCondVisibility('system.platform.android')
+
 
 def GetSheetIDFromSettings():
 	#sid = "1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss"
@@ -887,7 +889,6 @@ def get_playable_url(url):
 					return resp_json["link_play"]
 			except:
 				pass
-	
 
 	#Open youtube settings, enable MPEG-Dash to play youtube live	
 	elif "youtube.com/embed/" in url:		
@@ -1089,6 +1090,47 @@ def get_playable_url(url):
 			url = j["stream_info"]["secure_m3u8_url"]
 		except:
 			pass
+	
+	#elif "viettoday" in url:
+		#import requests
+		#import re
+		#headers = {
+			#'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			#'Accept-Encoding': 'gzip, deflate',
+		#}
+		#link ='http://www.vietchannels.com/watch2.php?id=425'
+		#source = requests.get(link,headers=headers)
+		#keyid = re.findall("dvr1tna.tulix.tv/live/(.*?)'", source.text)[0]
+		#url ='http://dvr1tna.tulix.tv/live/'+keyid
+
+	#Add Play vietchannels
+	elif "vietchannels.com" in url:
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		source = requests.get(url,headers=headers)
+		keyid = re.findall("dvr1tna.tulix.tv/live/(.*?)'", source.text)[0]
+		url ='http://dvr1tna.tulix.tv/live/'+keyid
+
+	elif "ustv247.com" in url:
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		source = requests.get(url,headers=headers)
+		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
+		url ='http://live.savitar.tv/'+keyid
+
+	elif "ustvgo.net" in url:
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		source = requests.get(url,headers=headers)
+		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
+		url ='http://live.savitar.tv/'+keyid
+
 	elif "get-stream.json" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
