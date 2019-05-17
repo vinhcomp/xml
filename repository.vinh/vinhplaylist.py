@@ -1131,27 +1131,36 @@ def get_playable_url(url):
 		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
 		url ='http://live.savitar.tv/'+keyid
 
+	elif "guide66.info" in url:
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		source = requests.get(url,headers=headers)
+		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
+		url ='http://live.savitar.tv/'+keyid
+
 	elif "get-stream.json" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
 			'Accept-Encoding': 'gzip, deflate',
 		}
-		try:
-			if "events" not in url:
-				(resp, content) = http.request(
-					url,
-					"GET", headers=headers,
-				)
-				match = re.search("accounts/\d+/events/\d+", content)
-				url = "https://http://118.107.85.21:1340/%s" % match.group()
-			(resp, content) = http.request(
-				url,
-				"GET", headers=headers,
-			)
-			j = json.loads(content)
-			url = j["name"]["url"]
-		except:
-			pass
+		source = requests.get(url,headers=headers)
+		keyid = re.findall('http://118.107.114.5:1935/tvnet/(.*?)"', source.text)[0]
+		url = 'http://118.107.114.5:1935/tvnet/'+keyid
+
+	elif "vn.tvnet.gov.vn" in url:
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		source = requests.get(url,headers=headers)
+		keyid = re.findall('http://118.107.85.21:1340/(.*?)"', source.text)[0]
+		link = 'http://118.107.85.21:1340/'+keyid
+		source = requests.get(link,headers=headers)
+		keyid = re.findall('http://118.107.114.5:1935/tvnet/(.*?)"', source.text)[0]
+		url = 'http://118.107.114.5:1935/tvnet/'+keyid
+
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
 		oc_url = "http://onecloud.media/embed/" + ocid
