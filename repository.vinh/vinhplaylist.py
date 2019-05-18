@@ -1164,6 +1164,15 @@ def get_playable_url(url):
 		keyid = re.findall('http://118.107.114.5:1935/tvnet/(.*?)"', source.text)[0]
 		url = 'http://118.107.114.5:1935/tvnet/'+keyid
 
+	elif "4ktech.net" in url:
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		source = requests.get(url,headers=headers)
+		keyid = re.findall('http://live.4ktech.net:(.*?) ', source.text)[0]
+		url = 'http://live.4ktech.net:'+keyid
+
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
 		oc_url = "http://onecloud.media/embed/" + ocid
