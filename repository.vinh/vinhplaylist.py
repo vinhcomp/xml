@@ -1110,8 +1110,11 @@ def get_playable_url(url):
 			'Accept-Encoding': 'gzip, deflate',
 		}
 		source = requests.get(url,headers=headers)
-		keyid = re.findall("dvr1tna.tulix.tv/live/(.*?)'", source.text)[0]
-		url ='http://dvr1tna.tulix.tv/live/'+keyid
+		keyid = re.findall("tulix.tv/live/(.*?)'", source.text)[0]
+		if "http://tna6.tulix.tv/live/" in source.text:
+			url = 'http://tna6.tulix.tv/live/' + keyid
+		if "http://dvr1tna.tulix.tv/live/" in source.text:
+			url = 'http://dvr1tna.tulix.tv/live/' + keyid
 
 	elif "ustv247.com" in url:
 		headers = {
