@@ -1173,6 +1173,15 @@ def get_playable_url(url):
 		keyid = re.findall('http://live.4ktech.net:(.*?) ', source.text)[0]
 		url = 'http://live.4ktech.net:'+keyid
 
+	elif "7streams.online" in url:
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+			'Accept-Encoding': 'None'
+		}
+		(resp, content) = http.request(url,"GET",headers=headers)
+		match = re.search("var videoLink = '(.+?)'", content)
+		return match.group(1)
+
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
 		oc_url = "http://onecloud.media/embed/" + ocid
