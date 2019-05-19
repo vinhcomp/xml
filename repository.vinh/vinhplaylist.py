@@ -15,6 +15,7 @@ import time
 import thread
 import socket
 from datetime import datetime
+from urlresolver.plugins.lib import jsunpack
 
 import xbmcplugin
 import xbmcgui
@@ -1172,6 +1173,17 @@ def get_playable_url(url):
 		source = requests.get(url,headers=headers)
 		keyid = re.findall('http://live.4ktech.net:(.*?) ', source.text)[0]
 		url = 'http://live.4ktech.net:'+keyid
+
+	elif "arconaitv.us" in url:
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		source = requests.get(url,headers=headers)
+		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
+		#return re.findall('(?:source|file|src):[\'"](h[^\'"]+)',decode)[0]+'|user-agent=ipad' #this one will work too
+		#return re.search("src='(.*?\.m3u8)'", decode)[0]
+		return re.findall("src:'(https.*?)'", decode)[0]+'|user-agent=ipad'
 
 	elif "7streams.online" in url:
 		headers = {
