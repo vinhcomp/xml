@@ -17,18 +17,20 @@ import socket
 from datetime import datetime
 from urlresolver.plugins.lib import jsunpack
 
-import xbmcplugin
-import xbmcgui
-import xbmcaddon
-import xbmcvfs
-import traceback
-import cookielib,base64
-from xml.sax.saxutils import escape
-import json
+from kodiswift import Plugin, xbmc, xbmcaddon, xbmcgui, actions
 
-import sys, traceback
+#import xbmcplugin
+#import xbmcgui
+#import xbmcaddon
+#import xbmcvfs
+#import traceback
+#import cookielib,base64
+#from xml.sax.saxutils import escape
+#import json
+#import sys, traceback
+
 from contextlib import contextmanager
-import xbmc
+#import xbmc
 
 #Enable inputstream.adaptive
 @contextmanager
@@ -70,7 +72,7 @@ else:
 
 # Tham khảo xbmcswift2 framework cho kodi addon tại
 # http://xbmcswift2.readthedocs.io/en/latest/
-from kodiswift import Plugin, xbmc, xbmcaddon, xbmcgui, actions
+#from kodiswift import Plugin, xbmc, xbmcaddon, xbmcgui, actions
 path = xbmc.translatePath(
 	xbmcaddon.Addon().getAddonInfo('path')).decode("utf-8")
 cache = xbmc.translatePath(os.path.join(path, ".cache"))
@@ -861,7 +863,6 @@ def play_url(url, title=""):
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
 	else:
 		plugin.set_resolved_url(url)
-
 
 def get_playable_url(url):
 	if "youtube.com/watch" in url:
