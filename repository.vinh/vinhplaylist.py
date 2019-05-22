@@ -1197,6 +1197,65 @@ def get_playable_url(url):
 		#return re.search("src='(.*?\.m3u8)'", decode)[0]
 		return re.findall("src:'(https.*?)'", decode)[0]+'|user-agent=ipad'
 
+	#Begin youtube live testing
+	#elif "pjlive" in url:
+		#headers = {
+			#'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			#'Accept-Encoding': 'gzip, deflate',
+		#}
+		#link = 'https://www.youtube.com/channel/UCY2jUnU118sVkdj2xafiJ0g'
+		#source = requests.get(link,headers=headers)
+		#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
+		#url = 'https://www.youtube.com/embed/'+keyid
+		#if "youtube.com/embed/" in url:		
+			#yt_addon = xbmcaddon.Addon('plugin.video.youtube')
+			#if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
+				#dialog = xbmcgui.Dialog()
+				#yes = dialog.yesno(
+					#'This Channel Need to Enable MPEG-DASH to Play!\n',
+					#'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
+					#yeslabel='OK',
+					#nolabel='CANCEL'
+					#)
+				#if yes:
+					#yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
+					#xbmc.executebuiltin('yt_settings')
+			#else:
+				#match = re.compile(
+					#'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
+				#yid = match[0][len(match[0])-1].replace('v/', '')
+				#url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+
+	#Youtube live
+	#channel/UCyu8StPfZWapR6rfW_JgqcA
+	elif "channel/" in url:
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		link = 'https://www.youtube.com/' + url
+		source = requests.get(link,headers=headers)
+		keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
+		url = 'https://www.youtube.com/embed/'+keyid
+		if "youtube.com/embed/" in url:		
+			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
+			if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
+				dialog = xbmcgui.Dialog()
+				yes = dialog.yesno(
+					'This Channel Need to Enable MPEG-DASH to Play!\n',
+					'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
+					yeslabel='OK',
+					nolabel='CANCEL'
+					)
+				if yes:
+					yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
+					xbmc.executebuiltin('yt_settings')
+			else:
+				match = re.compile(
+					'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
+				yid = match[0][len(match[0])-1].replace('v/', '')
+				url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+
 	elif "7streams.online" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
