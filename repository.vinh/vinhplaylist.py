@@ -1177,6 +1177,14 @@ def get_playable_url(url):
 		keyid = re.findall('http://118.107.114.5:1935/tvnet/(.*?)"', source.text)[0]
 		url = 'http://118.107.114.5:1935/tvnet/'+keyid
 
+	#http://photocall.tv/beinsports1/
+	elif "http://photocall.tv/" in url:
+		name  = re.findall('http://photocall.tv/(.*?)/',url)[0]
+		source = requests.get('http://photocall.tv/', headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
+		link = re.findall('href="(.*?%s)"' % name,source)[0]
+		source = requests.get(link,headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Referer':'http://photocall.tv/','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
+		return re.findall("'(ht.*?wmsAuthSign.*?)'",source)[0]+'|User-Agent=iPad&Referer='+link
+
 	elif "4ktech.net" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
@@ -1237,7 +1245,7 @@ def get_playable_url(url):
 		source = requests.get(link,headers=headers)
 		keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
 		url = 'https://www.youtube.com/embed/'+keyid
-		if "youtube.com/embed/" in url:		
+		if "youtube.com/embed/" in url:
 			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
 			if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
 				dialog = xbmcgui.Dialog()
