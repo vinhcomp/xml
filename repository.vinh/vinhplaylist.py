@@ -1185,6 +1185,13 @@ def get_playable_url(url):
 		source = requests.get(link,headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Referer':'http://photocall.tv/','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
 		return re.findall("'(ht.*?wmsAuthSign.*?)'",source)[0]+'|User-Agent=iPad&Referer='+link
 
+	elif "http://cablegratis.tv" in url:
+		source = requests.get(url, headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
+		link = re.findall('iframe.*?src="(.*?)"',source)[0]
+		source = requests.get(link,headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Referer':'http://cablegratis.tv','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
+		#return re.findall('source: "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+link
+		return re.findall(': "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+link
+
 	elif "4ktech.net" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
