@@ -1192,6 +1192,11 @@ def get_playable_url(url):
 		#return re.findall('source: "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+link
 		return re.findall(': "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+link
 
+	elif "https://ok.ru" in url:
+		source = requests.get(url, headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
+		link = re.findall("hlsMasterPlaylistUrl.*?&quot;.*?&quot;(.*?)video.m3u8",source)[0]
+		url = link+'video.m3u8'+'?'
+
 	elif "4ktech.net" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
