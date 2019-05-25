@@ -234,6 +234,7 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 		item["thumbnail"] = getValue(row["c"][2])
 		item["info"] = {"plot": getValue(row["c"][3])}
 		if "plugin://" in item["path"]:
+			item["path"] = item["path"].replace('&amp;', '&')
 			if "install-repo" in item["path"]:
 				item["is_playable"] = False
 			elif re.search("plugin.video.vinh.livetv/(.+?)/.+?\://", item["path"]):
@@ -315,6 +316,7 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				yt_route = "ytcp" if "playlists" in item["path"] else "ytc"
 				yt_cid = re.compile("youtube.com/channel/(.+?)$").findall(item["path"])[0]
 				item["path"] = "plugin://plugin.video.youtube/channel/%s/" % yt_cid
+
 			elif "youtube.com/playlist" in item["path"]:
 				# https://www.youtube.com/playlist?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI
 				yt_pid = re.compile("list=(.+?)$").findall(item["path"])[0]
@@ -1123,11 +1125,11 @@ def get_playable_url(url):
 			'Accept-Encoding': 'gzip, deflate',
 		}
 		source = requests.get(url,headers=headers)
-		keyid = re.findall("tulix.tv/live/(.*?)'", source.text)[0]
+		keyid = re.findall("tulix.tv/live/(.*?)m3u8", source.text)[0]
 		if "http://tna6.tulix.tv/live/" in source.text:
-			url = 'http://tna6.tulix.tv/live/' + keyid
+			url = 'http://tna6.tulix.tv/live/' + keyid + 'm3u8'
 		if "http://dvr1tna.tulix.tv/live/" in source.text:
-			url = 'http://dvr1tna.tulix.tv/live/' + keyid
+			url = 'http://dvr1tna.tulix.tv/live/' + keyid + 'm3u8'
 
 	elif "ustv247.com" in url:
 		headers = {
@@ -1196,7 +1198,7 @@ def get_playable_url(url):
 		source = requests.get(url, headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
 		link = re.findall("hlsMasterPlaylistUrl.*?&quot;.*?&quot;(.*?)video.m3u8",source)[0]
 		url = link+'video.m3u8'+'?'
-
+		
 	elif "4ktech.net" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
