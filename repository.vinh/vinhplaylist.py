@@ -905,7 +905,7 @@ def get_playable_url(url):
 			except:
 				pass
 
-	#Open youtube settings, enable MPEG-Dash to play youtube live
+	#Open youtube settings, enable MPEG-Dash to play youtube live, and for channel/UCyu8StPfZWapR6rfW_JgqcA return
 	elif "youtube.com/embed/" in url:
 		yt_addon = xbmcaddon.Addon('plugin.video.youtube')
 		if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
@@ -1231,7 +1231,10 @@ def get_playable_url(url):
 	elif "https://ok.ru" in url:
 		source = requests.get(url, headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
 		link = re.findall("hlsMasterPlaylistUrl.*?&quot;.*?&quot;(.*?)video.m3u8",source)[0]
-		url = link+'video.m3u8'+'?'
+		if "1138686500439" in url:
+			url = link+'video.m3u8'+'/489041496663_low/index.m3u8' # Change video quality
+		elif "1412925038167" in url:
+			url = link+'video.m3u8'+'/574132259415_lowest/index.m3u8' # Change video quality
 		
 	elif "4ktech.net" in url:
 		headers = {
