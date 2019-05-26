@@ -906,7 +906,7 @@ def get_playable_url(url):
 				pass
 
 	#Open youtube settings, enable MPEG-Dash to play youtube live
-	elif "youtube.com/embed/" in url:		
+	elif "youtube.com/embed/" in url:
 		yt_addon = xbmcaddon.Addon('plugin.video.youtube')
 		if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
 			dialog = xbmcgui.Dialog()
@@ -919,11 +919,45 @@ def get_playable_url(url):
 			if yes:
 				yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
 				xbmc.executebuiltin('yt_settings')
+				return get_playable_url(url)
+			return None
 		else:
 			match = re.compile(
 				'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
 			yid = match[0][len(match[0])-1].replace('v/', '')
 			url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+
+	#Youtube live
+	#channel/UCyu8StPfZWapR6rfW_JgqcA
+	elif "channel/" in url:
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		link = 'https://www.youtube.com/' + url
+		source = requests.get(link,headers=headers)
+		keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
+		url = 'https://www.youtube.com/embed/'+keyid
+		if "youtube.com/embed/" in url:
+			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
+			if yt_addon.getSetting('kodion.video.quality.mpd') != 'true': # Youtube settings not choose MPEG-Dash yet
+				dialog = xbmcgui.Dialog()
+				yes = dialog.yesno(
+					'This Channel Need to Enable MPEG-DASH to Play!\n',
+					'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
+					yeslabel='OK',
+					nolabel='CANCEL'
+					)
+				if yes:
+					yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
+					xbmc.executebuiltin('yt_settings')
+					return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to "youtube.com/embed/"
+				return None
+			else:
+				match = re.compile(
+					'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
+				yid = match[0][len(match[0])-1].replace('v/', '')
+				url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
 
 	#Open LSP settings enable regex
 	elif "enableregex" in url:		
@@ -1247,38 +1281,6 @@ def get_playable_url(url):
 					#'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
 				#yid = match[0][len(match[0])-1].replace('v/', '')
 				#url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
-
-	#Youtube live
-	#channel/UCyu8StPfZWapR6rfW_JgqcA
-	elif "channel/" in url:
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
-		link = 'https://www.youtube.com/' + url
-		source = requests.get(link,headers=headers)
-		keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
-		url = 'https://www.youtube.com/embed/'+keyid
-		if "youtube.com/embed/" in url:
-			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
-			if yt_addon.getSetting('kodion.video.quality.mpd') != 'true': # Youtube settings not choose MPEG-Dash yet
-				dialog = xbmcgui.Dialog()
-				yes = dialog.yesno(
-					'This Channel Need to Enable MPEG-DASH to Play!\n',
-					'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
-					yeslabel='OK',
-					nolabel='CANCEL'
-					)
-				if yes:
-					yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
-					xbmc.executebuiltin('yt_settings')
-					return get_playable_url(url) # Will play if select MPEG-Dash, if not slect Will popup again settings and ask again, but won't play.
-				return None
-			else:
-				match = re.compile(
-					'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
-				yid = match[0][len(match[0])-1].replace('v/', '')
-				url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
 
 	elif "7streams.online" in url:
 		headers = {
