@@ -1231,10 +1231,7 @@ def get_playable_url(url):
 	elif "https://ok.ru" in url:
 		source = requests.get(url, headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
 		link = re.findall("hlsMasterPlaylistUrl.*?&quot;.*?&quot;(.*?)video.m3u8",source)[0]
-		if "1138686500439" in url:
-			url = link+'video.m3u8'+'/489041496663_low/index.m3u8' # Change video quality
-		elif "1412925038167" in url:
-			url = link+'video.m3u8'+'/574132259415_lowest/index.m3u8' # Change video quality
+		url = link+'video.m3u8'
 		
 	elif "4ktech.net" in url:
 		headers = {
