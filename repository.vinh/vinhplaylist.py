@@ -905,7 +905,7 @@ def get_playable_url(url):
 			except:
 				pass
 
-	#Open youtube settings, enable MPEG-Dash to play youtube live	
+	#Open youtube settings, enable MPEG-Dash to play youtube live
 	elif "youtube.com/embed/" in url:		
 		yt_addon = xbmcaddon.Addon('plugin.video.youtube')
 		if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
@@ -1261,7 +1261,7 @@ def get_playable_url(url):
 		url = 'https://www.youtube.com/embed/'+keyid
 		if "youtube.com/embed/" in url:
 			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
-			if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
+			if yt_addon.getSetting('kodion.video.quality.mpd') != 'true': # Youtube settings not choose MPEG-Dash yet
 				dialog = xbmcgui.Dialog()
 				yes = dialog.yesno(
 					'This Channel Need to Enable MPEG-DASH to Play!\n',
@@ -1272,6 +1272,8 @@ def get_playable_url(url):
 				if yes:
 					yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
 					xbmc.executebuiltin('yt_settings')
+					return get_playable_url(url) # Will play if select MPEG-Dash, if not slect Will popup again settings and ask again, but won't play.
+				return None
 			else:
 				match = re.compile(
 					'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
