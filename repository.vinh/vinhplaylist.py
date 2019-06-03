@@ -18,7 +18,6 @@ from datetime import datetime
 from urlresolver.plugins.lib import jsunpack
 
 from kodiswift import Plugin, xbmc, xbmcaddon, xbmcgui, actions
-
 #import xbmcplugin
 #import xbmcgui
 #import xbmcaddon
@@ -52,23 +51,6 @@ def run():
     with enabled_addon("inputstream.adaptive"):
         addon = xbmcaddon.Addon("plugin.video.vinh.livetv")
 run()
-
-#Open youtubbe settings to enable MPEG-Dash to play youtube live
-'''yt_addon = xbmcaddon.Addon('plugin.video.youtube')
-if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
-	dialog = xbmcgui.Dialog()
-	yes = dialog.yesno(
-		'This Channel Need to Enable MPEG-DASH to Play!\n',
-		'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
-		yeslabel='OK',
-		nolabel='CANCEL'
-		)
-	if yes:
-		yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
-		xbmc.executebuiltin('yt_settings')
-else: 
-    addon = xbmcaddon.Addon("plugin.video.vinh.livetv")'''
-
 
 # Tham khảo xbmcswift2 framework cho kodi addon tại
 # http://xbmcswift2.readthedocs.io/en/latest/
@@ -234,7 +216,7 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 		item["thumbnail"] = getValue(row["c"][2])
 		item["info"] = {"plot": getValue(row["c"][3])}
 		if "plugin://" in item["path"]:
-			item["path"] = item["path"].replace('&amp;', '&')
+			item["path"] = item["path"].replace('&amp;', '&') # Favorite link
 			if "install-repo" in item["path"]:
 				item["is_playable"] = False
 			elif re.search("plugin.video.vinh.livetv/(.+?)/.+?\://", item["path"]):
@@ -257,6 +239,42 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 			item["label"] = "[I]%s[/I]" % item["label"]
 			item["is_playable"] = False
 			item["path"] = pluginrootpath + "/executebuiltin/-"
+
+#		elif "chaturbate.com" in item["path"]:
+#			import util, urllib2
+#			def playVideo(params):
+#				response = urllib2.urlopen(params['video'])
+#				if response and response.getcode() == 200:
+#					content = response.read()
+#					videoLink = util.extract(content, "src='", "'")
+#					util.playMedia(params['title'], params['image'], videoLink, 'Video')
+#				else:
+#					util.showError(WEB_PAGE_BASE, 'Could not open URL %s to get video information' % (params['video']))
+#			def buildMenu():
+#				url = WEB_PAGE_BASE + 'female-cams/'
+#				response = urllib2.urlopen(url)
+#				if response and response.getcode() == 200:
+#					content = response.read()
+#					videos = util.extractAll(content, '<li class="room_list_room">', '</li>')
+#					for video in videos:
+#						params = {'play':1}
+#						#params['video'] = WEB_PAGE_BASE + util.extract(video, 'a href="', '\"')
+#						params['video'] = WEB_PAGE_BASE + util.extract(video, '/follow/unfollow/', '\"')
+#						params['image'] = util.extract(video, '<img src="', '\"')
+#						#params['title'] = util.extract(video, '</a>', '<') + ' (%s)' % (u'Fran\u00e7ais' if '19H' in params['video'] else 'Arabe')
+#						params['title'] = util.extract(video, '/follow/unfollow/', '/\"')
+#						link = util.makeLink(params)
+#						util.addMenuItem(params['title'], link, 'DefaultVideo.png', params['image'], False)
+#					util.endListing()
+#				else:
+#					util.showError(WEB_PAGE_BASE, 'Could not open URL %s to create menu' % (url))
+#			WEB_PAGE_BASE = 'https://chaturbate.com/'
+#			parameters = util.parseParameters()
+#			if 'play' in parameters:
+#				playVideo(parameters)
+#			else:
+#				buildMenu()
+
 		else:
 			if "spreadsheets/d/" in item["path"]:
 				# https://docs.google.com/spreadsheets/d/1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss/edit#gid=0
@@ -377,7 +395,6 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				item["thumbnail"] = "http://1.bp.blogspot.com/-gc1x9VtxIg0/VbggLVxszWI/AAAAAAAAANo/Msz5Wu0wN4E/s1600/playlist-advertorial.png"
 				items.append(item)
 	return items
-
 
 @plugin.route('/remove-playlists/', name="remove_all")
 @plugin.route('/remove-playlists/<item>')
@@ -1192,14 +1209,14 @@ def get_playable_url(url):
 		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
 		url ='http://live.savitar.tv/'+keyid
 
-	elif "get-stream.json" in url:
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
-		source = requests.get(url,headers=headers)
-		keyid = re.findall('http://118.107.114.5:1935/tvnet/(.*?)"', source.text)[0]
-		url = 'http://118.107.114.5:1935/tvnet/'+keyid
+	#elif "get-stream.json" in url:
+		#headers = {
+			#'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			#'Accept-Encoding': 'gzip, deflate',
+		#}
+		#source = requests.get(url,headers=headers)
+		#keyid = re.findall('http://118.107.114.5:1935/tvnet/(.*?)"', source.text)[0]
+		#url = 'http://118.107.114.5:1935/tvnet/'+keyid
 
 	elif "vn.tvnet.gov.vn" in url:
 		headers = {
@@ -1207,11 +1224,13 @@ def get_playable_url(url):
 			'Accept-Encoding': 'gzip, deflate',
 		}
 		source = requests.get(url,headers=headers)
-		keyid = re.findall('http://118.107.85.21:1340/(.*?)"', source.text)[0]
-		link = 'http://118.107.85.21:1340/'+keyid
+		#keyid = re.findall('http://118.107.85.21:1340/(.*?)"', source.text)[0]
+		#link = 'http://118.107.85.21:1340/'+keyid
+		link = re.findall('data-file="(.*?)"', source.text)[0]
 		source = requests.get(link,headers=headers)
-		keyid = re.findall('http://118.107.114.5:1935/tvnet/(.*?)"', source.text)[0]
-		url = 'http://118.107.114.5:1935/tvnet/'+keyid
+		#keyid = re.findall('http://118.107.114.5:1935/tvnet/(.*?)"', source.text)[0]
+		#url = 'http://118.107.114.5:1935/tvnet/'+keyid
+		url = re.findall('url": "(.*?)"', source.text)[0]
 
 	#http://photocall.tv/beinsports1/
 	elif "http://photocall.tv/" in url:
@@ -1230,8 +1249,9 @@ def get_playable_url(url):
 
 	elif "https://ok.ru" in url:
 		source = requests.get(url, headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
-		link = re.findall("hlsMasterPlaylistUrl.*?&quot;.*?&quot;(.*?)video.m3u8",source)[0]
-		url = link+'video.m3u8'
+		#link = re.findall("hlsMasterPlaylistUrl.*?&quot;.*?&quot;(.*?)video.m3u8",source)[0]
+		#url = link+'video.m3u8'
+		url = re.findall("hlsMasterPlaylistUrl\\\&quot;:\\\&quot;(.*?)\?",source)[0]
 		
 	elif "4ktech.net" in url:
 		headers = {
