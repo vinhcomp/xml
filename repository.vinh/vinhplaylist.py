@@ -27,7 +27,6 @@ from kodiswift import Plugin, xbmc, xbmcaddon, xbmcgui, actions
 #from xml.sax.saxutils import escape
 #import json
 #import sys, traceback
-
 from contextlib import contextmanager
 #import xbmc
 
@@ -1272,6 +1271,36 @@ def get_playable_url(url):
 		#return re.findall('(?:source|file|src):[\'"](h[^\'"]+)',decode)[0]+'|user-agent=ipad' #this one will work too
 		#return re.search("src='(.*?\.m3u8)'", decode)[0]
 		return re.findall("src:'(https.*?)'", decode)[0]+'|user-agent=ipad'
+
+	elif "https://vtvgo.vn" in url:
+		header = {
+		"User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" ,
+		"Accept-Encoding" : "gzip, deflate" ,
+		"Referer" : url ,
+		"Content-Type" : "application/x-www-form-urlencoded; charset=UTF-8" ,
+		"Origin" : "https://vtvgo.vn" ,
+		"X-Requested-With" : "XMLHttpRequest"
+		}
+		agent = "|user-agent=ipad&referer=https://vtvgo.vn/trang-chu.html"
+		session = requests . Session ( )
+		session . headers . update ( header )
+		source = session . get ( url )
+		#page_data = source . text . encode ( "utf8" ) #don't need to encode:from vietnamese to code
+		#datas = {
+		#"type_id" : "1" ,
+		#"id" : re . search ( "id = (\d+);" , page_data ) . group ( 1 ) ,
+		#"time" : re . search ( "time = '(\d+)';" , page_data ) . group ( 1 ) ,
+		#"token" : re . search ( "token = '(.+?)';" , page_data ) . group ( 1 )
+		#}
+		#\d: any number, '+' 1 or more
+		datas = {
+		"type_id" : "1" ,
+		"id" : re . search ( "id = (\d+);" , source.text ) . group ( 1 ) ,
+		"time" : re . search ( "time = '(\d+)';" , source.text ) . group ( 1 ) ,
+		"token" : re . search ( "token = '(.+?)';" , source.text ) . group ( 1 )
+		}
+		source = session . post ( "https://vtvgo.vn/ajax-get-stream" , data = datas , verify = False ) #verify: optional
+		return source . json ( ) [ "stream_url" ] [ 0 ] + agent
 
 	#Begin youtube live testing
 	#elif "pjlive" in url:
