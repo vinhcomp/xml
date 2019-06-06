@@ -976,19 +976,31 @@ def get_playable_url(url):
 				yid = match[0][len(match[0])-1].replace('v/', '')
 				url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
 
-	#youtube live, ytlive/0/channel/UCwobzUc3z-0PrFpoRxNszXQ, 0 can be change to any int number, if channel have more than 1 live tv
+	#youtube live, ytlive/0/channel/UCwobzUc3z-0PrFpoRxNszXQ, 0 can be change to any int number, if ytchannel have more than 1 live channel
 	elif url.startswith('ytlive'):
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
 			'Accept-Encoding': 'gzip, deflate',
 		}
-		livenumber=url[7] #will get the number of live tv if more than 1, 0 is the first live tv in yt channel
+		#livenumber=url[7] #will get the number of live channel if more than 1, 0 is the first live channel in ytchannel
+		livenumber = re.findall('ytlive/(.?)/channel', url)[0]
 		livenumberint=int(livenumber) # convert str to int
-		liveid=url[9:] 
+		#liveid=url[9:]
+		liveid = re.findall('ytlive/./([^$]+)', url)[0]
 		link = 'https://www.youtube.com/' + liveid
 		source = requests.get(link,headers=headers)
-		keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[:] # will get all match, keyid: list
-		keyid = keyid[livenumberint] # will get one of the match list
+		#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[:] # will get all match, keyid: list
+		try:
+			keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint] # will get one of the match list
+			#keyid = keyid[livenumberint] # will get one of the match list
+			#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
+		except:
+			keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
+			line1 = "[COLOR yellow]Đài Hiện Tại Không Phát[/COLOR]"
+			line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau[/COLOR]"
+			dlg = xbmcgui.Dialog()
+			dlg.ok("Channel Offline Now - Please Try Again Later", line1, line2)
+
 		url = 'https://www.youtube.com/embed/'+keyid
 		if "youtube.com/embed/" in url:
 			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
@@ -1269,7 +1281,7 @@ def get_playable_url(url):
 
 	#http://photocall.tv/beinsports1/
 	elif "http://photocall.tv/" in url:
-		name  = re.findall('http://photocall.tv/(.*?)/',url)[0]
+		name  = re.findall('http://photocall.tv/(.*?)/',url)[0] # str bz [0]
 		source = requests.get('http://photocall.tv/', headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
 		link = re.findall('href="(.*?%s)"' % name,source)[0]
 		source = requests.get(link,headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Referer':'http://photocall.tv/','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
