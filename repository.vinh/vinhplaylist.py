@@ -995,12 +995,11 @@ def get_playable_url(url):
 			#keyid = keyid[livenumberint] # will get one of the match list
 			#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
 		except:
-			keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
+			#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
 			line1 = "[COLOR yellow]Đài Hiện Tại Không Phát[/COLOR]"
 			line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau[/COLOR]"
 			dlg = xbmcgui.Dialog()
 			dlg.ok("Channel Offline Now - Please Try Again Later", line1, line2)
-
 		url = 'https://www.youtube.com/embed/'+keyid
 		if "youtube.com/embed/" in url:
 			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
