@@ -992,15 +992,19 @@ def get_playable_url(url):
 		#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[:] # will get all match, keyid: list
 		try:
 			keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint] # will get one of the match list
+			url = 'https://www.youtube.com/embed/'+keyid
 			#keyid = keyid[livenumberint] # will get one of the match list
 			#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
 		except:
-			#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
-			line1 = "[COLOR yellow]Đài Hiện Tại Không Phát[/COLOR]"
-			line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau[/COLOR]"
-			dlg = xbmcgui.Dialog()
-			dlg.ok("Channel Offline Now - Please Try Again Later", line1, line2)
-		url = 'https://www.youtube.com/embed/'+keyid
+			try:
+				keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint-livenumberint] # will try to return firt live channel
+				url = 'https://www.youtube.com/embed/'+keyid
+			except: # will show error message when ytchannel with no live channel
+				line1 = "[COLOR yellow]Đài Hiện Tại Không Phát.[/COLOR]"
+				line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau![/COLOR]"
+				dlg = xbmcgui.Dialog()
+				dlg.ok("Channel Offline Now - Please Try Again Later", line1, line2)
+		#url = 'https://www.youtube.com/embed/'+keyid
 		if "youtube.com/embed/" in url:
 			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
 			if yt_addon.getSetting('kodion.video.quality.mpd') != 'true': # Youtube settings not choose MPEG-Dash yet
@@ -1202,18 +1206,6 @@ def get_playable_url(url):
 			url = j["stream_info"]["secure_m3u8_url"]
 		except:
 			pass
-	
-	#elif "viettoday" in url:
-		#import requests
-		#import re
-		#headers = {
-			#'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			#'Accept-Encoding': 'gzip, deflate',
-		#}
-		#link ='http://www.vietchannels.com/watch2.php?id=425'
-		#source = requests.get(link,headers=headers)
-		#keyid = re.findall("dvr1tna.tulix.tv/live/(.*?)'", source.text)[0]
-		#url ='http://dvr1tna.tulix.tv/live/'+keyid
 
 	#Add Play vietchannels
 	elif "vietchannels.com" in url:
