@@ -983,10 +983,10 @@ def get_playable_url(url):
 			'Accept-Encoding': 'gzip, deflate',
 		}
 		#livenumber=url[7] #will get the number of live channel if more than 1, 0 is the first live channel in ytchannel
-		livenumber = re.findall('ytlive/(.?)/channel', url)[0]
+		livenumber = re.findall('ytlive/(.*?)/channel', url)[0]
 		livenumberint=int(livenumber) # convert str to int
 		#liveid=url[9:]
-		liveid = re.findall('ytlive/./([^$]+)', url)[0]
+		liveid = re.findall('ytlive/.*?/([^$]+)', url)[0]
 		link = 'https://www.youtube.com/' + liveid
 		source = requests.get(link,headers=headers)
 		#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[:] # will get all match, keyid: list
