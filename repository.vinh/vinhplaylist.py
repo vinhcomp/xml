@@ -1356,8 +1356,8 @@ def get_playable_url(url):
 		match = re.search("var videoLink = '(.+?)'", content)
 		return match.group(1)
 
-	elif "http://www.mediafire.com" in url:
-		xbmc.Player().play(url)
+	#elif "http://www.mediafire.com" in url:
+		#xbmc.Player().play(url)
 
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
