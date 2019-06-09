@@ -339,6 +339,12 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				yt_pid = re.compile("list=(.+?)$").findall(item["path"])[0]
 				item["path"] = "plugin://plugin.video.youtube/playlist/%s/" % yt_pid
 
+			elif item["path"].startswith('ytsearch'):
+				#ytsearch/nhu loan
+				item["path"]=item["path"].replace('ytsearch/', '')
+				item["path"]=item["path"].replace(' ', '%20')
+				item["path"]='plugin://plugin.video.youtube/kodion/search/query/?q='+item["path"]
+
 			elif re.search("\.ts$", item["path"]):
 				item["path"] = "plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&use_proxy_for_chunks=True&name=%s" % (
 					urllib.quote(item["path"]),
@@ -1340,35 +1346,6 @@ def get_playable_url(url):
 		}
 		source = session . post ( "https://vtvgo.vn/ajax-get-stream" , data = datas , verify = False ) #verify: optional
 		return source . json ( ) [ "stream_url" ] [ 0 ] + agent
-
-	#Begin youtube live testing
-	#elif "pjlive" in url:
-		#headers = {
-			#'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			#'Accept-Encoding': 'gzip, deflate',
-		#}
-		#link = 'https://www.youtube.com/channel/UCY2jUnU118sVkdj2xafiJ0g'
-		#source = requests.get(link,headers=headers)
-		#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
-		#url = 'https://www.youtube.com/embed/'+keyid
-		#if "youtube.com/embed/" in url:		
-			#yt_addon = xbmcaddon.Addon('plugin.video.youtube')
-			#if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
-				#dialog = xbmcgui.Dialog()
-				#yes = dialog.yesno(
-					#'This Channel Need to Enable MPEG-DASH to Play!\n',
-					#'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
-					#yeslabel='OK',
-					#nolabel='CANCEL'
-					#)
-				#if yes:
-					#yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
-					#xbmc.executebuiltin('yt_settings')
-			#else:
-				#match = re.compile(
-					#'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
-				#yid = match[0][len(match[0])-1].replace('v/', '')
-				#url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
 
 	elif "7streams.online" in url:
 		headers = {
