@@ -239,7 +239,7 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 			item["is_playable"] = False
 			item["path"] = pluginrootpath + "/executebuiltin/-"
 
-		elif item["path"].startswith('https://fluxustv.blogspot.com') or item["path"].startswith('https://fluxuslust.blogspot.com'):
+		elif 'blogspot.com' in item["path"]:
 			headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
 			'Accept-Encoding': 'gzip, deflate',}
 			source=requests.get(item["path"], headers=headers)
@@ -1236,7 +1236,7 @@ def get_playable_url(url):
 		if "http://dvr1tna.tulix.tv/live/" in source.text:
 			url = 'http://dvr1tna.tulix.tv/live/' + keyid + 'm3u8'
 
-	elif "ustv247.com" in url:
+	elif any(domain in url for domain in['ustv247.com', 'ustvgo.net', 'ustv247.tv', 'watchnewslive.net', 'guide66.info']):
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
 			'Accept-Encoding': 'gzip, deflate',
@@ -1244,57 +1244,7 @@ def get_playable_url(url):
 		source = requests.get(url,headers=headers)
 		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
 		url ='http://live.savitar.tv/'+keyid
-
-	elif "ustvgo.net" in url:
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
-		source = requests.get(url,headers=headers)
-		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
-		url ='http://live.savitar.tv/'+keyid
-
-	elif "http://ustv247.tv" in url:
-		#import cfscrape
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
-		#scraper = cfscrape.create_scraper()  # returns a CloudflareScraper instance
-		# Or: scraper = cfscrape.CloudflareScraper()  # CloudflareScraper inherits from requests.Session
-		#scraper = cfscrape.create_scraper(delay=20)
-		#source = scraper.get(url).content
-		source = requests.get(url,headers=headers)
-		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
-		url ='http://live.savitar.tv/'+keyid
-
-	elif "watchnewslive.net" in url:
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
-		source = requests.get(url,headers=headers)
-		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
-		url ='http://live.savitar.tv/'+keyid
-
-	elif "guide66.info" in url:
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
-		source = requests.get(url,headers=headers)
-		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
-		url ='http://live.savitar.tv/'+keyid
-
-	#elif "get-stream.json" in url:
-		#headers = {
-			#'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			#'Accept-Encoding': 'gzip, deflate',
-		#}
-		#source = requests.get(url,headers=headers)
-		#keyid = re.findall('http://118.107.114.5:1935/tvnet/(.*?)"', source.text)[0]
-		#url = 'http://118.107.114.5:1935/tvnet/'+keyid
-
+		
 	elif "vn.tvnet.gov.vn" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
