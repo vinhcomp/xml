@@ -239,7 +239,7 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 			item["is_playable"] = False
 			item["path"] = pluginrootpath + "/executebuiltin/-"
 
-		elif item["path"].startswith('https://fluxustv.blogspot.com'):
+		elif item["path"].startswith('https://fluxustv.blogspot.com') or item["path"].startswith('https://fluxuslust.blogspot.com'):
 			headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
 			'Accept-Encoding': 'gzip, deflate',}
 			source=requests.get(item["path"], headers=headers)
