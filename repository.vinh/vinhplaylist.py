@@ -873,16 +873,16 @@ def execbuiltin(path, tracking_string=""):
 def play_url(url, title=""):
 	GA("Play [%s]" % title, "/play/%s/%s" % (title, url))
 	url = get_playable_url(url)
-	#Hack for some buggy redirect link
-	try:
-		http = httplib2.Http(disable_ssl_certificate_validation=True)
-		http.follow_redirects = True
-		(resp, content) = http.request(
-			url, "HEAD"
-		)
-		url = resp['content-location']
-	except:
-		pass
+	#Hack for some buggy redirect link #But Buggy with mediafire, then disable it for now.
+	#try:
+		#http = httplib2.Http(disable_ssl_certificate_validation=True)
+		#http.follow_redirects = True
+		#(resp, content) = http.request(
+		#	url, "HEAD"
+		#)
+		#url = resp['content-location']
+	#except:
+		#pass
 	if "sub" in plugin.request.args:
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
 	else:
@@ -1357,7 +1357,10 @@ def get_playable_url(url):
 		return match.group(1)
 
 	#elif "http://www.mediafire.com" in url:
-		#xbmc.Player().play(url)
+		#try:
+			#return plugin.set_resolved_url(url)
+		#except:
+			#pass
 
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
