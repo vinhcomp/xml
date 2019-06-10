@@ -239,6 +239,16 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 			item["is_playable"] = False
 			item["path"] = pluginrootpath + "/executebuiltin/-"
 
+		elif item["path"].startswith('https://fluxustv.blogspot.com'):
+			headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',}
+			source=requests.get(item["path"], headers=headers)
+			keyid=re.findall('https://pastebin.com/(.*?)"', source.text)[0]
+			link='https://pastebin.com/'+keyid
+			link=link.replace(':', '%3A')
+			link=link.replace('/', '%2F')
+			item["path"]='plugin://plugin.video.vinh.livetv/m3u/'+link
+
 #		elif "chaturbate.com" in item["path"]:
 #			import util, urllib2
 #			def playVideo(params):
