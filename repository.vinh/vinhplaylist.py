@@ -1244,6 +1244,20 @@ def get_playable_url(url):
 		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
 		url ='http://live.savitar.tv/'+keyid
 
+	elif "http://ustv247.tv" in url:
+		#import cfscrape
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		#scraper = cfscrape.create_scraper()  # returns a CloudflareScraper instance
+		# Or: scraper = cfscrape.CloudflareScraper()  # CloudflareScraper inherits from requests.Session
+		#scraper = cfscrape.create_scraper(delay=20)
+		#source = scraper.get(url).content
+		source = requests.get(url,headers=headers)
+		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
+		url ='http://live.savitar.tv/'+keyid
+
 	elif "watchnewslive.net" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
