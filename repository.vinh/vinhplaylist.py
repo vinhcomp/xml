@@ -1244,6 +1244,15 @@ def get_playable_url(url):
 		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
 		url ='http://live.savitar.tv/'+keyid
 
+	elif "watchnewslive.net" in url:
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		source = requests.get(url,headers=headers)
+		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
+		url ='http://live.savitar.tv/'+keyid
+
 	elif "guide66.info" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
