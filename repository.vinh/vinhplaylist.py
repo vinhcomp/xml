@@ -104,7 +104,8 @@ def M3UToItems(url_path=""):
 		thumb = ""
 		label2 = ""
 		if "tvg-logo" in info:
-			thumb = re.compile('tvg-logo=\"?(.*?)\"?,').findall(info)[0]
+			#thumb = re.compile('tvg-logo=\"?(.*?)\"?,').findall(info)[0]
+			thumb = re.compile('tvg-logo="(.*?)"').findall(info)[0]
 		if "group-title" in info:
 			label2 = re.compile('group-title="(.*?)"').findall(info)[0]
 		if label2 != "":
@@ -1244,7 +1245,7 @@ def get_playable_url(url):
 		source = requests.get(url,headers=headers)
 		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
 		url ='http://live.savitar.tv/'+keyid
-		
+
 	elif "vn.tvnet.gov.vn" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
