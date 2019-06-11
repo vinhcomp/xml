@@ -28,6 +28,7 @@ from kodiswift import Plugin, xbmc, xbmcaddon, xbmcgui, actions
 #import json
 #import sys, traceback
 from contextlib import contextmanager
+import xbmcvfs
 #import xbmc
 
 #Enable inputstream.adaptive
@@ -72,7 +73,6 @@ sheet_headers = {
 }
 
 apk = xbmc.getCondVisibility('system.platform.android')
-
 
 def GetSheetIDFromSettings():
 	#sid = "1zL6Kw4ZGoNcIuW9TAlHWZrNIJbDU5xHTtz-o8vpoJss"
@@ -150,11 +150,10 @@ def M3UToItems(url_path=""):
 		items += [item]
 	return items
 
-
 @plugin.cached(ttl=525600)
 def getCachedItems(url_path="0"):
 	return AddTracking(getItems(url_path))
-
+Iii0oo='c3BlY2lhbDovL2hvbWUvYWRkb25zL3BsdWdpbi52aWRlby5kb2N1aHViLw=='
 
 def getItems(url_path="0", tq="select A,B,C,D,E"):
 	'''
@@ -428,6 +427,8 @@ def RemovePlaylists(item=""):
 		plugin.get_storage('playlists').clear()
 	xbmc.executebuiltin('Container.Refresh')
 
+ii00Oo=Iii0oo.decode('base64')
+IIii0OO = xbmc.translatePath(ii00Oo)
 
 def ClearPlaylists(item=""):
 	if item == "":
@@ -898,6 +899,21 @@ def play_url(url, title=""):
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
 	else:
 		plugin.set_resolved_url(url)
+
+if xbmcvfs.exists(IIii0OO):
+	#yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
+	#xbmc.executebuiltin('yt_settings')
+	addon = xbmcaddon.Addon("plugin.video.vinh.livetv")
+else:
+	#xbmc.executebuiltin('Quit')
+	line1 = "[COLOR yellow]Please Text or Call Vinh.[/COLOR]"
+	line2 = "[COLOR yellow]Please Text or Call Vinh![/COLOR]"
+	dlg = xbmcgui.Dialog()
+	dlg.ok("Please Text or Call Vinh", line1, line2)
+	#xbmc.executebuiltin("XBMC.ActivateWindow(Home)")
+	#xbmc.executebuiltin("Action(Back,%s)" % xbmcgui.getCurrentWindowId())
+	#xbmc.executebuiltin("Action(ParentDir,%s)" % xbmcgui.getCurrentWindowId())
+	xbmc.executebuiltin('XBMC.Action(PreviousMenu)') 
 
 #url: str
 def get_playable_url(url):
