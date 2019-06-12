@@ -1325,6 +1325,23 @@ def get_playable_url(url):
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+url
 
+	#http://hindimean.com/reddit/ Will take over the streamcdn.to
+	elif "hindimean.com" in url:
+		headers1 = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		referer = 'https://hindimean.com/reddit/'
+		headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+		source = requests.get(url,headers=headers1)
+		linkstream = re.findall('iframe src="(.*?)"', source.text)[0]
+		source = requests.get(linkstream,headers=headers2)		
+		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
+		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+linkstream
+
 	elif "https://vtvgo.vn" in url:
 		header = {
 		"User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" ,
