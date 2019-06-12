@@ -1259,8 +1259,8 @@ def get_playable_url(url):
 			'Accept-Encoding': 'gzip, deflate',
 		}
 		source = requests.get(url,headers=headers)
-		keyid = re.findall("http://live.savitar.tv/(.*?)'", source.text)[0]
-		url ='http://live.savitar.tv/'+keyid
+		keyid = re.findall("http://live(.*?)'", source.text)[0]
+		url ='http://live'+keyid
 
 	elif "vn.tvnet.gov.vn" in url:
 		headers = {
