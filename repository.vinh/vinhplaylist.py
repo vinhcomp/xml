@@ -1317,6 +1317,14 @@ def get_playable_url(url):
 		#return re.search("src='(.*?\.m3u8)'", decode)[0]
 		return re.findall("src:'(https.*?)'", decode)[0]+'|user-agent=ipad'
 
+	elif "streamcdn.to" in url:
+		referer = 'https://hindimean.com/reddit/'
+		headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+		'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}
+		source = requests.get(url,headers=headers)
+		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
+		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+url
+
 	elif "https://vtvgo.vn" in url:
 		header = {
 		"User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" ,
