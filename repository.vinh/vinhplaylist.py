@@ -884,7 +884,7 @@ def execbuiltin(path, tracking_string=""):
 @plugin.route('/play/<url>/<title>')
 def play_url(url, title=""):
 	GA("Play [%s]" % title, "/play/%s/%s" % (title, url))
-	url = get_playable_url(url)
+	url = get_playable_url(url) #will go to get_playable_url(url)
 	#Hack for some buggy redirect link #But Buggy with mediafire, then disable it for now.
 	#try:
 		#http = httplib2.Http(disable_ssl_certificate_validation=True)
@@ -895,10 +895,13 @@ def play_url(url, title=""):
 		#url = resp['content-location']
 	#except:
 		#pass
+	#url = plugin.set_resolved_url(get_playable_url(url), subtitles = "https://raw.githubusercontent.com/vinhcomp/xml/master/xml/sub1.tsv")
+	#####will get error handle if call plugin.set_resolved_url 2 times
 	if "sub" in plugin.request.args:
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
 	else:
-		plugin.set_resolved_url(url)
+		#plugin.set_resolved_url(url)
+		plugin.set_resolved_url(url, subtitles = "https://raw.githubusercontent.com/vinhcomp/xml/master/xml/sub1.tsv") #get_playable_url(url)
 
 if xbmcvfs.exists(IIii0OO):
 	#yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
