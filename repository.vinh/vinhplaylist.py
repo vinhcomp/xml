@@ -1036,7 +1036,7 @@ def get_playable_url(url):
 				line1 = "[COLOR yellow]Đài Hiện Tại Không Phát.[/COLOR]"
 				line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau![/COLOR]"
 				dlg = xbmcgui.Dialog()
-				dlg.ok("Channel Offline Now - Please Try Again Later", line1, line2)
+				dlg.ok("Channel is Offline Now - Please Try Again Later", line1, line2)
 		#url = 'https://www.youtube.com/embed/'+keyid
 		if "youtube.com/embed/" in url:
 			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
@@ -1238,7 +1238,11 @@ def get_playable_url(url):
 			j = json.loads(content)
 			url = j["stream_info"]["secure_m3u8_url"]
 		except:
-			pass
+			#pass
+			line1 = "[COLOR yellow]Đài Hiện Tại Không Phát.[/COLOR]"
+			line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau![/COLOR]"
+			dlg = xbmcgui.Dialog()
+			dlg.ok("Channel is Offline Now - Please Try Again Later", line1, line2)
 
 	#Add Play vietchannels
 	elif "vietchannels.com" in url:
