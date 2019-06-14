@@ -885,6 +885,7 @@ def execbuiltin(path, tracking_string=""):
 def play_url(url, title=""):
 	GA("Play [%s]" % title, "/play/%s/%s" % (title, url))
 	url = get_playable_url(url) #will go to get_playable_url(url)
+	#url = plugin.set_resolved_url(get_playable_url(url), subtitles = "https://raw.githubusercontent.com/vinhcomp/xml/master/xml/sub1.tsv")
 	#Hack for some buggy redirect link #But Buggy with mediafire, then disable it for now.
 	#try:
 		#http = httplib2.Http(disable_ssl_certificate_validation=True)
@@ -894,11 +895,12 @@ def play_url(url, title=""):
 		#)
 		#url = resp['content-location']
 	#except:
-		#pass
-	#url = plugin.set_resolved_url(get_playable_url(url), subtitles = "https://raw.githubusercontent.com/vinhcomp/xml/master/xml/sub1.tsv")
+		#pass	
 	#####will get error handle if call plugin.set_resolved_url 2 times
 	if "sub" in plugin.request.args:
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
+	elif any(domain in url for domain in ['youtube', 'google']): #ignore the youtube, google link load sub & get error: no video play bz go to youtube plugin
+		plugin.set_resolved_url(url)
 	else:
 		#plugin.set_resolved_url(url)
 		plugin.set_resolved_url(url, subtitles = "https://raw.githubusercontent.com/vinhcomp/xml/master/xml/sub1.tsv") #get_playable_url(url)
@@ -1351,17 +1353,17 @@ def get_playable_url(url):
 
 	elif "https://vtvgo.vn" in url:
 		header = {
-		"User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36" ,
-		"Accept-Encoding" : "gzip, deflate" ,
-		"Referer" : url ,
-		"Content-Type" : "application/x-www-form-urlencoded; charset=UTF-8" ,
-		"Origin" : "https://vtvgo.vn" ,
-		"X-Requested-With" : "XMLHttpRequest"
+		"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+		"Accept-Encoding": "gzip, deflate",
+		"Referer": url,
+		"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+		"Origin": "https://vtvgo.vn",
+		"X-Requested-With": "XMLHttpRequest"
 		}
 		agent = "|user-agent=ipad&referer=https://vtvgo.vn/trang-chu.html"
-		session = requests . Session ( )
-		session . headers . update ( header )
-		source = session . get ( url )
+		session = requests.Session()
+		session.headers.update(header)
+		source = session.get(url)
 		#page_data = source . text . encode ( "utf8" ) #don't need to encode:from vietnamese to code
 		#datas = {
 		#"type_id" : "1" ,
@@ -1369,15 +1371,15 @@ def get_playable_url(url):
 		#"time" : re . search ( "time = '(\d+)';" , page_data ) . group ( 1 ) ,
 		#"token" : re . search ( "token = '(.+?)';" , page_data ) . group ( 1 )
 		#}
-		#\d: any number, '+' 1 or more
+		####\d: any number, '+' 1 or more
 		datas = {
-		"type_id" : "1" ,
-		"id" : re . search ( "id = (\d+);" , source.text ) . group ( 1 ) ,
-		"time" : re . search ( "time = '(\d+)';" , source.text ) . group ( 1 ) ,
-		"token" : re . search ( "token = '(.+?)';" , source.text ) . group ( 1 )
+		"type_id": "1",
+		"id": re.search("id = (\d+);", source.text).group(1),
+		"time": re.search("time = '(\d+)';", source.text).group(1),
+		"token": re.search("token = '(.+?)';", source.text).group(1)
 		}
-		source = session . post ( "https://vtvgo.vn/ajax-get-stream" , data = datas , verify = False ) #verify: optional
-		return source . json ( ) [ "stream_url" ] [ 0 ] + agent
+		source = session.post("https://vtvgo.vn/ajax-get-stream", data = datas, verify = False) #verify: optional
+		return source.json()["stream_url"][0] + agent
 
 	elif "7streams.online" in url:
 		headers = {
