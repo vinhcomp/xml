@@ -899,7 +899,9 @@ def play_url(url, title=""):
 	#####will get error handle if call plugin.set_resolved_url 2 times
 	if "sub" in plugin.request.args:
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
-	elif any(domain in url for domain in ['youtube', 'google']): #ignore the youtube, google link load sub & get error: no video play bz go to youtube plugin
+	#ignore the youtube, google link load sub & get error: no video play bz go to youtube plugin
+	#Some direct link will redirect, it cannot load sub	
+	elif any(domain in url for domain in ['youtube', 'google', 'mediafire']):
 		plugin.set_resolved_url(url)
 	else:
 		#plugin.set_resolved_url(url)
