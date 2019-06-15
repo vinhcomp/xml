@@ -904,7 +904,6 @@ def play_url(url, title=""):
 	elif any(domain in url for domain in ['youtube', 'google', 'mediafire']):
 		plugin.set_resolved_url(url)
 	else:
-		#plugin.set_resolved_url(url)
 		plugin.set_resolved_url(url, subtitles = "https://raw.githubusercontent.com/vinhcomp/xml/master/xml/sub1.tsv") #get_playable_url(url)
 
 if xbmcvfs.exists(IIii0OO):
@@ -962,10 +961,133 @@ def get_playable_url(url):
 			except:
 				pass
 
-	#Open youtube settings, enable MPEG-Dash to play youtube live, and for channel/UCyu8StPfZWapR6rfW_JgqcA return
-	elif "youtube.com/embed/" in url:
+#	#Open youtube settings, enable MPEG-Dash to play youtube live, and for channel/UCyu8StPfZWapR6rfW_JgqcA return
+#	elif "youtube.com/embed/" in url:
+#		yt_addon = xbmcaddon.Addon('plugin.video.youtube')
+#		if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
+#			dialog = xbmcgui.Dialog()
+#			yes = dialog.yesno(
+#				'This Channel Need to Enable MPEG-DASH to Play!\n',
+#				'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
+#				yeslabel='OK',
+#				nolabel='CANCEL'
+#				)
+#			if yes:
+#				yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
+#				xbmc.executebuiltin('yt_settings')
+#				return get_playable_url(url)
+#			return None
+#		else:
+#			match = re.compile(
+#				'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
+#			yid = match[0][len(match[0])-1].replace('v/', '')
+#			url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+#
+#	#Youtube live
+#	#channel/UCyu8StPfZWapR6rfW_JgqcA
+#	elif url.startswith('channel/'):
+#		headers = {
+#			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+#			'Accept-Encoding': 'gzip, deflate',
+#		}
+#		link = 'https://www.youtube.com/' + url
+#		source = requests.get(link,headers=headers)
+#		keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
+#		url = 'https://www.youtube.com/embed/'+keyid
+#		if "youtube.com/embed/" in url:
+#			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
+#			if yt_addon.getSetting('kodion.video.quality.mpd') != 'true': # Youtube settings not choose MPEG-Dash yet
+#				dialog = xbmcgui.Dialog()
+#				yes = dialog.yesno(
+#					'This Channel Need to Enable MPEG-DASH to Play!\n',
+#					'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
+#					yeslabel='OK',
+#					nolabel='CANCEL'
+#					)
+#				if yes:
+#					yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
+#					xbmc.executebuiltin('yt_settings')
+#					return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to "youtube.com/embed/"
+#				return None
+#			else:
+#				match = re.compile(
+#					'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
+#				yid = match[0][len(match[0])-1].replace('v/', '')
+#				url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+#
+#	#youtube live, ytlive/0/channel/UCwobzUc3z-0PrFpoRxNszXQ, 0 can be change to any int number, if ytchannel have more than 1 live channel
+#	elif url.startswith('ytlive'):
+#		headers = {
+#			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+#			'Accept-Encoding': 'gzip, deflate',
+#		}
+#		#livenumber=url[7] #will get the number of live channel if more than 1, 0 is the first live channel in ytchannel
+#		livenumber = re.findall('ytlive/(.*?)/channel', url)[0]
+#		livenumberint=int(livenumber) # convert str to int
+#		#liveid=url[9:]
+#		liveid = re.findall('ytlive/.*?/([^$]+)', url)[0]
+#		link = 'https://www.youtube.com/' + liveid
+#		source = requests.get(link,headers=headers)
+#		#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[:] # will get all match, keyid: list
+#		try:
+#			keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint] # will get one of the match list
+#			url = 'https://www.youtube.com/embed/'+keyid
+#			#keyid = keyid[livenumberint] # will get one of the match list
+#			#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
+#		except:
+#			try:
+#				keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint-livenumberint] # will try to return firt live channel
+#				url = 'https://www.youtube.com/embed/'+keyid
+#			except: # will show error message when ytchannel with no live channel
+#				line1 = "[COLOR yellow]Đài Hiện Tại Không Phát.[/COLOR]"
+#				line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau![/COLOR]"
+#				dlg = xbmcgui.Dialog()
+#				dlg.ok("Channel is Offline Now - Please Try Again Later", line1, line2)
+#		#url = 'https://www.youtube.com/embed/'+keyid
+#		if "youtube.com/embed/" in url:
+#			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
+#			if yt_addon.getSetting('kodion.video.quality.mpd') != 'true': # Youtube settings not choose MPEG-Dash yet
+#				dialog = xbmcgui.Dialog()
+#				yes = dialog.yesno(
+#					'This Channel Need to Enable MPEG-DASH to Play!\n',
+#					'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
+#					yeslabel='OK',
+#					nolabel='CANCEL'
+#					)
+#				if yes:
+#					yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
+#					xbmc.executebuiltin('yt_settings')
+#					return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to "youtube.com/embed/"
+#				return None
+#			else:
+#				match = re.compile(
+#					'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
+#				yid = match[0][len(match[0])-1].replace('v/', '')
+#				url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+
+	#ytlive/1/UCMfZ_z0LUm805JOZLktl2QQ, youtube live
+	elif url.startswith('ytlive'):
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		livenumber = re.findall('ytlive/(.*?)/', url)[0]
+		livenumberint=int(livenumber) # convert str to int
+		liveid = re.findall('ytlive/.*?/([^$]+)', url)[0]
+		link = 'https://www.youtube.com/channel/' + liveid
+		source = requests.get(link,headers=headers)
+		try:
+			keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint] # will get one of the match list
+		except:
+			try:
+				keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint-livenumberint] # will try to return firt live channel
+			except: # will show error message when ytchannel with no live channel
+				line1 = "[COLOR yellow]Đài Hiện Tại Không Phát.[/COLOR]"
+				line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau![/COLOR]"
+				dlg = xbmcgui.Dialog()
+				dlg.ok("Channel is Offline Now - Please Try Again Later", line1, line2)
 		yt_addon = xbmcaddon.Addon('plugin.video.youtube')
-		if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
+		if yt_addon.getSetting('kodion.video.quality.mpd') != 'true': # Youtube settings not choose MPEG-Dash yet or == 'false'
 			dialog = xbmcgui.Dialog()
 			yes = dialog.yesno(
 				'This Channel Need to Enable MPEG-DASH to Play!\n',
@@ -976,95 +1098,11 @@ def get_playable_url(url):
 			if yes:
 				yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
 				xbmc.executebuiltin('yt_settings')
-				return get_playable_url(url)
+				url = url
+				return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to get_playable_url(url)
 			return None
 		else:
-			match = re.compile(
-				'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
-			yid = match[0][len(match[0])-1].replace('v/', '')
-			url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
-
-	#Youtube live
-	#channel/UCyu8StPfZWapR6rfW_JgqcA
-	elif url.startswith('channel/'):
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
-		link = 'https://www.youtube.com/' + url
-		source = requests.get(link,headers=headers)
-		keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
-		url = 'https://www.youtube.com/embed/'+keyid
-		if "youtube.com/embed/" in url:
-			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
-			if yt_addon.getSetting('kodion.video.quality.mpd') != 'true': # Youtube settings not choose MPEG-Dash yet
-				dialog = xbmcgui.Dialog()
-				yes = dialog.yesno(
-					'This Channel Need to Enable MPEG-DASH to Play!\n',
-					'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
-					yeslabel='OK',
-					nolabel='CANCEL'
-					)
-				if yes:
-					yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
-					xbmc.executebuiltin('yt_settings')
-					return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to "youtube.com/embed/"
-				return None
-			else:
-				match = re.compile(
-					'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
-				yid = match[0][len(match[0])-1].replace('v/', '')
-				url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
-
-	#youtube live, ytlive/0/channel/UCwobzUc3z-0PrFpoRxNszXQ, 0 can be change to any int number, if ytchannel have more than 1 live channel
-	elif url.startswith('ytlive'):
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
-		#livenumber=url[7] #will get the number of live channel if more than 1, 0 is the first live channel in ytchannel
-		livenumber = re.findall('ytlive/(.*?)/channel', url)[0]
-		livenumberint=int(livenumber) # convert str to int
-		#liveid=url[9:]
-		liveid = re.findall('ytlive/.*?/([^$]+)', url)[0]
-		link = 'https://www.youtube.com/' + liveid
-		source = requests.get(link,headers=headers)
-		#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[:] # will get all match, keyid: list
-		try:
-			keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint] # will get one of the match list
-			url = 'https://www.youtube.com/embed/'+keyid
-			#keyid = keyid[livenumberint] # will get one of the match list
-			#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
-		except:
-			try:
-				keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint-livenumberint] # will try to return firt live channel
-				url = 'https://www.youtube.com/embed/'+keyid
-			except: # will show error message when ytchannel with no live channel
-				line1 = "[COLOR yellow]Đài Hiện Tại Không Phát.[/COLOR]"
-				line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau![/COLOR]"
-				dlg = xbmcgui.Dialog()
-				dlg.ok("Channel is Offline Now - Please Try Again Later", line1, line2)
-		#url = 'https://www.youtube.com/embed/'+keyid
-		if "youtube.com/embed/" in url:
-			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
-			if yt_addon.getSetting('kodion.video.quality.mpd') != 'true': # Youtube settings not choose MPEG-Dash yet
-				dialog = xbmcgui.Dialog()
-				yes = dialog.yesno(
-					'This Channel Need to Enable MPEG-DASH to Play!\n',
-					'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
-					yeslabel='OK',
-					nolabel='CANCEL'
-					)
-				if yes:
-					yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
-					xbmc.executebuiltin('yt_settings')
-					return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to "youtube.com/embed/"
-				return None
-			else:
-				match = re.compile(
-					'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
-				yid = match[0][len(match[0])-1].replace('v/', '')
-				url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
+			url = 'plugin://plugin.video.youtube/play/?video_id='+keyid
 
 	#Open LSP settings enable regex
 	elif "enableregex" in url:		
