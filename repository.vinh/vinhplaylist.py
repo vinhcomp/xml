@@ -880,7 +880,7 @@ def execbuiltin(path, tracking_string=""):
 	except:
 		pass
 
-
+#@plugin.route('/play/<url>')
 @plugin.route('/play/<url>/<title>')
 def play_url(url, title=""):
 	GA("Play [%s]" % title, "/play/%s/%s" % (title, url))
@@ -901,10 +901,11 @@ def play_url(url, title=""):
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
 	#ignore the youtube, google link load sub & get error: no video play bz go to youtube plugin
 	#Some direct link will redirect, it cannot load sub	
-	elif any(domain in url for domain in ['youtube', 'google', 'mediafire']):
-		plugin.set_resolved_url(url)
+	#elif any(domain in url for domain in ['youtube', 'google', 'mediafire']):
+		#plugin.set_resolved_url(url)
 	else:
-		plugin.set_resolved_url(url, subtitles = "https://raw.githubusercontent.com/vinhcomp/xml/master/xml/sub1.tsv") #get_playable_url(url)
+		#plugin.set_resolved_url(url, subtitles = "https://raw.githubusercontent.com/vinhcomp/xml/master/xml/sub1.tsv") #get_playable_url(url)
+		plugin.set_resolved_url(url, subtitles = "https://docs.google.com/spreadsheets/d/1NwDGsRUhlXvvCPT3ToXJzn450Nto6FyLLBMucdxK13A/export?format=tsv&gid=0")
 
 if xbmcvfs.exists(IIii0OO):
 	#yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
@@ -1326,7 +1327,7 @@ def get_playable_url(url):
 		url = re.findall('url": "(.*?)"', source.text)[0]
 
 	#http://photocall.tv/beinsports1/
-	elif "http://photocall.tv/" in url:
+	elif "http://photocall.tv" in url:
 		name  = re.findall('http://photocall.tv/(.*?)/',url)[0] # str bz [0]
 		source = requests.get('http://photocall.tv/', headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
 		link = re.findall('href="(.*?%s)"' % name,source)[0]
@@ -1340,7 +1341,7 @@ def get_playable_url(url):
 		#return re.findall('source: "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+link
 		return re.findall(': "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+link
 
-	elif "https://ok.ru" in url:
+	elif url.startswith("https://ok.ru"):
 		source = requests.get(url, headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
 		#link = re.findall("hlsMasterPlaylistUrl.*?&quot;.*?&quot;(.*?)video.m3u8",source)[0]
 		#url = link+'video.m3u8'
@@ -1429,12 +1430,6 @@ def get_playable_url(url):
 		(resp, content) = http.request(url,"GET",headers=headers)
 		match = re.search("var videoLink = '(.+?)'", content)
 		return match.group(1)
-
-	#elif "http://www.mediafire.com" in url:
-		#try:
-			#return plugin.set_resolved_url(url)
-		#except:
-			#pass
 
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
