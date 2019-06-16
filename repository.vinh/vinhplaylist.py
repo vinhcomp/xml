@@ -885,7 +885,6 @@ def execbuiltin(path, tracking_string=""):
 def play_url(url, title=""):
 	GA("Play [%s]" % title, "/play/%s/%s" % (title, url))
 	url = get_playable_url(url) #will go to get_playable_url(url)
-	#url = plugin.set_resolved_url(get_playable_url(url), subtitles = "https://raw.githubusercontent.com/vinhcomp/xml/master/xml/sub1.tsv")
 	#Hack for some buggy redirect link #But Buggy with mediafire, then disable it for now.
 	#try:
 		#http = httplib2.Http(disable_ssl_certificate_validation=True)
