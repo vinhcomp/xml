@@ -899,12 +899,7 @@ def play_url(url, title=""):
 	#####will get error handle if call plugin.set_resolved_url 2 times
 	if "sub" in plugin.request.args:
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
-	#ignore the youtube, google link load sub & get error: no video play bz go to youtube plugin
-	#Some direct link will redirect, it cannot load sub	
-	#elif any(domain in url for domain in ['youtube', 'google', 'mediafire']):
-		#plugin.set_resolved_url(url)
 	else:
-		#plugin.set_resolved_url(url, subtitles = "https://raw.githubusercontent.com/vinhcomp/xml/master/xml/sub1.tsv") #get_playable_url(url)
 		plugin.set_resolved_url(url, subtitles = "https://docs.google.com/spreadsheets/d/1NwDGsRUhlXvvCPT3ToXJzn450Nto6FyLLBMucdxK13A/export?format=tsv&gid=0")
 
 if xbmcvfs.exists(IIii0OO):
