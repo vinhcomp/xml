@@ -1327,7 +1327,7 @@ def get_playable_url(url):
 		source = requests.get('http://photocall.tv/', headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
 		link = re.findall('href="(.*?%s)"' % name,source)[0]
 		source = requests.get(link,headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Referer':'http://photocall.tv/','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
-		return re.findall("'(ht.*?wmsAuthSign.*?)'",source)[0]+'|User-Agent=iPad&Referer='+link
+		return re.findall("'(http.*?wmsAuthSign.*?)'",source)[0]+'|User-Agent=iPad&Referer='+link
 
 	elif "http://cablegratis.tv" in url:
 		source = requests.get(url, headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
@@ -1386,6 +1386,23 @@ def get_playable_url(url):
 		source = requests.get(linkstream,headers=headers2)		
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+linkstream
+
+	#http://sportzonline.to/prog.txt
+	elif "sportzonline.co" in url:
+		headers1 = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		referer = 'https://sportzonline.co/'
+		headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+		source = requests.get(url,headers=headers1)
+		linkstream = 'https:'+re.findall('iframe.+?src="(.+?)"', source.text)[0]
+		source = requests.get(linkstream,headers=headers2)		
+		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
+		return re.findall('source:"(.*?)"', decode)[0]+'|user-agent=ipad&'+linkstream
 
 	elif "https://vtvgo.vn" in url:
 		header = {
