@@ -899,6 +899,7 @@ def play_url(url, title=""):
 	if "sub" in plugin.request.args:
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
 	else:
+		#plugin.set_resolved_url(url)
 		plugin.set_resolved_url(url, subtitles = "https://docs.google.com/spreadsheets/d/1NwDGsRUhlXvvCPT3ToXJzn450Nto6FyLLBMucdxK13A/export?format=tsv&gid=0")
 
 if xbmcvfs.exists(IIii0OO):
@@ -1424,6 +1425,21 @@ def get_playable_url(url):
 		(resp, content) = http.request(url,"GET",headers=headers)
 		match = re.search("var videoLink = '(.+?)'", content)
 		return match.group(1)
+
+	elif 'sdw-net.me' in url:
+		f4m = 'plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url='
+		headers = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+			'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+		source = requests.get(url, headers=headers).text
+		link = re.findall("iframe src='(.*?)'", source)[0]
+		source = requests.get(link, headers=headers).text
+		m3u8link = re.findall('source: "(.*?)"', source)[0]
+		#linkanduser = m3u8link+'|User-Agent=iPad&Referer='+link
+		#encodelink = urllib.quote_plus(linkanduser)
+		url = f4m+m3u8link+'|User-Agent=iPad&Referer='+link
+		#url = f4m+encodelink
 
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
