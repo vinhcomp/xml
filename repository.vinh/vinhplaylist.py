@@ -581,6 +581,7 @@ def AceList(path="0", tracking_string="AceList"):
 		items += [item]
 	return plugin.finish(items)
 
+Iii0='RunAddon(plugin.video.SportsDevil)'
 
 @plugin.route('/fshare/<path>/<tracking_string>')
 def FShare(path="0", tracking_string="FShare"):
@@ -908,14 +909,15 @@ if xbmcvfs.exists(IIii0OO):
 	addon = xbmcaddon.Addon("plugin.video.vinh.livetv")
 else:
 	#xbmc.executebuiltin('Quit')
-	line1 = "[COLOR yellow]Please Text or Call Vinh.[/COLOR]"
-	line2 = "[COLOR yellow]Please Text or Call Vinh![/COLOR]"
-	dlg = xbmcgui.Dialog()
-	dlg.ok("Please Text or Call Vinh", line1, line2)
+	#line1 = "[COLOR yellow]Please Text or Call Vinh.[/COLOR]"
+	#line2 = "[COLOR yellow]Please Text or Call Vinh![/COLOR]"
+	#dlg = xbmcgui.Dialog()
+	#dlg.ok("Please Text or Call Vinh", line1, line2)
 	#xbmc.executebuiltin("XBMC.ActivateWindow(Home)")
 	#xbmc.executebuiltin("Action(Back,%s)" % xbmcgui.getCurrentWindowId())
 	#xbmc.executebuiltin("Action(ParentDir,%s)" % xbmcgui.getCurrentWindowId())
-	xbmc.executebuiltin('XBMC.Action(PreviousMenu)') 
+	xbmc.executebuiltin('XBMC.Action(PreviousMenu)')
+	addon = xbmc.executebuiltin(Iii0)
 
 #url: str
 def get_playable_url(url):
