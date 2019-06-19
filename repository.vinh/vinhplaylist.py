@@ -921,6 +921,10 @@ else:
 
 #url: str
 def get_playable_url(url):
+	headers1 = {
+		'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+		'Accept-Encoding': 'gzip, deflate',
+	}
 	if "youtube.com/watch" in url:
 		match = re.compile(
 			'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
@@ -1289,11 +1293,7 @@ def get_playable_url(url):
 
 	#Add Play vietchannels
 	elif "vietchannels.com" in url:
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
-		source = requests.get(url,headers=headers)
+		source = requests.get(url,headers=headers1)
 		keyid = re.findall("tulix.tv/live/(.*?)m3u8", source.text)[0]
 		if "http://tna6.tulix.tv/live/" in source.text:
 			url = 'http://tna6.tulix.tv/live/' + keyid + 'm3u8'
@@ -1301,11 +1301,7 @@ def get_playable_url(url):
 			url = 'http://dvr1tna.tulix.tv/live/' + keyid + 'm3u8'
 
 	elif any(domain in url for domain in['ustv247.com', 'ustvgo.net', 'ustv247.tv', 'watchnewslive.net', 'guide66.info']):
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
-		source = requests.get(url,headers=headers)
+		source = requests.get(url,headers=headers1)
 		keyid = re.findall("http://live(.*?)'", source.text)[0]
 		url ='http://live'+keyid
 
@@ -1345,20 +1341,12 @@ def get_playable_url(url):
 		url = re.findall("hlsMasterPlaylistUrl\\\&quot;:\\\&quot;(.*?)\?",source)[0]
 		
 	elif "4ktech.net" in url:
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
-		source = requests.get(url,headers=headers)
+		source = requests.get(url,headers=headers1)
 		keyid = re.findall('http://live.4ktech.net:(.*?) ', source.text)[0]
 		url = 'http://live.4ktech.net:'+keyid
 
 	elif "arconaitv.us" in url:
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
-		source = requests.get(url,headers=headers)
+		source = requests.get(url,headers=headers1)
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		#return re.findall('(?:source|file|src):[\'"](h[^\'"]+)',decode)[0]+'|user-agent=ipad' #this one will work too
 		#return re.search("src='(.*?\.m3u8)'", decode)[0]
@@ -1374,10 +1362,6 @@ def get_playable_url(url):
 
 	#http://hindimean.com/reddit/ Will take over the streamcdn.to
 	elif "hindimean.com" in url:
-		headers1 = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
 		referer = 'https://hindimean.com/reddit/'
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
@@ -1391,10 +1375,6 @@ def get_playable_url(url):
 
 	#http://sportzonline.to/prog.txt
 	elif "sportzonline.co" in url:
-		headers1 = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
 		referer = 'https://sportzonline.co/'
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
@@ -1406,12 +1386,8 @@ def get_playable_url(url):
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		return re.findall('source:"(.*?)"', decode)[0]+'|user-agent=ipad&'+linkstream
 
-	#http://futbolitop.online/canales/
+	#http://futbolitop.online/canales/ espanol sports
 	elif "futbolitop.online" in url:
-		headers1 = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
 		referer = 'http://futbolitop.online/'
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
@@ -1453,11 +1429,7 @@ def get_playable_url(url):
 		return source.json()["stream_url"][0] + agent
 
 	elif "7streams.online" in url:
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
-			'Accept-Encoding': 'None'
-		}
-		(resp, content) = http.request(url,"GET",headers=headers)
+		(resp, content) = http.request(url,"GET",headers=headers1)
 		match = re.search("var videoLink = '(.+?)'", content)
 		return match.group(1)
 
