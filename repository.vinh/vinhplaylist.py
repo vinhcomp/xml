@@ -47,10 +47,11 @@ def enabled_addon(addon):
         xbmc.log('Add-on InputStream Adaptive not installed',xbmc.LOGNOTICE)
     yield
 
-def run():
+def enable_inputstream():
     with enabled_addon("inputstream.adaptive"):
         addon = xbmcaddon.Addon("plugin.video.vinh.livetv")
-run()
+
+#enable_inputstream()
 
 # Tham khảo xbmcswift2 framework cho kodi addon tại
 # http://xbmcswift2.readthedocs.io/en/latest/
@@ -1069,6 +1070,7 @@ def get_playable_url(url):
 
 	#ytlive/1/UCMfZ_z0LUm805JOZLktl2QQ, youtube live
 	elif url.startswith('ytlive'):
+		enable_inputstream() #youtube live need enable imputstream.adaptive
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
 			'Accept-Encoding': 'gzip, deflate',
@@ -1304,6 +1306,14 @@ def get_playable_url(url):
 		source = requests.get(url,headers=headers1)
 		keyid = re.findall("http://live(.*?)'", source.text)[0]
 		url ='http://live'+keyid
+
+	#elif 'cnbcgo':
+		#import cfscrape
+		#url='http://ustvgo.tv/cnbc-live-streaming-free/'
+		#scraper = cfscrape.create_scraper()
+		#source = scraper.get(url, headers=headers1)
+		#keyid = re.findall("http://live(.*?)'", source.text)[0]
+		#url ='http://live'+keyid
 
 	elif "vn.tvnet.gov.vn" in url:
 		headers = {
