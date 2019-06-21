@@ -1307,13 +1307,21 @@ def get_playable_url(url):
 		keyid = re.findall("http://live(.*?)'", source.text)[0]
 		url ='http://live'+keyid
 
-	#elif 'cnbcgo':
-		#import cfscrape
-		#url='http://ustvgo.tv/cnbc-live-streaming-free/'
-		#scraper = cfscrape.create_scraper()
-		#source = scraper.get(url, headers=headers1)
-		#keyid = re.findall("http://live(.*?)'", source.text)[0]
-		#url ='http://live'+keyid
+	elif url.startswith("http://123tvnow.com"):
+		source = requests.get(url, headers=headers1).text
+		urlbase64 = re.findall("atob\('(.*?)'", source)[0]
+		#streamurl = urlbase64.decode('base64') #type: bytes python 3
+		streamurl = base64.b64decode(urlbase64) #type: bytes python 3
+		streamurl = str(streamurl)
+		url = streamurl+'?1|Referer='+url+'&User-Agent=iPad'
+
+	#Cloudflare Site
+#	elif 'ustvgo.tv' in url:
+#		import cfscrape
+#		scraper = cfscrape.create_scraper()
+#		source = scraper.get(url, headers=headers1)
+#		keyid = re.findall("http://live(.*?)'", source.text)[0]
+#		url ='http://live'+keyid
 
 	elif "vn.tvnet.gov.vn" in url:
 		headers = {
