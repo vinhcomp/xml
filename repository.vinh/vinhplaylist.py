@@ -356,6 +356,12 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				item["path"]=item["path"].replace(' ', '%20')
 				item["path"]='plugin://plugin.video.youtube/kodion/search/query/?q='+item["path"]
 
+			elif item["path"].startswith('ytlist'):
+				#ytlist/phong su
+				item["path"]=item["path"].replace('ytlist/', '')
+				item["path"]=item["path"].replace(' ', '%20')
+				item["path"]='plugin://plugin.video.youtube/kodion/search/query/?q='+item["path"]+'&search_type=playlist'
+
 			elif re.search("\.ts$", item["path"]):
 				item["path"] = "plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&use_proxy_for_chunks=True&name=%s" % (
 					urllib.quote(item["path"]),
