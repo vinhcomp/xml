@@ -1447,17 +1447,22 @@ def get_playable_url(url):
 		link = re.findall('link = \["(.*?)"', source)[0]
 		source2 = requests.get(link,headers=headers2).text
 		#url = re.findall('(http.*?m3u.*?\s)', source2)[0]
-		try:
-			url = re.findall('(http.*?m3u.*?\s)', source2)[0]
-		except:
+		i = 0
+		if i<3:
 			try:
-				url = re.findall('(http.*?m3u.*?\s)', source2)[1]
+				url = re.findall('(http.*?m3u.*?\s)', source2)[0]
 			except:
 				try:
-					url = re.findall('(http.*?m3u.*?\s)', source2)[2]
+					url = re.findall('(http.*?m3u.*?\s)', source2)[1]
 				except:
-					url = url
-					return None
+					try:
+						url = re.findall('(http.*?m3u.*?\s)', source2)[2]
+					except:
+						url = url
+						i+=1
+						return get_playable_url(url)
+		else:
+			url = None #Try 3 lan met roi
 
 	elif "https://vtvgo.vn" in url:
 		header = {
