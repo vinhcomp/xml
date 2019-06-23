@@ -1437,6 +1437,28 @@ def get_playable_url(url):
 		source = requests.get(url,headers=headers1).text
 		return re.findall('(http.*?m3u8)', source)[-2]
 
+	elif url.startswith('http://tivis.101vn.com'):
+		referer = 'http://tivis.101vn.com/livetv-xem-tivi-kenh-htv7-menu-hot.html'
+		headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+		source = requests.get(url,headers=headers2).text
+		link = re.findall('link = \["(.*?)"', source)[0]
+		source2 = requests.get(link,headers=headers2).text
+		#url = re.findall('(http.*?m3u.*?\s)', source2)[0]
+		try:
+			url = re.findall('(http.*?m3u.*?\s)', source2)[0]
+		except:
+			try:
+				url = re.findall('(http.*?m3u.*?\s)', source2)[1]
+			except:
+				try:
+					url = re.findall('(http.*?m3u.*?\s)', source2)[2]
+				except:
+					url = url
+					return None
+
 	elif "https://vtvgo.vn" in url:
 		header = {
 		"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
