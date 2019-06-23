@@ -1410,6 +1410,16 @@ def get_playable_url(url):
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		return re.findall('source:"(.*?)"', decode)[0]+'|user-agent=ipad&'+linkstream
 
+	elif url.startswith('http://wstream.to'):
+		referer = 'http://www.socolive.xyz/'
+		headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+		source = requests.get(url,headers=headers2).text
+		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source)[0]).replace('\\', '')
+		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+url
+
 	#http://futbolitop.online/canales/ espanol sports
 	elif "futbolitop.online" in url:
 		referer = 'http://futbolitop.online/'
@@ -1421,6 +1431,11 @@ def get_playable_url(url):
 		linkstream = re.findall('canalillo" src="(.*?)"', source.text)[0]
 		source = requests.get(linkstream,headers=headers2)
 		return re.findall('source: "(.*?)"', source.text)[0]+'|user-agent=ipad&'+linkstream
+
+	#http://yoursports.stream/nfl/nbcbay.m3u8
+	elif url.startswith('http://yoursports.stream'):
+		source = requests.get(url,headers=headers1).text
+		return re.findall('(http.*?m3u8)', source)[-2]
 
 	elif "https://vtvgo.vn" in url:
 		header = {
