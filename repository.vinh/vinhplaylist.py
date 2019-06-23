@@ -1438,7 +1438,7 @@ def get_playable_url(url):
 		return re.findall('(http.*?m3u8)', source)[-2]
 
 	elif url.startswith('http://tivis.101vn.com'):
-		referer = 'http://tivis.101vn.com/livetv-xem-tivi-kenh-htv7-menu-hot.html'
+		referer = 'http://tivis.101vn.com/'
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
 			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
