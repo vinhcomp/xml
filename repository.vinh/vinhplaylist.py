@@ -1444,25 +1444,24 @@ def get_playable_url(url):
 			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 		}
 		source = requests.get(url,headers=headers2).text
-		link = re.findall('link = \["(.*?)"', source)[0]
+		if 'htv4' in url:
+			link = re.findall('"(http://apps.*?)"', source)[0]
+		else:
+			link = re.findall('link = \["(.*?)"', source)[0]
 		source2 = requests.get(link,headers=headers2).text
-		#url = re.findall('(http.*?m3u.*?\s)', source2)[0]
-		i = 0
-		if i<3:
+		try:
+			url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
+		except:
 			try:
-				url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
+				url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
 			except:
 				try:
-					url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
+					url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
 				except:
-					try:
-						url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
-					except:
-						url = url
-						i+=1
-						return get_playable_url(url)
-		else:
-			url = None #Try 3 lan met roi
+					url = url
+					#return get_playable_url(url)
+		#else:
+			#url = None #Try 3 lan met roi
 
 	elif "https://vtvgo.vn" in url:
 		header = {
