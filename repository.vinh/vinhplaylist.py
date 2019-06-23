@@ -1450,13 +1450,13 @@ def get_playable_url(url):
 		i = 0
 		if i<3:
 			try:
-				url = re.findall('(http.*?m3u.*?\s)', source2)[0]
+				url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
 			except:
 				try:
-					url = re.findall('(http.*?m3u.*?\s)', source2)[1]
+					url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
 				except:
 					try:
-						url = re.findall('(http.*?m3u.*?\s)', source2)[2]
+						url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
 					except:
 						url = url
 						i+=1
