@@ -1438,16 +1438,17 @@ def get_playable_url(url):
 		return re.findall('(http.*?m3u8)', source)[-2]
 
 	elif url.startswith('http://tivis.101vn.com'):
-		referer = 'http://tivis.101vn.com/'
+		#referer = 'http://tivis.101vn.com/'
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
-			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+			'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 		}
 		source = requests.get(url,headers=headers2).text
 		if 'htv4' in url:
 			link = re.findall('"(http://apps.*?)"', source)[0]
 		else:
-			link = re.findall('link = \["(.*?)"', source)[0]
+			#link = re.findall('link = \["(.*?)"', source)[0]
+			link = re.findall('"(http://tivis.*?)"', source)[0]
 		source2 = requests.get(link,headers=headers2).text
 		try:
 			url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
@@ -1459,7 +1460,7 @@ def get_playable_url(url):
 					url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
 				except:
 					url = url
-					#return get_playable_url(url)
+					#return get_playable_url(url) #vòng lập vô hạn
 		#else:
 			#url = None #Try 3 lan met roi
 
