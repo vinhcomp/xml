@@ -1411,6 +1411,7 @@ def get_playable_url(url):
 		return re.findall('source:"(.*?)"', decode)[0]+'|user-agent=ipad&'+linkstream
 
 	elif url.startswith('http://wstream.to'):
+		#http://wenger.stream/ws/ajax.php
 		referer = 'http://www.socolive.xyz/'
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
@@ -1444,7 +1445,8 @@ def get_playable_url(url):
 			'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 		}
 		source = requests.get(url,headers=headers2).text
-		if 'htv4' in url:
+		#if 'htv4' in url or 'youtv' in url:
+		if any(name in url for name in ["htv4", "youtv"]):
 			link = re.findall('"(http://apps.*?)"', source)[0]
 		else:
 			#link = re.findall('link = \["(.*?)"', source)[0]
