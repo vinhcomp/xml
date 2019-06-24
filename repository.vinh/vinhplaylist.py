@@ -1470,6 +1470,12 @@ def get_playable_url(url):
 		#else:
 			#url = None #Try 3 lan met roi
 
+	elif url.startswith('http://www.tivi12h.net'):
+		source = requests.get(url,headers=headers1).text
+		link = re.findall('(http://z.tivi12h.net.*?)\'', source)[0]
+		source = requests.get(link, headers=headers1).text
+		return re.findall('(http.*?$)', source)[0]
+
 	elif "https://vtvgo.vn" in url:
 		header = {
 		"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
