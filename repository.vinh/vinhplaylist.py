@@ -1446,7 +1446,7 @@ def get_playable_url(url):
 		}
 		source = requests.get(url,headers=headers2).text
 		#if 'htv4' in url or 'youtv' in url:
-		if any(name in url for name in ["htv4", "youtv"]):
+		if any(name in url for name in ["htv4", "htv3", "youtv"]):
 			link = re.findall('"(http://apps.*?)"', source)[0]
 		else:
 			#link = re.findall('link = \["(.*?)"', source)[0]
