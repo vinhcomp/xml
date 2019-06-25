@@ -916,10 +916,6 @@ if xbmcvfs.exists(IIii0OO):
 	addon = xbmcaddon.Addon("plugin.video.vinh.livetv")
 else:
 	#xbmc.executebuiltin('Quit')
-	#line1 = "[COLOR yellow]Please Text or Call Vinh.[/COLOR]"
-	#line2 = "[COLOR yellow]Please Text or Call Vinh![/COLOR]"
-	#dlg = xbmcgui.Dialog()
-	#dlg.ok("Please Text or Call Vinh", line1, line2)
 	#xbmc.executebuiltin("XBMC.ActivateWindow(Home)")
 	#xbmc.executebuiltin("Action(Back,%s)" % xbmcgui.getCurrentWindowId())
 	#xbmc.executebuiltin("Action(ParentDir,%s)" % xbmcgui.getCurrentWindowId())
@@ -1369,10 +1365,7 @@ def get_playable_url(url):
 		source = requests.get(url, headers=headers3).text
 		link = re.findall('iframe.*?src="(.*?)"',source)[0]
 		source = requests.get(link,headers=headers4).text
-		try:
-			return re.findall(': "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+link
-		except:
-			notice()
+		return re.findall(': "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+link
 
 	#https://ok.ru/live/profile/572614093143
 	elif url.startswith("https://ok.ru"):
@@ -1448,7 +1441,10 @@ def get_playable_url(url):
 		source = requests.get(url,headers=headers1)
 		linkstream = re.findall('canalillo" src="(.*?)"', source.text)[0]
 		source = requests.get(linkstream,headers=headers2)
-		return re.findall('source: "(.*?)"', source.text)[0]+'|user-agent=ipad&'+linkstream
+		try:
+			return re.findall('source: "(.*?)"', source.text)[0]+'|user-agent=ipad&'+linkstream
+		except:
+			return notice()
 
 	#http://yoursports.stream/nfl/nbcbay.m3u8
 	elif url.startswith('http://yoursports.stream'):
@@ -1457,11 +1453,7 @@ def get_playable_url(url):
 	
 	elif url.startswith('http://tivis.101vn.com'):
 		#referer = 'http://tivis.101vn.com/'
-		headers2 = {
-			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
-			'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
-		}
-		source = requests.get(url,headers=headers2).text
+		source = requests.get(url,headers=headers4).text
 		#if 'htv4' in url or 'youtv' in url:
 		#if any(name in url for name in ["htv4", "htv3", "youtv"]):
 		try:
@@ -1472,7 +1464,7 @@ def get_playable_url(url):
 			#link = re.findall('link = \["(.*?)"', source)[0]
 			#link = re.findall('"(http://tivis.*?)"', source)[0]
 			link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
-		source2 = requests.get(link,headers=headers2).text
+		source2 = requests.get(link,headers=headers4).text
 		try:
 			url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
 		except:
@@ -1482,15 +1474,11 @@ def get_playable_url(url):
 				try:
 					url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
 				except:
-					notice('Xin Thử Lại', "[COLOR yellow]Đài Hiện Tại Khó Mở.[/COLOR]", "[COLOR yellow]Xin Vui Lòng Thử Lại![/COLOR]")
+					notice('Xin Thử Lại', '[COLOR yellow]Đài Hiện Tại Khó Mở.[/COLOR]', '[COLOR yellow]Xin Vui Lòng Thử Lại![/COLOR]')
 					#url = url
 					#return get_playable_url(url) #Loop
 		#else:
 			#url = None
-			#line1 = "[COLOR yellow]Đài Hiện Tại Không Phát.[/COLOR]"
-			#line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau![/COLOR]"
-			#dlg = xbmcgui.Dialog()
-			#dlg.ok("Channel is Offline Now - Please Try Again Later", line1, line2)
 
 	elif url.startswith('http://www.tivi12h.net'):
 		source = requests.get(url,headers=headers1).text
