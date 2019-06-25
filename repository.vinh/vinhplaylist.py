@@ -928,6 +928,7 @@ else:
 
 #url: str
 def get_playable_url(url):
+	n = 0
 	headers1 = {
 		'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
 		'Accept-Encoding': 'gzip, deflate',
@@ -1437,9 +1438,10 @@ def get_playable_url(url):
 	elif url.startswith('http://yoursports.stream'):
 		source = requests.get(url,headers=headers1).text
 		return re.findall('(http.*?m3u8)', source)[-2]
-
+	
 	elif url.startswith('http://tivis.101vn.com'):
 		#referer = 'http://tivis.101vn.com/'
+		url = url
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
 			'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
@@ -1456,19 +1458,29 @@ def get_playable_url(url):
 			#link = re.findall('"(http://tivis.*?)"', source)[0]
 			link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
 		source2 = requests.get(link,headers=headers2).text
-		try:
-			url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
-		except:
+		if n < 2:
 			try:
-				url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
+				url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
 			except:
 				try:
-					url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
+					url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
 				except:
-					url = url
-					#return get_playable_url(url) #vòng lập vô hạn
+					try:
+						url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
+					except:
+						line1 = "[COLOR yellow]Đài Hiện Tại Khó Mở.[/COLOR]"
+						line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại![/COLOR]"
+						dlg = xbmcgui.Dialog()
+						dlg.ok("Xin Thử Lại", line1, line2)
+						url = url
+						n = n + 1
+						return url, link, source, source2 #get_playable_url(url) #Loop
 		#else:
-			#url = None #Try 3 lan met roi
+			#url = None
+			#line1 = "[COLOR yellow]Đài Hiện Tại Không Phát.[/COLOR]"
+			#line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau![/COLOR]"
+			#dlg = xbmcgui.Dialog()
+			#dlg.ok("Channel is Offline Now - Please Try Again Later", line1, line2)
 
 	elif url.startswith('http://www.tivi12h.net'):
 		source = requests.get(url,headers=headers1).text
