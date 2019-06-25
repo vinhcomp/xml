@@ -926,6 +926,15 @@ else:
 	xbmc.executebuiltin('XBMC.Action(PreviousMenu)')
 	addon = xbmc.executebuiltin(Iii0)
 
+def notice(
+	banner = "Channel is Offline Now - Please Try Again Later",
+	line1 = "[COLOR yellow]Đài Hiện Tại Không Phát.[/COLOR]",
+	line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau![/COLOR]"
+	):
+	dlg = xbmcgui.Dialog()
+	dlg.ok(banner, line1, line2)
+	return notice
+
 #url: str
 def get_playable_url(url):
 	headers1 = {
@@ -1092,10 +1101,7 @@ def get_playable_url(url):
 			try:
 				keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint-livenumberint] # will try to return firt live channel
 			except: # will show error message when ytchannel with no live channel
-				line1 = "[COLOR yellow]Đài Hiện Tại Không Phát.[/COLOR]"
-				line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau![/COLOR]"
-				dlg = xbmcgui.Dialog()
-				dlg.ok("Channel is Offline Now - Please Try Again Later", line1, line2)
+				return notice()
 		yt_addon = xbmcaddon.Addon('plugin.video.youtube')
 		if yt_addon.getSetting('kodion.video.quality.mpd') != 'true': # Youtube settings not choose MPEG-Dash yet or == 'false'
 			dialog = xbmcgui.Dialog()
@@ -1310,8 +1316,11 @@ def get_playable_url(url):
 
 	elif any(domain in url for domain in['ustv247.com', 'ustvgo.net', 'ustv247.tv', 'watchnewslive.net', 'guide66.info']):
 		source = requests.get(url,headers=headers1)
-		keyid = re.findall("http://live(.*?)'", source.text)[0]
-		url ='http://live'+keyid
+		try:
+			url = re.findall("(http://live.*?)'", source.text)[0]
+		except:
+			url = re.findall("(http://.*?savitar.*?)'", source.text)[0]
+		#url ='http://live'+keyid
 
 	elif url.startswith("http://123tvnow.com"):
 		source = requests.get(url, headers=headers1).text
@@ -1457,18 +1466,15 @@ def get_playable_url(url):
 			link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
 		source2 = requests.get(link,headers=headers2).text
 		try:
-			url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
+			url = re.findall('1(http.*?m3u.*?\s)', source2)[-1]
 		except:
 			try:
-				url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
+				url = re.findall('1(http.*?m3u.*?\s)', source2)[-2]
 			except:
 				try:
-					url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
+					url = re.findall('1(http.*?m3u.*?\s)', source2)[-3]
 				except:
-					line1 = "[COLOR yellow]Đài Hiện Tại Khó Mở.[/COLOR]"
-					line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại![/COLOR]"
-					dlg = xbmcgui.Dialog()
-					dlg.ok("Xin Thử Lại", line1, line2)
+					notice('Xin Thử Lại', "[COLOR yellow]Đài Hiện Tại Khó Mở.[/COLOR]", "[COLOR yellow]Xin Vui Lòng Thử Lại![/COLOR]")
 					#url = url
 					#return get_playable_url(url) #Loop
 		#else:
