@@ -941,6 +941,15 @@ def get_playable_url(url):
 		'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
 		'Accept-Encoding': 'gzip, deflate',
 	}
+	headers3 = {
+		'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+		'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+	}
+	headers4 = {
+		'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+		'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+	}
+
 	if "youtube.com/watch" in url:
 		match = re.compile(
 			'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
@@ -1344,31 +1353,30 @@ def get_playable_url(url):
 			'Accept-Encoding': 'gzip, deflate',
 		}
 		source = requests.get(url,headers=headers)
-		#keyid = re.findall('http://118.107.85.21:1340/(.*?)"', source.text)[0]
-		#link = 'http://118.107.85.21:1340/'+keyid
 		link = re.findall('data-file="(.*?)"', source.text)[0]
 		source = requests.get(link,headers=headers)
-		#keyid = re.findall('http://118.107.114.5:1935/tvnet/(.*?)"', source.text)[0]
-		#url = 'http://118.107.114.5:1935/tvnet/'+keyid
 		url = re.findall('url": "(.*?)"', source.text)[0]
 
 	#http://photocall.tv/beinsports1/
 	elif "http://photocall.tv" in url:
 		name  = re.findall('http://photocall.tv/(.*?)/',url)[0] # str bz [0]
-		source = requests.get('http://photocall.tv/', headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
+		source = requests.get('http://photocall.tv/', headers=headers3).text
 		link = re.findall('href="(.*?%s)"' % name,source)[0]
-		source = requests.get(link,headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Referer':'http://photocall.tv/','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
+		source = requests.get(link,headers=headers4).text
 		return re.findall("'(http.*?wmsAuthSign.*?)'",source)[0]+'|User-Agent=iPad&Referer='+link
 
 	elif "http://cablegratis.tv" in url:
-		source = requests.get(url, headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
+		source = requests.get(url, headers=headers3).text
 		link = re.findall('iframe.*?src="(.*?)"',source)[0]
-		source = requests.get(link,headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Referer':'http://cablegratis.tv','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
-		#return re.findall('source: "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+link
-		return re.findall(': "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+link
+		source = requests.get(link,headers=headers4).text
+		try:
+			return re.findall(': "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+link
+		except:
+			notice()
 
+	#https://ok.ru/live/profile/572614093143
 	elif url.startswith("https://ok.ru"):
-		source = requests.get(url, headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}).text
+		source = requests.get(url, headers=headers3).text
 		#link = re.findall("hlsMasterPlaylistUrl.*?&quot;.*?&quot;(.*?)video.m3u8",source)[0]
 		#url = link+'video.m3u8'
 		url = re.findall("hlsMasterPlaylistUrl\\\&quot;:\\\&quot;(.*?)\?",source)[0]
@@ -1466,13 +1474,13 @@ def get_playable_url(url):
 			link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
 		source2 = requests.get(link,headers=headers2).text
 		try:
-			url = re.findall('1(http.*?m3u.*?\s)', source2)[-1]
+			url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
 		except:
 			try:
-				url = re.findall('1(http.*?m3u.*?\s)', source2)[-2]
+				url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
 			except:
 				try:
-					url = re.findall('1(http.*?m3u.*?\s)', source2)[-3]
+					url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
 				except:
 					notice('Xin Thử Lại', "[COLOR yellow]Đài Hiện Tại Khó Mở.[/COLOR]", "[COLOR yellow]Xin Vui Lòng Thử Lại![/COLOR]")
 					#url = url
