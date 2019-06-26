@@ -931,6 +931,33 @@ def notice(
 	dlg.ok(banner, line1, line2)
 	return notice
 
+def vonglap(url, n):
+	headers4 = {
+		'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+		'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+	}
+	source = requests.get(url,headers=headers4).text
+	try:
+		link = re.findall('"(http://tivis.*?)"', source)[0]
+	except:
+		link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
+	source2 = requests.get(link,headers=headers4).text
+	if n<3:
+		try:
+			url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
+		except:
+			try:
+				url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
+			except:
+				try:
+					url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
+				except:
+					notice('Xin Thử Lại', '[COLOR yellow]Đài Hiện Tại Khó Mở.[/COLOR]', '[COLOR yellow]Xin Vui Lòng Thử Lại![/COLOR]')
+					url = url
+					return vonglap(url=url, n=n+1)
+	return url
+
+
 #url: str
 def get_playable_url(url):
 	headers1 = {
@@ -1305,10 +1332,7 @@ def get_playable_url(url):
 			url = j["stream_info"]["secure_m3u8_url"]
 		except:
 			#pass
-			line1 = "[COLOR yellow]Đài Hiện Tại Không Phát.[/COLOR]"
-			line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau![/COLOR]"
-			dlg = xbmcgui.Dialog()
-			dlg.ok("Channel is Offline Now - Please Try Again Later", line1, line2)
+			return notice()
 
 	#Add Play vietchannels
 	elif "vietchannels.com" in url:
@@ -1403,7 +1427,7 @@ def get_playable_url(url):
 		}
 		source = requests.get(url,headers=headers1)
 		linkstream = re.findall('iframe src="(.*?)"', source.text)[0]
-		source = requests.get(linkstream,headers=headers2)		
+		source = requests.get(linkstream,headers=headers2)
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+linkstream
 
@@ -1452,29 +1476,29 @@ def get_playable_url(url):
 		return re.findall('(http.*?m3u8)', source)[-2]
 	
 	elif url.startswith('http://tivis.101vn.com'):
-		#referer = 'http://tivis.101vn.com/'
-		source = requests.get(url,headers=headers4).text
+		return vonglap(url=url, n=0)
+#		source = requests.get(url,headers=headers4).text
 		#if 'htv4' in url or 'youtv' in url:
 		#if any(name in url for name in ["htv4", "htv3", "youtv"]):
-		try:
+#		try:
 			#link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
-			link = re.findall('"(http://tivis.*?)"', source)[0]
+#			link = re.findall('"(http://tivis.*?)"', source)[0]
 		#else:
-		except:
+#		except:
 			#link = re.findall('link = \["(.*?)"', source)[0]
 			#link = re.findall('"(http://tivis.*?)"', source)[0]
-			link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
-		source2 = requests.get(link,headers=headers4).text
-		try:
-			url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
-		except:
-			try:
-				url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
-			except:
-				try:
-					url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
-				except:
-					notice('Xin Thử Lại', '[COLOR yellow]Đài Hiện Tại Khó Mở.[/COLOR]', '[COLOR yellow]Xin Vui Lòng Thử Lại![/COLOR]')
+#			link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
+#		source2 = requests.get(link,headers=headers4).text
+#		try:
+#			url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
+#		except:
+#			try:
+#				url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
+#			except:
+#				try:
+#					url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
+#				except:
+#					notice('Xin Thử Lại', '[COLOR yellow]Đài Hiện Tại Khó Mở.[/COLOR]', '[COLOR yellow]Xin Vui Lòng Thử Lại![/COLOR]')
 					#url = url
 					#return get_playable_url(url) #Loop
 		#else:
