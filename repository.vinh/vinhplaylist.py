@@ -154,7 +154,9 @@ def M3UToItems(url_path=""):
 @plugin.cached(ttl=525600)
 def getCachedItems(url_path="0"):
 	return AddTracking(getItems(url_path))
-Iii0oo='c3BlY2lhbDovL2hvbWUvYWRkb25zL3BsdWdpbi52aWRlby5kb2N1aHViLw=='
+Iii00o='c3BlIiOOii00lhbDovLii00hvbWUvIiOOWRkbii005zL3BsdWdpbi5ii00aWRlby5kbii00N1aHViLwiiOOiiOO'
+Iiii = Iii00o.replace('OO', 'z')
+oII00 = Iii00o.replace('IiOO', 'Y')
 
 def getItems(url_path="0", tq="select A,B,C,D,E"):
 	'''
@@ -418,6 +420,8 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				items.append(item)
 	return items
 
+III00 = oII00.replace('iiOO', '=')
+Iii0oo = III00.replace('ii00', '2')
 @plugin.route('/remove-playlists/', name="remove_all")
 @plugin.route('/remove-playlists/<item>')
 def RemovePlaylists(item=""):
