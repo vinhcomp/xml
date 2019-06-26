@@ -957,7 +957,7 @@ def vonglap(url, n):
 					return vonglap(url=url, n=n+1)
 	else:
 		url = None
-		notice('Đã Thử Nhiều Lần', '[COLOR yellow]Đài Hiện Không Mở Được.[/COLOR]', '[COLOR yellow]Đợi Vinh Sửa![/COLOR]')
+		notice('Đã Thử Nhiều Lần', '[COLOR yellow]Đài Hiện Tại Không Mở Được.[/COLOR]', '[COLOR yellow]Đợi Vinh Sửa![/COLOR]')
 	return url
 
 
