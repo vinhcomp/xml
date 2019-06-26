@@ -1344,11 +1344,7 @@ def get_playable_url(url):
 	#Add Play vietchannels
 	elif "vietchannels.com" in url:
 		source = requests.get(url,headers=headers1)
-		keyid = re.findall("tulix.tv/live/(.*?)m3u8", source.text)[0]
-		if "http://tna6.tulix.tv/live/" in source.text:
-			url = 'http://tna6.tulix.tv/live/' + keyid + 'm3u8'
-		if "http://dvr1tna.tulix.tv/live/" in source.text:
-			url = 'http://dvr1tna.tulix.tv/live/' + keyid + 'm3u8'
+		return re.findall("(http://.*?tulix.tv.*?m3u8)", source.text)[0]
 
 	elif any(domain in url for domain in['ustv247.com', 'ustvgo.net', 'ustv247.tv', 'watchnewslive.net', 'guide66.info']):
 		source = requests.get(url,headers=headers1)
