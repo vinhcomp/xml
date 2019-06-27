@@ -964,7 +964,6 @@ def vonglap(url, n):
 		notice('Đã Thử Nhiều Lần', '[COLOR yellow]Đài Hiện Tại Không Mở Được.[/COLOR]', '[COLOR yellow]Đợi Vinh Sửa![/COLOR]')
 	return url
 
-
 #url: str
 def get_playable_url(url):
 	headers1 = {
@@ -1517,6 +1516,7 @@ def get_playable_url(url):
 	#http://sv.tvmienphi.net/ok/htv/htv12.php
 	elif url.startswith('http://sv.tvmienphi.net'):
 		source = requests.get(url, headers=headers4).text
+		source = source.replace('"', '\'')
 		link = re.findall('(http://sv.tvmienphi.net.*?)\'', source)[0]
 		source = requests.get(link, headers=headers4).text
 		return re.findall('(http.*?m3u.*?$)', source)[0]
