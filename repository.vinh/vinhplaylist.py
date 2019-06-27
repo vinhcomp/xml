@@ -1508,10 +1508,17 @@ def get_playable_url(url):
 			#url = None
 
 	elif url.startswith('http://www.tivi12h.net'):
-		source = requests.get(url,headers=headers1).text
+		source = requests.get(url, headers=headers1).text
 		link = re.findall('(http://z.tivi12h.net.*?)\'', source)[0]
 		source = requests.get(link, headers=headers1).text
 		return re.findall('(http.*?$)', source)[0]
+
+	#http://sv.tvmienphi.net/ok/htv/htv12.php
+	elif url.startswith('http://sv.tvmienphi.net'):
+		source = requests.get(url, headers=headers4).text
+		link = re.findall('(http://sv.tvmienphi.net.*?)\'', source)[0]
+		source = requests.get(link, headers=headers4).text
+		return re.findall('(http.*?m3u.*?$)', source)[0]
 
 	elif "https://vtvgo.vn" in url:
 		header = {
