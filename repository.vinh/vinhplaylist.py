@@ -946,7 +946,7 @@ def vonglap(url, n):
 	except:
 		link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
 	source2 = requests.get(link,headers=headers4).text
-	if n<3:
+	if n<5:
 		try:
 			url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
 		except:
@@ -1507,6 +1507,7 @@ def get_playable_url(url):
 		#else:
 			#url = None
 
+	#http://www.tivi12h.net/ok/k-1.php
 	elif url.startswith('http://www.tivi12h.net'):
 		source = requests.get(url, headers=headers1).text
 		link = re.findall('(http://z.tivi12h.net.*?)\'', source)[0]
