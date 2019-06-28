@@ -1370,23 +1370,19 @@ def get_playable_url(url):
 #		url ='http://live'+keyid
 
 	elif "vn.tvnet.gov.vn" in url:
-		headers = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
 		try: #Fix buggy sometime
 			source = requests.get(url,headers=headers1).text
 			link = re.findall('data-file="(.*?)"', source)[0]
 			source2 = requests.get(link,headers=headers1).text
 			linkstreamid = re.findall('(http.*?smil/)', source2)[0]
 			linkstream = re.findall('url": "(.*?)"', source2)[0]
-			source3 = requests.get(linkstream, headers=headers1).text
+			source3 = requests.get(linkstream,headers=headers1).text
 			linkstream2 = re.findall('(chunklist.*?$)', source3)[0]
 			url = linkstreamid+linkstream2
 		except:
-			source = requests.get(url,headers=headers)
+			source = requests.get(url,headers=headers1)
 			link = re.findall('data-file="(.*?)"', source.text)[0]
-			source = requests.get(link,headers=headers)
+			source = requests.get(link,headers=headers1)
 			url = re.findall('url": "(.*?)"', source.text)[0]
 
 	#http://photocall.tv/beinsports1/
@@ -1400,8 +1396,13 @@ def get_playable_url(url):
 	elif "http://cablegratis.tv" in url:
 		source = requests.get(url, headers=headers3).text
 		link = re.findall('iframe.*?src="(.*?)"',source)[0]
-		source = requests.get(link,headers=headers4).text
-		return re.findall(': "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+link
+		source2 = requests.get(link,headers=headers4).text
+		linkstream = re.findall(': "(.*?)"',source2)[0]
+		source3 = requests.get(linkstream,headers=headers4).text
+		if '404' in source3:
+			return notice()
+		else:
+			return re.findall(': "(.*?)"',source2)[0]+'|User-Agent=iPad&Referer='+link
 
 	#https://ok.ru/live/profile/572614093143
 	elif url.startswith("https://ok.ru"):
