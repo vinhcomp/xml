@@ -1374,10 +1374,20 @@ def get_playable_url(url):
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
 			'Accept-Encoding': 'gzip, deflate',
 		}
-		source = requests.get(url,headers=headers)
-		link = re.findall('data-file="(.*?)"', source.text)[0]
-		source = requests.get(link,headers=headers)
-		url = re.findall('url": "(.*?)"', source.text)[0]
+		try: #Fix buggy sometime
+			source = requests.get(url,headers=headers1).text
+			link = re.findall('data-file="(.*?)"', source)[0]
+			source2 = requests.get(link,headers=headers1).text
+			linkstreamid = re.findall('(http.*?smil/)', source2)[0]
+			linkstream = re.findall('url": "(.*?)"', source2)[0]
+			source3 = requests.get(linkstream, headers=headers1).text
+			linkstream2 = re.findall('(chunklist.*?$)', source3)[0]
+			url = linkstreamid+linkstream2
+		except:
+			source = requests.get(url,headers=headers)
+			link = re.findall('data-file="(.*?)"', source.text)[0]
+			source = requests.get(link,headers=headers)
+			url = re.findall('url": "(.*?)"', source.text)[0]
 
 	#http://photocall.tv/beinsports1/
 	elif "http://photocall.tv" in url:
