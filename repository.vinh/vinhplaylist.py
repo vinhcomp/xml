@@ -1438,7 +1438,12 @@ def get_playable_url(url):
 		'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}
 		source = requests.get(url, headers=headers)
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
-		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+url
+		linkstream = re.findall('source:.*?"(.*?)"', decode)[0]
+		source2 = requests.get(linkstream, headers=headers, verify=False)
+		if source2.status_code == 404:
+			return notice()
+		else:
+			return linkstream+'|user-agent=ipad&'+url
 
 	#http://hindimean.com/reddit/ Will take over the streamcdn.to
 	elif "hindimean.com" in url:
@@ -1451,7 +1456,12 @@ def get_playable_url(url):
 		linkstream = re.findall('iframe src="(.*?)"', source.text)[0]
 		source = requests.get(linkstream, headers=headers2)
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
-		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+linkstream
+		linkstream2 = re.findall('source:.*?"(.*?)"', decode)[0]
+		source2 = requests.get(linkstream2, headers=headers2, verify=False)
+		if source2.status_code == 404:
+			return notice()
+		else:
+			return linkstream2+'|user-agent=ipad&'+linkstream
 
 	#http://sportzonline.to/prog.txt
 	elif "sportzonline.co" in url:
