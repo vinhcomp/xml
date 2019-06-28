@@ -1402,11 +1402,11 @@ def get_playable_url(url):
 		else:
 			source2 = requests.get(link, headers=headers4).text
 			linkstream = re.findall(': "(.*?)"',source2)[0]
-			source3 = requests.get(linkstream, headers=headers4).text
-		if '404' in source3:
+			source3 = requests.get(linkstream, headers=headers4)
+		if source3.status_code == 404:
 			return notice()
 		else:
-			return re.findall(': "(.*?)"',source2)[0]+'|User-Agent=iPad&Referer='+link
+			return linkstream+'|User-Agent=iPad&Referer='+link
 
 	#https://ok.ru/live/profile/572614093143
 	elif url.startswith("https://ok.ru"):
@@ -1423,9 +1423,14 @@ def get_playable_url(url):
 	elif "arconaitv.us" in url:
 		source = requests.get(url, headers=headers1)
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
+		linkstream = re.findall("src:'(https.*?)'", decode)[0]
+		source2 = requests.get(linkstream, headers=headers1, verify=False)
+		if source2.status_code == 404:
+			return notice()
 		#return re.findall('(?:source|file|src):[\'"](h[^\'"]+)',decode)[0]+'|user-agent=ipad' #this one will work too
 		#return re.search("src='(.*?\.m3u8)'", decode)[0]
-		return re.findall("src:'(https.*?)'", decode)[0]+'|user-agent=ipad'
+		else:
+			return linkstream+'|user-agent=ipad'
 
 	elif "streamcdn.to" in url:
 		referer = 'https://hindimean.com/reddit/'
