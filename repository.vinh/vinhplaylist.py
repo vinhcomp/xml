@@ -1371,18 +1371,18 @@ def get_playable_url(url):
 
 	elif "vn.tvnet.gov.vn" in url:
 		try: #Fix buggy sometime
-			source = requests.get(url,headers=headers1).text
+			source = requests.get(url, headers=headers1).text
 			link = re.findall('data-file="(.*?)"', source)[0]
-			source2 = requests.get(link,headers=headers1).text
+			source2 = requests.get(link, headers=headers1).text
 			linkstreamid = re.findall('(http.*?smil/)', source2)[0]
 			linkstream = re.findall('url": "(.*?)"', source2)[0]
-			source3 = requests.get(linkstream,headers=headers1).text
+			source3 = requests.get(linkstream, headers=headers1).text
 			linkstream2 = re.findall('(chunklist.*?$)', source3)[0]
 			url = linkstreamid+linkstream2
 		except:
-			source = requests.get(url,headers=headers1)
+			source = requests.get(url, headers=headers1)
 			link = re.findall('data-file="(.*?)"', source.text)[0]
-			source = requests.get(link,headers=headers1)
+			source = requests.get(link, headers=headers1)
 			url = re.findall('url": "(.*?)"', source.text)[0]
 
 	#http://photocall.tv/beinsports1/
@@ -1390,7 +1390,7 @@ def get_playable_url(url):
 		name  = re.findall('http://photocall.tv/(.*?)/',url)[0] # str bz [0]
 		source = requests.get('http://photocall.tv/', headers=headers3).text
 		link = re.findall('href="(.*?%s)"' % name,source)[0]
-		source = requests.get(link,headers=headers4).text
+		source = requests.get(link, headers=headers4).text
 		return re.findall("'(http.*?wmsAuthSign.*?)'",source)[0]+'|User-Agent=iPad&Referer='+link
 
 	elif "http://cablegratis.tv" in url:
@@ -1400,9 +1400,9 @@ def get_playable_url(url):
 			url = link
 			return get_playable_url(url)
 		else:
-			source2 = requests.get(link,headers=headers4).text
+			source2 = requests.get(link, headers=headers4).text
 			linkstream = re.findall(': "(.*?)"',source2)[0]
-			source3 = requests.get(linkstream,headers=headers4).text
+			source3 = requests.get(linkstream, headers=headers4).text
 		if '404' in source3:
 			return notice()
 		else:
@@ -1416,12 +1416,12 @@ def get_playable_url(url):
 		url = re.findall("hlsMasterPlaylistUrl\\\&quot;:\\\&quot;(.*?)\?",source)[0]
 		
 	elif "4ktech.net" in url:
-		source = requests.get(url,headers=headers1)
+		source = requests.get(url, headers=headers1)
 		keyid = re.findall('http://live.4ktech.net:(.*?) ', source.text)[0]
 		url = 'http://live.4ktech.net:'+keyid
 
 	elif "arconaitv.us" in url:
-		source = requests.get(url,headers=headers1)
+		source = requests.get(url, headers=headers1)
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		#return re.findall('(?:source|file|src):[\'"](h[^\'"]+)',decode)[0]+'|user-agent=ipad' #this one will work too
 		#return re.search("src='(.*?\.m3u8)'", decode)[0]
@@ -1431,7 +1431,7 @@ def get_playable_url(url):
 		referer = 'https://hindimean.com/reddit/'
 		headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
 		'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}
-		source = requests.get(url,headers=headers)
+		source = requests.get(url, headers=headers)
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+url
 
@@ -1442,9 +1442,9 @@ def get_playable_url(url):
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
 			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 		}
-		source = requests.get(url,headers=headers1)
+		source = requests.get(url, headers=headers1)
 		linkstream = re.findall('iframe src="(.*?)"', source.text)[0]
-		source = requests.get(linkstream,headers=headers2)
+		source = requests.get(linkstream, headers=headers2)
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+linkstream
 
@@ -1455,9 +1455,9 @@ def get_playable_url(url):
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
 			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 		}
-		source = requests.get(url,headers=headers1)
+		source = requests.get(url, headers=headers1)
 		linkstream = 'https:'+re.findall('iframe.+?src="(.+?)"', source.text)[0]
-		source = requests.get(linkstream,headers=headers2)		
+		source = requests.get(linkstream, headers=headers2)		
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		return re.findall('source:"(.*?)"', decode)[0]+'|user-agent=ipad&'+linkstream
 
@@ -1468,7 +1468,7 @@ def get_playable_url(url):
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
 			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 		}
-		source = requests.get(url,headers=headers2).text
+		source = requests.get(url, headers=headers2).text
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source)[0]).replace('\\', '')
 		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+url
 
@@ -1479,9 +1479,9 @@ def get_playable_url(url):
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
 			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 		}
-		source = requests.get(url,headers=headers1)
+		source = requests.get(url, headers=headers1)
 		linkstream = re.findall('canalillo" src="(.*?)"', source.text)[0]
-		source = requests.get(linkstream,headers=headers2)
+		source = requests.get(linkstream, headers=headers2)
 		try:
 			return re.findall('source: "(.*?)"', source.text)[0]+'|user-agent=ipad&'+linkstream
 		except:
@@ -1489,7 +1489,7 @@ def get_playable_url(url):
 
 	#http://yoursports.stream/nfl/nbcbay.m3u8
 	elif url.startswith('http://yoursports.stream'):
-		source = requests.get(url,headers=headers1).text
+		source = requests.get(url, headers=headers1).text
 		return re.findall('(http.*?m3u8)', source)[-2]
 	
 	elif url.startswith('http://tivis.101vn.com'):
@@ -1573,17 +1573,17 @@ def get_playable_url(url):
 
 	elif 'sdw-net.me' in url:
 		f4m = 'plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url='
-		headers = {
-			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
-			'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
-		}
-		source = requests.get(url, headers=headers).text
+		source = requests.get(url, headers=headers4).text
 		link = re.findall("iframe src='(.*?)'", source)[0]
-		source = requests.get(link, headers=headers).text
-		m3u8link = re.findall('source: "(.*?)"', source)[0]
+		source2 = requests.get(link, headers=headers4).text
+		linkstream = re.findall('source: "(.*?)"', source2)[0]
+		source3 = requests.get(linkstream, headers=headers4)
+		if source3.status_code == 401:
+			return notice()
 		#linkanduser = m3u8link+'|User-Agent=iPad&Referer='+link
 		#encodelink = urllib.quote_plus(linkanduser)
-		url = f4m+m3u8link+'|User-Agent=iPad&Referer='+link
+		else:
+			url = f4m+linkstream+'|User-Agent=iPad&Referer='+link
 		#url = f4m+encodelink
 
 	elif "onecloud.media" in url:
