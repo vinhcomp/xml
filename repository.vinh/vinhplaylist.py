@@ -1396,9 +1396,13 @@ def get_playable_url(url):
 	elif "http://cablegratis.tv" in url:
 		source = requests.get(url, headers=headers3).text
 		link = re.findall('iframe.*?src="(.*?)"',source)[0]
-		source2 = requests.get(link,headers=headers4).text
-		linkstream = re.findall(': "(.*?)"',source2)[0]
-		source3 = requests.get(linkstream,headers=headers4).text
+		if 'https://ok.ru' in source: #some embed link
+			url = link
+			return get_playable_url(url)
+		else:
+			source2 = requests.get(link,headers=headers4).text
+			linkstream = re.findall(': "(.*?)"',source2)[0]
+			source3 = requests.get(linkstream,headers=headers4).text
 		if '404' in source3:
 			return notice()
 		else:
