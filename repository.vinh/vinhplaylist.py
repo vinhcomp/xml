@@ -948,10 +948,10 @@ def vonglap(url, n):
 	source2 = requests.get(link,headers=headers4).text
 	if n<5:
 		try:
-			url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
+			url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
 		except:
 			try:
-				url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
+				url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
 			except:
 				try:
 					url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
@@ -1592,9 +1592,13 @@ def get_playable_url(url):
 		link = re.findall("iframe src='(.*?)'", source)[0]
 		source2 = requests.get(link, headers=headers4).text
 		linkstream = re.findall('source: "(.*?)"', source2)[0]
-		source3 = requests.get(linkstream, headers=headers4)
-		if source3.status_code == 401:
-			return notice()
+		#source3 = requests.get(linkstream, headers=headers4)
+		try:
+			source3 = requests.get(linkstream, headers=headers4)
+		except:
+			notice()
+			if source3.status_code == 401:
+				return notice()
 		#linkanduser = m3u8link+'|User-Agent=iPad&Referer='+link
 		#encodelink = urllib.quote_plus(linkanduser)
 		else:
