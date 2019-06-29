@@ -947,18 +947,18 @@ def vonglap(url, n):
 		link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
 	source2 = requests.get(link,headers=headers4).text
 	if n<5:
-		try:
-			url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
-		except:
+		if 'htv7' in url:
+			try:
+				url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
+			except:
+				url = url
+				return vonglap(url=url, n=n+1)
+		else:
 			try:
 				url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
 			except:
-				try:
-					url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
-				except:
-					#notice('Xin Thử Lại', '[COLOR yellow]Đài Hiện Tại Khó Mở.[/COLOR]', '[COLOR yellow]Xin Vui Lòng Thử Lại![/COLOR]')
-					url = url
-					return vonglap(url=url, n=n+1)
+				url = url
+				return vonglap(url=url, n=n+1)
 	else:
 		url = None
 		notice('Đã Thử Nhiều Lần', '[COLOR yellow]Đài Hiện Tại Không Mở Được.[/COLOR]', '[COLOR yellow]Đợi Vinh Sửa![/COLOR]')
