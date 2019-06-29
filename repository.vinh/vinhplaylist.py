@@ -1361,6 +1361,10 @@ def get_playable_url(url):
 		streamurl = str(streamurl)
 		url = streamurl+'?1|Referer='+url+'&User-Agent=iPad'
 
+	elif url.startswith('http://tmedia.me/channel'):
+		source = requests.get(url, headers=headers4).text
+		return json.loads(source)[0]['file']
+
 	#Cloudflare Site
 #	elif 'ustvgo.tv' in url:
 #		import cfscrape
@@ -1545,11 +1549,17 @@ def get_playable_url(url):
 
 	#http://sv.tvmienphi.net/ok/htv/htv12.php
 	elif url.startswith('http://sv.tvmienphi.net'):
+		#source = requests.get(url, headers=headers4).text
+		#source = source.replace('"', '\'')
+		#link = re.findall('(http://sv.tvmienphi.net.*?)\'', source)[0]
+		#source = requests.get(link, headers=headers4).text
+		#return re.findall('(http.*?m3u.*?$)', source)[0]
 		source = requests.get(url, headers=headers4).text
-		source = source.replace('"', '\'')
 		link = re.findall('(http://sv.tvmienphi.net.*?)\'', source)[0]
-		source = requests.get(link, headers=headers4).text
-		return re.findall('(http.*?m3u.*?$)', source)[0]
+		source2 = requests.get(link, headers=headers4).text
+		linkstream = re.findall('(http.*?m3u.*?$)', source2)[0]
+		source3 = requests.get(linkstream, headers=headers4).text
+		url = re.findall('(http.*?m3u.*?\s)', source3)[-1]
 
 	elif "https://vtvgo.vn" in url:
 		header = {
