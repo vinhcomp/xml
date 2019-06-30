@@ -968,13 +968,14 @@ def vonglap(url, n):
 		#f4m = 'plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url='
 		source = requests.get(url, headers=headers4).text
 		link = re.findall("iframe src='(.*?)'", source)[0]
-		source2 = requests.get(link, headers=headers4).text
+		#source2 = requests.get(link, headers=headers4).text
 		#linkstream = re.findall('source: "(.*?)"', source2)[0]
 		#source3 = requests.get(linkstream, headers=headers4)
 		#if source3.status_code != 200:
 			#return notice()
 		if n<30:
 			try:
+				source2 = requests.get(link, headers=headers4).text
 				linkstream = re.findall('source: "(.*?)"', source2)[0]
 				url = linkstream+'|User-Agent=iPad&Referer='+link
 			except:
