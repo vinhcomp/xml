@@ -940,28 +940,50 @@ def vonglap(url, n):
 		'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
 		'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 	}
-	source = requests.get(url,headers=headers4).text
-	try:
-		link = re.findall('"(http://tivis.*?)"', source)[0]
-	except:
-		link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
-	source2 = requests.get(link,headers=headers4).text
-	if n<5:
-		if 'htv7' in url:
-			try:
-				url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
-			except:
-				url = url
-				return vonglap(url=url, n=n+1)
+	if url.startswith('http://tivis.101vn.com'):
+		source = requests.get(url,headers=headers4).text
+		try:
+			link = re.findall('"(http://tivis.*?)"', source)[0]
+		except:
+			link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
+		source2 = requests.get(link,headers=headers4).text
+		if n<5:
+			if 'htv7' in url:
+				try:
+					url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
+				except:
+					url = url
+					return vonglap(url=url, n=n+1)
+			else:
+				try:
+					url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
+				except:
+					url = url
+					return vonglap(url=url, n=n+1)
 		else:
-			try:
-				url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
-			except:
-				url = url
-				return vonglap(url=url, n=n+1)
-	else:
-		url = None
-		notice('Đã Thử Nhiều Lần', '[COLOR yellow]Đài Hiện Tại Không Mở Được.[/COLOR]', '[COLOR yellow]Đợi Vinh Sửa![/COLOR]')
+			url = None
+			notice('Đã Thử Nhiều Lần', '[COLOR yellow]Đài Hiện Tại Không Mở Được.[/COLOR]', '[COLOR yellow]Đợi Vinh Sửa![/COLOR]')
+
+	elif 'sdw-net.me' in url:
+		#f4m = 'plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url='
+		source = requests.get(url, headers=headers4).text
+		link = re.findall("iframe src='(.*?)'", source)[0]
+		source2 = requests.get(link, headers=headers4).text
+		linkstream = re.findall('source: "(.*?)"', source2)[0]
+		source3 = requests.get(linkstream, headers=headers4)
+		if source3.status_code != 200:
+			return notice()
+		else:
+			if n<5:
+				try:
+					url = linkstream+'|User-Agent=iPad&Referer='+link
+				except:
+					url = url
+					return vonglap(url=url, n=n+1)
+			else:
+				url = None
+				notice('Tried Many Times', '[COLOR yellow]This Channel is Offine Now.[/COLOR]', '[COLOR yellow]Vinh will fix it![/COLOR]')
+
 	return url
 
 #url: str
@@ -1361,9 +1383,9 @@ def get_playable_url(url):
 		streamurl = str(streamurl)
 		url = streamurl+'?1|Referer='+url+'&User-Agent=iPad'
 
-	elif url.startswith('http://tmedia.me/channel'):
-		source = requests.get(url, headers=headers4).text
-		return json.loads(source)[0]['file']
+#	elif url.startswith('http://tmedia.me/channel'):
+#		source = requests.get(url, headers=headers4).text
+#		return json.loads(source)[0]['file']
 
 	#Cloudflare Site
 #	elif 'ustvgo.tv' in url:
@@ -1605,22 +1627,19 @@ def get_playable_url(url):
 		return match.group(1)
 
 	elif 'sdw-net.me' in url:
-		f4m = 'plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url='
-		source = requests.get(url, headers=headers4).text
-		link = re.findall("iframe src='(.*?)'", source)[0]
-		source2 = requests.get(link, headers=headers4).text
-		linkstream = re.findall('source: "(.*?)"', source2)[0]
-		#source3 = requests.get(linkstream, headers=headers4)
-		try:
-			source3 = requests.get(linkstream, headers=headers4)
-		except:
-			notice()
-			if source3.status_code == 401:
-				return notice()
+		return vonglap(url=url, n=0)
+#		f4m = 'plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url='
+#		source = requests.get(url, headers=headers4).text
+#		link = re.findall("iframe src='(.*?)'", source)[0]
+#		source2 = requests.get(link, headers=headers4).text
+#		linkstream = re.findall('source: "(.*?)"', source2)[0]
+#		source3 = requests.get(linkstream, headers=headers4)
+#		if source3.status_code != 200:
+#			return notice()
 		#linkanduser = m3u8link+'|User-Agent=iPad&Referer='+link
 		#encodelink = urllib.quote_plus(linkanduser)
-		else:
-			url = f4m+linkstream+'|User-Agent=iPad&Referer='+link
+#		else:
+#			url = linkstream+'|User-Agent=iPad&Referer='+link
 		#url = f4m+encodelink
 
 	elif "onecloud.media" in url:
