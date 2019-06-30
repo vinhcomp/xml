@@ -968,16 +968,16 @@ def vonglap(url, n):
 		#f4m = 'plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url='
 		source = requests.get(url, headers=headers4).text
 		link = re.findall("iframe src='(.*?)'", source)[0]
-		#source2 = requests.get(link, headers=headers4).text
-		#linkstream = re.findall('source: "(.*?)"', source2)[0]
-		#source3 = requests.get(linkstream, headers=headers4)
-		#if source3.status_code != 200:
-			#return notice()
-		if n<30:
+		if n<5:
 			try:
 				source2 = requests.get(link, headers=headers4).text
 				linkstream = re.findall('source: "(.*?)"', source2)[0]
-				url = linkstream+'|User-Agent=iPad&Referer='+link
+				source3 = requests.get(linkstream, headers=headers4)
+				if source3.status_code != 200:
+					url = url
+					return vonglap(url=url, n=n+1)
+				else:
+					url = linkstream+'|User-Agent=iPad&Referer='+link
 			except:
 				url = url
 				return vonglap(url=url, n=n+1)
@@ -1629,19 +1629,6 @@ def get_playable_url(url):
 
 	elif 'sdw-net.me' in url:
 		return vonglap(url=url, n=0)
-#		f4m = 'plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url='
-#		source = requests.get(url, headers=headers4).text
-#		link = re.findall("iframe src='(.*?)'", source)[0]
-#		source2 = requests.get(link, headers=headers4).text
-#		linkstream = re.findall('source: "(.*?)"', source2)[0]
-#		source3 = requests.get(linkstream, headers=headers4)
-#		if source3.status_code != 200:
-#			return notice()
-		#linkanduser = m3u8link+'|User-Agent=iPad&Referer='+link
-		#encodelink = urllib.quote_plus(linkanduser)
-#		else:
-#			url = linkstream+'|User-Agent=iPad&Referer='+link
-		#url = f4m+encodelink
 
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
