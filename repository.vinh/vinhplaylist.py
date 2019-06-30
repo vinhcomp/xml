@@ -1549,17 +1549,27 @@ def get_playable_url(url):
 
 	#http://sv.tvmienphi.net/ok/htv/htv12.php
 	elif url.startswith('http://sv.tvmienphi.net'):
-		#source = requests.get(url, headers=headers4).text
-		#source = source.replace('"', '\'')
-		#link = re.findall('(http://sv.tvmienphi.net.*?)\'', source)[0]
-		#source = requests.get(link, headers=headers4).text
-		#return re.findall('(http.*?m3u.*?$)', source)[0]
-		source = requests.get(url, headers=headers4).text
-		link = re.findall('(http://sv.tvmienphi.net.*?)\'', source)[0]
-		source2 = requests.get(link, headers=headers4).text
-		linkstream = re.findall('(http.*?m3u.*?$)', source2)[0]
-		source3 = requests.get(linkstream, headers=headers4).text
-		url = re.findall('(http.*?m3u.*?\s)', source3)[-1]
+		if url.endswith('sd'):
+			url = re.findall('(http://sv.tvmienphi.net.*?)/sd', url)[0]
+			source = requests.get(url, headers=headers4).text
+			link = re.findall('(http://sv.tvmienphi.net.*?)\'', source)[0]
+			source2 = requests.get(link, headers=headers4).text
+			linkstream = re.findall('(http.*?m3u.*?$)', source2)[0]
+			source3 = requests.get(linkstream, headers=headers4).text
+			try:
+				url = re.findall('(http.*?m3u.*?\s)', source3)[-2]
+			except:
+				return notice('Đã Thử Nhiều Lần', '[COLOR yellow]Đài Hiện Tại Không Mở Được.[/COLOR]', '[COLOR yellow]Đợi Vinh Sửa![/COLOR]')
+		else:
+			source = requests.get(url, headers=headers4).text
+			link = re.findall('(http://sv.tvmienphi.net.*?)\'', source)[0]
+			source2 = requests.get(link, headers=headers4).text
+			linkstream = re.findall('(http.*?m3u.*?$)', source2)[0]
+			source3 = requests.get(linkstream, headers=headers4).text
+			try:
+				url = re.findall('(http.*?m3u.*?\s)', source3)[-1]
+			except:
+				return notice('Đã Thử Nhiều Lần', '[COLOR yellow]Đài Hiện Tại Không Mở Được.[/COLOR]', '[COLOR yellow]Đợi Vinh Sửa![/COLOR]')
 
 	elif "https://vtvgo.vn" in url:
 		header = {
