@@ -941,12 +941,12 @@ def vonglap(url, n):
 		'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 	}
 	if url.startswith('http://tivis.101vn.com'):
-		source = requests.get(url,headers=headers4).text
+		source = requests.get(url, headers=headers4).text
 		try:
 			link = re.findall('"(http://tivis.*?)"', source)[0]
 		except:
 			link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
-		source2 = requests.get(link,headers=headers4).text
+		source2 = requests.get(link, headers=headers4).text
 		if n<5:
 			if 'htv7' in url:
 				try:
@@ -969,20 +969,20 @@ def vonglap(url, n):
 		source = requests.get(url, headers=headers4).text
 		link = re.findall("iframe src='(.*?)'", source)[0]
 		source2 = requests.get(link, headers=headers4).text
-		linkstream = re.findall('source: "(.*?)"', source2)[0]
-		source3 = requests.get(linkstream, headers=headers4)
-		if source3.status_code != 200:
-			return notice()
+		#linkstream = re.findall('source: "(.*?)"', source2)[0]
+		#source3 = requests.get(linkstream, headers=headers4)
+		#if source3.status_code != 200:
+			#return notice()
+		if n<30:
+			try:
+				linkstream = re.findall('source: "(.*?)"', source2)[0]
+				url = linkstream+'|User-Agent=iPad&Referer='+link
+			except:
+				url = url
+				return vonglap(url=url, n=n+1)
 		else:
-			if n<5:
-				try:
-					url = linkstream+'|User-Agent=iPad&Referer='+link
-				except:
-					url = url
-					return vonglap(url=url, n=n+1)
-			else:
-				url = None
-				notice('Tried Many Times', '[COLOR yellow]This Channel is Offine Now.[/COLOR]', '[COLOR yellow]Vinh will fix it![/COLOR]')
+			url = None
+			notice('Tried Many Times', '[COLOR yellow]This Channel is Offine Now.[/COLOR]', '[COLOR yellow]Vinh will fix it![/COLOR]')
 
 	return url
 
@@ -1429,7 +1429,7 @@ def get_playable_url(url):
 			source2 = requests.get(link, headers=headers4).text
 			linkstream = re.findall(': "(.*?)"',source2)[0]
 			source3 = requests.get(linkstream, headers=headers4)
-		if source3.status_code == 404:
+		if source3.status_code != 200:
 			return notice()
 		else:
 			return linkstream+'|User-Agent=iPad&Referer='+link
@@ -1451,7 +1451,7 @@ def get_playable_url(url):
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		linkstream = re.findall("src:'(https.*?)'", decode)[0]
 		source2 = requests.get(linkstream, headers=headers1, verify=False)
-		if source2.status_code == 404:
+		if source2.status_code != 200:
 			return notice()
 		#return re.findall('(?:source|file|src):[\'"](h[^\'"]+)',decode)[0]+'|user-agent=ipad' #this one will work too
 		#return re.search("src='(.*?\.m3u8)'", decode)[0]
@@ -1466,7 +1466,7 @@ def get_playable_url(url):
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		linkstream = re.findall('source:.*?"(.*?)"', decode)[0]
 		source2 = requests.get(linkstream, headers=headers, verify=False)
-		if source2.status_code == 404:
+		if source2.status_code != 200:
 			return notice()
 		else:
 			return linkstream+'|user-agent=ipad&'+url
@@ -1484,7 +1484,7 @@ def get_playable_url(url):
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		linkstream2 = re.findall('source:.*?"(.*?)"', decode)[0]
 		source2 = requests.get(linkstream2, headers=headers2, verify=False)
-		if source2.status_code == 404:
+		if source2.status_code != 200:
 			return notice()
 		else:
 			return linkstream2+'|user-agent=ipad&'+linkstream
