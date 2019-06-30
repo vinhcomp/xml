@@ -983,7 +983,7 @@ def vonglap(url, n):
 				return vonglap(url=url, n=n+1)
 		else:
 			url = None
-			notice('Tried Many Times', '[COLOR yellow]This Channel is Offine Now.[/COLOR]', '[COLOR yellow]Vinh will fix it![/COLOR]')
+			return notice()
 
 	return url
 
