@@ -941,28 +941,33 @@ def vonglap(url, n):
 		'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 	}
 	if url.startswith('http://tivis.101vn.com'):
-		source = requests.get(url, headers=headers4).text
+		try:
+			url1 = re.findall('(http://.*?)/sd', url)[0]
+		except:
+			url1 = url
+		source = requests.get(url1, headers=headers4).text
 		try:
 			link = re.findall('"(http://tivis.*?)"', source)[0]
 		except:
 			link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
-		source2 = requests.get(link, headers=headers4).text
 		if n<5:
-			if 'htv7' in url:
+			if 'sd' in url:
 				try:
+					source2 = requests.get(link, headers=headers4).text
 					url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
 				except:
 					url = url
 					return vonglap(url=url, n=n+1)
 			else:
 				try:
+					source2 = requests.get(link, headers=headers4).text
 					url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
 				except:
 					url = url
 					return vonglap(url=url, n=n+1)
 		else:
 			url = None
-			notice('Đã Thử Nhiều Lần', '[COLOR yellow]Đài Hiện Tại Không Mở Được.[/COLOR]', '[COLOR yellow]Đợi Vinh Sửa![/COLOR]')
+			return notice()
 
 	elif 'sdw-net.me' in url:
 		#f4m = 'plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url='
