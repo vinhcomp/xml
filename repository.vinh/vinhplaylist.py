@@ -970,7 +970,7 @@ def vonglap(url, n):
 			return notice()
 
 	elif 'sdw-net.me' in url:
-		#f4m = 'plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url='
+		f4m = 'plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url='
 		source = requests.get(url, headers=headers4).text
 		link = re.findall("iframe src='(.*?)'", source)[0]
 		if n<5:
@@ -982,7 +982,7 @@ def vonglap(url, n):
 					url = url
 					return vonglap(url=url, n=n+1)
 				else:
-					url = linkstream+'|User-Agent=iPad&Referer='+link
+					url = f4m+linkstream+'|User-Agent=iPad&Referer='+link
 			except:
 				url = url
 				return vonglap(url=url, n=n+1)
