@@ -1186,6 +1186,15 @@ def get_playable_url(url):
 		else:
 			url = 'plugin://plugin.video.youtube/play/?video_id='+keyid
 
+	elif url.startswith('ytrandom'):
+		ytid = url.replace('ytrandom/', '')
+		url = 'https://www.youtube.com/playlist?list='+ytid
+		source = requests.get(url, headers=headers1).text
+		listid = re.findall('videoId":"(.*?)"', source)[::]
+		randomid = random.randint(0,len(listid))
+		ytidrandom = listid[randomid]
+		return 'plugin://plugin.video.youtube/play/?video_id='+ytidrandom
+
 	#Open LSP settings enable regex
 	elif "enableregex" in url:		
 		lsp_addon = xbmcaddon.Addon('plugin.video.live.streamspro')
@@ -1343,8 +1352,12 @@ def get_playable_url(url):
 			"GET",
 			headers=headers
 		)
-		match = re.search("src: '(.+?)'", content)
-		return match.group(1)
+		try:
+			match = re.search("src: '(.+?)'", content)
+			return match.group(1)
+		except:
+			return notice()
+
 	elif "livestream.com" in url:
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
@@ -1443,8 +1456,6 @@ def get_playable_url(url):
 	#https://ok.ru/live/profile/572614093143
 	elif url.startswith("https://ok.ru"):
 		source = requests.get(url, headers=headers3).text
-		#link = re.findall("hlsMasterPlaylistUrl.*?&quot;.*?&quot;(.*?)video.m3u8",source)[0]
-		#url = link+'video.m3u8'
 		url = re.findall("hlsMasterPlaylistUrl\\\&quot;:\\\&quot;(.*?)\?",source)[0]
 		
 	elif "4ktech.net" in url:
@@ -1583,7 +1594,7 @@ def get_playable_url(url):
 		source2 = requests.get(link, headers=headers4).text
 		linkstream = re.findall('(http.*?m3u.*?$)', source2)[0]
 		source3 = requests.get(linkstream, headers=headers4).text
-		notice1 = 'Đã Thử Nhiều Lần'
+		notice1 = 'Xin Thử Lại'
 		notice2 = '[COLOR yellow]Đài Hiện Tại Không Mở Được.[/COLOR]'
 		notice3 = '[COLOR yellow]Đợi Vinh Sửa![/COLOR]'
 		if 'sd' in url:
