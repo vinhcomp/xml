@@ -911,8 +911,7 @@ def play_url(url, title=""):
 	if "sub" in plugin.request.args:
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
 	else:
-		#plugin.set_resolved_url(url)
-		plugin.set_resolved_url(url, subtitles = "https://docs.google.com/spreadsheets/d/1NwDGsRUhlXvvCPT3ToXJzn450Nto6FyLLBMucdxK13A/export?format=tsv&gid=0")
+		plugin.set_resolved_url(url, subtitles="https://docs.google.com/spreadsheets/d/1NwDGsRUhlXvvCPT3ToXJzn450Nto6FyLLBMucdxK13A/export?format=tsv&gid=0")
 
 if xbmcvfs.exists(IIii0OO):
 	#yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
@@ -1646,6 +1645,11 @@ def get_playable_url(url):
 
 	elif 'sdw-net.me' in url:
 		return vonglap(url=url, n=0)
+
+	#http://www.giniko.com/watch.php?id=403
+	elif url.startswith('http://www.giniko.com'):
+		source = requests.get(url, headers=headers1).text
+		return re.findall('source:"(.*?)"', source)[0]
 
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
