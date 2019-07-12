@@ -116,7 +116,11 @@ def M3UToItems(url_path=""):
 				"thumbnail": thumb.strip(),
 				"path": linkstream.strip(),
 			}
+			#Xong go to def play_url
+			item["path"] = pluginrootpath + \
+					"/play/%s" % urllib.quote_plus(item["path"])
 			item["is_playable"] = True
+			item["info"] = {"type": "video"}
 			items += [item]
 		return items
 
@@ -126,8 +130,10 @@ def M3UToItems(url_path=""):
 			url_path, "GET",
 			headers=sheet_headers
 		)
+		pages = re.findall('li><a href="(.*?/\?page=.*?)" class="next', content)[0]
+		pages = 'https://chaturbate.com'+pages
 		content = content.replace('/follow/follow', 'https://chaturbate.com')
-		items = []
+		items1 = []#List
 		matchs = re.compile(item_re).findall(content)
 		for path,label,thumb in matchs:
 			if 'followurl' in path:
@@ -142,12 +148,17 @@ def M3UToItems(url_path=""):
 				"thumbnail": thumb.strip(),
 				"path": path.strip(),
 			}
+			nlabel = '[COLOR yellow]Next Page[/COLOR]'
+			nthumb = 'http://www.jemome.com/cdn/2012/06/3d-play-button-icon_2437839.png'
+			npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
+			nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}#dict next page
+#			if 'chaturbate.com' in url_path: #Optional or go direct to play_url
 			item["is_playable"] = True
-			if 'chaturbate.com' in url_path:
-				item["is_playable"] = True
-				item["info"] = {"type": "video"}
-				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-			items += [item]
+			item["info"] = {"type": "video"}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			items1 += [item] #Dict to list
+			items = items1[:]#Copy list
+			items = items + [nextitem]#Add dict to list
 		return items
 
 	else:
