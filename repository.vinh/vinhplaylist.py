@@ -94,62 +94,119 @@ def M3UToItems(url_path=""):
 	url_path : string
 		link chứa nội dung m3u playlist
 	'''
-	item_re = '\#EXTINF(.*?,)(.*?)\n(.*?)\n'
-	(resp, content) = http.request(
-		url_path, "GET",
-		headers=sheet_headers
-	)
-	items = []
-	matchs = re.compile(item_re).findall(content)
-	for info, label, path in matchs:
-		thumb = ""
-		label2 = ""
-		if "tvg-logo" in info:
-			#thumb = re.compile('tvg-logo=\"?(.*?)\"?,').findall(info)[0]
-			thumb = re.compile('tvg-logo="(.*?)"').findall(info)[0]
-		if "group-title" in info:
-			label2 = re.compile('group-title="(.*?)"').findall(info)[0]
-		if label2 != "":
-			label2 = "[%s] " % label2.strip()
-		label = "%s%s" % (label2, label.strip())
-		item = {
-			"label": label,
-			"thumbnail": thumb.strip(),
-			"path": path.strip(),
-		}
 
-		# Nếu là playable link
-		if "://" in item["path"]:
-			# Kiểu link plugin://
-			if item["path"].startswith("plugin://"):
+	if 'swiftstreamz.com' in url_path:		
+		item_re = 'cat_id":"29",(.*?,)(.*?,)(.*?),"channel_desc'
+		(resp, content) = http.request(
+			url_path, "GET",
+			headers=sheet_headers
+		)
+		items = []
+		matchs = re.compile(item_re).findall(content)
+		for label,path,thumb in matchs:
+			if "channel_title" in label:
+				label = re.compile('channel_title\":\"(.*?)"').findall(label)[0]
+			if "channel_url" in path:
+				path = re.compile('channel_url\":\"(.*?)"').findall(path)[0]
+				linkstream = 'plugin://script.module.streamhublive/play/?url=swift:'+path+'&mode=10&quot'
+			if "channel_thumbnail" in thumb:
+				thumb = re.compile('channel_thumbnail\":\"(.*?)"').findall(thumb)[0]
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": linkstream.strip(),
+			}
+			item["is_playable"] = True
+			items += [item]
+		return items
+
+	elif 'https://chaturbate.com' in url_path:
+		item_re = '<div title="(.*?)\n(.*?)\n(.*?)\n'
+		(resp, content) = http.request(
+			url_path, "GET",
+			headers=sheet_headers
+		)
+		content = content.replace('/follow/follow', 'https://chaturbate.com')
+		items = []
+		matchs = re.compile(item_re).findall(content)
+		for path,label,thumb in matchs:
+			if 'followurl' in path:
+				path = re.compile('data-followurl="(.*?)"').findall(path)[0]
+			if 'href=' in label:
+				label = re.compile('href="(.*?)"').findall(label)[0]
+				label = '[COLOR red][LIVE] [/COLOR][COLOR hotpink]'+label+'[/COLOR]'
+			if 'src=' in thumb:
+				thumb = re.compile('src="(.*?)"').findall(thumb)[0]
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["is_playable"] = True
+			if 'chaturbate.com' in url_path:
 				item["is_playable"] = True
 				item["info"] = {"type": "video"}
-			# Kiểu link .ts
-			elif re.search("\.ts$", item["path"]):
-				item["path"] = "plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&use_proxy_for_chunks=True&name=%s" % (
-					urllib.quote(item["path"]),
-					urllib.quote_plus(item["label"])
-				)
-				item["path"] = pluginrootpath + \
-					"/executebuiltin/" + urllib.quote_plus(item["path"])
-			# Kiểu direct link
+				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			items += [item]
+		return items
+
+	else:
+		item_re = '\#EXTINF(.*?,)(.*?)\n(.*?)\n'
+		(resp, content) = http.request(
+			url_path, "GET",
+			headers=sheet_headers
+		)
+		items = []
+		matchs = re.compile(item_re).findall(content)
+		for info, label, path in matchs:
+			thumb = ""
+			label2 = ""
+			if "tvg-logo" in info:
+				#thumb = re.compile('tvg-logo=\"?(.*?)\"?,').findall(info)[0]
+				thumb = re.compile('tvg-logo="(.*?)"').findall(info)[0]
+			if "group-title" in info:
+				label2 = re.compile('group-title="(.*?)"').findall(info)[0]
+			if label2 != "":
+				label2 = "[%s] " % label2.strip()
+			label = "%s%s" % (label2, label.strip())
+			item = {
+				"label": label,
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+
+			# Nếu là playable link
+			if "://" in item["path"]:
+				# Kiểu link plugin://
+				if item["path"].startswith("plugin://"):
+					item["is_playable"] = True
+					item["info"] = {"type": "video"}
+				# Kiểu link .ts
+				elif re.search("\.ts$", item["path"]):
+					item["path"] = "plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&use_proxy_for_chunks=True&name=%s" % (
+						urllib.quote(item["path"]),
+						urllib.quote_plus(item["label"])
+					)
+					item["path"] = pluginrootpath + \
+						"/executebuiltin/" + urllib.quote_plus(item["path"])
+				# Kiểu direct link
+				else:
+					if "acestream" in item["path"]:
+						item["label"] = "[AceStream] %s" % item["label"]
+					item["path"] = pluginrootpath + \
+						"/play/%s" % urllib.quote_plus(item["path"])
+					item["is_playable"] = True
+					item["info"] = {"type": "video"}
 			else:
-				if "acestream" in item["path"]:
-					item["label"] = "[AceStream] %s" % item["label"]
-				item["path"] = pluginrootpath + \
-					"/play/%s" % urllib.quote_plus(item["path"])
-				item["is_playable"] = True
-				item["info"] = {"type": "video"}
-		else:
-			# Nếu không phải...
-			item["is_playable"] = False
+				# Nếu không phải...
+				item["is_playable"] = False
 
-		# Hack xbmcswift2 item to set both is_playable and is_folder to False
-		# Required for f4mTester
-		if "f4mTester" in item["path"]:
-			item["is_playable"] = False
-		items += [item]
-	return items
+			# Hack xbmcswift2 item to set both is_playable and is_folder to False
+			# Required for f4mTester
+			if "f4mTester" in item["path"]:
+				item["is_playable"] = False
+			items += [item]
+		return items
 
 @plugin.cached(ttl=525600)
 def getCachedItems(url_path="0"):
@@ -365,49 +422,36 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				item["path"]='plugin://plugin.video.youtube/kodion/search/query/?q='+item["path"]+'&search_type=playlist'
 
 			#Try listing
-			elif item["path"].startswith('http://swiftstreamz.com'):
-				headers1 = {
-					'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-					'Accept-Encoding': 'gzip, deflate',
-					}
+#			elif item["path"].startswith('http://swiftstreamz.com'):
+#				headers1 = {
+#					'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+#					'Accept-Encoding': 'gzip, deflate',
+#					}
 				#url = re.findall('(http://.*?/.*?/.*?)/', item["path"])[0]
 				#n = re.findall('http://swiftstreamz.com/SnappyStreamz/.*?/(.*?$)', item["path"])[0]
 				#n = int(n)
-				#items = []
-				source = requests.get(item["path"], headers=headers1).content
-				item["label"] = re.findall('channel_title":"(.*?)"', source)[0]
-				linkstream = re.findall('channel_url":"(.*?)"', source)[0]
-				item["is_playable"] = True
-				item["path"] = 'plugin://script.module.streamhublive/play/?url=swift:'+linkstream+'&mode=10&quot'
+#			#	source = requests.get(item["path"], headers=headers1).content
+#			#	item["label"] = re.findall('channel_title":"(.*?)"', source)[0]
+#			#	linkstream = re.findall('channel_url":"(.*?)"', source)[0]
+#			#	item["is_playable"] = True
+#			#	item["path"] = 'plugin://script.module.streamhublive/play/?url=swift:'+linkstream+'&mode=10&quot'
 
-				#item["label"] = str(item["label"])
-				#linkstream = re.findall('channel_url":"(.*?)"', source)[0:6]
-				#item["label"] = xbmcgui.ListItem(title)
-				#for t in title:
-					#item["is_playable"] = True
-					#item["label"] = '[COLOR red][LIVE] [/COLOR][COLOR yellow]'+t+'[/COLOR]'
-					#items += [item]
-				#for l in linkstream:
-					#item["path"] = 'plugin://script.module.streamhublive/play/?url=swift:'+l+'&mode=10&quot'
-					#items += [item]
-				#items += [item]
-
-			elif item["path"].startswith('https://chaturbate.com'):
-				headers1 = {
-					'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-					'Accept-Encoding': 'gzip, deflate',
-					}
-				url = re.findall('(https://.*?/.*?)/', item["path"])[0]
-				n = re.findall('https://chaturbate.com/.*?/(.*?$)', item["path"])[0]
-				n = int(n)
-				source = requests.get(url, headers=headers1).text
-				source = source.replace('/follow/follow', 'https://chaturbate.com')
-				item["label"] = re.findall('data-slug=(.*?)><', source)[n]
-				item["thumbnail"] = re.findall('img src="(https://roomimg.*?)"', source)[n]
-				url2 = re.findall('data-followurl="(.*?)"', source)[n]
-				source2 = requests.get(url2, headers=headers1).text
-				item["is_playable"] = True
-				item["path"] = re.findall('"src=\'(.*?)\'', source2)[0]
+#			elif item["path"].startswith('https://chaturbate.com'):
+#				headers1 = {
+#					'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+#					'Accept-Encoding': 'gzip, deflate',
+#					}
+#				url = re.findall('(https://.*?/.*?)/', item["path"])[0]
+#				n = re.findall('https://chaturbate.com/.*?/(.*?$)', item["path"])[0]
+#				n = int(n)
+#				source = requests.get(url, headers=headers1).text
+#				source = source.replace('/follow/follow', 'https://chaturbate.com')
+#				item["label"] = re.findall('data-slug=(.*?)><', source)[n]
+#				item["thumbnail"] = re.findall('img src="(https://roomimg.*?)"', source)[n]
+#				url2 = re.findall('data-followurl="(.*?)"', source)[n]
+#				source2 = requests.get(url2, headers=headers1).text
+#				item["is_playable"] = True
+#				item["path"] = re.findall('"src=\'(.*?)\'', source2)[0]
 
 			elif re.search("\.ts$", item["path"]):
 				item["path"] = "plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&use_proxy_for_chunks=True&name=%s" % (
@@ -953,10 +997,19 @@ def play_url(url, title=""):
 	#except:
 		#pass	
 	#####will get error handle if call plugin.set_resolved_url 2 times
+	vsub = 'https://docs.google.com/spreadsheets/d/1NwDGsRUhlXvvCPT3ToXJzn450Nto6FyLLBMucdxK13A/export?format=tsv&gid=0'
 	if "sub" in plugin.request.args:
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
+	elif 'chaturbate.com' in url:
+		headers1 = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+			'Accept-Encoding': 'gzip, deflate',
+		}
+		source = requests.get(url, headers=headers1).text
+		url = re.findall('"src=\'(.*?)\'', source)[0]
+		plugin.set_resolved_url(url, subtitles=vsub)
 	else:
-		plugin.set_resolved_url(url, subtitles="https://docs.google.com/spreadsheets/d/1NwDGsRUhlXvvCPT3ToXJzn450Nto6FyLLBMucdxK13A/export?format=tsv&gid=0")
+		plugin.set_resolved_url(url, subtitles=vsub)
 
 if xbmcvfs.exists(IIii0OO):
 	#yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
@@ -1233,9 +1286,10 @@ def get_playable_url(url):
 	elif url.startswith('ytrandom'):
 		ytid = url.replace('ytrandom/', '')
 		url = 'https://www.youtube.com/playlist?list='+ytid
-		source = requests.get(url, headers=headers1).text
-		source = source.replace('\\', '')
+		source = (requests.get(url, headers=headers1).text).replace('\\', '')
+		#source = source.replace('\\', '')
 		listid = re.findall('videoId":"(.*?)"', source)[::]
+		#link = re.findall('videoId\\\\":\\\\"(.*?)\\\\"', source)[::]
 		randomid = random.randint(0,len(listid))
 		ytidrandom = listid[randomid]
 		return 'plugin://plugin.video.youtube/play/?video_id='+ytidrandom
