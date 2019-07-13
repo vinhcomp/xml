@@ -188,7 +188,10 @@ def M3UToItems(url_path=""):
 		else: #layer 1
 			item_re = 'a class=halim-thumb href=(.*?)/ title=(.*?)\n(.*?)\n'
 			content = requests.get(url_path, headers=headers2).content
-			pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
+			try:#page>1
+				pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
+			except:#page<1
+				pages = 'none'
 			items1 = []
 			matchs = re.compile(item_re).findall(content)
 			for path,label,thumb in matchs:
