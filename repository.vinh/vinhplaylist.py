@@ -156,7 +156,6 @@ def M3UToItems(url_path=""):
 			nthumb = 'http://www.jemome.com/cdn/2012/06/3d-play-button-icon_2437839.png'
 			npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
 			nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}#dict next page
-#			if 'chaturbate.com' in url_path: #Optional or go direct to play_url
 			item["is_playable"] = True
 			item["info"] = {"type": "video"}
 			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
@@ -165,35 +164,55 @@ def M3UToItems(url_path=""):
 			items = items + [nextitem]#Add dict to list
 		return items
 
-	elif 'topphimhd.com' in url_path:
-		item_re = 'a class=halim-thumb href=(.*?)/ title=(.*?)\n(.*?)\n'
-		(resp, content) = http.request(
-			url_path, "GET",
-			headers=headers2
-		)
-		pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
-		items1 = []
-		matchs = re.compile(item_re).findall(content)
-		for path,label,thumb in matchs:
-			label = '[COLOR lime]'+label+'[/COLOR]'
-			if 'img-responsive' in thumb:
-				thumb = re.compile('src=(.*?) alt').findall(thumb)[0]
-  			item = {
-				"label": label.strip(),
-				"thumbnail": thumb.strip(),
-				"path": path.strip(),
-			}
-			nlabel = '[COLOR yellow]Next Page[/COLOR]'
-			nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
-			npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
-			nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
-			item["is_playable"] = True
-			item["info"] = {"type": "video"}
-			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-			items1 += [item] #Dict to list
-			items = items1[:]#Copy list
-			items = items + [nextitem]#Add dict to list
-		return items
+	elif url_path.startswith('http://topphimhd.com'):
+		if 'xem-phim' in url_path: #layer 2
+			item_re = 'episode><a href=(.*?)><span class'
+			content = requests.get(url_path, headers=headers2).content
+			items = []
+			matchs = re.compile(item_re).findall(content)
+			for infor in matchs:
+				label = infor.replace('http://topphimhd.com/xem-phim/', '')
+				path = infor
+				thumb = 'jpg'
+				item = {
+					"label": label,
+					"thumbnail": thumb,
+					"path": path,
+				}
+				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+				item["is_playable"] = True
+				item["info"] = {"type": "video"}
+				items += [item]
+			return items
+
+		else: #layer 1
+			item_re = 'a class=halim-thumb href=(.*?)/ title=(.*?)\n(.*?)\n'
+			content = requests.get(url_path, headers=headers2).content
+			pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
+			items1 = []
+			matchs = re.compile(item_re).findall(content)
+			for path,label,thumb in matchs:
+				path = (path.replace('http://topphimhd.com', 'http://topphimhd.com/xem-phim'))+'-tap-1-server-1/'
+				path = pluginrootpath+"/m3u/"+urllib.quote_plus(path)
+				label = '[COLOR lime]'+label+'[/COLOR]'
+				if 'img-responsive' in thumb:
+					thumb = re.compile('src=(.*?) alt').findall(thumb)[0]
+  				item = {
+					"label": label.strip(),
+					"thumbnail": thumb.strip(),
+					"path": path.strip(),
+				}
+				nlabel = '[COLOR yellow]Next Page >>[/COLOR]'
+				nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
+				npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
+				nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
+#				item["is_playable"] = True
+#				item["info"] = {"type": "video"}
+#				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+				items1 += [item] #Dict to list
+				items = items1[:]#Copy list
+				items = items + [nextitem]#Add dict to list
+			return items
 
 	else:
 		item_re = '\#EXTINF(.*?,)(.*?)\n(.*?)\n'
@@ -1056,9 +1075,9 @@ def play_url(url, title=""):
 		plugin.set_resolved_url(url, subtitles=vsub)
 	elif 'topphimhd' in url:
 		source = requests.get(url, headers=headers1).text
-		link = re.findall('</div> <a href=(http://topphimhd.com.*?) class', source)[0]
-		source2 = requests.get(link, headers=headers1).text
-		linkstream = re.findall('embed-responsive-item src="(.*?)"', source2)[0]
+#		link = re.findall('<a href=(http://topphimhd.com.*?)class="btn', source)[0]
+#		source2 = requests.get(link, headers=headers1).text
+		linkstream = re.findall('embed-responsive-item src="(.*?)"', source)[0]
 		source3 = requests.get(linkstream, headers=headers1).text
 		url = re.findall('urlVideo = \'(.*?)\'', source3)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
