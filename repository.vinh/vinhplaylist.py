@@ -94,6 +94,10 @@ def M3UToItems(url_path=""):
 	url_path : string
 		link chứa nội dung m3u playlist
 	'''
+	headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+			'Referer':url_path,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
 
 	if 'swiftstreamz.com' in url_path:		
 		item_re = 'cat_id":"29",(.*?,)(.*?,)(.*?),"channel_desc'
@@ -153,6 +157,36 @@ def M3UToItems(url_path=""):
 			npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
 			nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}#dict next page
 #			if 'chaturbate.com' in url_path: #Optional or go direct to play_url
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			items1 += [item] #Dict to list
+			items = items1[:]#Copy list
+			items = items + [nextitem]#Add dict to list
+		return items
+
+	elif 'topphimhd.com' in url_path:
+		item_re = 'a class=halim-thumb href=(.*?)/ title=(.*?)\n(.*?)\n'
+		(resp, content) = http.request(
+			url_path, "GET",
+			headers=headers2
+		)
+		pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
+		items1 = []
+		matchs = re.compile(item_re).findall(content)
+		for path,label,thumb in matchs:
+			label = '[COLOR lime]'+label+'[/COLOR]'
+			if 'img-responsive' in thumb:
+				thumb = re.compile('src=(.*?) alt').findall(thumb)[0]
+  			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			nlabel = '[COLOR yellow]Next Page[/COLOR]'
+			nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
+			npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
+			nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
 			item["is_playable"] = True
 			item["info"] = {"type": "video"}
 			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
@@ -1008,16 +1042,25 @@ def play_url(url, title=""):
 	#except:
 		#pass	
 	#####will get error handle if call plugin.set_resolved_url 2 times
+
+	headers1 = {
+		'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+		'Accept-Encoding': 'gzip, deflate',
+	}
 	vsub = 'https://docs.google.com/spreadsheets/d/1NwDGsRUhlXvvCPT3ToXJzn450Nto6FyLLBMucdxK13A/export?format=tsv&gid=0'
 	if "sub" in plugin.request.args:
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
 	elif 'chaturbate.com' in url:
-		headers1 = {
-			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',
-		}
 		source = requests.get(url, headers=headers1).text
 		url = re.findall('"src=\'(.*?)\'', source)[0]
+		plugin.set_resolved_url(url, subtitles=vsub)
+	elif 'topphimhd' in url:
+		source = requests.get(url, headers=headers1).text
+		link = re.findall('</div> <a href=(http://topphimhd.com.*?) class', source)[0]
+		source2 = requests.get(link, headers=headers1).text
+		linkstream = re.findall('embed-responsive-item src="(.*?)"', source2)[0]
+		source3 = requests.get(linkstream, headers=headers1).text
+		url = re.findall('urlVideo = \'(.*?)\'', source3)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
 	else:
 		plugin.set_resolved_url(url, subtitles=vsub)
