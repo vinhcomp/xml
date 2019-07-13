@@ -205,13 +205,13 @@ def M3UToItems(url_path=""):
 					"thumbnail": thumb.strip(),
 					"path": path.strip(),
 				}
-				nlabel = '[COLOR yellow]Next Page >>[/COLOR]'
+				if pages == 'none':
+					nlabel = 'Hết Trang'
+				else:
+					nlabel = '[COLOR yellow]Next Page >>[/COLOR]'
 				nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
 				npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
 				nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
-#				item["is_playable"] = True
-#				item["info"] = {"type": "video"}
-#				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 				items1 += [item] #Dict to list
 				items = items1[:]#Copy list
 				items = items + [nextitem]#Add dict to list
