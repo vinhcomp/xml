@@ -235,7 +235,7 @@ def M3UToItems(url_path=""):
 		items = []
 		for thumb, label, path in matchs:
 			thumb = 'https://'+thumb
-			label = '[COLOR hotpink]'+label+'[/COLOR]'
+			label = '[COLOR red][LIVE] [/COLOR][COLOR hotpink]'+label+'[/COLOR]'
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
