@@ -190,7 +190,7 @@ def M3UToItems(url_path=""):
 			content = requests.get(url_path, headers=headers2).content
 			try:#page>1
 				pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
-			except:#page<1
+			except:#page<2
 				pages = 'none'
 			items1 = []
 			matchs = re.compile(item_re).findall(content)
@@ -216,6 +216,37 @@ def M3UToItems(url_path=""):
 				items = items1[:]#Copy list
 				items = items + [nextitem]#Add dict to list
 			return items
+
+	elif url_path.startswith('https://cam2cam.com'):
+		item_re = '<img class=\"\" src=\"//(.*?)\".*?alt=\"(.*?)\".*?\n.*?\n.*?\n.*?\n.*?\n.*?href=\"(.*?)\"'
+		content = requests.get(url_path, headers=headers2).content
+		try:
+			pages = 'https://cam2cam.com'+(re.findall('li class=\"active\"><a>.*?\n.*?\n.*?\n.*?<li><a href=\"(.*?)\"', content)[0])
+		except:
+			pages = 'none'
+		if pages == 'none':
+			nlabel = 'Hết Trang - End of Pages'
+		else:
+			nlabel = '[COLOR yellow]Next Page>>[/COLOR]'
+		nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
+		npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
+		nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for thumb, label, path in matchs:
+			thumb = 'https://'+thumb
+			label = '[COLOR hotpink]'+label+'[/COLOR]'
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		items = items + [nextitem]
+		return items
 
 	else:
 		item_re = '\#EXTINF(.*?,)(.*?)\n(.*?)\n'
@@ -1084,6 +1115,15 @@ def play_url(url, title=""):
 		source3 = requests.get(linkstream, headers=headers1).text
 		url = re.findall('urlVideo = \'(.*?)\'', source3)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
+	elif 'cam2cam.com' in url:
+		source = requests.get(url, headers=headers1).text
+		linkstream = 'https://cam2cam.com'+(re.findall('iframe.src = \'(.*?)\'', source)[0])
+		source2 = requests.get(linkstream, headers=headers1).text
+		linkstream2 = re.findall('data-manifesturl="(.*?)"', source2)[0]
+		source3 = requests.get(linkstream2, headers=headers1).text
+		#url = re.findall('location\":\"(https://.*?1280.*?index.m3u8)\"', source3)[0]
+		url = re.findall('location\":\"(https://.*?index.m3u8)\"', source3)[0]
+		plugin.set_resolved_url(url, subtitles=vsub)
 	else:
 		plugin.set_resolved_url(url, subtitles=vsub)
 
@@ -1217,110 +1257,6 @@ def get_playable_url(url):
 					return resp_json["link_play"]
 			except:
 				pass
-
-#	#Open youtube settings, enable MPEG-Dash to play youtube live, and for channel/UCyu8StPfZWapR6rfW_JgqcA return
-#	elif "youtube.com/embed/" in url:
-#		yt_addon = xbmcaddon.Addon('plugin.video.youtube')
-#		if yt_addon.getSetting('kodion.video.quality.mpd') != 'true':
-#			dialog = xbmcgui.Dialog()
-#			yes = dialog.yesno(
-#				'This Channel Need to Enable MPEG-DASH to Play!\n',
-#				'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
-#				yeslabel='OK',
-#				nolabel='CANCEL'
-#				)
-#			if yes:
-#				yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
-#				xbmc.executebuiltin('yt_settings')
-#				return get_playable_url(url)
-#			return None
-#		else:
-#			match = re.compile(
-#				'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
-#			yid = match[0][len(match[0])-1].replace('v/', '')
-#			url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
-#
-#	#Youtube live
-#	#channel/UCyu8StPfZWapR6rfW_JgqcA
-#	elif url.startswith('channel/'):
-#		headers = {
-#			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-#			'Accept-Encoding': 'gzip, deflate',
-#		}
-#		link = 'https://www.youtube.com/' + url
-#		source = requests.get(link,headers=headers)
-#		keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
-#		url = 'https://www.youtube.com/embed/'+keyid
-#		if "youtube.com/embed/" in url:
-#			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
-#			if yt_addon.getSetting('kodion.video.quality.mpd') != 'true': # Youtube settings not choose MPEG-Dash yet
-#				dialog = xbmcgui.Dialog()
-#				yes = dialog.yesno(
-#					'This Channel Need to Enable MPEG-DASH to Play!\n',
-#					'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
-#					yeslabel='OK',
-#					nolabel='CANCEL'
-#					)
-#				if yes:
-#					yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
-#					xbmc.executebuiltin('yt_settings')
-#					return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to "youtube.com/embed/"
-#				return None
-#			else:
-#				match = re.compile(
-#					'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
-#				yid = match[0][len(match[0])-1].replace('v/', '')
-#				url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
-#
-#	#youtube live, ytlive/0/channel/UCwobzUc3z-0PrFpoRxNszXQ, 0 can be change to any int number, if ytchannel have more than 1 live channel
-#	elif url.startswith('ytlive'):
-#		headers = {
-#			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-#			'Accept-Encoding': 'gzip, deflate',
-#		}
-#		#livenumber=url[7] #will get the number of live channel if more than 1, 0 is the first live channel in ytchannel
-#		livenumber = re.findall('ytlive/(.*?)/channel', url)[0]
-#		livenumberint=int(livenumber) # convert str to int
-#		#liveid=url[9:]
-#		liveid = re.findall('ytlive/.*?/([^$]+)', url)[0]
-#		link = 'https://www.youtube.com/' + liveid
-#		source = requests.get(link,headers=headers)
-#		#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[:] # will get all match, keyid: list
-#		try:
-#			keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint] # will get one of the match list
-#			url = 'https://www.youtube.com/embed/'+keyid
-#			#keyid = keyid[livenumberint] # will get one of the match list
-#			#keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[0]
-#		except:
-#			try:
-#				keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint-livenumberint] # will try to return firt live channel
-#				url = 'https://www.youtube.com/embed/'+keyid
-#			except: # will show error message when ytchannel with no live channel
-#				line1 = "[COLOR yellow]Đài Hiện Tại Không Phát.[/COLOR]"
-#				line2 = "[COLOR yellow]Xin Vui Lòng Thử Lại Sau![/COLOR]"
-#				dlg = xbmcgui.Dialog()
-#				dlg.ok("Channel is Offline Now - Please Try Again Later", line1, line2)
-#		#url = 'https://www.youtube.com/embed/'+keyid
-#		if "youtube.com/embed/" in url:
-#			yt_addon = xbmcaddon.Addon('plugin.video.youtube')
-#			if yt_addon.getSetting('kodion.video.quality.mpd') != 'true': # Youtube settings not choose MPEG-Dash yet
-#				dialog = xbmcgui.Dialog()
-#				yes = dialog.yesno(
-#					'This Channel Need to Enable MPEG-DASH to Play!\n',
-#					'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
-#					yeslabel='OK',
-#					nolabel='CANCEL'
-#					)
-#				if yes:
-#					yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
-#					xbmc.executebuiltin('yt_settings')
-#					return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to "youtube.com/embed/"
-#				return None
-#			else:
-#				match = re.compile(
-#					'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
-#				yid = match[0][len(match[0])-1].replace('v/', '')
-#				url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
 
 	#ytlive/1/UCMfZ_z0LUm805JOZLktl2QQ, youtube live
 	elif url.startswith('ytlive'):
