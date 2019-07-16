@@ -129,39 +129,38 @@ def M3UToItems(url_path=""):
 		return items
 
 	elif 'https://chaturbate.com' in url_path:
-		item_re = '<div title="(.*?)\n(.*?)\n(.*?)\n'
+		item_re = 'data-slug=(.*?)><.*?\n<a href=\"(.*?)\".*?\n<img src=\"(.*?)\"'
 		(resp, content) = http.request(
 			url_path, "GET",
 			headers=sheet_headers
 		)
-		pages = re.findall('li><a href="(.*?/\?page=.*?)" class="next', content)[0]
-		pages = 'https://chaturbate.com'+pages
-		content = content.replace('/follow/follow', 'https://chaturbate.com')
-		items1 = []#List
+		try:
+			pages = re.findall('li><a href="(.*?/\?page=.*?)" class="next', content)[0]
+			pages = 'https://chaturbate.com'+pages
+		except:
+			pages = 'none'
+		if pages == 'none':
+			nlabel = 'Hết Trang - End of Pages'
+		else:
+			nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+re.compile('page=(.*?$)').findall(pages)[0]
+		nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
+		npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
+		nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
 		matchs = re.compile(item_re).findall(content)
-		for path,label,thumb in matchs:
-			if 'followurl' in path:
-				path = re.compile('data-followurl="(.*?)"').findall(path)[0]
-			if 'href=' in label:
-				label = re.compile('href="(.*?)"').findall(label)[0]
-				label = '[COLOR red][LIVE] [/COLOR][COLOR hotpink]'+label+'[/COLOR]'
-			if 'src=' in thumb:
-				thumb = re.compile('src="(.*?)"').findall(thumb)[0]
+		items = []
+		for label, path, thumb in matchs:
+			label = '[COLOR red][LIVE] [/COLOR][COLOR hotpink]'+label+'[/COLOR]'
+			path = 'https://chaturbate.com'+path
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
 				"path": path.strip(),
 			}
-			nlabel = '[COLOR yellow]Next Page[/COLOR]'
-			nthumb = 'http://www.jemome.com/cdn/2012/06/3d-play-button-icon_2437839.png'
-			npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
-			nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}#dict next page
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 			item["is_playable"] = True
 			item["info"] = {"type": "video"}
-			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-			items1 += [item] #Dict to list
-			items = items1[:]#Copy list
-			items = items + [nextitem]#Add dict to list
+			items += [item]
+		items = items + [nextitem]
 		return items
 
 	elif url_path.startswith('http://topphimhd.com'):
@@ -227,7 +226,7 @@ def M3UToItems(url_path=""):
 		if pages == 'none':
 			nlabel = 'Hết Trang - End of Pages'
 		else:
-			nlabel = '[COLOR yellow]Next Page>>[/COLOR]'
+			nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+re.compile('pagenum=(.*?$)').findall(pages)[0]
 		nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
 		npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
 		nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
@@ -1117,12 +1116,18 @@ def play_url(url, title=""):
 		plugin.set_resolved_url(url, subtitles=vsub)
 	elif 'cam2cam.com' in url:
 		source = requests.get(url, headers=headers1).text
-		linkstream = 'https://cam2cam.com'+(re.findall('iframe.src = \'(.*?)\'', source)[0])
+		try:
+			linkstream = 'https://cam2cam.com'+(re.findall('iframe.src = \'(.*?)\'', source)[0])
+		except:
+			return notice('This Model is Offline Now!!', 'Please choose other model!!', 'Con ghệ này off rồi, chọn con khác đi!!')
 		source2 = requests.get(linkstream, headers=headers1).text
 		linkstream2 = re.findall('data-manifesturl="(.*?)"', source2)[0]
 		source3 = requests.get(linkstream2, headers=headers1).text
 		#url = re.findall('location\":\"(https://.*?1280.*?index.m3u8)\"', source3)[0]
-		url = re.findall('location\":\"(https://.*?index.m3u8)\"', source3)[0]
+		try:
+			url = re.findall('location\":\"(https://.*?index.m3u8)\"', source3)[0]
+		except:
+			return notice('This Model is Private Show Now!!', 'Please choose other model!!', 'Con ghệ này đang chat private, chọn con khác đi!!')
 		plugin.set_resolved_url(url, subtitles=vsub)
 	else:
 		plugin.set_resolved_url(url, subtitles=vsub)
