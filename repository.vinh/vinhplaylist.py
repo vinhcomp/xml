@@ -1200,7 +1200,9 @@ def vonglap(url, n):
 					url = url
 					return vonglap(url=url, n=n+1)
 				else:
-					return f4m+linkstream+'|User-Agent=iPad&Referer='+link
+					#url = f4m+linkstream+'|User-Agent=iPad&Referer='+link
+					url2 = f4m+linkstream+'|User-Agent=iPad&Referer='+link
+					xbmc.executebuiltin('XBMC.RunPlugin(%s)' % urllib.unquote_plus(url2)) #let kodi play the link direct skip the play_url
 			except:
 				url = url
 				return vonglap(url=url, n=n+1)
