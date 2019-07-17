@@ -185,35 +185,32 @@ def M3UToItems(url_path=""):
 			return items
 
 		else: #layer 1
-			item_re = 'a class=halim-thumb href=(.*?)/ title=(.*?)\n(.*?)\n'
+			item_re = 'a class=halim-thumb href=(.*?)/ title=(.*?)>.*?\n.*? src=(.*?) alt='
 			content = requests.get(url_path, headers=headers2).content
-			try:#page>1
+			try:
 				pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
-			except:#page<2
+			except:
 				pages = 'none'
-			items1 = []
+			if pages == 'none':
+				nlabel = 'Hết Trang - End of Pages'
+			else:
+				nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+re.compile('page/(.*?)/').findall(pages)[0]
+			nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
+			npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
+			nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
 			matchs = re.compile(item_re).findall(content)
-			for path,label,thumb in matchs:
+			items = []
+			for path, label, thumb in matchs:
+				label = '[COLOR lime]'+label+'[/COLOR]'
 				path = (path.replace('http://topphimhd.com', 'http://topphimhd.com/xem-phim'))+'-tap-1-server-1/'
 				path = pluginrootpath+"/m3u/"+urllib.quote_plus(path)
-				label = '[COLOR lime]'+label+'[/COLOR]'
-				if 'img-responsive' in thumb:
-					thumb = re.compile('src=(.*?) alt').findall(thumb)[0]
-  				item = {
+				item = {
 					"label": label.strip(),
 					"thumbnail": thumb.strip(),
 					"path": path.strip(),
 				}
-				if pages == 'none':
-					nlabel = 'Hết Trang'
-				else:
-					nlabel = '[COLOR yellow]Next Page >>[/COLOR]'
-				nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
-				npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
-				nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
-				items1 += [item] #Dict to list
-				items = items1[:]#Copy list
-				items = items + [nextitem]#Add dict to list
+				items += [item]
+			items = items+[nextitem]
 			return items
 
 	elif url_path.startswith('https://cam2cam.com'):
@@ -1104,7 +1101,10 @@ def play_url(url, title=""):
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
 	elif 'chaturbate.com' in url:
 		source = requests.get(url, headers=headers1).text
-		url = re.findall('"src=\'(.*?)\'', source)[0]
+		try:
+			url = re.findall('"src=\'(.*?)\'', source)[0]
+		except:
+			return notice('This Model is Offline Now!!', 'Please choose other model!!', 'Con ghệ này off rồi, chọn con khác đi!!')
 		plugin.set_resolved_url(url, subtitles=vsub)
 	elif 'topphimhd' in url:
 		source = requests.get(url, headers=headers1).text
@@ -1202,7 +1202,7 @@ def vonglap(url, n):
 				else:
 					#url = f4m+linkstream+'|User-Agent=iPad&Referer='+link
 					url2 = f4m+linkstream+'|User-Agent=iPad&Referer='+link
-					xbmc.executebuiltin('XBMC.RunPlugin(%s)' % urllib.unquote_plus(url2)) #let kodi play the link direct skip the play_url
+					xbmc.executebuiltin('XBMC.RunPlugin(%s)' % urllib.unquote_plus(url2)) #let kodi play the link direct, skip the play_url
 			except:
 				url = url
 				return vonglap(url=url, n=n+1)
@@ -1671,32 +1671,6 @@ def get_playable_url(url):
 	
 	elif url.startswith('http://tivis.101vn.com'):
 		return vonglap(url=url, n=0)
-#		source = requests.get(url,headers=headers4).text
-		#if 'htv4' in url or 'youtv' in url:
-		#if any(name in url for name in ["htv4", "htv3", "youtv"]):
-#		try:
-			#link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
-#			link = re.findall('"(http://tivis.*?)"', source)[0]
-		#else:
-#		except:
-			#link = re.findall('link = \["(.*?)"', source)[0]
-			#link = re.findall('"(http://tivis.*?)"', source)[0]
-#			link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
-#		source2 = requests.get(link,headers=headers4).text
-#		try:
-#			url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
-#		except:
-#			try:
-#				url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
-#			except:
-#				try:
-#					url = re.findall('(http.*?m3u.*?\s)', source2)[-3]
-#				except:
-#					notice('Xin Thử Lại', '[COLOR yellow]Đài Hiện Tại Khó Mở.[/COLOR]', '[COLOR yellow]Xin Vui Lòng Thử Lại![/COLOR]')
-					#url = url
-					#return get_playable_url(url) #Loop
-		#else:
-			#url = None
 
 	#http://www.tivi12h.net/ok/k-1.php
 	elif url.startswith('http://www.tivi12h.net'):
