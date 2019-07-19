@@ -285,7 +285,8 @@ def M3UToItems(url_path=""):
 					items += [item]
 				return items
 			else:
-				item_re = '<item>.*?\n<title>(.*?)</title>.*?\n<link>(.*?)</link>.*?\n<thumbnail>(.*?)</thumbnail>.*?\n.*?\n</item>'
+				content = "".join(content.splitlines())
+				item_re = '<item><title>(.*?)</title><link>(.*?)</link><thumbnail>(.*?)</thumbnail></item>'
 				matchs = re.compile(item_re).findall(content)
 				items = []
 				for label, path, thumb in matchs:
@@ -570,38 +571,6 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				item["path"]=item["path"].replace('ytlist/', '')
 				item["path"]=item["path"].replace(' ', '%20')
 				item["path"]='plugin://plugin.video.youtube/kodion/search/query/?q='+item["path"]+'&search_type=playlist'
-
-			#Try listing
-#			elif item["path"].startswith('http://swiftstreamz.com'):
-#				headers1 = {
-#					'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-#					'Accept-Encoding': 'gzip, deflate',
-#					}
-				#url = re.findall('(http://.*?/.*?/.*?)/', item["path"])[0]
-				#n = re.findall('http://swiftstreamz.com/SnappyStreamz/.*?/(.*?$)', item["path"])[0]
-				#n = int(n)
-#			#	source = requests.get(item["path"], headers=headers1).content
-#			#	item["label"] = re.findall('channel_title":"(.*?)"', source)[0]
-#			#	linkstream = re.findall('channel_url":"(.*?)"', source)[0]
-#			#	item["is_playable"] = True
-#			#	item["path"] = 'plugin://script.module.streamhublive/play/?url=swift:'+linkstream+'&mode=10&quot'
-
-#			elif item["path"].startswith('https://chaturbate.com'):
-#				headers1 = {
-#					'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-#					'Accept-Encoding': 'gzip, deflate',
-#					}
-#				url = re.findall('(https://.*?/.*?)/', item["path"])[0]
-#				n = re.findall('https://chaturbate.com/.*?/(.*?$)', item["path"])[0]
-#				n = int(n)
-#				source = requests.get(url, headers=headers1).text
-#				source = source.replace('/follow/follow', 'https://chaturbate.com')
-#				item["label"] = re.findall('data-slug=(.*?)><', source)[n]
-#				item["thumbnail"] = re.findall('img src="(https://roomimg.*?)"', source)[n]
-#				url2 = re.findall('data-followurl="(.*?)"', source)[n]
-#				source2 = requests.get(url2, headers=headers1).text
-#				item["is_playable"] = True
-#				item["path"] = re.findall('"src=\'(.*?)\'', source2)[0]
 
 			elif re.search("\.ts$", item["path"]):
 				item["path"] = "plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&use_proxy_for_chunks=True&name=%s" % (
