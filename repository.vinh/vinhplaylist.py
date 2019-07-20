@@ -301,6 +301,28 @@ def M3UToItems(url_path=""):
 					items += [item]
 				return items
 
+	elif url_path.startswith('http://rauma.tv/'):
+		content = requests.get(url_path, headers=headers2).content
+		content = "".join(content.splitlines())
+		item_re = 'matches-lst-tr clearfix.*?href="(.*?)".*?<b>(.*?)</b></p><p>(.*?)</p>' \
+			'.*?<span>(.*?)</span>.*?data-src="(.*?)".*?<span class="">(.*?)</span>.*?</i></span></a>'
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for path, label1, label4, label2, thumb, label3 in matchs:			
+			label = label1+', '+label2+' vs '+label3+', '+label4
+			if any(words in label for words in ['Hiệp', 'LIVE']):
+				label = '[COLOR lime]'+label+'[/COLOR]'
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+			"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		return items
+
 	else:
 		item_re = '\#EXTINF(.*?,)(.*?)\n(.*?)\n'
 		(resp, content) = http.request(
@@ -1153,6 +1175,10 @@ def play_url(url, title=""):
 			url = re.findall('location\":\"(https://.*?index.m3u8)\"', source3)[0]
 		except:
 			return notice('This Model is Private Show Now!!', 'Please choose other model!!', 'Con ghệ này đang chat private, chọn con khác đi!!')
+		plugin.set_resolved_url(url, subtitles=vsub)
+	elif url.startswith('http://rauma.tv/'):
+		source  = requests.get(url, headers=headers1).text
+		url = re.findall('var linkStream = \'(.*?)\'', source)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
 	else:
 		plugin.set_resolved_url(url, subtitles=vsub)
