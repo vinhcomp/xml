@@ -311,7 +311,11 @@ def M3UToItems(url_path=""):
 		for path, label1, label4, label2, thumb, label3 in matchs:			
 			label = label1+', '+label2+' vs '+label3+', '+label4
 			if any(words in label for words in ['Hiệp', 'hiệp', 'LIVE']):
-				label = '[COLOR lime]'+label+'[/COLOR]'
+				label1 = '[COLOR lime]'+label1+'[/COLOR]'
+				label2 = '[COLOR yellow]'+label2+'[/COLOR]'
+				label3 = '[COLOR yellow]'+label3+'[/COLOR]'
+				label4 = '[COLOR orange]'+label4+'[/COLOR]'
+				label = label1+', '+label2+' vs '+label3+', '+label4
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
