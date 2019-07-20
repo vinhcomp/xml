@@ -165,14 +165,16 @@ def M3UToItems(url_path=""):
 
 	elif url_path.startswith('http://topphimhd.com'):
 		if 'xem-phim' in url_path: #layer 2
-			item_re = 'episode><a href=(.*?)><span class'
 			content = requests.get(url_path, headers=headers2).content
+			content = "".join(content.splitlines())
+			item_re = 'episode><a href=(.*?)><span.*?shadow">(.*?)</span>'
+			thumb = re.findall('id=expand-post-content>.*?src=(.*?) alt', content)[0]
 			items = []
 			matchs = re.compile(item_re).findall(content)
-			for infor in matchs:
-				label = infor.replace('http://topphimhd.com/xem-phim/', '')
-				path = infor
-				thumb = 'jpg'
+			for path, label in matchs:
+				label = 'Tập - Episode '+label
+				#path = infor
+				thumb = thumb
 				item = {
 					"label": label,
 					"thumbnail": thumb,
@@ -184,9 +186,10 @@ def M3UToItems(url_path=""):
 				items += [item]
 			return items
 
-		else: #layer 1
-			item_re = 'a class=halim-thumb href=(.*?)/ title=(.*?)>.*?\n.*? src=(.*?) alt='
+		else: #layer 1			
 			content = requests.get(url_path, headers=headers2).content
+			content = "".join(content.splitlines())
+			item_re = 'a class=halim-thumb href=(.*?)/ title="(.*?)".*?src=(.*?) alt=.*?title>(.*?)</p>'
 			try:
 				pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
 			except:
@@ -200,8 +203,10 @@ def M3UToItems(url_path=""):
 			nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
 			matchs = re.compile(item_re).findall(content)
 			items = []
-			for path, label, thumb in matchs:
-				label = '[COLOR lime]'+label+'[/COLOR]'
+			for path, label1, thumb, label2 in matchs:
+				label1 = '[COLOR yellow]'+label1+'[/COLOR]'
+				label2 = '[COLOR lime]'+label2+'[/COLOR]'
+				label = label1+' - '+label2
 				path = (path.replace('http://topphimhd.com', 'http://topphimhd.com/xem-phim'))+'-tap-1-server-1/'
 				path = pluginrootpath+"/m3u/"+urllib.quote_plus(path)
 				item = {
