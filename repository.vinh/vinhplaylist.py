@@ -275,7 +275,7 @@ def M3UToItems(url_path=""):
 				matchs2 = re.compile(item_re2).findall(content)
 				matchs3 = re.compile(item_re3).findall(content)
 				matchs4 = re.compile(item_re4).findall(content)
-				matchsall=matchs+matchs2+matchs3+matchs4
+				matchsall = matchs+matchs2+matchs3+matchs4
 				items = []
 				for label, path, thumb in matchsall:
 					item = {
@@ -304,6 +304,25 @@ def M3UToItems(url_path=""):
 					item["info"] = {"type": "video"}
 					items += [item]
 				return items
+		if '<content>' in content:
+			content = "".join(content.splitlines())
+			item_re = '<title>(.*?)</title><link>(.*?)</link>.*?<image>(.*?)</image>'
+			item_re2 = '<title>(.*?)</title><link>.*?</link><link>(.*?)</link>.*?<image>(.*?)</image>'
+			matchs = re.compile(item_re).findall(content)
+			matchs2 = re.compile(item_re).findall(content)
+			matchsall = matchs+matchs2#+matchs3+matchs4
+			items = []
+			for label, path, thumb in matchsall:
+				item = {
+					"label": label.strip(),
+					"thumbnail": thumb.strip(),
+ 					"path": path.strip(),
+				}
+				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+				item["is_playable"] = True
+				item["info"] = {"type": "video"}
+				items += [item]
+			return items
 
 	elif url_path.startswith('http://rauma.tv/'):
 		content = requests.get(url_path, headers=headers2).content
