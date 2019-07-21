@@ -99,7 +99,7 @@ def M3UToItems(url_path=""):
 			'Referer':url_path,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 		}
 
-	if 'swiftstreamz.com' in url_path:		
+	if 'swiftstreamz.com' in url_path:
 		item_re = 'cat_id":"29",(.*?,)(.*?,)(.*?),"channel_desc'
 		(resp, content) = http.request(
 			url_path, "GET",
@@ -173,7 +173,6 @@ def M3UToItems(url_path=""):
 			matchs = re.compile(item_re).findall(content)
 			for path, label in matchs:
 				label = 'Tập - Episode '+label
-				#path = infor
 				thumb = thumb
 				item = {
 					"label": label,
@@ -291,7 +290,7 @@ def M3UToItems(url_path=""):
 				return items
 			else:
 				content = "".join(content.splitlines())
-				item_re = '<item><title>(.*?)</title><link>(.*?)</link><thumbnail>(.*?)</thumbnail></item>'
+				item_re = '<item><title>(.*?)</title><link>(.*?)</link><thumbnail>(.*?)</thumbnail>.*?</item>'
 				matchs = re.compile(item_re).findall(content)
 				items = []
 				for label, path, thumb in matchs:
