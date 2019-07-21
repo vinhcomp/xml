@@ -267,10 +267,10 @@ def M3UToItems(url_path=""):
 			if '<sublink>' in content:
 				content = "".join(content.splitlines())
 				#Limit 4 sublinks
-				item_re = '<title>(.*?)</title><link><sublink>(.*?)</sublink>.*?</link><thumbnail>(.*?)</thumbnail>'
-				item_re2 = '<title>(.*?)</title><link><sublink>.*?</sublink><sublink>(.*?)</sublink>.*?</link><thumbnail>(.*?)</thumbnail>'
-				item_re3 = '<title>(.*?)</title><link><sublink>.*?</sublink><sublink>.*?</sublink><sublink>(.*?)</sublink>.*?</link><thumbnail>(.*?)</thumbnail>'
-				item_re4 = '<title>(.*?)</title><link><sublink>.*?</sublink><sublink>.*?</sublink><sublink>.*?</sublink><sublink>(.*?)</sublink>.*?</link><thumbnail>(.*?)</thumbnail>'
+				item_re = '<item><title>(.*?)</title><link><sublink>(.*?)</sublink>.*?</link><thumbnail>(.*?)</thumbnail>.*?</item>'
+				item_re2 = '<item><title>(.*?)</title><link><sublink>.*?</sublink><sublink>(.*?)</sublink>.*?</link><thumbnail>(.*?)</thumbnail>.*?</item>'
+				item_re3 = '<item><title>(.*?)</title><link><sublink>.*?</sublink><sublink>.*?</sublink><sublink>(.*?)</sublink>.*?</link><thumbnail>(.*?)</thumbnail>.*?</item>'
+				item_re4 = '<item><title>(.*?)</title><link><sublink>.*?</sublink><sublink>.*?</sublink><sublink>.*?</sublink><sublink>(.*?)</sublink>.*?</link><thumbnail>(.*?)</thumbnail>.*?</item>'
 				matchs = re.compile(item_re).findall(content)
 				matchs2 = re.compile(item_re2).findall(content)
 				matchs3 = re.compile(item_re3).findall(content)
