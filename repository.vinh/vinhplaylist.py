@@ -264,46 +264,29 @@ def M3UToItems(url_path=""):
 				items += [item]
 			return items
 		if '<item>' in content:
-			if '<sublink>' in content:
-				content = "".join(content.splitlines())
-				#Limit 4 sublinks
-				item_re = '<item><title>(.*?)</title><link><sublink>(.*?)</sublink>.*?</link><thumbnail>(.*?)</thumbnail>.*?</item>'
-				item_re2 = '<item><title>(.*?)</title><link><sublink>.*?</sublink><sublink>(.*?)</sublink>.*?</link><thumbnail>(.*?)</thumbnail>.*?</item>'
-				item_re3 = '<item><title>(.*?)</title><link><sublink>.*?</sublink><sublink>.*?</sublink><sublink>(.*?)</sublink>.*?</link><thumbnail>(.*?)</thumbnail>.*?</item>'
-				item_re4 = '<item><title>(.*?)</title><link><sublink>.*?</sublink><sublink>.*?</sublink><sublink>.*?</sublink><sublink>(.*?)</sublink>.*?</link><thumbnail>(.*?)</thumbnail>.*?</item>'
-				matchs = re.compile(item_re).findall(content)
-				matchs2 = re.compile(item_re2).findall(content)
-				matchs3 = re.compile(item_re3).findall(content)
-				matchs4 = re.compile(item_re4).findall(content)
-				matchsall = matchs+matchs2+matchs3+matchs4
-				items = []
-				for label, path, thumb in matchsall:
-					item = {
-						"label": label.strip(),
-						"thumbnail": thumb.strip(),
-						"path": path.strip(),
-					}
-					item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-					item["is_playable"] = True
-					item["info"] = {"type": "video"}
-					items += [item]
-				return items
-			else:
-				content = "".join(content.splitlines())
-				item_re = '<item><title>(.*?)</title><link>(.*?)</link><thumbnail>(.*?)</thumbnail>.*?</item>'
-				matchs = re.compile(item_re).findall(content)
-				items = []
-				for label, path, thumb in matchs:
-					item = {
-						"label": label.strip(),
-						"thumbnail": thumb.strip(),
- 						"path": path.strip(),
-					}
-					item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-					item["is_playable"] = True
-					item["info"] = {"type": "video"}
-					items += [item]
-				return items
+			item_re = '<item>\n.*?<title>(.*?)</title>\n.*?<link>(.*?)</link>\n.*?<thumbnail>(.*?)</thumbnail>\n'
+			#Limit 3 sublinks, but no thumb
+			item_re2 = '<item>\n.*?<title>(.*?)</title>\n.*?<link>.*?\n<sublink>(.*?)</sublink>\n(.*?)\n'
+			item_re3 = '<item>\n.*?<title>(.*?)</title>\n.*?<link>.*?\n<sublink>.*?</sublink>\n.*?<sublink>(.*?)</sublink>\n(.*?)\n'
+			item_re4 = '<item>\n.*?<title>(.*?)</title>\n.*?<link>.*?\n<sublink>.*?</sublink>\n.*?<sublink>.*?</sublink>\n.*?<sublink>(.*?)</sublink>\n(.*?)\n'
+			matchs = re.compile(item_re).findall(content)
+			matchs2 = re.compile(item_re2).findall(content)
+			matchs3 = re.compile(item_re3).findall(content)
+			matchs4 = re.compile(item_re4).findall(content)
+			matchsall = matchs+matchs2+matchs3+matchs4
+			items = []
+			for label, path, thumb in matchsall:
+				item = {
+					"label": label.strip(),
+					"thumbnail": thumb.strip(),
+ 					"path": path.strip(),
+				}
+				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+				item["is_playable"] = True
+				item["info"] = {"type": "video"}
+				items += [item]
+			return items
+
 		if '<content>' in content:
 			content = "".join(content.splitlines())
 			#Limit 2 links
