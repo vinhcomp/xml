@@ -85,6 +85,16 @@ def GetSheetIDFromSettings():
 		pass
 	return sid
 
+def Layer2ToItems(url_path=""):
+	if 'sublink' in url_path:
+		url = re.compile('<sublink>(.*?)</sublink>').findall(url_path)[:]
+		dialog = xbmcgui.Dialog()
+		choise = dialog.select('Please Choose a Link - Xin Chọn Link', url)
+		#return plugin.set_resolved_url(url[choise])
+		return play_url(url[choise])
+	else:
+		url = url_path
+		return play_url(url)
 
 def M3UToItems(url_path=""):
 	'''
@@ -249,6 +259,7 @@ def M3UToItems(url_path=""):
 		return items
 
 	elif url_path.startswith('http://worldkodi.com'):
+	#elif url_path.startswith('https://pastebin.com'):
 		content = requests.get(url_path, headers=headers2).content
 		if '<dir>' in content:
 			item_re = '<dir>.*?\n<title>(.*?)</title>.*?\n<link>(.*?)</link>.*?\n<thumbnail>(.*?)</thumbnail>.*?\n.*?\n</dir>'
@@ -264,24 +275,18 @@ def M3UToItems(url_path=""):
 				items += [item]
 			return items
 		if '<item>' in content:
-			item_re = '<item>\n.*?<title>(.*?)</title>\n.*?<link>(.*?)</link>\n.*?<thumbnail>(.*?)</thumbnail>\n'
-			#Limit 3 sublinks, but no thumb
-			item_re2 = '<item>\n.*?<title>(.*?)</title>\n.*?<link>.*?\n<sublink>(.*?)</sublink>\n(.*?)\n'
-			item_re3 = '<item>\n.*?<title>(.*?)</title>\n.*?<link>.*?\n<sublink>.*?</sublink>\n.*?<sublink>(.*?)</sublink>\n(.*?)\n'
-			item_re4 = '<item>\n.*?<title>(.*?)</title>\n.*?<link>.*?\n<sublink>.*?</sublink>\n.*?<sublink>.*?</sublink>\n.*?<sublink>(.*?)</sublink>\n(.*?)\n'
+			content = requests.get(url_path, headers=headers2).text
+			content = "".join(content.splitlines())
+			item_re = '<item>.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thumbnail>'
 			matchs = re.compile(item_re).findall(content)
-			matchs2 = re.compile(item_re2).findall(content)
-			matchs3 = re.compile(item_re3).findall(content)
-			matchs4 = re.compile(item_re4).findall(content)
-			matchsall = matchs+matchs2+matchs3+matchs4
 			items = []
-			for label, path, thumb in matchsall:
+			for label, path, thumb in matchs:
 				item = {
 					"label": label.strip(),
 					"thumbnail": thumb.strip(),
  					"path": path.strip(),
 				}
-				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+				item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
 				item["is_playable"] = True
 				item["info"] = {"type": "video"}
 				items += [item]
@@ -954,6 +959,27 @@ def M3U(path="0", tracking_string="M3U"):
 
 	items = M3UToItems(path)
 	return plugin.finish(AddTracking(items))
+
+
+@plugin.route('/layer2/<path>', name="layer2_default")
+@plugin.route('/layer2/<path>/<tracking_string>')
+def Layer2(path="0", tracking_string="Layer2"):
+	'''
+	Liệt kê danh sách các item của sheet layer2 Playlist
+	Parameters
+	----------
+	path : string
+		Link chưa nội dung playlist layer2
+	tracking_string : string
+		 Tên dễ đọc của view
+	'''
+	GA(  # tracking
+		"Layer2 - %s" % tracking_string,
+		"/layer2/%s" % path
+	)
+
+	items = Layer2ToItems(path)
+	#return plugin.finish(AddTracking(items))
 
 
 @plugin.route('/install-repo/<path>/<tracking_string>')
