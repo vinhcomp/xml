@@ -88,8 +88,9 @@ def GetSheetIDFromSettings():
 def Layer2ToItems(url_path=""):
 	if 'sublink' in url_path:
 		url = re.compile('<sublink>(.*?)</sublink>').findall(url_path)[:]
+		links = ['Link'] * len(url)
 		dialog = xbmcgui.Dialog()
-		choise = dialog.select('Please Choose a Link - Xin Chọn Link', url)
+		choise = dialog.select('Please Choose a Link - Xin Chọn Link', links)
 		#return plugin.set_resolved_url(url[choise])
 		return play_url(url[choise])
 	else:
