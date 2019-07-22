@@ -290,7 +290,7 @@ def M3UToItems(url_path=""):
 		if '<content>' in content:
 			content = "".join(content.splitlines())
 			#Limit 2 links
-			item_re = '<title>(.*?)</title><link>(.*?)</link>.*?<image>(.*?)</image>'
+			item_re = '<title>(.*?)</title>.*?<link>(.*?)</link>.*?<image>(.*?)</image>'
 			item_re2 = '<title>(.*?)</title><link>.*?</link><link>(.*?)</link>.*?<image>(.*?)</image>'
 			matchs = re.compile(item_re).findall(content)
 			matchs2 = re.compile(item_re2).findall(content)
