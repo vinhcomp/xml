@@ -1223,7 +1223,7 @@ def play_url(url, title=""):
 		plugin.set_resolved_url(url, subtitles=vsub)
 	elif url.startswith('http://rauma.tv/'):
 		source  = requests.get(url, headers=headers1).text
-		url = re.findall('var linkStream = \'(.*?)\'', source)[0]
+		url = re.findall('linkStream=\'(.*?)\'', source)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
 	else:
 		plugin.set_resolved_url(url, subtitles=vsub)
