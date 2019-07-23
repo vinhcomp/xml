@@ -285,7 +285,7 @@ def M3UToItems(url_path=""):
 		if '<item>' in content:
 			content = requests.get(url_path, headers=headers2).text
 			content = "".join(content.splitlines())
-			item_re = '<item>.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thumbnail>'
+			item_re = '<item>.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thu.*?nail>'
 			matchs = re.compile(item_re).findall(content)
 			items = []
 			for label, path, thumb in matchs:
