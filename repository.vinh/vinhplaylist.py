@@ -266,7 +266,7 @@ def M3UToItems(url_path=""):
 		items = items + [nextitem]
 		return items
 
-	elif url_path.startswith('http://worldkodi.com') or url_path.startswith('http://colussus.net/'):
+	elif any(url_path.startswith(domain) for domain in ['http://worldkodi.com', 'http://colussus.net/']):
 	#elif url_path.startswith('https://pastebin.com'):
 		content = requests.get(url_path, headers=headers2).content
 		if '<dir>' in content:
@@ -293,7 +293,11 @@ def M3UToItems(url_path=""):
 					"thumbnail": thumb.strip(),
  					"path": path.strip(),
 				}
-				item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
+				if '<sublink>' in item["path"]:
+					item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
+				#Playabel link
+				else:
+					item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 				item["is_playable"] = True
 				item["info"] = {"type": "video"}
 				items += [item]
