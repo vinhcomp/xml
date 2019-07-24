@@ -266,7 +266,7 @@ def M3UToItems(url_path=""):
 		items = items + [nextitem]
 		return items
 
-	elif url_path.startswith('http://worldkodi.com'):
+	elif url_path.startswith('http://worldkodi.com') or url_path.startswith('http://colussus.net/'):
 	#elif url_path.startswith('https://pastebin.com'):
 		content = requests.get(url_path, headers=headers2).content
 		if '<dir>' in content:
@@ -283,7 +283,6 @@ def M3UToItems(url_path=""):
 				items += [item]
 			return items
 		if '<item>' in content:
-			content = requests.get(url_path, headers=headers2).text
 			content = "".join(content.splitlines())
 			item_re = '<item>.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thu.*?nail>'
 			matchs = re.compile(item_re).findall(content)
@@ -1195,6 +1194,8 @@ def play_url(url, title=""):
 		source = requests.get(url, headers=headers1).text
 		try:
 			url = re.findall('"src=\'(.*?)\'', source)[0]
+			if 'm3u' not in url:
+				return notice('This Model is Private Show Now!!', 'Please choose other model!!', 'Con ghệ này đang chat private, chọn con khác đi!!')
 		except:
 			return notice('This Model is Offline Now!!', 'Please choose other model!!', 'Con ghệ này off rồi, chọn con khác đi!!')
 		plugin.set_resolved_url(url, subtitles=vsub)
