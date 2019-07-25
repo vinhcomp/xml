@@ -342,12 +342,44 @@ def M3UToItems(url_path=""):
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
-			"path": path.strip(),
+				"path": path.strip(),
 			}
 			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 			item["is_playable"] = True
 			item["info"] = {"type": "video"}
 			items += [item]
+		return items
+
+	elif url_path.startswith('https://www.film2movie.ws'):
+		content = requests.get(url_path, headers=headers2).content
+		content = "".join(content.splitlines())
+		item_re = '<article class.*?href="(.*?)".*?title="(.*?)".*?src="(.*?)"'
+		try:
+			pages = re.findall('class=\'textwpnumb\'.*?href=\'(.*?)\'', content)[0]
+		except:
+			pages = 'none'
+		if pages == 'none':
+			nlabel = 'Hết Trang - End of Pages'
+		else:
+			nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+re.compile('page/(.*?)/').findall(pages)[0]
+		nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
+		npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
+		nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for path, label, thumb in matchs:
+			label = re.findall(r'[0-z]+', label) #Alphabet & number only, no arabic
+			label = '[COLOR orange]'+" ".join(label)+'[/COLOR]'
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		items = items + [nextitem]
 		return items
 
 	else:
@@ -1191,6 +1223,10 @@ def play_url(url, title=""):
 		'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
 		'Accept-Encoding': 'gzip, deflate',
 	}
+	headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+			'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
 	vsub = 'https://docs.google.com/spreadsheets/d/1NwDGsRUhlXvvCPT3ToXJzn450Nto6FyLLBMucdxK13A/export?format=tsv&gid=0'
 	if "sub" in plugin.request.args:
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
@@ -1229,6 +1265,19 @@ def play_url(url, title=""):
 	elif url.startswith('http://rauma.tv/'):
 		source  = requests.get(url, headers=headers1).text
 		url = re.findall('linkStream=\'(.*?)\'', source)[0]
+		plugin.set_resolved_url(url, subtitles=vsub)
+	elif url.startswith('https://www.film2movie.ws'):
+		source = requests.get(url, headers=headers2).text
+		try:
+			url = re.findall('font-family: wdgoogle;">.*?<strong>\| <a href="(.*?)"', source)[1]
+		except:
+			try:
+				url = re.findall('font-family: wdgoogle;">.*?<strong>\| <a href="(.*?)"', source)[0]
+			except:
+				try:
+					url = re.findall('<strong>\| <a href="(.*?)"', source)[0]
+				except:
+					url = re.findall('</span> : \| <a href="(.*?)"', source)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
 	else:
 		plugin.set_resolved_url(url, subtitles=vsub)
