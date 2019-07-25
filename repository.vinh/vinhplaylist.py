@@ -1275,7 +1275,8 @@ def play_url(url, title=""):
 				url = re.findall('font-family: wdgoogle;">.*?<strong>\| <a href="(.*?)"', source)[0]
 			except:
 				try:
-					url = re.findall('<strong>\| <a href="(.*?)"', source)[0]
+					#url = re.findall('<strong>\| <a href="(.*?)"', source)[0]
+					url = re.findall('<strong>\| </strong><a href="(.*?)"', source)[0]
 				except:
 					url = re.findall('</span> : \| <a href="(.*?)"', source)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
