@@ -1480,10 +1480,8 @@ def get_playable_url(url):
 
 	#Open youtube apk SmartTV
 	elif "open_yt2" in url and apk:
-		if 'com.amazon.firetv.youtube' in apk:
-			xbmc.executebuiltin('StartAndroidActivity(com.amazon.firetv.youtube)') #New youtube firetv
-		else:
-			xbmc.executebuiltin('StartAndroidActivity(com.google.android.youtube.tv)')
+		#xbmc.executebuiltin('StartAndroidActivity(com.amazon.firetv.youtube)') #New youtube firetv
+		xbmc.executebuiltin('StartAndroidActivity(com.google.android.youtube.tv)')
 
 	#Open youtube apk FireTV (Silk or Firefox)
 	elif "open_yt3" in url and apk:
