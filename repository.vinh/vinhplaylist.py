@@ -1241,8 +1241,6 @@ def play_url(url, title=""):
 		plugin.set_resolved_url(url, subtitles=vsub)
 	elif 'topphimhd' in url:
 		source = requests.get(url, headers=headers1).text
-#		link = re.findall('<a href=(http://topphimhd.com.*?)class="btn', source)[0]
-#		source2 = requests.get(link, headers=headers1).text
 		linkstream = re.findall('embed-responsive-item src="(.*?)"', source)[0]
 		source3 = requests.get(linkstream, headers=headers1).text
 		url = re.findall('urlVideo = \'(.*?)\'', source3)[0]
@@ -1482,7 +1480,10 @@ def get_playable_url(url):
 
 	#Open youtube apk SmartTV
 	elif "open_yt2" in url and apk:
-		xbmc.executebuiltin('StartAndroidActivity(com.google.android.youtube.tv)')
+		try:
+			xbmc.executebuiltin('StartAndroidActivity(com.amazon.firetv.youtube)')
+		except:
+			xbmc.executebuiltin('StartAndroidActivity(com.google.android.youtube.tv)')
 
 	#Open youtube apk FireTV (Silk or Firefox)
 	elif "open_yt3" in url and apk:
