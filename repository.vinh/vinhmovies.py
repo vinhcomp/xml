@@ -1344,19 +1344,19 @@ def play_url(url, title=""):
 			source = requests.post(url2, data = data, verify = False).text
 			source_all += source
 		try:
-			link = re.findall('src="(https://ok.ru.*?)"', source_all)[0]
-			url = 'plugin://plugin.video.live.streamspro/play/?url='+urllib.quote_plus(link)+'&mode=19'
+			link = re.findall('file":"(http.*?)"', source_all)[-1]
+			url = link.replace('\\', '')
 		except:
 			try:
-				link = re.findall('file":"(http.*?)"', source_all)[-1]
-				url = link.replace('\\', '')
-			except:
 				link = re.findall('src="(https://www.fembed.com/v.*?)"', source_all)[0]
 				linkapi = link.replace('https://www.fembed.com/v', 'https://www.fembed.com/api/source')
 				source3 = requests.post(linkapi, data = {'d': 'www.fembed.com', 'r': ''}).text
 				response = json.loads(source3)
 				response = response['data']
 				url = response[0]['file']
+			except:
+				link = re.findall('src="(https://ok.ru.*?)"', source_all)[0]
+				url = 'plugin://plugin.video.live.streamspro/play/?url='+urllib.quote_plus(link)+'&mode=19'
 		plugin.set_resolved_url(url, subtitles=vsub)
 
 	else:
