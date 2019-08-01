@@ -515,7 +515,7 @@ def M3UToItems(url_path=""):
 		matchs = re.compile(item_re).findall(content)
 		items = []
 		for label3, path, thumb, label2, label1 in matchs:
-			label = label1+label2+label3
+			label = '[COLOR lime]'+label1+'[/COLOR]'+'-'+'[COLOR yellow]'+label2+'[/COLOR]'+'-'+label3
 			thumb = 'http://'+thumb
 			item = {
 				"label": label.strip(),
