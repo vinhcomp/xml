@@ -180,10 +180,11 @@ def Layer2ToItems(url_path=""):
 		url_path = re.findall('btn-danger" href="(.*?)"', source)[0]
 		item_re = '<a id=".*?href="(.*?)".*?title="(.*?)"'
 		content = requests.get(url_path, headers=headers2).content
+		thumb = re.findall('twitter:image" content="(.*?)"', content)[0]
 		matchs = re.compile(item_re).findall(content)
 		items = []
 		for path, label in matchs:
-			thumb = 'jpg'
+			thumb = thumb
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb,
