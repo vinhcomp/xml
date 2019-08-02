@@ -1355,8 +1355,10 @@ def play_url(url, title=""):
 				response = response['data']
 				url = response[0]['file']
 			except:
+				import resolveurl
 				link = re.findall('src="(https://ok.ru.*?)"', source_all)[0]
-				url = 'plugin://plugin.video.live.streamspro/play/?url='+urllib.quote_plus(link)+'&mode=19'
+				url = resolveurl.resolve(link)
+				#url = 'plugin://plugin.video.live.streamspro/play/?url='+urllib.quote_plus(link)+'&mode=19'
 		plugin.set_resolved_url(url, subtitles=vsub)
 
 	else:
@@ -1372,6 +1374,11 @@ def notice(
 	return notice
 
 def get_playable_url(url):
+	headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+			'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+
 	if "youtube.com/watch" in url:
 		match = re.compile(
 			'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
@@ -1409,7 +1416,6 @@ def get_playable_url(url):
 					return resp_json["link_play"]
 			except:
 				pass
-	
 
 	#Open youtube settings, enable MPEG-Dash to play youtube live	
 	elif "youtube.com/embed/" in url:		
@@ -1623,6 +1629,11 @@ def get_playable_url(url):
 			url = j["name"]["url"]
 		except:
 			pass
+
+	elif 'ok.ru' in url:
+		import resolveurl
+		return resolveurl.resolve(url)
+
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
 		oc_url = "http://onecloud.media/embed/" + ocid
