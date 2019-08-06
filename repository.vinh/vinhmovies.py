@@ -177,13 +177,19 @@ def Layer2ToItems(url_path=""):
 	
 	elif 'bilumoi.com' in url_path:
 		source = requests.get(url_path, headers=headers2).text
-		url_path = re.findall('btn-danger" href="(.*?)"', source)[0]
+		url_vs = re.findall('btn-danger" href="(.*?)"', source)[0]
+		content_vs = requests.get(url_vs, headers=headers2).content
+		try: #Thuyet Minh if available
+			url_tm = re.findall('class="playing".*?href="(.*?)"', content_vs)[0]
+			content_tm = requests.get(url_tm, headers=headers2).content
+		except: #if not
+			content_tm = ''
 		item_re = '<a id=".*?href="(.*?)".*?title="(.*?)"'
-		content = requests.get(url_path, headers=headers2).content
-		thumb = re.findall('twitter:image" content="(.*?)"', content)[0]
-		matchs = re.compile(item_re).findall(content)
+		content_all = content_vs+content_tm
+		thumb = re.findall('twitter:image" content="(.*?)"', content_vs)[0]
+		matchs_all = re.compile(item_re).findall(content_all)
 		items = []
-		for path, label in matchs:
+		for path, label in matchs_all:
 			thumb = thumb
 			item = {
 				"label": label.strip(),
