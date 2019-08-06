@@ -1360,7 +1360,7 @@ def play_url(url, title=""):
 				source3 = requests.post(linkapi, data = {'d': 'www.fembed.com', 'r': ''}).text
 				response = json.loads(source3)
 				response = response['data']
-				url = response[0]['file']
+				url = response[-1]['file']
 			except:
 				import resolveurl
 				link = re.findall('src="(https://ok.ru.*?)"', source_all)[0]
