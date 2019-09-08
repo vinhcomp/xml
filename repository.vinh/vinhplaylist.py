@@ -185,7 +185,7 @@ def M3UToItems(url_path=""):
 		if 'xem-phim' in url_path: #layer 2
 			content = requests.get(url_path, headers=headers2).content
 			content = "".join(content.splitlines())
-			item_re = 'episode><a href=(.*?)><span.*?shadow">(.*?)</span>'
+			item_re = 'episode><ahref=(.*?)><span.*?shadow">(.*?)</span>'
 			thumb = re.findall('id=expand-post-content>.*?src=(.*?) alt', content)[0]
 			items = []
 			matchs = re.compile(item_re).findall(content)
@@ -206,7 +206,7 @@ def M3UToItems(url_path=""):
 		else: #layer 1			
 			content = requests.get(url_path, headers=headers2).content
 			content = "".join(content.splitlines())
-			item_re = 'a class=halim-thumb href=(.*?)/ title="(.*?)".*?src=(.*?) alt=.*?title>(.*?)</p>'
+			item_re = 'class=halim-thumb href=(.*?)/ title="(.*?)".*?src=(.*?) alt=.*?title>(.*?)</p>'
 			try:
 				pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
 			except:
@@ -1364,6 +1364,7 @@ def vonglap(url, n):
 			url = None
 			return notice()
 
+
 	return url
 
 #url: str
@@ -1378,6 +1379,10 @@ def get_playable_url(url):
 	}
 	headers4 = {
 		'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+		'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+	}
+	headers5 = {
+		'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
 		'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 	}
 
@@ -1486,8 +1491,9 @@ def get_playable_url(url):
 	elif "open_yt3" in url and apk:
 		xbmc.executebuiltin('StartAndroidActivity(org.chromium.youtube_apk)')
 
+	#New youtube firetv
 	elif "open_yt4" in url and apk:
-		xbmc.executebuiltin('StartAndroidActivity(com.amazon.firetv.youtube)') #New youtube firetv
+		xbmc.executebuiltin('StartAndroidActivity(com.amazon.firetv.youtube)')
 
 	elif "sphim.tv" in url:
 		http.follow_redirects = False
@@ -1689,20 +1695,17 @@ def get_playable_url(url):
 #		url ='http://live'+keyid
 
 	elif "vn.tvnet.gov.vn" in url:
+		source = requests.get(url, headers=headers1).text
+		link = re.findall('data-file="(.*?)"', source)[0]
+		source2 = requests.get(link, headers=headers1).text
+		linkstream = re.findall('url": "(.*?)"', source2)[0]
 		try: #Fix buggy sometime
-			source = requests.get(url, headers=headers1).text
-			link = re.findall('data-file="(.*?)"', source)[0]
-			source2 = requests.get(link, headers=headers1).text
 			linkstreamid = re.findall('(http.*?smil/)', source2)[0]
-			linkstream = re.findall('url": "(.*?)"', source2)[0]
 			source3 = requests.get(linkstream, headers=headers1).text
-			linkstream2 = re.findall('(chunklist.*?$)', source3)[0]
+			linkstream2 = re.findall('(chunklist.*?$)', source3)[0]			
 			url = linkstreamid+linkstream2
 		except:
-			source = requests.get(url, headers=headers1)
-			link = re.findall('data-file="(.*?)"', source.text)[0]
-			source = requests.get(link, headers=headers1)
-			url = re.findall('url": "(.*?)"', source.text)[0]
+			url = linkstream
 
 	#http://photocall.tv/beinsports1/
 	elif "http://photocall.tv" in url:
@@ -1722,10 +1725,10 @@ def get_playable_url(url):
 			source2 = requests.get(link, headers=headers4).text
 			linkstream = re.findall(': "(.*?)"',source2)[0]
 			source3 = requests.get(linkstream, headers=headers4)
-		if source3.status_code != 200:
-			return notice()
-		else:
+		if source3.status_code == 200:
 			return linkstream+'|User-Agent=iPad&Referer='+link
+		else:
+			return notice()
 
 	#https://ok.ru/live/profile/572614093143
 	elif url.startswith("https://ok.ru"):
@@ -1742,12 +1745,12 @@ def get_playable_url(url):
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		linkstream = re.findall("src:'(https.*?)'", decode)[0]
 		source2 = requests.get(linkstream, headers=headers1, verify=False)
-		if source2.status_code != 200:
-			return notice()
+		if source2.status_code == 200:
+			return linkstream+'|user-agent=ipad'
 		#return re.findall('(?:source|file|src):[\'"](h[^\'"]+)',decode)[0]+'|user-agent=ipad' #this one will work too
 		#return re.search("src='(.*?\.m3u8)'", decode)[0]
 		else:
-			return linkstream+'|user-agent=ipad'
+			return notice()
 
 	elif "streamcdn.to" in url:
 		referer = 'https://hindimean.com/reddit/'
@@ -1757,10 +1760,10 @@ def get_playable_url(url):
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		linkstream = re.findall('source:.*?"(.*?)"', decode)[0]
 		source2 = requests.get(linkstream, headers=headers, verify=False)
-		if source2.status_code != 200:
-			return notice()
-		else:
+		if source2.status_code == 200:
 			return linkstream+'|user-agent=ipad&'+url
+		else:
+			return notice()
 
 	#http://hindimean.com/reddit/ Will take over the streamcdn.to
 	elif "hindimean.com" in url:
@@ -1775,10 +1778,10 @@ def get_playable_url(url):
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
 		linkstream2 = re.findall('source:.*?"(.*?)"', decode)[0]
 		source2 = requests.get(linkstream2, headers=headers2, verify=False)
-		if source2.status_code != 200:
-			return notice()
+		if source2.status_code == 200:
+			return linkstream2+'|user-agent=ipad&'+linkstream			
 		else:
-			return linkstream2+'|user-agent=ipad&'+linkstream
+			return notice()
 
 	#http://sportzonline.to/prog.txt
 	elif "sportzonline.co" in url:
@@ -1900,6 +1903,12 @@ def get_playable_url(url):
 	elif url.startswith('http://www.giniko.com'):
 		source = requests.get(url, headers=headers1).text
 		return re.findall('source:"(.*?)"', source)[0]
+
+	elif url.startswith('http://tructiepsd.com'):
+		source = requests.get(url, headers=headers4).text
+		link = re.findall('iframe src=\'(.*?)\'', source)[0]
+		source2 = requests.get(link, headers=headers4).text
+		return re.findall('pl.init\(\'(.*?)\'', source2)[0]+'|user-agent=iPad&Referer='+link
 
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
