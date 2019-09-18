@@ -1845,8 +1845,14 @@ def get_playable_url(url):
 		source = requests.get(url1, headers=headers4).text
 		link = re.findall('(http://sv.tvmienphi.net.*?)\'', source)[0]
 		source2 = requests.get(link, headers=headers4).text
-		linkstream = re.findall('(http.*?m3u.*?$)', source2)[0]
-		source3 = requests.get(linkstream, headers=headers4).text
+		try:
+			linkstream = re.findall('(http.*?m3u.*?$)', source2)[0]
+			source3 = requests.get(linkstream, headers=headers4).text
+		except:
+			try:
+				link2 = re.findall('(http://.*?vcdn.com.vn.*?)\'', source)[0] #m3u playable
+			except:
+				return notice()
 		notice1 = 'Xin Thử Lại'
 		notice2 = '[COLOR yellow]Đài Hiện Tại Không Mở Được.[/COLOR]'
 		notice3 = '[COLOR yellow]Đợi Vinh Sửa![/COLOR]'
@@ -1859,7 +1865,10 @@ def get_playable_url(url):
 			try:
 				return re.findall('(http.*?m3u.*?\s)', source3)[-1]
 			except:
-				return notice(notice1, notice2, notice3)
+				try:
+					return link2
+				except:
+					return notice(notice1, notice2, notice3)
 
 	elif "https://vtvgo.vn" in url:
 		header = {
