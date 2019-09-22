@@ -1349,7 +1349,11 @@ def play_url(url, title=""):
 	
 	elif url.startswith('http://keonhacai.net'):
 		source = requests.get(url, headers=headers1).text
-		link = re.findall('(http://tv.keonhacai.net.*?php)',source)[0]
+		#link = re.findall('(http://tv.keonhacai.net.*?php)',source)[0]
+		try:
+			link = re.findall('(http://tv.keonhacai.net.*?php)',source)[0]
+		except:
+			link = re.findall('(http://tv.keonhacai.net.*?) ',source)[0]
 		source2 = requests.get(link, headers=headers2).text
 		try:
 			link2 = re.findall('(http://hdstreams.*?php)',source2)[0]
