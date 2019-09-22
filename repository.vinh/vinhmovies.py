@@ -472,6 +472,33 @@ def M3UToItems(url_path=""):
 			items += [item]
 		return items
 
+	elif url_path.startswith('http://keonhacai.net'):
+		content = requests.get(url_path, headers=headers2).content
+		content = "".join(content.splitlines())
+		item_re = '"match-info well">.*?src="(.*?)".*?h2 class="team">.*?>(.*?)<.*?h2 class="team away">.*?>(.*?)<.*?<span>(.*?)<.*?a href=\'(.*?)\'.*?>(.*?)<'
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for thumb, label1, label2, label3, path, label4 in matchs:
+			label = label1+'vs'+label2+', '+label3+', '+label4
+			if 'Đang Xem' in label:
+				label1 = '[COLOR lime]'+label1+'[/COLOR]'
+				label2 = '[COLOR yellow]'+label2+'[/COLOR]'
+				label3 = '[COLOR yellow]'+label3+'[/COLOR]'
+				label4 = '[COLOR orange]'+label4+'[/COLOR]'
+				label = label1+'vs'+label2+', '+label3+', '+label4
+			path = 'http://keonhacai.net/'+path
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		return items
+
+
 	elif url_path.startswith('https://www.film2movie.ws'):
 		content = requests.get(url_path, headers=headers2).content
 		content = "".join(content.splitlines())
@@ -1314,10 +1341,30 @@ def play_url(url, title=""):
 		except:
 			return notice('This Model is Private Show Now!!', 'Please choose other model!!', 'Con ghệ này đang chat private, chọn con khác đi!!')
 		plugin.set_resolved_url(url, subtitles=vsub)
+	
 	elif url.startswith('http://rauma.tv/'):
 		source  = requests.get(url, headers=headers1).text
 		url = re.findall('linkStream=\'(.*?)\'', source)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
+	
+	elif url.startswith('http://keonhacai.net'):
+		source = requests.get(url, headers=headers1).text
+		link = re.findall('(http://tv.keonhacai.net.*?php)',source)[0]
+		source2 = requests.get(link, headers=headers2).text
+		try:
+			link2 = re.findall('(http://hdstreams.*?php)',source2)[0]
+			source3 = requests.get(link2, headers=headers2).text
+			link3 = re.findall('window.atob\(\'(.*?)\'',source3)[0]
+			url = base64.b64decode(link3)+'|User-Agent=iPad&Referer='+link2
+		except:
+			try:
+				url = re.findall('src=".*?=(.*?)"',source2)[0]
+			except:	
+				link2 = re.findall('src="(.*?)"',source2)[0]
+				source3 = requests.get(link2, headers=headers2).text
+				url = re.findall('file: "(.*?)"',source3)[1]+'|User-Agent=iPad&Referer='+link2
+		plugin.set_resolved_url(url, subtitles=vsub)
+
 	elif url.startswith('https://www.film2movie.ws'):
 		source = requests.get(url, headers=headers2).text
 		try:
