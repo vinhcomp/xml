@@ -1398,7 +1398,13 @@ def play_url(url, title=""):
 
 	elif url.startswith('https://tructiepbongda.vip'):
 		source = requests.get(url, headers=headers1).text
-		url = re.findall('file: \'(.*?)\'',source)[0]
+		try:
+			url = re.findall('file: \'(.*?)\'',source)[0]
+		except:
+			notice1 = 'Xin Trở Lại Sau, Please Come Back Later!'
+			notice2 = '[COLOR yellow]Chưa Tới Giờ Phát.[/COLOR]'
+			notice3 = '[COLOR yellow]Xin Trở Lại Sau, Please Come Back Later![/COLOR]'
+			notice(notice1, notice2, notice3)
 		plugin.set_resolved_url(url, subtitles=vsub)
 
 	elif url.startswith('https://www.film2movie.ws'):
