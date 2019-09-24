@@ -1401,8 +1401,8 @@ def play_url(url, title=""):
 		try:
 			url = re.findall('file: \'(.*?)\'',source)[0]
 		except:
-			notice1 = 'Xin Trở Lại Sau, Please Come Back Later!'
-			notice2 = '[COLOR yellow]Chưa Tới Giờ Phát.[/COLOR]'
+			notice1 = 'This event has not started yet!'
+			notice2 = '[COLOR yellow]Chưa Tới Giờ Phát, This event has not started yet.[/COLOR]'
 			notice3 = '[COLOR yellow]Xin Trở Lại Sau, Please Come Back Later![/COLOR]'
 			notice(notice1, notice2, notice3)
 		plugin.set_resolved_url(url, subtitles=vsub)
