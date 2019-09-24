@@ -498,6 +498,30 @@ def M3UToItems(url_path=""):
 			items += [item]
 		return items
 
+	elif url_path.startswith('https://tructiepbongda.vip'):
+		content = requests.get(url_path, headers=headers2).content
+		content = "".join(content.splitlines())
+		item_re = '<li><a href="(.*?)" class="match-view">.*?<span>(.*?)</span>.*?right name-team">' \
+			'(.*?)</span>.*?data-src="(.*?)".*?left name-team">(.*?)</span>.*?tour name-comp">(.*?)</span>'
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for path, label1, label2, thumb, label3, label4 in matchs:
+			label1 = '[COLOR lime]'+label1+'[/COLOR]'
+			label2 = '[COLOR yellow]'+label2+'[/COLOR]'
+			label3 = '[COLOR yellow]'+label3+'[/COLOR]'
+			label4 = '[COLOR orange]'+label4+'[/COLOR]'
+			label = label1+', '+label2+' vs '+label3+', '+label4
+			path = 'https://tructiepbongda.vip'+path
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		return items
 
 	elif url_path.startswith('https://www.film2movie.ws'):
 		content = requests.get(url_path, headers=headers2).content
@@ -1370,6 +1394,11 @@ def play_url(url, title=""):
 			link2 = re.findall('src="(.*?)"',source2)[0]
 			source3 = requests.get(link2, headers=headers2).text
 			url = re.findall('(http.*?m3u8)',source3)[0]
+		plugin.set_resolved_url(url, subtitles=vsub)
+
+	elif url.startswith('https://tructiepbongda.vip'):
+		source = requests.get(url, headers=headers1).text
+		url = re.findall('file: \'(.*?)\'',source)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
 
 	elif url.startswith('https://www.film2movie.ws'):
