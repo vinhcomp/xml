@@ -1361,12 +1361,15 @@ def play_url(url, title=""):
 			link3 = re.findall('window.atob\(\'(.*?)\'',source3)[0]
 			url = base64.b64decode(link3)+'|User-Agent=iPad&Referer='+link2
 		except:
-			try:
-				url = re.findall('src=".*?=(.*?)"',source2)[0]
-			except:	
-				link2 = re.findall('src="(.*?)"',source2)[0]
-				source3 = requests.get(link2, headers=headers2).text
-				url = re.findall('file: "(.*?)"',source3)[1]+'|User-Agent=iPad&Referer='+link2
+			#try:
+			#	url = re.findall('src=".*?=(.*?)"',source2)[0]
+			#except:	
+			#	link2 = re.findall('src="(.*?)"',source2)[0]
+			#	source3 = requests.get(link2, headers=headers2).text
+			#	url = re.findall('file: "(.*?)"',source3)[1]+'|User-Agent=iPad&Referer='+link2
+			link2 = re.findall('src="(.*?)"',source2)[0]
+			source3 = requests.get(link2, headers=headers2).text
+			url = re.findall('(http.*?m3u8)',source3)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
 
 	elif url.startswith('https://www.film2movie.ws'):
