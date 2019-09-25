@@ -511,11 +511,13 @@ def M3UToItems(url_path=""):
 		}
 		items = []
 		for path, label1, label2, thumb, label3, label4 in matchs:
-			label1 = '[COLOR lime]'+label1+'[/COLOR]'
-			label2 = '[COLOR yellow]'+label2+'[/COLOR]'
-			label3 = '[COLOR yellow]'+label3+'[/COLOR]'
-			label4 = '[COLOR orange]'+label4+'[/COLOR]'
 			label = label1+', '+label2+' vs '+label3+', '+label4
+			if any(words in label for words in ['\'', 'HT']):
+				label1 = '[COLOR lime]'+label1+'[/COLOR]'
+				label2 = '[COLOR yellow]'+label2+'[/COLOR]'
+				label3 = '[COLOR yellow]'+label3+'[/COLOR]'
+				label4 = '[COLOR orange]'+label4+'[/COLOR]'
+				label = label1+', '+label2+' vs '+label3+', '+label4
 			path = 'https://tructiepbongda.vip'+path
 			item = {
 				"label": label.strip(),
