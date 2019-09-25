@@ -504,6 +504,11 @@ def M3UToItems(url_path=""):
 		item_re = '<li><a href="(.*?)" class="match-view">.*?<span>(.*?)</span>.*?right name-team">' \
 			'(.*?)</span>.*?data-src="(.*?)".*?left name-team">(.*?)</span>.*?tour name-comp">(.*?)</span>'
 		matchs = re.compile(item_re).findall(content)
+		notice_time = {
+					'label': '------------[COLOR red] Giờ Việt Nam - VietNam Time [/COLOR]------------',
+					'thumbnail': 'https://i.imgur.com/KL4qOtF.jpg',
+					'path': 'npath'
+		}
 		items = []
 		for path, label1, label2, thumb, label3, label4 in matchs:
 			label1 = '[COLOR lime]'+label1+'[/COLOR]'
@@ -521,6 +526,7 @@ def M3UToItems(url_path=""):
 			item["is_playable"] = True
 			item["info"] = {"type": "video"}
 			items += [item]
+		items = [notice_time]+items
 		return items
 
 	elif url_path.startswith('https://www.film2movie.ws'):
