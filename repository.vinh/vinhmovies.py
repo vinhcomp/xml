@@ -184,7 +184,8 @@ def Layer2ToItems(url_path=""):
 			content_tm = requests.get(url_tm, headers=headers2).content
 		except: #if not
 			content_tm = ''
-		item_re = '<a id=".*?href="(.*?)".*?title="(.*?)"'
+		#item_re = '<a id=".*?href="(.*?)".*?title="(.*?)"'
+		item_re = '<a id="ep.*?href="(.*?)".*?title="(.*?)"'
 		content_all = content_vs+content_tm
 		thumb = re.findall('twitter:image" content="(.*?)"', content_vs)[0]
 		matchs_all = re.compile(item_re).findall(content_all)
