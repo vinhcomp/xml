@@ -501,7 +501,7 @@ def M3UToItems(url_path=""):
 	elif url_path.startswith('https://tructiepbongda.vip'):
 		content = requests.get(url_path, headers=headers2).content
 		content = "".join(content.splitlines())
-		item_re = '<li><a href="(.*?)" class="match-view">.*?<span>(.*?)</span>.*?right name-team">' \
+		item_re = '<li><a href="(.*?)".*?class="match-view">.*?match-status">(.*?)</span>.*?right name-team">' \
 			'(.*?)</span>.*?data-src="(.*?)".*?left name-team">(.*?)</span>.*?tour name-comp">(.*?)</span>'
 		matchs = re.compile(item_re).findall(content)
 		notice_time = {
