@@ -1322,7 +1322,7 @@ def vonglap(url, n):
 			link = re.findall('"(http://tivis.*?)"', source)[0]
 		except:
 			link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
-		if n<5:
+		if n<3:
 			if 'sd' in url:
 				try:
 					source2 = requests.get(link, headers=headers4).text
