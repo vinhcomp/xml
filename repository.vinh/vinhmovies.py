@@ -532,6 +532,33 @@ def M3UToItems(url_path=""):
 		items = [notice_time]+items
 		return items
 
+	elif url_path.startswith('https://live.90phut.tv'):
+		content = requests.get(url_path, headers=headers2).content
+		content = "".join(content.splitlines())
+		item_re = 'list-channel.*?<a href="/(.*?)".*?class="item.*?<img src="(.*?)".*?class="league">' \
+			'(.*?)</div>.*?class="title">(.*?)</div>.*?data-time.*?</span>(.*?)</div>'
+		matchs = re.compile(item_re).findall(content)
+		notice_time = {
+					'label': '------------[COLOR red] Giờ Việt Nam - VietNam Time [/COLOR]------------',
+					'thumbnail': 'https://i.imgur.com/KL4qOtF.jpg',
+					'path': 'npath'
+		}
+		items = []
+		for path, thumb, label3, label2, label1 in matchs:
+			label = label1+', '+label2+', '+label3
+			path = 'https://live.90phut.tv/'+path
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		items = [notice_time]+items
+		return items
+
 	elif url_path.startswith('https://www.film2movie.ws'):
 		content = requests.get(url_path, headers=headers2).content
 		content = "".join(content.splitlines())
@@ -1414,6 +1441,11 @@ def play_url(url, title=""):
 			notice2 = '[COLOR yellow]Chưa Tới Giờ Phát, This event has not started yet.[/COLOR]'
 			notice3 = '[COLOR yellow]Xin Trở Lại Sau, Please Come Back Later![/COLOR]'
 			notice(notice1, notice2, notice3)
+		plugin.set_resolved_url(url, subtitles=vsub)
+
+	elif url.startswith('https://live.90phut.tv'):
+		source = requests.get(url, headers=headers1).text
+		url = re.findall('file: "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+url
 		plugin.set_resolved_url(url, subtitles=vsub)
 
 	elif url.startswith('https://www.film2movie.ws'):
