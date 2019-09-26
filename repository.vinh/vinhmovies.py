@@ -545,6 +545,9 @@ def M3UToItems(url_path=""):
 		}
 		items = []
 		for path, thumb, label3, label2, label1 in matchs:
+			label1 = '[COLOR lime]'+label1+'[/COLOR]'
+			label2 = '[COLOR yellow]'+label2+'[/COLOR]'
+			label3 = '[COLOR orange]'+label3+'[/COLOR]'
 			label = label1+', '+label2+', '+label3
 			path = 'https://live.90phut.tv/'+path
 			item = {
