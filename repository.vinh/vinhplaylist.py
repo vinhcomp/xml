@@ -1667,12 +1667,20 @@ def get_playable_url(url):
 		source = requests.get(url,headers=headers1)
 		return re.findall("(http://.*?tulix.tv.*?m3u8)", source.text)[0]
 
-	elif any(domain in url for domain in['ustv247.com', 'ustvgo.net', 'ustv247.tv', 'watchnewslive.net', 'watchnewslive.tv', 'guide66.info']):
-		source = requests.get(url,headers=headers1)
+	elif any(domain in url for domain in['ustv247.com', 'ustvgo.net', 'ustvgo.to', 'ustv247.tv', 'watchnewslive.net', 'watchnewslive.tv', 'guide66.info']):
+		referer='http://ustvgo.tv/'
+		headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+		source = requests.get(url,headers=headers2)
 		try:
 			url = re.findall("(http://live.*?)'", source.text)[0]
 		except:
-			url = re.findall("(http://.*?savitar.*?)'", source.text)[0]
+			try:
+				url = re.findall("(http://.*?savitar.*?)'", source.text)[0]
+			except:
+				url = re.findall("(http://.*?m3u8.*?)'", source.text)[0]
 
 	elif url.startswith("http://123tvnow.com"):
 		source = requests.get(url, headers=headers1).text
