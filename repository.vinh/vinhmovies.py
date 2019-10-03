@@ -312,6 +312,19 @@ def M3UToItems(url_path=""):
 			thumb = re.findall('id=expand-post-content>.*?src=(.*?) alt', content)[0]
 			items = []
 			matchs = re.compile(item_re).findall(content)
+			if matchs == []: #Incase cannot get path
+				path = url_path
+				label = 'Tập - Episode'
+				thumb = thumb
+				item = {
+					"label": label,
+					"thumbnail": thumb,
+					"path": path,
+				}
+				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+				item["is_playable"] = True
+				item["info"] = {"type": "video"}
+				items += [item]
 			for path, label in matchs:
 				label = 'Tập - Episode '+label
 				thumb = thumb
