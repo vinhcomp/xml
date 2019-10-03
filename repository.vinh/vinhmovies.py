@@ -329,7 +329,7 @@ def M3UToItems(url_path=""):
 		else: #layer 1			
 			content = requests.get(url_path, headers=headers2).content
 			content = "".join(content.splitlines())
-			item_re = 'a class=halim-thumb href=(.*?)/ title="(.*?)".*?src=(.*?) alt=.*?title>(.*?)</p>'
+			item_re = 'class=halim-thumb href=(.*?)/ title="(.*?)".*?src=(.*?) alt=.*?title>(.*?)</p>'
 			try:
 				pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
 			except:
@@ -1385,9 +1385,14 @@ def play_url(url, title=""):
 		plugin.set_resolved_url(url, subtitles=vsub)
 	elif 'topphimhd' in url:
 		source = requests.get(url, headers=headers1).text
-		linkstream = re.findall('embed-responsive-item src="(.*?)"', source)[0]
-		source3 = requests.get(linkstream, headers=headers1).text
-		url = re.findall('urlVideo = \'(.*?)\'', source3)[0]
+		try:
+			linkstream = re.findall('embed-responsive-item src="(.*?)"', source)[0]
+			source3 = requests.get(linkstream, headers=headers1).text
+			url = re.findall('urlVideo = \'(.*?)\'', source3)[0]
+		except:
+			import resolveurl
+			link_okru = re.findall('(https://ok.ru.*?) ', source)[0]
+			url = resolveurl.resolve(link_okru)		
 		plugin.set_resolved_url(url, subtitles=vsub)
 	elif 'cam2cam.com' in url:
 		source = requests.get(url, headers=headers1).text
