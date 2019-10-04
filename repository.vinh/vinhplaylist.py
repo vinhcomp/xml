@@ -1696,13 +1696,15 @@ def get_playable_url(url):
 	elif '&amp;' in url:
 		url = url.replace('&amp;', '&')
 
-	elif url.startswith("http://123tvnow.com"):
+	#elif url.startswith("http://123tvnow.com"):
+	elif any(domain in url for domain in['http://123tvnow.com', 'http://www.sports24.club']):
 		source = requests.get(url, headers=headers1).text
 		urlbase64 = re.findall("atob\('(.*?)'", source)[0]
 		#streamurl = urlbase64.decode('base64') #type: bytes python 3
 		streamurl = base64.b64decode(urlbase64) #type: bytes python 3
 		streamurl = str(streamurl)
-		url = streamurl+'?1|Referer='+url+'&User-Agent=iPad'
+		#url = streamurl+'?1|Referer='+url+'&User-Agent=iPad'
+		url = streamurl+'|Referer='+url+'&User-Agent=iPad'
 
 #	elif url.startswith('http://tmedia.me/channel'):
 #		source = requests.get(url, headers=headers4).text
