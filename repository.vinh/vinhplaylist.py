@@ -1230,6 +1230,7 @@ def play_url(url, title=""):
 	vsub = 'https://docs.google.com/spreadsheets/d/1NwDGsRUhlXvvCPT3ToXJzn450Nto6FyLLBMucdxK13A/export?format=tsv&gid=0'
 	if "sub" in plugin.request.args:
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
+		
 	elif 'chaturbate.com' in url:
 		source = requests.get(url, headers=headers1).text
 		try:
@@ -1239,12 +1240,19 @@ def play_url(url, title=""):
 		except:
 			return notice('This Model is Offline Now!!', 'Please choose other model!!', 'Con ghệ này off rồi, chọn con khác đi!!')
 		plugin.set_resolved_url(url, subtitles=vsub)
+
 	elif 'topphimhd' in url:
 		source = requests.get(url, headers=headers1).text
-		linkstream = re.findall('embed-responsive-item src="(.*?)"', source)[0]
-		source3 = requests.get(linkstream, headers=headers1).text
-		url = re.findall('urlVideo = \'(.*?)\'', source3)[0]
+		try:
+			linkstream = re.findall('embed-responsive-item src="(.*?)"', source)[0]
+			source3 = requests.get(linkstream, headers=headers1).text
+			url = re.findall('urlVideo = \'(.*?)\'', source3)[0]
+		except:
+			import resolveurl
+			link_okru = re.findall('(https://ok.ru.*?) ', source)[0]
+			url = resolveurl.resolve(link_okru)		
 		plugin.set_resolved_url(url, subtitles=vsub)
+
 	elif 'cam2cam.com' in url:
 		source = requests.get(url, headers=headers1).text
 		try:
@@ -1260,10 +1268,12 @@ def play_url(url, title=""):
 		except:
 			return notice('This Model is Private Show Now!!', 'Please choose other model!!', 'Con ghệ này đang chat private, chọn con khác đi!!')
 		plugin.set_resolved_url(url, subtitles=vsub)
+
 	elif url.startswith('http://rauma.tv/'):
 		source  = requests.get(url, headers=headers1).text
 		url = re.findall('linkStream=\'(.*?)\'', source)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
+
 	elif url.startswith('https://www.film2movie.ws'):
 		source = requests.get(url, headers=headers2).text
 		try:
@@ -1283,6 +1293,7 @@ def play_url(url, title=""):
 						except:
 							url = re.findall('center;"><a href="(.*?)"', source)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
+
 	else:
 		plugin.set_resolved_url(url, subtitles=vsub)
 
@@ -1667,7 +1678,7 @@ def get_playable_url(url):
 		source = requests.get(url,headers=headers1)
 		return re.findall("(http://.*?tulix.tv.*?m3u8)", source.text)[0]
 
-	elif any(domain in url for domain in['ustv247.com', 'ustvgo.net', 'ustvgo.to', 'ustv247.tv', 'watchnewslive.net', 'watchnewslive.tv', 'guide66.info']):
+	elif any(domain in url for domain in['ustv247.com', 'ustvgo.net', 'ustvgo.to', 'ustvgo.tv', 'ustv247.tv', 'watchnewslive.net', 'watchnewslive.tv', 'guide66.info']):
 		referer='http://ustvgo.tv/'
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
@@ -1681,6 +1692,9 @@ def get_playable_url(url):
 				url = re.findall("(http://.*?savitar.*?)'", source.text)[0]
 			except:
 				url = re.findall("(http://.*?m3u8.*?)'", source.text)[0]
+
+	elif '&amp;' in url:
+		url = url.replace('&amp;', '&')
 
 	elif url.startswith("http://123tvnow.com"):
 		source = requests.get(url, headers=headers1).text
@@ -1999,7 +2013,8 @@ def get_playable_url(url):
 	elif "tv24.vn" in url:
 		cid = re.compile('/(\d+)/').findall(url)[0]
 		return "plugin://plugin.video.sctv/play/" + cid
-	elif "dailymotion.com" in url:
+	#elif "dailymotion.com" in url:
+	elif url.startswith('https://www.dailymotion.com'):
 		did = re.compile("/(\w+)$").findall(url)[0]
 		return "plugin://plugin.video.dailymotion_com/?url=%s&mode=playVideo" % did
 	else:
