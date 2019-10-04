@@ -350,18 +350,21 @@ def M3UToItems(url_path=""):
 			items += [item]
 		return items
 
-	elif url_path.startswith('https://www.film2movie.ws'):
+	#elif url_path.startswith('https://www.film2movie.ws'):
+	elif any(url_path.startswith(domain) for domain in ['https://www.film2movie.ws', 'https://www.film2movie.li']):
 		content = requests.get(url_path, headers=headers2).content
 		content = "".join(content.splitlines())
 		item_re = '<article class.*?href="(.*?)".*?title="(.*?)".*?src="(.*?)"'
 		try:
-			pages = re.findall('class=\'textwpnumb\'.*?href=\'(.*?)\'', content)[0]
+			#pages = re.findall('class=\'textwpnumb\'.*?href=\'(.*?)\'', content)[0]
+			pages = re.findall('ul id="wbh-pagenumber".*?</div><li><a href=\'(.*?)\'', content)[0]
 		except:
 			pages = 'none'
 		if pages == 'none':
 			nlabel = 'Hết Trang - End of Pages'
 		else:
 			nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+re.compile('page/(.*?)/').findall(pages)[0]
+			#nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+pages
 		nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
 		npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
 		nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
