@@ -1946,6 +1946,11 @@ def get_playable_url(url):
 		source2 = requests.get(link, headers=headers4).text
 		return re.findall('pl.init\(\'(.*?)\'', source2)[0]+'|user-agent=iPad&Referer='+link
 
+	elif 'linkm3u8' in url:
+		url = url.replace('linkm3u8', '')
+		source = requests.get(url, headers=headers1).text
+		url = re.findall('(http.*?m3u8)\'', source)[0]
+
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
 		oc_url = "http://onecloud.media/embed/" + ocid
