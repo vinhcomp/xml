@@ -1401,7 +1401,7 @@ def play_url(url, title=""):
 		try:
 			linkstream = re.findall('embed-responsive-item src="(.*?)"', source)[0]
 			source3 = requests.get(linkstream, headers=headers1).text
-			url = re.findall('urlVideo = \'(.*?)\'', source3)[0]
+			url = re.findall('urlVideo = \'(.*?)\'', source3)[0]+'|Referer='+linkstream+'&User-Agent=iPad'
 		except:
 			import resolveurl
 			link_okru = re.findall('(https://ok.ru.*?) ', source)[0]
