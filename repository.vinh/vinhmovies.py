@@ -700,7 +700,11 @@ def M3UToItems(url_path=""):
 			pages = re.findall("blog-pager-older-link btn' href='(.*?)&start", content)[0]
 			pages = pages+'#PageNo='+page_num
 		except:
-			pages = 'none'
+			try:
+				pages = re.findall("blog-pager-older-link btn' href='(.*?)'", content)[0]
+				pages = pages+'#PageNo='+page_num
+			except:
+				pages = 'none'
 		if pages == 'none':
 			nlabel = 'End of Pages'
 		else:
