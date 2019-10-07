@@ -754,6 +754,25 @@ def M3UToItems(url_path=""):
 		items = items + [nextitem]
 		return items
 
+	elif url_path.startswith('http://60fps'):
+		content = requests.get(url_path, headers=headers2).content
+		item_re = '<li><a title=".*?href="(.*?)".*?>(.*?)<.*?href=.*?>(.*?)<'
+		matchs = re.compile(item_re).findall(content)
+		thumb = 'none'
+		items = []
+		for path, label1, label2 in matchs:
+			label = '[COLOR yellow]'+label1+'[/COLOR]'+' vs '+'[COLOR lime]'+label2+'[/COLOR]'
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		return items
+
 	else:
 		item_re = '\#EXTINF(.*?,)(.*?)\n(.*?)\n'
 		(resp, content) = http.request(
@@ -1642,6 +1661,13 @@ def play_url(url, title=""):
 		url = re.findall('"file": "(.*?)"', source)[0]
 		url = resolveurl.resolve(url)
 		plugin.set_resolved_url(url, subtitles=vsub)
+
+	elif url.startswith('http://60fps'):
+		source = requests.get(url, headers=headers2).text
+		link = re.findall('title" href="(.*?)"', source)[0]
+		source2 = requests.get(link, headers=headers2).text
+		linkstream = re.findall('(http.*?m3u8.*?)\'', source2)[0]
+		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
 	elif url.startswith('https://ok.ru') or url.startswith('https://www.facebook.com'):
 		import resolveurl
