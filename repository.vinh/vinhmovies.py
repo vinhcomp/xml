@@ -177,7 +177,7 @@ def Layer2ToItems(url_path=""):
 	
 	elif 'bilumoi.com' in url_path:
 		source = requests.get(url_path, headers=headers2).text
-		url_vs = re.findall('btn-danger" href="(.*?)"', source)[0]
+		url_vs = re.findall('btn-danger" href="(.*?)"', source)[0] #vietsub
 		content_vs = requests.get(url_vs, headers=headers2).content
 		try: #Thuyet Minh if available
 			url_tm = re.findall('class="playing".*?href="(.*?)"', content_vs)[0]
@@ -192,6 +192,35 @@ def Layer2ToItems(url_path=""):
 		items = []
 		for path, label in matchs_all:
 			thumb = thumb
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb,
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		return items
+
+	elif 'http://www.phumikhmer1' in url_path:
+		content = requests.get(url_path, headers=headers2).text
+		content = content.replace("'", "\"")
+		content = "".join(content.splitlines())
+		#item_re = '"file":.*?"(.*?)".*?title":.*?"(.*?)".*?image":.*?"(.*?)"'
+		item_re = '"file":.*?"(.*?)".*?title":.*?"(.*?)"'
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		#for path, label, thumb in matchs:
+		thumb = 'none'
+		for path, label in matchs:
+			#if '//ok.ru' in path:
+			if path.startswith('//ok.ru'):
+				path = path.replace('//ok.ru', 'https://ok.ru')
+			if '//www' in path:
+				path = path.replace('//www', 'https://www')
+			if 'https://youtu.be' in path:
+				path = path.replace('https://youtu.be/', 'https://www.youtube.com/watch?v=')+'&feature=youtu.be'
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb,
@@ -627,6 +656,41 @@ def M3UToItems(url_path=""):
 		for label3, path, thumb, label2, label1 in matchs:
 			label = '[COLOR lime]'+label1+'[/COLOR]'+'-'+'[COLOR yellow]'+label2+'[/COLOR]'+'-'+label3
 			thumb = 'http://'+thumb
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
+			items += [item]
+		items = items + [nextitem]
+		return items
+
+	elif url_path.startswith('http://www.phumikhmer1'):
+		content = requests.get(url_path, headers=headers2).content
+		content = "".join(content.splitlines())
+		item_re = "<article class=.*?<link href='(.*?)'.*?<div class='post-summary'.*?<meta content=\'(.*?)' itemprop='url'/>.*?title='(.*?)'"
+		try:
+			page_num = re.findall('PageNo=(.*?$)', url_path)[0]
+		except:
+			page_num = '1'
+		page_num = int(page_num)+1
+		page_num = str(page_num)
+		try:
+			pages = re.findall("blog-pager-older-link btn' href='(.*?)&start", content)[0]
+			pages = pages+'#PageNo='+page_num
+		except:
+			pages = 'none'
+		if pages == 'none':
+			nlabel = 'End of Pages'
+		else:
+			nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+page_num
+		nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
+		npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
+		nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for path, thumb, label in matchs:
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
@@ -1517,6 +1581,11 @@ def play_url(url, title=""):
 				link = re.findall('src="(https://ok.ru.*?)"', source_all)[0]
 				url = resolveurl.resolve(link)
 				#url = 'plugin://plugin.video.live.streamspro/play/?url='+urllib.quote_plus(link)+'&mode=19'
+		plugin.set_resolved_url(url, subtitles=vsub)
+
+	elif url.startswith('https://ok.ru') or url.startswith('https://www.facebook.com'):
+		import resolveurl
+		url = resolveurl.resolve(url)
 		plugin.set_resolved_url(url, subtitles=vsub)
 
 	else:
