@@ -203,7 +203,7 @@ def Layer2ToItems(url_path=""):
 			items += [item]
 		return items
 
-	elif 'http://www.phumikhmer1' in url_path:
+	elif url_path.startswith('http://www.phumikhmer1'):
 		content = requests.get(url_path, headers=headers2).text
 		content = content.replace("'", "\"")
 		content = "".join(content.splitlines())
@@ -232,7 +232,7 @@ def Layer2ToItems(url_path=""):
 			items += [item]
 		return items
 
-	elif 'http://www.khmerdrama' in url_path:
+	elif url_path.startswith('http://www.khmerdrama') or url_path.startswith('http://www.khmeravenue'):
 		content = requests.get(url_path, headers=headers2).text
 		content = content.replace("'", "\"")
 		#content = "".join(content.splitlines())
@@ -721,7 +721,7 @@ def M3UToItems(url_path=""):
 		items = items + [nextitem]
 		return items
 
-	elif url_path.startswith('http://www.khmerdrama'):
+	elif url_path.startswith('http://www.khmerdrama') or url_path.startswith('http://www.khmeravenue'):
 		content = requests.get(url_path, headers=headers2).content
 		content = "".join(content.splitlines())
 		item_re = 'thumbnail-container.*?href="(.*?)".*?image: url\((.*?)\).*?<h4> (.*?)</h4>.*?<h3>(.*?)</h3>'
@@ -1632,7 +1632,7 @@ def play_url(url, title=""):
 				#url = 'plugin://plugin.video.live.streamspro/play/?url='+urllib.quote_plus(link)+'&mode=19'
 		plugin.set_resolved_url(url, subtitles=vsub)
 
-	elif url.startswith('http://www.khmerdrama'):
+	elif url.startswith('http://www.khmerdrama') or url.startswith('http://www.khmeravenue'):
 		import resolveurl
 		source = requests.get(url, headers=headers2).text
 		url = re.findall('"file": "(.*?)"', source)[0]
