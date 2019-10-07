@@ -232,6 +232,26 @@ def Layer2ToItems(url_path=""):
 			items += [item]
 		return items
 
+	elif 'http://www.khmerdrama' in url_path:
+		content = requests.get(url_path, headers=headers2).text
+		content = content.replace("'", "\"")
+		#content = "".join(content.splitlines())
+		item_re = 'a href="(.*?)".*?btn btn-episode">(.*?)<'
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		thumb = 'none'
+		for path, label in matchs:
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb,
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		return items
+
 	else:
 		url = url_path
 		return play_url(url)
@@ -691,6 +711,35 @@ def M3UToItems(url_path=""):
 		matchs = re.compile(item_re).findall(content)
 		items = []
 		for path, thumb, label in matchs:
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
+			items += [item]
+		items = items + [nextitem]
+		return items
+
+	elif url_path.startswith('http://www.khmerdrama'):
+		content = requests.get(url_path, headers=headers2).content
+		content = "".join(content.splitlines())
+		item_re = 'thumbnail-container.*?href="(.*?)".*?image: url\((.*?)\).*?<h4> (.*?)</h4>.*?<h3>(.*?)</h3>'
+		try:
+			pages = re.findall('page larger" title="Page.*?href="(.*?)"', content)[0]
+		except:
+			pages = 'none'
+		if pages == 'none':
+			nlabel = 'End of Pages'
+		else:		
+			nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+re.compile('page/(.*?)/').findall(pages)[0]
+		nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
+		npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
+		nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for path, thumb, label2, label1 in matchs:
+			label = '[COLOR lime]'+label1+'[/COLOR]'+', '+label2
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
@@ -1581,6 +1630,13 @@ def play_url(url, title=""):
 				link = re.findall('src="(https://ok.ru.*?)"', source_all)[0]
 				url = resolveurl.resolve(link)
 				#url = 'plugin://plugin.video.live.streamspro/play/?url='+urllib.quote_plus(link)+'&mode=19'
+		plugin.set_resolved_url(url, subtitles=vsub)
+
+	elif url.startswith('http://www.khmerdrama'):
+		import resolveurl
+		source = requests.get(url, headers=headers2).text
+		url = re.findall('"file": "(.*?)"', source)[0]
+		url = resolveurl.resolve(url)
 		plugin.set_resolved_url(url, subtitles=vsub)
 
 	elif url.startswith('https://ok.ru') or url.startswith('https://www.facebook.com'):
