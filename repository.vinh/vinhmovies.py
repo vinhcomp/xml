@@ -758,9 +758,11 @@ def M3UToItems(url_path=""):
 		content = requests.get(url_path, headers=headers2).content
 		item_re = '<li><a title=".*?href="(.*?)".*?>(.*?)<.*?href=.*?>(.*?)<'
 		matchs = re.compile(item_re).findall(content)
-		thumb = 'none'
+		#thumb = 'none'
 		items = []
 		for path, label1, label2 in matchs:
+			source = requests.get(path, headers=headers2).text #get thumb may take too long
+			thumb = re.findall('aligncenter" src="(.*?)"', source)[0] #get thumb may take too long
 			label = '[COLOR yellow]'+label1+'[/COLOR]'+' vs '+'[COLOR lime]'+label2+'[/COLOR]'
 			item = {
 				"label": label.strip(),
@@ -1664,7 +1666,13 @@ def play_url(url, title=""):
 
 	elif url.startswith('http://60fps'):
 		source = requests.get(url, headers=headers2).text
-		link = re.findall('title" href="(.*?)"', source)[0]
+		try:
+			link = re.findall('title" href="(.*?)"', source)[0]
+		except:
+			notice1 = 'This event has not started yet!'
+			notice2 = '[COLOR yellow]Chưa Tới Giờ Phát, This event has not started yet.[/COLOR]'
+			notice3 = '[COLOR yellow]Xin Trở Lại Sau, Please Come Back Later![/COLOR]'
+			notice(notice1, notice2, notice3)
 		source2 = requests.get(link, headers=headers2).text
 		linkstream = re.findall('(http.*?m3u8.*?)\'', source2)[0]
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
