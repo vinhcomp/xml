@@ -762,7 +762,10 @@ def M3UToItems(url_path=""):
 		items = []
 		for path, label1, label2 in matchs:
 			source = requests.get(path, headers=headers2).text #get thumb may take too long
-			thumb = re.findall('aligncenter" src="(.*?)"', source)[0] #get thumb may take too long
+			try:
+				thumb = re.findall('aligncenter.*?src="(.*?)"', source)[0] #get thumb may take too long
+			except:
+				thumb = 'none'
 			label = '[COLOR yellow]'+label1+'[/COLOR]'+' vs '+'[COLOR lime]'+label2+'[/COLOR]'
 			item = {
 				"label": label.strip(),
