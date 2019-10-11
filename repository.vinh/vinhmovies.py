@@ -451,7 +451,7 @@ def M3UToItems(url_path=""):
 		items = items + [nextitem]
 		return items
 
-	elif any(url_path.startswith(domain) for domain in ['http://worldkodi.com', 'http://colussus.net/']):
+	elif any(url_path.startswith(domain) for domain in ['http://worldkodi.com', 'http://colussus.net/']): #for xml file
 	#elif url_path.startswith('https://pastebin.com'):
 		content = requests.get(url_path, headers=headers2).content
 		if '<dir>' in content:
@@ -758,7 +758,6 @@ def M3UToItems(url_path=""):
 		content = requests.get(url_path, headers=headers2).content
 		item_re = '<li><a.*?href="(.*?)">(.*?)<'
 		matchs = re.compile(item_re).findall(content)
-		#thumb = 'none'
 		items = []
 		for path, label in matchs:
 			source = requests.get(path, headers=headers2).text #get thumb may take too long, for NBA
@@ -771,6 +770,28 @@ def M3UToItems(url_path=""):
 			except:
 				label = label #for NBA
 			label = '[COLOR yellow]'+label+'[/COLOR]'
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		return items
+
+	elif url_path.startswith('http://crackstreams.com'):
+		content = requests.get(url_path, headers=headers2).content
+		content = "".join(content.splitlines())
+		item_re = "<a href='(.*?)'.*?<img src='(.*?)'.*?media-heading'>(.*?)<.*?<p>(.*?)</p>"
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for path, thumb, label2, label1 in matchs:
+			if path.startswith('/'):
+				path = 'http://crackstreams.com'+path
+			thumb = 'http://crackstreams.com'+thumb
+			label = '[COLOR yellow]'+label1+'[/COLOR]'+', '+'[COLOR lime]'+label2+'[/COLOR]'
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
@@ -1672,6 +1693,15 @@ def play_url(url, title=""):
 			link = re.findall('title" href="(.*?)"', source)[0]
 			source2 = requests.get(link, headers=headers2).text
 			linkstream = re.findall('(http.*?m3u8.*?)\'', source2)[0]
+		plugin.set_resolved_url(linkstream, subtitles=vsub)
+
+	elif url.startswith('http://nbastreams') or url.startswith('http://crackstreams'):
+		source = requests.get(url, headers=headers2).text
+		link = re.findall('<iframe.*?src="(.*?)"', source)[0]
+		if link.startswith('video.php'):
+			link = url+link
+		source2 = requests.get(link, headers=headers2).text
+		linkstream = re.findall('(http.*?m3u8.*?)"', source2)[0]
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
 	elif url.startswith('https://ok.ru') or url.startswith('https://www.facebook.com'):
