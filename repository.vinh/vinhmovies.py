@@ -756,17 +756,21 @@ def M3UToItems(url_path=""):
 
 	elif url_path.startswith('http://60fps'):
 		content = requests.get(url_path, headers=headers2).content
-		item_re = '<li><a title=".*?href="(.*?)".*?>(.*?)<.*?href=.*?>(.*?)<'
+		item_re = '<li><a.*?href="(.*?)">(.*?)<'
 		matchs = re.compile(item_re).findall(content)
 		#thumb = 'none'
 		items = []
-		for path, label1, label2 in matchs:
-			source = requests.get(path, headers=headers2).text #get thumb may take too long
+		for path, label in matchs:
+			source = requests.get(path, headers=headers2).text #get thumb may take too long, for NBA
 			try:
-				thumb = re.findall('aligncenter.*?src="(.*?)"', source)[0] #get thumb may take too long
+				thumb = re.findall('aligncenter.*?src="(.*?)"', source)[0] #get thumb may take too long, for NBA
 			except:
 				thumb = 'none'
-			label = '[COLOR yellow]'+label1+'[/COLOR]'+' vs '+'[COLOR lime]'+label2+'[/COLOR]'
+			try:
+				label = re.findall('<a class="title".*?>(.*?)<', source)[0] #for NBA
+			except:
+				label = label #for NBA
+			label = '[COLOR yellow]'+label+'[/COLOR]'
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
@@ -1670,14 +1674,11 @@ def play_url(url, title=""):
 	elif url.startswith('http://60fps'):
 		source = requests.get(url, headers=headers2).text
 		try:
-			link = re.findall('title" href="(.*?)"', source)[0]
+			linkstream = re.findall('(http.*?m3u8.*?)\'', source)[0]
 		except:
-			notice1 = 'This event has not started yet!'
-			notice2 = '[COLOR yellow]Chưa Tới Giờ Phát, This event has not started yet.[/COLOR]'
-			notice3 = '[COLOR yellow]Xin Trở Lại Sau, Please Come Back Later![/COLOR]'
-			notice(notice1, notice2, notice3)
-		source2 = requests.get(link, headers=headers2).text
-		linkstream = re.findall('(http.*?m3u8.*?)\'', source2)[0]
+			link = re.findall('title" href="(.*?)"', source)[0]
+			source2 = requests.get(link, headers=headers2).text
+			linkstream = re.findall('(http.*?m3u8.*?)\'', source2)[0]
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
 	elif url.startswith('https://ok.ru') or url.startswith('https://www.facebook.com'):
