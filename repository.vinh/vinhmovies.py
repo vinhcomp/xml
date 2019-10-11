@@ -509,31 +509,31 @@ def M3UToItems(url_path=""):
 				items += [item]
 			return items
 
-	elif url_path.startswith('http://rauma.tv/'):
-		content = requests.get(url_path, headers=headers2).content
-		content = "".join(content.splitlines())
-		item_re = 'matches-lst-tr clearfix.*?href="(.*?)".*?<b>(.*?)</b></p><p>(.*?)</p>' \
-			'.*?<span>(.*?)</span>.*?data-src="(.*?)".*?<span class="">(.*?)</span>.*?</i></span></a>'
-		matchs = re.compile(item_re).findall(content)
-		items = []
-		for path, label1, label4, label2, thumb, label3 in matchs:			
-			label = label1+', '+label2+' vs '+label3+', '+label4
-			if any(words in label for words in ['Hiệp', 'hiệp', 'LIVE']):
-				label1 = '[COLOR lime]'+label1+'[/COLOR]'
-				label2 = '[COLOR yellow]'+label2+'[/COLOR]'
-				label3 = '[COLOR yellow]'+label3+'[/COLOR]'
-				label4 = '[COLOR orange]'+label4+'[/COLOR]'
-				label = label1+', '+label2+' vs '+label3+', '+label4
-			item = {
-				"label": label.strip(),
-				"thumbnail": thumb.strip(),
-				"path": path.strip(),
-			}
-			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-			item["is_playable"] = True
-			item["info"] = {"type": "video"}
-			items += [item]
-		return items
+#	elif url_path.startswith('http://rauma.tv/'):
+#		content = requests.get(url_path, headers=headers2).content
+#		content = "".join(content.splitlines())
+#		item_re = 'matches-lst-tr clearfix.*?href="(.*?)".*?<b>(.*?)</b></p><p>(.*?)</p>' \
+#			'.*?<span>(.*?)</span>.*?data-src="(.*?)".*?<span class="">(.*?)</span>.*?</i></span></a>'
+#		matchs = re.compile(item_re).findall(content)
+#		items = []
+#		for path, label1, label4, label2, thumb, label3 in matchs:			
+#			label = label1+', '+label2+' vs '+label3+', '+label4
+#			if any(words in label for words in ['Hiệp', 'hiệp', 'LIVE']):
+#				label1 = '[COLOR lime]'+label1+'[/COLOR]'
+#				label2 = '[COLOR yellow]'+label2+'[/COLOR]'
+#				label3 = '[COLOR yellow]'+label3+'[/COLOR]'
+#				label4 = '[COLOR orange]'+label4+'[/COLOR]'
+#				label = label1+', '+label2+' vs '+label3+', '+label4
+#			item = {
+#				"label": label.strip(),
+#				"thumbnail": thumb.strip(),
+#				"path": path.strip(),
+#			}
+#			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+#			item["is_playable"] = True
+#			item["info"] = {"type": "video"}
+#			items += [item]
+#		return items
 
 	elif url_path.startswith('http://keonhacai.net'):
 		content = requests.get(url_path, headers=headers2).content
@@ -564,7 +564,7 @@ def M3UToItems(url_path=""):
 	elif url_path.startswith('https://tructiepbongda.vip'):
 		content = requests.get(url_path, headers=headers2).content
 		content = "".join(content.splitlines())
-		item_re = '<li><a href="(.*?)".*?class="match-view">.*?match-status">(.*?)</span>.*?right name-team">' \
+		item_re = '<li>.*?<p style=".*?<a href="(.*?)".*?class="match-view">.*?match-status">(.*?)</span>.*?right name-team">' \
 			'(.*?)</span>.*?data-src="(.*?)".*?left name-team">(.*?)</span>.*?tour name-comp">(.*?)</span>'
 		matchs = re.compile(item_re).findall(content)
 		notice_time = {
@@ -624,37 +624,37 @@ def M3UToItems(url_path=""):
 		items = [notice_time]+items
 		return items
 
-	elif url_path.startswith('https://www.film2movie.ws'):
-		content = requests.get(url_path, headers=headers2).content
-		content = "".join(content.splitlines())
-		item_re = '<article class.*?href="(.*?)".*?title="(.*?)".*?src="(.*?)"'
-		try:
-			pages = re.findall('class=\'textwpnumb\'.*?href=\'(.*?)\'', content)[0]
-		except:
-			pages = 'none'
-		if pages == 'none':
-			nlabel = 'Hết Trang - End of Pages'
-		else:
-			nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+re.compile('page/(.*?)/').findall(pages)[0]
-		nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
-		npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
-		nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
-		matchs = re.compile(item_re).findall(content)
-		items = []
-		for path, label, thumb in matchs:
-			label = re.findall(r'[0-z]+', label) #Alphabet & number only, no arabic
-			label = '[COLOR orange]'+" ".join(label)+'[/COLOR]'
-			item = {
-				"label": label.strip(),
-				"thumbnail": thumb.strip(),
-				"path": path.strip(),
-			}
-			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-			item["is_playable"] = True
-			item["info"] = {"type": "video"}
-			items += [item]
-		items = items + [nextitem]
-		return items
+#	elif url_path.startswith('https://www.film2movie.ws'):
+#		content = requests.get(url_path, headers=headers2).content
+#		content = "".join(content.splitlines())
+#		item_re = '<article class.*?href="(.*?)".*?title="(.*?)".*?src="(.*?)"'
+#		try:
+#			pages = re.findall('class=\'textwpnumb\'.*?href=\'(.*?)\'', content)[0]
+#		except:
+#			pages = 'none'
+#		if pages == 'none':
+#			nlabel = 'Hết Trang - End of Pages'
+#		else:
+#			nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+re.compile('page/(.*?)/').findall(pages)[0]
+#		nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
+#		npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
+#		nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
+#		matchs = re.compile(item_re).findall(content)
+#		items = []
+#		for path, label, thumb in matchs:
+#			label = re.findall(r'[0-z]+', label) #Alphabet & number only, no arabic
+#			label = '[COLOR orange]'+" ".join(label)+'[/COLOR]'
+#			item = {
+#				"label": label.strip(),
+#				"thumbnail": thumb.strip(),
+#				"path": path.strip(),
+#			}
+#			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+#			item["is_playable"] = True
+#			item["info"] = {"type": "video"}
+#			items += [item]
+#		items = items + [nextitem]
+#		return items
 
 	elif url_path.startswith('https://bilumoi.com'):
 		content = requests.get(url_path, headers=headers2).content
@@ -1568,14 +1568,13 @@ def play_url(url, title=""):
 			return notice('This Model is Private Show Now!!', 'Please choose other model!!', 'Con ghệ này đang chat private, chọn con khác đi!!')
 		plugin.set_resolved_url(url, subtitles=vsub)
 	
-	elif url.startswith('http://rauma.tv/'):
-		source  = requests.get(url, headers=headers1).text
-		url = re.findall('linkStream=\'(.*?)\'', source)[0]
-		plugin.set_resolved_url(url, subtitles=vsub)
+#	elif url.startswith('http://rauma.tv/'):
+#		source  = requests.get(url, headers=headers1).text
+#		url = re.findall('linkStream=\'(.*?)\'', source)[0]
+#		plugin.set_resolved_url(url, subtitles=vsub)
 	
 	elif url.startswith('http://keonhacai.net'):
 		source = requests.get(url, headers=headers1).text
-		#link = re.findall('(http://tv.keonhacai.net.*?php)',source)[0]
 		try:
 			link = re.findall('(http://tv.keonhacai.net.*?php)',source)[0]
 		except:
@@ -1587,12 +1586,6 @@ def play_url(url, title=""):
 			link3 = re.findall('window.atob\(\'(.*?)\'',source3)[0]
 			url = base64.b64decode(link3)+'|User-Agent=iPad&Referer='+link2
 		except:
-			#try:
-			#	url = re.findall('src=".*?=(.*?)"',source2)[0]
-			#except:	
-			#	link2 = re.findall('src="(.*?)"',source2)[0]
-			#	source3 = requests.get(link2, headers=headers2).text
-			#	url = re.findall('file: "(.*?)"',source3)[1]+'|User-Agent=iPad&Referer='+link2
 			link2 = re.findall('src="(.*?)"',source2)[0]
 			source3 = requests.get(link2, headers=headers2).text
 			url = re.findall('(http.*?m3u8)',source3)[0]
@@ -1614,25 +1607,25 @@ def play_url(url, title=""):
 		url = re.findall('file: "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+url
 		plugin.set_resolved_url(url, subtitles=vsub)
 
-	elif url.startswith('https://www.film2movie.ws'):
-		source = requests.get(url, headers=headers2).text
-		try:
-			url = re.findall('font-family: wdgoogle;">.*?<strong>\| <a href="(.*?)"', source)[1]
-		except:
-			try:
-				url = re.findall('font-family: wdgoogle;">.*?<strong>\| <a href="(.*?)"', source)[0]
-			except:
-				try:
-					url = re.findall('<strong>\| </strong><a href="(.*?)"', source)[0]
-				except:
-					try:
-						url = re.findall('<strong>\| <a href="(.*?)"', source)[0]
-					except:
-						try:
-							url = re.findall('</span> : \| <a href="(.*?)"', source)[0]
-						except:
-							url = re.findall('center;"><a href="(.*?)"', source)[0]
-		plugin.set_resolved_url(url, subtitles=vsub)
+#	elif url.startswith('https://www.film2movie.ws'):
+#		source = requests.get(url, headers=headers2).text
+#		try:
+#			url = re.findall('font-family: wdgoogle;">.*?<strong>\| <a href="(.*?)"', source)[1]
+#		except:
+#			try:
+#				url = re.findall('font-family: wdgoogle;">.*?<strong>\| <a href="(.*?)"', source)[0]
+#			except:
+#				try:
+#					url = re.findall('<strong>\| </strong><a href="(.*?)"', source)[0]
+#				except:
+#					try:
+#						url = re.findall('<strong>\| <a href="(.*?)"', source)[0]
+#					except:
+#						try:
+#							url = re.findall('</span> : \| <a href="(.*?)"', source)[0]
+#						except:
+#							url = re.findall('center;"><a href="(.*?)"', source)[0]
+#		plugin.set_resolved_url(url, subtitles=vsub)
 	
 	elif url.startswith('https://bilumoi.com'):
 		url2 = 'https://bilumoi.com/ajax/player'
