@@ -354,7 +354,7 @@ def M3UToItems(url_path=""):
 	elif any(url_path.startswith(domain) for domain in ['https://www.film2movie.ws', 'https://www.film2movie.li']):
 		content = requests.get(url_path, headers=headers2).content
 		content = "".join(content.splitlines())
-		item_re = '<article class.*?href="(.*?)".*?title="(.*?)".*?src="(.*?)"'
+		item_re = 'class="title"><h2><a href="(.*?)".*?title="(.*?)".*?border-width: 1.5px;" src="(.*?)"'
 		try:
 			#pages = re.findall('class=\'textwpnumb\'.*?href=\'(.*?)\'', content)[0]
 			pages = re.findall('ul id="wbh-pagenumber".*?</div><li><a href=\'(.*?)\'', content)[0]
@@ -1279,7 +1279,7 @@ def play_url(url, title=""):
 		url = re.findall('linkStream=\'(.*?)\'', source)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
 
-	elif url.startswith('https://www.film2movie.ws'):
+	elif any(url.startswith(domain) for domain in ['https://www.film2movie.ws', 'https://www.film2movie.li']):
 		source = requests.get(url, headers=headers2).text
 		try:
 			url = re.findall('font-family: wdgoogle;">.*?<strong>\| <a href="(.*?)"', source)[1]
