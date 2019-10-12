@@ -1282,10 +1282,10 @@ def play_url(url, title=""):
 	elif any(url.startswith(domain) for domain in ['https://www.film2movie.ws', 'https://www.film2movie.li']):
 		source = requests.get(url, headers=headers2).text
 		try:
-			url = re.findall('font-family: wdgoogle;">.*?<strong>\| <a href="(.*?)"', source)[1]
+			url = re.findall('<strong>\| <a href="(.*?)"', source)[0]
 		except:
 			try:
-				url = re.findall('font-family: wdgoogle;">.*?<strong>\| <a href="(.*?)"', source)[0]
+				url = re.findall('<strong>\| <a href="(.*?)"', source)[1]
 			except:
 				try:
 					url = re.findall('<strong>\| </strong><a href="(.*?)"', source)[0]
