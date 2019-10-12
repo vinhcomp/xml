@@ -803,6 +803,27 @@ def M3UToItems(url_path=""):
 			items += [item]
 		return items
 
+	elif url_path.startswith('https://ok.ru'):
+		content = requests.get(url_path, headers=headers2).content
+		content = "".join(content.splitlines())
+		item_re = 'card_img-w"><a href="(.*?)".*?<img onerror=.*?src="(.*?)".*?title="(.*?)"'
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for path, thumb, label in matchs:
+			path = 'https://ok.ru'+path
+			thumb = 'https:'+thumb
+			thumb = thumb.replace('&amp;', '&')
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		return items
+
 	else:
 		item_re = '\#EXTINF(.*?,)(.*?)\n(.*?)\n'
 		(resp, content) = http.request(
