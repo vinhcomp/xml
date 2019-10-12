@@ -397,8 +397,10 @@ def M3UToItems(url_path=""):
 			thumb = ""
 			label2 = ""
 			if "tvg-logo" in info:
-				#thumb = re.compile('tvg-logo=\"?(.*?)\"?,').findall(info)[0]
-				thumb = re.compile('tvg-logo="(.*?)"').findall(info)[0]
+				try:
+					thumb = re.compile('tvg-logo="(.*?)"').findall(info)[0]
+				except:
+					thumb = 'none'
 			if "group-title" in info:
 				label2 = re.compile('group-title="(.*?)"').findall(info)[0]
 			if label2 != "":
@@ -1947,9 +1949,12 @@ def get_playable_url(url):
 		return re.findall('pl.init\(\'(.*?)\'', source2)[0]+'|user-agent=iPad&Referer='+link
 
 	elif 'linkm3u8' in url:
-		url = url.replace('linkm3u8', '')
+		url = url.replace('/linkm3u8', '')
 		source = requests.get(url, headers=headers1).text
-		url = re.findall('(http.*?m3u8)\'', source)[0]
+		try:
+			url = re.findall('(http.*?m3u8.*?)\'', source)[0]
+		except:
+			url = re.findall('(http.*?m3u8.*?)"', source)[0]
 
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
