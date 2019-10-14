@@ -87,7 +87,10 @@ def GetSheetIDFromSettings():
 
 def Layer2ToItems(url_path=""):
 	if 'sublink' in url_path:
-		url = re.compile('<sublink>(.*?)</sublink>').findall(url_path)[:]
+		try:
+			url = re.compile('<sublink>(.*?)\(.*?</sublink>').findall(url_path)[:] #for builds.kodiuk.tv
+		except:
+			url = re.compile('<sublink>(.*?)</sublink>').findall(url_path)[:]
 		i = len(url)
 		links = ['Link'] * i
 		links2 = []
@@ -266,11 +269,11 @@ def M3UToItems(url_path=""):
 		items = items + [nextitem]
 		return items
 
-	elif any(url_path.startswith(domain) for domain in ['http://worldkodi.com', 'http://colussus.net/']):
+	elif any(url_path.startswith(domain) for domain in ['http://worldkodi.com', 'http://colussus.net/', 'http://builds.kodiuk.tv']):
 	#elif url_path.startswith('https://pastebin.com'):
 		content = requests.get(url_path, headers=headers2).content
 		if '<dir>' in content:
-			item_re = '<dir>.*?\n<title>(.*?)</title>.*?\n<link>(.*?)</link>.*?\n<thumbnail>(.*?)</thumbnail>.*?\n.*?\n</dir>'
+			item_re = '<dir>.*?\n.*?<title>(.*?)</title>.*?\n.*?<link>(.*?)</link>.*?\n.*?<thumbnail>(.*?)</thumbnail>.*?\n.*?</dir>'
 			matchs = re.compile(item_re).findall(content)
 			items = []
 			for label, path, thumb in matchs:
@@ -1291,7 +1294,7 @@ def play_url(url, title=""):
 					url = re.findall('<strong>\| </strong><a href="(.*?)"', source)[0]
 				except:
 					try:
-						url = re.findall('<strong>\| <a href="(.*?)"', source)[0]
+						url = re.findall('<strong>\| <a href="(.*?)"', source)[2]
 					except:
 						try:
 							url = re.findall('</span> : \| <a href="(.*?)"', source)[0]
