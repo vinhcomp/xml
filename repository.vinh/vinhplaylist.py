@@ -273,7 +273,11 @@ def M3UToItems(url_path=""):
 	#elif url_path.startswith('https://pastebin.com'):
 		content = requests.get(url_path, headers=headers2).content
 		if '<dir>' in content:
-			item_re = '<dir>.*?\n.*?<title>(.*?)</title>.*?\n.*?<link>(.*?)</link>.*?\n.*?<thumbnail>(.*?)</thumbnail>.*?\n.*?</dir>'
+			if '<summary>' in content:
+				content = "".join(content.splitlines())
+				item_re = '<title>(.*?)</title>.*?<summary>.*?</summary>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thumbnail>'
+			else:
+				item_re = '<dir>.*?\n.*?<title>(.*?)</title>.*?\n.*?<link>(.*?)</link>.*?\n.*?<thumbnail>(.*?)</thumbnail>.*?\n.*?</dir>'
 			matchs = re.compile(item_re).findall(content)
 			items = []
 			for label, path, thumb in matchs:
@@ -285,9 +289,10 @@ def M3UToItems(url_path=""):
 				}
 				items += [item]
 			return items
-		if '<item>' in content:
+		if '<item>' in content or '<plugin>' in content:
 			content = "".join(content.splitlines())
-			item_re = '<item>.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thu.*?nail>'
+			#item_re = '<item>.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thu.*?nail>'
+			item_re = '.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thu.*?nail>'
 			matchs = re.compile(item_re).findall(content)
 			items = []
 			for label, path, thumb in matchs:
