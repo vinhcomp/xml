@@ -357,7 +357,8 @@ def M3UToItems(url_path=""):
 		if 'xem-phim' in url_path: #layer 2
 			content = requests.get(url_path, headers=headers2).content
 			content = "".join(content.splitlines())
-			item_re = 'episode><a href=(.*?)><span.*?shadow">(.*?)</span>'
+			#item_re = 'episode><a href=(.*?)><span.*?shadow">(.*?)</span>'
+			item_re = 'episode>.*?href=(.*?)><span.*?class.*?>(.*?)</span>'
 			thumb = re.findall('id=expand-post-content>.*?src=(.*?) alt', content)[0]
 			items = []
 			matchs = re.compile(item_re).findall(content)
