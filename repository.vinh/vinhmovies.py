@@ -1584,7 +1584,8 @@ def play_url(url, title=""):
 		except:
 			return notice('This Model is Offline Now!!', 'Please choose other model!!', 'Con ghệ này off rồi, chọn con khác đi!!')
 		plugin.set_resolved_url(url, subtitles=vsub)
-	elif 'topphimhd' in url or 'topphimhd.info' in url:
+	#elif 'topphimhd' in url or 'topphimhd.info' in url:
+	elif url.startswith('http://topphimhd'):
 		source = requests.get(url, headers=headers1).text
 		try:
 			linkstream = re.findall('embed-responsive-item src="(.*?)"', source)[0]
