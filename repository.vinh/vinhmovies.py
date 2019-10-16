@@ -757,7 +757,8 @@ def M3UToItems(url_path=""):
 
 	elif url_path.startswith('http://60fps'):
 		content = requests.get(url_path, headers=headers2).content
-		item_re = '<li><a.*?href="(.*?)">(.*?)<'
+		#item_re = '<li><a.*?href="(.*?)">(.*?)<'
+		item_re = '<p style=.*?title=.*?href="(.*?)">(.*?)<'
 		matchs = re.compile(item_re).findall(content)
 		items = []
 		for path, label in matchs:
