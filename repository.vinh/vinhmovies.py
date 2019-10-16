@@ -358,7 +358,7 @@ def M3UToItems(url_path=""):
 			content = requests.get(url_path, headers=headers2).content
 			content = "".join(content.splitlines())
 			#item_re = 'episode><a href=(.*?)><span.*?shadow">(.*?)</span>'
-			item_re = 'episode>.*?href=(.*?)><span.*?class.*?>(.*?)</span>'
+			item_re = 'episode><a href=(.*?)><span.*?class.*?>(.*?)</span>'
 			thumb = re.findall('id=expand-post-content>.*?src=(.*?) alt', content)[0]
 			items = []
 			matchs = re.compile(item_re).findall(content)
@@ -1584,7 +1584,7 @@ def play_url(url, title=""):
 		except:
 			return notice('This Model is Offline Now!!', 'Please choose other model!!', 'Con ghệ này off rồi, chọn con khác đi!!')
 		plugin.set_resolved_url(url, subtitles=vsub)
-	elif 'topphimhd' in url:
+	elif 'topphimhd' in url or 'topphimhd.info' in url:
 		source = requests.get(url, headers=headers1).text
 		try:
 			linkstream = re.findall('embed-responsive-item src="(.*?)"', source)[0]
