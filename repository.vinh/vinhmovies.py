@@ -762,15 +762,16 @@ def M3UToItems(url_path=""):
 		matchs = re.compile(item_re).findall(content)
 		items = []
 		for path, label in matchs:
-			source = requests.get(path, headers=headers2).text #get thumb may take too long, for NBA
-			try:
-				thumb = re.findall('aligncenter.*?src="(.*?)"', source)[0] #get thumb may take too long, for NBA
-			except:
-				thumb = 'none'
-			try:
-				label = re.findall('<a class="title".*?>(.*?)<', source)[0] #for NBA
-			except:
-				label = label #for NBA
+			#source = requests.get(path, headers=headers2).text #get thumb may take too long, for NBA
+			#try:
+			#	thumb = re.findall('aligncenter.*?src="(.*?)"', source)[0] #get thumb may take too long, for NBA
+			#except:
+			#	thumb = 'none'
+			#try:
+			#	label = re.findall('<a class="title".*?>(.*?)<', source)[0] #for NBA
+			#except:
+			#	label = label #for NBA
+			thumb = 'none'
 			label = '[COLOR yellow]'+label+'[/COLOR]'
 			item = {
 				"label": label.strip(),
