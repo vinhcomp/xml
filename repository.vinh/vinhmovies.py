@@ -784,9 +784,12 @@ def M3UToItems(url_path=""):
 			if 'title' in info:
 				label1 = re.compile('(.*?)</a>').findall(info)[0]
 				label2 = re.compile('">(.*?$)').findall(info)[0]
-				label = label1+' vs '+label2
+				label = '[COLOR yellow]'+label1+'[/COLOR]'+' vs '+'[COLOR yellow]'+label2+'[/COLOR]'
+			elif 'img' in info or 'input' in info:
+				label = 'NONE'
 			else:
-				label = info			
+				label = info	
+				label = '[COLOR lime]'+label+'[/COLOR]'		
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
