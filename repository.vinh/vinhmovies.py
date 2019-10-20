@@ -780,7 +780,7 @@ def M3UToItems(url_path=""):
 		matchs = re.compile(item_re).findall(content)
 		items = []
 		for path, info in matchs:
-			thumb = 'none'
+			thumb = ''
 			if 'title' in info:
 				label1 = re.compile('(.*?)</a>').findall(info)[0]
 				label2 = re.compile('">(.*?$)').findall(info)[0]
