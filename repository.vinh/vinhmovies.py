@@ -755,24 +755,38 @@ def M3UToItems(url_path=""):
 		items = items + [nextitem]
 		return items
 
+#	elif url_path.startswith('http://60fps'):
+#		content = requests.get(url_path, headers=headers2).content
+#		item_re = '<p style=.*?title=.*?href="(.*?)">(.*?)<'
+#		matchs = re.compile(item_re).findall(content)
+#		items = []
+#		for path, label in matchs:
+#			thumb = 'none'
+#			label = '[COLOR yellow]'+label+'[/COLOR]'
+#			item = {
+#				"label": label.strip(),
+#				"thumbnail": thumb.strip(),
+#				"path": path.strip(),
+#			}
+#			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+#			item["is_playable"] = True
+#			item["info"] = {"type": "video"}
+#			items += [item]
+#		return items
+
 	elif url_path.startswith('http://60fps'):
 		content = requests.get(url_path, headers=headers2).content
-		#item_re = '<li><a.*?href="(.*?)">(.*?)<'
-		item_re = '<p style=.*?title=.*?href="(.*?)">(.*?)<'
+		item_re = '<p style=.*?href="(.*?)">(.*?)</a></p>'
 		matchs = re.compile(item_re).findall(content)
 		items = []
-		for path, label in matchs:
-			#source = requests.get(path, headers=headers2).text #get thumb may take too long, for NBA
-			#try:
-			#	thumb = re.findall('aligncenter.*?src="(.*?)"', source)[0] #get thumb may take too long, for NBA
-			#except:
-			#	thumb = 'none'
-			#try:
-			#	label = re.findall('<a class="title".*?>(.*?)<', source)[0] #for NBA
-			#except:
-			#	label = label #for NBA
+		for path, info in matchs:
 			thumb = 'none'
-			label = '[COLOR yellow]'+label+'[/COLOR]'
+			if 'title' in info:
+				label1 = re.compile('(.*?)</a>').findall(info)[0]
+				label2 = re.compile('">(.*?$)').findall(info)[0]
+				label = label1+' vs '+label2
+			else:
+				label = info			
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
