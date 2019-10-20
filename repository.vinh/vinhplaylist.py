@@ -87,9 +87,9 @@ def GetSheetIDFromSettings():
 
 def Layer2ToItems(url_path=""):
 	if 'sublink' in url_path:
-		try:
+		if '(' in url_path:
 			url = re.compile('<sublink>(.*?)\(.*?</sublink>').findall(url_path)[:] #for builds.kodiuk.tv
-		except:
+		else:
 			url = re.compile('<sublink>(.*?)</sublink>').findall(url_path)[:]
 		i = len(url)
 		links = ['Link'] * i
@@ -184,59 +184,59 @@ def M3UToItems(url_path=""):
 		items = items + [nextitem]
 		return items
 
-	elif url_path.startswith('http://topphimhd.com'):
-		if 'xem-phim' in url_path: #layer 2
-			content = requests.get(url_path, headers=headers2).content
-			content = "".join(content.splitlines())
-			item_re = 'episode><a href=(.*?)><span.*?shadow">(.*?)</span>'
-			thumb = re.findall('id=expand-post-content>.*?src=(.*?) alt', content)[0]
-			items = []
-			matchs = re.compile(item_re).findall(content)
-			for path, label in matchs:
-				label = 'Tập - Episode '+label
-				thumb = thumb
-				item = {
-					"label": label,
-					"thumbnail": thumb,
-					"path": path,
-				}
-				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-				item["is_playable"] = True
-				item["info"] = {"type": "video"}
-				items += [item]
-			return items
+#	elif url_path.startswith('http://topphimhd.com'):
+#		if 'xem-phim' in url_path: #layer 2
+#			content = requests.get(url_path, headers=headers2).content
+#			content = "".join(content.splitlines())
+#			item_re = 'episode><a href=(.*?)><span.*?shadow">(.*?)</span>'
+#			thumb = re.findall('id=expand-post-content>.*?src=(.*?) alt', content)[0]
+#			items = []
+#			matchs = re.compile(item_re).findall(content)
+#			for path, label in matchs:
+#				label = 'Tập - Episode '+label
+#				thumb = thumb
+#				item = {
+#					"label": label,
+#					"thumbnail": thumb,
+#					"path": path,
+#				}
+#				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+#				item["is_playable"] = True
+#				item["info"] = {"type": "video"}
+#				items += [item]
+#			return items
 
-		else: #layer 1			
-			content = requests.get(url_path, headers=headers2).content
-			content = "".join(content.splitlines())
-			item_re = 'class=halim-thumb href=(.*?)/ title="(.*?)".*?src=(.*?) alt=.*?title>(.*?)</p>'
-			try:
-				pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
-			except:
-				pages = 'none'
-			if pages == 'none':
-				nlabel = 'Hết Trang - End of Pages'
-			else:
-				nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+re.compile('page/(.*?)/').findall(pages)[0]
-			nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
-			npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
-			nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
-			matchs = re.compile(item_re).findall(content)
-			items = []
-			for path, label1, thumb, label2 in matchs:
-				label1 = '[COLOR yellow]'+label1+'[/COLOR]'
-				label2 = '[COLOR lime]'+label2+'[/COLOR]'
-				label = label1+' - '+label2
-				path = (path.replace('http://topphimhd.com', 'http://topphimhd.com/xem-phim'))+'-tap-1-server-1/'
-				path = pluginrootpath+"/m3u/"+urllib.quote_plus(path)
-				item = {
-					"label": label.strip(),
-					"thumbnail": thumb.strip(),
-					"path": path.strip(),
-				}
-				items += [item]
-			items = items+[nextitem]
-			return items
+#		else: #layer 1			
+#			content = requests.get(url_path, headers=headers2).content
+#			content = "".join(content.splitlines())
+#			item_re = 'class=halim-thumb href=(.*?)/ title="(.*?)".*?src=(.*?) alt=.*?title>(.*?)</p>'
+#			try:
+#				pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
+#			except:
+#				pages = 'none'
+#			if pages == 'none':
+#				nlabel = 'Hết Trang - End of Pages'
+#			else:
+#				nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+re.compile('page/(.*?)/').findall(pages)[0]
+#			nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
+#			npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
+#			nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
+#			matchs = re.compile(item_re).findall(content)
+#			items = []
+#			for path, label1, thumb, label2 in matchs:
+#				label1 = '[COLOR yellow]'+label1+'[/COLOR]'
+#				label2 = '[COLOR lime]'+label2+'[/COLOR]'
+#				label = label1+' - '+label2
+#				path = (path.replace('http://topphimhd.com', 'http://topphimhd.com/xem-phim'))+'-tap-1-server-1/'
+#				path = pluginrootpath+"/m3u/"+urllib.quote_plus(path)
+#				item = {
+#					"label": label.strip(),
+#					"thumbnail": thumb.strip(),
+#					"path": path.strip(),
+#				}
+#				items += [item]
+#			items = items+[nextitem]
+#			return items
 
 	elif url_path.startswith('https://cam2cam.com'):
 		item_re = '<img class=\"\" src=\"//(.*?)\".*?alt=\"(.*?)\".*?\n.*?\n.*?\n.*?\n.*?\n.*?href=\"(.*?)\"'
@@ -1254,17 +1254,17 @@ def play_url(url, title=""):
 			return notice('This Model is Offline Now!!', 'Please choose other model!!', 'Con ghệ này off rồi, chọn con khác đi!!')
 		plugin.set_resolved_url(url, subtitles=vsub)
 
-	elif 'topphimhd' in url:
-		source = requests.get(url, headers=headers1).text
-		try:
-			linkstream = re.findall('embed-responsive-item src="(.*?)"', source)[0]
-			source3 = requests.get(linkstream, headers=headers1).text
-			url = re.findall('urlVideo = \'(.*?)\'', source3)[0]
-		except:
-			import resolveurl
-			link_okru = re.findall('(https://ok.ru.*?) ', source)[0]
-			url = resolveurl.resolve(link_okru)		
-		plugin.set_resolved_url(url, subtitles=vsub)
+	#elif 'topphimhd' in url:
+	#	source = requests.get(url, headers=headers1).text
+	#	try:
+	#		linkstream = re.findall('embed-responsive-item src="(.*?)"', source)[0]
+	#		source3 = requests.get(linkstream, headers=headers1).text
+	#		url = re.findall('urlVideo = \'(.*?)\'', source3)[0]
+	#	except:
+	#		import resolveurl
+	#		link_okru = re.findall('(https://ok.ru.*?) ', source)[0]
+	#		url = resolveurl.resolve(link_okru)		
+	#	plugin.set_resolved_url(url, subtitles=vsub)
 
 	elif 'cam2cam.com' in url:
 		source = requests.get(url, headers=headers1).text
