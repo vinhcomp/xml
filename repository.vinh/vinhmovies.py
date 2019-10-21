@@ -252,6 +252,44 @@ def Layer2ToItems(url_path=""):
 			items += [item]
 		return items
 
+	elif url_path.startswith('http://dl.upload10'): #from http://builds.kodiuk
+		content = requests.get(url_path, headers=headers2).text
+		#matchs = re.findall('<a href="(.*?)">(.*?)<',content)[:]
+		item_re = '<a href="(.*?)">(.*?)<'
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for path, label in matchs:
+			thumb = ''
+			path = url_path+path
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb,
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		return items
+
+	elif 'sublink' in url_path:
+		if '(' in url_path:
+			url = re.compile('<sublink>(.*?)\(.*?</sublink>').findall(url_path)[:] #for builds.kodiuk.tv
+		else:
+			url = re.compile('<sublink>(.*?)</sublink>').findall(url_path)[:]
+		i = len(url)
+		links = ['Link'] * i
+		links2 = []
+		for item in links:
+			item = item + ' ' + str(i)
+			i = i - 1
+			links2 += [item]
+		links2.reverse()
+		dialog = xbmcgui.Dialog()
+		choise = dialog.select('Please Choose a Link - Xin Chọn Link', links2)
+		#return plugin.set_resolved_url(url[choise])
+		return play_url(url[choise])
+
 	else:
 		url = url_path
 		return play_url(url)
@@ -754,6 +792,44 @@ def M3UToItems(url_path=""):
 			items += [item]
 		items = items + [nextitem]
 		return items
+
+	elif any(url_path.startswith(domain) for domain in ['http://worldkodi.com', 'http://colussus.net/', 'http://builds.kodiuk.tv']):
+		content = requests.get(url_path, headers=headers2).content
+		if '<item>' in content:
+			#content = "".join(content.splitlines())
+			#item_re = '.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thu.*?nail>'
+			#matchs = re.compile(item_re).findall(content)
+			matchs = re.findall('<item>.+?(?s)<title>([^</]+).+?(?s)<link>(?s)(.*?)</lin.+?(?s)<thumbnail>(.*?)</thumb',content)[:] #(.?)included lines, ([])special char
+			items = []
+			for label, path, thumb in matchs:
+				item = {
+					"label": label.strip(),
+					"thumbnail": thumb.strip(),
+ 					"path": path.strip(),
+				}
+				if '<sublink>' in item["path"]:
+					item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
+				else: #Playabel link
+					item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+				item["is_playable"] = True
+				item["info"] = {"type": "video"}
+				items += [item]
+			return items
+		if '<plugin>' in content:
+			matchs = re.findall('<plugin>.+?(?s)<title>([^</]+).+?(?s)<link>(?s)(.*?)</lin.+?(?s)<thumbnail>(.*?)</thumb',content)[:] #(.?)included lines, ([])special char
+			items = []
+			for label, path, thumb in matchs:
+				item = {
+					"label": label.strip(),
+					"thumbnail": thumb.strip(),
+ 					"path": path.strip(),
+				}
+				if item["path"].startswith('http://dl.upload10'):
+					item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
+				else:
+					item["path"] = pluginrootpath + "/m3u/" + urllib.quote_plus(item["path"])
+				items += [item]
+			return items
 
 #	elif url_path.startswith('http://60fps'):
 #		content = requests.get(url_path, headers=headers2).content
