@@ -290,10 +290,10 @@ def M3UToItems(url_path=""):
 				items += [item]
 			return items
 		if '<item>' in content or '<plugin>' in content:
-			content = "".join(content.splitlines())
-			#item_re = '<item>.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thu.*?nail>'
-			item_re = '.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thu.*?nail>'
-			matchs = re.compile(item_re).findall(content)
+			#content = "".join(content.splitlines())
+			#item_re = '.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thu.*?nail>'
+			#matchs = re.compile(item_re).findall(content)
+			matchs = re.findall('<item>.+?(?s)<title>([^</]+).+?(?s)<link>(?s)(.*?)</lin.+?(?s)<thumbnail>(.*?)</thumb',content)[:] #(.?)included lines, ([])specail char
 			items = []
 			for label, path, thumb in matchs:
 				item = {
