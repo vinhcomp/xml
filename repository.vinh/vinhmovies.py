@@ -179,11 +179,12 @@ def Layer2ToItems(url_path=""):
 #		choise = dialog.select('Please Choose a Link - Xin Chọn Link', links2)
 #		#return plugin.set_resolved_url(url[choise])
 #		return play_url(url[choise])
-	if 'sublink' in url_path:
-		if '(' in url_path:
-			url_path = re.compile('<sublink>(.*?)\(.*?</sublink>').findall(url_path)[:] #for builds.kodiuk.tv
-		else:
-			url_path = re.compile('<sublink>(.*?)</sublink>').findall(url_path)[:]
+####
+##	if 'sublink' in url_path:
+##		if '(' in url_path:
+##			url_path = re.compile('<sublink>(.*?)\(.*?</sublink>').findall(url_path)[:] #for builds.kodiuk.tv
+##		else:
+##			url_path = re.compile('<sublink>(.*?)</sublink>').findall(url_path)[:]
 #		items = [] # for look
 #		for path in url_path:
 #			if path.startswith('http://dl.upload10') or path.startswith('http://dl2.upload10'):
@@ -193,20 +194,20 @@ def Layer2ToItems(url_path=""):
 #			items += [path]
 #		dialog = xbmcgui.Dialog()
 #		choise = dialog.select('Please Choose a Link - Xin Chọn Link', items)
-		dialog = xbmcgui.Dialog()
-		choise = dialog.select('Please Choose a Link - Xin Chọn Link', url_path) #url_path is a list, choise is 0, 1, 2, ...
-		if choise == -1: #choose cancel
-			#return None
-			pass
-		else:
-			if url_path[choise].startswith('http://dl.upload10') or url_path[choise].startswith('http://dl2.upload10'): #url_path[choise] is url_path first or second .. in the list
-				return Layer2ToItems(url_path[choise])
-			elif url_path[choise].startswith('https://clipwatching.com') or url_path[choise].startswith('https://vidlox.me'):
-				return play_url(url_path[choise])
-			else:
-				return play_url(url_path[choise]) #will get error get addtracking, bc direct link(not list anything) ??
+##		dialog = xbmcgui.Dialog()
+##		choise = dialog.select('Please Choose a Link - Xin Chọn Link', url_path) #url_path is a list, choise is 0, 1, 2, ...
+##		if choise == -1: #choose cancel
+##			#return None
+##			pass
+##		else:
+##			if url_path[choise].startswith('http://dl.upload10') or url_path[choise].startswith('http://dl2.upload10'): #url_path[choise] is url_path first or second .. in the list
+##				return Layer2ToItems(url_path[choise])
+##			elif url_path[choise].startswith('https://clipwatching.com') or url_path[choise].startswith('https://vidlox.me'):
+##				return play_url(url_path[choise])
+##			else:
+##				return play_url(url_path[choise]) #will get error get addtracking, bc direct link(not list anything) ??
 	
-	elif 'bilumoi.com' in url_path:
+	if 'bilumoi.com' in url_path:
 		source = requests.get(url_path, headers=headers2).text
 		url_vs = re.findall('btn-danger" href="(.*?)"', source)[0] #vietsub
 		content_vs = requests.get(url_vs, headers=headers2).content
@@ -326,14 +327,15 @@ def Layer2(path="0", tracking_string="Layer2"):
 		"Layer2 - %s" % tracking_string,
 		"/layer2/%s" % path
 	)
-	#if '.mkv' in path:
-	#if any(path.endswith(video_type) for video_type in ['.mkv', '.mp4', '.avi']):
-	if any(words in path for words in ['.mkv', '.mp4', '.avi', '.m3u8', 'https://clipwatching.com', 'https://vidlox.me']): #fix error AddTracking with direct link in layer2
-		items = Layer2ToItems(path)
-		return None
-	else:
-		items = Layer2ToItems(path)
-		return plugin.finish(AddTracking(items))
+	#Fix error addtracking playable link
+#	if any(words in path for words in ['.mkv', '.mp4', '.avi', '.m3u8', 'https://clipwatching.com', 'https://vidlox.me']): #fix error AddTracking with direct link in layer2
+#		items = Layer2ToItems(path)
+#		return None
+#	else:
+#		items = Layer2ToItems(path)
+#		return plugin.finish(AddTracking(items))
+	items = Layer2ToItems(path)
+	return plugin.finish(AddTracking(items))
 
 def M3UToItems(url_path=""):
 	'''
@@ -510,64 +512,6 @@ def M3UToItems(url_path=""):
 			items += [item]
 		items = items + [nextitem]
 		return items
-
-	elif any(url_path.startswith(domain) for domain in ['http://worldkodi.com', 'http://colussus.net/']): #for xml file
-	#elif url_path.startswith('https://pastebin.com'):
-		content = requests.get(url_path, headers=headers2).content
-		if '<dir>' in content:
-			item_re = '<dir>.*?\n<title>(.*?)</title>.*?\n<link>(.*?)</link>.*?\n<thumbnail>(.*?)</thumbnail>.*?\n.*?\n</dir>'
-			matchs = re.compile(item_re).findall(content)
-			items = []
-			for label, path, thumb in matchs:
-				path = pluginrootpath+"/m3u/"+urllib.quote_plus(path)
-				item = {
-					"label": label.strip(),
-					"thumbnail": thumb.strip(),
- 					"path": path.strip(),
-				}
-				items += [item]
-			return items
-		if '<item>' in content:
-			content = "".join(content.splitlines())
-			item_re = '<item>.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thu.*?nail>'
-			matchs = re.compile(item_re).findall(content)
-			items = []
-			for label, path, thumb in matchs:
-				item = {
-					"label": label.strip(),
-					"thumbnail": thumb.strip(),
- 					"path": path.strip(),
-				}
-				if '<sublink>' in item["path"]:
-					item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
-				#Playabel link
-				else:
-					item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-				item["is_playable"] = True
-				item["info"] = {"type": "video"}
-				items += [item]
-			return items
-
-		if '<content>' in content:
-			content = "".join(content.splitlines())
-			#Limit 2 links
-			item_re = '<title>(.*?)</title>.*?<link>(.*?)</link>.*?<image>(.*?)</image>'
-			item_re2 = '<title>(.*?)</title><link>.*?</link><link>(.*?)</link>.*?<image>(.*?)</image>'
-			matchs = re.compile(item_re).findall(content)
-			matchs2 = re.compile(item_re2).findall(content)
-			matchsall = matchs+matchs2#+matchs3+matchs4
-			items = []
-			for label, path, thumb in matchsall:
-				item = {
-					"label": label.strip(),
-					"thumbnail": thumb.strip(),
- 					"path": path.strip(),
-				}
-				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-				item["is_playable"] = True
-				item["info"] = {"type": "video"}
-				items += [item]
-			return items
 
 #	elif url_path.startswith('http://rauma.tv/'):
 #		content = requests.get(url_path, headers=headers2).content
@@ -830,7 +774,8 @@ def M3UToItems(url_path=""):
  					"path": path.strip(),
 				}
 				if '<sublink>' in item["path"]:
-					item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
+					#item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
+					item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 				else: #Playabel link
 					item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 				item["is_playable"] = True
@@ -850,7 +795,8 @@ def M3UToItems(url_path=""):
 				if item["path"].startswith('http://dl.upload10'):
 					item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
 				elif item["path"].startswith('<sublink>'):
-					item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
+					#item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
+					item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 				else:
 					item["path"] = pluginrootpath + "/m3u/" + urllib.quote_plus(item["path"])
 				items += [item]
@@ -1856,6 +1802,34 @@ def play_url(url, title=""):
 		source2 = requests.get(link, headers=headers2).text
 		linkstream = re.findall('(http.*?m3u8.*?)"', source2)[0]
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
+
+	elif 'sublink' in url:
+		if '(' in url:
+			url = re.compile('<sublink>(.*?)\(.*?</sublink>').findall(url)[:] #for builds.kodiuk.tv
+		else:
+			url = re.compile('<sublink>(.*?)</sublink>').findall(url)[:]
+#		items = [] # for look
+#		for path in url_path:
+#			if path.startswith('http://dl.upload10') or path.startswith('http://dl2.upload10'):
+#				path = pluginrootpath + "/layer2/" + urllib.quote_plus(path) #useless for look only
+#			else:
+#				path = path
+#			items += [path]
+#		dialog = xbmcgui.Dialog()
+#		choise = dialog.select('Please Choose a Link - Xin Chọn Link', items)
+		dialog = xbmcgui.Dialog()
+		choise = dialog.select('Please Choose a Link - Xin Chọn Link', url) #url_path is a list, choise is -1, 0, 1, 2, ...
+		if choise == -1: #choose cancel
+			#return None
+			pass
+		else:
+			if url[choise].startswith('http://dl.upload10') or url[choise].startswith('http://dl2.upload10'): #url_path[choise] is url_path first or second .. in the list
+				return Layer2ToItems(url[choise])
+			elif url[choise].startswith('https://clipwatching.com') or url[choise].startswith('https://vidlox.me'):
+				return play_url(url[choise])
+			else:
+				#return play_url(url[choise]) #will get error get addtracking, bc direct link(not list anything) ??
+				plugin.set_resolved_url(url[choise], subtitles=vsub)
 
 	elif url.startswith('https://vidlox.me'): #movies upload host
 		source = requests.get(url, headers=headers2).text
