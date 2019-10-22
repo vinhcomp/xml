@@ -877,20 +877,30 @@ def M3UToItems(url_path=""):
 
 	elif url_path.startswith('http://60fps'):
 		content = requests.get(url_path, headers=headers2).content
-		item_re = '<p style=.*?href="(.*?)">(.*?)</a></p>'
+		item_re = '<p style=(.*?)</p>'
 		matchs = re.compile(item_re).findall(content)
 		items = []
-		for path, info in matchs:
+		for info in matchs:
 			thumb = ''
-			if 'title' in info:
-				label1 = re.compile('(.*?)</a>').findall(info)[0]
-				label2 = re.compile('">(.*?$)').findall(info)[0]
+			if 'href' in info:
+				path = re.compile('href="(.*?)"').findall(info)[0]
+			else:
+				path = ''
+			if 'vs <a title="' in info:
+				label1 = re.compile('title="(.*?)"').findall(info)[0]
+				try:
+					label2 = re.compile('title=".*?title="(.*?)"').findall(info)[0]
+				except:
+					label2 = ''
 				label = '[COLOR yellow]'+label1+'[/COLOR]'+' vs '+'[COLOR yellow]'+label2+'[/COLOR]'
+			elif 'title' in info:
+				label = re.compile('title="(.*?)"').findall(info)[0]
+				label = '[COLOR orange]'+label+'[/COLOR]'
 			elif 'img' in info or 'input' in info:
 				label = 'NONE'
 			else:
-				label = info	
-				label = '[COLOR lime]'+label+'[/COLOR]'		
+				label = 'Not Start Yet'
+				label = '[COLOR lime]'+label+'[/COLOR]'
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
@@ -1847,11 +1857,11 @@ def play_url(url, title=""):
 		linkstream = re.findall('(http.*?m3u8.*?)"', source2)[0]
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
-	elif url.startswith('https://vidlox.me'):
+	elif url.startswith('https://vidlox.me'): #movies upload host
 		source = requests.get(url, headers=headers2).text
 		linkstream = re.findall('sources: \["(http.*?)"', source)[0]
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
-	elif url.startswith('https://clipwatching.com'):
+	elif url.startswith('https://clipwatching.com'): #movies upload host
 		source = requests.get(url, headers=headers2).text
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source)[0]).replace('\\', '')
 		linkstream = re.findall("file:\"(https.*?)\"", decode)[0]
