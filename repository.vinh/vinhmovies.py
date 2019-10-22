@@ -194,12 +194,13 @@ def Layer2ToItems(url_path=""):
 		dialog = xbmcgui.Dialog()
 		choise = dialog.select('Please Choose a Link - Xin Chọn Link', url_path) #url_path is a list, choise is 0, 1, 2, ...
 		if choise == -1: #choose cancel
-			return None
+			#return None
+			pass
 		else:
 			if url_path[choise].startswith('http://dl.upload10') or url_path[choise].startswith('http://dl2.upload10'): #url_path[choise] is url_path first or second .. in the list
 				return Layer2ToItems(url_path[choise])
 			else:
-				return play_url(url_path[choise]) #will get error get addtracking ??
+				return play_url(url_path[choise]) #will get error get addtracking, bc direct link(not list anything) ??
 	
 	elif 'bilumoi.com' in url_path:
 		source = requests.get(url_path, headers=headers2).text
@@ -321,9 +322,14 @@ def Layer2(path="0", tracking_string="Layer2"):
 		"Layer2 - %s" % tracking_string,
 		"/layer2/%s" % path
 	)
-
-	items = Layer2ToItems(path)
-	return plugin.finish(AddTracking(items))
+	#if '.mkv' in path:
+	#if any(path.endswith(video_type) for video_type in ['.mkv', '.mp4', '.avi']):
+	if any(words in path for words in ['.mkv', '.mp4', '.avi']): #fix error AddTracking with direct link in layer2
+		items = Layer2ToItems(path)
+		return None
+	else:
+		items = Layer2ToItems(path)
+		return plugin.finish(AddTracking(items))
 
 def M3UToItems(url_path=""):
 	'''
