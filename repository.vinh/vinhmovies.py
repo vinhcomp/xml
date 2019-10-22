@@ -160,20 +160,45 @@ def Layer2ToItems(url_path=""):
 		'Referer':url_path,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 	}
 
+#	if 'sublink' in url_path:
+#		if '(' in url_path:
+#			url = re.compile('<sublink>(.*?)\(.*?</sublink>').findall(url_path)[:] #for builds.kodiuk.tv
+#		else:
+#			url = re.compile('<sublink>(.*?)</sublink>').findall(url_path)[:]
+#		i = len(url)
+#		links = ['Link'] * i
+#		links2 = []
+#		for item in links:
+#			item = item + ' ' + str(i)
+#			i = i - 1
+#			links2 += [item]
+#		links2.reverse()
+#		dialog = xbmcgui.Dialog()
+#		choise = dialog.select('Please Choose a Link - Xin Chọn Link', links2)
+#		#return plugin.set_resolved_url(url[choise])
+#		return play_url(url[choise])
 	if 'sublink' in url_path:
-		url = re.compile('<sublink>(.*?)</sublink>').findall(url_path)[:]
-		i = len(url)
-		links = ['Link'] * i
-		links2 = []
-		for item in links:
-			item = item + ' ' + str(i)
-			i = i - 1
-			links2 += [item]
-		links2.reverse()
+		if '(' in url_path:
+			url_path = re.compile('<sublink>(.*?)\(.*?</sublink>').findall(url_path)[:] #for builds.kodiuk.tv
+		else:
+			url_path = re.compile('<sublink>(.*?)</sublink>').findall(url_path)[:]
+#		items = []
+#		for path in url_path:
+#			if path.startswith('http://dl.upload10') or path.startswith('http://dl2.upload10'):
+#				path = pluginrootpath + "/layer2/" + urllib.quote_plus(path) #useless for look only
+#			else:
+#				path = path
+#			items += [path]
+#		dialog = xbmcgui.Dialog()
+#		choise = dialog.select('Please Choose a Link - Xin Chọn Link', items)
 		dialog = xbmcgui.Dialog()
-		choise = dialog.select('Please Choose a Link - Xin Chọn Link', links2)
-		#return plugin.set_resolved_url(url[choise])
-		return play_url(url[choise])
+		choise = dialog.select('Please Choose a Link - Xin Chọn Link', url_path) #url_path is a list, choise is 0, 1, 2, ...
+		if choise:
+			if url_path[choise].startswith('http://dl.upload10') or url_path[choise].startswith('http://dl2.upload10'): #url_path[choise] is url_path first or second .. in the list
+				return Layer2ToItems(url_path[choise])
+			else:
+				return play_url(url_path[choise])
+		return None
 	
 	elif 'bilumoi.com' in url_path:
 		source = requests.get(url_path, headers=headers2).text
@@ -252,7 +277,7 @@ def Layer2ToItems(url_path=""):
 			items += [item]
 		return items
 
-	elif url_path.startswith('http://dl.upload10'): #from http://builds.kodiuk
+	elif url_path.startswith('http://dl.upload10') or url_path.startswith('http://dl2.upload10'): #from http://builds.kodiuk boxsets
 		content = requests.get(url_path, headers=headers2).text
 		#matchs = re.findall('<a href="(.*?)">(.*?)<',content)[:]
 		item_re = '<a href="(.*?)">(.*?)<'
@@ -266,29 +291,14 @@ def Layer2ToItems(url_path=""):
 				"thumbnail": thumb,
 				"path": path.strip(),
 			}
-			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-			item["is_playable"] = True
-			item["info"] = {"type": "video"}
-			items += [item]
+			if path.endswith('/'):
+				item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
+			else:
+				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+				item["is_playable"] = True
+				item["info"] = {"type": "video"}
+			items += [item]	
 		return items
-
-	elif 'sublink' in url_path:
-		if '(' in url_path:
-			url = re.compile('<sublink>(.*?)\(.*?</sublink>').findall(url_path)[:] #for builds.kodiuk.tv
-		else:
-			url = re.compile('<sublink>(.*?)</sublink>').findall(url_path)[:]
-		i = len(url)
-		links = ['Link'] * i
-		links2 = []
-		for item in links:
-			item = item + ' ' + str(i)
-			i = i - 1
-			links2 += [item]
-		links2.reverse()
-		dialog = xbmcgui.Dialog()
-		choise = dialog.select('Please Choose a Link - Xin Chọn Link', links2)
-		#return plugin.set_resolved_url(url[choise])
-		return play_url(url[choise])
 
 	else:
 		url = url_path
@@ -793,7 +803,8 @@ def M3UToItems(url_path=""):
 		items = items + [nextitem]
 		return items
 
-	elif any(url_path.startswith(domain) for domain in ['http://worldkodi.com', 'http://colussus.net/', 'http://builds.kodiuk.tv']):
+	#elif any(url_path.startswith(domain) for domain in ['http://worldkodi.com', 'http://colussus.net/', 'http://builds.kodiuk.tv']):
+	elif url_path.endswith('.xml'):
 		content = requests.get(url_path, headers=headers2).content
 		if '<item>' in content:
 			#content = "".join(content.splitlines())
@@ -815,8 +826,9 @@ def M3UToItems(url_path=""):
 				item["info"] = {"type": "video"}
 				items += [item]
 			return items
-		if '<plugin>' in content:
-			matchs = re.findall('<plugin>.+?(?s)<title>([^</]+).+?(?s)<link>(?s)(.*?)</lin.+?(?s)<thumbnail>(.*?)</thumb',content)[:] #(.?)included lines, ([])special char
+		if '<dir>' in content or '<plugin>' in content:
+		#if '<dir>' in content:
+			matchs = re.findall('<title>([^</]+).+?(?s)<link>(?s)(.*?)</lin.+?(?s)<thumbnail>(.*?)</thumb',content)[:] #(.?)included lines, ([])special char
 			items = []
 			for label, path, thumb in matchs:
 				item = {
@@ -825,6 +837,8 @@ def M3UToItems(url_path=""):
  					"path": path.strip(),
 				}
 				if item["path"].startswith('http://dl.upload10'):
+					item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
+				elif item["path"].startswith('<sublink>'):
 					item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
 				else:
 					item["path"] = pluginrootpath + "/m3u/" + urllib.quote_plus(item["path"])
