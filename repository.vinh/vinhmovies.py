@@ -182,7 +182,7 @@ def Layer2ToItems(url_path=""):
 			url_path = re.compile('<sublink>(.*?)\(.*?</sublink>').findall(url_path)[:] #for builds.kodiuk.tv
 		else:
 			url_path = re.compile('<sublink>(.*?)</sublink>').findall(url_path)[:]
-#		items = []
+#		items = [] # for look
 #		for path in url_path:
 #			if path.startswith('http://dl.upload10') or path.startswith('http://dl2.upload10'):
 #				path = pluginrootpath + "/layer2/" + urllib.quote_plus(path) #useless for look only
@@ -193,12 +193,13 @@ def Layer2ToItems(url_path=""):
 #		choise = dialog.select('Please Choose a Link - Xin Chọn Link', items)
 		dialog = xbmcgui.Dialog()
 		choise = dialog.select('Please Choose a Link - Xin Chọn Link', url_path) #url_path is a list, choise is 0, 1, 2, ...
-		if choise:
+		if choise == -1: #choose cancel
+			return None
+		else:
 			if url_path[choise].startswith('http://dl.upload10') or url_path[choise].startswith('http://dl2.upload10'): #url_path[choise] is url_path first or second .. in the list
 				return Layer2ToItems(url_path[choise])
 			else:
-				return play_url(url_path[choise])
-		return None
+				return play_url(url_path[choise]) #will get error get addtracking ??
 	
 	elif 'bilumoi.com' in url_path:
 		source = requests.get(url_path, headers=headers2).text
