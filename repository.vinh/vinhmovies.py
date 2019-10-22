@@ -14,6 +14,7 @@ import time
 import thread
 import socket
 from datetime import datetime
+from urlresolver.plugins.lib import jsunpack
 
 import xbmcplugin
 import xbmcgui
@@ -29,6 +30,7 @@ from contextlib import contextmanager
 import xbmc
 
 import requests
+import resolveurl
 
 #Enable inputstream.adaptive
 @contextmanager
@@ -199,6 +201,8 @@ def Layer2ToItems(url_path=""):
 		else:
 			if url_path[choise].startswith('http://dl.upload10') or url_path[choise].startswith('http://dl2.upload10'): #url_path[choise] is url_path first or second .. in the list
 				return Layer2ToItems(url_path[choise])
+			elif url_path[choise].startswith('https://clipwatching.com') or url_path[choise].startswith('https://vidlox.me'):
+				return play_url(url_path[choise])
 			else:
 				return play_url(url_path[choise]) #will get error get addtracking, bc direct link(not list anything) ??
 	
@@ -324,7 +328,7 @@ def Layer2(path="0", tracking_string="Layer2"):
 	)
 	#if '.mkv' in path:
 	#if any(path.endswith(video_type) for video_type in ['.mkv', '.mp4', '.avi']):
-	if any(words in path for words in ['.mkv', '.mp4', '.avi']): #fix error AddTracking with direct link in layer2
+	if any(words in path for words in ['.mkv', '.mp4', '.avi', '.m3u8', 'https://clipwatching.com', 'https://vidlox.me']): #fix error AddTracking with direct link in layer2
 		items = Layer2ToItems(path)
 		return None
 	else:
@@ -1841,6 +1845,16 @@ def play_url(url, title=""):
 			link = url+link
 		source2 = requests.get(link, headers=headers2).text
 		linkstream = re.findall('(http.*?m3u8.*?)"', source2)[0]
+		plugin.set_resolved_url(linkstream, subtitles=vsub)
+
+	elif url.startswith('https://vidlox.me'):
+		source = requests.get(url, headers=headers2).text
+		linkstream = re.findall('sources: \["(http.*?)"', source)[0]
+		plugin.set_resolved_url(linkstream, subtitles=vsub)
+	elif url.startswith('https://clipwatching.com'):
+		source = requests.get(url, headers=headers2).text
+		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source)[0]).replace('\\', '')
+		linkstream = re.findall("file:\"(https.*?)\"", decode)[0]
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
 	elif url.startswith('https://ok.ru') or url.startswith('https://www.facebook.com'):
