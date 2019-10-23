@@ -837,7 +837,10 @@ def M3UToItems(url_path=""):
 				try:
 					label2 = re.compile('title=".*?title="(.*?)"').findall(info)[0]
 				except:
-					label2 = ''
+					try:
+						label2 = re.compile(';">(.*?) vs <a title=').findall(info)[0]
+					except:
+						label2 = ''
 				label = '[COLOR yellow]'+label1+'[/COLOR]'+' vs '+'[COLOR yellow]'+label2+'[/COLOR]'
 			elif 'title' in info:
 				label = re.compile('title="(.*?)"').findall(info)[0]
@@ -1818,12 +1821,12 @@ def play_url(url, title=""):
 #		dialog = xbmcgui.Dialog()
 #		choise = dialog.select('Please Choose a Link - Xin Chọn Link', items)
 		dialog = xbmcgui.Dialog()
-		choise = dialog.select('Please Choose a Link - Xin Chọn Link', url) #url_path is a list, choise is -1, 0, 1, 2, ...
+		choise = dialog.select('Please Choose a Link - Xin Chọn Link', url) #url is a list, choise is int, choise is -1, 0, 1, 2, ...
 		if choise == -1: #choose cancel
 			#return None
 			pass
 		else:
-			if url[choise].startswith('http://dl.upload10') or url[choise].startswith('http://dl2.upload10'): #url_path[choise] is url_path first or second .. in the list
+			if url[choise].startswith('http://dl.upload10') or url[choise].startswith('http://dl2.upload10'): #url[choise] is url_path first or second .. in the list
 				return Layer2ToItems(url[choise])
 			elif url[choise].startswith('https://clipwatching.com') or url[choise].startswith('https://vidlox.me'):
 				return play_url(url[choise])
