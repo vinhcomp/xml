@@ -284,7 +284,8 @@ def Layer2ToItems(url_path=""):
 			items += [item]
 		return items
 
-	elif url_path.startswith('http://dl.upload10') or url_path.startswith('http://dl2.upload10'): #from http://builds.kodiuk boxsets
+	#elif url_path.startswith('http://dl.upload10') or url_path.startswith('http://dl2.upload10'): #from http://builds.kodiuk boxsets
+	elif any(url_path.startswith(domain) for domain in ['http://dl.upload10', 'http://dl2.upload10', 'http://dl2.uploadzone']):
 		content = requests.get(url_path, headers=headers2).text
 		#matchs = re.findall('<a href="(.*?)">(.*?)<',content)[:]
 		item_re = '<a href="(.*?)">(.*?)<'
@@ -792,7 +793,8 @@ def M3UToItems(url_path=""):
 					"thumbnail": thumb.strip(),
  					"path": path.strip(),
 				}
-				if item["path"].startswith('http://dl.upload10'):
+				#if item["path"].startswith('http://dl.upload10'):
+				if any(item["path"].startswith(domain) for domain in ['http://dl.upload10', 'http://dl2.upload10', 'http://dl2.uploadzone']):
 					item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
 				elif item["path"].startswith('<sublink>'):
 					#item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
@@ -1826,7 +1828,8 @@ def play_url(url, title=""):
 			#return None
 			pass
 		else:
-			if url[choise].startswith('http://dl.upload10') or url[choise].startswith('http://dl2.upload10'): #url[choise] is url_path first or second .. in the list
+			#if url[choise].startswith('http://dl.upload10') or url[choise].startswith('http://dl2.upload10'): #url[choise] is url_path first or second .. in the list
+			if any(url[choise].startswith(domain) for domain in ['http://dl.upload10', 'http://dl2.upload10', 'http://dl2.uploadzone']):
 				return Layer2ToItems(url[choise])
 			elif url[choise].startswith('https://clipwatching.com') or url[choise].startswith('https://vidlox.me'):
 				return play_url(url[choise])
