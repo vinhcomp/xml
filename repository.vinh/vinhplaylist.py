@@ -289,11 +289,12 @@ def M3UToItems(url_path=""):
 				}
 				items += [item]
 			return items
+
 		if '<item>' in content or '<plugin>' in content:
 			#content = "".join(content.splitlines())
 			#item_re = '.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thu.*?nail>'
 			#matchs = re.compile(item_re).findall(content)
-			matchs = re.findall('<item>.+?(?s)<title>([^</]+).+?(?s)<link>(?s)(.*?)</lin.+?(?s)<thumbnail>(.*?)</thumb',content)[:] #(.?)included lines, ([])specail char
+			matchs = re.findall('<item>.+?(?s)<title>([^</]+).+?(?s)<link>(?s)(.*?)</lin.+?(?s)<thumbnail>(.*?)</thumb',content)[:] #(.?)included lines, ([])special char
 			items = []
 			for label, path, thumb in matchs:
 				item = {
@@ -303,8 +304,7 @@ def M3UToItems(url_path=""):
 				}
 				if '<sublink>' in item["path"]:
 					item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
-				#Playabel link
-				else:
+				else: #Playabel link
 					item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
 				item["is_playable"] = True
 				item["info"] = {"type": "video"}
@@ -1879,12 +1879,22 @@ def get_playable_url(url):
 	#http://sv.tvmienphi.net/ok/htv/htv12.php
 	elif url.startswith('http://sv.tvmienphi.net'):
 		url1 = url.replace('/sd', '')
-		source = requests.get(url1, headers=headers4).text
+		if 'referer' in url:
+			referer = re.findall('referer=(.*?$)', url)[0]
+			url1 = re.findall('(.*?)/referer', url)[0]
+		else:
+			referer = url			
+		headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+		#url1 = url.replace('/sd', '')
+		source = requests.get(url1, headers=headers2).text
 		link = re.findall('(http://sv.tvmienphi.net.*?)\'', source)[0]
-		source2 = requests.get(link, headers=headers4).text
+		source2 = requests.get(link, headers=headers2).text
 		try:
 			linkstream = re.findall('(http.*?m3u.*?$)', source2)[0]
-			source3 = requests.get(linkstream, headers=headers4).text
+			source3 = requests.get(linkstream, headers=headers2).text
 		except:
 			try:
 				link2 = re.findall('(http://.*?vcdn.com.vn.*?)\'', source)[0] #m3u playable
@@ -1893,7 +1903,7 @@ def get_playable_url(url):
 		notice1 = 'Xin Thử Lại'
 		notice2 = '[COLOR yellow]Đài Hiện Tại Không Mở Được.[/COLOR]'
 		notice3 = '[COLOR yellow]Đợi Vinh Sửa![/COLOR]'
-		if 'sd' in url:
+		if '/sd' in url:
 			try:
 				return re.findall('(http.*?m3u.*?\s)', source3)[-2]
 			except:
