@@ -1365,6 +1365,31 @@ def vonglap(url, n):
 			url = None
 			return notice()
 
+#	elif 'xemtivihot.com' in url:
+#		headers1 = {
+#			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+#			'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+#		}
+#		source = requests.get(url, headers=headers1).text
+#		referer = re.findall('Myiframe" src="(.*?)"', source)[0]
+#		headers2 = {
+#			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+#			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+#		}
+#		source2 = requests.get(referer, headers=headers2).text
+#		link_svs = re.findall("link=(.*?);play", source2)[0]
+#		if '[' in link_svs:
+#			link_svs = re.findall("'(.*?)'", link_svs)[:]
+#		if n<=len(link_svs):
+#			try:
+#				source3 = requests.get(link_svs[n], headers=headers2).text
+#				link = re.findall('(http.*?m3u.*?$)', source3)[0]
+#				source4 = requests.get(link, headers=headers2).text
+#				url = re.findall('(http.*?m3u.*?\s)', source4)[0]
+#			except:
+#				url = url
+#				return vonglap(url=url, n=n+1)
+
 	elif 'sdw-net.me' in url:
 		f4m = 'plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url='
 		source = requests.get(url, headers=headers4).text
@@ -1868,6 +1893,41 @@ def get_playable_url(url):
 	
 	elif url.startswith('http://tivis.101vn.com'):
 		return vonglap(url=url, n=0)
+	elif url.startswith('http://xemtivihot.com'):
+		source = requests.get(url, headers=headers4).text
+		referer = re.findall('Myiframe" src="(.*?)"', source)[0]
+		headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+		source2 = requests.get(referer, headers=headers2).text
+		link_svs = re.findall("link=(.*?);play", source2)[0]
+		if '[' in link_svs:
+			link_svs = re.findall("'(.*?)'", link_svs)[:]
+#		try:
+#			source3 = requests.get(link_svs[0], headers=headers2).text
+#			link = re.findall('(http.*?m3u.*?$)', source3)[0]
+#			source4 = requests.get(link, headers=headers2).text
+#			return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
+#		except:
+#			try:
+#				source3 = requests.get(link_svs[1], headers=headers2).text
+#				link = re.findall('(http.*?m3u.*?$)', source3)[0]
+#				source4 = requests.get(link, headers=headers2).text
+#				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
+#			except:
+#				source3 = requests.get(link_svs[2], headers=headers2).text
+#				link = re.findall('(http.*?m3u.*?$)', source3)[0]
+#				source4 = requests.get(link, headers=headers2).text
+#				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
+		for n in range(len(link_svs)): #5 servers
+			try:
+				source3 = requests.get(link_svs[n], headers=headers2).text
+				link = re.findall('(http.*?m3u.*?$)', source3)[0]
+				source4 = requests.get(link, headers=headers2).text
+				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
+			except:
+				n=n-1
 
 	#http://www.tivi12h.net/ok/k-1.php
 	elif url.startswith('http://www.tivi12h.net'):
