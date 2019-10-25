@@ -1908,7 +1908,10 @@ def get_playable_url(url):
 		sv_ids = re.findall('name="(.*?)"', source2)[:]
 		link_svs = []
 		for sv_id in sv_ids:
-			link_sv = link_id+sv_id
+			if '/ok/' in sv_id:
+				link_sv = 'http://tivis.101vn.com'+sv_id
+			else:
+				link_sv = link_id+sv_id
 			link_svs += [link_sv]
 		for n in range(len(link_svs)):
 			try:
@@ -1924,7 +1927,6 @@ def get_playable_url(url):
 						return link2 #incase link2 is direct link
 			except:
 				n=n-1
-
 
 	elif url.startswith('http://xemtivihot.com'):
 		source = requests.get(url, headers=headers4).text
