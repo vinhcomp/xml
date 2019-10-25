@@ -1943,7 +1943,7 @@ def get_playable_url(url):
 			referer = re.findall('referer=(.*?$)', url)[0]
 			url1 = re.findall('(.*?)/referer', url)[0]
 		else:
-			referer = url			
+			referer = url
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
 			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
@@ -1976,6 +1976,32 @@ def get_playable_url(url):
 					return link2
 				except:
 					return notice(notice1, notice2, notice3)
+
+	elif url.startswith('http://www.tvmienphi.net'):
+		source = requests.get(url, headers=headers4).text
+		referer = re.findall('iframe src="(.*?)"', source)[0]
+		headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+		link_long = referer.rfind('/')
+		link_id = referer[:link_long+1]
+		source2 = requests.get(referer, headers=headers2).text
+		sv_ids = re.findall('name="(.*?)"', source2)[:]
+		link_svs = []
+		for sv_id in sv_ids:
+			link_sv = link_id+sv_id
+			link_svs += [link_sv]
+		for n in range(len(link_svs)):
+			try:
+				source3 = requests.get(link_svs[n], headers=headers2).text
+				link = re.findall('(http://sv.tvmienphi.net.*?)\'', source3)[0]
+				source4 = requests.get(link, headers=headers2).text
+				link2 = re.findall('(http.*?m3u.*?$)', source4)[0]
+				source5 = requests.get(link2, headers=headers2).text
+				return re.findall('(http.*?2.m3u8.*?\s)', source5)[0]
+			except:
+				n=n-1
 
 	elif "https://vtvgo.vn" in url:
 		header = {
