@@ -2003,7 +2003,10 @@ def get_playable_url(url):
 				if '/sd' in url:
 					return re.findall('(http.*?1.m3u8.*?\s)', source5)[0]
 				else:
-					return re.findall('(http.*?2.m3u8.*?\s)', source5)[0]
+					try:
+						return re.findall('(http.*?2.m3u8.*?\s)', source5)[0]
+					except:
+						return link2 #incase link2 is direct link
 			except:
 				n=n-1
 
