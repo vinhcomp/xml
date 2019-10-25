@@ -1978,7 +1978,8 @@ def get_playable_url(url):
 					return notice(notice1, notice2, notice3)
 
 	elif url.startswith('http://www.tvmienphi.net'):
-		source = requests.get(url, headers=headers4).text
+		url1 = url.replace('/sd', '')
+		source = requests.get(url1, headers=headers4).text
 		referer = re.findall('iframe src="(.*?)"', source)[0]
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
@@ -1999,7 +2000,10 @@ def get_playable_url(url):
 				source4 = requests.get(link, headers=headers2).text
 				link2 = re.findall('(http.*?m3u.*?$)', source4)[0]
 				source5 = requests.get(link2, headers=headers2).text
-				return re.findall('(http.*?2.m3u8.*?\s)', source5)[0]
+				if '/sd' in url:
+					return re.findall('(http.*?1.m3u8.*?\s)', source5)[0]
+				else:
+					return re.findall('(http.*?2.m3u8.*?\s)', source5)[0]
 			except:
 				n=n-1
 
