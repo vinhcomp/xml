@@ -1336,34 +1336,34 @@ def vonglap(url, n):
 		'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
 		'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 	}
-	if url.startswith('http://tivis.101vn.com'):
-		try:
-			url1 = re.findall('(http://.*?)/sd', url)[0]
-		except:
-			url1 = url
-		source = requests.get(url1, headers=headers4).text
-		try:
-			link = re.findall('"(http://tivis.*?)"', source)[0]
-		except:
-			link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
-		if n<3:
-			if 'sd' in url:
-				try:
-					source2 = requests.get(link, headers=headers4).text
-					url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
-				except:
-					url = url
-					return vonglap(url=url, n=n+1)
-			else:
-				try:
-					source2 = requests.get(link, headers=headers4).text
-					url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
-				except:
-					url = url
-					return vonglap(url=url, n=n+1)
-		else:
-			url = None
-			return notice()
+#	if url.startswith('http://tivis.101vn.com'):
+#		try:
+#			url1 = re.findall('(http://.*?)/sd', url)[0]
+#		except:
+#			url1 = url
+#		source = requests.get(url1, headers=headers4).text
+#		try:
+#			link = re.findall('"(http://tivis.*?)"', source)[0]
+#		except:
+#			link = re.findall('"(http://apps.101vn.com.*?)"', source)[0]
+#		if n<3:
+#			if 'sd' in url:
+#				try:
+#					source2 = requests.get(link, headers=headers4).text
+#					url = re.findall('(http.*?m3u.*?\s)', source2)[-2]
+#				except:
+#					url = url
+#					return vonglap(url=url, n=n+1)
+#			else:
+#				try:
+#					source2 = requests.get(link, headers=headers4).text
+#					url = re.findall('(http.*?m3u.*?\s)', source2)[-1]
+#				except:
+#					url = url
+#					return vonglap(url=url, n=n+1)
+#		else:
+#			url = None
+#			return notice()
 
 #	elif 'xemtivihot.com' in url:
 #		headers1 = {
@@ -1390,7 +1390,7 @@ def vonglap(url, n):
 #				url = url
 #				return vonglap(url=url, n=n+1)
 
-	elif 'sdw-net.me' in url:
+	if 'sdw-net.me' in url:
 		f4m = 'plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&url='
 		source = requests.get(url, headers=headers4).text
 		link = re.findall("iframe src='(.*?)'", source)[0]
@@ -1891,8 +1891,41 @@ def get_playable_url(url):
 		source = requests.get(url, headers=headers1).text
 		return re.findall('(http.*?m3u8)', source)[-2]
 	
+#	elif url.startswith('http://tivis.101vn.com'):
+#		return vonglap(url=url, n=0)
+
 	elif url.startswith('http://tivis.101vn.com'):
-		return vonglap(url=url, n=0)
+		url1 = url.replace('/sd', '')
+		source = requests.get(url1, headers=headers4).text
+		referer = re.findall('iframe src="(.*?)"', source)[0]
+		headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+		link_long = referer.rfind('/')
+		link_id = referer[:link_long+1]
+		source2 = requests.get(referer, headers=headers2).text
+		sv_ids = re.findall('name="(.*?)"', source2)[:]
+		link_svs = []
+		for sv_id in sv_ids:
+			link_sv = link_id+sv_id
+			link_svs += [link_sv]
+		for n in range(len(link_svs)):
+			try:
+				source3 = requests.get(link_svs[n], headers=headers2).text
+				link = re.findall('(http://apps.101vn.com.*?|http://tivis.101vn.com.*?)"', source3)[0]
+				source4 = requests.get(link, headers=headers2).text
+				if '/sd' in url:
+					return re.findall('(http.*?1.m3u8.*?\s)', source4)[0]
+				else:
+					try:
+						return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
+					except:
+						return link2 #incase link2 is direct link
+			except:
+				n=n-1
+
+
 	elif url.startswith('http://xemtivihot.com'):
 		source = requests.get(url, headers=headers4).text
 		referer = re.findall('Myiframe" src="(.*?)"', source)[0]
