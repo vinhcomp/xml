@@ -1963,8 +1963,11 @@ def get_playable_url(url):
 				source4 = requests.get(link, headers=headers2).text
 				try:
 					return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
-				except:
-					return link
+				except: # for SCTV
+					link_id = re.findall('(http.*?)playlist', link)[0]
+					link_re = re.findall('(chunklist.*?\s)', source4)[0]
+					#link2 = link_id+link_re
+					return link_id+link_re
 			except:
 				n=n-1
 
