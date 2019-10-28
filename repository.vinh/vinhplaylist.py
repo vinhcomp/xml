@@ -1871,20 +1871,20 @@ def get_playable_url(url):
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source)[0]).replace('\\', '')
 		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+url
 
-	#http://futbolitop.online/canales/ espanol sports
-	elif "futbolitop.online" in url:
-		referer = 'http://futbolitop.online/'
-		headers2 = {
-			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
-			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
-		}
-		source = requests.get(url, headers=headers1)
-		linkstream = re.findall('canalillo" src="(.*?)"', source.text)[0]
-		source = requests.get(linkstream, headers=headers2)
-		try:
-			return re.findall('source: "(.*?)"', source.text)[0]+'|user-agent=ipad&'+linkstream
-		except:
-			return notice()
+#	#http://futbolitop.online/canales/ espanol sports
+#	elif "futbolitop.online" in url:
+#		referer = 'http://futbolitop.online/'
+#		headers2 = {
+#			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+#			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+#		}
+#		source = requests.get(url, headers=headers1)
+#		linkstream = re.findall('canalillo" src="(.*?)"', source.text)[0]
+#		source = requests.get(linkstream, headers=headers2)
+#		try:
+#			return re.findall('source: "(.*?)"', source.text)[0]+'|user-agent=ipad&'+linkstream
+#		except:
+#			return notice()
 
 	#http://yoursports.stream/nfl/nbcbay.m3u8
 	elif url.startswith('http://yoursports.stream'):
@@ -1924,7 +1924,7 @@ def get_playable_url(url):
 					try:
 						return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
 					except:
-						return link2 #incase link2 is direct link
+						return link2
 			except:
 				n=n-1
 
@@ -2096,11 +2096,17 @@ def get_playable_url(url):
 
 	elif 'linkm3u8' in url:
 		url = url.replace('/linkm3u8', '')
-		source = requests.get(url, headers=headers1).text
+		h = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+			'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+		source = requests.get(url, headers=h).text
 		try:
 			url = re.findall('(http.*?m3u8.*?)\'', source)[0]
 		except:
 			url = re.findall('(http.*?m3u8.*?)"', source)[0]
+		if 'src="' in url:
+			return re.findall('src="(http.*?m3u8)', url)[0]
 
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
