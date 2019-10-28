@@ -29,7 +29,6 @@ from kodiswift import Plugin, xbmc, xbmcaddon, xbmcgui, actions
 #import sys, traceback
 from contextlib import contextmanager
 import xbmcvfs
-#import xbmc
 
 #Enable inputstream.adaptive
 @contextmanager
@@ -1932,8 +1931,10 @@ def get_playable_url(url):
 		source = requests.get(url, headers=headers4).text
 		referer = re.findall('Myiframe" src="(.*?)"', source)[0]
 		headers2 = {
-			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
-			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+			'Accept':'Mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+			'Accept-Encoding':'gzip, deflate',
+			"Accept-Language": "en-US,en;q=0.9,vi;q=0.8",
 		}
 		source2 = requests.get(referer, headers=headers2).text
 		link_svs = re.findall("link=(.*?);play", source2)[0]
@@ -1960,7 +1961,10 @@ def get_playable_url(url):
 				source3 = requests.get(link_svs[n], headers=headers2).text
 				link = re.findall('(http.*?m3u.*?$)', source3)[0]
 				source4 = requests.get(link, headers=headers2).text
-				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
+				try:
+					return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
+				except:
+					return link
 			except:
 				n=n-1
 
@@ -2177,9 +2181,9 @@ def get_playable_url(url):
 				return url
 			return None
 		except:	pass
-	elif "tv24.vn" in url:
-		cid = re.compile('/(\d+)/').findall(url)[0]
-		return "plugin://plugin.video.sctv/play/" + cid
+#	elif "tv24.vn" in url:
+#		cid = re.compile('/(\d+)/').findall(url)[0]
+#		return "plugin://plugin.video.sctv/play/" + cid
 	#elif "dailymotion.com" in url:
 	elif url.startswith('https://www.dailymotion.com'):
 		did = re.compile("/(\w+)$").findall(url)[0]
