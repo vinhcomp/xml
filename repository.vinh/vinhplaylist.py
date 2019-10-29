@@ -1923,7 +1923,7 @@ def get_playable_url(url):
 					try:
 						return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
 					except:
-						return link2
+						return link
 			except:
 				#n=n-1
 				pass
