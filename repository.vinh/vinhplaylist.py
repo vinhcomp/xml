@@ -1687,7 +1687,8 @@ def get_playable_url(url):
 		except:
 			return notice()
 
-	elif "livestream.com" in url:
+	#elif "livestream.com" in url:
+	elif url.startswith('https://livestream.com'):
 		headers = {
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
 			'Accept-Encoding': 'gzip, deflate',
