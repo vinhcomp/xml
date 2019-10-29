@@ -1925,7 +1925,8 @@ def get_playable_url(url):
 					except:
 						return link2
 			except:
-				n=n-1
+				#n=n-1
+				pass
 
 	elif url.startswith('http://xemtivihot.com'):
 		source = requests.get(url, headers=headers4).text
@@ -1966,10 +1967,10 @@ def get_playable_url(url):
 				except: # for SCTV
 					link_id = re.findall('(http.*?)playlist', link)[0]
 					link_re = re.findall('(chunklist.*?\s)', source4)[0]
-					#link2 = link_id+link_re
 					return link_id+link_re
 			except:
-				n=n-1
+				#n=n-1
+				pass
 
 	#http://www.tivi12h.net/ok/k-1.php
 	elif url.startswith('http://www.tivi12h.net'):
@@ -2050,7 +2051,8 @@ def get_playable_url(url):
 					except:
 						return link2 #incase link2 is direct link
 			except:
-				n=n-1
+				#n=n-1
+				pass
 
 	elif "https://vtvgo.vn" in url:
 		header = {
