@@ -285,7 +285,7 @@ def Layer2ToItems(url_path=""):
 		return items
 
 	#elif url_path.startswith('http://dl.upload10') or url_path.startswith('http://dl2.upload10'): #from http://builds.kodiuk boxsets
-	elif any(url_path.startswith(domain) for domain in ['http://dl.upload10', 'http://dl2.upload10', 'http://dl2.uploadzone']):
+	elif any(url_path.startswith(domain) for domain in ['http://dl.upload10', 'http://dl2.upload10', 'http://dl2.uploadzone', 'http://perserver.ir/']):
 		content = requests.get(url_path, headers=headers2).text
 		#matchs = re.findall('<a href="(.*?)">(.*?)<',content)[:]
 		item_re = '<a href="(.*?)">(.*?)<'
@@ -2121,9 +2121,9 @@ def get_playable_url(url):
 		except:
 			pass
 
-	elif 'ok.ru' in url:
-		import resolveurl
-		return resolveurl.resolve(url)
+#	elif 'ok.ru' in url:
+#		import resolveurl
+#		return resolveurl.resolve(url)
 
 	elif "onecloud.media" in url:
 		ocid = url.split("/")[-1].strip()
