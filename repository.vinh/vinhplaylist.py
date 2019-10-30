@@ -2108,7 +2108,13 @@ def get_playable_url(url):
 		datas = {'id': re.findall('id=(.*?$)', url)[0]}
 		source = requests.post('http://www.elahmad.com/tv/result/embed_result.php', data=datas).text
 		link = json.loads(source)['link']
-		return base64.b64decode(link)
+		linkstream = base64.b64decode(link)
+		linkstream = str(linkstream)
+		if 'http' not in linkstream:
+			source = requests.post('http://www.elahmad.com/tv/result/gini.php', data=datas).text
+			return json.loads(source)['link']
+		else:
+			return linkstream
 
 	elif 'linkm3u8' in url:
 		url = url.replace('/linkm3u8', '')
