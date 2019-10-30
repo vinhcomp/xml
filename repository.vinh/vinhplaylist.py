@@ -2104,6 +2104,12 @@ def get_playable_url(url):
 		source2 = requests.get(link, headers=headers4).text
 		return re.findall('pl.init\(\'(.*?)\'', source2)[0]+'|user-agent=iPad&Referer='+link
 
+	elif url.startswith('http://www.elahmad.com'): #somali http://www.elahmad.com/tv/somali-tv-live.php
+		datas = {'id': re.findall('id=(.*?$)', url)[0]}
+		source = requests.post('http://www.elahmad.com/tv/result/embed_result.php', data=datas).text
+		link = json.loads(source)['link']
+		return base64.b64decode(link)
+
 	elif 'linkm3u8' in url:
 		url = url.replace('/linkm3u8', '')
 		h = {
