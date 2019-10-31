@@ -2050,10 +2050,11 @@ def get_playable_url(url):
 					try:
 						return re.findall('(http.*?2.m3u8.*?\s)', source5)[0]
 					except:
-						try:
-							url = re.findall('(http.*?mono.m3u8.*?$)', source4)[0] #incase mono.m3u8 in link(fast direct link), return won't work, url work but slow
-						except:
-							url = link2 #incase direct link with no mono
+						return re.findall('(http.*?mono.m3u8.*?$)', source4)[0] #will be fast
+						#try:
+						#	url = re.findall('(http.*?mono.m3u8.*?$)', source4)[0] #incase mono.m3u8 in link(fast direct link), return won't work, url work but slow
+						#except:
+						#	url = link2 #incase direct link with no mono
 			except:
 				#n=n-1
 				pass
