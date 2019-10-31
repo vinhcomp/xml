@@ -2049,8 +2049,8 @@ def get_playable_url(url):
 				else:
 					try:
 						return re.findall('(http.*?2.m3u8.*?\s)', source5)[0]
-					except:
-						return link2 #incase link2 is direct link
+					except:						
+						return re.findall('(http.*?mono.m3u8.*?$)', source4)[0] #incase mono.m3u8 in link(fast direct link)
 			except:
 				#n=n-1
 				pass
