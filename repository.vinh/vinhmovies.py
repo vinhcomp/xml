@@ -286,7 +286,7 @@ def Layer2ToItems(url_path=""):
 
 	#elif url_path.startswith('http://dl.upload10') or url_path.startswith('http://dl2.upload10'): #from http://builds.kodiuk boxsets
 	elif any(url_path.startswith(domain) for domain in ['http://dl.upload10', 'http://dl2.upload10', 'http://dl2.uploadzone', 'http://perserver.ir/']):
-		content = requests.get(url_path, headers=headers2).text
+		content = requests.get(url_path, headers=headers2).content
 		#matchs = re.findall('<a href="(.*?)">(.*?)<',content)[:]
 		item_re = '<a href="(.*?)">(.*?)<'
 		matchs = re.compile(item_re).findall(content)
