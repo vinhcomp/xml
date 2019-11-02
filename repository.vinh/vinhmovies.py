@@ -1757,30 +1757,54 @@ def play_url(url, title=""):
 		source = requests.get(url, headers=headers2).text
 		movie_id = re.findall('MovieID = \'(.*?)\'', source)[0]
 		ep_id = re.findall('EpisodeID = \'(.*?)\'', source)[0]
-		source_all = ''
+#		source_all = ''
 		#for n in range (4):
-		for n in range(3, -1 , -1): #4 Servers
+#		for n in range(3, -1 , -1): #4 Servers
+		for n in range(0, 6): #6 Servers
 			n = str(n)
 			data = {'id': movie_id, 'ep': ep_id, 'sv': n}
 			source = requests.post(url2, data = data, verify = False).text
-			source_all += source
-		try:
-			link = re.findall('file":"(http.*?)"', source_all)[-1]
-			url = link.replace('\\', '')
-		except:
 			try:
-				link = re.findall('src="(https://www.fembed.com/v.*?)"', source_all)[0]
+				url = re.findall('file":"(http.*?)"', source)[-1]
+				plugin.set_resolved_url(url, subtitles=vsub)
+			except:
+				pass
+			try:
+				link = re.findall('src="(https://www.fembed.com/v.*?)"', source)[0]
 				linkapi = link.replace('https://www.fembed.com/v', 'https://www.fembed.com/api/source')
 				source3 = requests.post(linkapi, data = {'d': 'www.fembed.com', 'r': ''}).text
 				response = json.loads(source3)
 				response = response['data']
 				url = response[-1]['file']
+				plugin.set_resolved_url(url, subtitles=vsub)
 			except:
+				pass
+			try:
 				import resolveurl
-				link = re.findall('src="(https://ok.ru.*?)"', source_all)[0]
+				link = re.findall('src="(https://ok.ru.*?)"', source)[0]
 				url = resolveurl.resolve(link)
-				#url = 'plugin://plugin.video.live.streamspro/play/?url='+urllib.quote_plus(link)+'&mode=19'
-		plugin.set_resolved_url(url, subtitles=vsub)
+				plugin.set_resolved_url(url, subtitles=vsub)
+			except:
+				pass
+
+#			source_all += source
+#		try:
+#			link = re.findall('file":"(http.*?)"', source_all)[-1]
+#			url = link.replace('\\', '')
+#		except:
+#			try:
+#				link = re.findall('src="(https://www.fembed.com/v.*?)"', source_all)[0]
+#				linkapi = link.replace('https://www.fembed.com/v', 'https://www.fembed.com/api/source')
+#				source3 = requests.post(linkapi, data = {'d': 'www.fembed.com', 'r': ''}).text
+#				response = json.loads(source3)
+#				response = response['data']
+#				url = response[-1]['file']
+#			except:
+#				import resolveurl
+#				link = re.findall('src="(https://ok.ru.*?)"', source_all)[0]
+#				url = resolveurl.resolve(link)
+#				#url = 'plugin://plugin.video.live.streamspro/play/?url='+urllib.quote_plus(link)+'&mode=19'
+		#plugin.set_resolved_url(url, subtitles=vsub)
 
 	elif url.startswith('http://www.khmerdrama') or url.startswith('http://www.khmeravenue'):
 		import resolveurl
