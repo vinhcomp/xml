@@ -614,7 +614,7 @@ def M3UToItems(url_path=""):
 					'label': '------------ '+'[COLOR lime]'+label_t+'[/COLOR]'+'[COLOR red] Giờ Việt Nam - VietNam Time [/COLOR]------------',
 					#'thumbnail': 'https://i.imgur.com/KL4qOtF.jpg',
 					'thumbnail': 'https://c.tadst.com/gfx/citymap/vn-10.png?10',
-					'path': ''
+					'path': 'None'
 		}
 		items = []
 		for path, thumb, label3, label2, label1 in matchs:
@@ -881,8 +881,8 @@ def M3UToItems(url_path=""):
 			label_t = ''
 		notice_time = {
 					'label': '------------ '+'[COLOR lime]'+label_t+'[/COLOR]'+'[COLOR red] Giờ Eastern - Eastern Time [/COLOR]------------',
-					'thumbnail': 'https://c.tadst.com/gfx/citymap/us-10.png?10',
-					'path': ''
+					'thumbnail': 'https://c.tadst.com/gfx/tzpage/est.1572778800.png?1292',
+					'path': 'None'
 		}
 		items = []
 		for path, thumb, label2, label1 in matchs:
