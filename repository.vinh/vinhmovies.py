@@ -874,7 +874,7 @@ def M3UToItems(url_path=""):
 		content = "".join(content.splitlines())
 		item_re = "<a href='(.*?)'.*?<img src='(.*?)'.*?media-heading'>(.*?)<.*?<p>(.*?)</p>"
 		matchs = re.compile(item_re).findall(content)
-		source_t = requests.get('https://www.timeanddate.com/worldclock/fullscreen.html?n=95', headers=headers2).text
+		source_t = requests.get('https://www.timeanddate.com/worldclock/fullscreen.html?n=77', headers=headers2).text
 		try:
 			label_t = re.findall('<div id=i_time>(.*?)</div>', source_t)[0]
 		except:
