@@ -605,10 +605,16 @@ def M3UToItems(url_path=""):
 		item_re = 'list-channel.*?<a href="/(.*?)".*?class="item.*?<img src="(.*?)".*?class="league">' \
 			'(.*?)</div>.*?class="title">(.*?)</div>.*?data-time.*?</span>(.*?)</div>'
 		matchs = re.compile(item_re).findall(content)
+		source_t = requests.get('https://www.timeanddate.com/worldclock/fullscreen.html?n=95', headers=headers2).text
+		try:
+			label_t = re.findall('<div id=i_time>(.*?)</div>', source_t)[0]
+		except:
+			label_t = ''
 		notice_time = {
-					'label': '------------[COLOR red] Giờ Việt Nam - VietNam Time [/COLOR]------------',
-					'thumbnail': 'https://i.imgur.com/KL4qOtF.jpg',
-					'path': 'npath'
+					'label': '------------ '+'[COLOR lime]'+label_t+'[/COLOR]'+'[COLOR red] Giờ Việt Nam - VietNam Time [/COLOR]------------',
+					#'thumbnail': 'https://i.imgur.com/KL4qOtF.jpg',
+					'thumbnail': 'https://c.tadst.com/gfx/citymap/vn-10.png?10',
+					'path': ''
 		}
 		items = []
 		for path, thumb, label3, label2, label1 in matchs:
@@ -868,6 +874,16 @@ def M3UToItems(url_path=""):
 		content = "".join(content.splitlines())
 		item_re = "<a href='(.*?)'.*?<img src='(.*?)'.*?media-heading'>(.*?)<.*?<p>(.*?)</p>"
 		matchs = re.compile(item_re).findall(content)
+		source_t = requests.get('https://www.timeanddate.com/worldclock/fullscreen.html?n=95', headers=headers2).text
+		try:
+			label_t = re.findall('<div id=i_time>(.*?)</div>', source_t)[0]
+		except:
+			label_t = ''
+		notice_time = {
+					'label': '------------ '+'[COLOR lime]'+label_t+'[/COLOR]'+'[COLOR red] Giờ Eastern - Eastern Time [/COLOR]------------',
+					'thumbnail': 'https://c.tadst.com/gfx/citymap/us-10.png?10',
+					'path': ''
+		}
 		items = []
 		for path, thumb, label2, label1 in matchs:
 			if path.startswith('/'):
@@ -883,6 +899,7 @@ def M3UToItems(url_path=""):
 			item["is_playable"] = True
 			item["info"] = {"type": "video"}
 			items += [item]
+		items = [notice_time]+items
 		return items
 
 	elif url_path.startswith('https://ok.ru'):
