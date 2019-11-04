@@ -308,6 +308,28 @@ def Layer2ToItems(url_path=""):
 			items += [item]	
 		return items
 
+	elif url_path.startswith('http://ftp.alphamediazone.com'):
+		content = requests.get(url_path, headers=headers2).content
+		item_re = 'n"><a href="(.*?)">(.*?)<'
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for path, label in matchs:
+			thumb = 'http://mobiletv.mobibase.com/html/logo/hd/channel_ld_434.png'
+			path = 'http://ftp.alphamediazone.com'+path
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb,
+				"path": path.strip(),
+			}
+			if path.endswith('/'):
+				item["path"] = pluginrootpath + "/layer2/" + urllib.quote_plus(item["path"])
+			else:
+				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+				item["is_playable"] = True
+				item["info"] = {"type": "video"}
+			items += [item]	
+		return items
+
 	else:
 		url = url_path
 		return play_url(url)
