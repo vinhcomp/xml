@@ -1845,6 +1845,17 @@ def play_url(url, title=""):
 #				#url = 'plugin://plugin.video.live.streamspro/play/?url='+urllib.quote_plus(link)+'&mode=19'
 		#plugin.set_resolved_url(url, subtitles=vsub)
 
+	elif url.startswith('http://www.hdmoi.net'):
+		url2 = 'http://www.hdmoi.net/wp-admin/admin-ajax.php'
+		source = requests.get(url, headers=headers1).text
+		post_id = re.findall('post_id: (.*?),', source)[0]
+		episode = re.findall('episode: (.*?),', source)[0]
+		server = re.findall('server: (.*?),', source)[0]
+		data = {'action':'halim_ajax_player','nonce':'dabd3ae39f','episode':episode,'server':server,'postid':post_id}		
+		source2 = requests.post(url2, data=data, verify = False).text
+		linkstream = re.findall('file": "(.*?)"', source2)[0]
+		plugin.set_resolved_url(linkstream, subtitles=vsub)
+
 	elif url.startswith('http://www.khmerdrama') or url.startswith('http://www.khmeravenue'):
 		import resolveurl
 		source = requests.get(url, headers=headers2).text
