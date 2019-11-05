@@ -235,6 +235,26 @@ def Layer2ToItems(url_path=""):
 			items += [item]
 		return items
 
+	elif url_path.startswith('http://www.hdmoi.net'):
+		content = requests.get(url_path, headers=headers2).content
+		item_re = 'episode"><a href="(.*?)".*?<span>(.*?)</span>'
+		thumb = re.findall('movie-thumb" src="(.*?)"', content)[0]
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for path, label in matchs:
+			label = 'Episode - Tập '+label
+			thumb = thumb
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb,
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		return items
+
 	elif url_path.startswith('http://www.phumikhmer1'):
 		content = requests.get(url_path, headers=headers2).text
 		content = content.replace("'", "\"")
@@ -504,6 +524,37 @@ def M3UToItems(url_path=""):
 				items += [item]
 			items = items+[nextitem]
 			return items
+
+	elif url_path.startswith('http://www.hdmoi.net'):
+		content = requests.get(url_path, headers=headers2).content
+		item_re = 'halim-thumb" href="(.*?)".*?(?s)src="(.*?)".*?(?s)episode">(.*?)</.*?(?s)title">(.*?)</.*?title">(.*?)</'
+		try:
+			pages = re.findall('next page-numbers" href="(.*?)"', content)[0]
+		except:
+			pages = 'none'
+		if pages == 'none':
+			nlabel = 'Hết Trang - End of Pages'
+		else:
+			nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+re.compile('page/(.*?)/').findall(pages)[0]
+		nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
+		npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
+		nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for path, thumb, label3, label2, label1 in matchs:
+			label1 = '[COLOR yellow]'+label1+'[/COLOR]'
+			label2 = '[COLOR lime]'+label2+'[/COLOR]'
+			label = label1+' - '+label2+' - '+label3
+			path = pluginrootpath+"/layer2/"+urllib.quote_plus(path)
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			items += [item]
+		items = items+[nextitem]
+		return items
+
 
 	elif url_path.startswith('https://cam2cam.com'):
 		item_re = '<img class=\"\" src=\"//(.*?)\".*?alt=\"(.*?)\".*?\n.*?\n.*?\n.*?\n.*?\n.*?href=\"(.*?)\"'
@@ -1853,7 +1904,11 @@ def play_url(url, title=""):
 		server = re.findall('server: (.*?),', source)[0]
 		data = {'action':'halim_ajax_player','nonce':'dabd3ae39f','episode':episode,'server':server,'postid':post_id}		
 		source2 = requests.post(url2, data=data, verify = False).text
-		linkstream = re.findall('file": "(.*?)"', source2)[0]
+		try:
+			linkstream = re.findall('file": "(.*?)"', source2)[0]+'|User-Agent=iPad'
+		except:
+			respone = re.findall('sources: \[(.*?)\]', source2)[0]
+			linkstream = json.loads(respone)['file']+'|User-Agent=iPad'
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
 	elif url.startswith('http://www.khmerdrama') or url.startswith('http://www.khmeravenue'):
