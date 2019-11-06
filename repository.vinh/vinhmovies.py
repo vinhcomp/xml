@@ -527,7 +527,8 @@ def M3UToItems(url_path=""):
 
 	elif url_path.startswith('http://www.hdmoi.net'):
 		content = requests.get(url_path, headers=headers2).content
-		item_re = 'halim-thumb" href="(.*?)".*?(?s)src="(.*?)".*?(?s)episode">(.*?)</.*?(?s)title">(.*?)</.*?title">(.*?)</'
+		#item_re = 'halim-thumb" href="(.*?)".*?(?s)src="(.*?)".*?(?s)episode">(.*?)</.*?(?s)title">(.*?)</.*?title">(.*?)</'
+		item_re = 'halim-thumb" href="(.*?)".*?src="(.*?)".*?(?s)<span(.*?)</article>'
 		try:
 			pages = re.findall('next page-numbers" href="(.*?)"', content)[0]
 		except:
@@ -541,10 +542,21 @@ def M3UToItems(url_path=""):
 		nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
 		matchs = re.compile(item_re).findall(content)
 		items = []
-		for path, thumb, label3, label2, label1 in matchs:
-			label1 = '[COLOR yellow]'+label1+'[/COLOR]'
-			label2 = '[COLOR lime]'+label2+'[/COLOR]'
-			label = label1+' - '+label2+' - '+label3
+		#for path, thumb, label3, label2, label1 in matchs:
+		#	label1 = '[COLOR yellow]'+label1+'[/COLOR]'
+		#	label2 = '[COLOR lime]'+label2+'[/COLOR]'
+		#	label = label1+' - '+label2+' - '+label3
+		for path, thumb, info in matchs:
+			label1 = ''
+			label2 = ''
+			label2 = ''
+			if 'original_title' in info:
+				label1 = re.compile('original_title">(.*?)</').findall(info)[0]
+			if 'entry-title' in info:
+				label2 = re.compile('entry-title">(.*?)</').findall(info)[0]
+			if 'episode' in info:
+				label3 = re.compile('episode">(.*?)</').findall(info)[0]
+			label = '[COLOR yellow]'+label1+'[/COLOR]'+' - '+'[COLOR lime]'+label2+'[/COLOR]'+' - '+label3
 			path = pluginrootpath+"/layer2/"+urllib.quote_plus(path)
 			item = {
 				"label": label.strip(),
@@ -1908,6 +1920,9 @@ def play_url(url, title=""):
 			import resolveurl
 			linkstream = 'https:'+re.findall('src="(.*?)"', source2)[0]
 			linkstream = resolveurl.resolve(linkstream)
+		elif 'googlevideo.com' in source2:
+			source2 = source2.replace('\\','')
+			linkstream = re.findall('file":"(.*?)"', source2)[0]
 		else:
 			try:
 				linkstream = re.findall('file": "(.*?)"', source2)[0]+'|User-Agent=iPad'
