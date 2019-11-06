@@ -1904,11 +1904,21 @@ def play_url(url, title=""):
 		server = re.findall('server: (.*?),', source)[0]
 		data = {'action':'halim_ajax_player','nonce':'dabd3ae39f','episode':episode,'server':server,'postid':post_id}		
 		source2 = requests.post(url2, data=data, verify = False).text
-		try:
-			linkstream = re.findall('file": "(.*?)"', source2)[0]+'|User-Agent=iPad'
-		except:
-			respone = re.findall('sources: \[(.*?)\]', source2)[0]
-			linkstream = json.loads(respone)['file']+'|User-Agent=iPad'
+		if 'ok.ru' in source2:
+			import resolveurl
+			linkstream = 'https:'+re.findall('src="(.*?)"', source2)[0]
+			linkstream = resolveurl.resolve(linkstream)
+		else:
+			try:
+				linkstream = re.findall('file": "(.*?)"', source2)[0]+'|User-Agent=iPad'
+			except:
+				respone = re.findall('sources: \[(.*?)\]', source2)[0]				
+				link = json.loads(respone)['file']
+				source3 = requests.get(link, headers=headers1).text
+				link_re = re.findall('\n(.*?m3u8)', source3)[0]
+				link_long = link.rfind('/')
+				link_id = link[:link_long+1]
+				linkstream = link_id+link_re+'|User-Agent=iPad'
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
 	elif url.startswith('http://www.khmerdrama') or url.startswith('http://www.khmeravenue'):
