@@ -2089,6 +2089,23 @@ def get_playable_url(url):
 		source = session.post("https://vtvgo.vn/ajax-get-stream", data = datas, verify = False) #verify: optional
 		return source.json()["stream_url"][0] + agent
 
+	elif url.startswith('uno-'):
+		h = {
+		"Content-Type" : "application/x-www-form-urlencoded" ,
+		"User-Agent" : "Dalvik/2.1.0" ,
+		"Accept-Encoding" : "gzip"
+		}
+		id = url.strip().replace("uno-", "")
+		serial_id = "NTg4N2RkZmZjMzEyYmYxMDk0ZGU0YmQ1"
+		serial_id = base64.b64decode(serial_id)
+		allid = {"serial_id": serial_id ,"query": id}
+		source = requests.post("http://stbapi.v247tv.com/api/stb_channel2", headers=h, data=allid).json()["data"]
+		keyid  = urllib.quote_plus(source) #encode url
+		urlfull = "http://echipstore.com:8000/uno/" + keyid
+		source2 = requests.get(urlfull)
+		link = re.compile("(\{.+?\})").findall(source2.text.strip())[0]
+		return json.loads(link)["url"]
+
 	elif "7streams.online" in url:
 		(resp, content) = http.request(url,"GET",headers=headers1)
 		match = re.search("var videoLink = '(.+?)'", content)
@@ -2208,7 +2225,7 @@ def get_playable_url(url):
 #		return "plugin://plugin.video.sctv/play/" + cid
 	#elif "dailymotion.com" in url:
 	elif url.startswith('https://www.dailymotion.com'):
-		did = re.compile("/(\w+)$").findall(url)[0]
+		did = re.compile("/(\w+)$").findall(url)[0] #from special cha
 		return "plugin://plugin.video.dailymotion_com/?url=%s&mode=playVideo" % did
 	else:
 		if "://" not in url:
