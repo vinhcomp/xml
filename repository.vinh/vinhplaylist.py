@@ -2097,7 +2097,8 @@ def get_playable_url(url):
 		"Accept-Encoding" : "gzip"
 		}
 		#id = url1.strip().replace("uno-", "")
-		id = re.findall('uno-(.+?)(/|$)', url)[0][0] 
+		id = re.findall('uno-(.+?)(/|$)', url)[0][0]
+		id = id.replace('%2F', '/')
 		serial_id = "NTg4N2RkZmZjMzEyYmYxMDk0ZGU0YmQ1"
 		serial_id = base64.b64decode(serial_id)
 		allid = {"serial_id": serial_id ,"query": id}
