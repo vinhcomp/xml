@@ -2090,12 +2090,14 @@ def get_playable_url(url):
 		return source.json()["stream_url"][0] + agent
 
 	elif url.startswith('uno-'):
+		#url1=url.replace('/vietbay', '')
 		h = {
 		"Content-Type" : "application/x-www-form-urlencoded" ,
 		"User-Agent" : "Dalvik/2.1.0" ,
 		"Accept-Encoding" : "gzip"
 		}
-		id = url.strip().replace("uno-", "")
+		#id = url1.strip().replace("uno-", "")
+		id = re.findall('uno-(.+?)(/|$)', url)[0][0] 
 		serial_id = "NTg4N2RkZmZjMzEyYmYxMDk0ZGU0YmQ1"
 		serial_id = base64.b64decode(serial_id)
 		allid = {"serial_id": serial_id ,"query": id}
@@ -2104,7 +2106,18 @@ def get_playable_url(url):
 		urlfull = "http://echipstore.com:8000/uno/" + keyid
 		source2 = requests.get(urlfull)
 		link = re.compile("(\{.+?\})").findall(source2.text.strip())[0]
-		return json.loads(link)["url"]
+		linkfinal = json.loads(link)["url"]
+		link_tail = re.findall('(/playlist.m3u8.*?)$', linkfinal)[0]
+		if '/vietbay' in url:			
+			return 'http://hls84.lax.v247tv.com/lax86/vietbay_720'+link_tail
+		elif '/vlife' in url:
+			return 'http://df20.hou.v247tv.com/dpi/unonetwork/uno/life'+link_tail
+		elif '/schedule' in url:
+			return 'http://df21.hou.v247tv.com/lax74/schedule'+link_tail
+		elif '/nhacviet' in url:
+			return 'http://df20.hou.v247tv.com/lax86/smil:nhacviet.smil'+link_tail
+		else:
+			return linkfinal
 
 	elif "7streams.online" in url:
 		(resp, content) = http.request(url,"GET",headers=headers1)
