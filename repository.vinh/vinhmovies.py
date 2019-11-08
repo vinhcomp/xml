@@ -956,8 +956,9 @@ def M3UToItems(url_path=""):
 
 	elif url_path.startswith('http://crackstreams.com'):
 		content = requests.get(url_path, headers=headers2).content
-		content = "".join(content.splitlines())
-		item_re = "<a href='(.*?)'.*?<img src='(.*?)'.*?media-heading'>(.*?)<.*?<p>(.*?)</p>"
+		#content = "".join(content.splitlines())
+		#item_re = "<a href='(.*?)'.*?<img src='(.*?)'.*?media-heading'>(.*?)<.*?<p>(.*?)</p>"
+		item_re = "<a href='(.*?)'.*?(?s)<img src='(.*?)'.*?(?s)<h4 class=(.*?)</div>"
 		matchs = re.compile(item_re).findall(content)
 		source_t = requests.get('https://www.timeanddate.com/worldclock/fullscreen.html?n=77', headers=headers2).text
 		try:
@@ -970,11 +971,17 @@ def M3UToItems(url_path=""):
 					'path': 'None'
 		}
 		items = []
-		for path, thumb, label2, label1 in matchs:
+		for path, thumb, info in matchs:
+			label1 = ''
+			label2 = ''
+			thumb = 'http://crackstreams.com'+thumb
 			if path.startswith('/'):
 				path = 'http://crackstreams.com'+path
-			thumb = 'http://crackstreams.com'+thumb
-			label = '[COLOR yellow]'+label1+'[/COLOR]'+', '+'[COLOR lime]'+label2+'[/COLOR]'
+			if 'media-heading' in info:
+				label1 = re.compile("media-heading'>(.*?)</").findall(info)[0]
+			if '<p>' in info:
+				label2 = re.compile("<p>(.*?)</").findall(info)[0]
+			label = '[COLOR lime]'+label2+'[/COLOR]'+', '+'[COLOR yellow]'+label1+'[/COLOR]'
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
@@ -1914,7 +1921,7 @@ def play_url(url, title=""):
 		post_id = re.findall('post_id: (.*?),', source)[0]
 		episode = re.findall('episode: (.*?),', source)[0]
 		server = re.findall('server: (.*?),', source)[0]
-		data = {'action':'halim_ajax_player','nonce':'dabd3ae39f','episode':episode,'server':server,'postid':post_id}		
+		data = {'action':'halim_ajax_player','nonce':'dabd3ae39f','episode':episode,'server':server,'postid':post_id}
 		source2 = requests.post(url2, data=data, verify = False).text
 		if 'ok.ru' in source2:
 			import resolveurl
@@ -1927,7 +1934,7 @@ def play_url(url, title=""):
 			try:
 				linkstream = re.findall('file": "(.*?)"', source2)[0]+'|User-Agent=iPad'
 			except:
-				respone = re.findall('sources: \[(.*?)\]', source2)[0]				
+				respone = re.findall('sources: \[(.*?)\]', source2)[0]
 				link = json.loads(respone)['file']
 				source3 = requests.get(link, headers=headers1).text
 				link_re = re.findall('\n(.*?m3u8)', source3)[0]
