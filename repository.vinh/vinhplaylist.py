@@ -543,15 +543,12 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 			item["is_playable"] = False
 			item["path"] = pluginrootpath + "/executebuiltin/-"
 
-		elif 'blogspot.com' in item["path"]:
-			headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
-			'Accept-Encoding': 'gzip, deflate',}
-			source=requests.get(item["path"], headers=headers)
-			keyid=re.findall('https://pastebin.com/(.*?)"', source.text)[0]
-			link='https://pastebin.com/'+keyid
-			link=link.replace(':', '%3A')
-			link=link.replace('/', '%2F')
-			item["path"]='plugin://plugin.video.vinh.livetv/m3u/'+link
+#		elif 'blogspot.com' in item["path"]:
+#			headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+#			'Accept-Encoding': 'gzip, deflate',}
+#			source=requests.get(item["path"], headers=headers)
+#			link=re.findall('(https://pastebin.com.*?)"', source.text)[0]
+#			item["path"]= pluginrootpath+'/m3u/'+urllib.quote_plus(link)
 
 #		elif "chaturbate.com" in item["path"]:
 #			import util, urllib2
@@ -672,6 +669,14 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				)
 				item["path"] = pluginrootpath + \
 					"/executebuiltin/" + urllib.quote_plus(item["path"])
+
+			elif 'blogspot.com' in item["path"]:
+				headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
+				'Accept-Encoding': 'gzip, deflate',}
+				source=requests.get(item["path"], headers=headers)
+				link=re.findall('(https://pastebin.com.*?)"', source.text)[0]
+				item["path"]=pluginrootpath+'/m3u/'+urllib.quote_plus(link)
+
 			else:
 				# Nếu là direct link thì route đến hàm play_url
 				item["is_playable"] = True
@@ -2041,7 +2046,9 @@ def get_playable_url(url):
 		for n in range(len(link_svs)):
 			try:
 				source3 = requests.get(link_svs[n], headers=headers2).text
-				link = re.findall('(http://sv.tvmienphi.net.*?)\'', source3)[0]
+				link = re.findall('(http://sv.tvmienphi.net.*?|http://.*?m3u8.*?)\'', source3)[0]
+				if '.m3u8' in link:
+					return re.findall('(http://.*?m3u8.*?)\'', source3)[0] #direct link
 				source4 = requests.get(link, headers=headers2).text
 				link2 = re.findall('(http.*?m3u.*?$)', source4)[0]
 				source5 = requests.get(link2, headers=headers2).text
