@@ -1966,7 +1966,11 @@ def play_url(url, title=""):
 		if link.startswith('video.php'):
 			link = url+link
 		source2 = requests.get(link, headers=headers2).text
-		linkstream = re.findall('(http.*?m3u8.*?)"', source2)[0]
+		try:
+			linkstream = re.findall('(http.*?m3u8.*?)"', source2)[0]
+		except:
+			link2 = re.findall("atob\('(.*?)'", source2)[0]
+			linkstream = base64.b64decode(link2)
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
 	elif 'sublink' in url:
