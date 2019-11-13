@@ -401,7 +401,7 @@ def M3UToItems(url_path=""):
 		}
 		source=requests.get(url1, headers=headers1)
 		link=re.findall('(https://pastebin.com.*?)"', source.text)[0]
-		source2 = requests.get(link, headers=headers1).text
+		source2 = requests.get(link, headers=headers1).content
 		matchs = re.findall('\#EXTINF(.*?,)(.*?)\n(.*?)\n',re.findall('%s TV(?s)(.*?)LABEL' % label_c, source2)[0])
 		items = []
 		for info, label, path in matchs:
