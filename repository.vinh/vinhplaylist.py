@@ -392,6 +392,42 @@ def M3UToItems(url_path=""):
 		items = items + [nextitem]
 		return items
 
+	elif url_path.startswith('Fluxustv-'): #Fluxustv-Mexico-https://fluxustv.blogspot.com/p/iptv.html
+		url1 = re.findall('(http.*?)$', url_path)[0]
+		label_c = re.findall('Fluxustv-(.*?)-', url_path)[0]
+		headers1 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+			'Referer':url1,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+		source=requests.get(url1, headers=headers1)
+		link=re.findall('(https://pastebin.com.*?)"', source.text)[0]
+		source2 = requests.get(link, headers=headers1).text
+		matchs = re.findall('\#EXTINF(.*?,)(.*?)\n(.*?)\n',re.findall('%s TV(?s)(.*?)LABEL' % label_c, source2)[0])
+		items = []
+		for info, label, path in matchs:
+			thumb = ""
+			label2 = ""
+			if "tvg-logo" in info:
+				try:
+					thumb = re.compile('tvg-logo="(.*?)"').findall(info)[0]
+				except:
+					thumb = 'none'
+			if "group-title" in info:
+				label2 = re.compile('group-title="(.*?)"').findall(info)[0]
+			if label2 != "":
+				label2 = "[%s] " % label2.strip()
+			label = "%s%s" % (label2, label.strip())
+			item = {
+				"label": label,
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		return items
+
 	else:
 		item_re = '\#EXTINF(.*?,)(.*?)\n(.*?)\n'
 		(resp, content) = http.request(
@@ -670,7 +706,8 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				item["path"] = pluginrootpath + \
 					"/executebuiltin/" + urllib.quote_plus(item["path"])
 
-			elif 'blogspot.com' in item["path"]:
+			#elif 'blogspot.com' in item["path"]:
+			elif item["path"].startswith('https://fluxustv.blogspot.com') or item["path"].startswith('https://fluxustvespanol.blogspot.com'):
 				headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
 				'Accept-Encoding': 'gzip, deflate',}
 				source=requests.get(item["path"], headers=headers)
