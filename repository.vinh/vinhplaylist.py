@@ -1976,47 +1976,48 @@ def get_playable_url(url):
 				pass
 
 	elif url.startswith('http://xemtivihot.com'):
-		source = requests.get(url, headers=headers4).text
-		referer = re.findall('Myiframe" src="(.*?)"', source)[0]
+#		source = requests.get(url, headers=headers4).text
+#		referer = re.findall('Myiframe" src="(.*?)"', source)[0]
+#		headers2 = {
+#			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+#			'Accept':'Mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+#			'Accept-Encoding':'gzip, deflate',
+#			"Accept-Language": "en-US,en;q=0.9,vi;q=0.8",
+#		}
+#		source2 = requests.get(referer, headers=headers2).text
+#		link_svs = re.findall("link=(.*?);play", source2)[0]
+#		if '[' in link_svs:
+#			link_svs = re.findall("'(.*?)'", link_svs)[:]
+#		for n in range(len(link_svs)): #5 servers
+#			try:
+#				source3 = requests.get(link_svs[n], headers=headers2).text
+#				link = re.findall('(http.*?m3u.*?$)', source3)[0]
+#				source4 = requests.get(link, headers=headers2).text
+#				try:
+#					return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
+#				except: # for SCTV
+#					link_id = re.findall('(http.*?)playlist', link)[0]
+#					link_re = re.findall('(chunklist.*?\s)', source4)[0]
+#					return link_id+link_re
+#			except:
+#				pass
+		source = requests.get(url, headers=headers1).text
+		link_svid = re.findall('srvid="(.*?)"', source)[:]
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
 			'Accept':'Mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
 			'Accept-Encoding':'gzip, deflate',
 			"Accept-Language": "en-US,en;q=0.9,vi;q=0.8",
 		}
-		source2 = requests.get(referer, headers=headers2).text
-		link_svs = re.findall("link=(.*?);play", source2)[0]
-		if '[' in link_svs:
-			link_svs = re.findall("'(.*?)'", link_svs)[:]
-#		try:
-#			source3 = requests.get(link_svs[0], headers=headers2).text
-#			link = re.findall('(http.*?m3u.*?$)', source3)[0]
-#			source4 = requests.get(link, headers=headers2).text
-#			return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
-#		except:
-#			try:
-#				source3 = requests.get(link_svs[1], headers=headers2).text
-#				link = re.findall('(http.*?m3u.*?$)', source3)[0]
-#				source4 = requests.get(link, headers=headers2).text
-#				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
-#			except:
-#				source3 = requests.get(link_svs[2], headers=headers2).text
-#				link = re.findall('(http.*?m3u.*?$)', source3)[0]
-#				source4 = requests.get(link, headers=headers2).text
-#				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
-		for n in range(len(link_svs)): #5 servers
+		for n in range(len(link_svid)):
 			try:
-				source3 = requests.get(link_svs[n], headers=headers2).text
-				link = re.findall('(http.*?m3u.*?$)', source3)[0]
-				source4 = requests.get(link, headers=headers2).text
-				try:
-					return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
-				except: # for SCTV
-					link_id = re.findall('(http.*?)playlist', link)[0]
-					link_re = re.findall('(chunklist.*?\s)', source4)[0]
-					return link_id+link_re
+				source2 = requests.get(link_svid[n], headers=headers2).text
+				link = re.findall("'(http.*?xemtivihot.*?)'", source2)[0]
+				source3 = requests.get(link, headers=headers2).text
+				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
+				source4 = requests.get(link2, headers=headers2).text
+				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
 			except:
-				#n=n-1
 				pass
 
 	#http://www.tivi12h.net/ok/k-1.php
@@ -2105,6 +2106,30 @@ def get_playable_url(url):
 						#	url = link2 #incase direct link with no mono
 			except:
 				#n=n-1
+				pass
+
+	elif url.startswith('http://www.xemtvtructuyen'):
+		source = requests.get(url, headers=headers4).text
+		sv_ids = re.findall('name="(ok.*?)"', source)[:]
+		headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+			'Accept':'Mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+			'Accept-Encoding':'gzip, deflate',
+			"Accept-Language": "en-US,en;q=0.9,vi;q=0.8",
+		}
+		link_svids = []
+		for sv_id in sv_ids:
+			link_svid = 'http://www.xemtvtructuyen.net/'+sv_id
+			link_svids += [link_svid]
+		for n in range(len(link_svids)):
+			try:
+				source2 = requests.get(link_svids[n], headers=headers2).text
+				link = re.findall("'(http.*?token.*?)'", source2)[0]
+				source3 = requests.get(link, headers=headers2).text
+				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
+				source4 = requests.get(link2, headers=headers2).text
+				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
+			except:
 				pass
 
 	elif "https://vtvgo.vn" in url:
@@ -2289,7 +2314,7 @@ def get_playable_url(url):
 	elif url.startswith('https://www.dailymotion.com'):
 		did = re.compile("/(\w+)$").findall(url)[0] #from special cha
 		return "plugin://plugin.video.dailymotion_com/?url=%s&mode=playVideo" % did
-	elif url.startswith('https://www.twitch.tv'):
+	elif url.startswith('https://www.twitch.tv'): #https://www.twitch.tv/262007062
 		did = re.compile("/(\w+)$").findall(url)[0]
 		return "plugin://plugin.video.twitch/?channel_id=%s&mode=play&quot" % did
 	else:
