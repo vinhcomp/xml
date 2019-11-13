@@ -2289,6 +2289,9 @@ def get_playable_url(url):
 	elif url.startswith('https://www.dailymotion.com'):
 		did = re.compile("/(\w+)$").findall(url)[0] #from special cha
 		return "plugin://plugin.video.dailymotion_com/?url=%s&mode=playVideo" % did
+	elif url.startswith('https://www.twitch.tv'):
+		did = re.compile("/(\w+)$").findall(url)[0]
+		return "plugin://plugin.video.twitch/?channel_id=%s&mode=play&quot" % did
 	else:
 		if "://" not in url:
 			url = None
