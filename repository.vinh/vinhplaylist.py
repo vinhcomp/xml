@@ -2096,8 +2096,10 @@ def get_playable_url(url):
 				link = re.findall('(http://sv.tvmienphi.net.*?)\'', source3)[0]
 				source4 = requests.get(link, headers=headers2).text
 				source4 = "".join(source4.splitlines())
-				source4 = source4.replace('=﻿', '=') # '﻿' specail cha, will see in othter text
-				link2 = re.findall('(http.*?m3u.*?)$', source4)[0]
+				#source4 = source4.replace('=﻿', '=') # '﻿' specail cha, will see in othter text
+				source4 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&]', '', source4) #get special char after *
+				#link2 = re.findall('(http.*?m3u.*?)$', source4)[0]
+				link2 = re.findall('(http://27.*?m3u.*?=*?)$', source4)[0]
 				source5 = requests.get(link2, headers=headers2).text
 				if '/sd' in url:
 					return re.findall('(http.*?1.m3u8.*?\s)', source5)[0]
