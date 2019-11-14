@@ -1964,6 +1964,8 @@ def get_playable_url(url):
 				source3 = requests.get(link_svs[n], headers=headers2).text
 				link = re.findall('(http://apps.101vn.com.*?|http://tivis.101vn.com.*?)"', source3)[0]
 				source4 = requests.get(link, headers=headers2).text
+				source4 = "".join(source4.splitlines())
+				source4 = source4.replace('﻿', '')
 				if '/sd' in url:
 					return re.findall('(http.*?1.m3u8.*?\s)', source4)[0]
 				else:
@@ -2014,6 +2016,8 @@ def get_playable_url(url):
 				source2 = requests.get(link_svid[n], headers=headers2).text
 				link = re.findall("'(http.*?xemtivihot.*?)'", source2)[0]
 				source3 = requests.get(link, headers=headers2).text
+				source3 = "".join(source3.splitlines())
+				source3 = source3.replace('﻿', '') # '﻿' specail cha, will see in othter text
 				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
 				source4 = requests.get(link2, headers=headers2).text
 				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
@@ -2092,7 +2096,7 @@ def get_playable_url(url):
 				link = re.findall('(http://sv.tvmienphi.net.*?)\'', source3)[0]
 				source4 = requests.get(link, headers=headers2).text
 				source4 = "".join(source4.splitlines())
-				source4 = source4.replace('=﻿', '=') # '=﻿' specail cha, will see in othter text
+				source4 = source4.replace('﻿', '') # '﻿' specail cha, will see in othter text
 				link2 = re.findall('(http.*?m3u.*?)$', source4)[0]
 				source5 = requests.get(link2, headers=headers2).text
 				if '/sd' in url:
@@ -2126,8 +2130,10 @@ def get_playable_url(url):
 		for n in range(len(link_svids)):
 			try:
 				source2 = requests.get(link_svids[n], headers=headers2).text
-				link = re.findall("'(http.*?aiva.tivi12h.*?)'", source2)[0]
+				link = re.findall("'(http.*?token.*?)'", source2)[0]
 				source3 = requests.get(link, headers=headers2).text
+				source3 = "".join(source3.splitlines())
+				source3 = source3.replace('﻿', '') # '﻿' specail cha, will see in othter text
 				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
 				source4 = requests.get(link2, headers=headers2).text
 				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
