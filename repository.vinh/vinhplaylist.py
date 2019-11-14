@@ -1965,7 +1965,8 @@ def get_playable_url(url):
 				link = re.findall('(http://apps.101vn.com.*?|http://tivis.101vn.com.*?)"', source3)[0]
 				source4 = requests.get(link, headers=headers2).text
 				source4 = "".join(source4.splitlines())
-				source4 = source4.replace('﻿', '')
+				#source4 = source4.replace('﻿', '')
+				source4 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&]', '', source4) #get special char after *
 				if '/sd' in url:
 					return re.findall('(http.*?1.m3u8.*?\s)', source4)[0]
 				else:
@@ -2100,7 +2101,7 @@ def get_playable_url(url):
 				#source4 = source4.replace('=﻿', '=') # '﻿' specail cha, will see in othter text
 				source4 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&]', '', source4) #get special char after *
 				#link2 = re.findall('(http.*?m3u.*?)$', source4)[0]
-				link2 = re.findall('(http://27.*?m3u.*?=*?)$', source4)[0]
+				link2 = re.findall('(http.*?.m3u8.*?)$', source4)[0]
 				source5 = requests.get(link2, headers=headers2).text
 				if '/sd' in url:
 					return re.findall('(http.*?1.m3u8.*?\s)', source5)[0]
