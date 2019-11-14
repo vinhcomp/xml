@@ -2111,7 +2111,6 @@ def get_playable_url(url):
 						#except:
 						#	url = link2 #incase direct link with no mono
 			except:
-				#n=n-1
 				pass
 
 	elif url.startswith('http://www.xemtvtructuyen'):
