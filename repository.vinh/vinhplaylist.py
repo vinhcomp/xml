@@ -2087,11 +2087,13 @@ def get_playable_url(url):
 		for n in range(len(link_svs)):
 			try:
 				source3 = requests.get(link_svs[n], headers=headers2).text
-				link = re.findall('(http://sv.tvmienphi.net.*?|http://.*?m3u8.*?)\'', source3)[0]
-				if '.m3u8' in link:
-					return re.findall('(http://.*?m3u8.*?)\'', source3)[0] #direct link
+				if 'vcdn.com' in source3: #direct link in source3, vl1 vip
+					return re.findall('(http://.*?m3u8.*?)\'', source3)[0]
+				link = re.findall('(http://sv.tvmienphi.net.*?)\'', source3)[0]
 				source4 = requests.get(link, headers=headers2).text
-				link2 = re.findall('(http.*?m3u.*?$)', source4)[0]
+				source4 = "".join(source4.splitlines())
+				source4 = source4.replace('=﻿', '=') # '=﻿' specail cha, will see in othter text
+				link2 = re.findall('(http.*?m3u.*?)$', source4)[0]
 				source5 = requests.get(link2, headers=headers2).text
 				if '/sd' in url:
 					return re.findall('(http.*?1.m3u8.*?\s)', source5)[0]
@@ -2124,7 +2126,7 @@ def get_playable_url(url):
 		for n in range(len(link_svids)):
 			try:
 				source2 = requests.get(link_svids[n], headers=headers2).text
-				link = re.findall("'(http.*?token.*?)'", source2)[0]
+				link = re.findall("'(http.*?aiva.tivi12h.*?)'", source2)[0]
 				source3 = requests.get(link, headers=headers2).text
 				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
 				source4 = requests.get(link2, headers=headers2).text
