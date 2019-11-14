@@ -1964,9 +1964,10 @@ def get_playable_url(url):
 				source3 = requests.get(link_svs[n], headers=headers2).text
 				link = re.findall('(http://apps.101vn.com.*?|http://tivis.101vn.com.*?)"', source3)[0]
 				source4 = requests.get(link, headers=headers2).text
-				source4 = "".join(source4.splitlines())
+				source4 = "".join(source4.split())
+				#source4 = "".join(source4.splitlines())
 				#source4 = source4.replace('﻿', '')
-				source4 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&]', '', source4) #get special char after *
+				source4 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&*_*-*^*%*$*!*~*`*#*@*(*)*|]', '', source4) #get special char after *
 				if '/sd' in url:
 					return re.findall('(http.*?1.m3u8.*?\s)', source4)[0]
 				else:
@@ -2017,21 +2018,43 @@ def get_playable_url(url):
 				source2 = requests.get(link_svid[n], headers=headers2).text
 				link = re.findall("'(http.*?xemtivihot.*?)'", source2)[0]
 				source3 = requests.get(link, headers=headers2).text
-				source3 = "".join(source3.splitlines())
+				source3 = "".join(source3.split())
+				#source3 = "".join(source3.splitlines())
 				#source3 = source3.replace('﻿', '') # '﻿' specail cha, will see in othter text
-				source3 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&]', '', source3) #get special char after *
+				source3 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&*_*-*^*%*$*!*~*`*#*@*(*)*|]', '', source3) #get special char after *
 				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
 				source4 = requests.get(link2, headers=headers2).text
 				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
 			except:
 				pass
 
-	#http://www.tivi12h.net/ok/k-1.php
 	elif url.startswith('http://www.tivi12h.net'):
-		source = requests.get(url, headers=headers1).text
-		link = re.findall('(http://z.tivi12h.net.*?)\'', source)[0]
-		source = requests.get(link, headers=headers1).text
-		return re.findall('(http.*?$)', source)[0]
+		source = requests.get(url, headers=headers4).text
+		sv_ids = re.findall('name="(ok.*?)"', source)[:]
+		headers2 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+			'Accept':'Mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+			'Accept-Encoding':'gzip, deflate',
+			"Accept-Language": "en-US,en;q=0.9,vi;q=0.8",
+		}
+		link_svids = []
+		for sv_id in sv_ids:
+			link_svid = 'http://www.tivi12h.net/'+sv_id
+			link_svids += [link_svid]
+		for n in range(len(link_svids)):
+			try:
+				source2 = requests.get(link_svids[n], headers=headers2).text
+				link = re.findall("'(http.*?token.*?)'", source2)[0]
+				source3 = requests.get(link, headers=headers2).text
+				source3 = "".join(source3.split())
+				#source3 = "".join(source3.splitlines())
+				#source3 = source3.replace('﻿', '') # '﻿' specail cha, will see in othter text
+				source3 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&*_*-*^*%*$*!*~*`*#*@*(*)*|]', '', source3) #get special char after *
+				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
+				source4 = requests.get(link2, headers=headers2).text
+				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
+			except:
+				pass
 
 	#http://sv.tvmienphi.net/ok/htv/htv12.php
 	elif url.startswith('http://sv.tvmienphi.net'):
@@ -2097,9 +2120,10 @@ def get_playable_url(url):
 					return re.findall('(http://.*?m3u8.*?)\'', source3)[0]
 				link = re.findall('(http://sv.tvmienphi.net.*?)\'', source3)[0]
 				source4 = requests.get(link, headers=headers2).text
-				source4 = "".join(source4.splitlines())
+				source4 = "".join(source4.split())
+				#source4 = "".join(source4.splitlines())
 				#source4 = source4.replace('=﻿', '=') # '﻿' specail cha, will see in othter text
-				source4 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&]', '', source4) #get special char after *
+				source4 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&*_*-*^*%*$*!*~*`*#*@*(*)*|]', '', source4) #get special char after *
 				#link2 = re.findall('(http.*?m3u.*?)$', source4)[0]
 				link2 = re.findall('(http.*?.m3u8.*?)$', source4)[0]
 				source5 = requests.get(link2, headers=headers2).text
@@ -2135,9 +2159,10 @@ def get_playable_url(url):
 				source2 = requests.get(link_svids[n], headers=headers2).text
 				link = re.findall("'(http.*?token.*?)'", source2)[0]
 				source3 = requests.get(link, headers=headers2).text
-				source3 = "".join(source3.splitlines())
+				source3 = "".join(source3.split())
+				#source3 = "".join(source3.splitlines())
 				#source3 = source3.replace('﻿', '') # '﻿' specail cha, will see in othter text
-				source3 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&]', '', source3) #get special char after *
+				source3 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&*_*-*^*%*$*!*~*`*#*@*(*)*|]', '', source3) #get special char after *
 				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
 				source4 = requests.get(link2, headers=headers2).text
 				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
