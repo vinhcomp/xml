@@ -2017,7 +2017,8 @@ def get_playable_url(url):
 				link = re.findall("'(http.*?xemtivihot.*?)'", source2)[0]
 				source3 = requests.get(link, headers=headers2).text
 				source3 = "".join(source3.splitlines())
-				source3 = source3.replace('﻿', '') # '﻿' specail cha, will see in othter text
+				#source3 = source3.replace('﻿', '') # '﻿' specail cha, will see in othter text
+				source3 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&]', '', source3) #get special char after *
 				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
 				source4 = requests.get(link2, headers=headers2).text
 				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
@@ -2134,7 +2135,8 @@ def get_playable_url(url):
 				link = re.findall("'(http.*?token.*?)'", source2)[0]
 				source3 = requests.get(link, headers=headers2).text
 				source3 = "".join(source3.splitlines())
-				source3 = source3.replace('﻿', '') # '﻿' specail cha, will see in othter text
+				#source3 = source3.replace('﻿', '') # '﻿' specail cha, will see in othter text
+				source3 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&]', '', source3) #get special char after *
 				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
 				source4 = requests.get(link2, headers=headers2).text
 				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
