@@ -2044,6 +2044,8 @@ def get_playable_url(url):
 		for n in range(len(link_svids)):
 			try:
 				source2 = requests.get(link_svids[n], headers=headers2).text
+				if '.m3u8' in source2:
+					return re.findall('"(http.*?.m3u8.*?)"', source2)[0]
 				link = re.findall("'(http.*?token.*?)'", source2)[0]
 				source3 = requests.get(link, headers=headers2).text
 				source3 = "".join(source3.split())
