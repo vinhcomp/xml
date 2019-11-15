@@ -2045,17 +2045,17 @@ def get_playable_url(url):
 			link_svids += [link_svid]
 		for n in range(len(link_svids)):
 			try:
-				source2 = requests.get(link_svids[n], headers=headers2).text
+				source2 = requests.get(link_svids[n], headers=headers4).text
 				if '.m3u8' in source2:
 					return re.findall('"(http.*?.m3u8.*?)"', source2)[0]
 				link = re.findall("'(http.*?token.*?)'", source2)[0]
-				source3 = requests.get(link, headers=headers2).text
+				source3 = requests.get(link, headers=headers1).text
 				source3 = "".join(source3.split())
 				#source3 = "".join(source3.splitlines())
 				#source3 = source3.replace('﻿', '') # '﻿' specail cha, will see in othter text
 				source3 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&*_*-*^*%*$*!*~*`*#*@*(*)*|]', '', source3) #get special char after *
 				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
-				source4 = requests.get(link2, headers=headers2).text
+				source4 = requests.get(link2, headers=headers4).text
 				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
 			except:
 				pass
