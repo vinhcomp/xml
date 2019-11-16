@@ -851,13 +851,15 @@ def M3UToItems(url_path=""):
 		return items
 
 	#elif any(url_path.startswith(domain) for domain in ['http://worldkodi.com', 'http://colussus.net/', 'http://builds.kodiuk.tv']):
-	elif url_path.endswith('.xml'):
+	elif url_path.endswith('.xml') or url_path.endswith('linkxml'):
+		url = url_path.replace('/linkxml', '')
 		content = requests.get(url_path, headers=headers2).content
 		if '<item>' in content:
 			#content = "".join(content.splitlines())
 			#item_re = '.*?<title>(.*?)</title>.*?<link>(.*?)</link>.*?<thumbnail>(.*?)</thu.*?nail>'
 			#matchs = re.compile(item_re).findall(content)
-			matchs = re.findall('<item>.+?(?s)<title>([^</]+).+?(?s)<link>(?s)(.*?)</lin.+?(?s)<thumbnail>(.*?)</thumb',content)[:] #(.?)included lines, ([])special char
+			#matchs = re.findall('<item>.+?(?s)<title>([^\</]+).+?(?s)<link>(?s)(.*?)</lin.+?(?s)<thumbnail>(.*?)</thumb',content)[:] #(.?)included lines, ([])special char
+			matchs = re.findall('<item>.+?(?s)<title>(.*?)</t.+?(?s)<link>(?s)(.*?)</lin.+?(?s)<thumbnail>(.*?)</thumb',content)[:]
 			items = []
 			for label, path, thumb in matchs:
 				item = {
@@ -2012,13 +2014,15 @@ def play_url(url, title=""):
 		linkstream = re.findall("file:\"(https.*?)\"", decode)[0]
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
-	elif url.startswith('https://ok.ru') or url.startswith('https://www.facebook.com'):
+	#elif url.startswith('https://ok.ru') or url.startswith('https://www.facebook.com')  or url.startswith('https://www.fembed.com'):
+	elif any(url.startswith(domain) for domain in (['https://ok.ru', 'https://www.facebook.com', 'https://www.fembed.com', 'https://vidoza.net', \
+		'https://verystream.com', 'https://clicknupload.org', 'https://streamango.com'])):
 		import resolveurl
 		url = resolveurl.resolve(url)
-		plugin.set_resolved_url(url, subtitles=vsub)
+		plugin.set_resolved_url(url)
 
 	else:
-		plugin.set_resolved_url(url, subtitles=vsub)
+		plugin.set_resolved_url(url)
 
 def notice(
 	banner = "Channel is Offline Now - Please Try Again Later",
