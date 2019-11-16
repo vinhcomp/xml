@@ -2070,11 +2070,11 @@ def get_playable_url(url):
 		source = requests.get(url, headers=headers4).text
 		link = re.findall('id="video-iframe" src="(.*?)"', source)[0]
 		if 'http' not in link:
-  			link = 'http:%s' % link
-			source2 = requests.get(link, headers=headers4).text
-			link2 = re.findall('(http.*?.m3u8.*?)"', source2)[0]
-			source3 = requests.get(link2, headers=headers4).text
-			return re.findall('(http.*?2.m3u8.*?\s)', source3)[0]
+			link = 'http:%s' % link
+		source2 = requests.get(link, headers=headers4).text
+		link2 = re.findall('(http.*?.m3u8.*?)"', source2)[0]
+		source3 = requests.get(link2, headers=headers4).text
+		return re.findall('(http.*?2.m3u8.*?\s)', source3)[0]
 
 	#http://sv.tvmienphi.net/ok/htv/htv12.php
 	elif url.startswith('http://sv.tvmienphi.net'):
