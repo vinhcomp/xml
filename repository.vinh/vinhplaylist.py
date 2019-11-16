@@ -2048,7 +2048,7 @@ def get_playable_url(url):
 				source2 = requests.get(link_svids[n], headers=headers4).text
 				if '.m3u8' in source2:
 					return re.findall('"(http.*?.m3u8.*?)"', source2)[0]
-				if 'http://playi.cf' in source2:
+				if 'http://playi.cf' in source2: #from bongda
 					link_cf = re.findall('src="(.*?)"', source2)[0]
 					source_cf = requests.get(link_cf, headers=headers1).text
 					link_cf2 = re.findall('(http.*?.m3u8.*?)"', source_cf)[0]
@@ -2065,6 +2065,16 @@ def get_playable_url(url):
 				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
 			except:
 				pass
+
+	elif url.startswith('http://bongda365.live'):
+		source = requests.get(url, headers=headers4).text
+		link = re.findall('id="video-iframe" src="(.*?)"', source)[0]
+		if 'http' not in link:
+  			link = 'http:%s' % link
+			source2 = requests.get(link, headers=headers4).text
+			link2 = re.findall('(http.*?.m3u8.*?)"', source2)[0]
+			source3 = requests.get(link2, headers=headers4).text
+			return re.findall('(http.*?2.m3u8.*?\s)', source3)[0]
 
 	#http://sv.tvmienphi.net/ok/htv/htv12.php
 	elif url.startswith('http://sv.tvmienphi.net'):
