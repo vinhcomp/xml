@@ -2071,6 +2071,8 @@ def get_playable_url(url):
 		link = re.findall('id="video-iframe" src="(.*?)"', source)[0]
 		if 'http' not in link:
 			link = 'http:%s' % link
+		if 'http://cafefootball' in link:
+			return re.findall('(http://cafefootball.*?.m3u8.*?)$', link)[0]
 		source2 = requests.get(link, headers=headers4).text
 		link2 = re.findall('(http.*?.m3u8.*?)"', source2)[0]
 		source3 = requests.get(link2, headers=headers4).text
