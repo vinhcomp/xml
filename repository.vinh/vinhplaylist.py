@@ -2207,7 +2207,8 @@ def get_playable_url(url):
 		sig = json.loads(source3)['sig']
 		token2 = urllib.quote_plus(token)
 		return 'https://usher.ttvnw.net/api/channel/hls/%s.m3u8?allow_source=true&baking_bread=true&baking_brownies=true&baking_brownies_timeout=1050&' \
-			'fast_bread=true&p=8635191&player_backend=mediaplayer&playlist_include_framerate=true&reassignments_supported=true&sig=%s&token=%s' % (ch_name, sig, token2)
+			'fast_bread=true&p=8635191&player_backend=mediaplayer&playlist_include_framerate=true&reassignments_supported=true&sig=%s&token=%s' \
+			% (ch_name, sig, token2)
 
 	elif "https://vtvgo.vn" in url:
 		header = {
@@ -2510,7 +2511,7 @@ def GA(title="Home", page="/"):
 		client_id = open(cid_path).read()
 		data = {
 			'v': '1',
-			'tid': 'UA-52209804-5',  # Thay GA id của bạn ở đây
+			'tid': 'UA-152683364-1', # 'UA-52209804-5',  # Thay GA id của bạn ở đây
 			'cid': client_id,
 			't': 'pageview',
 			'dp': "VNPlaylist%s" % page,
