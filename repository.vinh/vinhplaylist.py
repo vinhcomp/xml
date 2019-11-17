@@ -2191,15 +2191,15 @@ def get_playable_url(url):
 			except:
 				pass
 
-	elif url.startswith('https://player.twitch.tv'):
-		source = requests.get(url).text
-		link_cl = 'https://player.twitch.tv/'+re.findall('(js/video.*?)"', source)[0]
-		source2 = requests.get(link_cl).text
-		client_id = re.findall('Client-ID":"(.*?)"', source2)[0]
+	elif url.startswith('https://twitch.tv'):
+#		source = requests.get(url).text
+#		link_cl = 'https://player.twitch.tv/'+re.findall('(js/video.*?)"', source)[0]
+#		source2 = requests.get(link_cl).text
+#		client_id = re.findall('Client-ID":"(.*?)"', source2)[0]
+		client_id = re.findall('client_id=(.*?)$', url)[0]
 		headers2 = {
 		'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
 		'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-		'Referer':url,
 		'client-id': client_id,
 		}
 		link_gettk = 'https://api.twitch.tv/api/channels/todaytvs/access_token?need_https=true&oauth_token&platform=web&player_backend=mediaplayer&player_type=popout'
