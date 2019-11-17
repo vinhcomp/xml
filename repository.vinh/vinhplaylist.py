@@ -2191,24 +2191,23 @@ def get_playable_url(url):
 			except:
 				pass
 
-	elif url.startswith('https://twitch.tv'):
-#		source = requests.get(url).text
-#		link_cl = 'https://player.twitch.tv/'+re.findall('(js/video.*?)"', source)[0]
-#		source2 = requests.get(link_cl).text
-#		client_id = re.findall('Client-ID":"(.*?)"', source2)[0]
-		client_id = re.findall('client_id=(.*?)$', url)[0]
+	elif url.startswith('https://www.twitch.tv'):
+		source = requests.get(url).text
+		client_id = re.findall('Client-ID":"(.*?)"', source)[0]
+		ch_name = re.findall('/(\w+)$', url)[0]
 		headers2 = {
 		'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
 		'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
 		'client-id': client_id,
 		}
-		link_gettk = 'https://api.twitch.tv/api/channels/todaytvs/access_token?need_https=true&oauth_token&platform=web&player_backend=mediaplayer&player_type=popout'
+		link_gettk = 'https://api.twitch.tv/api/channels/%s/access_token?need_https=true&oauth_token&platform=web&player_backend=mediaplayer&player_type=popout' \
+			% ch_name
 		source3 = requests.get(link_gettk, headers=headers2).text
 		token = json.loads(source3)['token']
 		sig = json.loads(source3)['sig']
 		token2 = urllib.quote_plus(token)
-		return 'https://usher.ttvnw.net/api/channel/hls/todaytvs.m3u8?allow_source=true&baking_bread=true&baking_brownies=true&baking_brownies_timeout=1050&' \
-			'fast_bread=true&p=8635191&player_backend=mediaplayer&playlist_include_framerate=true&reassignments_supported=true&sig=%s&token=%s' % (sig, token2)
+		return 'https://usher.ttvnw.net/api/channel/hls/%s.m3u8?allow_source=true&baking_bread=true&baking_brownies=true&baking_brownies_timeout=1050&' \
+			'fast_bread=true&p=8635191&player_backend=mediaplayer&playlist_include_framerate=true&reassignments_supported=true&sig=%s&token=%s' % (ch_name, sig, token2)
 
 	elif "https://vtvgo.vn" in url:
 		header = {
@@ -2392,9 +2391,9 @@ def get_playable_url(url):
 	elif url.startswith('https://www.dailymotion.com'):
 		did = re.compile("/(\w+)$").findall(url)[0] #from special cha
 		return "plugin://plugin.video.dailymotion_com/?url=%s&mode=playVideo" % did
-	elif url.startswith('https://www.twitch.tv'): #https://www.twitch.tv/262007062
-		did = re.compile("/(\w+)$").findall(url)[0]
-		return "plugin://plugin.video.twitch/?channel_id=%s&mode=play&quot" % did
+#	elif url.startswith('https://www.twitch.tv'): #https://www.twitch.tv/262007062
+#		did = re.compile("/(\w+)$").findall(url)[0]
+#		return "plugin://plugin.video.twitch/?channel_id=%s&mode=play&quot" % did
 	else:
 		if "://" not in url:
 			url = None
