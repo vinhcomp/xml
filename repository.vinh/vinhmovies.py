@@ -996,6 +996,41 @@ def M3UToItems(url_path=""):
 		items = [notice_time]+items
 		return items
 
+	elif url_path.startswith('https://daddylive.live'):
+		url1='https://daddylive.live/'
+		sport_name=re.findall('/(\w+)$', url_path)[0]
+		content = requests.get(url1, headers=headers2).content
+		matchs = re.findall('(<p>.*?|<br />.*?)<a href="(.*?)".*?;">(.*?)</', re.findall('%s</span>(.*?)(?s)</a></p>' % sport_name, content)[0])
+		source_t = requests.get('https://www.timeanddate.com/worldclock/fullscreen.html?n=69', headers=headers2).text
+		try:
+			label_t = re.findall('<div id=i_time>(.*?)</div>', source_t)[0]
+		except:
+			label_t = ''
+		notice_time = {
+					'label': '------------ '+'[COLOR lime]'+label_t+'[/COLOR]'+'[COLOR red] Giờ UK GMT+1 - UK GMT+1 Time [/COLOR]------------',
+					'thumbnail': 'https://c.tadst.com/gfx/tzpage/cet.1573308000.png?1292',
+					'path': 'None'
+		}
+		items = []
+		for label1, path, label2 in matchs:
+			#label1 = ''
+			thumb = 'https://t3.ftcdn.net/jpg/00/17/46/90/240_F_17469077_tbWv6MUkv0wMWdZNO7uZnf8QUFCVjtoS.jpg'
+			if '<p>' or '<br />' in label1:
+				label1 = label1.replace('<p>', '')
+				label1 = label1.replace('<br />', '')
+			label = '[COLOR lime]'+label1+'[/COLOR]'+', '+'[COLOR yellow]'+label2+'[/COLOR]'
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		items = [notice_time]+items
+		return items
+
 	elif url_path.startswith('https://ok.ru'):
 		content = requests.get(url_path, headers=headers2).content
 		content = "".join(content.splitlines())
@@ -1973,6 +2008,19 @@ def play_url(url, title=""):
 		except:
 			link2 = re.findall("atob\('(.*?)'", source2)[0]
 			linkstream = base64.b64decode(link2)
+		plugin.set_resolved_url(linkstream, subtitles=vsub)
+
+	elif url.startswith('https://daddylive.live'):
+		source1 = requests.get(url, headers=headers2).text
+		link = re.findall('iframe src="(https://wstream.to.*?)"', source1)[0]
+		referer = 'https://daddylive.live/'
+		h = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+			'Referer':referer,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
+		source2 = requests.get(link, headers=h).text
+		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source2)[0]).replace('\\', '')
+		linkstream = re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+link
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
 	elif 'sublink' in url:
