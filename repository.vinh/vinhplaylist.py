@@ -2044,7 +2044,7 @@ def get_playable_url(url):
 
 	elif url.startswith('http://www.tivi12h.net'):
 		source = requests.get(url, headers=headers4).text
-		sv_ids = re.findall('name="(ok.*?)"', source)[:]
+		sv_ids = re.findall('" name="(.*?)"', source)[:]
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
 			'Accept':'Mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
@@ -2058,23 +2058,22 @@ def get_playable_url(url):
 		for n in range(len(link_svids)):
 			try:
 				source2 = requests.get(link_svids[n], headers=headers4).text
-				if '.m3u8' in source2:
-					return re.findall('"(http.*?.m3u8.*?)"', source2)[0]
+#				if '.m3u8' in source2:
+#					return re.findall('"(http.*?.m3u8.*?)"', source2)[0]
 				#if 'http://playi.cf' in source2: #from bongda
 				#	link_cf = re.findall('src="(.*?)"', source2)[0]
 				#	source_cf = requests.get(link_cf, headers=headers1).text
 				#	link_cf2 = re.findall('(http.*?.m3u8.*?)"', source_cf)[0]
 				#	source_cf2 = requests.get(link_cf2, headers=headers1).text
 				#	return re.findall('(http.*?2.m3u8.*?\s)', source_cf2)[0]
-				link = re.findall("'(http.*?token.*?)'", source2)[0]
-				source3 = requests.get(link, headers=headers1).text
-				source3 = "".join(source3.split())
-				#source3 = "".join(source3.splitlines())
-				#source3 = source3.replace('﻿', '') # '﻿' specail cha, will see in othter text
-				source3 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&*_*-*^*%*$*!*~*`*#*@*(*)*|]', '', source3) #get special char after *
-				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
-				source4 = requests.get(link2, headers=headers4).text
-				return re.findall('(http.*?2.m3u8.*?\s)', source4)[0]
+#				link = re.findall("'(http.*?token.*?)'", source2)[0]
+#				source3 = requests.get(link, headers=headers1).text
+#				source3 = "".join(source3.split())
+#				source3 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&*_*-*^*%*$*!*~*`*#*@*(*)*|]', '', source3) #get special char after *
+#				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
+				link = re.findall('(http.*?.m3u8.*?)"', source2)[0]
+				source3 = requests.get(link, headers=headers4).text
+				return re.findall('(http.*?1.m3u8.*?\s)', source3)[0]
 			except:
 				pass
 
