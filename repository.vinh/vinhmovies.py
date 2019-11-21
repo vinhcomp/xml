@@ -1000,7 +1000,13 @@ def M3UToItems(url_path=""):
 		url1='https://daddylive.live/'
 		sport_name=re.findall('/(\w+)$', url_path)[0]
 		content = requests.get(url1, headers=headers2).content
-		matchs = re.findall('(<p>.*?|<br />.*?)<a href="(.*?)".*?;">(.*?)</', re.findall('%s</span>(.*?)(?s)</a></p>' % sport_name, content)[0])
+		#matchs = re.findall('(<p>.*?|<br />.*?)<a href="(.*?)".*?;">(.*?)</', re.findall('%s</span>(.*?)(?s)</a></p>' % sport_name, content)[0])
+		match = re.findall('>%s</span>(.*?)(?s)</a></p>' % sport_name, content)
+		matchs = []
+		for n in range(len(match)):
+			match2 = re.findall('(<p>.*?|<br />.*?)<a href="(.*?)".*?;">(.*?)</', match[n])
+			matchs += match2
+
 		source_t = requests.get('https://www.timeanddate.com/worldclock/fullscreen.html?n=69', headers=headers2).text
 		try:
 			label_t = re.findall('<div id=i_time>(.*?)</div>', source_t)[0]
