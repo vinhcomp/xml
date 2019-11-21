@@ -2060,12 +2060,12 @@ def get_playable_url(url):
 				source2 = requests.get(link_svids[n], headers=headers4).text
 				if '.m3u8' in source2:
 					return re.findall('"(http.*?.m3u8.*?)"', source2)[0]
-				if 'http://playi.cf' in source2: #from bongda
-					link_cf = re.findall('src="(.*?)"', source2)[0]
-					source_cf = requests.get(link_cf, headers=headers1).text
-					link_cf2 = re.findall('(http.*?.m3u8.*?)"', source_cf)[0]
-					source_cf2 = requests.get(link_cf2, headers=headers1).text
-					return re.findall('(http.*?2.m3u8.*?\s)', source_cf2)[0]
+				#if 'http://playi.cf' in source2: #from bongda
+				#	link_cf = re.findall('src="(.*?)"', source2)[0]
+				#	source_cf = requests.get(link_cf, headers=headers1).text
+				#	link_cf2 = re.findall('(http.*?.m3u8.*?)"', source_cf)[0]
+				#	source_cf2 = requests.get(link_cf2, headers=headers1).text
+				#	return re.findall('(http.*?2.m3u8.*?\s)', source_cf2)[0]
 				link = re.findall("'(http.*?token.*?)'", source2)[0]
 				source3 = requests.get(link, headers=headers1).text
 				source3 = "".join(source3.split())
