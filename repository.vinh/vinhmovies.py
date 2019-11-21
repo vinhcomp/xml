@@ -1009,11 +1009,25 @@ def M3UToItems(url_path=""):
 
 		source_t = requests.get('https://www.timeanddate.com/worldclock/fullscreen.html?n=69', headers=headers2).text
 		try:
-			label_t = re.findall('<div id=i_time>(.*?)</div>', source_t)[0]
+			#####Change to 24H####
+			time = re.findall('<div id=i_time>(.*?)</div>', source_t)[0]
+			time_r = time.replace('am', '')
+			time_r = time_r.replace('pm', '')
+			h_st = re.findall('(^.*?):', time)[0]
+			h_in = int(h_st)
+			if 'pm' in time:
+				time_h = h_in+12
+				time_h = str(time_h)
+				time_ch = time_r.replace(h_st, time_h)
+				if '12' in h_st:
+					time_ch = time_r
+			else:
+				time_ch = time_r
+			###### End ######
 		except:
-			label_t = ''
+			time_ch = ''
 		notice_time = {
-					'label': '------------ '+'[COLOR lime]'+label_t+'[/COLOR]'+'[COLOR red] Giờ UK GMT+1 - UK GMT+1 Time [/COLOR]------------',
+					'label': '------------ '+'[COLOR lime]'+time_ch+'[/COLOR]'+'[COLOR red] Giờ UK GMT+1 - UK GMT+1 Time [/COLOR]------------',
 					'thumbnail': 'https://c.tadst.com/gfx/tzpage/cet.1573308000.png?1292',
 					'path': 'None'
 		}
