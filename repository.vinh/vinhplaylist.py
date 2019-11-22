@@ -2321,9 +2321,9 @@ def get_playable_url(url):
 		}
 		source = requests.get(url, headers=h).text
 		try:
-			url = re.findall('(http.*?m3u8.*?)\'', source)[0]
+			url = re.findall('(http.*?m3u8.*?)\'', source)[0].strip()
 		except:
-			url = re.findall('(http.*?m3u8.*?)"', source)[0]
+			url = re.findall('(http.*?m3u8.*?)"', source)[0].strip()
 		if 'src="' in url:
 			return re.findall('src="(http.*?m3u8)', url)[0]
 
