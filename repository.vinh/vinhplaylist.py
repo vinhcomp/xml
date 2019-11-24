@@ -2230,7 +2230,9 @@ def get_playable_url(url):
 		"Origin": "https://vtvgo.vn",
 		"X-Requested-With": "XMLHttpRequest"
 		}
-		agent = "|user-agent=ipad&referer=https://vtvgo.vn/trang-chu.html"
+		#agent = "|user-agent=ipad&referer=%s" % url
+		#agent = '|Referer=http%3A%2F%2Fvtvgo.vn%2F'
+		agent = "|Referer=%s" % url
 		session = requests.Session()
 		session.headers.update(header)
 		source = session.get(url)
