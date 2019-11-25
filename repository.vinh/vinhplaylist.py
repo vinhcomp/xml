@@ -2234,11 +2234,12 @@ def get_playable_url(url):
 		"X-Requested-With": "XMLHttpRequest"
 		}
 		#agent = "|user-agent=ipad&referer=%s" % url
-		#agent = '|Referer=http%3A%2F%2Fvtvgo.vn%2F'
-		agent = "|Referer=%s" % url
+		#agent = '|https://vtvgo.vn/'
+		agent = "|user-agent=ipad&referer=%s" % url
 		session = requests.Session()
 		session.headers.update(header)
-		source = session.get(url)
+		source = session.get(url).text
+		source = source.encode('utf8')
 		#page_data = source . text . encode ( "utf8" ) #don't need to encode:from vietnamese to code
 		#datas = {
 		#"type_id" : "1" ,
@@ -2249,9 +2250,9 @@ def get_playable_url(url):
 		####\d: any number, '+' 1 or more
 		datas = {
 		"type_id": "1",
-		"id": re.search("id = (\d+);", source.text).group(1),
-		"time": re.search("time = '(\d+)';", source.text).group(1),
-		"token": re.search("token = '(.+?)';", source.text).group(1)
+		"id": re.search("id = (\d+);", source).group(1),
+		"time": re.search("time = '(\d+)';", source).group(1),
+		"token": re.search("token = '(.+?)';", source).group(1)
 		}
 		source = session.post("https://vtvgo.vn/ajax-get-stream", data = datas, verify = False) #verify: optional
 		return source.json()["stream_url"][0] + agent
