@@ -2407,8 +2407,17 @@ def get_playable_url(url):
 #		return "plugin://plugin.video.sctv/play/" + cid
 	#elif "dailymotion.com" in url:
 	elif url.startswith('https://www.dailymotion.com'):
-		did = re.compile("/(\w+)$").findall(url)[0] #from special cha
-		return "plugin://plugin.video.dailymotion_com/?url=%s&mode=playVideo" % did
+#		did = re.compile("/(\w+)$").findall(url)[0] #from special cha
+#		return "plugin://plugin.video.dailymotion_com/?url=%s&mode=playVideo" % did
+		vid = re.compile("/(\w+)$").findall(url)[0]
+		url1 = 'https://www.dailymotion.com/player/metadata/video/'+vid
+		source = requests.get(url1, headers=headers4).text
+		content = re.findall('auto":\[(.*?)\]', source)[0]
+		link = json.loads(content)['url']
+		source2 = requests.get(link, headers=headers4).text
+		return re.findall('(http.*?m3u8.*?\s)', source2)[-1].strip()
+		#xbmc.executebuiltin('XBMC.RunPlugin(%s)' % urllib.unquote_plus(link2)) #let kodi play the link direct, skip the play_url
+
 #	elif url.startswith('https://www.twitch.tv'): #https://www.twitch.tv/262007062
 #		did = re.compile("/(\w+)$").findall(url)[0]
 #		return "plugin://plugin.video.twitch/?channel_id=%s&mode=play&quot" % did
