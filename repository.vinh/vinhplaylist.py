@@ -2171,12 +2171,12 @@ def get_playable_url(url):
 				link2 = re.findall('(http.*?.m3u8.*?)$', source4)[0]
 				source5 = requests.get(link2, headers=headers2).text
 				if '/sd' in url:
-					return re.findall('(http.*?1.m3u8.*?\s)', source5)[0]
+					return re.findall('(http.*?1.m3u8.*?\s)', source5)[0].strip()
 				else:
 					try:
-						return re.findall('(http.*?2.m3u8.*?\s)', source5)[0]
+						return re.findall('(http.*?.m3u8.*?\s)', source5)[-1].strip()
 					except:
-						return re.findall('(http.*?mono.m3u8.*?$)', source4)[0] #will be fast
+						return re.findall('(http.*?mono.m3u8.*?$)', source4)[0].strip() #will be fast
 						#try:
 						#	url = re.findall('(http.*?mono.m3u8.*?$)', source4)[0] #incase mono.m3u8 in link(fast direct link), return won't work, url work but slow
 						#except:
