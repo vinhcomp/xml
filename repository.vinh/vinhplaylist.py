@@ -2074,9 +2074,16 @@ def get_playable_url(url):
 #				source3 = "".join(source3.split())
 #				source3 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&*_*-*^*%*$*!*~*`*#*@*(*)*|]', '', source3) #get special char after *
 #				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
-				link = re.findall('(http.*?.m3u8.*?)"', source2)[0]
-				source3 = requests.get(link, headers=headers4).text
-				return re.findall('(http.*?1.m3u8.*?\s)', source3)[0]
+				try:
+					link = 'http://www.tivi12h.net'+re.findall("(/live/nec.php.*?)'", source2)[0]
+					source3 = requests.get(link, headers=headers4).text
+					link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
+					source4 = requests.get(link2, headers=headers4).text
+					return re.findall('(http.*?.m3u8.*?\s)', source4)[-1]
+				except:
+					link = re.findall('(http.*?.m3u8.*?)"', source2)[0]
+					source3 = requests.get(link, headers=headers4).text
+					return re.findall('(http.*?.m3u8.*?\s)', source3)[-1]
 			except:
 				pass
 
