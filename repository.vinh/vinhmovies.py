@@ -2019,7 +2019,7 @@ def play_url(url, title=""):
 
 	elif url.startswith('http://nbastreams') or url.startswith('http://crackstreams'):
 		source = requests.get(url, headers=headers2).text
-		link = re.findall('<iframe.*?src="(.*?)"', source)[0]
+		link = re.findall('<iframe.*?width.*?src="(.*?)"', source)[0]
 		if link.startswith('video.php'):
 			link = url+link
 		source2 = requests.get(link, headers=headers2).text
