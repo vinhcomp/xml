@@ -1772,12 +1772,12 @@ def get_playable_url(url):
 		}
 		source = requests.get(url,headers=headers2)
 		try:
-			url = re.findall("(http://live.*?)'", source.text)[0]
+			url = re.findall("file: '(.*?)'", source.text)[0]+'|User-Agent=iPad&amp;Referer=http://ustvgo.tv/'
 		except:
 			try:
-				url = re.findall("(http://.*?savitar.*?)'", source.text)[0]
+				url = re.findall("(http://.*?savitar.*?)'", source.text)[0]+'|User-Agent=iPad&amp;Referer=http://ustvgo.tv/'
 			except:
-				url = re.findall("(http://.*?m3u8.*?)'", source.text)[0]
+				url = re.findall("(http://.*?m3u8.*?)'", source.text)[0]+'|User-Agent=iPad&amp;Referer=http://ustvgo.tv/'
 
 	elif '&amp;' in url:
 		url = url.replace('&amp;', '&')
