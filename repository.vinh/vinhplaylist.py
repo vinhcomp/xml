@@ -433,10 +433,11 @@ def M3UToItems(url_path=""):
 
 	else:
 		item_re = '\#EXTINF(.*?,)(.*?)\n(.*?)\n'
-		(resp, content) = http.request(
-			url_path, "GET",
-			headers=sheet_headers
-		)
+#		(resp, content) = http.request(
+#			url_path, "GET",
+#			headers=sheet_headers
+#		)
+		content = requests.get(url_path, headers=headers2).content
 		items = []
 		matchs = re.compile(item_re).findall(content)
 		for info, label, path in matchs:
