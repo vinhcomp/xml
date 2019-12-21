@@ -2024,9 +2024,9 @@ def play_url(url, title=""):
 			link = url+link
 		source2 = requests.get(link, headers=headers2).text
 		try:
-			linkstream = re.findall('(http.*?m3u8.*?)"', source2)[0]
+			linkstream = re.findall('(http.*?m3u8.*?)"', source2)[0]+'|User-Agent=iPad&Referer='+link
 		except:
-			link2 = re.findall("atob\('(.*?)'", source2)[0]
+			link2 = re.findall("atob\('(.*?)'", source2)[0]+'|User-Agent=iPad&Referer='+link
 			linkstream = base64.b64decode(link2)
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
