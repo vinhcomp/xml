@@ -2018,12 +2018,20 @@ def play_url(url, title=""):
 			linkstream = re.findall('(http.*?m3u8.*?)\'', source2)[0]
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
-	elif url.startswith('http://nbastreams') or url.startswith('http://crackstreams'):
+	elif url.startswith('http://nbastreams') or url.startswith('http://crackstreams') or url.startswith('http://givemereddit.stream'):
 		source = requests.get(url, headers=headers2).text
-		link = re.findall('<iframe.*?width.*?src="(.*?)"', source)[0]
+		try:
+			link = re.findall('<iframe.*?width.*?src="(.*?)"', source)[0]
+		except:
+			link = re.findall('<iframe.*?src="(.*?)"', source)[0]
 		if link.startswith('video.php'):
 			link = url+link
+		#if link.startswith('https://www.youtube.com'):
+			#keyid = re.findall('/(\w+)$', link)[0]
+			#linkstream = 'plugin://plugin.video.youtube/play/?video_id='+keyid
+			#plugin.set_resolved_url(linkstream, subtitles=vsub)
 		source2 = requests.get(link, headers=headers2).text
+		source2 = source2.replace("'", '"')
 		try:
 			linkstream = re.findall('(http.*?m3u8.*?)"', source2)[0]+'|User-Agent=iPad&Referer='+link
 		except:
