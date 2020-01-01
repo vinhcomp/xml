@@ -1937,9 +1937,11 @@ def play_url(url, title=""):
 				url = re.findall('file":"(http.*?)"', source)[0] #gdrive
 				plugin.set_resolved_url(url, subtitles=vsub)
 			except:
-				#pass
-				url = re.findall('file": "(http.*?)"', source)[-1]
-				plugin.set_resolved_url(url, subtitles=vsub)
+				try:
+					url = re.findall('file": "(http.*?)"', source)[-1]
+					plugin.set_resolved_url(url, subtitles=vsub)
+				except:
+					pass
 			try:
 				link = re.findall('src="(https://www.fembed.com/v.*?)"', source)[0]
 				linkapi = link.replace('https://www.fembed.com/v', 'https://www.fembed.com/api/source')
