@@ -755,7 +755,7 @@ def M3UToItems(url_path=""):
 	elif url_path.startswith('https://bilumoi.com'):
 		content = requests.get(url_path, headers=headers2).content
 		content = "".join(content.splitlines())
-		item_re = 'current-status">(.*?)<.*?href="(.*?)".*?src="//(.*?)".*?class=.*?name">(.*?)</p>.*?real-name">(.*?)<'
+		item_re = 'current-status">(.*?)<.*?href="(.*?)".*?src="(.*?)".*?class=.*?name">(.*?)</p>.*?real-name">(.*?)<'
 		try:
 			pages = re.findall('pagination">.*?current" href=.*?href="(.*?)"', content)[0]
 		except:
@@ -771,7 +771,7 @@ def M3UToItems(url_path=""):
 		items = []
 		for label3, path, thumb, label2, label1 in matchs:
 			label = '[COLOR lime]'+label1+'[/COLOR]'+'-'+'[COLOR yellow]'+label2+'[/COLOR]'+'-'+label3
-			thumb = 'http://'+thumb
+			#thumb = 'http://'+thumb
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
@@ -1919,8 +1919,9 @@ def play_url(url, title=""):
 #							url = re.findall('center;"><a href="(.*?)"', source)[0]
 #		plugin.set_resolved_url(url, subtitles=vsub)
 	
-	elif url.startswith('https://bilumoi.com'):
+	elif url.startswith('https://bilumoi.com') or url.startswith('https://bilutv.org'):
 		url2 = 'https://bilumoi.com/ajax/player'
+		#url2 = 'https://bilutv.org/ajax/player'
 		source = requests.get(url, headers=headers2).text
 		movie_id = re.findall('MovieID = \'(.*?)\'', source)[0]
 		ep_id = re.findall('EpisodeID = \'(.*?)\'', source)[0]
@@ -1931,11 +1932,14 @@ def play_url(url, title=""):
 			n = str(n)
 			data = {'id': movie_id, 'ep': ep_id, 'sv': n}
 			source = requests.post(url2, data = data, verify = False).text
+			source = source.replace('\\', '')
 			try:
-				url = re.findall('file":"(http.*?)"', source)[-1]
+				url = re.findall('file":"(http.*?)"', source)[0] #gdrive
 				plugin.set_resolved_url(url, subtitles=vsub)
 			except:
-				pass
+				#pass
+				url = re.findall('file": "(http.*?)"', source)[-1]
+				plugin.set_resolved_url(url, subtitles=vsub)
 			try:
 				link = re.findall('src="(https://www.fembed.com/v.*?)"', source)[0]
 				linkapi = link.replace('https://www.fembed.com/v', 'https://www.fembed.com/api/source')
@@ -2093,7 +2097,7 @@ def play_url(url, title=""):
 
 	#elif url.startswith('https://ok.ru') or url.startswith('https://www.facebook.com')  or url.startswith('https://www.fembed.com'):
 	elif any(url.startswith(domain) for domain in (['https://ok.ru', 'https://www.facebook.com', 'https://www.fembed.com', 'https://vidoza.net', \
-		'https://verystream.com', 'https://clicknupload.org', 'https://streamango.com'])):
+		'https://verystream.com', 'https://clicknupload.org', 'https://streamango.com', 'https://yesmovies.network'])):
 		import resolveurl
 		url = resolveurl.resolve(url)
 		plugin.set_resolved_url(url)
