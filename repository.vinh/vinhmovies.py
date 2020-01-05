@@ -207,7 +207,7 @@ def Layer2ToItems(url_path=""):
 ##			else:
 ##				return play_url(url_path[choise]) #will get error get addtracking, bc direct link(not list anything) ??
 	
-	if 'bilumoi.com' in url_path:
+	if 'bilumoi.com' in url_path: #layer2
 		source = requests.get(url_path, headers=headers2).text
 		url_vs = re.findall('btn-danger" href="(.*?)"', source)[0] #vietsub
 		content_vs = requests.get(url_vs, headers=headers2).content
@@ -219,11 +219,14 @@ def Layer2ToItems(url_path=""):
 		#item_re = '<a id=".*?href="(.*?)".*?title="(.*?)"'
 		item_re = '<a id="ep.*?href="(.*?)".*?title="(.*?)"'
 		content_all = content_vs+content_tm
-		thumb = re.findall('twitter:image" content="(.*?)"', content_vs)[0]
+		#thumb = re.findall('image" content="fsdf(.*?)"', content_vs)[0]
 		matchs_all = re.compile(item_re).findall(content_all)
 		items = []
 		for path, label in matchs_all:
-			thumb = thumb
+			try:
+				thumb = re.findall('image" content="(https://bilutv.org.*?)"', content_vs)[0]
+			except:
+				thumb = ''
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb,
