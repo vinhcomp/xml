@@ -2342,10 +2342,11 @@ def get_playable_url(url):
 			'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 		}
 		source = requests.get(url, headers=h).text
+		source = source.replace("'", '"')
 		try:
-			url = re.findall('(http.*?m3u8.*?)\'', source)[0].strip()
+			url = re.findall('(http.*?m3u8.*?)"', source)[0].strip()+'|User-Agent=iPad&Referer=%s' % url
 		except:
-			url = re.findall('(http.*?m3u8.*?)"', source)[0].strip()
+			pass
 		if 'src="' in url:
 			return re.findall('src="(http.*?m3u8)', url)[0]
 
