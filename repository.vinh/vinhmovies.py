@@ -2044,8 +2044,8 @@ def play_url(url, title=""):
 		try:
 			linkstream = re.findall('(http.*?m3u8.*?)"', source2)[0]+'|User-Agent=iPad&Referer='+link
 		except:
-			link2 = re.findall("atob\('(.*?)'", source2)[0]+'|User-Agent=iPad&Referer='+link
-			linkstream = base64.b64decode(link2)
+			link2 = re.findall('atob\("(.*?)"', source2)[0]
+			linkstream = base64.b64decode(link2)+'|User-Agent=iPad&Referer='+link
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
 	elif url.startswith('https://daddylive.live'):
