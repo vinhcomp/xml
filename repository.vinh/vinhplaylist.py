@@ -449,7 +449,10 @@ def M3UToItems(url_path=""):
 				except:
 					thumb = 'none'
 			if "group-title" in info:
-				label2 = re.compile('group-title="(.*?)"').findall(info)[0]
+				try:
+					label2 = re.compile('group-title="(.*?)"').findall(info)[0]
+				except:
+					pass
 			if label2 != "":
 				label2 = "[%s] " % label2.strip()
 			label = "%s%s" % (label2, label.strip())
