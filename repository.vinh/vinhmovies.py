@@ -464,9 +464,8 @@ def M3UToItems(url_path=""):
 		if 'xem-phim' in url_path: #layer 2
 			content = requests.get(url_path, headers=headers2).content
 			content = "".join(content.splitlines())
-			#item_re = 'episode><a href=(.*?)><span.*?shadow">(.*?)</span>'
-			item_re = 'episode><a href=(.*?)><span.*?class.*?>(.*?)</span>'
-			thumb = re.findall('id=expand-post-content>.*?src=(.*?) alt', content)[0]
+			item_re = 'episode"><a href="(.*?)"><span.*?class.*?">(.*?)</span>'
+			thumb = re.findall('id="expand-post-content".*?src="(.*?)" alt', content)[0]
 			items = []
 			matchs = re.compile(item_re).findall(content)
 			if matchs == []: #Incase cannot get path
@@ -499,9 +498,10 @@ def M3UToItems(url_path=""):
 		else: #layer 1			
 			content = requests.get(url_path, headers=headers2).content
 			content = "".join(content.splitlines())
-			item_re = 'class=halim-thumb href=(.*?)/ title="(.*?)".*?src=(.*?) alt=.*?title>(.*?)</p>'
+			#item_re = 'class="halim-thumb" href="(.*?)/" title="(.*?)".*?src="(.*?)" alt=".*?title="(.*?)"'
+			item_re = 'class="halim-thumb" href="(.*?)/" title="(.*?)".*?src="(.*?)" alt=".*?original_title">(.*?)</p>'
 			try:
-				pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
+				pages = re.findall('next page-numbers" href="(.*?)"><i', content)[0]
 			except:
 				pages = 'none'
 			if pages == 'none':
@@ -1839,7 +1839,7 @@ def play_url(url, title=""):
 	elif url.startswith('http://topphimhd'):
 		source = requests.get(url, headers=headers1).text
 		try:
-			linkstream = re.findall('embed-responsive-item src="(.*?)"', source)[0]
+			linkstream = re.findall('embed-responsive-item" src="(.*?)"', source)[0]
 			source3 = requests.get(linkstream, headers=headers1).text
 			url = re.findall('urlVideo = \'(.*?)\'', source3)[0]+'|Referer='+linkstream+'&User-Agent=iPad'
 		except:
