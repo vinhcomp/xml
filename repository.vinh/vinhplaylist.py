@@ -2065,6 +2065,7 @@ def get_playable_url(url):
 		for n in range(len(link_svids)):
 			try:
 				source2 = requests.get(link_svids[n], headers=headers4).text
+				source2 = source2.replace("'", '"')
 #				if '.m3u8' in source2:
 #					return re.findall('"(http.*?.m3u8.*?)"', source2)[0]
 				#if 'http://playi.cf' in source2: #from bongda
@@ -2089,7 +2090,8 @@ def get_playable_url(url):
 					source4 = requests.get(link2, headers=headers4).text
 					return re.findall('(http.*?.m3u8.*?\s)', source4)[-1]
 				except:
-					link = re.findall('(http.*?.m3u8.*?)"', source2)[0]
+					#link = re.findall('(http.*?.m3u8.*?)"', source2)[0]
+					link = 'http:'+re.findall('"(//27.67.64.*?)"', source2)[0] #may change later
 					source3 = requests.get(link, headers=headers4).text
 					return re.findall('(http.*?.m3u8.*?\s)', source3)[-1]
 			except:
