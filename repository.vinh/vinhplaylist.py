@@ -1578,6 +1578,10 @@ def get_playable_url(url):
 		lsp_settings = xbmcaddon.Addon('plugin.video.live.streamspro').openSettings()
 		xbmc.executebuiltin('lsp_settings')
 
+	elif "youtubesettings" in url:		
+		youtube_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
+		xbmc.executebuiltin('youtube_settings')
+
 	#Open android apk
 	elif "openmobdro" in url and apk:
 		#apk = xbmc.getCondVisibility('system.platform.android')
