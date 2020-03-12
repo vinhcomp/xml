@@ -1939,6 +1939,10 @@ def get_playable_url(url):
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source2)[0]).replace('\\', '')
 		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+link
 
+	elif url.startswith('http://imkmedia.com'):
+		source = requests.get(url, headers=headers4).text
+		return re.findall('source\: atob\("(.*?)"', source)[0].decode("base64")+'|user-agent=ipad&referer=%s' % url
+
 #	#http://futbolitop.online/canales/ espanol sports
 #	elif "futbolitop.online" in url:
 #		referer = 'http://futbolitop.online/'
