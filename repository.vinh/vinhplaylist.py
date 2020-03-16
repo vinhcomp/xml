@@ -1772,7 +1772,7 @@ def get_playable_url(url):
 		source = requests.get(url,headers=headers1)
 		return re.findall("(http://.*?tulix.tv.*?m3u8)", source.text)[0]
 
-	elif any(domain in url for domain in['ustv247.com', 'ustvgo.net', 'ustvgo.to', 'ustvgo.tv', 'watchnewslive.net', 'watchnewslive.tv', 'guide66.info']):
+	elif any(domain in url for domain in['ustv247.com', 'ustvgo.net', 'ustvgo.to', 'ustvgo.tv', 'watchnewslive.net', 'guide66.info']):
 		referer='http://ustvgo.tv/'
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
@@ -1943,9 +1943,10 @@ def get_playable_url(url):
 		source = requests.get(url, headers=headers4).text
 		return re.findall('source\: atob\("(.*?)"', source)[0].decode("base64")+'|user-agent=ipad&referer=%s' % url
 
-	elif url.startswith('https://ustv247.tv'):
+	elif url.startswith('https://ustv247.tv') or url.startswith('https://watchnewslive.tv'):
 		source = requests.get(url, headers=headers4).text
-		sid=re.findall('file:\s*([^\(]+)',source)[0]
+		#sid=re.findall('file:\s*([^\(]+)',source)[0]
+		sid=re.findall('source:\s*([^\(]+)',source)[0]
 		url1,tok1,tok2=re.findall('%s[\w\W]*?return.+?\[(.*?)\].+?\+\s*([^\.]+).+?"(\w[^"]+)'%sid,source)[0] #output 3 results
 		rtmp=''.join(eval(url1)).replace('\\','')
 		token=re.findall('var\s*%s.+?\[([^\]]+)'%tok1,source)[0];token=''.join(eval(token))
