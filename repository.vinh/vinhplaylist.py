@@ -1945,8 +1945,10 @@ def get_playable_url(url):
 
 	elif url.startswith('https://ustv247.tv') or url.startswith('https://watchnewslive.tv'):
 		source = requests.get(url, headers=headers4).text
-		#sid=re.findall('file:\s*([^\(]+)',source)[0]
-		sid=re.findall('source:\s*([^\(]+)',source)[0]
+		try:
+			sid=re.findall('file:\s*([^\(]+)',source)[0]
+		except:
+			sid=re.findall('source:\s*([^\(]+)',source)[0]
 		url1,tok1,tok2=re.findall('%s[\w\W]*?return.+?\[(.*?)\].+?\+\s*([^\.]+).+?"(\w[^"]+)'%sid,source)[0] #output 3 results
 		rtmp=''.join(eval(url1)).replace('\\','')
 		token=re.findall('var\s*%s.+?\[([^\]]+)'%tok1,source)[0];token=''.join(eval(token))
