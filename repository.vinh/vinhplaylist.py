@@ -2110,7 +2110,7 @@ def get_playable_url(url):
 					#link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
 					#source4 = requests.get(link2, headers=headers4).text
 					#return re.findall('(http.*?.m3u8.*?\s)', source4)[-1]
-					return re.findall('sources:.*?"(http.*?m3u8.*?)"', source2)[0]#incase direct link vtc
+					return re.findall('"(http://27.*?m3u8.*?)"', source2)[0]#incase direct link vtc, diaphuong
 				except:
 					#link = re.findall('(http.*?.m3u8.*?)"', source2)[0]
 					link = 'http:'+re.findall('"(//27.67.64.*?)"', source2)[0] #may change later
