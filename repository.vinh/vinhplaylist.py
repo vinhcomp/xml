@@ -2101,15 +2101,16 @@ def get_playable_url(url):
 #				source3 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&*_*-*^*%*$*!*~*`*#*@*(*)*|]', '', source3) #get special char after *
 #				link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
 				try:
-					link_tail = re.findall("link=\['(.*?)'", source2)[0]
-					if '/live/' in link_tail:
-						link = 'http://www.tivi12h.net'+link_tail
-					else:
-						link = 'http://www.tivi12h.net/live/'+link_tail
-					source3 = requests.get(link, headers=headers4).text
-					link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
-					source4 = requests.get(link2, headers=headers4).text
-					return re.findall('(http.*?.m3u8.*?\s)', source4)[-1]
+					#link_tail = re.findall("link=\['(.*?)'", source2)[0]
+					#if '/live/' in link_tail:
+					#	link = 'http://www.tivi12h.net'+link_tail
+					#else:
+					#	link = 'http://www.tivi12h.net/live/'+link_tail
+					#source3 = requests.get(link, headers=headers4).text
+					#link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
+					#source4 = requests.get(link2, headers=headers4).text
+					#return re.findall('(http.*?.m3u8.*?\s)', source4)[-1]
+					return re.findall('sources:.*?"(http.*?m3u8.*?)"', source2)[0]#incase direct link vtc
 				except:
 					#link = re.findall('(http.*?.m3u8.*?)"', source2)[0]
 					link = 'http:'+re.findall('"(//27.67.64.*?)"', source2)[0] #may change later
