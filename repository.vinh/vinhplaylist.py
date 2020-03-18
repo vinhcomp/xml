@@ -2051,7 +2051,11 @@ def get_playable_url(url):
 		for n in range(len(link_svid)):
 			try:
 				source2 = requests.get(link_svid[n], headers=headers2).text
-				link = re.findall("'(http.*?xemtivihot.*?)'", source2)[0]
+				source2 = source2.replace('"', "'")
+				try:
+					link = re.findall("\['(http.*?xemtivihot.*?)'", source2)[0]
+				except:
+					return re.findall("src='.*?=(http.*?m3u8.*?)'", source2)[0] #incase direct link vtc
 				source3 = requests.get(link, headers=headers2).text
 				source3 = "".join(source3.split())
 				#source3 = "".join(source3.splitlines())
