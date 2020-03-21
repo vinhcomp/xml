@@ -2321,13 +2321,16 @@ def get_playable_url(url):
 		linkfinal = json.loads(link)["url"]
 		link_tail = re.findall('(/playlist.m3u8.*?)$', linkfinal)[0]
 		if '/vietbay' in url:
-			return 'http://hls84.lax.v247tv.com/lax86/vietbay_720'+link_tail
+			#return 'http://hls84.lax.v247tv.com/lax86/vietbay_720'+link_tail
+			return linkfinal.replace('phatgiao', 'vietbay')
 		elif '/vlife' in url:
 			return linkfinal.replace('VANTV', 'life')
 		elif '/schedule' in url:
-			return 'http://df21.hou.v247tv.com/lax74/schedule'+link_tail
+			#return 'http://df21.hou.v247tv.com/lax74/schedule'+link_tail
+			return linkfinal.replace('phatgiao', 'schedule')
 		elif '/nhacviet' in url:
-			return 'http://df20.hou.v247tv.com/lax86/smil:nhacviet.smil'+link_tail
+			#return 'http://df20.hou.v247tv.com/lax86/smil:nhacviet.smil'+link_tail
+			return linkfinal.replace('phatgiao', 'nhacviet')
 		else:
 			return linkfinal
 
