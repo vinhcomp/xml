@@ -2324,7 +2324,9 @@ def get_playable_url(url):
 			#return 'http://hls84.lax.v247tv.com/lax86/vietbay_720'+link_tail
 			return linkfinal.replace('phatgiao', 'vietbay')
 		elif '/vlife' in url:
-			return linkfinal.replace('VANTV', 'life')
+			#return linkfinal.replace('VANTV', 'life')
+			#return linkfinal.replace('vmax', 'life')
+			return 'http://df21.hou.v247tv.com/vidillion/unonetwork/uno/life'+link_tail
 		elif '/schedule' in url:
 			#return 'http://df21.hou.v247tv.com/lax74/schedule'+link_tail
 			return linkfinal.replace('phatgiao', 'schedule')
@@ -2341,6 +2343,13 @@ def get_playable_url(url):
 
 	elif 'sdw-net.me' in url:
 		return vonglap(url=url, n=0)
+
+	elif url.startswith('https://www.vidio.com'): #Indonesia
+		url_token = re.findall("(^.*?)-", url)[0]+'/tokens'
+		source = requests.get(url,headers=headers4).text
+		link = re.findall('hls-url="(.*?)"', source)[0]+'?'
+		source2 = requests.post(url_token,headers=headers4).text
+		return link+json.loads(source2)['token']
 
 	#http://www.giniko.com/watch.php?id=403
 	elif url.startswith('http://www.giniko.com'):
