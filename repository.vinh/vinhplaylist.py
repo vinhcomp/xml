@@ -696,14 +696,18 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 			elif item["path"].startswith('ytsearch'):
 				#ytsearch/nhu loan
 				item["path"]=item["path"].replace('ytsearch/', '')
-				item["path"]=item["path"].replace(' ', '%20')
-				item["path"]='plugin://plugin.video.youtube/kodion/search/query/?q='+item["path"]
+				#item["path"]=item["path"].replace(' ', '%20')
+				item["path"]=item["path"].replace(' ', '+')
+				#item["path"]='plugin://plugin.video.youtube/kodion/search/query/?q='+item["path"]
+				item["path"]='plugin://plugin.video.kodi4vn.launcher/yts/none/video/'+item["path"]
 
 			elif item["path"].startswith('ytlist'):
 				#ytlist/phong su
 				item["path"]=item["path"].replace('ytlist/', '')
-				item["path"]=item["path"].replace(' ', '%20')
-				item["path"]='plugin://plugin.video.youtube/kodion/search/query/?q='+item["path"]+'&search_type=playlist'
+				#item["path"]=item["path"].replace(' ', '%20')
+				item["path"]=item["path"].replace(' ', '+')
+				#item["path"]='plugin://plugin.video.youtube/kodion/search/query/?q='+item["path"]+'&search_type=playlist'
+				item["path"]='plugin://plugin.video.kodi4vn.launcher/yts/none/playlist/'+item["path"]
 
 			elif re.search("\.ts$", item["path"]):
 				item["path"] = "plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&use_proxy_for_chunks=True&name=%s" % (
