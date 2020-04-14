@@ -1541,7 +1541,7 @@ def get_playable_url(url):
 		link = 'https://www.youtube.com/channel/' + liveid
 		source = requests.get(link,headers=headers)
 		try:
-			keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint] # will get one of the match list
+			keyid = re.findall('"https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint] # will get one of the match list
 		except:
 			try:
 				keyid = re.findall('<img src="https://i.ytimg.com/vi/(.*?)/hqdefault_live', source.text)[livenumberint-livenumberint] # will try to return firt live channel
