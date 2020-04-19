@@ -205,7 +205,7 @@ def M3UToItems(url_path=""):
 #				items += [item]
 #			return items
 
-#		else: #layer 1			
+#		else: #layer 1
 #			content = requests.get(url_path, headers=headers2).content
 #			content = "".join(content.splitlines())
 #			item_re = 'class=halim-thumb href=(.*?)/ title="(.*?)".*?src=(.*?) alt=.*?title>(.*?)</p>'
@@ -1778,7 +1778,8 @@ def get_playable_url(url):
 		source = requests.get(url,headers=headers1)
 		return re.findall("(http://.*?tulix.tv.*?m3u8)", source.text)[0]
 
-	elif any(domain in url for domain in['ustv247.com', 'ustvgo.net', 'ustvgo.to', 'ustvgo.tv', 'watchnewslive.net', 'guide66.info']):
+	#elif any(domain in url for domain in['ustv247.com', 'ustvgo.net', 'ustvgo.to', 'ustvgo.tv', 'watchnewslive.net', 'guide66.info']):
+	elif any(domain in url for domain in['ustv247.com', 'ustvgo.net', 'ustvgo.to', 'watchnewslive.net', 'guide66.info']):
 		referer='http://ustvgo.tv/'
 		headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
@@ -1957,6 +1958,19 @@ def get_playable_url(url):
 		token=re.findall('var\s*%s.+?\[([^\]]+)'%tok1,source)[0];token=''.join(eval(token))
 		atoken=re.findall('id=%s>(.*?)<'%tok2,source)[0]
 		return '%s%s%s|user-agent=ipad&referer=%s'%(rtmp,token,atoken,url)
+
+	elif url.startswith('https://ustvgo.tv'):
+		source = requests.get(url, headers=headers4).text
+		switch=re.findall('switch\(c\)(.*?)};var',source)[0].replace('return ', '').replace('case ', '').replace(';', ',')
+		switch=eval(switch) #convert to dict
+		keys=re.findall('const _0x44e6=(.*?]);',source)[0]
+		keys=eval(keys) #to list
+		tok1,tok2=re.findall('\(\'\'\)\+(.*?)\[.*?\(\'\'\)\+.*?\]\(\'(.*?)\'',source)[0]
+		link=[switch.get(key) for key in keys]
+		link2=''.join(link)
+		token=re.findall('var\s*%s.+?\[([^\]]+)'%tok1,source)[0];token=''.join(eval(token))
+		atoken=re.findall('id=%s>(.*?)<'%tok2,source)[0]
+		return '%s%s%s|user-agent=ipad&referer=%s'%(link2,token,atoken,url)
 
 #	#http://futbolitop.online/canales/ espanol sports
 #	elif "futbolitop.online" in url:
