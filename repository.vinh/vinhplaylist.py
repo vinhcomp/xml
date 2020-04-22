@@ -1950,16 +1950,18 @@ def get_playable_url(url):
 		source = requests.get(url, headers=headers4).text
 		return re.findall('source\: atob\("(.*?)"', source)[0].decode("base64")+'|user-agent=ipad&referer=%s' % url
 
-	elif url.startswith('https://ustv247.tv') or url.startswith('https://watchnewslive.tv'):
+	elif url.startswith('https://www.streamlive.to'):
 		source = requests.get(url, headers=headers4).text
 		sid=re.findall('source:\s*|file:\s*([^\(]+)',source)[0]
 		url1,tok1,tok2=re.findall('%s[\w\W]*?return.+?\[(.*?)\].+?\+\s*([^\.]+).+?"(\w[^"]+)'%sid,source)[0] #output 3 results
 		rtmp=''.join(eval(url1)).replace('\\','')
+		if rtmp.startswith('//'):
+			rtmp='https:'+rtmp
 		token=re.findall('var\s*%s.+?\[([^\]]+)'%tok1,source)[0];token=''.join(eval(token))
 		atoken=re.findall('id=%s>(.*?)<'%tok2,source)[0]
 		return '%s%s%s|user-agent=ipad&referer=%s'%(rtmp,token,atoken,url)
 
-	elif url.startswith('https://ustvgo.tv'):
+	elif url.startswith('https://ustvgo.tv') or url.startswith('https://ustv247.tv') or url.startswith('https://watchnewslive.tv'):
 		source = requests.get(url, headers=headers4).text
 		switch=re.findall('switch\(c\)(.*?)};var',source)[0].replace('return ', '').replace('case ', '').replace(';', ',')
 		switch=eval(switch) #convert to dict
