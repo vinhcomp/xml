@@ -1950,9 +1950,9 @@ def get_playable_url(url):
 		source = requests.get(url, headers=headers4).text
 		return re.findall('source\: atob\("(.*?)"', source)[0].decode("base64")+'|user-agent=ipad&referer=%s' % url
 
-	elif url.startswith('https://www.streamlive.to'):
+	elif url.startswith('https://www.streamlive.to') or url.startswith('https://zynetv.net'):
 		source = requests.get(url, headers=headers4).text
-		sid=re.findall('source:\s*|file:\s*([^\(]+)',source)[0]
+		sid=re.findall('source:\s*|file:\s*|whistler \=\s*([^\(]+)',source)[0]
 		url1,tok1,tok2=re.findall('%s[\w\W]*?return.+?\[(.*?)\].+?\+\s*([^\.]+).+?"(\w[^"]+)'%sid,source)[0] #output 3 results
 		rtmp=''.join(eval(url1)).replace('\\','')
 		if rtmp.startswith('//'):
