@@ -2223,8 +2223,10 @@ def get_playable_url(url):
 				#source4 = "".join(source4.splitlines())
 				#source4 = source4.replace('=﻿', '=') # '﻿' specail cha, will see in othter text
 				source4 = re.sub('[^a-zA-Z0-9-_*.*/*=*?*:*+*&*_*-*^*%*$*!*~*`*#*@*(*)*|]', '', source4) #get special char after *
-				#link2 = re.findall('(http.*?m3u.*?)$', source4)[0]
-				link2 = re.findall('(http.*?.m3u8.*?)$', source4)[0]
+				link2 = re.findall('(http.*?m3u.*?$)', source4)[0]
+				#link2 = re.findall('(http.*?.m3u8.*?)$', source4)[0]
+				if link2.startswith('http://cdn'): #fox,hbo,disney
+					url=link2
 				source5 = requests.get(link2, headers=headers2).text
 				if '/sd' in url:
 					return re.findall('(http.*?1.m3u8.*?\s)', source5)[0].strip()
