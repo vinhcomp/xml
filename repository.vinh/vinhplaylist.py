@@ -1946,9 +1946,9 @@ def get_playable_url(url):
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source2)[0]).replace('\\', '')
 		return re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+link
 
-	elif url.startswith('http://imkmedia.com'):
+	elif url.startswith('http://imkmedia.com') or url.startswith('http://myustv.com'):
 		source = requests.get(url, headers=headers4).text
-		return re.findall('source\: atob\("(.*?)"', source)[0].decode("base64")+'|user-agent=ipad&referer=%s' % url
+		return re.findall('source\: atob\("|link= atob\("(.*?)"', source)[0].decode("base64")+'|user-agent=ipad&referer=%s' % url
 
 	#elif url.startswith('https://www.streamlive.to') or url.startswith('https://zynetv.net'):
 	elif url.startswith('https://www.streamlive.to'):
