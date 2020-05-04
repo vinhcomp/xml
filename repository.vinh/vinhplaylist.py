@@ -1362,6 +1362,11 @@ def play_url(url, title=""):
 							url = re.findall('center;"><a href="(.*?)"', source)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
 
+	elif url.startswith("https://www.arconaitv.us"):
+		url1 = urllib.quote_plus(url)
+		url = 'plugin://plugin.video.vinh.movies/play/%s/acronai?' % url1
+		plugin.set_resolved_url(url)
+
 	else:
 		plugin.set_resolved_url(url, subtitles=vsub)
 
@@ -1865,17 +1870,17 @@ def get_playable_url(url):
 		keyid = re.findall('http://live.4ktech.net:(.*?) ', source.text)[0]
 		url = 'http://live.4ktech.net:'+keyid
 
-	elif "arconaitv.us" in url:
-		source = requests.get(url, headers=headers1)
-		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
-		linkstream = re.findall("src:'(https.*?)'", decode)[0]
-		source2 = requests.get(linkstream, headers=headers1, verify=False)
-		if source2.status_code == 200:
-			return linkstream+'|user-agent=ipad'
-		#return re.findall('(?:source|file|src):[\'"](h[^\'"]+)',decode)[0]+'|user-agent=ipad' #this one will work too
-		#return re.search("src='(.*?\.m3u8)'", decode)[0]
-		else:
-			return notice()
+	#elif url.startswith("https://www.arconaitv.us"):
+	#	source = requests.get(url, headers=headers1)
+	#	decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source.text)[0]).replace('\\', '')
+	#	linkstream = re.findall("src:'(https.*?)'", decode)[0]
+	#	source2 = requests.get(linkstream, headers=headers1, verify=False)
+	#	if source2.status_code == 200:
+	#		return linkstream+'|user-agent=ipad'
+	#	#return re.findall('(?:source|file|src):[\'"](h[^\'"]+)',decode)[0]+'|user-agent=ipad' #this one will work too
+	#	#return re.search("src='(.*?\.m3u8)'", decode)[0]
+	#	else:
+	#		return notice()
 
 	elif "streamcdn.to" in url:
 		referer = 'https://hindimean.com/reddit/'
