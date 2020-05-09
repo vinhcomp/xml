@@ -300,8 +300,8 @@ def M3UToItems(url_path=""):
 		if 'xem-phim' in url_path: #layer 2
 			content = requests.get(url_path, headers=headers2).content
 			content = "".join(content.splitlines())
-			item_re = 'episode><a href=(.*?)><span.*?shadow">(.*?)</span>'
-			thumb = re.findall('id=expand-post-content>.*?src=(.*?) alt', content)[0]
+			item_re = 'episode"><a href="(.*?)"><span>(.*?)</span>'
+			thumb = re.findall('<p><img class=.*?src="(.*?)"', content)[0]
 			items = []
 			matchs = re.compile(item_re).findall(content)
 			for path, label in matchs:
@@ -321,9 +321,9 @@ def M3UToItems(url_path=""):
 		else: #layer 1			
 			content = requests.get(url_path, headers=headers2).content
 			content = "".join(content.splitlines())
-			item_re = 'a class=halim-thumb href=(.*?)/ title="(.*?)".*?src=(.*?) alt=.*?title>(.*?)</p>'
+			item_re = 'a class="halim-thumb" href="(.*?)/" title="(.*?)".*?src="(.*?)" alt=.*?title="(.*?)"'
 			try:
-				pages = re.findall('next page-numbers" href=(.*?)><i', content)[0]
+				pages = re.findall('next page-numbers" href="(.*?)"', content)[0]
 			except:
 				pages = 'none'
 			if pages == 'none':
@@ -1288,7 +1288,7 @@ def play_url(url, title=""):
 		plugin.set_resolved_url(url, subtitles=vsub)
 	elif 'topphimhd' in url:
 		source = requests.get(url, headers=headers1).text
-		linkstream = re.findall('embed-responsive-item src="(.*?)"', source)[0]
+		linkstream = re.findall('embed-responsive-item" src="(.*?)"', source)[0]
 		source3 = requests.get(linkstream, headers=headers1).text
 		url = re.findall('urlVideo = \'(.*?)\'', source3)[0]
 		plugin.set_resolved_url(url, subtitles=vsub)
