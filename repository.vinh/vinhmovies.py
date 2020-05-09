@@ -257,8 +257,9 @@ def Layer2ToItems(url_path=""):
 			items += [item]
 		return items
 
-	elif url_path.startswith('http://www.phumikhmer1'):
-		content = requests.get(url_path, headers=headers2).text
+	#elif url_path.startswith('http://www.phumikhmer1'):
+	elif 'phumikhmer1' in url_path:
+		content = requests.get(url_path, headers=headers2).content
 		content = content.replace("'", "\"")
 		content = "".join(content.splitlines())
 		#item_re = '"file":.*?"(.*?)".*?title":.*?"(.*?)".*?image":.*?"(.*?)"'
@@ -286,8 +287,9 @@ def Layer2ToItems(url_path=""):
 			items += [item]
 		return items
 
-	elif url_path.startswith('http://www.khmerdrama') or url_path.startswith('http://www.khmeravenue'):
-		content = requests.get(url_path, headers=headers2).text
+	#elif url_path.startswith('http://www.khmerdrama') or url_path.startswith('http://www.khmeravenue'):
+	elif 'khmerdrama' in url_path or 'khmeravenue' in url_path or 'khmersearch' in url_path:
+		content = requests.get(url_path, headers=headers2).content
 		content = content.replace("'", "\"")
 		#content = "".join(content.splitlines())
 		item_re = 'a href="(.*?)".*?btn btn-episode">(.*?)<'
@@ -2012,7 +2014,8 @@ def play_url(url, title=""):
 				linkstream = link_id+link_re+'|User-Agent=iPad'
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
-	elif url.startswith('http://www.khmerdrama') or url.startswith('http://www.khmeravenue'):
+	#elif url.startswith('http://www.khmerdrama') or url.startswith('http://www.khmeravenue'):
+	elif 'khmersearch' in url or 'khmerdrama' in url or 'khmeravenue' in url:
 		import resolveurl
 		source = requests.get(url, headers=headers2).text
 		url = re.findall('"file": "(.*?)"', source)[0]
