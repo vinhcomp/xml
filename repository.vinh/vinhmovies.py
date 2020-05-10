@@ -288,7 +288,7 @@ def Layer2ToItems(url_path=""):
 		return items
 
 	#elif url_path.startswith('http://www.khmerdrama') or url_path.startswith('http://www.khmeravenue'):
-	elif 'khmerdrama' in url_path or 'khmeravenue' in url_path or 'khmersearch' in url_path:
+	elif 'khmerdrama' in url_path or 'khmeravenue' in url_path or 'khmersearch' in url_path: #player2
 		content = requests.get(url_path, headers=headers2).content
 		content = content.replace("'", "\"")
 		#content = "".join(content.splitlines())
@@ -2457,11 +2457,11 @@ def get_playable_url(url):
 	
 	elif url.startswith('https://www.arconaitv.us'):
 		source = requests.get(url, headers=headers2).text
-		link1=re.findall("var _(.+?)</script>",source)[0].strip()
-		link2=link1.replace("eval(", "var a =")
-		link3="var _" + link2[:-1]
-		link4=link3.replace("decodeURIComponent(escape(r))", "r.slice(305,407)")
-		return js2py.eval_js(link4).replace("'", "")+'|User-Agent=%s' % url
+		link=re.findall("var _(.+?)</script>",source)[0].strip()
+		link=link.replace("eval(", "var a =")
+		link="var _" + link[:-1]
+		link=link.replace("decodeURIComponent(escape(r))", "r.slice(305,407)")
+		return js2py.eval_js(link).replace("'", "")+'|User-Agent=%s' % url
 
 	elif "tv24.vn" in url:
 		cid = re.compile('/(\d+)/').findall(url)[0]
