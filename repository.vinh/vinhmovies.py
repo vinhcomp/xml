@@ -466,7 +466,7 @@ def M3UToItems(url_path=""):
 			content = requests.get(url_path, headers=headers2).content
 			content = "".join(content.splitlines())
 			#item_re = 'episode"><a href="(.*?)"><span.*?class.*?">(.*?)</span>'
-			item_re = 'episode"><a href="(.*?)"><span>(.*?)</span>'
+			item_re = 'episode"><a href="(.*?)"><span.*?>(.*?)</span>'
 			#thumb = re.findall('id="expand-post-content".*?src="(.*?)" alt', content)[0]
 			thumb = re.findall('<p><img class=.*?src="(.*?)"', content)[0]
 			items = []
