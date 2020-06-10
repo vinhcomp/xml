@@ -667,47 +667,47 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				item["is_playable"] = True
 				item["info"] = {"type": "video"}
 				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-			elif "youtube.com/channel" in item["path"]:
-				# https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ
-				yt_route = "ytcp" if "playlists" in item["path"] else "ytc"
-				yt_cid = re.compile("youtube.com/channel/(.+?)$").findall(item["path"])[0]
-				item["path"] = "plugin://plugin.video.kodi4vn.launcher/%s/%s/" % (
-					yt_route, yt_cid)
-				item["path"] = item["path"].replace("/playlists", "")
-			elif "youtube.com/playlist" in item["path"]:
-				# https://www.youtube.com/playlist?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI
-				yt_pid = re.compile("list=(.+?)$").findall(item["path"])[0]
-				item["path"] = "plugin://plugin.video.kodi4vn.launcher/ytp/%s/" % yt_pid
-			elif any(ext in item["path"] for ext in [".png", ".jpg", ".bmp", ".jpeg"]):
-				item["path"] = "plugin://plugin.video.kodi4vn.launcher/showimage/%s/" % urllib.quote_plus(
-					item["path"])
-			
 			#elif "youtube.com/channel" in item["path"]:
 				## https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ
 				#yt_route = "ytcp" if "playlists" in item["path"] else "ytc"
 				#yt_cid = re.compile("youtube.com/channel/(.+?)$").findall(item["path"])[0]
-				#item["path"] = "plugin://plugin.video.youtube/channel/%s/" % yt_cid
-
+				#item["path"] = "plugin://plugin.video.kodi4vn.launcher/%s/%s/" % (
+				#	yt_route, yt_cid)
+				#item["path"] = item["path"].replace("/playlists", "")
 			#elif "youtube.com/playlist" in item["path"]:
 				## https://www.youtube.com/playlist?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI
 				#yt_pid = re.compile("list=(.+?)$").findall(item["path"])[0]
-				#item["path"] = "plugin://plugin.video.youtube/playlist/%s/" % yt_pid
+				#item["path"] = "plugin://plugin.video.kodi4vn.launcher/ytp/%s/" % yt_pid
+			elif any(ext in item["path"] for ext in [".png", ".jpg", ".bmp", ".jpeg"]):
+				item["path"] = "plugin://plugin.video.kodi4vn.launcher/showimage/%s/" % urllib.quote_plus(
+					item["path"])
+			
+			elif "youtube.com/channel" in item["path"]:
+				# https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ
+				yt_route = "ytcp" if "playlists" in item["path"] else "ytc"
+				yt_cid = re.compile("youtube.com/channel/(.+?)$").findall(item["path"])[0]
+				item["path"] = "plugin://plugin.video.youtube/channel/%s/" % yt_cid
+
+			elif "youtube.com/playlist" in item["path"]:
+				# https://www.youtube.com/playlist?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI
+				yt_pid = re.compile("list=(.+?)$").findall(item["path"])[0]
+				item["path"] = "plugin://plugin.video.youtube/playlist/%s/" % yt_pid
 
 			elif item["path"].startswith('ytsearch'):
 				#ytsearch/nhu loan
 				item["path"]=item["path"].replace('ytsearch/', '')
-				#item["path"]=item["path"].replace(' ', '%20')
-				item["path"]=item["path"].replace(' ', '+')
-				#item["path"]='plugin://plugin.video.youtube/kodion/search/query/?q='+item["path"]
-				item["path"]='plugin://plugin.video.kodi4vn.launcher/yts/none/video/'+item["path"]
+				item["path"]=item["path"].replace(' ', '%20')
+				#item["path"]=item["path"].replace(' ', '+')
+				item["path"]='plugin://plugin.video.youtube/kodion/search/query/?q='+item["path"]
+				#item["path"]='plugin://plugin.video.kodi4vn.launcher/yts/none/video/'+item["path"]
 
 			elif item["path"].startswith('ytlist'):
 				#ytlist/phong su
 				item["path"]=item["path"].replace('ytlist/', '')
-				#item["path"]=item["path"].replace(' ', '%20')
-				item["path"]=item["path"].replace(' ', '+')
-				#item["path"]='plugin://plugin.video.youtube/kodion/search/query/?q='+item["path"]+'&search_type=playlist'
-				item["path"]='plugin://plugin.video.kodi4vn.launcher/yts/none/playlist/'+item["path"]
+				item["path"]=item["path"].replace(' ', '%20')
+				#item["path"]=item["path"].replace(' ', '+')
+				item["path"]='plugin://plugin.video.youtube/kodion/search/query/?q='+item["path"]+'&search_type=playlist'
+				#item["path"]='plugin://plugin.video.kodi4vn.launcher/yts/none/playlist/'+item["path"]
 
 			elif re.search("\.ts$", item["path"]):
 				item["path"] = "plugin://plugin.video.f4mTester/?url=%s&streamtype=TSDOWNLOADER&use_proxy_for_chunks=True&name=%s" % (
@@ -1773,7 +1773,7 @@ def get_playable_url(url):
 				"GET", headers=headers,
 			)
 			j = json.loads(content)
-			url = j["stream_info"]["secure_m3u8_url"]
+			return j["stream_info"]["secure_m3u8_url"]+'|User-Agent=iPad&amp;Referer=%s' % url
 		except:
 			#pass
 			return notice()
