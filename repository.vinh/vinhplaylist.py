@@ -2221,6 +2221,7 @@ def get_playable_url(url):
 		for n in range(len(link_svs)):
 			try:
 				source3 = requests.get(link_svs[n], headers=headers2).text
+				source3 = source3.replace('"', "'")
 				if 'vcdn.com' in source3: #direct link in source3, vl1 vip
 					return re.findall('(http://.*?m3u8.*?)\'', source3)[0]
 				link = re.findall('(http://sv.tvmienphi.net.*?)\'', source3)[0]
