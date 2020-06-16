@@ -1067,7 +1067,7 @@ def M3UToItems(url_path=""):
 		items = []
 		for path, thumb, label in matchs:
 			path = 'https://ok.ru'+path
-			thumb = 'https:'+thumb
+			#thumb = 'https:'+thumb
 			thumb = thumb.replace('&amp;', '&')
 			item = {
 				"label": label.strip(),
