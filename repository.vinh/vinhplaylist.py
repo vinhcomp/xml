@@ -1367,6 +1367,17 @@ def play_url(url, title=""):
 		url = 'plugin://plugin.video.vinh.movies/play/%s/acronai?' % url1
 		plugin.set_resolved_url(url)
 
+	elif url.startswith('https://urgentnews.club'): #fox news
+		source = requests.get(url, headers=headers2).text
+		link = re.findall('<iframe width.+?src="(.*?)"', source)[0]
+		if link.startswith('//'):
+			link = link.replace('//', 'https://')
+			link = urllib.quote_plus(link)
+			url = 'plugin://plugin.video.vinh.movies/play/%s/fox?&quot' % link
+		else:
+			url = link
+		plugin.set_resolved_url(url)
+
 	else:
 		plugin.set_resolved_url(url, subtitles=vsub)
 
@@ -2369,10 +2380,10 @@ def get_playable_url(url):
 		else:
 			return linkfinal
 
-	elif "7streams.online" in url:
-		(resp, content) = http.request(url,"GET",headers=headers1)
-		match = re.search("var videoLink = '(.+?)'", content)
-		return match.group(1)
+	#elif "7streams.online" in url:
+	#	(resp, content) = http.request(url,"GET",headers=headers1)
+	#	match = re.search("var videoLink = '(.+?)'", content)
+	#	return match.group(1)
 
 	elif 'sdw-net.me' in url:
 		return vonglap(url=url, n=0)
