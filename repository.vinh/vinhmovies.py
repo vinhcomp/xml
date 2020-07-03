@@ -470,6 +470,8 @@ def M3UToItems(url_path=""):
 			#thumb = re.findall('id="expand-post-content".*?src="(.*?)" alt', content)[0]
 			thumb = re.findall('<p><img class=.*?src="(.*?)"', content)[0]
 			items = []
+			items1 =[]
+			items2 =[]
 			matchs = re.compile(item_re).findall(content)
 			if matchs == []: #Incase cannot get path
 				path = url_path
@@ -485,20 +487,32 @@ def M3UToItems(url_path=""):
 				item["info"] = {"type": "video"}
 				items += [item]
 			for path, label in matchs:
+				path1 = path
+				path2 = path.replace('server-1', 'server-2') #server 2
 				label = 'Tập - Episode '+label
 				thumb = thumb
-				item = {
+				item1 = { #server 1
 					"label": label,
 					"thumbnail": thumb,
-					"path": path,
+					"path": path1,
 				}
-				item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
-				item["is_playable"] = True
-				item["info"] = {"type": "video"}
-				items += [item]
+				item1["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item1["path"])
+				item1["is_playable"] = True
+				item1["info"] = {"type": "video"}
+				items1 += [item1]
+				item2 = { #server 2
+					"label": label,
+					"thumbnail": thumb,
+					"path": path2,
+				}
+				item2["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item2["path"])
+				item2["is_playable"] = True
+				item2["info"] = {"type": "video"}
+				items2 += [item2]
+			items = items1+items2
 			return items
 
-		else: #layer 1			
+		else: #layer 1
 			content = requests.get(url_path, headers=headers2).content
 			content = "".join(content.splitlines())
 			#item_re = 'class="halim-thumb" href="(.*?)/" title="(.*?)".*?src="(.*?)" alt=".*?title="(.*?)"'
