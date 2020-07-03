@@ -1,5 +1,5 @@
-#!/usr/bin/python
-#coding=utf-8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import httplib2
 import json
 import re
@@ -1845,7 +1845,12 @@ def play_url(url, title=""):
 		try:
 			linkstream = re.findall('embed-responsive-item" src="(.*?)"', source)[0]
 			source3 = requests.get(linkstream, headers=headers1).text
-			url = re.findall('urlVideo = \'(.*?)\'', source3)[0]+'|Referer='+linkstream+'&User-Agent=iPad'
+			source3 = source3.encode('utf8') #source3.text has unicode
+			link = re.findall('urlVideo = \'(.*?)\'', source3)[0]#+'|Referer='+linkstream+'&User-Agent=iPad'
+			link = link.replace(' ', '%20')
+			#url = urllib.quote_plus(link, safe="%/:=&?~#+!$,;'@()*[]")+'|Referer='+linkstream+'&User-Agent=iPad'
+			link = urllib.quote_plus(link, safe="%/:=&?~#+!$,;'@()*[]") #encode only not in safe, python 3: link=urllib.parse.quote_plus(link, "\./_-:")
+			url = link+'|Referer='+linkstream+'&User-Agent=iPad'
 		except:
 			import resolveurl
 			link_okru = re.findall('(https://ok.ru.*?) ', source)[0]
