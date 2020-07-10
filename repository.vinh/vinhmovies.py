@@ -237,7 +237,7 @@ def Layer2ToItems(url_path=""):
 			items += [item]
 		return items
 
-	if url_path.startswith('http://topphimhd.com/'):
+	if url_path.startswith('http://topphimhd.com/'): #layer 2
 		content = requests.get(url_path, headers=headers2).content
 		item_re = 'episode"><a href="(.*?)"><span>(.*?)</span>'
 		matchs = re.compile(item_re).findall(content)
@@ -565,6 +565,35 @@ def M3UToItems(url_path=""):
 		items = items+[nextitem]
 		return items
 
+	elif url_path.startswith('https://phimhdonlinetv.com/'): #layer 1
+		content = requests.get(url_path, headers=headers2).content
+		item_re = 'text-center"><a href="(.*?)".*?title="(.*?)".*?src="(.*?)"'
+		try:
+			pages = re.findall('next page-numbers" href="(.*?)"', content)[0]
+		except:
+			pages = 'none'
+		if pages == 'none':
+			nlabel = 'Hết Trang - End of Pages'
+		else:
+			nlabel = '[COLOR yellow]Next Page>>[/COLOR]'+re.compile('page/(.*?)/').findall(pages)[0]
+		nthumb = 'https://cdn.pixabay.com/photo/2017/06/20/14/55/icon-2423349_960_720.png'
+		npath = pluginrootpath+"/m3u/"+urllib.quote_plus(pages)
+		nextitem = {'label': nlabel, 'thumbnail': nthumb, 'path': npath}
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for path, label, thumb in matchs:
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		items = items+[nextitem]
+		return items
+
 	elif url_path.startswith('http://www.hdmoi.net'):
 		content = requests.get(url_path, headers=headers2).content
 		#item_re = 'halim-thumb" href="(.*?)".*?(?s)src="(.*?)".*?(?s)episode">(.*?)</.*?(?s)title">(.*?)</.*?title">(.*?)</'
@@ -606,7 +635,6 @@ def M3UToItems(url_path=""):
 			items += [item]
 		items = items+[nextitem]
 		return items
-
 
 	elif url_path.startswith('https://cam2cam.com'):
 		item_re = '<img class=\"\" src=\"//(.*?)\".*?alt=\"(.*?)\".*?\n.*?\n.*?\n.*?\n.*?\n.*?href=\"(.*?)\"'
@@ -1889,6 +1917,12 @@ def play_url(url, title=""):
 			link_okru = re.findall('(https://ok.ru.*?) ', source)[0]
 			url = resolveurl.resolve(link_okru)		
 		plugin.set_resolved_url(url, subtitles=vsub)
+
+	elif url.startswith('https://phimhdonlinetv.com/'):
+		source = requests.get(url, headers=headers1).text
+		url = re.findall('source src="(.*?)"', source)[0]
+		plugin.set_resolved_url(url, subtitles=vsub)
+
 	elif 'cam2cam.com' in url:
 		source = requests.get(url, headers=headers1).text
 		try:
