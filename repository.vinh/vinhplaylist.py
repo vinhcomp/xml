@@ -238,8 +238,9 @@ def M3UToItems(url_path=""):
 #			return items
 
 	elif url_path.startswith('https://cam2cam.com'):
-		item_re = '<img class=\"\" src=\"//(.*?)\".*?alt=\"(.*?)\".*?\n.*?\n.*?\n.*?\n.*?\n.*?href=\"(.*?)\"'
-		content = requests.get(url_path, headers=headers2).content
+		#item_re = '<img class=\"\" src=\"//(.*?)\".*?alt=\"(.*?)\".*?\n.*?\n.*?\n.*?\n.*?\n.*?href=\"(.*?)\"'
+		item_re = '<img class=\"\" src=\"//(.*?)\".*?alt=\"(.*?)\".*?(?s)href=\"(.*?)\"'
+		content = requests.get(url_path, headers=headers2).content #check header for result
 		try:
 			pages = 'https://cam2cam.com'+(re.findall('li class=\"active\"><a>.*?\n.*?\n.*?\n.*?<li><a href=\"(.*?)\"', content)[0])
 		except:
@@ -1294,6 +1295,10 @@ def play_url(url, title=""):
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
 			'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 		}
+	headers3 = {
+			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+			'Referer':url,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+		}
 	vsub = 'https://docs.google.com/spreadsheets/d/1NwDGsRUhlXvvCPT3ToXJzn450Nto6FyLLBMucdxK13A/export?format=tsv&gid=0'
 	if "sub" in plugin.request.args:
 		plugin.set_resolved_url(url, subtitles=plugin.request.args["sub"][0])
@@ -1322,17 +1327,17 @@ def play_url(url, title=""):
 	#	plugin.set_resolved_url(url, subtitles=vsub)
 
 	elif 'cam2cam.com' in url:
-		source = requests.get(url, headers=headers1).text
+		source = requests.get(url, headers=headers3).text #check header for result
 		try:
 			linkstream = 'https://cam2cam.com'+(re.findall('iframe.src = \'(.*?)\'', source)[0])
 		except:
 			return notice('This Model is Offline Now!!', 'Please choose other model!!', 'Con ghệ này off rồi, chọn con khác đi!!')
-		source2 = requests.get(linkstream, headers=headers1).text
+		source2 = requests.get(linkstream, headers=headers3).text
 		linkstream2 = re.findall('data-manifesturl="(.*?)"', source2)[0]
-		source3 = requests.get(linkstream2, headers=headers1).text
-		#url = re.findall('location\":\"(https://.*?1280.*?index.m3u8)\"', source3)[0]
+		source3 = requests.get(linkstream2, headers=headers3).text
 		try:
-			url = re.findall('location\":\"(https://.*?index.m3u8)\"', source3)[0]
+			#url = re.findall('location\":\"(https://.*?index.m3u8.*?)\"', source3)[0]
+			url = re.findall('manifest":"(.*?)"', source3)[0] #best quality
 		except:
 			return notice('This Model is Private Show Now!!', 'Please choose other model!!', 'Con ghệ này đang chat private, chọn con khác đi!!')
 		plugin.set_resolved_url(url, subtitles=vsub)
@@ -1373,7 +1378,7 @@ def play_url(url, title=""):
 		if link.startswith('//'):
 			link = link.replace('//', 'https://')
 			link = urllib.quote_plus(link)
-			url = 'plugin://plugin.video.vinh.movies/play/%s/fox?&quot' % link
+			url = 'plugin://plugin.video.vinh.movies/play/%s/fox?' % link
 		else:
 			url = link
 		plugin.set_resolved_url(url)
