@@ -1906,7 +1906,7 @@ def play_url(url, title=""):
 		try:
 			linkstream = re.findall('embed-responsive-item" src="(.*?)"', source)[0]
 			source3 = requests.get(linkstream, headers=headers1).text
-			source3 = source3.encode('utf8') #source3.text has unicode
+			source3 = source3.encode('utf8') #source3.text has unicode (special char) or url has unicode, have to do replace(' ', '%20'), and encode not safe char in url next
 			link = re.findall('urlVideo = \'(.*?)\'', source3)[0]#+'|Referer='+linkstream+'&User-Agent=iPad'
 			link = link.replace(' ', '%20')
 			#url = urllib.quote_plus(link, safe="%/:=&?~#+!$,;'@()*[]")+'|Referer='+linkstream+'&User-Agent=iPad'
@@ -1920,7 +1920,10 @@ def play_url(url, title=""):
 
 	elif url.startswith('https://phimhdonlinetv.com/'):
 		source = requests.get(url, headers=headers1).text
+		source = source.encode('utf8') #source.text has unicode (special char) or url has unicode, have to do replace(' ', '%20'), and encode not safe char in url next
 		url = re.findall('source src="(.*?)"', source)[0]
+		url = url.replace(' ', '%20')
+		url = urllib.quote_plus(url, safe="%/:=&?~#+!$,;'@()*[]") #encode only not in safe, python 3: link=urllib.parse.quote_plus(link, "\./_-:")
 		plugin.set_resolved_url(url, subtitles=vsub)
 
 	elif 'cam2cam.com' in url:
