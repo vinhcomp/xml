@@ -237,7 +237,7 @@ def Layer2ToItems(url_path=""):
 			items += [item]
 		return items
 
-	if url_path.startswith('http://topphimhd.com/'): #layer 2
+	if url_path.startswith('http://topphimhd.com/') or url_path.startswith('http://topphimhdz.com'): #layer 2
 		content = requests.get(url_path, headers=headers2).content
 		item_re = 'episode"><a href="(.*?)"><span>(.*?)</span>'
 		matchs = re.compile(item_re).findall(content)
@@ -480,7 +480,7 @@ def M3UToItems(url_path=""):
 		items = items + [nextitem]
 		return items
 
-	elif url_path.startswith('http://topphimhd.com'):
+	elif url_path.startswith('http://topphimhd.com') or url_path.startswith('http://topphimhdz.com'):
 	#	if 'xem-phim' in url_path: #layer 2
 	#		content = requests.get(url_path, headers=headers2).content
 	#		content = "".join(content.splitlines())
@@ -1901,7 +1901,7 @@ def play_url(url, title=""):
 			return notice('This Model is Offline Now!!', 'Please choose other model!!', 'Con ghệ này off rồi, chọn con khác đi!!')
 		plugin.set_resolved_url(url, subtitles=vsub)
 	#elif 'topphimhd' in url or 'topphimhd.info' in url:
-	elif url.startswith('http://topphimhd'):
+	elif url.startswith('http://topphimhd') or url.startswith('http://topphimhdz.com'):
 		source = requests.get(url, headers=headers1).text
 		try:
 			linkstream = re.findall('embed-responsive-item" src="(.*?)"', source)[0]
