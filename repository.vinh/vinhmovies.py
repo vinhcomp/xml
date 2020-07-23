@@ -30,7 +30,7 @@ from contextlib import contextmanager
 import xbmc
 
 import requests, resolveurl, js2py
-from resources.libs import GATracker, extract, downloader, skinSwitch, wizard as wiz
+#from resources.libs import GATracker, extract, downloader, skinSwitch, wizard as wiz
 
 #Enable inputstream.adaptive
 @contextmanager
