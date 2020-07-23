@@ -30,6 +30,7 @@ from contextlib import contextmanager
 import xbmc
 
 import requests, resolveurl, js2py
+from resources.libs import GATracker, extract, downloader, skinSwitch, wizard as wiz
 
 #Enable inputstream.adaptive
 @contextmanager
@@ -1910,7 +1911,7 @@ def play_url(url, title=""):
 			link = re.findall('urlVideo = \'(.*?)\'', source3)[0]#+'|Referer='+linkstream+'&User-Agent=iPad'
 			link = link.replace(' ', '%20')
 			#url = urllib.quote_plus(link, safe="%/:=&?~#+!$,;'@()*[]")+'|Referer='+linkstream+'&User-Agent=iPad'
-			link = urllib.quote_plus(link, safe="%/:=&?~#+!$,;'@()*[]") #encode only not in safe, python 3: link=urllib.parse.quote_plus(link, "\./_-:")
+			link = urllib.quote_plus(link, safe="%/:=&?~#+!$,;'@()*[]") #encode only not in safe, python 3: link=urllib.parse.quote_plus(link, "%/:=&?~#+!$,;'@()*[]")
 			url = link+'|Referer='+linkstream+'&User-Agent=iPad'
 		except:
 			import resolveurl
@@ -1923,7 +1924,7 @@ def play_url(url, title=""):
 		source = source.encode('utf8') #source.text has unicode (special char) or url has unicode, have to do replace(' ', '%20'), and encode not safe char in url next
 		url = re.findall('source src="(.*?)"', source)[0]
 		url = url.replace(' ', '%20')
-		url = urllib.quote_plus(url, safe="%/:=&?~#+!$,;'@()*[]") #encode only not in safe, python 3: link=urllib.parse.quote_plus(link, "\./_-:")
+		url = urllib.quote_plus(url, safe="%/:=&?~#+!$,;'@()*[]") #encode only not in safe, python 3: link=urllib.parse.quote_plus(link, "%/:=&?~#+!$,;'@()*[]")
 		plugin.set_resolved_url(url, subtitles=vsub)
 
 	elif 'cam2cam.com' in url:
@@ -2199,6 +2200,49 @@ def notice(
 	dlg.ok(banner, line1, line2)
 	return notice
 
+###################################################################
+#Code from HieuIT, for restore user data
+###################################################################
+ADDONS        =  xbmc.translatePath(os.path.join('special://home','addons'))
+PACKAGES         = os.path.join(ADDONS,    'packages')
+DP            =  xbmcgui.DialogProgress()
+ADDONTITLE       = wiz.ADDONTITLE
+HOME             = wiz.HOME
+def wizard(name,url,description):
+    ################## New code ###################################
+	wiz.clearS('build')
+	zipname = name.replace('\\', '').replace('/', '').replace(':', '').replace('*', '').replace('?', '').replace('"', '').replace('<', '').replace('>', '').replace('|', '')
+	if not os.path.exists(PACKAGES): os.makedirs(PACKAGES)
+	DP.create(ADDONTITLE,'[B]Đang Tải:[/B] %s' % (name),'', 'Chờ Chút Nhé...')
+	lib=os.path.join(PACKAGES, '%s.zip' % zipname)
+	try: os.remove(lib)
+	except: pass
+	downloader.download(url, lib, DP)
+	xbmc.sleep(500)
+	title = '[B]Đang cài đặt:[/B] %s' % (name)
+	DP.update(0, title,'', 'Chờ Chút Nhé...')
+	percent, errors, error = extract.all(lib,HOME,DP, title=title)
+	if int(float(percent)) > 0:
+		wiz.setS('buildname', name)
+		#wiz.setS('buildversion', wiz.checkBuild( name,'version'))
+		#wiz.setS('buildtheme', '')
+		# wiz.setS('latestversion', wiz.checkBuild( name,'version'))
+		# wiz.setS('lastbuildcheck', str(NEXTCHECK))
+		wiz.setS('installed', 'true')
+		# wiz.setS('extract', str(percent))
+		# wiz.setS('errors', str(errors))
+		wiz.log('INSTALLED %s: [ERRORS:%s]' % (percent, errors))
+		try: os.remove(lib)
+		except: pass
+		if int(float(errors)) > 0:
+			yes=dialog.yesno(ADDONTITLE, '[COLOR %s][COLOR %s]%s[/COLOR]' % (COLOR2, COLOR1, name), 'Đã hoàn thành: [COLOR %s]%s%s[/COLOR] [Lỗi:[COLOR %s]%s[/COLOR]]' % (COLOR1, percent, '%', COLOR1, errors), 'Bạn có muốn xem thống kê lỗi?[/COLOR]', nolabel='[B][COLOR red]Không cần[/COLOR][/B]',yeslabel='[B][COLOR green]Xem ngay[/COLOR][/B]')
+			if yes:
+				if isinstance(errors, unicode):
+					error = error.encode('utf-8')
+				wiz.TextBox(ADDONTITLE, error)
+	DP.close()
+####################### End of the code HieuIT ##########################
+
 def get_playable_url(url):
 	headers2 = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
@@ -2268,6 +2312,28 @@ def get_playable_url(url):
 		lsp_addon = xbmcaddon.Addon('plugin.video.live.streamspro')
 		lsp_settings = xbmcaddon.Addon('plugin.video.live.streamspro').openSettings()
 		xbmc.executebuiltin('lsp_settings')
+
+	#user data google drive
+	elif "ggdrivedata" in url:
+		dialog = xbmcgui.Dialog()
+		#yes = dialog.yesno("[COLOR red][B]CẢNH BÁO !!![/COLOR][/B]", "Tất cả [COLOR yellow]Account đã thêm vào Google Drive[/COLOR] sẽ bị ghi đè.", "Bạn có muốn tiếp tục?", yeslabel='OK', nolabel='CANCEL') 
+		y = dialog.yesno("[COLOR red][B]CẢNH BÁO !!![/COLOR][/B]", "Tất cả [COLOR yellow]Account đã thêm vào Google Drive[/COLOR] sẽ bị ghi đè.", "Bạn có muốn tiếp tục?") 
+		if y == 0:
+			pass
+		else:
+			wizard("dataggdrive",'https://dl.dropboxusercontent.com/s/nofqcb6rd9l7v6i/data_ggdrive.zip',description=None)
+			wiz.clearS('build')
+			wiz.refresh()
+			dialog.ok("Done!", "Khôi phục xong, nhấn OK và thưởng thức ^^")
+			xbmc.executebuiltin('RunAddon(plugin.googledrive)')
+		#if yes:
+		#	wizard("dataggdrive",'https://dl.dropboxusercontent.com/s/nofqcb6rd9l7v6i/data_ggdrive.zip',description)
+		#	wiz.clearS('build')
+		#	wiz.refresh()
+		#	dialog.ok("Done!", "Khôi phục xong, nhấn OK và thưởng thức ^^")
+		#	xbmc.executebuiltin('RunAddon(plugin.googledrive)')
+		#else:
+		#	pass
 
 	elif "openmobdro" in url and apk:
 		#apk = xbmc.getCondVisibility('system.platform.android')
