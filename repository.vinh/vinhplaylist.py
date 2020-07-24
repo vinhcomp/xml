@@ -1572,19 +1572,21 @@ def get_playable_url(url):
 				return notice()
 		yt_addon = xbmcaddon.Addon('plugin.video.youtube')
 		if yt_addon.getSetting('kodion.video.quality.mpd') != 'true': # Youtube settings not choose MPEG-Dash yet or == 'false'
-			dialog = xbmcgui.Dialog()
-			yes = dialog.yesno(
-				'This Channel Need to Enable MPEG-DASH to Play!\n',
-				'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
-				yeslabel='OK',
-				nolabel='CANCEL'
-				)
-			if yes:
-				yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
-				xbmc.executebuiltin('yt_settings')
-				url = url
-				return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to get_playable_url(url)
-			return None
+			#dialog = xbmcgui.Dialog()
+			#yes = dialog.yesno(
+			#	'This Channel Need to Enable MPEG-DASH to Play!\n',
+			#	'[COLOR yellow]Please Click OK, Choose MPEG-DASH -> Select Use MPEG-DASH -> Click OK[/COLOR]',
+			#	yeslabel='OK',
+			#	nolabel='CANCEL'
+			#	)
+			#if yes:
+				#yt_settings = xbmcaddon.Addon('plugin.video.youtube').openSettings()
+				#xbmc.executebuiltin('yt_settings')
+				#url = url
+				#return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to get_playable_url(url)
+			url = 'plugin://plugin.video.vinh.maintenance/play/youtube_settings/youtube_settings?&quot'
+			return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to get_playable_url(url)
+			#return None
 		else:
 			url = 'plugin://plugin.video.youtube/play/?video_id='+keyid
 
