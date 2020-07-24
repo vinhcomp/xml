@@ -1,34 +1,10 @@
 #!/usr/bin/python
 #coding=utf-8
-import httplib2
-import json
-import re
-import requests
-import urllib
-import os
-import uuid
-import contextlib
-import zipfile
-import random
-import base64
-import time
-import thread
-import socket
+import httplib2, json, re, requests, urllib, os, uuid, contextlib, zipfile, random, base64, time, thread, socket, xbmcvfs
 from datetime import datetime
 from urlresolver.plugins.lib import jsunpack
-
 from kodiswift import Plugin, xbmc, xbmcaddon, xbmcgui, actions
-#import xbmcplugin
-#import xbmcgui
-#import xbmcaddon
-#import xbmcvfs
-#import traceback
-#import cookielib,base64
-#from xml.sax.saxutils import escape
-#import json
-#import sys, traceback
 from contextlib import contextmanager
-import xbmcvfs
 
 #Enable inputstream.adaptive
 @contextmanager
