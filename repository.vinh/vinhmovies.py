@@ -1,35 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import httplib2
-import json
-import re
-import urllib
-import os
-import uuid
-import contextlib
-import zipfile
-import random
-import base64
-import time
-import thread
-import socket
+import httplib2, json, re, urllib, os, uuid, contextlib, zipfile, random, base64, time, thread, socket, xbmcplugin, xbmc, xbmcgui, xbmcaddon, xbmcvfs, traceback, cookielib, json, sys, requests, resolveurl, js2py
 from datetime import datetime
 from urlresolver.plugins.lib import jsunpack
-
-import xbmcplugin
-import xbmcgui
-import xbmcaddon
-import xbmcvfs
-import traceback
-import cookielib,base64
 from xml.sax.saxutils import escape
-import json
-
-import sys, traceback
 from contextlib import contextmanager
-import xbmc
-
-import requests, resolveurl, js2py
 #from resources.libs import GATracker, extract, downloader, skinSwitch, wizard as wiz
 
 #Enable inputstream.adaptive
@@ -566,7 +541,7 @@ def M3UToItems(url_path=""):
 		items = items+[nextitem]
 		return items
 
-	elif url_path.startswith('https://phimhdonlinetv.com/'): #layer 1
+	elif url_path.startswith('https://phimhdonlinetv.com') or url_path.startswith('https://phimhdonlinetv1.com'): #layer 1
 		content = requests.get(url_path, headers=headers2).content
 		item_re = 'text-center"><a href="(.*?)".*?title="(.*?)".*?src="(.*?)"'
 		try:
@@ -1919,7 +1894,7 @@ def play_url(url, title=""):
 			url = resolveurl.resolve(link_okru)		
 		plugin.set_resolved_url(url, subtitles=vsub)
 
-	elif url.startswith('https://phimhdonlinetv.com/'):
+	elif url.startswith('https://phimhdonlinetv.com')  or url.startswith('https://phimhdonlinetv1.com'):
 		source = requests.get(url, headers=headers1).text
 		source = source.encode('utf8') #source.text has unicode (special char) or url has unicode, have to do replace(' ', '%20'), and encode not safe char in url next
 		url = re.findall('source src="(.*?)"', source)[0]
