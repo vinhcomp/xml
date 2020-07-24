@@ -1584,8 +1584,8 @@ def get_playable_url(url):
 				#xbmc.executebuiltin('yt_settings')
 				#url = url
 				#return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to get_playable_url(url)
-			url = 'plugin://plugin.video.vinh.maintenance/play/youtube_settings/youtube_settings?&quot'
-			return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to get_playable_url(url)
+			return 'plugin://plugin.video.vinh.maintenance/play/youtube_settings/youtube_settings?&quot'
+			#return get_playable_url(url) # Will play if select MPEG-Dash, if not select->Will popup settings and ask again bz back to get_playable_url(url)
 			#return None
 		else:
 			url = 'plugin://plugin.video.youtube/play/?video_id='+keyid
