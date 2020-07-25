@@ -182,7 +182,7 @@ def Layer2ToItems(url_path=""):
 ##			else:
 ##				return play_url(url_path[choise]) #will get error get addtracking, bc direct link(not list anything) ??
 	
-	if url_path.startswith('https://bilutvz.com') or url_path.startswith('https://bilumoi.com'): #layer2
+	if url_path.startswith('https://bilutvz.com') or url_path.startswith('https://bilumoi.com') or url_path.startswith('https://zingtvz.org'): #layer2
 		source = requests.get(url_path, headers=headers2).text
 		url_vs = re.findall('btn-danger" href="(.*?)"', source)[0] #vietsub
 		content_vs = requests.get(url_vs, headers=headers2).content
@@ -796,7 +796,7 @@ def M3UToItems(url_path=""):
 #		items = items + [nextitem]
 #		return items
 
-	elif url_path.startswith('https://bilutvz.com') or url_path.startswith('https://bilumoi.com'):
+	elif url_path.startswith('https://bilutvz.com') or url_path.startswith('https://bilumoi.com') or url_path.startswith('https://zingtvz.org'):
 		content = requests.get(url_path, headers=headers2).content
 		content = "".join(content.splitlines())
 		item_re = 'current-status">(.*?)<.*?href="(.*?)".*?src="(.*?)".*?class=.*?name">(.*?)</p>.*?real-name">(.*?)<'
@@ -1977,9 +1977,10 @@ def play_url(url, title=""):
 #							url = re.findall('center;"><a href="(.*?)"', source)[0]
 #		plugin.set_resolved_url(url, subtitles=vsub)
 	
-	elif url.startswith('https://bilumoi.com') or url.startswith('https://bilutv.org') or url.startswith('https://bilutvz.com'):
-		url2 = 'https://bilumoi.com/ajax/player'
+	elif url.startswith('https://bilumoi.com') or url.startswith('https://bilutv.org') or url.startswith('https://bilutvz.com') or url.startswith('https://zingtvz.org'):
+		#url2 = 'https://bilumoi.com/ajax/player'
 		#url2 = 'https://bilutv.org/ajax/player'
+		url2 = 'https://zingtvz.org/ajax/player'
 		source = requests.get(url, headers=headers2).text
 		movie_id = re.findall('MovieID = \'(.*?)\'', source)[0]
 		ep_id = re.findall('EpisodeID = \'(.*?)\'', source)[0]
