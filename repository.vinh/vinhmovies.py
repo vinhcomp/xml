@@ -700,6 +700,7 @@ def M3UToItems(url_path=""):
 		content = "".join(content.splitlines())
 		item_re = '<li>.*?<p style=".*?<a href="(.*?)".*?class="match-view">.*?match-status">(.*?)</span>.*?right name-team">' \
 			'(.*?)</span>.*?data-src="(.*?)".*?left name-team">(.*?)</span>.*?tour name-comp">(.*?)</span>'
+		#item_re = 'list-channel.*?(?s)<a href="/(.*?)".*?class="item.*?(?s)<img src="(.*?)".*?(?s)class="league">(.*?)</div>.*?(?s)class="title">(.*?)</div>.*?(?s)data-time.*?(?s)</span>(.*?)</div>'
 		matchs = re.compile(item_re).findall(content)
 		notice_time = {
 					'label': '------------[COLOR red] Giờ Việt Nam - VietNam Time [/COLOR]------------',
@@ -747,9 +748,12 @@ def M3UToItems(url_path=""):
 		}
 		items = []
 		for path, thumb, label3, label2, label1 in matchs:
-			label1 = '[COLOR lime]'+label1+'[/COLOR]'
-			label2 = '[COLOR yellow]'+label2+'[/COLOR]'
-			label3 = '[COLOR orange]'+label3+'[/COLOR]'
+			#label1 = '[COLOR lime]'+label1+'[/COLOR]'
+			label1 = label1.strip()
+			#label2 = '[COLOR yellow]'+label2+'[/COLOR]'
+			label2 = label2.strip()
+			#label3 = '[COLOR orange]'+label3+'[/COLOR]'
+			label3 = label3.strip()
 			label = label1+', '+label2+', '+label3
 			path = 'https://live1.90p.tv/'+path
 			item = {
