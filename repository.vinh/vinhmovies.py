@@ -728,7 +728,7 @@ def M3UToItems(url_path=""):
 		items = [notice_time]+items
 		return items
 
-	elif url_path.startswith('https://live.90phut.tv'):
+	elif url_path.startswith('https://live.90phut.tv') or url_path.startswith('https://live1.90p.tv'):
 		content = requests.get(url_path, headers=headers2).content
 		content = "".join(content.splitlines())
 		item_re = 'list-channel.*?<a href="/(.*?)".*?class="item.*?<img src="(.*?)".*?class="league">' \
@@ -751,7 +751,7 @@ def M3UToItems(url_path=""):
 			label2 = '[COLOR yellow]'+label2+'[/COLOR]'
 			label3 = '[COLOR orange]'+label3+'[/COLOR]'
 			label = label1+', '+label2+', '+label3
-			path = 'https://live.90phut.tv/'+path
+			path = 'https://live1.90p.tv/'+path
 			item = {
 				"label": label.strip(),
 				"thumbnail": thumb.strip(),
@@ -1953,7 +1953,7 @@ def play_url(url, title=""):
 			notice(notice1, notice2, notice3)
 		plugin.set_resolved_url(url, subtitles=vsub)
 
-	elif url.startswith('https://live.90phut.tv'):
+	elif url.startswith('https://live.90phut.tv') url.startswith('https://live1.90p.tv'):
 		source = requests.get(url, headers=headers1).text
 		url = re.findall('file: "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+url
 		plugin.set_resolved_url(url, subtitles=vsub)
