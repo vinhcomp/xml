@@ -199,7 +199,7 @@ def Layer2ToItems(url_path=""):
 		items = []
 		for path, label in matchs_all:
 			try:
-				thumb = re.findall('image" content="(https://bilutv.org.*?)"', content_vs)[0]
+				thumb = re.findall('image" content="(https://zingtvz.org.*?)"', content_vs)[0]
 			except:
 				thumb = ''
 			item = {
@@ -1046,7 +1046,8 @@ def M3UToItems(url_path=""):
 		content = requests.get(url1, headers=headers2).content
 		#matchs = re.findall('(<p>.*?|<br />.*?)<a href="(.*?)".*?;">(.*?)</', re.findall('%s</span>(.*?)(?s)</a></p>' % sport_name, content)[0])
 		#match = re.findall('>%s</span>(.*?)(?s)</a></p>' % sport_name, content)
-		match = re.findall('>%s</span>(.*?)(?s)<p>==' % sport_name, content)
+		#match = re.findall('>%s</span>(.*?)(?s)<p>==' % sport_name, content)
+		match = re.findall('>%s</span>(.*?)(?s)</span></a></p>' % sport_name, content)
 		matchs = []
 		for n in range(len(match)):
 			match2 = re.findall('(<p>.*?|<br />.*?)<a href="(.*?)".*?;">(.*?)</', match[n])
