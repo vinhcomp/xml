@@ -1953,7 +1953,7 @@ def play_url(url, title=""):
 			notice(notice1, notice2, notice3)
 		plugin.set_resolved_url(url, subtitles=vsub)
 
-	elif url.startswith('https://live.90phut.tv') url.startswith('https://live1.90p.tv'):
+	elif url.startswith('https://live.90phut.tv') or url.startswith('https://live1.90p.tv'):
 		source = requests.get(url, headers=headers1).text
 		url = re.findall('file: "(.*?)"',source)[0]+'|User-Agent=iPad&Referer='+url
 		plugin.set_resolved_url(url, subtitles=vsub)
