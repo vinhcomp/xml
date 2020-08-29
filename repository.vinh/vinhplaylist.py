@@ -1827,10 +1827,10 @@ def get_playable_url(url):
 		try: #Fix buggy sometime
 			linkstreamid = re.findall('(http.*?smil/)', source2)[0]
 			source3 = requests.get(linkstream, headers=headers1).text
-			linkstream2 = re.findall('(chunklist.*?$)', source3)[0]			
-			url = linkstreamid+linkstream2
+			linkstream2 = re.findall('(chunklist.*?\s)', source3)[0].strip()
+			return linkstreamid+linkstream2
 		except:
-			url = linkstream
+			return linkstream
 
 	#http://photocall.tv/beinsports1/
 	elif "http://photocall.tv" in url:
