@@ -1827,7 +1827,7 @@ def get_playable_url(url):
 		try: #Fix buggy sometime
 			linkstreamid = re.findall('(http.*?smil/)', source2)[0]
 			source3 = requests.get(linkstream, headers=headers1).text
-			linkstream2 = re.findall('(chunklist.*?\s)', source3)[0].strip()
+			linkstream2 = re.findall('(chunklist.*?\s)', source3)[-1].strip()
 			return linkstreamid+linkstream2
 		except:
 			return linkstream
