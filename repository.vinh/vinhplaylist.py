@@ -26,7 +26,7 @@ def enable_inputstream():
     with enabled_addon("inputstream.adaptive"):
         addon = xbmcaddon.Addon("plugin.video.vinh.livetv")
 
-#enable_inputstream()
+enable_inputstream()
 
 # Tham khảo xbmcswift2 framework cho kodi addon tại
 # http://xbmcswift2.readthedocs.io/en/latest/
