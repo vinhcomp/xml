@@ -1028,7 +1028,8 @@ def M3UToItems(url_path=""):
 			if path.startswith('/'):
 				path = 'http://crackstreams.com'+path
 			if 'media-heading' in info:
-				label1 = re.compile("media-heading'>(.*?)</").findall(info)[0]
+				#label1 = re.compile("media-heading'>(.*?)</").findall(info)[0]
+				label1 = re.compile("media-heading>(.*?)</").findall(info)[0]
 			if '<p>' in info:
 				label2 = re.compile("<p>(.*?)</").findall(info)[0]
 			label = '[COLOR lime]'+label2+'[/COLOR]'+', '+'[COLOR yellow]'+label1+'[/COLOR]'
