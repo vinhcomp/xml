@@ -1090,10 +1090,11 @@ def M3UToItems(url_path=""):
 			#label1 = ''
 			thumb = 'https://t3.ftcdn.net/jpg/00/17/46/90/240_F_17469077_tbWv6MUkv0wMWdZNO7uZnf8QUFCVjtoS.jpg'
 			#if '<p>' or '<br />' in label1:
-			if '</span>' or '</strong>' or '</a>' in label1:
+			#if '</span>' or '</strong>' or '</a>' in label1:
+			if any(words in label1 for words in ['</span>', '</strong>', '</a>', '<br />', '<span style="color: #0000ff;">']):
 				#label1 = label1.replace('<p>', '')
 				#label1 = label1.replace('<br />', '')
-				label1 = label1.replace('</span>', '').replace('</strong>', '').replace('</a>', '')
+				label1 = label1.replace('</span>', '').replace('</strong>', '').replace('</a>', '').replace('<br />', '').replace('<span style="color: #0000ff;">', '')
 			label = '[COLOR lime]'+label1+'[/COLOR]'+', '+'[COLOR yellow]'+label2+'[/COLOR]'
 			item = {
 				"label": label.strip(),
