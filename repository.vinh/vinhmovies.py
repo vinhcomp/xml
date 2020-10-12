@@ -1004,7 +1004,7 @@ def M3UToItems(url_path=""):
 			items += [item]
 		return items
 
-	elif url_path.startswith('http://crackstreams.com'):
+	elif url_path.startswith('http://crackstreams.com') or url_path.startswith('http://nbastreams.xyz'):
 		content = requests.get(url_path, headers=headers2).content
 		#content = "".join(content.splitlines())
 		#item_re = "<a href='(.*?)'.*?<img src='(.*?)'.*?media-heading'>(.*?)<.*?<p>(.*?)</p>"
@@ -1029,7 +1029,7 @@ def M3UToItems(url_path=""):
 				path = 'http://crackstreams.com'+path
 			if 'media-heading' in info:
 				#label1 = re.compile("media-heading'>(.*?)</").findall(info)[0]
-				label1 = re.compile("media-heading>(.*?)</").findall(info)[0]
+				label1 = re.compile("media-heading>|media-heading'>(.*?)</").findall(info)[0]
 			if '<p>' in info:
 				label2 = re.compile("<p>(.*?)</").findall(info)[0]
 			label = '[COLOR lime]'+label2+'[/COLOR]'+', '+'[COLOR yellow]'+label1+'[/COLOR]'
