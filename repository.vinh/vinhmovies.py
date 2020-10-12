@@ -1053,10 +1053,12 @@ def M3UToItems(url_path=""):
 		#matchs = re.findall('(<p>.*?|<br />.*?)<a href="(.*?)".*?;">(.*?)</', re.findall('%s</span>(.*?)(?s)</a></p>' % sport_name, content)[0])
 		#match = re.findall('>%s</span>(.*?)(?s)</a></p>' % sport_name, content)
 		#match = re.findall('>%s</span>(.*?)(?s)<p>==' % sport_name, content)
-		match = re.findall('>%s</span>(.*?)(?s)</span></a></p>' % sport_name, content)
+		#match = re.findall('>%s</span>(.*?)(?s)</span></a></p>' % sport_name, content)
+		match = re.findall('>%s</span>(.*?)(?s)</span></strong></a></p>' % sport_name, content)
 		matchs = []
 		for n in range(len(match)):
-			match2 = re.findall('(<p>.*?|<br />.*?)<a href="(.*?)".*?;">(.*?)</', match[n])
+			#match2 = re.findall('(<p>.*?|<br />.*?)<a href="(.*?)".*?;">(.*?)</', match[n])
+			match2 = re.findall(';">(.*?)<a href="(.*?)".*?;">(.*?)</', match[n])
 			matchs += match2
 
 		source_t = requests.get('https://www.timeanddate.com/worldclock/fullscreen.html?n=69', headers=headers2).text
@@ -1087,9 +1089,11 @@ def M3UToItems(url_path=""):
 		for label1, path, label2 in matchs:
 			#label1 = ''
 			thumb = 'https://t3.ftcdn.net/jpg/00/17/46/90/240_F_17469077_tbWv6MUkv0wMWdZNO7uZnf8QUFCVjtoS.jpg'
-			if '<p>' or '<br />' in label1:
-				label1 = label1.replace('<p>', '')
-				label1 = label1.replace('<br />', '')
+			#if '<p>' or '<br />' in label1:
+			if '</span>' or '</strong>' or '</a>' in label1:
+				#label1 = label1.replace('<p>', '')
+				#label1 = label1.replace('<br />', '')
+				label1 = label1.replace('</span>', '').replace('</strong>', '').replace('</a>', '')
 			label = '[COLOR lime]'+label1+'[/COLOR]'+', '+'[COLOR yellow]'+label2+'[/COLOR]'
 			item = {
 				"label": label.strip(),
