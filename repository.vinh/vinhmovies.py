@@ -215,7 +215,8 @@ def Layer2ToItems(url_path=""):
 
 	if url_path.startswith('http://topphimhd.com/') or url_path.startswith('http://topphimhdz.com'): #layer 2
 		content = requests.get(url_path, headers=headers2).content
-		item_re = 'episode"><a href="(.*?)"><span>(.*?)</span>'
+		#item_re = 'episode"><a href="(.*?)"><span>(.*?)</span>'
+		item_re = 'episode"><a href="(.*?)"><span.*?">(.*?)</span>'
 		matchs = re.compile(item_re).findall(content)
 		items = []
 		for path, label in matchs:
