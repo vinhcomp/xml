@@ -1056,7 +1056,8 @@ def M3UToItems(url_path=""):
 		#match = re.findall('>%s</span>(.*?)(?s)<p>==' % sport_name, content)
 		#match = re.findall('>%s</span>(.*?)(?s)</span></a></p>' % sport_name, content)
 		#match = re.findall('>%s</span>(.*?)(?s)</span></strong></a></p>' % sport_name, content)
-		match = re.findall('>%s</span>(.*?)(?s)</span></a></p>' % sport_name, content)
+		#match = re.findall('>%s</span>(.*?)(?s)</span></a></p>' % sport_name, content)
+		match = re.findall('>%s</span>(.*?)(?s)</span></a></p>|</span></strong></a></p>' % sport_name , content)
 		matchs = []
 		for n in range(len(match)):
 			#match2 = re.findall('(<p>.*?|<br />.*?)<a href="(.*?)".*?;">(.*?)</', match[n])
