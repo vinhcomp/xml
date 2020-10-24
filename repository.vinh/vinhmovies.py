@@ -1046,6 +1046,24 @@ def M3UToItems(url_path=""):
 		items = [notice_time]+items
 		return items
 
+	elif url_path.startswith('http://6stream.xyz'):
+		content = requests.get(url_path, headers=headers2).content
+		item_re = '<figure class=".*?data-original="(.*?)".*?href="(.*?)".*?title="(.*?)".*?(?s)datePublished">(.*?)<'
+		matchs = re.compile(item_re).findall(content)
+		items = []
+		for thumb, path, label1, label2 in matchs:
+			label = '[COLOR lime]'+label1+'[/COLOR]'+', '+'[COLOR yellow]'+label2+'[/COLOR]'
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		return items
+
 	elif url_path.startswith('https://daddylive.live'):
 		url1='https://daddylive.live/'
 		#sport_name=re.findall('/(\w+)$', url_path)[0]
@@ -2131,6 +2149,11 @@ def play_url(url, title=""):
 		source2 = requests.get(link, headers=h).text
 		decode = jsunpack.unpack(re.findall('(eval\(function\(p,a,c,k,e,d.*)',source2)[0]).replace('\\', '')
 		linkstream = re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+link
+		plugin.set_resolved_url(linkstream, subtitles=vsub)
+
+	elif url.startswith('http://6stream.xyz'):
+		source = requests.get(url, headers=headers2).text
+		linkstream = re.findall('source: "(.*?)"', source)[0]+'|user-agent=ipad&Referer=http://6stream.xyz'
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
 	elif 'sublink' in url:
