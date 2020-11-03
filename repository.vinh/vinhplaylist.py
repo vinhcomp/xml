@@ -1796,7 +1796,7 @@ def get_playable_url(url):
 		url = url.replace('&amp;', '&')
 
 	#elif url.startswith("http://123tvnow.com") or url.startswith("http://www.sports24.club") or url.startswith("https://sports24.club"):
-	elif any(domain in url for domain in['http://123tvnow.com', 'http://www.sports24.club', 'https://sports24.club']):
+	elif any(domain in url for domain in['http://123tvnow.com', 'http://www.sports24.club', 'https://sports24.club', 'https://sports24.icu']):
 		source = requests.get(url, headers=headers1).text
 		urlbase64 = re.findall("atob\('(.*?)'", source)[0]
 		#streamurl = urlbase64.decode('base64') #type: bytes python 3
