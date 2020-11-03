@@ -213,7 +213,8 @@ def Layer2ToItems(url_path=""):
 			items += [item]
 		return items
 
-	if url_path.startswith('http://topphimhd.com/') or url_path.startswith('http://topphimhdz.com'): #layer 2
+	#if url_path.startswith('http://topphimhd.com/') or url_path.startswith('http://topphimhdz.com') or url_path.startswith('http://topphimhdz.net'): #layer 2
+	if url_path.startswith('http://topphimhd.com/') or url_path.startswith('http://topphimhdz.com') or url_path.startswith('http://topphimhdz.net'): #layer 2
 		content = requests.get(url_path, headers=headers2).content
 		#item_re = 'episode"><a href="(.*?)"><span>(.*?)</span>'
 		item_re = 'episode"><a href="(.*?)"><span.*?">(.*?)</span>'
@@ -457,7 +458,8 @@ def M3UToItems(url_path=""):
 		items = items + [nextitem]
 		return items
 
-	elif url_path.startswith('http://topphimhd.com') or url_path.startswith('http://topphimhdz.com'):
+	#elif url_path.startswith('http://topphimhd.com') or url_path.startswith('http://topphimhdz.com'):
+	elif any(url_path.startswith(domain) for domain in ['http://topphimhd', 'http://topphimhdz.com', 'http://topphimhdz.net']):
 	#	if 'xem-phim' in url_path: #layer 2
 	#		content = requests.get(url_path, headers=headers2).content
 	#		content = "".join(content.splitlines())
@@ -1910,21 +1912,23 @@ def play_url(url, title=""):
 			return notice('This Model is Offline Now!!', 'Please choose other model!!', 'Con ghệ này off rồi, chọn con khác đi!!')
 		plugin.set_resolved_url(url, subtitles=vsub)
 	#elif 'topphimhd' in url or 'topphimhd.info' in url:
-	elif url.startswith('http://topphimhd') or url.startswith('http://topphimhdz.com'):
-		source = requests.get(url, headers=headers1).text
+	#elif url.startswith('http://topphimhd') or url.startswith('http://topphimhdz.com'):
+	elif any(url.startswith(domain) for domain in ['http://topphimhd', 'http://topphimhdz.com', 'http://topphimhdz.net', 'http://get.topphimhd.info']):
+		source = requests.get(url, headers=headers2).text
 		try:
 			linkstream = re.findall('embed-responsive-item" src="(.*?)"', source)[0]
-			source3 = requests.get(linkstream, headers=headers1).text
+			source3 = requests.get(linkstream, headers=headers2).text
 			source3 = source3.encode('utf8') #source3.text has unicode (special char) or url has unicode, have to do replace(' ', '%20'), and encode not safe char in url next
-			link = re.findall('urlVideo = \'(.*?)\'', source3)[0]#+'|Referer='+linkstream+'&User-Agent=iPad'
-			link = link.replace(' ', '%20')
+			#link = re.findall('urlVideo = \'(.*?)\'', source3)[0]#+'|Referer='+linkstream+'&User-Agent=iPad'
+			link = re.findall('file: \'(.*?)\'', source3)[0]#+'|Referer='+linkstream+'&User-Agent=iPad'
+			link = link.replace(' ', '%20').replace('https:/vuighe.org', 'https://vuighe.org')
 			#url = urllib.quote_plus(link, safe="%/:=&?~#+!$,;'@()*[]")+'|Referer='+linkstream+'&User-Agent=iPad'
 			link = urllib.quote_plus(link, safe="%/:=&?~#+!$,;'@()*[]") #encode only not in safe, python 3: link=urllib.parse.quote_plus(link, "%/:=&?~#+!$,;'@()*[]")
 			url = link+'|Referer='+linkstream+'&User-Agent=iPad'
 		except:
 			import resolveurl
 			link_okru = re.findall('(https://ok.ru.*?) ', source)[0]
-			url = resolveurl.resolve(link_okru)		
+			url = resolveurl.resolve(link_okru)
 		plugin.set_resolved_url(url, subtitles=vsub)
 
 	elif url.startswith('https://phimhdonlinetv.com')  or url.startswith('https://phimhdonlinetv1.com'):
