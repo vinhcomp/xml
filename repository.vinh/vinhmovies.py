@@ -2142,7 +2142,7 @@ def play_url(url, title=""):
 			linkstream = base64.b64decode(link2)+'|User-Agent=iPad&Referer='+link
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
-	elif url.startswith('https://daddylive.live'):
+	elif url.startswith('https://daddylive.live') or url.startswith('https://daddylive.club'):
 		source1 = requests.get(url, headers=headers2).text
 		link = re.findall('iframe src="(https://wstream.to.*?)"', source1)[0]
 		referer = 'https://daddylive.live/'
