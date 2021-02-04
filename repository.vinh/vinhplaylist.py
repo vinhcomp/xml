@@ -2102,13 +2102,24 @@ def get_playable_url(url):
 			'Accept-Encoding':'gzip, deflate',
 			"Accept-Language": "en-US,en;q=0.9,vi;q=0.8",
 		}
+		headers3 = {
+            'Host': 'www.tivi12h.net',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'Referer': 'http://www.tivi12h.net/kenh-htv7-hd-online-live.html',
+            'Accept-Encoding': 'gzip, deflate',
+            'Accept-Language': 'en-US,en;q=0.9,vi;q=0.8',
+            'Cookie': '__cfduid=d28d77920e81e89a592eaaee1d0df64ce1612394414; PHPSESSID=il5a36voki8m0b5hk0ofjsth06; _ga=GA1.2.2051630899.1612394428; _gid=GA1.2.44991041.1612394428; time=1612398279'
+		}
 		link_svids = []
 		for sv_id in sv_ids:
 			link_svid = 'http://www.tivi12h.net/'+sv_id
 			link_svids += [link_svid]
 		for n in range(len(link_svids)):
 			try:
-				source2 = requests.get(link_svids[n], headers=headers4).text
+				source2 = requests.get(link_svids[n], headers=headers3).text
 				source2 = source2.replace("'", '"')
 #				if '.m3u8' in source2:
 #					return re.findall('"(http.*?.m3u8.*?)"', source2)[0]
@@ -2308,7 +2319,7 @@ def get_playable_url(url):
 		session = requests.Session()
 		session.headers.update(header)
 		source = session.get(url).text
-		source = source.encode('utf8')
+		#source = source.encode('utf8') # will get error: cannot use a string pattern on a bytes-like object
 		#page_data = source . text . encode ( "utf8" ) #don't need to encode:from vietnamese to code
 		#datas = {
 		#"type_id" : "1" ,
@@ -2319,9 +2330,9 @@ def get_playable_url(url):
 		####\d: any number, '+' 1 or more
 		datas = {
 		"type_id": "1",
-		"id": re.search("id = (\d+);", source).group(1),
-		"time": re.search("time = '(\d+)';", source).group(1),
-		"token": re.search("token = '(.+?)';", source).group(1)
+		"id": re.search("var id = (\d+);", source).group(1),
+		"time": re.search("var time = '(\d+)';", source).group(1),
+		"token": re.search("var token = '(.+?)';", source).group(1)
 		}
 		source = session.post("https://vtvgo.vn/ajax-get-stream", data = datas, verify = False) #verify: optional
 		return source.json()["stream_url"][0] + agent
