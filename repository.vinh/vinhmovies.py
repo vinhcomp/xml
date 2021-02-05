@@ -2144,7 +2144,8 @@ def play_url(url, title=""):
 
 	elif url.startswith('https://daddylive.live') or url.startswith('https://daddylive.club'):
 		source1 = requests.get(url, headers=headers2).text
-		link = re.findall('iframe src="(https://wstream.to.*?)"', source1)[0]
+		#link = re.findall('iframe src="(https://wstream.to.*?)"', source1)[0]
+		link = re.findall('iframe src="(.*?)"', source1)[0]
 		referer = 'https://daddylive.live/'
 		h = {
 			'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
