@@ -1007,7 +1007,8 @@ def M3UToItems(url_path=""):
 			items += [item]
 		return items
 
-	elif url_path.startswith('http://crackstreams.com') or url_path.startswith('http://nbastreams.xyz'):
+	#elif url_path.startswith('http://crackstreams.com') or url_path.startswith('http://nbastreams.xyz') or ('http://crackstreams.is'):
+	elif url_path.startswith('http://crackstreams.is'):
 		content = requests.get(url_path, headers=headers2).content
 		#content = "".join(content.splitlines())
 		#item_re = "<a href='(.*?)'.*?<img src='(.*?)'.*?media-heading'>(.*?)<.*?<p>(.*?)</p>"
@@ -1066,7 +1067,7 @@ def M3UToItems(url_path=""):
 			items += [item]
 		return items
 
-	elif url_path.startswith('https://daddylive.live'):
+	elif url_path.startswith('https://daddylive.live') or url_path.startswith('https://daddylive.club'):
 		url1='https://daddylive.live/'
 		#sport_name=re.findall('/(\w+)$', url_path)[0]
 		sport_name=re.findall('daddylive.live/(.*?)$', url_path)[0]
@@ -2121,13 +2122,14 @@ def play_url(url, title=""):
 			linkstream = re.findall('(http.*?m3u8.*?)\'', source2)[0]
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
-	elif url.startswith('http://nbastreams') or url.startswith('http://crackstreams') or url.startswith('http://givemereddit.stream'):
+	#elif url.startswith('http://nbastreams') or url.startswith('http://crackstreams') or url.startswith('http://givemereddit.stream') or url.startswith('http://crackstreams.is'):
+	elif url.startswith('http://crackstreams.is'):
 		source = requests.get(url, headers=headers2).text
 		try:
 			link = re.findall('<iframe.*?width.*?src="(.*?)"', source)[0]
 		except:
 			link = re.findall('<iframe.*?src="(.*?)"', source)[0]
-		if link.startswith('video.php'):
+		if link.startswith('video'):
 			link = url+link
 		#if link.startswith('https://www.youtube.com'):
 			#keyid = re.findall('/(\w+)$', link)[0]
