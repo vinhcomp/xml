@@ -1008,7 +1008,7 @@ def M3UToItems(url_path=""):
 		return items
 
 	#elif url_path.startswith('http://crackstreams.com') or url_path.startswith('http://nbastreams.xyz') or ('http://crackstreams.is'):
-	elif url_path.startswith('http://crackstreams.is'):
+	elif url_path.startswith('http://crackstreams.is') or url_path.startswith('http://crackstreams.net'):
 		content = requests.get(url_path, headers=headers2).content
 		#content = "".join(content.splitlines())
 		#item_re = "<a href='(.*?)'.*?<img src='(.*?)'.*?media-heading'>(.*?)<.*?<p>(.*?)</p>"
@@ -1028,9 +1028,9 @@ def M3UToItems(url_path=""):
 		for path, thumb, info in matchs:
 			label1 = ''
 			label2 = ''
-			thumb = 'http://crackstreams.com'+thumb
+			thumb = 'http://crackstreams.is'+thumb
 			if path.startswith('/'):
-				path = 'http://crackstreams.com'+path
+				path = 'http://crackstreams.net'+path
 			if 'media-heading' in info:
 				#label1 = re.compile("media-heading'>(.*?)</").findall(info)[0]
 				label1 = re.compile("media-heading>|media-heading'>(.*?)</").findall(info)[0]
@@ -2142,6 +2142,17 @@ def play_url(url, title=""):
 		except:
 			link2 = re.findall('atob\("(.*?)"', source2)[0]
 			linkstream = base64.b64decode(link2)+'|User-Agent=iPad&Referer='+link
+		plugin.set_resolved_url(linkstream, subtitles=vsub)
+
+	elif url.startswith('http://crackstreams.net'):
+		source = requests.get(url, headers=headers2).text
+		link = re.findall('<iframe.*?src="(.*?)"', source)[0]
+		source2 = requests.get(link, headers=headers2).text
+		source2 = source2.replace("'", '"')
+		link2 = re.findall('iframe src="(.*?)"', source2)[0]
+		source3 = requests.get(link2, headers=headers2).text
+		source3 = source3.replace("'", '"')
+		linkstream = re.findall('(http.*?m3u8.*?)"', source3)[0]+'|User-Agent=iPad&Referer='+link
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
 	elif url.startswith('https://daddylive.live') or url.startswith('https://daddylive.club'):
