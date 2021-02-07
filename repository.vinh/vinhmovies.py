@@ -1049,6 +1049,47 @@ def M3UToItems(url_path=""):
 		items = [notice_time]+items
 		return items
 
+	elif url_path.startswith('http://nbastreams.site'):
+		content = requests.get(url_path, headers=headers2).content
+		#content = "".join(content.splitlines())
+		#item_re = "<a href='(.*?)'.*?<img src='(.*?)'.*?media-heading'>(.*?)<.*?<p>(.*?)</p>"
+		item_re = "<a href='(.*?)'.*?(?s)<h4 class=(.*?)(?s)</div>"
+		matchs = re.compile(item_re).findall(content)
+		source_t = requests.get('https://www.timeanddate.com/worldclock/fullscreen.html?n=77', headers=headers2).text
+		try:
+			label_t = re.findall('<div id=i_time>(.*?)</div>', source_t)[0]
+		except:
+			label_t = ''
+		notice_time = {
+					'label': '------------ '+'[COLOR lime]'+label_t+'[/COLOR]'+'[COLOR red] Giờ Eastern - Eastern Time [/COLOR]------------',
+					'thumbnail': 'https://c.tadst.com/gfx/tzpage/est.1572778800.png?1292',
+					'path': 'None'
+		}
+		items = []
+		for path, info in matchs:
+			label1 = ''
+			label2 = ''
+			thumb = ''
+			if path.startswith('/'):
+				path = 'http://nbastreams.site'+path
+			if 'media-heading' in info:
+				label1 = re.compile("media-heading'>(.*?)</").findall(info)[0]
+				#label1 = re.compile("media-heading>|media-heading'>(.*?)</").findall(info)[0]
+			if '<p>' in info:
+				label2 = re.compile("<p>(.*?)</").findall(info)[0]
+			label = '[COLOR lime]'+label2+'[/COLOR]'+', '+'[COLOR yellow]'+label1+'[/COLOR]'
+			item = {
+				"label": label.strip(),
+				"thumbnail": thumb.strip(),
+				"path": path.strip(),
+			}
+			item["path"] = pluginrootpath + "/play/" + urllib.quote_plus(item["path"])
+			item["is_playable"] = True
+			item["info"] = {"type": "video"}
+			items += [item]
+		items = [notice_time]+items
+		return items
+
 	elif url_path.startswith('http://6stream.xyz'):
 		content = requests.get(url_path, headers=headers2).content
 		item_re = '<figure class=".*?data-original="(.*?)".*?href="(.*?)".*?title="(.*?)".*?(?s)datePublished">(.*?)<'
@@ -2123,7 +2164,7 @@ def play_url(url, title=""):
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
 	#elif url.startswith('http://nbastreams') or url.startswith('http://crackstreams') or url.startswith('http://givemereddit.stream') or url.startswith('http://crackstreams.is'):
-	elif url.startswith('http://crackstreams.is'):
+	elif url.startswith('http://crackstreams.is') or url.startswith('http://nbastreams.site'):
 		source = requests.get(url, headers=headers2).text
 		try:
 			link = re.findall('<iframe.*?width.*?src="(.*?)"', source)[0]
