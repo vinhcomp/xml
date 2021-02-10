@@ -1820,14 +1820,18 @@ def get_playable_url(url):
 #		url ='http://live'+keyid
 
 	elif "vn.tvnet.gov.vn" in url:
-		source = requests.get(url, headers=headers1).text
+		url1 = url.replace('/sd', '')
+		source = requests.get(url1, headers=headers1).text
 		link = re.findall('data-file="(.*?)"', source)[0]
 		source2 = requests.get(link, headers=headers1).text
 		linkstream = re.findall('url": "(.*?)"', source2)[0]
 		try: #Fix buggy sometime
 			linkstreamid = re.findall('(http.*?smil/)', source2)[0]
 			source3 = requests.get(linkstream, headers=headers1).text
-			linkstream2 = re.findall('(chunklist.*?\s)', source3)[-1].strip()
+			if '/sd' in url:
+				linkstream2 = re.findall('(chunklist.*?\s)', source3)[1].strip() #[-1] Best(HD), [0] Lowest quality, sometime only 1 quality working
+			else:
+				linkstream2 = re.findall('(chunklist.*?\s)', source3)[-1].strip() #[-1] Best(HD), [0] Lowest quality, sometime only 1 quality working
 			return linkstreamid+linkstream2
 		except:
 			return linkstream
