@@ -409,7 +409,8 @@ def M3UToItems(url_path=""):
 		return items
 
 	else:
-		item_re = '\#EXTINF(.*?,)(.*?)\n(.*?)\n'
+		#item_re = '\#EXTINF(.*?,)(.*?)\n(.*?)\n'
+		item_re = '\#EXTINF(.*?,)(.*?)\n.*?(?s)\n(htt.*?:.*?)\n'
 #		(resp, content) = http.request(
 #			url_path, "GET",
 #			headers=sheet_headers
