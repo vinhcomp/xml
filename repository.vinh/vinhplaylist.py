@@ -1837,6 +1837,10 @@ def get_playable_url(url):
 		except:
 			return linkstream
 
+	elif url.startswith("https://api.thvli.vn"):
+		source = requests.get(url, headers=headers3).text
+		return re.findall('link_play": "(.*?)"',source)[0]
+
 	#http://photocall.tv/beinsports1/
 	elif "http://photocall.tv" in url:
 		name  = re.findall('http://photocall.tv/(.*?)/',url)[0] # str bz [0]
