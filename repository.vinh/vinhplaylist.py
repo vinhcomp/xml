@@ -702,7 +702,7 @@ def getItems(url_path="0", tq="select A,B,C,D,E"):
 				headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0',
 				'Accept-Encoding': 'gzip, deflate',}
 				source=requests.get(item["path"], headers=headers)
-				link=re.findall('(https://pastebin.com.*?)"', source.text)[0]
+				link=re.findall('type="text" value="(.*?)"', source.text)[0]
 				item["path"]=pluginrootpath+'/m3u/'+urllib.quote_plus(link)
 
 			else:
