@@ -1090,7 +1090,7 @@ def M3UToItems(url_path=""):
 		items = [notice_time]+items
 		return items
 
-	elif url_path.startswith('http://6stream.xyz'):
+	elif url_path.startswith('http://6stream.xyz') or url_path.startswith('http://6streams.tv'):
 		content = requests.get(url_path, headers=headers2).content
 		item_re = '<figure class=".*?data-original="(.*?)".*?href="(.*?)".*?title="(.*?)".*?(?s)datePublished">(.*?)<'
 		matchs = re.compile(item_re).findall(content)
@@ -2214,7 +2214,7 @@ def play_url(url, title=""):
 		linkstream = re.findall('source:.*?"(.*?)"', decode)[0]+'|user-agent=ipad&'+link
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
-	elif url.startswith('http://6stream.xyz'):
+	elif url.startswith('http://6stream.xyz') or url.startswith('http://6streams.tv'):
 		source = requests.get(url, headers=headers2).text
 		linkstream = re.findall('source: "(.*?)"', source)[0]+'|user-agent=ipad&Referer=http://6stream.xyz'
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
