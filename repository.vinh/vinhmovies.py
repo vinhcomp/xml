@@ -2178,10 +2178,13 @@ def play_url(url, title=""):
 			#plugin.set_resolved_url(linkstream, subtitles=vsub)
 		source2 = requests.get(link, headers=headers2).text
 		source2 = source2.replace("'", '"')
-		link2 = re.findall('iframe.*?src="(.*?)"', source2)[0]
-		source3 = requests.get(link2, headers=headers2).text
-		source3 = source3.replace("'", '"')
-		linkstream = re.findall('(http.*?m3u8.*?)"', source3)[0]+'|User-Agent=iPad&Referer='+link2
+		try:
+			linkstream = re.findall('source: "(http.*?m3u8.*?)"', source2)[0]+'|User-Agent=iPad&Referer='+link
+		except:
+			link2 = re.findall('iframe.*?src="(.*?)"', source2)[0]
+			source3 = requests.get(link2, headers=headers2).text
+			source3 = source3.replace("'", '"')
+			linkstream = re.findall('(http.*?m3u8.*?)"', source3)[0]+'|User-Agent=iPad&Referer='+link2
 	#	try:
 	#		linkstream = re.findall('(http.*?m3u8.*?)"', source2)[0]+'|User-Agent=iPad&Referer='+link
 	#	except:
