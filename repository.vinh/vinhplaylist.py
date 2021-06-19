@@ -2153,7 +2153,8 @@ def get_playable_url(url):
 					#link2 = re.findall('(http.*?.m3u8.*?)$', source3)[0]
 					#source4 = requests.get(link2, headers=headers4).text
 					#return re.findall('(http.*?.m3u8.*?\s)', source4)[-1]
-					link = re.findall('"(http://27.*?m3u8.*?)"', source2)[0]#incase direct link vtc, diaphuong
+				#	link = re.findall('"(http://27.*?m3u8.*?)"', source2)[0]#incase direct link vtc, diaphuong
+					link = re.findall('"(http://27.*?m3u8.*?)"', source2)[-1]#incase direct link vtc, diaphuong
 					source3 = requests.get(link, headers=headers4).text
 					return re.findall('(http.*?.m3u8.*?\s)', source3)[-1]
 				except:
@@ -2407,6 +2408,11 @@ def get_playable_url(url):
 		link = re.findall('iframe src=\'(.*?)\'', source)[0]
 		source2 = requests.get(link, headers=headers4).text
 		return re.findall('pl.init\(\'(.*?)\'', source2)[0]+'|user-agent=iPad&Referer='+link
+
+	elif url.startswith('https://hplus.com.vn'):
+		source = requests.get(url, headers=headers4).text
+		source = source.replace("'", '"')
+		return re.findall('(https://htvc.*?m3u8.*?)"', source)[0]+'|user-agent=iPad&Referer='+url
 
 	elif url.startswith('http://www.elahmad.com'): #somali http://www.elahmad.com/tv/somali-tv-live.php
 		datas = {'id': re.findall('id=(.*?$)', url)[0]}
