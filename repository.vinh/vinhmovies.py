@@ -1008,7 +1008,7 @@ def M3UToItems(url_path=""):
 		return items
 
 	#elif url_path.startswith('http://crackstreams.com') or url_path.startswith('http://nbastreams.xyz') or ('http://crackstreams.is'):
-	elif url_path.startswith('http://crackstreams.is') or url_path.startswith('http://crackstreams.net') or url_path.startswith('http://hd.crackstreams.net') or url_path.startswith('http://new.crackstreams.net'):
+	elif url_path.startswith('http://crackstreams.is') or url_path.startswith('http://crackstreams.net') or url_path.startswith('http://hd.crackstreams.net') or url_path.startswith('http://new.crackstreams.net') or url_path.startswith('http://ww3.crackstreams.net/'):
 		content = requests.get(url_path, headers=headers2).content
 		#content = "".join(content.splitlines())
 		#item_re = "<a href='(.*?)'.*?<img src='(.*?)'.*?media-heading'>(.*?)<.*?<p>(.*?)</p>"
@@ -2192,7 +2192,7 @@ def play_url(url, title=""):
 	#		linkstream = base64.b64decode(link2)+'|User-Agent=iPad&Referer='+link
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
-	elif url.startswith('http://crackstreams.net') or url.startswith('http://hd.crackstreams.net')  or url.startswith('http://new.crackstreams.net'):
+	elif url.startswith('http://crackstreams.net') or url.startswith('http://hd.crackstreams.net') or url.startswith('http://new.crackstreams.net') or url.startswith('http://ww3.crackstreams.net'):
 		source = requests.get(url, headers=headers2).text
 		link = re.findall('<iframe.*?src="(.*?)"', source)[0]
 		source2 = requests.get(link, headers=headers2).text
