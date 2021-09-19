@@ -2197,7 +2197,7 @@ def play_url(url, title=""):
 		link = re.findall('<iframe.*?src="(.*?)"', source)[0]
 		source2 = requests.get(link, headers=headers2).text
 		source2 = source2.replace("'", '"')
-		link2 = re.findall('iframe src="(.*?)"', source2)[0]
+		link2 = re.findall('iframe.*?src="(.*?)"', source2)[0]
 		source3 = requests.get(link2, headers=headers2).text
 		source3 = source3.replace("'", '"')
 		linkstream = re.findall('(http.*?m3u8.*?)"', source3)[0]+'|User-Agent=iPad&Referer='+link2
