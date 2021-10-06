@@ -1823,7 +1823,8 @@ def get_playable_url(url):
 	elif "vn.tvnet.gov.vn" in url:
 		url1 = url.replace('/sd', '')
 		source = requests.get(url1, headers=headers1).text
-		link = re.findall('data-file="(.*?)"', source)[0]
+		#link = re.findall('data-file="(.*?)"', source)[0]
+		link = re.findall('ownURL = "(.*?)"', source)[0]
 		source2 = requests.get(link, headers=headers1).text
 		linkstream = re.findall('url": "(.*?)"', source2)[0]
 		try: #Fix buggy sometime
