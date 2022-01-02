@@ -313,7 +313,9 @@ def Layer2ToItems(url_path=""):
 		matchs = re.compile(item_re).findall(content)
 		items = []
 		for path, label in matchs:
-			thumb = ''
+			thumb = ''			
+			if '?C=' in path:
+				label = 'NONE'
 			path = url_path+path
 			item = {
 				"label": label.strip(),
