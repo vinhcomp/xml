@@ -307,7 +307,7 @@ def Layer2ToItems(url_path=""):
 
 	#elif url_path.startswith('http://dl.upload10') or url_path.startswith('http://dl2.upload10'): #from http://builds.kodiuk boxsets
 	elif any(url_path.startswith(domain) for domain in ['http://dl.upload10', 'http://dl2.upload10', 'http://dl2.uploadzone', 'http://perserver.ir/', 'https://movies.encrypticmh', \
-		'http://rmeyer.comelitdns.com', 'http://103.222.20.150', 'https://tv.encrypticmh.appboxes.co', 'http://162.12.215.254']): #Movies 1 Click
+		'http://rmeyer.comelitdns.com', 'http://103.222.20.150', 'https://tv.encrypticmh.appboxes.co', 'https://franchises.encrypticmh.appboxes.co/', 'http://162.12.215.254']): #Movies 1 Click
 		content = requests.get(url_path, headers=headers2).content
 		#matchs = re.findall('<a href="(.*?)">(.*?)<',content)[:]
 		item_re = '<a href="(.*?)">(.*?)<'
