@@ -2297,6 +2297,14 @@ def get_playable_url(url):
 			except:
 				pass
 
+	elif url.startswith('http://xemtiviviet.com') or url.startswith('http://tv.tvhayhay.com'):
+		source = requests.get(url, headers=headers4).text
+		link_ok = re.findall('<iframe.*?src="(.*?)"', source)[0]
+		if link_ok.startswith('/'):
+			link_ok = 'http://tv.tvhayhay.com'+link_ok
+		source2 = requests.get(link_ok, headers=headers4).text
+		return re.findall('link =.*?"(.*?)"', source2)[0]
+
 	elif url.startswith('https://www.twitch.tv'):
 		source = requests.get(url).text
 		client_id = re.findall('Client-ID":"(.*?)"', source)[0]
