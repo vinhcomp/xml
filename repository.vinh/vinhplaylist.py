@@ -2308,8 +2308,8 @@ def get_playable_url(url):
 	elif url.startswith('http://tvonline.vn'):
 		source = requests.get(url, headers=headers4).text
 		link1 = re.findall('<iframe.*?src="(.*?)"', source)[0]
-		source2 = requests.get(link1, headers=headers4).text
-		return re.findall('source.*?"(.*?)"', source2)[0]
+		source2 = requests.get(link1, headers=headers4).text.replace("'", '"')
+		return re.findall('"(http.*?m3u8.*?)"', source2)[0]
 
 	elif url.startswith('https://www.twitch.tv'):
 		source = requests.get(url).text
