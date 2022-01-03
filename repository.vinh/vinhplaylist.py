@@ -2305,6 +2305,12 @@ def get_playable_url(url):
 		source2 = requests.get(link_ok, headers=headers4).text
 		return re.findall('link =.*?"(.*?)"', source2)[0]
 
+	elif url.startswith('http://tvonline.vn'):
+		source = requests.get(url, headers=headers4).text
+		link1 = re.findall('<iframe.*?src="(.*?)"', source)[0]
+		source2 = requests.get(link1, headers=headers4).text
+		return re.findall('source.*?"(.*?)"', source2)[0]
+
 	elif url.startswith('https://www.twitch.tv'):
 		source = requests.get(url).text
 		client_id = re.findall('Client-ID":"(.*?)"', source)[0]
