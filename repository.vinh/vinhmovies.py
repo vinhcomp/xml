@@ -1011,7 +1011,7 @@ def M3UToItems(url_path=""):
 		return items
 
 	#elif url_path.startswith('http://crackstreams.com') or url_path.startswith('http://nbastreams.xyz') or ('http://crackstreams.is'):
-	elif url_path.startswith('http://crackstreams.is') or url_path.startswith('http://crackstreams.net') or url_path.startswith('http://hd.crackstreams.net') or url_path.startswith('http://new.crackstreams.net') or url_path.startswith('http://ww3.crackstreams.net'):
+	elif url_path.startswith('http://live13.crackstreams.net') or url_path.startswith('http://crackstreams.net') or url_path.startswith('http://hd.crackstreams.net') or url_path.startswith('http://new.crackstreams.net') or url_path.startswith('http://ww3.crackstreams.net'):
 		content = requests.get(url_path, headers=headers2).content
 		#content = "".join(content.splitlines())
 		#item_re = "<a href='(.*?)'.*?<img src='(.*?)'.*?media-heading'>(.*?)<.*?<p>(.*?)</p>"
@@ -1031,9 +1031,13 @@ def M3UToItems(url_path=""):
 		for path, thumb, info in matchs:
 			label1 = ''
 			label2 = ''
-			thumb = 'http://crackstreams.is'+thumb
+			thumb = 'http://live13.crackstreams.net'+thumb
 			if path.startswith('/'):
-				path = 'http://crackstreams.net'+path
+				path = 'http://live13.crackstreams.net'+path
+			if path.startswith('http'):
+				path = path
+			else:
+				path = 'http://live13.crackstreams.net/'+path
 			if 'media-heading' in info:
 				#label1 = re.compile("media-heading'>(.*?)</").findall(info)[0]
 				label1 = re.compile("media-heading>|media-heading'>(.*?)</").findall(info)[0]
@@ -2195,9 +2199,12 @@ def play_url(url, title=""):
 	#		linkstream = base64.b64decode(link2)+'|User-Agent=iPad&Referer='+link
 		plugin.set_resolved_url(linkstream, subtitles=vsub)
 
-	elif any(url.startswith(domain) for domain in ['http://crackstreams.net', 'http://hd.crackstreams.net', 'http://new.crackstreams.net', 'http://ww3.crackstreams.net']):
+	elif any(url.startswith(domain) for domain in ['http://crackstreams.net', 'http://hd.crackstreams.net', 'http://new.crackstreams.net', 'http://ww3.crackstreams.net', 'http://live13.crackstreams.net']):
 		source = requests.get(url, headers=headers2).text
+		#link = 'http://live13.crackstreams.net'+re.findall('<iframe.*?src="(.*?)"', source)[0]
 		link = re.findall('<iframe.*?src="(.*?)"', source)[0]
+		if link.startswith('/'):
+			link = 'http://live13.crackstreams.net'+link
 		source2 = requests.get(link, headers=headers2).text
 		source2 = source2.replace("'", '"')
 		link2 = re.findall('iframe.*?src="(.*?)"', source2)[0]
