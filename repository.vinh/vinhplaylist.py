@@ -1283,8 +1283,9 @@ def play_url(url, title=""):
 	elif 'chaturbate.com' in url:
 		source = requests.get(url, headers=headers1).text
 		try:
-			url = re.findall('u0022(http.*?m3u8)', source)[0]
-			url = url.replace('\\u002D', '-')
+			#url = re.findall('u0022(http.*?m3u8)', source)[0]
+			#url = url.replace('\\u002D', '-')
+			url = re.findall('u0022(https://edge.*?m3u8)', source)[0].replace('\\u002D', '-')
 			if 'm3u' not in url:
 				return notice('This Model is Private Show Now!!', 'Please choose other model!!', 'Con ghệ này đang chat private, chọn con khác đi!!')
 		except:
