@@ -1494,7 +1494,7 @@ def get_playable_url(url):
 			'(youtu\.be\/|youtube-nocookie\.com\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v|user)\/))([^\?&"\'>]+)').findall(url)
 		yid = match[0][len(match[0])-1].replace('v/', '')
 		url = 'plugin://plugin.video.youtube/play/?video_id=%s' % yid
-	elif "thvli.vn/backend/cm/detail/" in url:
+	elif "thvli.vn/backend/cm/get_detail/" in url:
 		get_thvl = "https://docs.google.com/spreadsheets/d/13VzQebjGYac5hxe1I-z1pIvMiNB0gSG7oWJlFHWnqsA/export?format=tsv&gid=1287121588"
 		try:
 			(resp, content) = http.request(
@@ -2345,7 +2345,8 @@ def get_playable_url(url):
 		agent = "|user-agent=ipad&referer=%s" % url
 		session = requests.Session()
 		session.headers.update(header)
-		source = session.get(url).text
+		#source = session.get(url).text
+		source = session.get('https://vtvgo.vn').text
 		#source = source.encode('utf8') # will get error: cannot use a string pattern on a bytes-like object
 		#page_data = source . text . encode ( "utf8" ) #don't need to encode:from vietnamese to code
 		#datas = {
