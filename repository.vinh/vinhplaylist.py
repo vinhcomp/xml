@@ -2338,12 +2338,13 @@ def get_playable_url(url):
 		"Referer": url,
 		"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
 		"Origin": "https://vtvgo.vn",
+		"Sec-Fetch-Site": "same-origin",
 		"X-Requested-With": "XMLHttpRequest"
 		}
 		#agent = "|user-agent=ipad&referer=%s" % url
 		#agent = '|https://vtvgo.vn/'
 		agent = "|user-agent=ipad&referer=%s" % url
-		session = requests.Session()
+		session = requests.Session() # get cookies here.
 		session.headers.update(header)
 		#source = session.get(url).text
 		source = session.get('https://vtvgo.vn').text
