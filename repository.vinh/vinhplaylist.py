@@ -2346,8 +2346,8 @@ def get_playable_url(url):
 		agent = "|user-agent=ipad&referer=%s" % url
 		session = requests.Session() # get cookies here.
 		session.headers.update(header)
-		#source = session.get(url).text
-		source = session.get('https://vtvgo.vn').text
+		source = session.get(url).text
+		#source = session.get('https://vtvgo.vn').text
 		#source = source.encode('utf8') # will get error: cannot use a string pattern on a bytes-like object
 		#page_data = source . text . encode ( "utf8" ) #don't need to encode:from vietnamese to code
 		#datas = {
